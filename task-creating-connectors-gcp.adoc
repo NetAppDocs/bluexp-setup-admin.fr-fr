@@ -39,6 +39,10 @@ Pour commencer rapidement, suivez ces étapes ou faites défiler jusqu'aux secti
 +
 <<Configurez un compte de service pour le connecteur>>.
 
+* Si vous déployez Cloud Volumes ONTAP sur tous les projets, assurez-vous que le connecteur a accès à ces projets.
++
+<<Définissez des autorisations pour tous les projets>>.
+
 * Si vous utilisez un VPC partagé, configurez des autorisations dans le projet de service et le projet hôte.
 +
 <<Configurez les autorisations VPC partagées>>.
@@ -76,7 +80,12 @@ Des autorisations sont requises pour les éléments suivants :
 
 * L'utilisateur qui va déployer la machine virtuelle de connecteur
 * Un compte de service que vous devez connecter à la machine virtuelle Connector pendant le déploiement
-* Des autorisations VPC partagées, si vous utilisez un VPC partagé pour déployer des ressources dans un projet de service
+
+
+En fonction de votre configuration, vous devrez peut-être également suivre les étapes suivantes :
+
+* Définissez des autorisations pour tous les projets
+* Configurez les autorisations pour un VPC partagé
 
 
 
@@ -273,6 +282,27 @@ includedPermissions:
 
 .Résultat
 Le compte de service de la machine virtuelle Connector est configuré.
+
+
+
+=== Définissez des autorisations pour tous les projets
+
+Si vous prévoyez de déployer des systèmes Cloud Volumes ONTAP dans différents projets que le projet sur lequel réside le connecteur, vous devrez fournir au compte de service du connecteur l'accès à ces projets.
+
+Disons, par exemple, que le connecteur est dans le projet 1 et que vous voulez créer des systèmes Cloud Volumes ONTAP dans le projet 2. Vous devrez accorder l'accès au compte de service dans le projet 2.
+
+.Étapes
+. Dans la console Google Cloud, accédez au service IAM et sélectionnez le projet auquel vous souhaitez créer des systèmes Cloud Volumes ONTAP.
+. Sur la page *IAM*, sélectionnez *accorder accès* et fournissez les détails nécessaires.
++
+** Saisissez l'e-mail du compte de service du connecteur.
+** Sélectionnez le rôle personnalisé du connecteur.
+** Cliquez sur *Enregistrer*.
+
+
+
+
+Pour plus de détails, reportez-vous à https://cloud.google.com/iam/docs/granting-changing-revoking-access#grant-single-role["Documentation Google Cloud"^]
 
 
 
