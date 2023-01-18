@@ -18,9 +18,9 @@ Vous pouvez gérer les informations d'identification associées à l'instance de
 
 
 
-== Association d'un abonnement Marketplace aux informations d'identification GCP
+== Association d'un abonnement Marketplace aux identifiants Google Cloud
 
-Lorsque vous déployez un connecteur dans GCP, BlueXP crée un ensemble d'informations d'identification par défaut qui sont associées à l'instance de VM connecteur. Il s'agit des informations d'identification utilisées par BlueXP pour déployer Cloud Volumes ONTAP.
+Lorsque vous déployez un connecteur dans Google Cloud, BlueXP crée un ensemble d'informations d'identification par défaut qui sont associées à l'instance de VM Connector. Il s'agit des informations d'identification utilisées par BlueXP pour déployer Cloud Volumes ONTAP.
 
 Vous pouvez à tout moment modifier l'abonnement Marketplace associé à ces informations d'identification. Cet abonnement vous permet de créer un système Cloud Volumes ONTAP basé sur l'utilisation et d'utiliser d'autres services cloud NetApp.
 
@@ -63,11 +63,11 @@ image:screenshot_gcp_marketplace_register.png["Capture d'écran d'une fenêtre c
 
 +
 
-NOTE: Cette étape doit être terminée pour lier l'abonnement GCP à votre compte NetApp. Le processus de liaison d'un abonnement n'est pas terminé tant que vous n'êtes pas redirigé à partir de cette page, puis vous connecter à BlueXP.
+NOTE: Cette étape doit être terminée pour lier l'abonnement Google Cloud à votre compte NetApp. Le processus de liaison d'un abonnement n'est pas terminé tant que vous n'êtes pas redirigé à partir de cette page, puis vous connecter à BlueXP.
 
 . Après avoir été redirigé vers BlueXP, connectez-vous ou inscrivez-vous, puis cliquez sur *Done* pour continuer.
 +
-L'abonnement GCP sera lié à tous les comptes NetApp auxquels vous êtes associé.
+L'abonnement à Google Cloud sera lié à tous les comptes NetApp auxquels votre identifiant utilisateur est associé. Si vous avez besoin de limiter l'accès au nouvel abonnement, vous pouvez gérer les comptes NetApp associés à cet abonnement à partir du portefeuille digital. link:task-manage-subscriptions.html#manage-your-subscriptions["Découvrez comment gérer vos abonnements"].
 
 +
 image:screenshot_gcp_sub_mapping.png["Copie d'écran permettant de mapper un abonnement GCP sur un compte NetApp."]

@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-managing-netapp-accounts.html 
 keywords: account settings, workspaces, Connector, account admin, workspace admin, users, associate, disassociate, add user, add users, user management, administer, user, management, member, remove user, remove users, remove, delete, account, user account, user accounts, add workspace, setup workspace, workspace, Connector, manage Connector, manage workspace, associate Connector, service account 
-summary: Après avoir effectué la configuration initiale, vous pouvez gérer les paramètres de votre compte ultérieurement en gérant les utilisateurs, les comptes de service, les espaces de travail, les connecteurs et les abonnements. 
+summary: Une fois la configuration initiale effectuée, vous pouvez gérer les paramètres de votre compte ultérieurement en gérant les utilisateurs, les comptes de service, les espaces de travail et les connecteurs. 
 ---
 = Gestion de votre compte NetApp
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: Après avoir effectué la configuration initiale, vous pouvez gérer le
 
 
 [role="lead"]
-link:task-setting-up-netapp-accounts.html["Après avoir effectué la configuration initiale"], Vous pouvez gérer les paramètres de votre compte ultérieurement en gérant les utilisateurs, les comptes de service, les espaces de travail, les connecteurs et les abonnements.
+link:task-setting-up-netapp-accounts.html["Après avoir effectué la configuration initiale"], Vous pouvez gérer ultérieurement les paramètres de votre compte en gérant les utilisateurs, les comptes de service, les espaces de travail et les connecteurs.
 
 link:concept-netapp-accounts.html["Découvrez comment fonctionnent les comptes NetApp"].
 
@@ -236,29 +236,6 @@ link:concept-netapp-accounts.html#users-workspaces-and-service-connectors["En sa
 . Cliquez sur *connecteur*.
 . Cliquez sur *gérer les espaces de travail* pour le connecteur que vous souhaitez associer.
 . Sélectionnez les espaces de travail à associer au connecteur et cliquez sur *appliquer*.
-
-
-
-
-== Gestion des abonnements
-
-Après vous être abonné au Marketplace d'un fournisseur cloud, chaque abonnement est disponible dans le widget Account Settings. Vous avez la possibilité de renommer un abonnement et de dissocier l'abonnement d'un ou plusieurs comptes.
-
-Par exemple, disons que vous avez deux comptes et que chacun est facturé par le biais d'abonnements distincts. Vous pouvez dissocier un abonnement de l'un des comptes afin que les utilisateurs de ce compte ne choisissent pas accidentellement l'abonnement incorrect lors de la création d'un environnement de travail Cloud Volume ONTAP.
-
-link:concept-netapp-accounts.html#subscriptions["En savoir plus sur les abonnements"].
-
-.Étapes
-. En haut de BlueXP, cliquez sur la liste déroulante *Account* et cliquez sur *Manage Account*.
-. Cliquez sur *abonnements*.
-+
-Vous ne verrez que les abonnements associés au compte que vous consultez actuellement.
-
-. Cliquez sur le menu d'action de la ligne correspondant à l'abonnement que vous souhaitez gérer.
-+
-image:screenshot_subscription_menu.gif["Capture d'écran du menu d'action pour un abonnement."]
-
-. Choisissez de renommer l'abonnement ou de gérer les comptes associés à l'abonnement.
 
 
 

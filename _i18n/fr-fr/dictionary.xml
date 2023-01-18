@@ -1600,10 +1600,8 @@
   <block id="14a3ec4432f577b0adffd0ed91b508cd" category="list-text">Si vous souhaitez déployer Cloud Volumes ONTAP à partir d'abonnements supplémentaires, passez à cet abonnement, puis répétez ces étapes.</block>
   <block id="98c7ed1fe7517b1decbab6d305a786dc" category="paragraph">Le connecteur dispose désormais des autorisations nécessaires pour gérer les ressources et les processus au sein de votre environnement de cloud public. BlueXP utilisera automatiquement ce connecteur lorsque vous créez de nouveaux environnements de travail. Mais si vous avez plus d'un connecteur, vous devrez le faire <block ref="2db1c3a28ec2a3ff67ad2a1b7a913be5" category="inline-link-macro-rx"></block>.</block>
   <block id="3a87e6ba2e9a6adf84612ff7e5ce977c" category="paragraph">Si vous disposez d'un stockage Azure Blob dans le même compte Azure que celui sur lequel vous avez créé le connecteur, un environnement de travail Azure Blob s'affiche automatiquement sur la toile. <block ref="1554e33833508aa8ae7d5d6aebee0d7e" category="inline-link-macro-rx"></block>.</block>
-  <block id="55a16520d9c426fd88ba06b9313cc1a0" category="summary">Après avoir effectué la configuration initiale, vous pouvez gérer les paramètres de votre compte ultérieurement en gérant les utilisateurs, les comptes de service, les espaces de travail, les connecteurs et les abonnements.</block>
   <block id="e97f2d246afe934ce73e145389529b37" category="doc">Gestion de votre compte NetApp</block>
   <block id="d4b56cbbe5ee118eb18ad55bfaaef1f5" category="inline-link-macro">Après avoir effectué la configuration initiale</block>
-  <block id="5ca55a4446a62df5192547357ad6fb04" category="paragraph"><block ref="a7a3c89d37624da5130984f9aaffd146" category="inline-link-macro-rx"></block>, Vous pouvez gérer les paramètres de votre compte ultérieurement en gérant les utilisateurs, les comptes de service, les espaces de travail, les connecteurs et les abonnements.</block>
   <block id="1b18a6ba342c7916f9ed427680d9d69c" category="section-title">Gestion de votre compte à l'aide de l'API de location</block>
   <block id="ab92d1e2231079f7f278e33e63f88ee9" category="paragraph">Si vous souhaitez gérer les paramètres de votre compte en envoyant des demandes API, vous devez utiliser l'API _Tenancy_. Cette API est différente de l'API BlueXP, que vous utilisez pour créer et gérer des environnements de travail Cloud Volumes ONTAP.</block>
   <block id="1dc658529d6408dff5a6f0516b76a420" category="inline-link">Affichez les terminaux de l'API de colocation</block>
@@ -1661,13 +1659,6 @@
   <block id="ca4a2e09f147267af54ea5fd1d962c6a" category="list-text">Cliquez sur *Supprimer* pour supprimer l'espace de travail.</block>
   <block id="e98ed4965158505163fc6b7ffa9ba9b0" category="paragraph">Vous devez associer le connecteur aux espaces de travail pour que les administrateurs d'espace de travail puissent accéder à ces espaces de travail depuis BlueXP.</block>
   <block id="cda68882da0fbacdfcd7b3b52e15c47f" category="list-text">Sélectionnez les espaces de travail à associer au connecteur et cliquez sur *appliquer*.</block>
-  <block id="95a0841b9a7d083d0e92b10bbb2d9538" category="section-title">Gestion des abonnements</block>
-  <block id="0dd6409072fddd7ebe4fbc13bf55f62e" category="paragraph">Après vous être abonné au Marketplace d'un fournisseur cloud, chaque abonnement est disponible dans le widget Account Settings. Vous avez la possibilité de renommer un abonnement et de dissocier l'abonnement d'un ou plusieurs comptes.</block>
-  <block id="4e33b7dde110d702aea770ac0e58ff70" category="inline-link-macro">En savoir plus sur les abonnements</block>
-  <block id="09c202bf0add37d2a76b765c2e456516" category="paragraph"><block ref="461fdc6a79888d7d572f0fc87e6f595a" category="inline-link-macro-rx"></block>.</block>
-  <block id="e60fd65ca245c4c248984b9d4277352e" category="list-text">Cliquez sur *abonnements*.</block>
-  <block id="c34b4a942868a996723a5a6be924703b" category="paragraph"><block ref="c34b4a942868a996723a5a6be924703b" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="acc46a11f0719b1f8e8b77ecf282a60b" category="list-text">Choisissez de renommer l'abonnement ou de gérer les comptes associés à l'abonnement.</block>
   <block id="d99140e9dbce5900e2fc973e36296b03" category="section-title">Modification du nom de votre compte</block>
   <block id="189ceeb6f6551a85e755c8abaeac5372" category="paragraph">Changez le nom de votre compte à tout moment pour le changer en quelque chose de significatif pour vous.</block>
   <block id="92301771e4680316275db3e93ac9036c" category="list-text">Dans l'onglet *vue d'ensemble*, cliquez sur l'icône de modification en regard du nom du compte.</block>
@@ -2004,8 +1995,6 @@
   <block id="f850e57f948d8d4d2e709b781e92097a" category="list-text"><block ref="f850e57f948d8d4d2e709b781e92097a" category="inline-link-rx"></block></block>
   <block id="329d19fc5afbf1e6e6b899cb6324212a" category="summary">Vous pouvez gérer les informations d'identification associées à l'instance de VM Connector.</block>
   <block id="16f38628224f0a131edc6e33cc001598" category="doc">Gestion des informations d'identification et des abonnements Google Cloud pour BlueXP</block>
-  <block id="0b6a93a12e94b586f0634222ff996760" category="section-title">Association d'un abonnement Marketplace aux informations d'identification GCP</block>
-  <block id="b0fb7f98471ec678dbb2ee495f025477" category="paragraph">Lorsque vous déployez un connecteur dans GCP, BlueXP crée un ensemble d'informations d'identification par défaut qui sont associées à l'instance de VM connecteur. Il s'agit des informations d'identification utilisées par BlueXP pour déployer Cloud Volumes ONTAP.</block>
   <block id="fd5876417edb63f12f7c19c175309431" category="paragraph">Vous pouvez à tout moment modifier l'abonnement Marketplace associé à ces informations d'identification. Cet abonnement vous permet de créer un système Cloud Volumes ONTAP basé sur l'utilisation et d'utiliser d'autres services cloud NetApp.</block>
   <block id="ea765af20d763fe16d94ba9ef03fd31b" category="paragraph"><block ref="ea765af20d763fe16d94ba9ef03fd31b" category="inline-image-macro-rx" type="image"></block></block>
   <block id="3607221d62467c2e5249f8716b69616f" category="list-text">Sélectionnez un projet et un abonnement Google Cloud dans la liste déroulante.</block>
@@ -2028,9 +2017,7 @@
   <block id="10e61096cba50402ef6cb31c1b17e8ae" category="list-text">Dans la boîte de dialogue contextuelle, cliquez sur *s'inscrire auprès de NetApp, Inc.* pour être redirigé vers le site Web NetApp BlueXP.</block>
   <block id="e3d03a33db92a9024d72af3cae4684fd" category="inline-image-macro">Capture d'écran d'une fenêtre contextuelle d'enregistrement.</block>
   <block id="6373a7d66fb33193565645f81635ec0c" category="paragraph"><block ref="6373a7d66fb33193565645f81635ec0c" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="d702a454ff12f6e62c26b9cc376bfe70" category="admonition">Cette étape doit être terminée pour lier l'abonnement GCP à votre compte NetApp. Le processus de liaison d'un abonnement n'est pas terminé tant que vous n'êtes pas redirigé à partir de cette page, puis vous connecter à BlueXP.</block>
   <block id="3654f8874077bf13f59590812bd85494" category="list-text">Après avoir été redirigé vers BlueXP, connectez-vous ou inscrivez-vous, puis cliquez sur *Done* pour continuer.</block>
-  <block id="1a6175a8e3e5614e22cf07d1d33b6ac8" category="paragraph">L'abonnement GCP sera lié à tous les comptes NetApp auxquels vous êtes associé.</block>
   <block id="f4c056c11ef2563cc898db48d406c84e" category="inline-image-macro">Copie d'écran permettant de mapper un abonnement GCP sur un compte NetApp.</block>
   <block id="2a085e42ac25547701a033cd0ebb75be" category="paragraph"><block ref="2a085e42ac25547701a033cd0ebb75be" category="inline-image-macro-rx" type="image"></block></block>
   <block id="4314e9e91f1c1e76df01e49490b3367e" category="inline-link">La page Cloud Volumes ONTAP sur le site web de BlueXP</block>
@@ -2842,4 +2829,10 @@
   <block id="8f3118254324aa503647a0f0a4cd34cc" category="list-text">Sélectionnez le rôle personnalisé du connecteur.</block>
   <block id="b0cd7667098b2a3439c52ba1f9334faa" category="inline-link">Documentation Google Cloud</block>
   <block id="ece59c09a5f78f29903e8e1daac67577" category="paragraph">Pour plus de détails, reportez-vous à<block ref="eb023f41fbcdd6f661c855770356f2dc" category="inline-link-rx"></block></block>
+  <block id="12106b63996e2c061ca66d31f3a9c50f" category="summary">Une fois la configuration initiale effectuée, vous pouvez gérer les paramètres de votre compte ultérieurement en gérant les utilisateurs, les comptes de service, les espaces de travail et les connecteurs.</block>
+  <block id="f8c69c794c16f5aeea65ba6150c5c239" category="paragraph"><block ref="a7a3c89d37624da5130984f9aaffd146" category="inline-link-macro-rx"></block>, Vous pouvez gérer ultérieurement les paramètres de votre compte en gérant les utilisateurs, les comptes de service, les espaces de travail et les connecteurs.</block>
+  <block id="2dbb2a35f48f58340e040cb41a1d70b1" category="section-title">Association d'un abonnement Marketplace aux identifiants Google Cloud</block>
+  <block id="72a31d53edf5989e236535eb541ee755" category="paragraph">Lorsque vous déployez un connecteur dans Google Cloud, BlueXP crée un ensemble d'informations d'identification par défaut qui sont associées à l'instance de VM Connector. Il s'agit des informations d'identification utilisées par BlueXP pour déployer Cloud Volumes ONTAP.</block>
+  <block id="80d154feb16cf91b0edec06497c1ceaa" category="admonition">Cette étape doit être terminée pour lier l'abonnement Google Cloud à votre compte NetApp. Le processus de liaison d'un abonnement n'est pas terminé tant que vous n'êtes pas redirigé à partir de cette page, puis vous connecter à BlueXP.</block>
+  <block id="3ef651256a22c79667581299224bf5b3" category="paragraph">L'abonnement à Google Cloud sera lié à tous les comptes NetApp auxquels votre identifiant utilisateur est associé. Si vous avez besoin de limiter l'accès au nouvel abonnement, vous pouvez gérer les comptes NetApp associés à cet abonnement à partir du portefeuille digital. <block ref="b8248518be94d54d622f572d1d196b86" category="inline-link-macro-rx"></block>.</block>
 </blocks>
