@@ -124,6 +124,11 @@ includedPermissions:
 - storage.objects.list
 - monitoring.timeSeries.list
 - storage.buckets.getIamPolicy
+- cloudkms.cryptoKeys.getIamPolicy
+- cloudkms.cryptoKeys.setIamPolicy
+- cloudkms.keyRings.get
+- cloudkms.keyRings.getIamPolicy
+- cloudkms.keyRings.setIamPolicy
 ----
 
 
@@ -228,4 +233,27 @@ includedPermissions:
 
 
 | - Monitoring.timeseries.list - Storage.seaux.getIamPolicy | Pour découvrir des compartiments Google Cloud Storage. 
+
+
+| - Cloudkms.cryptoKeys.get - cloudkms.cryptomonnaies.getIamPolicy - cloudkms.cryptomonnaies.list - cloudkms.cryptoKeys.setIamPolicy - cloudkms.keyrings.get - cloudkms.keyrings.getIamPolicy - cloudkms.keyrings.list - cloudkms.keyRings.setIamPolicy | Pour sélectionner vos propres clés gérées par le client dans l'assistant d'activation de Cloud Backup au lieu d'utiliser les clés de chiffrement gérées par Google par défaut. 
 |===
+
+
+== Journal des modifications
+
+Lorsque des autorisations sont ajoutées et supprimées, nous les noterons dans les sections ci-dessous.
+
+
+
+=== 27 janvier 2023
+
+Les autorisations suivantes ont été ajoutées à la stratégie :
+
+* Cloudkms.cryptoKeys.getIamPolicy
+* cloudkms.cryptoKeys.setIamPolicy
+* Cloudkms.keyrings.get
+* Cloudkms.keyrings.getIamPolicy
+* cloudkms.keyRings.setIamPolicy
+
+
+Ces autorisations sont requises pour Cloud Backup.

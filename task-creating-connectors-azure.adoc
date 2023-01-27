@@ -73,6 +73,18 @@ Le connecteur nécessite un accès Internet sortant pour gérer les ressources e
 | Terminaux | Objectif 
 
 
+| \https://management.azure.com \https://login.microsoftonline.com | Afin de gérer les ressources dans les régions publiques d'Azure. 
+
+
+| \https://management.usgovcloudapi.net \https://login.microsoftonline.us | De gérer les ressources dans les régions Azure Government. 
+
+
+| \https://management.azure.microsoft.scloud \https://login.microsoftonline.microsoft.scloud | Pour gérer les ressources dans la région d'Azure IL6. 
+
+
+| \https://management.chinacloudapi.cn \https://login.chinacloudapi.cn | De gérer les ressources dans les régions Azure China. 
+
+
 | \https://support.netapp.com | Pour obtenir des informations sur les licences et envoyer des messages AutoSupport au support NetApp. 
 
 
