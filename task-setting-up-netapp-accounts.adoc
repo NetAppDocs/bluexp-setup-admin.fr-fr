@@ -123,4 +123,4 @@ Les administrateurs d'espace de travail peuvent désormais utiliser ces connecte
 
 == Et la suite ?
 
-Maintenant que vous avez configuré votre compte, vous pouvez le gérer à tout moment en supprimant des utilisateurs, en gérant des espaces de travail, des connecteurs et des abonnements. link:task-managing-netapp-accounts.html["Découvrez comment gérer votre compte"].
+Maintenant que vous avez configuré votre compte, vous pouvez le gérer à tout moment en supprimant des utilisateurs, en gérant des espaces de travail et en gérant des connecteurs. link:task-managing-netapp-accounts.html["Découvrez comment gérer votre compte"].

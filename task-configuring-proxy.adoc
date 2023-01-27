@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: task-configuring-proxy.html 
 keywords: proxy, proxy server, proxy, internet, HTTP, http, https 
-summary: 'Si vos stratégies d"entreprise nécessitent l"utilisation d"un serveur proxy pour toutes les communications HTTP vers Internet, vous devez configurer vos connecteurs pour utiliser ce serveur proxy HTTP. Le serveur proxy peut se trouver dans le cloud ou dans votre réseau.' 
+summary: 'Si vos stratégies d"entreprise nécessitent l"utilisation d"un serveur proxy pour toutes les communications vers Internet, vous devez configurer vos connecteurs pour utiliser ce serveur proxy. Si vous n"avez pas configuré de connecteur pour utiliser un serveur proxy pendant l"installation, vous pouvez configurer le connecteur pour qu"il utilise ce serveur proxy à tout moment.' 
 ---
-= Configuration d'un connecteur pour utiliser un serveur proxy HTTP
+= Configurez un connecteur pour utiliser un serveur proxy HTTP
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,10 +14,9 @@ summary: 'Si vos stratégies d"entreprise nécessitent l"utilisation d"un serveu
 
 
 [role="lead"]
-Si vos stratégies d'entreprise nécessitent l'utilisation d'un serveur proxy pour toutes les communications HTTP vers Internet, vous devez configurer vos connecteurs pour qu'ils utilisent un serveur proxy HTTP. Le serveur proxy peut se trouver dans le cloud ou dans votre réseau.
+Si vos stratégies d'entreprise nécessitent l'utilisation d'un serveur proxy pour toutes les communications vers Internet, vous devez configurer vos connecteurs pour utiliser ce serveur proxy. Si vous n'avez pas configuré de connecteur pour utiliser un serveur proxy pendant l'installation, vous pouvez configurer le connecteur pour qu'il utilise ce serveur proxy à tout moment.
 
-
-NOTE: BlueXP ne prend pas en charge l'utilisation d'un proxy HTTPS avec le connecteur.
+BlueXP prend en charge la configuration d'un serveur proxy HTTP à partir de l'interface utilisateur. Le serveur proxy peut se trouver dans le cloud ou dans votre réseau.
 
 La configuration du connecteur pour utiliser un serveur proxy HTTP fournit un accès Internet sortant si une adresse IP publique ou une passerelle NAT n'est pas disponible. Ce serveur proxy fournit uniquement le connecteur avec une connexion sortante. Il n'offre aucune connectivité pour les systèmes Cloud Volumes ONTAP.
 
