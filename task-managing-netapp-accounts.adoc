@@ -282,6 +282,10 @@ Nous ne recommandons pas de désactiver la plate-forme SaaS sauf si vous devez v
 
 Les services suivants ne sont pas disponibles auprès de BlueXP si vous désactivez la plate-forme SaaS :
 
+* La sauvegarde dans le cloud
++
+Cloud Backup est pris en charge dans les régions du secteur public lorsque la plateforme SaaS est désactivée, mais pas dans les régions commerciales lorsque la plateforme SaaS est désactivée
+
 * Sens des données cloud
 * Kubernetes
 * Tiering dans le cloud

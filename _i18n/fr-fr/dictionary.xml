@@ -2848,4 +2848,5 @@
   <block id="a046fbde0a8e04968445555624e37a69" category="summary">Si vos stratégies d'entreprise nécessitent l'utilisation d'un serveur proxy pour toutes les communications vers Internet, vous devez configurer vos connecteurs pour utiliser ce serveur proxy. Si vous n'avez pas configuré de connecteur pour utiliser un serveur proxy pendant l'installation, vous pouvez configurer le connecteur pour qu'il utilise ce serveur proxy à tout moment.</block>
   <block id="07fe9439c5f6159dd126f0b5ad5b0282" category="doc">Configurez un connecteur pour utiliser un serveur proxy HTTP</block>
   <block id="231f168c8922afc18c96c3ab2866fb77" category="paragraph">BlueXP prend en charge la configuration d'un serveur proxy HTTP à partir de l'interface utilisateur. Le serveur proxy peut se trouver dans le cloud ou dans votre réseau.</block>
+  <block id="adff0cc7ebdc35c0671c2e9adb29cd98" category="paragraph">Cloud Backup est pris en charge dans les régions du secteur public lorsque la plateforme SaaS est désactivée, mais pas dans les régions commerciales lorsque la plateforme SaaS est désactivée</block>
 </blocks>
