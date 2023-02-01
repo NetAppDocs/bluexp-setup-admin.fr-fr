@@ -1092,7 +1092,6 @@
   <block id="d52202757c4d92357913471e220a772a" category="paragraph"><block ref="f796454a6004e39753971668625d9d8d" category="inline-xref-macro-rx"></block>.</block>
   <block id="39cab3defe876dfaf2b80cf98f49e2c7" category="list-text">Si vous utilisez un VPC partagé, configurez des autorisations dans le projet de service et le projet hôte.</block>
   <block id="324adee08a3c7a87ddad1096556db802" category="paragraph"><block ref="f14d47c142ef6f4bd65c33223ef00cac" category="inline-xref-macro-rx"></block>.</block>
-  <block id="3d19b00e58ef1af50dd7a50cb57d2a9b" category="paragraph">Vous avez besoin d'un VPC et d'un sous-réseau avec un accès Internet sortant à des terminaux spécifiques. Si un proxy HTTP est requis pour l'Internet sortant, vous aurez besoin de l'adresse IP, des identifiants et du certificat HTTPS.</block>
   <block id="0adaf59e592ea102330ecf66723d01c0" category="inline-xref">Afficher les besoins en matière de mise en réseau</block>
   <block id="e18d3aaf46d9323ec3d44fd9d3878734" category="paragraph"><block ref="77e8c70950b7db505fe53c4bcd55f41a" category="inline-xref-macro-rx"></block>.</block>
   <block id="d82c8fcef9b6dd8fb6808c96dcbc5bb5" category="list-text">API Cloud Deployment Manager V2</block>
@@ -1157,7 +1156,6 @@
   <block id="c8f224037ea295aeec347c94779d9932" category="section-title">Accès Internet sortant</block>
   <block id="c0dfa216f26874dae52a89e0090a3358" category="paragraph">Le connecteur nécessite un accès Internet sortant pour gérer les ressources et les processus au sein de votre environnement de cloud public.</block>
   <block id="824f455afa0ae197e5e7156988b6dc50" category="section-title">Serveur proxy</block>
-  <block id="3ae1b8362f96338c0c28c7652251bc8b" category="paragraph">Si votre organisation nécessite le déploiement d'un proxy HTTP pour tout le trafic Internet sortant, obtenez les informations suivantes concernant votre proxy HTTP :</block>
   <block id="75ba8d70e3692ba200f0e0df37b4d2ae" category="list-text">Adresse IP</block>
   <block id="2daf1cb573c2c61422faf64610cf9402" category="list-text">Informations d'identification</block>
   <block id="6a3f3799bc264d32568bb7169ddd515a" category="list-text">Certificat HTTPS</block>
@@ -1654,8 +1652,6 @@
   <block id="736683b36559de9a86788ab6e33c00d8" category="paragraph">Si vous désactivez la plateforme SaaS, vous devrez effectuer toutes les tâches à partir de <block ref="d248ae1d8e530aaf57663e2d920abe18" category="inline-link-macro-rx"></block>.</block>
   <block id="1ce82671debd0854eab737731870ba89" category="admonition">Il s'agit d'une action irréversible qui vous empêchera d'utiliser la plate-forme BlueXP SaaS. Vous devrez effectuer des actions à partir du connecteur local. Vous ne pourrez pas utiliser de nombreux services cloud intégrés de NetApp et mettre à disposition de la plateforme SaaS aura besoin de l'aide de NetApp.</block>
   <block id="bd24a7e9d8368897df823b65a8960e61" category="list-text">Dans l'onglet vue d'ensemble, activez l'option pour désactiver l'utilisation de la plateforme SaaS.</block>
-  <block id="cd5948a5853fc000f635c34407e9be0e" category="paragraph">La configuration du connecteur pour utiliser un serveur proxy HTTP fournit un accès Internet sortant si une adresse IP publique ou une passerelle NAT n'est pas disponible. Ce serveur proxy fournit uniquement le connecteur avec une connexion sortante. Il n'offre aucune connectivité pour les systèmes Cloud Volumes ONTAP.</block>
-  <block id="b39b73ad4fe9a846dd3074a3698f2989" category="paragraph">Si les systèmes Cloud Volumes ONTAP ne disposent pas d'une connexion Internet sortante pour envoyer des messages AutoSupport, BlueXP configure automatiquement ces systèmes Cloud Volumes ONTAP pour utiliser un serveur proxy inclus avec le connecteur. La seule condition est de s'assurer que le groupe de sécurité du connecteur autorise les connexions entrantes sur le port 3128. Vous devrez ouvrir ce port après le déploiement du connecteur.</block>
   <block id="58dcadbd8de2066b4071d6ed4e0b4baf" category="section-title">Activez un proxy sur un connecteur</block>
   <block id="a211e8f0d908dfd70d36364b3fbd91b0" category="paragraph">Lorsque vous configurez un connecteur pour utiliser un serveur proxy, ce connecteur et les systèmes Cloud Volumes ONTAP qu'il gère (y compris les médiateurs HA) utilisent tous le serveur proxy.</block>
   <block id="3b7b9877611524faf200a074a681f3fc" category="paragraph">Notez que cette opération redémarre le connecteur. Assurez-vous que le connecteur n'effectue aucune opération avant de continuer.</block>
@@ -1670,7 +1666,6 @@
   <block id="612b348971c225ac2d665ccff3a8413d" category="list-text">Sous *général*, cliquez sur *Configuration du proxy HTTP*.</block>
   <block id="2c451caa323474f558c4e4065578647d" category="list-text">Configurez le proxy :</block>
   <block id="45258bae64ec247989d17b5b6233b7b8" category="list-text">Cliquez sur *Activer proxy*.</block>
-  <block id="8550306d83f9fe682f85ed3f60217f89" category="list-text">Spécifiez le serveur à l'aide de la syntaxe<block ref="f8f3e404ad5e32f60f55bb48e6395ae6" category="inline-link-rx"></block></block>
   <block id="3d069ceba6ecf8b2c1c3def00d512e45" category="list-text">Spécifiez un nom d'utilisateur et un mot de passe si une authentification de base est requise pour le serveur</block>
   <block id="4cc186df234138a57b2e8c5d8e5f7f8d" category="list-text">Cliquez sur *Enregistrer*.</block>
   <block id="099fd4b1efe59a1ac46efb50c44be6fd" category="admonition">BlueXP ne prend pas en charge les mots de passe comprenant le caractère @.</block>
@@ -2107,7 +2102,6 @@
   <block id="1e17f84cb9dec317624996c0ebd90221" category="paragraph">Lorsque vous créez le connecteur à partir de BlueXP, vous devez fournir l'ID d'application (client) et l'ID de répertoire (tenant) de l'application. BlueXP utilise les ID pour se connecter par programmation.</block>
   <block id="26f0c6c76fbc2f0b096a4ff32489120c" category="paragraph">Votre principal de service est maintenant configuré et vous devez avoir copié l'ID de l'application (client), l'ID du répertoire (tenant) et la valeur du secret client. Vous devez saisir ces informations dans BlueXP lorsque vous créez le connecteur.</block>
   <block id="5c75ce614010ed72ceeef735acca6f29" category="section-title">Créez le connecteur en vous connectant avec le principal de service</block>
-  <block id="7b3422536b44078a6701640706be10a0" category="list-text">Détails sur un proxy HTTP, si votre organisation nécessite un proxy pour tout le trafic Internet sortant :</block>
   <block id="1086659fbba9a8aed49e109adc659d56" category="list-text">Sur la page *déploiement d'un connecteur* :</block>
   <block id="3e51a9204bf7c3a99ce916328857c361" category="list-text">Sous *Authentication*, cliquez sur *Active Directory Service principal* et entrez des informations sur le principal du service Azure Active Directory qui accorde les autorisations requises :</block>
   <block id="42dedb42cdb310c29307f9649dd6b146" category="list-text">ID de l'application (client) : voir <block ref="6e43fddc58b77d10342452e0c5f86200" category="inline-xref-macro-rx"></block>.</block>
@@ -2263,7 +2257,6 @@
   <block id="edda80be79ac3f7cac925a65c6a3e5b5" category="list-text">Ajoutez des balises personnalisées (métadonnées) à l'instance.</block>
   <block id="a91e6553337808a75b0f62d2990d028b" category="list-text">Choisissez si vous souhaitez que BlueXP crée un nouveau rôle avec les autorisations requises, ou si vous souhaitez sélectionner un rôle existant que vous avez configuré avec <block ref="8b098a06817becf62c06297dd76999b5" category="inline-link-macro-rx"></block>.</block>
   <block id="bc08dffbc581e8fd57ce1bac9b369e13" category="list-text">Indiquez si vous souhaitez chiffrer les disques EBS du connecteur. Vous pouvez utiliser la clé de chiffrement par défaut ou utiliser une clé personnalisée.</block>
-  <block id="9a5f9a8791099f371ab5a4d09e6974a7" category="list-text">*Network* : spécifiez un VPC, un sous-réseau et une paire de clés pour l'instance, choisissez d'activer ou non une adresse IP publique et, éventuellement, spécifiez une configuration proxy.</block>
   <block id="10d640974ffe6a13a9a3a5b33c7610d6" category="paragraph">Assurez-vous que vous disposez de la paire de clés appropriée à utiliser avec le connecteur. Sans paire de clés, vous ne pourrez pas accéder à la machine virtuelle Connector.</block>
   <block id="5d1144c70f9657fe3fbc8d4918974ddb" category="paragraph">Si vous disposez de compartiments Amazon S3 sur le même compte AWS que celui sur lequel vous avez créé le connecteur, l'environnement de travail Amazon S3 s'affiche automatiquement sur la fenêtre Canvas. <block ref="24e8a034d6d6fc16941efffc954c2b3b" category="inline-link-macro-rx"></block>.</block>
   <block id="707ec1de29fdfa3b7ff52edcd68ec08e" category="summary">Dans le cas d'une région commerciale AWS, il est préférable de créer un connecteur directement depuis BlueXP, mais vous pouvez aussi lancer un connecteur depuis AWS Marketplace, si vous préférez. Pour les régions gouvernementales d'AWS, vous ne pouvez pas déployer le connecteur dans une région gouvernementale à partir du site Web BlueXP SaaS. La meilleure option consiste donc à le faire à partir d'AWS Marketplace.</block>
@@ -2701,7 +2694,6 @@
   <block id="49fa0b884bb05dfb3678aff69fc2a90f" category="list-text">\https://production-artifacts.cloudmanager.cloud.netapp.com</block>
   <block id="f55e31da35f47937201bdbf54e964315" category="list-text">\https://*.blob.core.windows.net</block>
   <block id="4212008c2b937ee581ff9e530b8440f8" category="list-text">Privilèges root pour installer le connecteur.</block>
-  <block id="f39873ba3fdf2dff72b117d1ccc0a3f8" category="list-text">Détails sur un serveur proxy, si un proxy est requis pour accéder à Internet à partir du connecteur.</block>
   <block id="2d8d8f0bca25643e72f72642f3d69663" category="paragraph">Vous avez la possibilité de configurer un serveur proxy après l'installation, mais cela nécessite de redémarrer le connecteur.</block>
   <block id="65b78a376b8b24b27e70f95a439510ed" category="list-text">Certificat signé par une autorité de certification, si le serveur proxy utilise HTTPS.</block>
   <block id="e4e566d8d29952e9ed77e5d97574962e" category="paragraph">Vous devez télécharger le programme d'installation du connecteur destiné à être utilisé sur votre réseau ou dans le cloud.</block>
@@ -2846,7 +2838,18 @@
   <block id="46f3c2b17cd41da44d4022428c48ec74" category="list-text">Un cluster Kubernetes</block>
   <block id="aa2a9593bd535a1923acb9053fd7788b" category="paragraph">Vous pouvez utiliser un connecteur avec plusieurs services de données cloud NetApp. Par exemple, si vous utilisez un connecteur pour gérer Cloud Volumes ONTAP, vous pouvez utiliser le même connecteur avec un autre service comme NetApp Cloud Tiering.</block>
   <block id="a046fbde0a8e04968445555624e37a69" category="summary">Si vos stratégies d'entreprise nécessitent l'utilisation d'un serveur proxy pour toutes les communications vers Internet, vous devez configurer vos connecteurs pour utiliser ce serveur proxy. Si vous n'avez pas configuré de connecteur pour utiliser un serveur proxy pendant l'installation, vous pouvez configurer le connecteur pour qu'il utilise ce serveur proxy à tout moment.</block>
-  <block id="07fe9439c5f6159dd126f0b5ad5b0282" category="doc">Configurez un connecteur pour utiliser un serveur proxy HTTP</block>
-  <block id="231f168c8922afc18c96c3ab2866fb77" category="paragraph">BlueXP prend en charge la configuration d'un serveur proxy HTTP à partir de l'interface utilisateur. Le serveur proxy peut se trouver dans le cloud ou dans votre réseau.</block>
   <block id="adff0cc7ebdc35c0671c2e9adb29cd98" category="paragraph">Cloud Backup est pris en charge dans les régions du secteur public lorsque la plateforme SaaS est désactivée, mais pas dans les régions commerciales lorsque la plateforme SaaS est désactivée</block>
+  <block id="a8c35528b3f05016e72e71694bb679ee" category="list-text">Détails sur un serveur proxy, si un proxy est requis pour accéder à Internet à partir du connecteur. HTTP et HTTPS sont pris en charge.</block>
+  <block id="16c184ab0a5376cef0ecef7f0da93ac2" category="list-text">Si les variables système _http_proxy_ ou _https_proxy_ sont définies sur l'hôte, supprimez-les :</block>
+  <block id="15c8f910fc596ecb4a8b91027b56de66" category="paragraph">Si vous ne supprimez pas ces variables système, l'installation échouera.</block>
+  <block id="dae5521ccadea1321150f5f74aad0a58" category="paragraph">Si votre organisation nécessite le déploiement d'un serveur proxy pour tout le trafic Internet sortant, obtenez les informations suivantes sur votre proxy HTTP ou HTTPS :</block>
+  <block id="eea7ea20469c0fce0042b06e0bb1327a" category="list-text">Détails sur un serveur proxy, si votre organisation nécessite un proxy pour tout le trafic Internet sortant :</block>
+  <block id="5ecf1d4c60139fd535d59e1ca3b91b76" category="paragraph">Il effectue les requêtes d'API suivantes pour déployer et gérer Cloud Volumes ONTAP dans Azure.</block>
+  <block id="7e3934b4ea56939b597edfcf84aa4803" category="paragraph">Vous avez besoin d'un VPC et d'un sous-réseau avec un accès Internet sortant à des terminaux spécifiques. Si un serveur proxy est requis pour l'Internet sortant, vous aurez besoin de l'adresse IP, des informations d'identification et du certificat HTTPS.</block>
+  <block id="146adb7944757e88795676b780c31811" category="doc">Configurez un connecteur pour utiliser un serveur proxy</block>
+  <block id="9d8704731bd068bd3be5ad98b7941cba" category="paragraph">BlueXP prend en charge HTTP et HTTPS. Le serveur proxy peut se trouver dans le cloud ou dans votre réseau.</block>
+  <block id="30d7902c191c571f1aa091af3df65f3d" category="paragraph">La configuration du connecteur pour utiliser un serveur proxy fournit un accès Internet sortant si une adresse IP publique ou une passerelle NAT n'est pas disponible. Ce serveur proxy fournit uniquement le connecteur avec une connexion sortante. Il n'offre aucune connectivité pour les systèmes Cloud Volumes ONTAP.</block>
+  <block id="66dcf6df2e799ff19e8fe5b0ed10a143" category="paragraph">Si les systèmes Cloud Volumes ONTAP ne disposent pas d'une connexion Internet sortante pour envoyer des messages AutoSupport, BlueXP configure automatiquement ces systèmes Cloud Volumes ONTAP pour utiliser un serveur proxy inclus avec le connecteur. La seule condition est de s'assurer que le groupe de sécurité du connecteur autorise les connexions entrantes sur le port 3128. Vous devrez ouvrir ce port après le déploiement du connecteur.</block>
+  <block id="25e8eb6a683e97e04e337e061a18205c" category="list-text">Spécifiez le serveur à l'aide de la syntaxe<block ref="f8f3e404ad5e32f60f55bb48e6395ae6" category="inline-link-rx"></block> ou<block ref="9ab29a9097f3907435367cc314192885" category="inline-link-rx"></block></block>
+  <block id="5b2b679cfd4361d102ffc80defe9709e" category="list-text">*Network* : spécifiez un VPC, un sous-réseau et une paire de clés pour l'instance, choisissez d'activer ou non une adresse IP publique, et spécifiez éventuellement une configuration proxy (HTTP et HTTPS sont pris en charge).</block>
 </blocks>

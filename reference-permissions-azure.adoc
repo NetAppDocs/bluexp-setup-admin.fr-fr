@@ -425,7 +425,7 @@ Le connecteur effectue les demandes d'API suivantes pour les opérations quotidi
 
 === Cloud Volumes ONTAP
 
-Il effectue les requêtes d'API suivantes pour déployer et gérer Cloud Volumes ONTAP dans AWS.
+Il effectue les requêtes d'API suivantes pour déployer et gérer Cloud Volumes ONTAP dans Azure.
 
 [cols="5*"]
 |===

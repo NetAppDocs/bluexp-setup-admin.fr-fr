@@ -51,7 +51,7 @@ Pour commencer rapidement, suivez ces étapes ou faites défiler jusqu'aux secti
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["Deux"] Configurer la mise en réseau
 [role="quick-margin-para"]
-Vous avez besoin d'un VPC et d'un sous-réseau avec un accès Internet sortant à des terminaux spécifiques. Si un proxy HTTP est requis pour l'Internet sortant, vous aurez besoin de l'adresse IP, des identifiants et du certificat HTTPS.
+Vous avez besoin d'un VPC et d'un sous-réseau avec un accès Internet sortant à des terminaux spécifiques. Si un serveur proxy est requis pour l'Internet sortant, vous aurez besoin de l'adresse IP, des informations d'identification et du certificat HTTPS.
 
 [role="quick-margin-para"]
 <<Configurer la mise en réseau,Afficher les besoins en matière de mise en réseau>>.
@@ -423,7 +423,7 @@ NOTE: Le connecteur est en train de contacter « cloudmanager.cloud.netapp.com",
 
 === Serveur proxy
 
-Si votre organisation nécessite le déploiement d'un proxy HTTP pour tout le trafic Internet sortant, obtenez les informations suivantes concernant votre proxy HTTP :
+Si votre organisation nécessite le déploiement d'un serveur proxy pour tout le trafic Internet sortant, obtenez les informations suivantes sur votre proxy HTTP ou HTTPS :
 
 * Adresse IP
 * Informations d'identification

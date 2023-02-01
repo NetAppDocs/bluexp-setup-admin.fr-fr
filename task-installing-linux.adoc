@@ -88,7 +88,7 @@ Après avoir vérifié que vous disposez d'un hôte Linux pris en charge, vous p
 
 .Ce dont vous avez besoin
 * Privilèges root pour installer le connecteur.
-* Détails sur un serveur proxy, si un proxy est requis pour accéder à Internet à partir du connecteur.
+* Détails sur un serveur proxy, si un proxy est requis pour accéder à Internet à partir du connecteur. HTTP et HTTPS sont pris en charge.
 +
 Vous avez la possibilité de configurer un serveur proxy après l'installation, mais cela nécessite de redémarrer le connecteur.
 
@@ -110,6 +110,16 @@ Si vous recevez un message indiquant que l'installation de awscli a échoué, vo
 ----
 sudo systemctl enable docker && sudo systemctl start docker
 ----
+. Si les variables système _http_proxy_ ou _https_proxy_ sont définies sur l'hôte, supprimez-les :
++
+[source, cli]
+----
+unset http_proxy
+unset https_proxy
+----
++
+Si vous ne supprimez pas ces variables système, l'installation échouera.
+
 . Téléchargez le logiciel du connecteur à partir du https://mysupport.netapp.com/site/products/all/details/cloud-manager/downloads-tab["Site de support NetApp"^], Puis copiez-le sur l'hôte Linux.
 +
 Vous devez télécharger le programme d'installation du connecteur destiné à être utilisé sur votre réseau ou dans le cloud.

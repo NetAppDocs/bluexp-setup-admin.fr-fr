@@ -66,7 +66,7 @@ NOTE: Le connecteur est en train de contacter « cloudmanager.cloud.netapp.com",
 
 === Serveur proxy
 
-Si votre organisation nécessite le déploiement d'un proxy HTTP pour tout le trafic Internet sortant, obtenez les informations suivantes concernant votre proxy HTTP :
+Si votre organisation nécessite le déploiement d'un serveur proxy pour tout le trafic Internet sortant, obtenez les informations suivantes sur votre proxy HTTP ou HTTPS :
 
 * Adresse IP
 * Informations d'identification
