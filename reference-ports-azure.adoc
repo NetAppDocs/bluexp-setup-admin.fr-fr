@@ -37,7 +37,7 @@ Le groupe de sécurité Azure pour le connecteur nécessite à la fois des règl
 | TCP | 3128 | Permet à Cloud Volumes ONTAP d'accéder à Internet pour l'envoi des messages AutoSupport au support NetApp. Vous devez ouvrir ce port manuellement après le déploiement. <<Proxy server for AutoSupport messages,En savoir plus sur le serveur proxy du connecteur>>. 
 
 
-| TCP | 9060 | Il est possible d'activer et d'utiliser Cloud Data Sense et Cloud Backup dans les déploiements dans le cloud pour les administrations publiques. Ce port est également requis pour Cloud Backup si vous désactivez l'interface SaaS dans votre compte BlueXP. 
+| TCP | 9060 février 9061 | Il est possible d'activer et d'utiliser Cloud Data Sense et Cloud Backup dans les déploiements dans le cloud pour les administrations publiques. Ces ports sont également requis pour Cloud Backup si vous désactivez l'interface SaaS dans votre compte BlueXP. 
 |===
 
 
