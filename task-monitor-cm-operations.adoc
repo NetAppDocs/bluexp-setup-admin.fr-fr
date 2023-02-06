@@ -98,7 +98,7 @@ Vous pouvez envoyer par e-mail des types de notifications spécifiques afin de v
 
 [NOTE]
 ====
-* À l'heure actuelle, seuls Cloud Sync, Cloud Backup et protection contre les ransomwares envoient des notifications par e-mail. D'autres services seront ajoutés dans les prochaines versions.
+* Les notifications sont alors envoyées par e-mail pour les fonctionnalités et services BlueXP suivants : connecteurs, Cloud Sync, sauvegarde dans le cloud et protection contre les attaques par ransomware. D'autres services seront ajoutés dans les prochaines versions.
 * L'envoi de notifications par e-mail n'est pas pris en charge lorsque le connecteur est installé sur un site sans accès à Internet.
 
 
@@ -143,7 +143,7 @@ image:screenshot-add-email-recipient.png["Copie d'écran montrant comment ajoute
 
 Vous pouvez supprimer des notifications de la page si vous n'avez plus besoin de les voir. Vous pouvez rejeter toutes les notifications en une seule fois ou rejeter les notifications individuelles.
 
-Pour ignorer toutes les notifications, dans le Centre de notification, cliquez sur image:button_3_vert_dots.png[""] Et sélectionnez *rejeter tout*.image:screenshot_notification_menu.png["Capture d'écran affichant le menu Notifications pour sélectionner les paramètres et ignorer toutes les options."]
+Pour ignorer toutes les notifications, dans le Centre de notification, cliquez sur image:button_3_vert_dots.png["une icône avec trois points verticaux"] Et sélectionnez *rejeter tout*.image:screenshot_notification_menu.png["Capture d'écran affichant le menu Notifications pour sélectionner les paramètres et ignorer toutes les options."]
 
 Pour ignorer des notifications individuelles, placez le curseur sur la notification et cliquez sur *rejeter*.image:screenshot_notification_dismiss1.png["Capture d'écran montrant comment rejeter une seule notification."]
 

@@ -323,12 +323,35 @@ Vous devez créer un connecteur avant de pouvoir modifier les paramètres BlueXP
 +
 image:screenshot_azure_add_subscription.png["Capture d'écran du menu d'action pour un ensemble d'informations d'identification existantes."]
 
-. Sélectionnez un abonnement dans la liste déroulante ou cliquez sur *Ajouter un abonnement* et suivez les étapes pour créer un nouvel abonnement.
+. Pour associer les informations d'identification à un abonnement existant, sélectionnez-le dans la liste déroulante et cliquez sur *associer*.
+. Pour associer les informations d'identification à un nouvel abonnement, cliquez sur *Ajouter un abonnement > Continuer* et suivez les étapes dans Azure Marketplace :
 +
-La vidéo suivante démarre à partir du contexte de l'assistant de l'environnement de travail, mais vous montre le même flux de travail après avoir cliqué sur *Ajouter un abonnement* :
+.. Si vous y êtes invité, connectez-vous à votre compte Azure.
+.. Cliquez sur *Créer*.
+.. Remplissez le formulaire et cliquez sur *Abonnez-vous*.
+.. Cliquez sur *Notifications* et cliquez sur le lien de la notification pour configurer votre compte.
+.. Cliquez sur *configurer le compte*.
++
+Vous serez redirigé vers le site Web BlueXP.
+
+.. À partir de la page *attribution d'abonnement* :
++
+*** Sélectionnez les comptes NetApp auxquels vous souhaitez associer cet abonnement.
+*** Dans le champ *remplacer l'abonnement existant*, choisissez si vous souhaitez remplacer automatiquement l'abonnement existant pour un compte par ce nouvel abonnement.
++
+BlueXP remplace l'abonnement existant pour toutes les informations d'identification du compte par ce nouvel abonnement. Si un ensemble d'informations d'identification n'a jamais été associé à un abonnement, ce nouvel abonnement ne sera pas associé à ces informations d'identification.
 
 +
-video::video_subscribing_azure.mp4[width=848,height=480]
+Pour tous les autres comptes, vous devez associer manuellement l'abonnement en répétant ces étapes.
+
+*** Cliquez sur *Enregistrer*.
+
+
+
+
++
+image:screenshot-azure-subscription.png["Capture d'écran de la page attribution d'abonnement qui vous permet d'associer cet abonnement à un ou plusieurs comptes et de choisir de remplacer l'abonnement existant pour l'un de ces comptes."]
+
 
 
 

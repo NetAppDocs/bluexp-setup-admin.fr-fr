@@ -101,6 +101,8 @@ Par exemple, un connecteur est un composant clé de la santé et du fonctionneme
 
 NOTE: Si votre système Cloud Volumes ONTAP dispose d'une licence BYOL basée sur des nœuds, le système reste opérationnel au bout de 14 jours, car la licence est installée sur le système Cloud Volumes ONTAP.
 
+BlueXP vous avertira si votre connecteur a été mis hors tension pendant 14 jours ou plus. https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-monitor-cm-operations.html["En savoir plus sur les notifications BlueXP"].
+
 
 
 == Comment créer un connecteur

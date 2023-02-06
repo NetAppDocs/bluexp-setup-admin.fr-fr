@@ -40,7 +40,7 @@ image:screenshot_gcp_associate.gif["Copie d'écran d'un projet Google Cloud et d
 
 NOTE: Avant de terminer les étapes suivantes, assurez-vous que vous disposez des deux privilèges d'administrateur de facturation dans votre compte Google Cloud ainsi que d'une connexion BlueXP.
 
-. Redécouvrez les étapes de l'abonnement et cliquez sur *Continuer*.
+. Passez en revue les étapes de l'abonnement et cliquez sur *Continuer*.
 +
 image:screenshot_gcp_sub_popup.png["Capture d'écran d'une fenêtre contextuelle d'abonnement."]
 
@@ -65,16 +65,25 @@ image:screenshot_gcp_marketplace_register.png["Capture d'écran d'une fenêtre c
 
 NOTE: Cette étape doit être terminée pour lier l'abonnement Google Cloud à votre compte NetApp. Le processus de liaison d'un abonnement n'est pas terminé tant que vous n'êtes pas redirigé à partir de cette page, puis vous connecter à BlueXP.
 
-. Après avoir été redirigé vers BlueXP, connectez-vous ou inscrivez-vous, puis cliquez sur *Done* pour continuer.
+. À partir de la page *attribution d'abonnement* :
 +
-L'abonnement à Google Cloud sera lié à tous les comptes NetApp auxquels votre identifiant utilisateur est associé. Si vous avez besoin de limiter l'accès au nouvel abonnement, vous pouvez gérer les comptes NetApp associés à cet abonnement à partir du portefeuille digital. link:task-manage-subscriptions.html#manage-your-subscriptions["Découvrez comment gérer vos abonnements"].
+** Sélectionnez les comptes NetApp auxquels vous souhaitez associer cet abonnement.
+** Dans le champ *remplacer l'abonnement existant*, choisissez si vous souhaitez remplacer automatiquement l'abonnement existant pour un compte par ce nouvel abonnement.
++
+BlueXP remplace l'abonnement existant pour toutes les informations d'identification du compte par ce nouvel abonnement. Si un ensemble d'informations d'identification n'a jamais été associé à un abonnement, ce nouvel abonnement ne sera pas associé à ces informations d'identification.
 
 +
-image:screenshot_gcp_sub_mapping.png["Copie d'écran permettant de mapper un abonnement GCP sur un compte NetApp."]
+Pour tous les autres comptes, vous devez associer manuellement l'abonnement en répétant ces étapes.
+
+** Cliquez sur *Enregistrer*.
++
+image:screenshot-google-cloud-subscription.png["Capture d'écran de la page attribution d'abonnement qui vous permet d'associer cet abonnement à un ou plusieurs comptes et de choisir de remplacer l'abonnement existant pour l'un de ces comptes."]
 
 +
 
-NOTE: Si un membre de votre entreprise a déjà souscrit à l'abonnement NetApp BlueXP à partir de votre compte de facturation, vous serez redirigé vers https://cloud.netapp.com/ontap-cloud?x-gcp-marketplace-token=["La page Cloud Volumes ONTAP sur le site web de BlueXP"^] à la place. Si cela est inattendu, contactez votre équipe commerciale NetApp. Google n'autorise qu'un seul abonnement par compte de facturation Google.
+NOTE: Si un membre de votre entreprise a déjà souscrit à l'abonnement NetApp BlueXP à partir de votre compte de facturation, vous serez redirigé vers https://bluexp.netapp.com/ontap-cloud?x-gcp-marketplace-token=["La page Cloud Volumes ONTAP sur le site web de BlueXP"^] à la place. Si cela est inattendu, contactez votre équipe commerciale NetApp. Google n'autorise qu'un seul abonnement par compte de facturation Google.
+
+
 
 . Une fois ce processus terminé, revenez à la page d'informations d'identification dans BlueXP et sélectionnez ce nouvel abonnement.
 +
@@ -94,11 +103,11 @@ Parfois, l'abonnement à Cloud Volumes ONTAP via Google Cloud Marketplace peut d
 image:screenshot_gcp_manage_orders.png["Capture d'écran de la page Marketplace post-abonnement."]
 
 +
-.. Si la commande affiche une coche verte et que cela est inattendu, il est possible que quelqu'un d'autre de l'entreprise utilisant le même compte de facturation soit déjà abonné. Si cela est inattendu ou si vous avez besoin des détails de cet abonnement, contactez votre équipe commerciale NetApp.
+** Si la commande affiche une coche verte et que cela est inattendu, il est possible que quelqu'un d'autre de l'entreprise utilisant le même compte de facturation soit déjà abonné. Si cela est inattendu ou si vous avez besoin des détails de cet abonnement, contactez votre équipe commerciale NetApp.
 +
 image:screenshot_gcp_green_marketplace.png["Copie d'écran d'un droit accepté."]
 
-.. Si la commande affiche une horloge et l'état *en attente*, revenez à la page Marketplace et choisissez *gérer sur fournisseur* pour terminer le processus comme indiqué ci-dessus.
+** Si la commande affiche une horloge et l'état *en attente*, revenez à la page Marketplace et choisissez *gérer sur fournisseur* pour terminer le processus comme indiqué ci-dessus.
 +
 image:screenshot_gcp_pending_marketplace.png["Copie d'écran d'un droit de marché en attente."]
 

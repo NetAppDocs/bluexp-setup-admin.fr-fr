@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: reference-connector-default-config.html 
 keywords: linux, user name, operating system, installation files, installation folder, folder, log, logs, service, mysql, packages, linux 
-summary: Si vous devez dépanner le connecteur, il peut vous aider à comprendre sa configuration. 
+summary: 'Vous voudrez peut-être en savoir plus sur le connecteur avant de le déployer ou pour résoudre d"autres problèmes.' 
 ---
 = Configuration par défaut du connecteur
 :hardbreaks:

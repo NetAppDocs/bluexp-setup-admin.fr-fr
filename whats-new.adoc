@@ -18,6 +18,54 @@ Découvrez les nouveautés de BlueXP (anciennement Cloud Manager), qui inclut no
 
 
 
+== 5 février 2023
+
+
+
+=== Connecteur 3.9.26
+
+* Sur la page *connexion*, vous êtes invité à saisir l'adresse e-mail associée à votre connexion. Après avoir cliqué sur *Suivant*, BlueXP vous invite à vous authentifier à l'aide de la méthode d'authentification associée à votre connexion :
++
+** Le mot de passe de vos identifiants cloud NetApp
+** Vos identifiants d'identité fédérés
+** Vos identifiants du site du support NetApp
+
+
++
+image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-setup-admin/main/media/screenshot-login.png["Capture d'écran de la page de connexion BlueXP où vous êtes invité à saisir votre adresse e-mail."]
+
+* Si vous connaissez déjà BlueXP et que vous disposez d'informations d'identification pour le site de support NetApp (NSS), vous pouvez ignorer la page d'inscription et entrer votre adresse e-mail directement dans la page de connexion. BlueXP vous inscrit dans le cadre de cette connexion initiale.
+* Lorsque vous vous abonnez à BlueXP depuis le Marketplace de votre fournisseur de services Cloud, vous avez désormais la possibilité de remplacer l'abonnement existant pour un compte par le nouvel abonnement.
++
+image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-setup-admin/main/media/screenshot-aws-subscription.png["Capture d'écran indiquant l'affectation d'abonnement pour un compte BlueXP."]
+
++
+** https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-aws-accounts.html#associate-an-aws-subscription["Découvrez comment associer un abonnement AWS"]
+** https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-azure-accounts.html#associating-an-azure-marketplace-subscription-to-credentials["Découvrez comment associer un abonnement Azure"]
+** https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-gcp-accounts.html["Découvrez comment associer un abonnement Google Cloud"]
+
+
+* BlueXP vous avertira désormais si votre connecteur a été mis hors tension pendant 14 jours ou plus.
++
+** https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-monitor-cm-operations.html["En savoir plus sur les notifications BlueXP"]
+** https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html#connectors-should-remain-running["Découvrez pourquoi les connecteurs doivent rester en fonctionnement"]
+
+
+* Nous avons mis à jour la règle de connecteur pour Google Cloud afin d'inclure une autorisation requise pour créer et gérer des machines virtuelles de stockage sur des paires haute disponibilité Cloud Volumes ONTAP :
++
+compute.instances.updateNetworkInterface
+
++
+https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-gcp.html["Afficher les autorisations Google Cloud pour le connecteur"].
+
+* Cette version du connecteur inclut des améliorations Cloud Volumes ONTAP.
++
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#5-february-2023["Découvrez les améliorations apportées à Cloud Volumes ONTAP"^]
+
+
+
+
+
 == 1er janvier 2023
 
 

@@ -71,6 +71,9 @@ includedPermissions:
 - compute.instances.start
 - compute.instances.stop
 - compute.instances.updateDisplayDevice
+- compute.instanceGroups.get
+- compute.addresses.get
+- compute.instances.updateNetworkInterface
 - compute.machineTypes.get
 - compute.networks.get
 - compute.networks.list
@@ -229,7 +232,7 @@ includedPermissions:
 | - container.cluster.get - container.cluster.list | Pour détecter les clusters Kubernetes s'exécutant dans Google Kubernetes Engine. 
 
 
-| - compute.instanceGroups.get - Compute.adresses.get | Pour créer et gérer des VM de stockage sur des paires haute disponibilité. 
+| - compute.instanceGroups.get - Compute.adresses.get - compute.instances.updateNetworkInterface | Pour créer et gérer des machines virtuelles de stockage sur des paires haute disponibilité Cloud Volumes ONTAP. 
 
 
 | - Monitoring.timeseries.list - Storage.seaux.getIamPolicy | Pour découvrir des compartiments Google Cloud Storage. 
@@ -242,6 +245,17 @@ includedPermissions:
 == Journal des modifications
 
 Lorsque des autorisations sont ajoutées et supprimées, nous les noterons dans les sections ci-dessous.
+
+
+
+=== 6 février 2023
+
+L'autorisation suivante a été ajoutée à cette règle :
+
+* compute.instances.updateNetworkInterface
+
+
+Cette autorisation est requise pour Cloud Volumes ONTAP.
 
 
 

@@ -126,24 +126,10 @@
   <block id="8fa7e084836ae35d976f6f572a47e804" category="paragraph">Si vous accédez à BlueXP à partir d'une région gouvernementale ou d'un site qui n'a pas d'accès Internet sortant, vous devez vous connecter à l'interface utilisateur BlueXP qui fonctionne localement sur le connecteur. <block ref="2061c033ff26af000ddf0a91359fc3b2" category="inline-link-macro-rx"></block>.</block>
   <block id="d168984ba5f06fd829697588a7bfa38c" category="paragraph">Vous pouvez vous connecter à BlueXP à l'aide de l'une des options suivantes :</block>
   <block id="19df8bb4b5a805b23aeac731605bdf21" category="list-text">Vos identifiants existants du site de support NetApp (NSS)</block>
-  <block id="d4a9f9b97db61be5fe92f3ac1eb2b99f" category="inline-link-macro">Découvrez comment ajouter vos identifiants NSS à BlueXP</block>
-  <block id="c84b60bfaa10c18f34667a07c9422a47" category="paragraph">Lorsque vous utilisez cette option, vos identifiants du site du support NetApp ne sont pas ajoutés à BlueXP dans le tableau de bord du support. Vous devez ajouter vos identifiants NSS à BlueXP pour activer les flux de travail clés pour Cloud Volumes ONTAP. <block ref="d3c005e09d65fc19351c4de2d73c488b" category="inline-link-macro-rx"></block>.</block>
   <block id="691be8e1993c2535e4afe5834afe3b01" category="list-text">Un identifiant NetApp Cloud avec votre adresse e-mail et un mot de passe</block>
   <block id="36c40fc323b30ac7c63a4ad0ca63d488" category="inline-link">Centre d'aide BlueXP</block>
-  <block id="2611f7eb65cf3359137dafdfb95483ae" category="paragraph">Cette option prend en charge les connexions fédérées. Vous pouvez utiliser l'authentification unique pour vous connecter à l'aide des informations d'identification de votre annuaire d'entreprise (identité fédérée). Pour en savoir plus, consultez le<block ref="4281905c7145d3afc1e5083b48ba043f" category="inline-link-rx"></block> puis cliquez sur *options de connexion*.</block>
-  <block id="dcc1672f59b5dd25758f8f44fe7f04cd" category="paragraph">Chaque fois que vous vous connectez, vous devez utiliser la même option que celle que vous avez choisie lors de votre première connexion.</block>
-  <block id="13a0adeb2b159ac19c415adb2a302ac7" category="list-text">Si vous vous êtes inscrit en vous connectant à l'aide de vos identifiants du site de support NetApp, vous devez utiliser cette option de connexion à chaque fois.</block>
-  <block id="decc333898509c715afbf4242e91a6fc" category="list-text">Si vous vous êtes inscrit en saisissant votre e-mail et votre mot de passe, vous devez entrer ces informations d'identification chaque fois que vous vous connectez.</block>
   <block id="5975f7e9036c78e6217b16f295f0ca75" category="inline-link">Console BlueXP</block>
-  <block id="b6f593055aa7e0982c84cef15bca2d4a" category="paragraph">La page de connexion NetApp BlueXP s'affiche.</block>
-  <block id="2d9d1cf392d46cf284c202c45ca6710f" category="inline-image-macro">Page de connexion pour BlueXP.</block>
-  <block id="d1458c5f683deb76200e00ee241652dd" category="paragraph"><block ref="d1458c5f683deb76200e00ee241652dd" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="9adc5d79168a4f6fe5dd0fcf70c16475" category="list-text">Choisissez l'une des options de connexion :</block>
-  <block id="4505e1a9383d05ecfa12dbc235eb5329" category="list-text">Si vous avez déjà créé les identifiants cloud NetApp, connectez-vous à l'aide de votre e-mail et de votre mot de passe.</block>
-  <block id="141fe8ab65ca39501902b608f4303617" category="list-text">Si vous ne possédez pas de identifiants cloud, mais que vous disposez déjà d'un compte sur le site de support NetApp (NSS), sélectionnez *Connectez-vous à l'aide de vos identifiants du site de support NetApp*.</block>
-  <block id="bb501d2843c655901a71a82a7ee49692" category="list-text">Si vous ne possédez pas de compte NSS et que vous n'avez pas créé les identifiants cloud NetApp, cliquez sur *Sign Up* pour créer un identifiant cloud NetApp.</block>
   <block id="9998984c95caccce61e49ca25de1c99f" category="paragraph">Notez que seuls les caractères anglais sont autorisés dans le formulaire d'inscription.</block>
-  <block id="e35134037761a63173898591344fceff" category="paragraph">Vous recevrez ensuite un e-mail de NetApp. Cliquez sur le lien dans l'e-mail pour vérifier votre adresse e-mail, puis connectez-vous.</block>
   <block id="0cdc0aaedcc5278681de9de08217447f" category="paragraph">Vous êtes maintenant connecté et pouvez commencer à utiliser BlueXP pour gérer votre infrastructure multicloud hybride.</block>
   <block id="1cc2f617f426fbf9060a71767fca6e4d" category="summary">Lancez-vous avec BlueXP (anciennement Cloud Manager), qui vous permet de commencer à utiliser les services cloud de NetApp pour gérer vos données dans un multicloud hybride. Une fois la configuration terminée, vous pouvez gérer vos comptes NetApp, vos connecteurs, vos comptes fournisseurs cloud, etc.</block>
   <block id="f12aeeed0f164c86af69a57fddb01689" category="doc">Configuration et administration de BlueXP</block>
@@ -467,7 +453,6 @@
   <block id="aa414a57d6f1347fc5212beb06655a8e" category="paragraph">Les règles de pare-feu prédéfinies pour le connecteur ouvrent tout le trafic sortant. Si cela est acceptable, suivez les règles de base de l'appel sortant. Si vous avez besoin de règles plus rigides, utilisez les règles de sortie avancées.</block>
   <block id="bd83f7d2350eb6b777b2622dfd275ab6" category="paragraph">Les règles de pare-feu prédéfinies pour le connecteur comprennent les règles de trafic sortant suivantes.</block>
   <block id="6dabf2a1195c84bdf3b7bf30e5ddf080" category="cell">Appels d'API vers GCP et ONTAP, vers le cloud Data Sense, vers le service ransomware et envoi de messages AutoSupport à NetApp</block>
-  <block id="d091f5f5ef56e437171dce81de151778" category="summary">Si vous devez dépanner le connecteur, il peut vous aider à comprendre sa configuration.</block>
   <block id="6e8114a6676a5923599d8d78479d23d8" category="doc">Configuration par défaut du connecteur</block>
   <block id="2fc22405cb36e8596d9bdb7b52cbf10c" category="paragraph">Vous voudrez peut-être en savoir plus sur le connecteur avant de le déployer ou pour résoudre d'autres problèmes.</block>
   <block id="87047facc49847cec237f6d055d56b31" category="section-title">Configuration par défaut avec accès à Internet</block>
@@ -603,8 +588,6 @@
   <block id="cfce2399f4f36929c6a0ea17350ac8aa" category="cell">Pour activer le sens des données du cloud.</block>
   <block id="f85c74998244978e7f2016bbc795aea2" category="cell">- container.cluster.get - container.cluster.list</block>
   <block id="ddfb140a67cb8f801143468683f3e453" category="cell">Pour détecter les clusters Kubernetes s'exécutant dans Google Kubernetes Engine.</block>
-  <block id="d91c9747b757db55982f71a386bfd0d6" category="cell">- compute.instanceGroups.get - Compute.adresses.get</block>
-  <block id="e6896223c5f9bd9bbdd1b0c9eac6686f" category="cell">Pour créer et gérer des VM de stockage sur des paires haute disponibilité.</block>
   <block id="54f877a36cc65a39f4c972facb5d5a3d" category="cell">- Monitoring.timeseries.list - Storage.seaux.getIamPolicy</block>
   <block id="884e026d3505b2b3847b25f6cecb4de7" category="cell">Pour découvrir des compartiments Google Cloud Storage.</block>
   <block id="98f73dbfe3a96f8444f7cdc9589aff85" category="summary">Utilisez cette liste de contrôle pour comprendre ce dont vous avez besoin pour être opérationnel avec BlueXP dans un déploiement typique où le connecteur dispose d'un accès Internet sortant.</block>
@@ -979,7 +962,6 @@
   <block id="fe001b474268cb9300af19ba4c12edd8" category="list-text">Cliquez sur le menu d'action correspondant à un ensemble d'informations d'identification, puis sélectionnez *associer un abonnement*.</block>
   <block id="0d28acbceed906f52a206d0f3fb0add2" category="inline-image-macro">Capture d'écran du menu d'action pour un ensemble d'informations d'identification existantes.</block>
   <block id="583059f51a0b347f747db9f8d2421392" category="paragraph"><block ref="583059f51a0b347f747db9f8d2421392" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="a47f53881d8adf66979b7824c6871988" category="list-text">Sélectionnez un abonnement existant dans la liste déroulante ou cliquez sur *Ajouter un abonnement* et suivez les étapes pour créer un nouvel abonnement.</block>
   <block id="c98f8dfd7e317cb87d057d9e065d71d4" category="section-title">Modifier les informations d'identification</block>
   <block id="eceb74088d706d5484df6b70296f87ad" category="paragraph">Modifiez vos informations d'identification AWS dans BlueXP en modifiant le type de compte (clés AWS ou rôle supposons), en modifiant le nom ou en mettant à jour les informations d'identification elles-mêmes (clés ou rôle ARN).</block>
   <block id="608e5d2c6ae29eafd4acefb54d76730a" category="admonition">Vous ne pouvez pas modifier les informations d'identification d'un profil d'instance associé à une instance de connecteur.</block>
@@ -1476,7 +1458,6 @@
   <block id="5026faf22ad07ea6356957ba78cd71f2" category="section-title">Rejet des notifications</block>
   <block id="e438ae665566728a83af19e41ac9ac6d" category="paragraph">Vous pouvez supprimer des notifications de la page si vous n'avez plus besoin de les voir. Vous pouvez rejeter toutes les notifications en une seule fois ou rejeter les notifications individuelles.</block>
   <block id="ca1c9774b98be72a0f55d88b3579e19c" category="inline-image-macro">Capture d'écran affichant le menu Notifications pour sélectionner les paramètres et ignorer toutes les options.</block>
-  <block id="169974c04efd5d0f65ab0cf4fc3a8939" category="paragraph">Pour ignorer toutes les notifications, dans le Centre de notification, cliquez sur <block ref="7fad804aeb2163ef7cf5d7bac2acba8b" category="inline-image-macro-rx" type="image"></block> Et sélectionnez *rejeter tout*.<block ref="e49bd0cb9810a0678258a0ab07786c5e" category="inline-image-macro-rx" type="image"></block></block>
   <block id="8e94ce578d759d7ee56ab163db1168d4" category="inline-image-macro">Capture d'écran montrant comment rejeter une seule notification.</block>
   <block id="15993a193bb692f21f638b2b59581171" category="paragraph">Pour ignorer des notifications individuelles, placez le curseur sur la notification et cliquez sur *rejeter*.<block ref="1932261efa358e221b5ec460a7384dc2" category="inline-image-macro-rx" type="image"></block></block>
   <block id="32d01e2ee6eb96c809aad8205457b728" category="section-title">Audit de l'activité de l'utilisateur dans votre compte</block>
@@ -1801,8 +1782,6 @@
   <block id="2e6aa15d4609a29d86e5e9f886599c4c" category="paragraph">Deux scénarios peuvent vous être associés à un abonnement Azure Marketplace une fois que vous avez déjà ajouté les informations d'identification à BlueXP :</block>
   <block id="086754afbe30b09d7f6a643dd6e05800" category="list-text">Vous souhaitez remplacer un abonnement Azure Marketplace existant par un nouvel abonnement.</block>
   <block id="20a8a479e52579cf8f1fe773676218bc" category="paragraph"><block ref="20a8a479e52579cf8f1fe773676218bc" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="b86938912fe1dfce153836270d6c53ea" category="list-text">Sélectionnez un abonnement dans la liste déroulante ou cliquez sur *Ajouter un abonnement* et suivez les étapes pour créer un nouvel abonnement.</block>
-  <block id="5f5e29b0ef69aac086f8623314c61c8b" category="paragraph">La vidéo suivante démarre à partir du contexte de l'assistant de l'environnement de travail, mais vous montre le même flux de travail après avoir cliqué sur *Ajouter un abonnement* :</block>
   <block id="f237b70f3f3799f90d3acf9d0c78e108" category="section-title">Modification des informations d'identification</block>
   <block id="bf6a5b9863bb599dd7d76e43de882036" category="paragraph">Modifiez vos informations d'identification Azure dans BlueXP en modifiant les informations d'identification de votre service Azure. Par exemple, vous devrez peut-être mettre à jour le secret client si un nouveau secret a été créé pour l'application principale du service.</block>
   <block id="6d38e36088ec5fff8ddb7198d300d2e6" category="doc">Installez le connecteur sur un hôte Linux existant ayant accès à Internet</block>
@@ -1970,7 +1949,6 @@
   <block id="cab980518d03aa36afc924b709828a6e" category="paragraph"><block ref="cab980518d03aa36afc924b709828a6e" category="inline-image-macro-rx" type="image"></block></block>
   <block id="1c3692898f95f79b425ac8b50f45bb06" category="list-text">Si vous n'avez pas encore d'abonnement, cliquez sur *Ajouter un abonnement* et suivez les étapes ci-dessous pour créer un nouvel abonnement.</block>
   <block id="7a0df3203d8f6522d2b39b5f4c38db03" category="admonition">Avant de terminer les étapes suivantes, assurez-vous que vous disposez des deux privilèges d'administrateur de facturation dans votre compte Google Cloud ainsi que d'une connexion BlueXP.</block>
-  <block id="49c43770df63f7099c5f01292d0e24e2" category="list-text">Redécouvrez les étapes de l'abonnement et cliquez sur *Continuer*.</block>
   <block id="e34e3eb07d03eff321019c85029cb441" category="inline-image-macro">Capture d'écran d'une fenêtre contextuelle d'abonnement.</block>
   <block id="1c258a9e8501efe4f4ce95f3fd83a245" category="paragraph"><block ref="1c258a9e8501efe4f4ce95f3fd83a245" category="inline-image-macro-rx" type="image"></block></block>
   <block id="cdcf076c3fd3e62a3c7e3691d02894db" category="inline-link">Page NetApp BlueXP sur Google Cloud Marketplace</block>
@@ -1985,11 +1963,7 @@
   <block id="10e61096cba50402ef6cb31c1b17e8ae" category="list-text">Dans la boîte de dialogue contextuelle, cliquez sur *s'inscrire auprès de NetApp, Inc.* pour être redirigé vers le site Web NetApp BlueXP.</block>
   <block id="e3d03a33db92a9024d72af3cae4684fd" category="inline-image-macro">Capture d'écran d'une fenêtre contextuelle d'enregistrement.</block>
   <block id="6373a7d66fb33193565645f81635ec0c" category="paragraph"><block ref="6373a7d66fb33193565645f81635ec0c" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="3654f8874077bf13f59590812bd85494" category="list-text">Après avoir été redirigé vers BlueXP, connectez-vous ou inscrivez-vous, puis cliquez sur *Done* pour continuer.</block>
-  <block id="f4c056c11ef2563cc898db48d406c84e" category="inline-image-macro">Copie d'écran permettant de mapper un abonnement GCP sur un compte NetApp.</block>
-  <block id="2a085e42ac25547701a033cd0ebb75be" category="paragraph"><block ref="2a085e42ac25547701a033cd0ebb75be" category="inline-image-macro-rx" type="image"></block></block>
   <block id="4314e9e91f1c1e76df01e49490b3367e" category="inline-link">La page Cloud Volumes ONTAP sur le site web de BlueXP</block>
-  <block id="289bd5956a254b6fa364eac8856b1768" category="admonition">Si un membre de votre entreprise a déjà souscrit à l'abonnement NetApp BlueXP à partir de votre compte de facturation, vous serez redirigé vers<block ref="03328ba9e09d435ba77b020263fc11e5" category="inline-link-rx"></block> à la place. Si cela est inattendu, contactez votre équipe commerciale NetApp. Google n'autorise qu'un seul abonnement par compte de facturation Google.</block>
   <block id="5894b1931d65e9796cc25db1bb6fd566" category="list-text">Une fois ce processus terminé, revenez à la page d'informations d'identification dans BlueXP et sélectionnez ce nouvel abonnement.</block>
   <block id="467e5d6bbcd0ea531c8f7285b69e29ee" category="inline-image-macro">Capture d'écran de la page d'affectation d'abonnement.</block>
   <block id="60d2ed6f6e1774535b6e69274800381d" category="paragraph"><block ref="60d2ed6f6e1774535b6e69274800381d" category="inline-image-macro-rx" type="image"></block></block>
@@ -2680,7 +2654,6 @@
   <block id="3b9dafc67ff049020d09b9ebd18aaa5d" category="paragraph-title"><block ref="beadfa85a2fdca06b91edc1131c603e6" category="inline-image-macro-rx" type="image"></block> Créer le connecteur</block>
   <block id="5ccc745272c52ce1868d5bcf2b07705a" category="section-title">Gestion des espaces de travail d'un administrateur d'espace de travail</block>
   <block id="1cf32fb78afaf111cd4c8421dc8592a6" category="section-title">Gestion des espaces de travail d'un connecteur</block>
-  <block id="c558073ec27a1686dce5ebbe5da43092" category="paragraph-title">Options de connexion</block>
   <block id="25fd4db5a75c387fe3fd85258810fcad" category="list-text">Si vous choisissez d'installer manuellement le connecteur sur votre propre hôte Linux (et non directement à partir de l'interface BlueXP), le programme d'installation du connecteur nécessite l'accès à plusieurs noeuds finaux pendant le processus d'installation :</block>
   <block id="d225210f36f5d8518fad068e89f2d1c3" category="inline-link-macro">Passez en revue la liste des noeuds finaux</block>
   <block id="c0355dfc890e268b51bb88722cb448a9" category="paragraph"><block ref="12b2338905766fe009fef0e6c52eb82d" category="inline-link-macro-rx"></block>.</block>
@@ -2778,7 +2751,6 @@
   <block id="ef67c5eab6f3bfee1596c3f8734a88c7" category="paragraph">Même si aucun connecteur n'est nécessaire pour la découverte directe d'un cluster ONTAP sur site, un connecteur est nécessaire pour tirer parti des fonctionnalités BlueXP supplémentaires.</block>
   <block id="eec3baeb5aa60415324495790bc2f136" category="inline-link">En savoir plus sur les options de découverte et de gestion des clusters ONTAP sur site</block>
   <block id="7a5dd38f95e02bff17a0b6c794d9ce2b" category="paragraph"><block ref="7a5dd38f95e02bff17a0b6c794d9ce2b" category="inline-link-rx"></block></block>
-  <block id="82e02d499effaa5b28aba8ede321e414" category="list-text">À l'heure actuelle, seuls Cloud Sync, Cloud Backup et protection contre les ransomwares envoient des notifications par e-mail. D'autres services seront ajoutés dans les prochaines versions.</block>
   <block id="8fb23cdc1bc8f3ca6d2863041a4364b5" category="list-text">Si vous déployez Cloud Volumes ONTAP sur tous les projets, assurez-vous que le connecteur a accès à ces projets.</block>
   <block id="c17e95cb1967072e9156ac6ad6f7c033" category="paragraph"><block ref="02f20f4e9af364f73c72b808dd1224d3" category="inline-xref-macro-rx"></block>.</block>
   <block id="8e791012319a6cc33e02b9f65f0eb71d" category="paragraph">En fonction de votre configuration, vous devrez peut-être également suivre les étapes suivantes :</block>
@@ -2797,7 +2769,6 @@
   <block id="2dbb2a35f48f58340e040cb41a1d70b1" category="section-title">Association d'un abonnement Marketplace aux identifiants Google Cloud</block>
   <block id="72a31d53edf5989e236535eb541ee755" category="paragraph">Lorsque vous déployez un connecteur dans Google Cloud, BlueXP crée un ensemble d'informations d'identification par défaut qui sont associées à l'instance de VM Connector. Il s'agit des informations d'identification utilisées par BlueXP pour déployer Cloud Volumes ONTAP.</block>
   <block id="80d154feb16cf91b0edec06497c1ceaa" category="admonition">Cette étape doit être terminée pour lier l'abonnement Google Cloud à votre compte NetApp. Le processus de liaison d'un abonnement n'est pas terminé tant que vous n'êtes pas redirigé à partir de cette page, puis vous connecter à BlueXP.</block>
-  <block id="3ef651256a22c79667581299224bf5b3" category="paragraph">L'abonnement à Google Cloud sera lié à tous les comptes NetApp auxquels votre identifiant utilisateur est associé. Si vous avez besoin de limiter l'accès au nouvel abonnement, vous pouvez gérer les comptes NetApp associés à cet abonnement à partir du portefeuille digital. <block ref="b8248518be94d54d622f572d1d196b86" category="inline-link-macro-rx"></block>.</block>
   <block id="cc328ccddf672987f092ca6f44c9f9cf" category="cell">\https://management.azure.com \https://login.microsoftonline.com</block>
   <block id="068395f3cd26ca40ad905de3790c9435" category="cell">Afin de gérer les ressources dans les régions publiques d'Azure.</block>
   <block id="6696e65cc873b2af9823ebafd2e332a8" category="cell">\https://management.usgovcloudapi.net \https://login.microsoftonline.us</block>
@@ -2852,4 +2823,98 @@
   <block id="5b2b679cfd4361d102ffc80defe9709e" category="list-text">*Network* : spécifiez un VPC, un sous-réseau et une paire de clés pour l'instance, choisissez d'activer ou non une adresse IP publique, et spécifiez éventuellement une configuration proxy (HTTP et HTTPS sont pris en charge).</block>
   <block id="6bd6b829c865d2a64a85e79355655e12" category="cell">9060 février 9061</block>
   <block id="971da77efd7f98f0cb0eeb45103b5b77" category="cell">Il est possible d'activer et d'utiliser Cloud Data Sense et Cloud Backup dans les déploiements dans le cloud pour les administrations publiques. Ces ports sont également requis pour Cloud Backup si vous désactivez l'interface SaaS dans votre compte BlueXP.</block>
+  <block id="35189ab5714b42941b6c22320f395243" category="list-text">Pour associer les informations d'identification à un abonnement existant, sélectionnez-le dans la liste déroulante et cliquez sur *associer*.</block>
+  <block id="7f024bcfe9b965209454c94e48004d5d" category="list-text">Pour associer les informations d'identification à un nouvel abonnement, cliquez sur *Ajouter un abonnement &gt; Continuer* et suivez les étapes dans Azure Marketplace :</block>
+  <block id="7dffa6296286b12f66d638f53340316c" category="list-text">Si vous y êtes invité, connectez-vous à votre compte Azure.</block>
+  <block id="229d7258c60456f36a718cd138813888" category="list-text">Remplissez le formulaire et cliquez sur *Abonnez-vous*.</block>
+  <block id="a6f968ccb979a102bb5ce0538b9f2456" category="list-text">Cliquez sur *Notifications* et cliquez sur le lien de la notification pour configurer votre compte.</block>
+  <block id="daa4df96e26fea6c1270d01a4426eab1" category="list-text">Cliquez sur *configurer le compte*.</block>
+  <block id="344ece1ef43a9e3bbb281e15f3df6442" category="paragraph">Vous serez redirigé vers le site Web BlueXP.</block>
+  <block id="cb735ebf950ed5c7902b507f70582bd3" category="list-text">À partir de la page *attribution d'abonnement* :</block>
+  <block id="761b37459e9daab0f25c3e9b5edfd370" category="list-text">Sélectionnez les comptes NetApp auxquels vous souhaitez associer cet abonnement.</block>
+  <block id="e0c62276bada3b5536cceb070664c871" category="list-text">Dans le champ *remplacer l'abonnement existant*, choisissez si vous souhaitez remplacer automatiquement l'abonnement existant pour un compte par ce nouvel abonnement.</block>
+  <block id="23d838dbd51becc56367e6d9358b446e" category="paragraph">BlueXP remplace l'abonnement existant pour toutes les informations d'identification du compte par ce nouvel abonnement. Si un ensemble d'informations d'identification n'a jamais été associé à un abonnement, ce nouvel abonnement ne sera pas associé à ces informations d'identification.</block>
+  <block id="b4676b03cb1388f474b207b449af0dc2" category="paragraph">Pour tous les autres comptes, vous devez associer manuellement l'abonnement en répétant ces étapes.</block>
+  <block id="ef545e4a852035275622b3ad9df636de" category="inline-image-macro">Capture d'écran de la page attribution d'abonnement qui vous permet d'associer cet abonnement à un ou plusieurs comptes et de choisir de remplacer l'abonnement existant pour l'un de ces comptes.</block>
+  <block id="56884c9225391e21aea7cf42dd6f7bd5" category="paragraph"><block ref="56884c9225391e21aea7cf42dd6f7bd5" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="4a4cfdd3c4b047c552e6626beca055d3" category="summary">Lorsque vous commencez avec BlueXP, votre première étape est de vous inscrire. Vous aurez la possibilité de créer un compte, mais vous pouvez ignorer cette étape si vous êtes invité à un compte existant.</block>
+  <block id="156c302d186fc36d9d944c5d74b971af" category="doc">Inscrivez-vous à BlueXP</block>
+  <block id="a6da179f46168e9455ae7e15202c1a47" category="paragraph-title">Une note sur les régions gouvernementales</block>
+  <block id="c26e6228331f8b9fa1978950800424ee" category="paragraph">Si vous devez accéder à BlueXP à partir d'une région gouvernementale ou d'un site qui ne dispose pas d'un accès Internet sortant, vous devez créer un connecteur et vous connecter à l'interface utilisateur BlueXP qui fonctionne localement sur le connecteur. <block ref="2061c033ff26af000ddf0a91359fc3b2" category="inline-link-macro-rx"></block>.</block>
+  <block id="213954d7bdaa5b2d9eab4ee897a935d3" category="paragraph-title">Options d'inscription</block>
+  <block id="4c6d74757138aa41d2d5f2b14bb05ad1" category="paragraph">Vous pouvez vous inscrire à BlueXP à l'aide de l'une des options suivantes :</block>
+  <block id="d7330e52ac45b9d5a769aa9a5c244319" category="list-text">Une connexion au cloud NetApp en indiquant votre adresse e-mail et votre mot de passe</block>
+  <block id="521c7a764fe6fa451475e20f1742173e" category="paragraph">Les deux options prennent en charge une connexion fédérée, qui permet une authentification unique à l'aide des informations d'identification de votre annuaire d'entreprise (identité fédérée). Une fois inscrit, vous pouvez configurer une connexion fédérée à partir du<block ref="4281905c7145d3afc1e5083b48ba043f" category="inline-link-rx"></block> En sélectionnant *Options de connexion à Cloud Central*.</block>
+  <block id="9f1b84fa92d950a165d75ff20ea339ef" category="list-text">Sur la page *connexion*, sélectionnez *Inscription*.</block>
+  <block id="c838c41871c4f726a74cecb65930bcdd" category="admonition">Si vous prévoyez d'utiliser vos identifiants NSS existants, vous pouvez ignorer la page d'inscription et entrer votre adresse e-mail directement dans la page de connexion. BlueXP vous inscrit dans le cadre de cette connexion initiale.</block>
+  <block id="9a076f8e1167c7f54e717f3312d9be22" category="list-text">Sur la page *s'inscrire*, choisissez l'une des options de connexion :</block>
+  <block id="eb7dc3949c534285123f407b97df88ce" category="list-text">Si vous possédez déjà un compte sur le site de support NetApp, sélectionnez *Inscrivez-vous avec vos identifiants du site de support NetApp*.</block>
+  <block id="a67ec4292dbbae18fa7d903a5925529f" category="inline-link-macro">Découvrez comment ajouter vos identifiants NSS au tableau de bord du support pour activer les flux de travail clés</block>
+  <block id="f36fff08cce9f284672696a03c3af986" category="paragraph">Lorsque vous utilisez cette option, vos identifiants du site du support NetApp ne sont pas ajoutés à BlueXP dans le tableau de bord du support. <block ref="6dd91a7e65a4b86508888798b6f600ec" category="inline-link-macro-rx"></block>.</block>
+  <block id="5185f2e203db6dcf60732c4adcccbd15" category="list-text">Si vous ne disposez pas d'un compte NSS et que vous n'avez pas créé de identifiants cloud NetApp, entrez les informations requises pour créer un identifiant dans le cloud NetApp.</block>
+  <block id="b0844d01c75bb6b60219ee536f20aa15" category="list-text">Lorsque vous y êtes invité, consultez le contrat de licence de l'utilisateur final et acceptez les conditions.</block>
+  <block id="a2d1bd30e95a89c4ecb9d6a39da84e3a" category="list-text">Sur la page *Bienvenue*, saisissez un nom pour votre compte.</block>
+  <block id="efb45899558a953ff7d6578e89aa2c1c" category="inline-link-macro">Découvrez comment ajouter des membres à un compte existant</block>
+  <block id="f0416cc7adfb705444d5a66527cb9ce5" category="paragraph">Si votre entreprise a déjà un compte et que vous souhaitez y joindre, ignorez cette étape et demandez au propriétaire de vous associer au compte. Une fois que le propriétaire vous a ajouté, vous pouvez vous connecter et accéder au compte. <block ref="3b04849a18b87204738aa991e5f8575e" category="inline-link-macro-rx"></block>.</block>
+  <block id="ecbca8245155432067c380b55b5146bb" category="paragraph">Un compte est la partie supérieure de la plateforme d'identités de NetApp. Il vous permet d'ajouter et de gérer des utilisateurs, des rôles, des autorisations et des environnements de travail.</block>
+  <block id="a860f226d10bcd54ab238e5189d94747" category="inline-image-macro">Capture d'écran de la page d'accueil qui s'affiche lorsque vous vous connectez avec un nouveau compte qui n'appartient pas à un compte.</block>
+  <block id="e079acaa326ddf3b1cb6ee167cce08f4" category="paragraph"><block ref="e079acaa326ddf3b1cb6ee167cce08f4" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="20653d224bca9fb40181f3916e4f643d" category="list-text">Sélectionnez *Créer un compte*.</block>
+  <block id="2f0488f8a3ca91699637c323ed3b7ae7" category="paragraph">Vous disposez maintenant d'un identifiant BlueXP et d'un compte. Dans la plupart des cas, l'étape suivante consiste à créer un connecteur qui connecte les services de BlueXP à votre environnement de cloud hybride.</block>
+  <block id="c12be2d5c6d53ffeba2b81d18475c007" category="list-text">Passez en revue les étapes de l'abonnement et cliquez sur *Continuer*.</block>
+  <block id="5f6337397041d9f655e961c010a87fdc" category="paragraph"><block ref="5f6337397041d9f655e961c010a87fdc" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="e5d34a7be7e3c957d955b41f31cc1b6b" category="admonition">Si un membre de votre entreprise a déjà souscrit à l'abonnement NetApp BlueXP à partir de votre compte de facturation, vous serez redirigé vers<block ref="35e104e3e4686d9ee172091b57b45bc0" category="inline-link-rx"></block> à la place. Si cela est inattendu, contactez votre équipe commerciale NetApp. Google n'autorise qu'un seul abonnement par compte de facturation Google.</block>
+  <block id="18ed152ca3e6d97795e3c62f29f14fa3" category="inline-link">En savoir plus sur les notifications BlueXP</block>
+  <block id="aea5351abe13a2ef43df184a5caed50e" category="paragraph">BlueXP vous avertira si votre connecteur a été mis hors tension pendant 14 jours ou plus.<block ref="e16712c557ed9121be1392c11d3884a1" category="inline-link-rx"></block>.</block>
+  <block id="4bfec65bcbc9665c362f6c53301324c5" category="cell">- compute.instanceGroups.get - Compute.adresses.get - compute.instances.updateNetworkInterface</block>
+  <block id="c5338aa09d091a71f3080053c9a0edc0" category="cell">Pour créer et gérer des machines virtuelles de stockage sur des paires haute disponibilité Cloud Volumes ONTAP.</block>
+  <block id="00e6f4ddf63e81c5de84a3913163d11d" category="section-title">6 février 2023</block>
+  <block id="26e9753e85fc2c13a9569cd1345a5b06" category="paragraph">L'autorisation suivante a été ajoutée à cette règle :</block>
+  <block id="3503950ea6a1ba87d4be44e07b1a16c8" category="list-text">compute.instances.updateNetworkInterface</block>
+  <block id="0f30e2d10fca6f69c5f7a23bb2b30b1b" category="paragraph">Cette autorisation est requise pour Cloud Volumes ONTAP.</block>
+  <block id="e1bc7b26155063f1ce71b76f655669ef" category="section-title">5 février 2023</block>
+  <block id="d2ab99e3c8406089dca863337debb121" category="section-title">Connecteur 3.9.26</block>
+  <block id="330ddcd0a3779c8729cfb2c56aeb33f5" category="list-text">Sur la page *connexion*, vous êtes invité à saisir l'adresse e-mail associée à votre connexion. Après avoir cliqué sur *Suivant*, BlueXP vous invite à vous authentifier à l'aide de la méthode d'authentification associée à votre connexion :</block>
+  <block id="1baec3621cd37cfb63c78d95c414ca61" category="list-text">Le mot de passe de vos identifiants cloud NetApp</block>
+  <block id="1dca7678a1041ed05b6071c24454dfde" category="list-text">Vos identifiants d'identité fédérés</block>
+  <block id="9ec04e5ecf7230969f472cb3ba28f9d5" category="list-text">Vos identifiants du site du support NetApp</block>
+  <block id="95161959ea62121420b9e6e6553c5afa" category="inline-image-macro">Capture d'écran de la page de connexion BlueXP où vous êtes invité à saisir votre adresse e-mail.</block>
+  <block id="7fef862357cf2face17cb8062b1f051f" category="paragraph"><block ref="7fef862357cf2face17cb8062b1f051f" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="9cb7486a7e7f24abb51cfcc8bb6085db" category="list-text">Si vous connaissez déjà BlueXP et que vous disposez d'informations d'identification pour le site de support NetApp (NSS), vous pouvez ignorer la page d'inscription et entrer votre adresse e-mail directement dans la page de connexion. BlueXP vous inscrit dans le cadre de cette connexion initiale.</block>
+  <block id="845c6364e1c82b67190dc691538533e1" category="list-text">Lorsque vous vous abonnez à BlueXP depuis le Marketplace de votre fournisseur de services Cloud, vous avez désormais la possibilité de remplacer l'abonnement existant pour un compte par le nouvel abonnement.</block>
+  <block id="79ee9d46f0018b3cb493ecfda60ffa4b" category="inline-image-macro">Capture d'écran indiquant l'affectation d'abonnement pour un compte BlueXP.</block>
+  <block id="cd56a207e786d73d9abfd43dd2202acd" category="paragraph"><block ref="cd56a207e786d73d9abfd43dd2202acd" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="f1b38e057f0b3e3f883f386f412fd0a9" category="inline-link">Découvrez comment associer un abonnement AWS</block>
+  <block id="73f01c2e56cdb9b30f4fe33ce5bbdc20" category="list-text"><block ref="73f01c2e56cdb9b30f4fe33ce5bbdc20" category="inline-link-rx"></block></block>
+  <block id="72bfd3f607087d94f12332f83b700ab8" category="inline-link">Découvrez comment associer un abonnement Azure</block>
+  <block id="58b7b647775bc09b6b8a9f45df71775b" category="list-text"><block ref="58b7b647775bc09b6b8a9f45df71775b" category="inline-link-rx"></block></block>
+  <block id="1c74f0a5753f74c783e970c346408b4a" category="inline-link">Découvrez comment associer un abonnement Google Cloud</block>
+  <block id="896471f03a9a1e209bebabb5923d2b3e" category="list-text"><block ref="896471f03a9a1e209bebabb5923d2b3e" category="inline-link-rx"></block></block>
+  <block id="f906d086ca70101dd1f218ea0786aee8" category="list-text">BlueXP vous avertira désormais si votre connecteur a été mis hors tension pendant 14 jours ou plus.</block>
+  <block id="68f34edaf3c796f179fbe80b3df89f0c" category="list-text"><block ref="68f34edaf3c796f179fbe80b3df89f0c" category="inline-link-rx"></block></block>
+  <block id="752697882fd7ee73f8d5f60a6f8c02f5" category="inline-link">Découvrez pourquoi les connecteurs doivent rester en fonctionnement</block>
+  <block id="23f4e22cbf061f84ba77fd79e423d90f" category="list-text"><block ref="23f4e22cbf061f84ba77fd79e423d90f" category="inline-link-rx"></block></block>
+  <block id="1c8a63199471322e5b0fe67deb835f4b" category="list-text">Nous avons mis à jour la règle de connecteur pour Google Cloud afin d'inclure une autorisation requise pour créer et gérer des machines virtuelles de stockage sur des paires haute disponibilité Cloud Volumes ONTAP :</block>
+  <block id="67d29883f03468dc44eefc494f37473e" category="inline-link">Afficher les autorisations Google Cloud pour le connecteur</block>
+  <block id="cad0970fb2c4e3d28b046315bb4b7f02" category="paragraph"><block ref="ac22e421263f6f828d096313fa20e6a8" category="inline-link-rx"></block>.</block>
+  <block id="fdfef50a14b07533a8bab908a66de10c" category="list-text">Cette version du connecteur inclut des améliorations Cloud Volumes ONTAP.</block>
+  <block id="e5fa209a01e6f968295b098866e0fcf5" category="paragraph"><block ref="e5fa209a01e6f968295b098866e0fcf5" category="inline-link-rx"></block></block>
+  <block id="2328f91c347cdd3538e6eec847331d2d" category="list-text">Les notifications sont alors envoyées par e-mail pour les fonctionnalités et services BlueXP suivants : connecteurs, Cloud Sync, sauvegarde dans le cloud et protection contre les attaques par ransomware. D'autres services seront ajoutés dans les prochaines versions.</block>
+  <block id="61130fb01406e968937613de0add552f" category="inline-image-macro">une icône avec trois points verticaux</block>
+  <block id="86687429f8938a809fc671fe296b1bcc" category="paragraph">Pour ignorer toutes les notifications, dans le Centre de notification, cliquez sur <block ref="bfe50e4fac5e58634c6fb748dce94758" category="inline-image-macro-rx" type="image"></block> Et sélectionnez *rejeter tout*.<block ref="e49bd0cb9810a0678258a0ab07786c5e" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="0da34741c0fedd26eb889170d87be2c7" category="list-text">Pour associer les informations d'identification à un nouvel abonnement, cliquez sur *Ajouter un abonnement &gt; Continuer* et suivez les étapes de AWS Marketplace :</block>
+  <block id="6ce481dcdc8134b6b4c81db0911f0267" category="list-text">Cliquez sur *Continuer pour s'inscrire*.</block>
+  <block id="c75b8cac68776a239e8da30928fbc723" category="list-text">Cliquez sur *configurer votre compte*.</block>
+  <block id="1b71aaa72599faca0c9974618a3c749d" category="paragraph"><block ref="1b71aaa72599faca0c9974618a3c749d" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="2d362fb636ab4e2644720f00f02ddbfb" category="summary">Une fois inscrit à BlueXP, vous pouvez vous connecter à partir de votre navigateur Web via l'interface utilisateur SaaS.</block>
+  <block id="f2209a6bc960d5dd3350ca4b5b662c18" category="inline-link-macro">Découvrez comment vous inscrire à BlueXP et créer une organisation</block>
+  <block id="2a319fe0bd9ba8ece64b79d59a233b15" category="paragraph"><block ref="8c767825ada5127971c09f228e56d843" category="inline-link-macro-rx"></block>.</block>
+  <block id="0994880ff67f7251649b7fab82f0a166" category="paragraph-title">Options de connexion</block>
+  <block id="029351726760b5e014b1e49ec512b591" category="list-text">Une connexion fédérée</block>
+  <block id="6c7ff2f2cb289c51829dcc82a760506b" category="paragraph">Vous pouvez utiliser l'authentification unique pour vous connecter à l'aide des informations d'identification de votre annuaire d'entreprise (identité fédérée). Pour en savoir plus, consultez le<block ref="4281905c7145d3afc1e5083b48ba043f" category="inline-link-rx"></block> puis cliquez sur *options de connexion*.</block>
+  <block id="03eb7e8aedd1ad900f6996ff1a9cf8dd" category="list-text">Sur la page *connexion*, entrez l'adresse e-mail associée à votre connexion.</block>
+  <block id="784d4eeca11deaf4ee3f37735e4d0334" category="list-text">En fonction de la méthode d'authentification associée à votre connexion, vous serez invité à saisir vos informations d'identification :</block>
+  <block id="8a7c8d2028930eaef2c3f44925994051" category="list-text">Identifiants cloud NetApp : saisissez votre mot de passe</block>
+  <block id="a02705346febd77df5680fe2f12343a9" category="list-text">Utilisateur fédéré : saisissez vos informations d'identification fédérées</block>
+  <block id="24bdc2b22d38abff9ff97a9c5b5e7966" category="list-text">Entrez votre compte sur le site de support NetApp : saisissez vos identifiants du site de support NetApp</block>
 </blocks>
