@@ -327,10 +327,9 @@ image:screenshot_azure_add_subscription.png["Capture d'écran du menu d'action p
 . Pour associer les informations d'identification à un nouvel abonnement, cliquez sur *Ajouter un abonnement > Continuer* et suivez les étapes dans Azure Marketplace :
 +
 .. Si vous y êtes invité, connectez-vous à votre compte Azure.
-.. Cliquez sur *Créer*.
+.. Cliquez sur *Subscribe*.
 .. Remplissez le formulaire et cliquez sur *Abonnez-vous*.
-.. Cliquez sur *Notifications* et cliquez sur le lien de la notification pour configurer votre compte.
-.. Cliquez sur *configurer le compte*.
+.. Une fois le processus d'abonnement terminé, cliquez sur *configurer le compte maintenant*.
 +
 Vous serez redirigé vers le site Web BlueXP.
 
@@ -345,12 +344,14 @@ BlueXP remplace l'abonnement existant pour toutes les informations d'identificat
 Pour tous les autres comptes, vous devez associer manuellement l'abonnement en répétant ces étapes.
 
 *** Cliquez sur *Enregistrer*.
-
-
-
++
+La vidéo suivante explique comment vous abonner à Azure Marketplace :
 
 +
-image:screenshot-azure-subscription.png["Capture d'écran de la page attribution d'abonnement qui vous permet d'associer cet abonnement à un ou plusieurs comptes et de choisir de remplacer l'abonnement existant pour l'un de ces comptes."]
+video::video_subscribing_azure.mp4[width=848,height=480]
+
+
+
 
 
 

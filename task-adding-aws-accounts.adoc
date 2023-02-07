@@ -231,7 +231,8 @@ image:screenshot_associate_subscription.png["Capture d'écran du menu d'action p
 . Pour associer les informations d'identification à un abonnement existant, sélectionnez-le dans la liste déroulante et cliquez sur *associer*.
 . Pour associer les informations d'identification à un nouvel abonnement, cliquez sur *Ajouter un abonnement > Continuer* et suivez les étapes de AWS Marketplace :
 +
-.. Cliquez sur *Continuer pour s'inscrire*.
+.. Cliquez sur *Afficher les options d'achat*.
+.. Cliquez sur *Subscribe*.
 .. Cliquez sur *configurer votre compte*.
 +
 Vous serez redirigé vers le site Web BlueXP.
@@ -247,12 +248,14 @@ BlueXP remplace l'abonnement existant pour toutes les informations d'identificat
 Pour tous les autres comptes, vous devez associer manuellement l'abonnement en répétant ces étapes.
 
 *** Cliquez sur *Enregistrer*.
-
-
-
++
+Dans cette vidéo, vous instructions pour vous abonner à Google Cloud Marketplace :
 
 +
-image:screenshot-aws-subscription.png["Capture d'écran de la page attribution d'abonnement qui vous permet d'associer cet abonnement à un ou plusieurs comptes et de choisir de remplacer l'abonnement existant pour l'un de ces comptes."]
+video::video_subscribing_aws.mp4[width=848,height=480]
+
+
+
 
 
 
