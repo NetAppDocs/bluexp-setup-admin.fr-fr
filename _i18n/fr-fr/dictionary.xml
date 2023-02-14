@@ -1254,7 +1254,6 @@
   <block id="b18a2220ba0da795c31cbb6cd990fd49" category="list-text">Km:liste*</block>
   <block id="2101c43af42db107614da3d2faadb4dc" category="list-text">Km:décrire*</block>
   <block id="53cfd5032381d05f65cbc6d64e0004f5" category="list-text">s3:GetObject</block>
-  <block id="9072562ed0b0a146d2eee12aaa27baf4" category="list-text">ec2:descriptionVpcEndpoints</block>
   <block id="276e466538acff21910df6227231c79f" category="list-text">Kms:Listalas</block>
   <block id="599a8ceed768fab9cc6e39dff7c9f215" category="list-text">s3:PutEncryptionConfiguration</block>
   <block id="21eddde0f415ffe52f38d432d14088c9" category="paragraph">Lorsque vous utilisez la méthode de recherche et de restauration pour restaurer des volumes et des fichiers, le connecteur effectue les demandes d'API suivantes :</block>
@@ -2910,4 +2909,9 @@
   <block id="825c72d4114a9a71a355213f6b79c642" category="list-text">Suivez les étapes de la page *attribution d'abonnement* :</block>
   <block id="a6b7d96f53186edb463f8f8611f97cd9" category="paragraph">Dans cette vidéo, vous instructions pour vous abonner à Google Cloud Marketplace :</block>
   <block id="1c1c040e218e35ae634138db5c2055f4" category="list-text">Cliquez sur *Afficher les options d'achat*.</block>
+  <block id="8258ac0fb8b015087851de720e92f796" category="list-text">ec2:DescribeVpcEndpoints</block>
+  <block id="1be1ae3d277ebf372ecefda4d444dbbb" category="section-title">14 février 2023</block>
+  <block id="fae746653dec0583228106493b15ac1a" category="paragraph">L'autorisation suivante est désormais requise pour Cloud Tiering :</block>
+  <block id="296337985ff5f0cc398e02f1aff0b176" category="paragraph">Si le connecteur est installé sur site, vous ne pouvez pas utiliser cette méthode d'authentification. Vous devez utiliser des clés AWS.</block>
+  <block id="a4a42c8639c0aa2e10cb3a3eaaae664b" category="paragraph">Vous devez utiliser cette méthode d'authentification si le connecteur est installé sur site. Vous ne pouvez pas utiliser de rôle IAM.</block>
 </blocks>

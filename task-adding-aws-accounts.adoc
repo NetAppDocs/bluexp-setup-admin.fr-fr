@@ -73,6 +73,8 @@ NOTE: Si vous avez déployé un connecteur depuis BlueXP, BlueXP a automatiqueme
 
 Vous pouvez définir une relation de confiance entre le compte AWS source dans lequel vous avez déployé l'instance Connector et d'autres comptes AWS en utilisant les rôles IAM. Vous fournissez ensuite à BlueXP les rôles ARN des IAM des comptes de confiance.
 
+Si le connecteur est installé sur site, vous ne pouvez pas utiliser cette méthode d'authentification. Vous devez utiliser des clés AWS.
+
 .Étapes
 . Accédez à la console IAM dans le compte cible dans lequel vous souhaitez fournir le connecteur avec les autorisations.
 . Sous gestion des accès, cliquez sur *rôles > Créer un rôle* et suivez les étapes pour créer le rôle.
@@ -96,6 +98,8 @@ Le compte dispose désormais des autorisations requises. <<add-the-credentials,V
 ==== Accordez des autorisations en fournissant des clés AWS
 
 Si vous voulez fournir des clés BlueXP avec AWS pour un utilisateur IAM, vous devez accorder les autorisations requises à cet utilisateur. La politique de BlueXP IAM définit les actions et les ressources AWS que BlueXP est autorisé à utiliser.
+
+Vous devez utiliser cette méthode d'authentification si le connecteur est installé sur site. Vous ne pouvez pas utiliser de rôle IAM.
 
 .Étapes
 . À partir de la console IAM, créez des politiques en copiant et en collant le contenu de link:reference-permissions-aws.html["Les règles IAM pour le connecteur"].

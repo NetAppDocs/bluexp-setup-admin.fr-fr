@@ -183,7 +183,7 @@ La deuxième politique fournit des autorisations pour les services suivants :
                 "cloudformation:DescribeStacks",
                 "kms:List*",
                 "kms:Describe*",
-                "ec2:describeVpcEndpoints",
+                "ec2:DescribeVpcEndpoints",
                 "kms:ListAliases",
                 "athena:StartQueryExecution",
                 "athena:GetQueryResults",
@@ -745,7 +745,7 @@ Ce connecteur effectue les requêtes API suivantes pour gérer les sauvegardes d
 * Km:liste*
 * Km:décrire*
 * s3:GetObject
-* ec2:descriptionVpcEndpoints
+* ec2:DescribeVpcEndpoints
 * Kms:Listalas
 * s3:PutEncryptionConfiguration
 
@@ -883,7 +883,10 @@ Ce connecteur effectue les demandes d'API suivantes pour transférer les donnée
 | s3:GetLifecyclConfiguration | Oui. | Oui. 
 
 
-| ec2:régions descriptives | Oui. | Oui. 
+| ec2:régions descriptives | Oui. | Non 
+
+
+| ec2:DescribeVpcEndpoints | Oui. | Non 
 |===
 
 
@@ -1191,7 +1194,7 @@ Le connecteur effectue les requêtes API suivantes pour gérer FSX pour ONTAP :
 * ec2:Etiquettes descriptives
 * ec2:DécriesIamInstanceProfileassociations
 * ec2:DescribeReserveInstanciesOfferings
-* ec2:descriptionVpcEndpoints
+* ec2:DescribeVpcEndpoints
 * ec2 : descriptif
 * ec2:Describvolumesmodificateurs
 * ec2:descriptifs des groupes
@@ -1222,3 +1225,17 @@ Le connecteur effectue les requêtes API suivantes pour détecter et gérer les 
 Il effectue la demande d'API suivante pour détecter les compartiments Amazon S3 :
 
 s3:GetEncryptionConfiguration
+
+
+
+== Journal des modifications
+
+Lorsque des autorisations sont ajoutées et supprimées, nous les noterons dans les sections ci-dessous.
+
+
+
+=== 14 février 2023
+
+L'autorisation suivante est désormais requise pour Cloud Tiering :
+
+ec2:DescribeVpcEndpoints
