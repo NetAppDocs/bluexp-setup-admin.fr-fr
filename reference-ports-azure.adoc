@@ -78,5 +78,8 @@ NOTE: L'adresse IP source est l'hôte du connecteur.
 | Appels API et AutoSupport | HTTPS | 443 | LIF de gestion de cluster ONTAP et Internet sortant | Appels d'API vers Azure et ONTAP, vers le cloud Data Sense, vers le service ransomware et envoi de messages AutoSupport à NetApp 
 
 
+| Appels API | TCP | 8080 | Détection des données | Sonde vers l'instance Data Sense pendant le déploiement 
+
+
 | DNS | UDP | 53 | DNS | Utilisé pour la résolution DNS par BlueXP 
 |===

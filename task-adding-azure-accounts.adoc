@@ -4,7 +4,7 @@ permalink: task-adding-azure-accounts.html
 keywords: permissions, microsoft, azure, permissions, custom role, role, json, active directory, ad, service principal, key, tenant id, application key, application id, operator role, managed identity, iam, operator, role, virtual machine, create custom role, create azure custom role, azure custom role 
 summary: 'Lorsque vous créez un système Cloud Volumes ONTAP, vous devez sélectionner les identifiants Azure et l"abonnement Marketplace pour les utiliser avec ce système. Si vous gérez plusieurs abonnements Azure Marketplace, vous pouvez les attribuer à différentes informations d"identification Azure à partir de la page informations d"identification.' 
 ---
-= Gestion des informations d'identification et des abonnements Azure pour BlueXP
+= Gérez les informations d'identification et les abonnements Azure pour BlueXP
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
