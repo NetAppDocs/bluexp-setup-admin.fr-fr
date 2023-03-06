@@ -41,15 +41,8 @@ Ce connecteur est pris en charge dans Google Cloud sur une instance de machine v
 Systèmes d'exploitation pris en charge::
 +
 --
-* CentOS 7.6
-* CentOS 7.7
-* CentOS 7.8
-* CentOS 7.9
-* Red Hat Enterprise Linux 7.6
-* Red Hat Enterprise Linux 7.7
-* Red Hat Enterprise Linux 7.8
-* Red Hat Enterprise Linux 7.9
-* Red Hat Enterprise Linux 8.6
+* CentOS 7.6, 7.7, 7.8 et 7.9
+* Red Hat Enterprise Linux 7.6, 7.7, 7.8, 7.9, 8.6 et 8.7
 +
 Le système Red Hat Enterprise Linux doit être enregistré avec Red Hat Subscription Management. S'il n'est pas enregistré, le système ne peut pas accéder aux référentiels pour mettre à jour les logiciels tiers requis pendant l'installation du connecteur.
 

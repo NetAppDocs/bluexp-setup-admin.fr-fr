@@ -185,9 +185,9 @@ https://docs.netapp.com/us-en/cloud-manager-automation/cm/api_ref_resources.html
 
 
 
-== Mettez à niveau le connecteur sur site sans accès à Internet
+== Mettez à niveau le connecteur dans un emplacement sans accès à Internet
 
-Si vous link:task-install-connector-onprem-no-internet.html["Installez le connecteur sur un hôte sur site qui ne dispose pas d'un accès Internet"], Vous pouvez mettre à niveau le connecteur lorsqu'une version plus récente est disponible sur le site de support NetApp.
+Si vous link:task-install-connector-onprem-no-internet.html["Installez le connecteur dans un endroit où il n'y a pas d'accès à Internet - effectué"], Vous pouvez mettre à niveau le connecteur lorsqu'une version plus récente est disponible sur le site de support NetApp.
 
 Le connecteur doit redémarrer pendant le processus de mise à niveau pour que l'interface utilisateur ne soit pas disponible pendant la mise à niveau.
 
@@ -198,14 +198,20 @@ Le connecteur doit redémarrer pendant le processus de mise à niveau pour que l
 +
 [source, cli]
 ----
-chmod +x /path/cloud-manager-connector-offline-v3.9.14
+chmod +x /path/cloud-manager-connector-offline-<version>
 ----
++
+Où <version> est la version du connecteur que vous avez téléchargé.
+
 . Exécutez le script d'installation :
 +
 [source, cli]
 ----
-sudo /path/cloud-manager-connector-offline-v3.9.14
+sudo /path/cloud-manager-connector-offline-<version>
 ----
++
+Où <version> est la version du connecteur que vous avez téléchargé.
+
 . Une fois la mise à niveau terminée, vous pouvez vérifier la version du connecteur en accédant à *aide > support > connecteur*.
 
 

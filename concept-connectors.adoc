@@ -119,7 +119,7 @@ Un administrateur de compte BlueXP peut créer un connecteur de différentes fa�
 * En installant manuellement le logiciel sur votre propre hôte Linux
 +
 ** link:task-installing-linux.html["Sur un hôte ayant accès à Internet"]
-** link:task-install-connector-onprem-no-internet.html["Sur un hôte sur site qui ne dispose pas d'un accès Internet"]
+** link:task-install-connector-onprem-no-internet.html["Sur un hôte situé dans un emplacement qui n'a pas accès à Internet"]
 
 
 * Sur le marché de votre fournisseur cloud

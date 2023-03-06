@@ -69,7 +69,7 @@ sidebar:
           url: "/task-launching-azure-mktp.html"
         - title: Installez sur votre propre hôte avec Internet
           url: "/task-installing-linux.html"
-        - title: Installation sur site sans Internet
+        - title: Installez sur votre propre hôte sans Internet
           url: "/task-install-connector-onprem-no-internet.html"
       - title: Recherchez l'ID système d'un connecteur
         url: "/task-finding-system-id.html"
