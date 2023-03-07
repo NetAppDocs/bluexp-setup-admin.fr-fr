@@ -219,7 +219,16 @@ Le connecteur nécessite un accès Internet sortant pour gérer les ressources e
 | Terminaux | Objectif 
 
 
-| \https://<region>.amazonaws.com | Pour gérer les ressources dans AWS. 
+ a| 
+Services AWS (amazonaws.com):
+
+* CloudFormation
+* Cloud de calcul élastique (EC2)
+* Service de gestion des clés (KMS)
+* Service de jetons de sécurité (STS)
+* Service de stockage simple (S3)
+
+| Pour gérer les ressources dans AWS. Le point final exact dépend de la région dans laquelle vous déployez le connecteur. https://docs.aws.amazon.com/general/latest/gr/rande.html["Pour plus d'informations, consultez la documentation AWS"^] 
 
 
 | \https://support.netapp.com | Pour obtenir des informations sur les licences et envoyer des messages AutoSupport au support NetApp. 
