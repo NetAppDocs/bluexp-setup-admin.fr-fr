@@ -324,7 +324,7 @@ L'instance doit être prête dans environ 7 minutes. Vous devez rester sur la pa
 
 
 .Une fois que vous avez terminé
-Si vous disposez de compartiments Amazon S3 sur le même compte AWS que celui sur lequel vous avez créé le connecteur, l'environnement de travail Amazon S3 s'affiche automatiquement sur la fenêtre Canvas. link:task-viewing-amazon-s3.html["Découvrez ce que vous pouvez faire dans cet environnement de travail"].
+Si vous disposez de compartiments Amazon S3 sur le même compte AWS que celui sur lequel vous avez créé le connecteur, l'environnement de travail Amazon S3 s'affiche automatiquement sur la fenêtre Canvas. https://docs.netapp.com/us-en/bluexp-s3-storage/index.html["Découvrez ce que vous pouvez faire dans cet environnement de travail"].
 
 
 

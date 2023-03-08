@@ -4,7 +4,7 @@ permalink: task-viewing-amazon-s3.html
 keywords: s3 buckets, s3 storage, s3 working environment, amazon s3 buckets, amazon s3 working environment 
 summary: Une fois que vous avez installé un connecteur dans AWS, BlueXP peut détecter automatiquement les informations relatives aux compartiments Amazon S3 qui résident dans le compte AWS où le connecteur est installé. Un environnement de travail Amazon S3 est ajouté à Canvas pour que vous puissiez visualiser ces informations. 
 ---
-= Affichage des compartiments Amazon S3
+= Gestion de vos compartiments Amazon S3
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -16,31 +16,8 @@ summary: Une fois que vous avez installé un connecteur dans AWS, BlueXP peut d�
 [role="lead"]
 Une fois que vous avez installé un connecteur dans AWS, BlueXP peut détecter automatiquement les informations relatives aux compartiments Amazon S3 qui résident dans le compte AWS où le connecteur est installé. Un environnement de travail Amazon S3 est ajouté à Canvas pour que vous puissiez visualiser ces informations.
 
-Vous pouvez afficher des informations détaillées sur vos compartiments S3, notamment la région, les règles d'accès, le compte, la capacité totale et utilisée. Ces compartiments peuvent être utilisés comme destinations pour les opérations Cloud Backup, Cloud Tiering ou Cloud Sync. Vous pouvez également utiliser Cloud Data Sense pour scanner ces compartiments.
+image:screenshot-amazon-s3-we.png["Copie d'écran d'un environnement de travail Amazon S3."]
 
-.Étapes
-. link:task-creating-connectors-aws.html["Installer un connecteur"] Dans le compte AWS où vous souhaitez afficher vos compartiments Amazon S3.
-. Dans le menu de navigation, sélectionnez *stockage > Canvas*.
-+
-Vous devriez voir automatiquement un environnement de travail Amazon S3 peu après.
+Vous pouvez afficher des informations détaillées sur vos compartiments S3, notamment la région, la règle d'accès, le compte, la capacité totale et utilisée, et plus encore. Ces compartiments peuvent être utilisés comme destinations pour les opérations Cloud Backup, Cloud Tiering ou Cloud Sync. Vous pouvez également utiliser Cloud Data Sense pour scanner ces compartiments.
 
-+
-image:screenshot_s3_we.gif["Copie d'écran d'un environnement de travail Amazon S3."]
-
-. Cliquez sur l'environnement de travail et sélectionnez une action dans le volet droit.
-+
-image:screenshot_s3_actions.gif["Capture d'écran du volet actions après la sélection d'un environnement de travail Amazon S3. Le volet affiche des informations sur S3 : le nombre de compartiments et les services disponibles."]
-
-. Cliquez sur *Synchroniser les données* pour synchroniser les données vers ou à partir de compartiments S3.
-+
-Pour plus de détails, voir https://docs.netapp.com/us-en/cloud-manager-sync/concept-cloud-sync.html["La présentation du service Cloud Sync"^].
-
-. Cliquez sur *Activer* si vous souhaitez que Cloud Data SENSE analyse les compartiments S3 pour les données personnelles et sensibles.
-+
-Pour plus de détails, voir https://docs.netapp.com/us-en/cloud-manager-data-sense/task-scanning-s3.html["Mise en route de Cloud Data Sense pour Amazon S3"^].
-
-. Cliquez sur *entrer environnement de travail* pour afficher des détails sur les compartiments S3 de votre compte AWS.
-+
-image:screenshot_amazon_s3.gif["Une capture d'écran présente les détails d'un environnement de travail Amazon S3 : le nombre total de compartiments et le nombre total de régions, puis un tableau présentant des détails sur chaque compartiment S3."]
-
-
+Une nouvelle fonctionnalité vous permet désormais de créer et de modifier des compartiments S3. https://docs.netapp.com/us-en/bluexp-s3-storage/index.html["Accédez ici pour découvrir comment afficher, créer et gérer vos compartiments S3 à l'aide de BlueXP."]

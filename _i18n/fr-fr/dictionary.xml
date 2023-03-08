@@ -1006,26 +1006,12 @@
   <block id="211c1a963db0ec4433679bba9d1a1973" category="paragraph">Les administrateurs d'espace de travail peuvent désormais utiliser ces connecteurs pour créer des systèmes Cloud Volumes ONTAP.</block>
   <block id="a85cd5dda897ee694c0a8a7ebe893293" category="inline-link-macro">Découvrez comment gérer votre compte</block>
   <block id="efd9710de9c698fbbeb7b7b11597f70b" category="summary">Une fois que vous avez installé un connecteur dans AWS, BlueXP peut détecter automatiquement les informations relatives aux compartiments Amazon S3 qui résident dans le compte AWS où le connecteur est installé. Un environnement de travail Amazon S3 est ajouté à Canvas pour que vous puissiez visualiser ces informations.</block>
-  <block id="f7099ec977551c0bfc4264472c0bf927" category="doc">Affichage des compartiments Amazon S3</block>
-  <block id="bf9799ea7692475c7cf9755a148ec201" category="paragraph">Vous pouvez afficher des informations détaillées sur vos compartiments S3, notamment la région, les règles d'accès, le compte, la capacité totale et utilisée. Ces compartiments peuvent être utilisés comme destinations pour les opérations Cloud Backup, Cloud Tiering ou Cloud Sync. Vous pouvez également utiliser Cloud Data Sense pour scanner ces compartiments.</block>
   <block id="9c626900b015a97ee8e428d66dd7d5d1" category="inline-link-macro">Installer un connecteur</block>
-  <block id="0d6fec8d76a7754ac76ae4d48310ed99" category="list-text"><block ref="d950cee94b130c47fc349a9ce27609ba" category="inline-link-macro-rx"></block> Dans le compte AWS où vous souhaitez afficher vos compartiments Amazon S3.</block>
   <block id="69e6c31f6140607f08425260f2faecb5" category="list-text">Dans le menu de navigation, sélectionnez *stockage &gt; Canvas*.</block>
-  <block id="52b8ffdf03daa97daa3970bb3a4247ff" category="paragraph">Vous devriez voir automatiquement un environnement de travail Amazon S3 peu après.</block>
   <block id="620734ddcf438083fa8f2f7a7550fbbf" category="inline-image-macro">Copie d'écran d'un environnement de travail Amazon S3.</block>
-  <block id="7458becc274c80c36e850edbc1f6337e" category="paragraph"><block ref="7458becc274c80c36e850edbc1f6337e" category="inline-image-macro-rx" type="image"></block></block>
   <block id="f0e4d0f6a6a8bae74ed62ce4759c8e3a" category="list-text">Cliquez sur l'environnement de travail et sélectionnez une action dans le volet droit.</block>
-  <block id="3664079914496ab0ee90209b4ace936f" category="inline-image-macro">Capture d'écran du volet actions après la sélection d'un environnement de travail Amazon S3. Le volet affiche des informations sur S3 : le nombre de compartiments et les services disponibles.</block>
-  <block id="b9b2b40a667ab16249d63fc7e435d7f8" category="paragraph"><block ref="b9b2b40a667ab16249d63fc7e435d7f8" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="02bc515db3673d54b5989cdf43534729" category="list-text">Cliquez sur *Synchroniser les données* pour synchroniser les données vers ou à partir de compartiments S3.</block>
   <block id="2eb089b7bd4ffecd4fb1075d13738904" category="inline-link">La présentation du service Cloud Sync</block>
   <block id="7f4de8563758c51b51d61369c0182739" category="paragraph">Pour plus de détails, voir<block ref="9a75baacec67d9c9539ea0017722641e" category="inline-link-rx"></block>.</block>
-  <block id="a4fefa0676fbe2ed6dbd32159183f6d1" category="list-text">Cliquez sur *Activer* si vous souhaitez que Cloud Data SENSE analyse les compartiments S3 pour les données personnelles et sensibles.</block>
-  <block id="c1c42f8ba1dae80cacf28e68dae0ee46" category="inline-link">Mise en route de Cloud Data Sense pour Amazon S3</block>
-  <block id="dea958812841439df90399efabd7d9ca" category="paragraph">Pour plus de détails, voir<block ref="8bc61ddf61abb52b2869fa75574cd87f" category="inline-link-rx"></block>.</block>
-  <block id="51ae836da5531e750c5dcf0f62f2dd18" category="list-text">Cliquez sur *entrer environnement de travail* pour afficher des détails sur les compartiments S3 de votre compte AWS.</block>
-  <block id="9e2485669a43b6702c2aedabfee812a6" category="inline-image-macro">Une capture d'écran présente les détails d'un environnement de travail Amazon S3 : le nombre total de compartiments et le nombre total de régions, puis un tableau présentant des détails sur chaque compartiment S3.</block>
-  <block id="d6e5e99b5ad8371c45f8879b9381a020" category="paragraph"><block ref="d6e5e99b5ad8371c45f8879b9381a020" category="inline-image-macro-rx" type="image"></block></block>
   <block id="3747d8dfb456f8cefbe5ea8eed8a4289" category="summary">Une fois que vous avez installé un connecteur dans Azure, BlueXP peut détecter automatiquement des informations sur les comptes de stockage Azure qui résident dans les abonnements Azure où le connecteur est installé. Un environnement de travail Azure Blob est ajouté à Canvas pour vous permettre d'afficher ces informations.</block>
   <block id="60c5f52d2a1d91eb3d9cc28c497c50d5" category="doc">Affichage de vos comptes Azure Blob</block>
   <block id="8038b7f4543340933f0702ca9be2c9c5" category="paragraph">Vous pouvez afficher des informations détaillées sur vos comptes de stockage Azure, notamment l'emplacement, le groupe de ressources, la capacité totale et utilisée, etc. Ces comptes peuvent être utilisés comme destinations pour les opérations Cloud Backup, Cloud Tiering ou Cloud Sync.</block>
@@ -2495,7 +2481,6 @@
   <block id="ca82fdd9a480fcc34a6b470f5ec8e908" category="sidebar">Configurer les paramètres proxy</block>
   <block id="7c584a16cbf4210dc0a344179e274e09" category="sidebar">Configuration par défaut</block>
   <block id="fbfa85280a8f29e21ca92f023121f1b2" category="sidebar">Stockage cloud découvert</block>
-  <block id="e11597621f115e17031710501eefedbc" category="sidebar">Affichez vos compartiments Amazon S3</block>
   <block id="bce447551b8153911559a7a705721ffe" category="sidebar">Affichez vos comptes Azure Blob</block>
   <block id="82f74539a8232efa9fe9d44fbb820377" category="sidebar">Consultez vos compartiments de stockage Google Cloud</block>
   <block id="2c4eed705dd3e0adf6e7194858d8dff7" category="sidebar">Identifiants AWS</block>
@@ -2986,4 +2971,14 @@
   <block id="864338d2d7dc3c2738f45a0a8851b0cf" category="cell">Création et gestion des VM</block>
   <block id="fe4ddc4ad605bbd0c66fc946f65fb17c" category="cell">Créer et gérer des groupes de sécurité réseau</block>
   <block id="7b82c8bb5f712b74fd5cab9947ae81fb" category="cell">Requis pour certains déploiements de machines virtuelles, en fonction du matériel physique sous-jacent</block>
+  <block id="1c1b21ef0ec839f8c7f0c98a086d2319" category="doc">Gestion de vos compartiments Amazon S3</block>
+  <block id="93850b8e1d97181700833dcae4c7e219" category="paragraph"><block ref="93850b8e1d97181700833dcae4c7e219" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="ea59f5a18533f0723be7342656f4c831" category="paragraph">Vous pouvez afficher des informations détaillées sur vos compartiments S3, notamment la région, la règle d'accès, le compte, la capacité totale et utilisée, et plus encore. Ces compartiments peuvent être utilisés comme destinations pour les opérations Cloud Backup, Cloud Tiering ou Cloud Sync. Vous pouvez également utiliser Cloud Data Sense pour scanner ces compartiments.</block>
+  <block id="55b5b30feffe912b6e65f29c34807a28" category="inline-link">Accédez ici pour découvrir comment afficher, créer et gérer vos compartiments S3 à l'aide de BlueXP.</block>
+  <block id="bd94fd8efc4371afd7a3af9e7a08b50e" category="paragraph">Une nouvelle fonctionnalité vous permet désormais de créer et de modifier des compartiments S3.<block ref="c9e42eab5c6f6e6e35f844a7123dd423" category="inline-link-rx"></block></block>
+  <block id="10a7432528d1253e1f27cd183ae759a7" category="paragraph">Si vous disposez de compartiments Amazon S3 sur le même compte AWS que celui sur lequel vous avez créé le connecteur, l'environnement de travail Amazon S3 s'affiche automatiquement sur la fenêtre Canvas.<block ref="eb59da80ee57b828e1255dafd1c2c796" category="inline-link-rx"></block>.</block>
+  <block id="d564f41f7e0ffa3f9e8bc7a809230f94" category="list-text">Connector vous permet désormais d'ajouter et de gérer des compartiments Amazon S3 à partir de BlueXP.</block>
+  <block id="f19dd7eba16fe45d9a801001a9371842" category="inline-link">Découvrez comment ajouter de nouveaux compartiments Amazon S3 dans votre compte AWS à partir de BlueXP</block>
+  <block id="3fdb23ee61e644ed849519b472ba51ae" category="paragraph"><block ref="35aa20e861d3bf81209592fa160bd4e4" category="inline-link-rx"></block>.</block>
+  <block id="a4f513306c1a0ead14679ffb7c282460" category="sidebar">Gestion de vos compartiments Amazon S3</block>
 </blocks>
