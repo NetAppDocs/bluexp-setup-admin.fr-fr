@@ -1592,13 +1592,6 @@
   <block id="e288a6b2e6cc2fbb00bd407bda387c90" category="section-title">Permettre des services tiers</block>
   <block id="0d36dab0ce71c33a40b8ea4c8c773291" category="paragraph">Autoriser les services tiers de votre compte à accéder à des services tiers disponibles dans BlueXP. Les services clouds tiers sont similaires aux services proposés par NetApp, mais ils sont gérés et pris en charge par des sociétés tierces.</block>
   <block id="90837faa596ab1d28c90a381b6997722" category="list-text">Dans l'onglet *Présentation*, activez le paramètre *Autoriser les services tiers*.</block>
-  <block id="4b52ca01dd550f3fab5c378895fbfd60" category="section-title">Désactivation de la plateforme SaaS</block>
-  <block id="fa7043a1853c2b6854490998db361dca" category="paragraph">Nous ne recommandons pas de désactiver la plate-forme SaaS sauf si vous devez vous conformer aux politiques de sécurité de votre entreprise. En désactivant la plateforme SaaS, vous vous limitent votre capacité à utiliser les services cloud intégrés de NetApp.</block>
-  <block id="41f2e26a5f1f980cf07709ccd461458a" category="paragraph">Les services suivants ne sont pas disponibles auprès de BlueXP si vous désactivez la plate-forme SaaS :</block>
-  <block id="8ea5339a59d1a6a15d2ad2629fa9dd33" category="inline-link-macro">Interface utilisateur locale disponible sur un connecteur</block>
-  <block id="736683b36559de9a86788ab6e33c00d8" category="paragraph">Si vous désactivez la plateforme SaaS, vous devrez effectuer toutes les tâches à partir de <block ref="d248ae1d8e530aaf57663e2d920abe18" category="inline-link-macro-rx"></block>.</block>
-  <block id="1ce82671debd0854eab737731870ba89" category="admonition">Il s'agit d'une action irréversible qui vous empêchera d'utiliser la plate-forme BlueXP SaaS. Vous devrez effectuer des actions à partir du connecteur local. Vous ne pourrez pas utiliser de nombreux services cloud intégrés de NetApp et mettre à disposition de la plateforme SaaS aura besoin de l'aide de NetApp.</block>
-  <block id="bd24a7e9d8368897df823b65a8960e61" category="list-text">Dans l'onglet vue d'ensemble, activez l'option pour désactiver l'utilisation de la plateforme SaaS.</block>
   <block id="58dcadbd8de2066b4071d6ed4e0b4baf" category="section-title">Activez un proxy sur un connecteur</block>
   <block id="a211e8f0d908dfd70d36364b3fbd91b0" category="paragraph">Lorsque vous configurez un connecteur pour utiliser un serveur proxy, ce connecteur et les systèmes Cloud Volumes ONTAP qu'il gère (y compris les médiateurs HA) utilisent tous le serveur proxy.</block>
   <block id="3b7b9877611524faf200a074a681f3fc" category="paragraph">Notez que cette opération redémarre le connecteur. Assurez-vous que le connecteur n'effectue aucune opération avant de continuer.</block>
@@ -1617,7 +1610,6 @@
   <block id="4cc186df234138a57b2e8c5d8e5f7f8d" category="list-text">Cliquez sur *Enregistrer*.</block>
   <block id="099fd4b1efe59a1ac46efb50c44be6fd" category="admonition">BlueXP ne prend pas en charge les mots de passe comprenant le caractère @.</block>
   <block id="54734e5bba3b83b2757e43d1ff24b2c4" category="section-title">Activation du trafic API direct</block>
-  <block id="0e2ec8861e0eca9eed397572feaa87da" category="paragraph">Si vous avez configuré un serveur proxy, vous pouvez envoyer des appels API directement à BlueXP sans passer par le proxy. Cette option est prise en charge avec des connecteurs s'exécutant dans AWS, dans Azure ou dans Google Cloud.</block>
   <block id="a10c3460c01965af15b02ac3cd407880" category="list-text">Sous *général*, cliquez sur *support Direct API Traffic*.</block>
   <block id="46a12b9bf87a6fc814d2fc24ac4a41f4" category="list-text">Cochez la case pour activer l'option, puis cliquez sur *Enregistrer*.</block>
   <block id="6d7e2c1c0f4420a7bd5fd9b30ef6949e" category="summary">Le groupe de sécurité AWS du connecteur nécessite à la fois des règles entrantes et sortantes.</block>
@@ -2730,7 +2722,6 @@
   <block id="46f3c2b17cd41da44d4022428c48ec74" category="list-text">Un cluster Kubernetes</block>
   <block id="aa2a9593bd535a1923acb9053fd7788b" category="paragraph">Vous pouvez utiliser un connecteur avec plusieurs services de données cloud NetApp. Par exemple, si vous utilisez un connecteur pour gérer Cloud Volumes ONTAP, vous pouvez utiliser le même connecteur avec un autre service comme NetApp Cloud Tiering.</block>
   <block id="a046fbde0a8e04968445555624e37a69" category="summary">Si vos stratégies d'entreprise nécessitent l'utilisation d'un serveur proxy pour toutes les communications vers Internet, vous devez configurer vos connecteurs pour utiliser ce serveur proxy. Si vous n'avez pas configuré de connecteur pour utiliser un serveur proxy pendant l'installation, vous pouvez configurer le connecteur pour qu'il utilise ce serveur proxy à tout moment.</block>
-  <block id="adff0cc7ebdc35c0671c2e9adb29cd98" category="paragraph">Cloud Backup est pris en charge dans les régions du secteur public lorsque la plateforme SaaS est désactivée, mais pas dans les régions commerciales lorsque la plateforme SaaS est désactivée</block>
   <block id="a8c35528b3f05016e72e71694bb679ee" category="list-text">Détails sur un serveur proxy, si un proxy est requis pour accéder à Internet à partir du connecteur. HTTP et HTTPS sont pris en charge.</block>
   <block id="16c184ab0a5376cef0ecef7f0da93ac2" category="list-text">Si les variables système _http_proxy_ ou _https_proxy_ sont définies sur l'hôte, supprimez-les :</block>
   <block id="15c8f910fc596ecb4a8b91027b56de66" category="paragraph">Si vous ne supprimez pas ces variables système, l'installation échouera.</block>
@@ -2981,4 +2972,8 @@
   <block id="f19dd7eba16fe45d9a801001a9371842" category="inline-link">Découvrez comment ajouter de nouveaux compartiments Amazon S3 dans votre compte AWS à partir de BlueXP</block>
   <block id="3fdb23ee61e644ed849519b472ba51ae" category="paragraph"><block ref="35aa20e861d3bf81209592fa160bd4e4" category="inline-link-rx"></block>.</block>
   <block id="a4f513306c1a0ead14679ffb7c282460" category="sidebar">Gestion de vos compartiments Amazon S3</block>
+  <block id="6282017b43dee5b3762b81c0124c425c" category="paragraph">Si vous avez configuré un connecteur pour utiliser un serveur proxy, vous pouvez activer le trafic API direct sur le connecteur afin d'envoyer des appels API directement aux services du fournisseur cloud sans passer par le proxy. Cette option est prise en charge avec des connecteurs s'exécutant dans AWS, dans Azure ou dans Google Cloud.</block>
+  <block id="37bccc08c3c6cebbbf500cfe54775991" category="paragraph">Si vous avez désactivé l'utilisation des liens privés Azure avec Cloud Volumes ONTAP et que vous utilisez plutôt des terminaux de service, vous devez activer le trafic d'API direct. Sinon, le trafic ne sera pas acheminé correctement.</block>
+  <block id="ac10c9401f16ed5ff0a029bce2712adc" category="inline-link">En savoir plus sur l'utilisation d'un lien privé Azure ou de terminaux de service avec Cloud Volumes ONTAP</block>
+  <block id="bfa340d153d70df3ad6af8db39b45e8e" category="paragraph"><block ref="bfa340d153d70df3ad6af8db39b45e8e" category="inline-link-rx"></block></block>
 </blocks>
