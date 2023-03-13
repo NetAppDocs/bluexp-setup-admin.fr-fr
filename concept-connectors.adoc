@@ -67,6 +67,23 @@ https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.
 
 
 
+== Les connecteurs doivent toujours être opérationnels
+
+Les connecteurs sont un élément fondamental de l'architecture de service NetApp BlueXP. Il est de votre responsabilité de vous assurer que les connecteurs appropriés sont en place, opérationnels et accessibles en permanence. Bien que le service soit conçu pour surmonter les courtes pannes de la disponibilité des connecteurs, vous devez prendre des mesures immédiates pour remédier aux défaillances de l'infrastructure.
+
+Cette documentation est régie par le CLUF. Si le produit n'est pas utilisé conformément à la documentation, la fonctionnalité et le fonctionnement du produit, ainsi que vos droits en vertu du CLUF, peuvent être affectés.
+
+
+
+=== Impact de la disponibilité des connecteurs sur Cloud Volumes ONTAP
+
+Un connecteur est un composant clé de l'intégrité et du fonctionnement de Cloud Volumes ONTAP. Si un connecteur est hors tension, les systèmes Cloud Volumes ONTAP PAYGO et les systèmes BYOL basés sur la capacité sont arrêtés après avoir perdu la communication avec un connecteur pendant plus de 14 jours. Cela se produit car le connecteur actualise les licences du système chaque jour.
+
+
+NOTE: Si votre système Cloud Volumes ONTAP dispose d'une licence BYOL basée sur des nœuds, le système reste opérationnel au bout de 14 jours, car la licence est installée sur le système Cloud Volumes ONTAP.
+
+
+
 == Emplacements pris en charge
 
 Un connecteur est pris en charge aux emplacements suivants :
@@ -89,19 +106,6 @@ Si vous déployez le connecteur dans Azure, il doit être déployé dans la mêm
 === Remarque sur les déploiements Google Cloud
 
 Pour créer un système Cloud Volumes ONTAP dans Google Cloud, vous devez disposer d'un connecteur exécuté dans Google Cloud. Vous ne pouvez pas utiliser un connecteur exécuté sur AWS, Azure ou sur site.
-
-
-
-== Les connecteurs doivent rester en fonctionnement
-
-Un connecteur doit rester en fonctionnement en permanence. Il est important pour la santé et le fonctionnement continus des services que vous proposez.
-
-Par exemple, un connecteur est un composant clé de la santé et du fonctionnement de Cloud Volumes ONTAP. Si un connecteur est hors tension, les systèmes Cloud Volumes ONTAP PAYGO et les systèmes BYOL basés sur la capacité sont arrêtés après avoir perdu la communication avec un connecteur pendant plus de 14 jours. Cela se produit car le connecteur actualise les licences du système chaque jour.
-
-
-NOTE: Si votre système Cloud Volumes ONTAP dispose d'une licence BYOL basée sur des nœuds, le système reste opérationnel au bout de 14 jours, car la licence est installée sur le système Cloud Volumes ONTAP.
-
-BlueXP vous avertira si votre connecteur a été mis hors tension pendant 14 jours ou plus. https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-monitor-cm-operations.html["En savoir plus sur les notifications BlueXP"].
 
 
 
