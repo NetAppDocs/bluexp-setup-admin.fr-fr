@@ -26,7 +26,7 @@ Dans un environnement sur site sans Internet, vous pouvez utiliser BlueXP pour d
 
 == Présentation du cloud
 
-Dans une région cloud sans Internet, vous pouvez utiliser BlueXP pour déployer les systèmes Cloud Volumes ONTAP et découvrir des clusters ONTAP sur site (s'il y a une connexion entre votre environnement cloud et votre environnement sur site). Aucun autre service BlueXP n'est pris en charge dans ce type de déploiement, à l'exception du portefeuille digital.
+Dans une région cloud sans Internet, vous pouvez utiliser BlueXP pour déployer les systèmes Cloud Volumes ONTAP et découvrir des clusters ONTAP sur site (s'il y a une connexion entre votre environnement cloud et votre environnement sur site). Vous pouvez également utiliser Cloud Backup pour sauvegarder des volumes Cloud Volumes ONTAP dans les régions commerciales AWS et Azure (la sauvegarde n'est pas prise en charge dans les régions secrètes AWS et Azure pour le moment). Aucun autre service BlueXP n'est pris en charge dans ce type de déploiement, à l'exception du portefeuille digital.
 
 La région cloud peut être une région pour des agences américaines sécurisées comme AWS C2S/SC2S, Azure IL6 ou n'importe quelle région commerciale.
 
