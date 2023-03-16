@@ -113,15 +113,35 @@ Mettez à jour le système d'exploitation sur le connecteur pour vous assurer qu
 
 .Étapes
 . Accéder au shell CLI sur l'hôte du connecteur.
-. Exécutez les commandes suivantes avec des privilèges élevés :
+. Identifiez si le répertoire suivant existe sur l'hôte :
++
+/opt/application/netapp/service-manager-2
+
++
+Les connecteurs créés après la fin de 2022 doivent inclure ce répertoire.
+
+. Selon que ce répertoire existe ou non, exécutez des commandes pour mettre à jour le système d'exploitation :
++
+** Si le répertoire existe, exécutez les commandes suivantes avec des privilèges élevés :
 +
 [source, cli]
 ----
 sudo -s
 service netapp-service-manager stop
-yum -y update –-security
+yum -y update --security
 service netapp-service-manager start
 ----
+** Si le répertoire _n'existe pas_, exécutez les commandes suivantes avec des privilèges élevés :
++
+[source, cli]
+----
+sudo -s
+service service-manager stop
+yum -y update --security
+service service-manager start
+----
+
+
 
 
 

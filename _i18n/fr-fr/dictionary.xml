@@ -178,7 +178,6 @@
   <block id="bb036d72177ab633d83cf7c11f211546" category="section-title">Appliquer les mises à jour de sécurité</block>
   <block id="fce63be6a5df1b8f029ff105a6d48616" category="paragraph">Mettez à jour le système d'exploitation sur le connecteur pour vous assurer qu'il a été corrigé avec les dernières mises à jour de sécurité.</block>
   <block id="1208149fe3ebe603e8d12495099b22e4" category="list-text">Accéder au shell CLI sur l'hôte du connecteur.</block>
-  <block id="065ff36e9f63c035ca95dbe0bff46bfe" category="list-text">Exécutez les commandes suivantes avec des privilèges élevés :</block>
   <block id="5c6b09600cdfc594130f9f3c053efecb" category="section-title">Modifiez l'adresse IP d'un connecteur</block>
   <block id="a0dc112a414c5a75d4f2454974efc323" category="paragraph">Si votre entreprise l'exige, vous pouvez modifier l'adresse IP interne et l'adresse IP publique de l'instance de connecteur qui est automatiquement attribuée par votre fournisseur de cloud.</block>
   <block id="bfe6d8b96fb30d923a8089019f265d6b" category="list-text">Suivez les instructions de votre fournisseur de cloud pour modifier l'adresse IP locale ou l'adresse IP publique (ou les deux) de l'instance de connecteur.</block>
@@ -2976,4 +2975,10 @@
   <block id="8dffc8a152aadc1b397171c4248bd97b" category="section-title">Impact de la disponibilité des connecteurs sur Cloud Volumes ONTAP</block>
   <block id="65f052fa67c6645d7ad3edc14e47de13" category="paragraph">Un connecteur est un composant clé de l'intégrité et du fonctionnement de Cloud Volumes ONTAP. Si un connecteur est hors tension, les systèmes Cloud Volumes ONTAP PAYGO et les systèmes BYOL basés sur la capacité sont arrêtés après avoir perdu la communication avec un connecteur pendant plus de 14 jours. Cela se produit car le connecteur actualise les licences du système chaque jour.</block>
   <block id="e7da4bd68a22b069bcff5c88157199b4" category="paragraph">Dans la plupart des cas, un administrateur de compte BlueXP devra déployer un _Connector_ dans votre réseau cloud ou sur site. BlueXP peut ainsi gérer les ressources et les processus au sein de votre environnement de cloud public. <block ref="850c1601f372329538aba5fe3f86430c" category="inline-link-macro-rx"></block>.</block>
+  <block id="7889e734551361eda836c7c7bb098d0f" category="list-text">Identifiez si le répertoire suivant existe sur l'hôte :</block>
+  <block id="8a5f2dc93753049d63d32fca4e868454" category="paragraph">/opt/application/netapp/service-manager-2</block>
+  <block id="1d356cb442bdf9a28522842dc7a5fc3f" category="paragraph">Les connecteurs créés après la fin de 2022 doivent inclure ce répertoire.</block>
+  <block id="aa3abd83021c837147cb63a5da490cfc" category="list-text">Selon que ce répertoire existe ou non, exécutez des commandes pour mettre à jour le système d'exploitation :</block>
+  <block id="d18a6912830b95dcae293a053dd50838" category="list-text">Si le répertoire existe, exécutez les commandes suivantes avec des privilèges élevés :</block>
+  <block id="7239793e251456f2e73133f34ccc957d" category="list-text">Si le répertoire _n'existe pas_, exécutez les commandes suivantes avec des privilèges élevés :</block>
 </blocks>
