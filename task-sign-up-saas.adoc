@@ -28,7 +28,7 @@ Vous pouvez vous inscrire à BlueXP à l'aide de l'une des options suivantes :
 * Une connexion au cloud NetApp en indiquant votre adresse e-mail et votre mot de passe
 
 
-Les deux options prennent en charge une connexion fédérée, qui permet une authentification unique à l'aide des informations d'identification de votre annuaire d'entreprise (identité fédérée). Une fois inscrit, vous pouvez configurer une connexion fédérée à partir du https://cloud.netapp.com/help-center["Centre d'aide BlueXP"^] En sélectionnant *Options de connexion à Cloud Central*.
+Les deux options prennent en charge une connexion fédérée, qui permet une authentification unique à l'aide des informations d'identification de votre annuaire d'entreprise (identité fédérée). Vous pouvez configurer une connexion de fédération après vous être inscrit. link:concept-federation.html["Découvrez comment utiliser la fédération des identités avec BlueXP"].
 
 .Étapes
 . Ouvrez un navigateur Web et accédez au https://console.bluexp.netapp.com["Console BlueXP"^]

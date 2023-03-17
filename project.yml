@@ -51,6 +51,8 @@ sidebar:
       url: "/reference-whats-next.html"
   - title: Administration de BlueXP
     entries:
+    - title: fédération des identités
+      url: "/concept-federation.html"
     - title: Comptes NetApp
       entries:
       - title: Gérez votre compte
