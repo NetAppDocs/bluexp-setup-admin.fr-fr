@@ -2978,7 +2978,6 @@
   <block id="aa3abd83021c837147cb63a5da490cfc" category="list-text">Selon que ce répertoire existe ou non, exécutez des commandes pour mettre à jour le système d'exploitation :</block>
   <block id="d18a6912830b95dcae293a053dd50838" category="list-text">Si le répertoire existe, exécutez les commandes suivantes avec des privilèges élevés :</block>
   <block id="7239793e251456f2e73133f34ccc957d" category="list-text">Si le répertoire _n'existe pas_, exécutez les commandes suivantes avec des privilèges élevés :</block>
-  <block id="91d6fce5ad295f4c49b5ab17ad293e4c" category="summary">la fédération des identités permet l'authentification unique avec BlueXP afin que les utilisateurs puissent se connecter à l'aide d'identifiants à partir de votre identité d'entreprise. Vous devez comprendre comment BlueXP prend en charge la fédération des identités avant de configurer une connexion avec votre fournisseur d'identités.</block>
   <block id="5a94ee93b1a4f42d5f889b53b576b4f0" category="doc">Utilisation de la fédération des identités avec BlueXP</block>
   <block id="694b3afac14ef0d070817c7ae79c1199" category="section-title">Fonctionnement de la fédération des identités</block>
   <block id="e4f3bdd29d08f22be201dfa18bf12273" category="paragraph">La configuration de la fédération des identités crée une connexion de confiance entre le fournisseur de services d'authentification (auth0) de BlueXP et votre propre fournisseur de gestion des identités.</block>
@@ -3058,7 +3057,6 @@
   <block id="9534006ccd3ea731e0e001938e3f012a" category="paragraph"><block ref="9534006ccd3ea731e0e001938e3f012a" category="inline-link-rx"></block></block>
   <block id="b9960b8035bc6ae148d9d0aeae7c957b" category="list-text">URL du serveur PingFederate</block>
   <block id="512527e34bba36a42c42f1febf1b5404" category="cell">Terminez la configuration sur le serveur PingFederate en utilisant les paramètres indiqués sur la page Configuration de la fédération après avoir terminé l'étape 2.</block>
-  <block id="5b8ff6609e9eeeaa9e1acfdab0eabf9f" category="section-title">Mettre à jour une connexion fédérée</block>
   <block id="6dc0ad0e9c9267dc0e4fb63076e0635a" category="paragraph">Une fois que l'administrateur BlueXP a active une connexion, il peut mettre à jour la connexion à tout moment à partir du<block ref="635463d6f42fa56c4a5df120d7d58405" category="inline-link-rx"></block></block>
   <block id="b7d9630742e0cc263c04a1065ee99c04" category="paragraph">Par exemple, vous devrez peut-être mettre à jour la connexion en téléchargeant un nouveau certificat.</block>
   <block id="dbc6f5b69f3e88c308c302b2a186606c" category="paragraph">L'administrateur BlueXP qui a créé la connexion est le seul utilisateur autorisé à mettre à jour la connexion. Si vous souhaitez ajouter d'autres administrateurs, vous pouvez nous contacter via la discussion sur le produit.</block>
@@ -3066,4 +3064,8 @@
   <block id="22978e6bb3ddae7f86434764bd5d9415" category="paragraph">Vous pouvez utiliser l'authentification unique pour vous connecter à l'aide des informations d'identification de votre annuaire d'entreprise (identité fédérée). <block ref="428e058a0b96c0f6b163e3a51b92bb16" category="inline-link-macro-rx"></block>.</block>
   <block id="66721b55faa00316d484082879eed67d" category="paragraph">Les deux options prennent en charge une connexion fédérée, qui permet une authentification unique à l'aide des informations d'identification de votre annuaire d'entreprise (identité fédérée). Vous pouvez configurer une connexion de fédération après vous être inscrit. <block ref="428e058a0b96c0f6b163e3a51b92bb16" category="inline-link-macro-rx"></block>.</block>
   <block id="eed7d7eea79968152bcb0157d198eeea" category="sidebar">fédération des identités</block>
+  <block id="a187fbf78abfcf26b0ccf604029629e6" category="summary">la fédération des identités permet l'authentification unique avec BlueXP afin que les utilisateurs puissent se connecter à l'aide d'identifiants à partir de votre identité d'entreprise. Pour commencer, découvrez le fonctionnement de la fédération des identités avec BlueXP, puis passez en revue un aperçu du processus de configuration.</block>
+  <block id="dca3cd1676cfe384fbb50f39c2e26eb4" category="paragraph">_fédération des identités_ active l'authentification unique avec BlueXP pour que les utilisateurs puissent se connecter à l'aide d'identifiants à partir de votre identité d'entreprise. Pour commencer, découvrez le fonctionnement de la fédération des identités avec BlueXP, puis passez en revue un aperçu du processus de configuration.</block>
+  <block id="6c3d838359f74f39c9ee994a4c202763" category="cell">Administrateur Active Directory (AD)</block>
+  <block id="38354362734b03037ea9de3dd0ec048c" category="section-title">Mise à jour d'une connexion fédérée</block>
 </blocks>

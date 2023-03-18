@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: concept-federation.html 
 keywords: identity federation, federation, federated identity, set up identity federation, set up federated connection, federated connection 
-summary: 'la fédération des identités permet l"authentification unique avec BlueXP afin que les utilisateurs puissent se connecter à l"aide d"identifiants à partir de votre identité d"entreprise. Vous devez comprendre comment BlueXP prend en charge la fédération des identités avant de configurer une connexion avec votre fournisseur d"identités.' 
+summary: 'la fédération des identités permet l"authentification unique avec BlueXP afin que les utilisateurs puissent se connecter à l"aide d"identifiants à partir de votre identité d"entreprise. Pour commencer, découvrez le fonctionnement de la fédération des identités avec BlueXP, puis passez en revue un aperçu du processus de configuration.' 
 ---
 = Utilisation de la fédération des identités avec BlueXP
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: 'la fédération des identités permet l"authentification unique avec B
 
 
 [role="lead"]
-la fédération des identités permet l'authentification unique avec BlueXP afin que les utilisateurs puissent se connecter à l'aide d'identifiants à partir de votre identité d'entreprise. Vous devez comprendre comment BlueXP prend en charge la fédération des identités avant de configurer une connexion avec votre fournisseur d'identités.
+_fédération des identités_ active l'authentification unique avec BlueXP pour que les utilisateurs puissent se connecter à l'aide d'identifiants à partir de votre identité d'entreprise. Pour commencer, découvrez le fonctionnement de la fédération des identités avec BlueXP, puis passez en revue un aperçu du processus de configuration.
 
 
 
@@ -68,7 +68,7 @@ Sur un plan général, la configuration d'une connexion fédérée entre BlueXP 
 | Étape | Terminé par | Description 
 
 
-| 1 | AD admin  a| 
+| 1 | Administrateur Active Directory (AD)  a| 
 Configurez votre fournisseur d'identité SAML conformément aux directives de la documentation auth0.
 
 Afficher les instructions pour votre fournisseur d'identité SAML :
@@ -221,7 +221,7 @@ Après avoir créé la connexion à l'aide de ces informations, la page Configur
 |===
 
 
-== Mettre à jour une connexion fédérée
+== Mise à jour d'une connexion fédérée
 
 Une fois que l'administrateur BlueXP a active une connexion, il peut mettre à jour la connexion à tout moment à partir du https://services.cloud.netapp.com/federation-setup["Page d'installation de la fédération NetApp"^]
 
