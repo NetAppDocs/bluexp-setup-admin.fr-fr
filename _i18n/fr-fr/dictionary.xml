@@ -3004,7 +3004,6 @@
   <block id="3fa1942dfddcdac97191c621480a5ded" category="cell">Terminé par</block>
   <block id="c4ca4238a0b923820dcc509a6f75849b" category="cell">1</block>
   <block id="2e227b32919705455ef0fe6fd61b669d" category="cell">AD admin</block>
-  <block id="7402250b00e852b3f4ea20ff6cf99ece" category="paragraph">Configurez votre fournisseur d'identité SAML conformément aux directives de la documentation auth0.</block>
   <block id="80723e7f2abf44c346356b58de5584bf" category="paragraph">Afficher les instructions pour votre fournisseur d'identité SAML :</block>
   <block id="657ddf7370b0d5eff54a335127a66282" category="inline-link">ADFS</block>
   <block id="c33ddb3734db9918c602b8a73eb3854a" category="list-text"><block ref="c33ddb3734db9918c602b8a73eb3854a" category="inline-link-rx"></block></block>
@@ -3021,7 +3020,6 @@
   <block id="e784439ab583dc6269222d988a21051a" category="list-text"><block ref="e784439ab583dc6269222d988a21051a" category="inline-link-rx"></block></block>
   <block id="685a1bb94de19c84d18952bbd724e718" category="inline-link">suivez ces instructions génériques</block>
   <block id="e1b2d18c713df40e0da0fb45bad9d9de" category="paragraph">Si votre fournisseur d'identité n'apparaît pas dans la liste ci-dessus,<block ref="7e20de1bde53a2c364dc941f7f4f716f" category="inline-link-rx"></block></block>
-  <block id="5cad18854556867a3dd05cfaa49bcda2" category="admonition">Ne _pas_ exécutez les étapes qui décrivent comment créer une connexion avec auth0. Vous allez créer cette connexion à l'étape suivante.</block>
   <block id="c81e728d9d4c2f636f067f89cc14862c" category="cell">2</block>
   <block id="9c9a7aca54b3b1227c02037ae00098e1" category="cell">Administrateur BlueXP</block>
   <block id="1dd36b1c601a7192a0dbb196db0dae1b" category="inline-link">Page d'installation de la fédération NetApp</block>
@@ -3037,7 +3035,6 @@
   <block id="77515c9e6cbb6a15e2cb738105271642" category="cell">Tester et activer la connexion à partir du<block ref="635463d6f42fa56c4a5df120d7d58405" category="inline-link-rx"></block>Notez que la page s'actualise entre le test de la connexion et l'activation de la connexion.</block>
   <block id="6e9feb3d8b1d2610e025f8bd1e048c93" category="section-title">Microsoft Azure AD</block>
   <block id="fa292d75bd72ae1e1506c8f6c8e39fa3" category="paragraph">Dans un environnement général, la configuration d'une connexion fédérée entre BlueXP et Azure AD comprend les étapes suivantes :</block>
-  <block id="f803510b253eb6863659ac394a94c9b4" category="paragraph">Créez une nouvelle application dans Azure Active Directory avec un secret client.</block>
   <block id="a2c2d074b529efb4b812b96b74e02f33" category="inline-link">Afficher les instructions d'enregistrement de l'application avec Azure AD</block>
   <block id="8f916695f0c02d47ca7caf627294b5b2" category="paragraph"><block ref="8f916695f0c02d47ca7caf627294b5b2" category="inline-link-rx"></block></block>
   <block id="ef64c252ec5198cd24bcab0c5b591d8c" category="paragraph">Pour effectuer cette étape, vous devez obtenir les informations suivantes auprès de votre administrateur AD :</block>
@@ -3052,14 +3049,12 @@
   <block id="ea984b58d998a6393b5a21a789c7b789" category="paragraph">Pour effectuer cette étape, vous devez obtenir les informations suivantes auprès de votre administrateur AD : l'URL du serveur ADFS ou du fichier de métadonnées de fédération.</block>
   <block id="8d4a0cfaae04a0d29dc491b71ab5dcb1" category="cell">Terminez la configuration sur le serveur ADFS en utilisant les paramètres indiqués sur la page Configuration de la fédération après avoir terminé l'étape 2.</block>
   <block id="9340450967aba985f2ce16f324a6284a" category="paragraph">Sur un niveau général, la configuration d'une connexion fédérée entre BlueXP et un serveur PingFederate comprend les étapes suivantes :</block>
-  <block id="1ed12178ba0d0aded4c5a306f3150570" category="paragraph">Configurez votre serveur PingFederate conformément aux instructions de la documentation auth0.</block>
   <block id="bb6800676df1891c64f4c92dd2cf1c7e" category="inline-link">Afficher les instructions de création d'une connexion</block>
   <block id="9534006ccd3ea731e0e001938e3f012a" category="paragraph"><block ref="9534006ccd3ea731e0e001938e3f012a" category="inline-link-rx"></block></block>
   <block id="b9960b8035bc6ae148d9d0aeae7c957b" category="list-text">URL du serveur PingFederate</block>
   <block id="512527e34bba36a42c42f1febf1b5404" category="cell">Terminez la configuration sur le serveur PingFederate en utilisant les paramètres indiqués sur la page Configuration de la fédération après avoir terminé l'étape 2.</block>
   <block id="6dc0ad0e9c9267dc0e4fb63076e0635a" category="paragraph">Une fois que l'administrateur BlueXP a active une connexion, il peut mettre à jour la connexion à tout moment à partir du<block ref="635463d6f42fa56c4a5df120d7d58405" category="inline-link-rx"></block></block>
   <block id="b7d9630742e0cc263c04a1065ee99c04" category="paragraph">Par exemple, vous devrez peut-être mettre à jour la connexion en téléchargeant un nouveau certificat.</block>
-  <block id="dbc6f5b69f3e88c308c302b2a186606c" category="paragraph">L'administrateur BlueXP qui a créé la connexion est le seul utilisateur autorisé à mettre à jour la connexion. Si vous souhaitez ajouter d'autres administrateurs, vous pouvez nous contacter via la discussion sur le produit.</block>
   <block id="4cd9dd3aeeaff4f9e2ee0a8b309b6856" category="inline-link-macro">Découvrez comment utiliser la fédération des identités avec BlueXP</block>
   <block id="22978e6bb3ddae7f86434764bd5d9415" category="paragraph">Vous pouvez utiliser l'authentification unique pour vous connecter à l'aide des informations d'identification de votre annuaire d'entreprise (identité fédérée). <block ref="428e058a0b96c0f6b163e3a51b92bb16" category="inline-link-macro-rx"></block>.</block>
   <block id="66721b55faa00316d484082879eed67d" category="paragraph">Les deux options prennent en charge une connexion fédérée, qui permet une authentification unique à l'aide des informations d'identification de votre annuaire d'entreprise (identité fédérée). Vous pouvez configurer une connexion de fédération après vous être inscrit. <block ref="428e058a0b96c0f6b163e3a51b92bb16" category="inline-link-macro-rx"></block>.</block>
@@ -3068,4 +3063,9 @@
   <block id="dca3cd1676cfe384fbb50f39c2e26eb4" category="paragraph">_fédération des identités_ active l'authentification unique avec BlueXP pour que les utilisateurs puissent se connecter à l'aide d'identifiants à partir de votre identité d'entreprise. Pour commencer, découvrez le fonctionnement de la fédération des identités avec BlueXP, puis passez en revue un aperçu du processus de configuration.</block>
   <block id="6c3d838359f74f39c9ee994a4c202763" category="cell">Administrateur Active Directory (AD)</block>
   <block id="38354362734b03037ea9de3dd0ec048c" category="section-title">Mise à jour d'une connexion fédérée</block>
+  <block id="17155619aa276262956a9169cbbc98ea" category="paragraph">Configurez votre fournisseur d'identités SAML pour activer la fédération des identités avec BlueXP.</block>
+  <block id="1660967ba9c7dec5ecf29538424c54a7" category="admonition">Faites _not_ terminez les étapes qui décrivent comment créer une connexion dans auth0. Vous allez créer cette connexion à l'étape suivante.</block>
+  <block id="9149dec1c87108fda2f607ad7f9d0f7c" category="paragraph">Configurez Azure Active Directory pour activer la fédération des identités avec BlueXP.</block>
+  <block id="60f43fc6dd2ef1336922bb7836f8fd10" category="paragraph">Configurez votre serveur PingFederate pour activer la fédération des identités avec BlueXP.</block>
+  <block id="61bc7bf1f88516437cb71c2afcff94f5" category="paragraph">L'administrateur BlueXP qui a créé la connexion est le seul utilisateur autorisé à mettre à jour la connexion. Si vous souhaitez ajouter d'autres administrateurs, contactez le support NetApp.</block>
 </blocks>
