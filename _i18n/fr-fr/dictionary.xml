@@ -2756,7 +2756,6 @@
   <block id="b0844d01c75bb6b60219ee536f20aa15" category="list-text">Lorsque vous y êtes invité, consultez le contrat de licence de l'utilisateur final et acceptez les conditions.</block>
   <block id="a2d1bd30e95a89c4ecb9d6a39da84e3a" category="list-text">Sur la page *Bienvenue*, saisissez un nom pour votre compte.</block>
   <block id="efb45899558a953ff7d6578e89aa2c1c" category="inline-link-macro">Découvrez comment ajouter des membres à un compte existant</block>
-  <block id="f0416cc7adfb705444d5a66527cb9ce5" category="paragraph">Si votre entreprise a déjà un compte et que vous souhaitez y joindre, ignorez cette étape et demandez au propriétaire de vous associer au compte. Une fois que le propriétaire vous a ajouté, vous pouvez vous connecter et accéder au compte. <block ref="3b04849a18b87204738aa991e5f8575e" category="inline-link-macro-rx"></block>.</block>
   <block id="ecbca8245155432067c380b55b5146bb" category="paragraph">Un compte est la partie supérieure de la plateforme d'identités de NetApp. Il vous permet d'ajouter et de gérer des utilisateurs, des rôles, des autorisations et des environnements de travail.</block>
   <block id="a860f226d10bcd54ab238e5189d94747" category="inline-image-macro">Capture d'écran de la page d'accueil qui s'affiche lorsque vous vous connectez avec un nouveau compte qui n'appartient pas à un compte.</block>
   <block id="e079acaa326ddf3b1cb6ee167cce08f4" category="paragraph"><block ref="e079acaa326ddf3b1cb6ee167cce08f4" category="inline-image-macro-rx" type="image"></block></block>
@@ -2803,8 +2802,6 @@
   <block id="0da34741c0fedd26eb889170d87be2c7" category="list-text">Pour associer les informations d'identification à un nouvel abonnement, cliquez sur *Ajouter un abonnement &gt; Continuer* et suivez les étapes de AWS Marketplace :</block>
   <block id="c75b8cac68776a239e8da30928fbc723" category="list-text">Cliquez sur *configurer votre compte*.</block>
   <block id="2d362fb636ab4e2644720f00f02ddbfb" category="summary">Une fois inscrit à BlueXP, vous pouvez vous connecter à partir de votre navigateur Web via l'interface utilisateur SaaS.</block>
-  <block id="f2209a6bc960d5dd3350ca4b5b662c18" category="inline-link-macro">Découvrez comment vous inscrire à BlueXP et créer une organisation</block>
-  <block id="2a319fe0bd9ba8ece64b79d59a233b15" category="paragraph"><block ref="8c767825ada5127971c09f228e56d843" category="inline-link-macro-rx"></block>.</block>
   <block id="0994880ff67f7251649b7fab82f0a166" category="paragraph-title">Options de connexion</block>
   <block id="029351726760b5e014b1e49ec512b591" category="list-text">Une connexion fédérée</block>
   <block id="03eb7e8aedd1ad900f6996ff1a9cf8dd" category="list-text">Sur la page *connexion*, entrez l'adresse e-mail associée à votre connexion.</block>
@@ -3068,4 +3065,7 @@
   <block id="9149dec1c87108fda2f607ad7f9d0f7c" category="paragraph">Configurez Azure Active Directory pour activer la fédération des identités avec BlueXP.</block>
   <block id="60f43fc6dd2ef1336922bb7836f8fd10" category="paragraph">Configurez votre serveur PingFederate pour activer la fédération des identités avec BlueXP.</block>
   <block id="61bc7bf1f88516437cb71c2afcff94f5" category="paragraph">L'administrateur BlueXP qui a créé la connexion est le seul utilisateur autorisé à mettre à jour la connexion. Si vous souhaitez ajouter d'autres administrateurs, contactez le support NetApp.</block>
+  <block id="dbd1aae17ba4f4ca876aea9deb478855" category="inline-link-macro">Découvrez comment vous inscrire à BlueXP et créer un compte</block>
+  <block id="f4d0e4f5ec6f078434dc63eacdebe638" category="paragraph"><block ref="94d2906599f74921f2fab3568b028f51" category="inline-link-macro-rx"></block>.</block>
+  <block id="816dc8c932a8afbdb9361ede8774b3d0" category="paragraph">Si votre entreprise dispose déjà d'un compte et que vous souhaitez le rejoindre, fermez BlueXP et demandez au propriétaire de vous associer au compte. Une fois que le propriétaire vous a ajouté, vous pouvez vous connecter et accéder au compte. <block ref="3b04849a18b87204738aa991e5f8575e" category="inline-link-macro-rx"></block>.</block>
 </blocks>

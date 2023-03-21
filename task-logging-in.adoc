@@ -16,7 +16,7 @@ summary: 'Une fois inscrit à BlueXP, vous pouvez vous connecter à partir de vo
 [role="lead"]
 Une fois inscrit à BlueXP, vous pouvez vous connecter à partir de votre navigateur Web via l'interface utilisateur SaaS.
 
-link:task-sign-up-saas.html["Découvrez comment vous inscrire à BlueXP et créer une organisation"].
+link:task-sign-up-saas.html["Découvrez comment vous inscrire à BlueXP et créer un compte"].
 
 Si vous accédez à BlueXP à partir d'une région gouvernementale ou d'un site qui n'a pas d'accès Internet sortant, vous devez vous connecter à l'interface utilisateur BlueXP qui fonctionne localement sur le connecteur. link:task-managing-connectors.html#access-the-local-ui["Découvrez comment accéder à l'interface utilisateur locale sur le connecteur"].
 
