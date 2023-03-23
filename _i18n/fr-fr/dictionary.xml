@@ -2501,7 +2501,6 @@
   <block id="c1141a37b962270fc1e8960233830c99" category="section-title">Règles IAM</block>
   <block id="d169cac20ae3e0b6b9cec32d273de5f2" category="paragraph">Les règles IAM disponibles ci-dessous fournissent les autorisations nécessaires à un connecteur pour gérer les ressources et les processus au sein de votre environnement de cloud public, en fonction de votre région AWS.</block>
   <block id="74b6a526e505305f967084e06fa6aaf3" category="paragraph">Si vous créez un connecteur dans une région AWS standard directement depuis BlueXP, BlueXP applique automatiquement des stratégies au connecteur. Vous n'avez rien à faire dans ce cas.</block>
-  <block id="fb86f9a9f53ddf38f2b2297b0200b8a3" category="paragraph">Si vous déployez le connecteur depuis AWS Marketplace ou si vous installez manuellement le connecteur sur un hôte Linux, vous devrez définir vous-même les règles.</block>
   <block id="b8502b99c36d378968d3d20a7561e523" category="paragraph">Vous devez également vous assurer que les règles sont à jour lorsque de nouvelles autorisations sont ajoutées dans les versions suivantes.</block>
   <block id="de16d176ab7c6c01a7ce45f2e7213194" category="paragraph">Sélectionnez votre région pour afficher les stratégies requises :</block>
   <block id="481dd59686d42d2d6a74eae1a1d763ad" category="paragraph">Pour les régions standard, les autorisations sont réparties entre deux règles. Deux règles sont requises en raison d'une taille maximale de caractères pour les stratégies gérées dans AWS.</block>
@@ -3068,4 +3067,11 @@
   <block id="dbd1aae17ba4f4ca876aea9deb478855" category="inline-link-macro">Découvrez comment vous inscrire à BlueXP et créer un compte</block>
   <block id="f4d0e4f5ec6f078434dc63eacdebe638" category="paragraph"><block ref="94d2906599f74921f2fab3568b028f51" category="inline-link-macro-rx"></block>.</block>
   <block id="816dc8c932a8afbdb9361ede8774b3d0" category="paragraph">Si votre entreprise dispose déjà d'un compte et que vous souhaitez le rejoindre, fermez BlueXP et demandez au propriétaire de vous associer au compte. Une fois que le propriétaire vous a ajouté, vous pouvez vous connecter et accéder au compte. <block ref="3b04849a18b87204738aa991e5f8575e" category="inline-link-macro-rx"></block>.</block>
+  <block id="5409221a62615b6b2cf0061a5376c983" category="inline-link">Documentation AWS : élément de condition</block>
+  <block id="4c3260e1174dd82ea2e496ac6f39fc4a" category="paragraph">Si nécessaire, vous pouvez restreindre les règles IAM à l'aide de l'IAM<block ref="9e2941b3c81256fac10392aaca4ccfde" prefix=" " category="inline-code"></block> elément.<block ref="19ffef022087e160f1e54b9948795943" category="inline-link-rx"></block></block>
+  <block id="7d6d11737dd3bca1243f4e22e7aeaec1" category="list-text">Vous devez définir vous-même les règles si vous déployez le connecteur à partir d'AWS Marketplace, si vous installez manuellement le connecteur sur un hôte Linux ou si vous souhaitez ajouter des informations d'identification AWS supplémentaires à BlueXP.</block>
+  <block id="0c511f4078f33be6ce46a7b4c4d64f3e" category="section-title">23 mars 2023</block>
+  <block id="43908e244f944d05ab87a4987453f7bc" category="paragraph">Cloud Data Sense ne requiert plus l'autorisation « Microsoft.Storage/storageAccounts/delete ».</block>
+  <block id="47e8280c2cd82cf2f49537bfd5661b15" category="paragraph">Cette autorisation est toujours requise pour Cloud Volumes ONTAP.</block>
+  <block id="15f7c3376619ce497205d543fd1d7767" category="paragraph">Si nécessaire, vous pouvez restreindre la politique IAM à l'aide de l'IAM<block ref="9e2941b3c81256fac10392aaca4ccfde" prefix=" " category="inline-code"></block> elément.<block ref="19ffef022087e160f1e54b9948795943" category="inline-link-rx"></block></block>
 </blocks>

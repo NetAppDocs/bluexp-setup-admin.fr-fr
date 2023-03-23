@@ -67,6 +67,8 @@ Dans les deux cas, vous devez d'abord commencer par créer une stratégie IAM qu
 
 Cette politique contient uniquement les autorisations nécessaires pour lancer l'instance Connector dans AWS à partir de BlueXP. N'utilisez pas cette politique dans d'autres situations.
 
+Si nécessaire, vous pouvez restreindre la politique IAM à l'aide de l'IAM `Condition` elément. https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition.html["Documentation AWS : élément de condition"^]
+
 Lorsque BlueXP crée le connecteur, il applique un nouvel ensemble d'autorisations à l'instance Connector qui permet au connecteur de gérer les ressources de votre environnement de cloud public.
 
 .Étapes

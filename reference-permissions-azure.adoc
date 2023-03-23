@@ -321,9 +321,6 @@ Lorsque vous utilisez Cloud Data Sense, il effectue les requêtes d'API suivante
 | Microsoft.Storage/storageAccounts/write | Oui. | Non 
 
 
-| Microsoft.Storage/storageAccounts/delete | Non | Oui. 
-
-
 | Microsoft.Storage/storageAccounts/blobServices/containers/read | Oui. | Oui. 
 
 
@@ -764,6 +761,14 @@ Ce connecteur effectue les requêtes d'API suivantes pour détecter et gérer le
 == Journal des modifications
 
 Lorsque des autorisations sont ajoutées et supprimées, nous les noterons dans les sections ci-dessous.
+
+
+
+=== 23 mars 2023
+
+Cloud Data Sense ne requiert plus l'autorisation « Microsoft.Storage/storageAccounts/delete ».
+
+Cette autorisation est toujours requise pour Cloud Volumes ONTAP.
 
 
 
