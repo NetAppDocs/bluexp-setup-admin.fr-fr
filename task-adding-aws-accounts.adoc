@@ -132,7 +132,7 @@ Si vous venez de créer ces identifiants dans votre fournisseur cloud, il vous f
 +
 image:screenshot_settings_icon.gif["Capture d'écran affichant l'icône Paramètres dans le coin supérieur droit de la console BlueXP."]
 
-. Cliquez sur *Ajouter des informations d'identification* et suivez les étapes de l'assistant.
+. Sur la page *informations d'identification du compte*, cliquez sur *Ajouter des informations d'identification* et suivez les étapes de l'assistant.
 +
 .. *Emplacement des informations d'identification* : sélectionnez *Amazon Web Services > connecteur*.
 .. *Définir les informations d'identification* : fournir l'ARN (Amazon Resource Name) d'un rôle IAM approuvé, ou entrer une clé d'accès AWS et une clé secrète.
@@ -199,7 +199,7 @@ Si vous venez de créer le rôle IAM, l'utilisation peut prendre quelques minute
 +
 image:screenshot_settings_icon.gif["Capture d'écran affichant l'icône Paramètres dans le coin supérieur droit de la console BlueXP."]
 
-. Cliquez sur *Ajouter des informations d'identification* et suivez les étapes de l'assistant.
+. Sur la page *informations d'identification du compte*, cliquez sur *Ajouter des informations d'identification* et suivez les étapes de l'assistant.
 +
 .. *Informations d'identification Location* : sélectionnez *Amazon Web Services > BlueXP*.
 .. *Définir les informations d'identification* : fournir l'ARN (Amazon Resource Name) du rôle IAM.
@@ -228,7 +228,7 @@ Vous devez créer un connecteur avant de pouvoir modifier les paramètres BlueXP
 
 .Étapes
 . Dans le coin supérieur droit de la console BlueXP, cliquez sur l'icône Paramètres et sélectionnez *informations d'identification*.
-. Cliquez sur le menu d'action correspondant à un ensemble d'informations d'identification, puis sélectionnez *associer un abonnement*.
+. Sur la page *informations d'identification du compte*, cliquez sur le menu d'action correspondant à un ensemble d'informations d'identification, puis sélectionnez *abonnement associé*.
 +
 image:screenshot_associate_subscription.png["Capture d'écran du menu d'action pour un ensemble d'informations d'identification existantes."]
 
@@ -274,7 +274,7 @@ TIP: Vous ne pouvez pas modifier les informations d'identification d'un profil d
 
 .Étapes
 . Dans le coin supérieur droit de la console BlueXP, cliquez sur l'icône Paramètres et sélectionnez *informations d'identification*.
-. Cliquez sur le menu d'action correspondant à un ensemble d'informations d'identification, puis sélectionnez *Modifier les informations d'identification*.
+. Sur la page *informations d'identification du compte*, cliquez sur le menu d'action correspondant à un ensemble d'informations d'identification, puis sélectionnez *Modifier les informations d'identification*.
 . Apportez les modifications requises, puis cliquez sur *appliquer*.
 
 
@@ -289,6 +289,6 @@ TIP: Vous ne pouvez pas supprimer les informations d'identification d'un profil 
 
 .Étapes
 . Dans le coin supérieur droit de la console BlueXP, cliquez sur l'icône Paramètres et sélectionnez *informations d'identification*.
-. Cliquez sur le menu d'action pour un ensemble d'informations d'identification, puis sélectionnez *Supprimer les informations d'identification*.
+. Sur la page *informations d'identification du compte*, cliquez sur le menu d'action correspondant à un ensemble d'informations d'identification, puis sélectionnez *Supprimer les informations d'identification*.
 . Cliquez sur *Supprimer* pour confirmer.
 

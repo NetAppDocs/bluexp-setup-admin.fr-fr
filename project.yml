@@ -83,6 +83,30 @@ sidebar:
         url: "/task-configuring-proxy.html"
       - title: Configuration par défaut
         url: "/reference-connector-default-config.html"
+    - title: Informations d'identification
+      entries:
+      - title: Gérez les identifiants AWS
+        entries:
+        - title: Présentation
+          url: "/concept-accounts-aws.html"
+        - title: Gérez les identifiants et les abonnements
+          url: "/task-adding-aws-accounts.html"
+      - title: Gérez les identifiants Azure
+        entries:
+        - title: Présentation
+          url: "/concept-accounts-azure.html"
+        - title: Gérez les identifiants et les abonnements
+          url: "/task-adding-azure-accounts.html"
+      - title: Gérez les identifiants Google Cloud
+        entries:
+        - title: Présentation
+          url: "/concept-accounts-gcp.html"
+        - title: Gérez les identifiants et les abonnements
+          url: "/task-adding-gcp-accounts.html"
+      - title: Gérez les identifiants NSS associés à un compte BlueXP
+        url: "/task-adding-nss-accounts.html"
+      - title: Gestion des identifiants associés à votre connexion BlueXP
+        url: "/task-manage-user-credentials.html"
     - title: Abonnements
       url: "/task-manage-subscriptions.html"
     - title: Stockage cloud découvert
@@ -93,26 +117,6 @@ sidebar:
         url: "/task-viewing-azure-blob.html"
       - title: Consultez vos compartiments de stockage Google Cloud
         url: "/task-viewing-gcp-storage.html"
-    - title: Identifiants AWS
-      entries:
-      - title: Présentation
-        url: "/concept-accounts-aws.html"
-      - title: Gérez les identifiants et les abonnements
-        url: "/task-adding-aws-accounts.html"
-    - title: Identifiants Azure
-      entries:
-      - title: Présentation
-        url: "/concept-accounts-azure.html"
-      - title: Gérez les identifiants et les abonnements
-        url: "/task-adding-azure-accounts.html"
-    - title: Identifiants Google Cloud
-      entries:
-      - title: Présentation
-        url: "/concept-accounts-gcp.html"
-      - title: Gérez les identifiants et les abonnements
-        url: "/task-adding-gcp-accounts.html"
-    - title: Comptes sur le site de support NetApp
-      url: "/task-adding-nss-accounts.html"
     - title: Découverte à l'aide de Mes opportunités
       url: "/concept-my-opportunities.html"
   - title: Référence

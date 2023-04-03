@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: task-adding-nss-accounts.html 
 keywords: adding, creating, netapp support site account, nss, update account, update nss account, update nss credentials, delete nss account, remove nss account, change working environment, working environment nss 
-summary: 'Fournissez les identifiants de vos comptes sur le site du support NetApp (NSS) pour vous inscrire au support, activer des workflows clés pour Cloud Volumes ONTAP et bien plus encore.' 
+summary: 'Fournissez les identifiants de vos comptes sur le site du support NetApp (NSS) pour vous inscrire au support, activer des workflows clés pour Cloud Volumes ONTAP et bien plus encore. Ces informations d"identification NSS sont associées à l"ensemble du compte BlueXP.' 
 ---
-= Gérez vos comptes sur le site de support NetApp dans BlueXP
+= Gérez les identifiants NSS associés à un compte BlueXP
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,25 +14,14 @@ summary: 'Fournissez les identifiants de vos comptes sur le site du support NetA
 
 
 [role="lead"]
-Fournissez les identifiants de vos comptes sur le site du support NetApp (NSS) pour vous inscrire au support, activer des workflows clés pour Cloud Volumes ONTAP et bien plus encore.
+Fournissez les identifiants de vos comptes sur le site du support NetApp (NSS) pour vous inscrire au support, activer des workflows clés pour Cloud Volumes ONTAP et bien plus encore. Ces informations d'identification NSS sont associées à l'ensemble du compte BlueXP.
+
+
+NOTE: BlueXP prend également en charge l'association d'un compte NSS par utilisateur BlueXP. link:task-manage-user-credentials.html["Découvrez comment gérer les identifiants de niveau utilisateur"].
 
 
 
 == Présentation
-
-BlueXP prend en charge l'association d'un compte NSS à chaque utilisateur BlueXP et l'association d'un ou plusieurs comptes NSS à votre compte BlueXP.
-
-
-
-=== Identifiants NSS par utilisateur BlueXP
-
-Vos identifiants NSS individuels sont requis pour accéder à votre compte Digital Advisor et gérer les dossiers de support via BlueXP. Ces identifiants sont uniquement visibles par la personne qui se connecte à BlueXP. Les informations d'identification peuvent être supprimées et mises à jour selon les besoins.
-
-<<Manage NSS credentials per BlueXP user,Découvrez comment gérer les identifiants NSS par utilisateur BlueXP>>.
-
-
-
-=== Identifiants NSS pour votre compte BlueXP
 
 Pour activer les tâches suivantes dans BlueXP, vous devez associer les informations d'identification du site de support NetApp à votre ID de compte BlueXP :
 
@@ -51,52 +40,9 @@ Vous devez fournir votre compte NSS afin d'activer le support pour votre systèm
 
 Ces identifiants sont associés à votre ID de compte BlueXP. Les utilisateurs qui appartiennent au compte BlueXP peuvent accéder à ces informations d'identification depuis *support > gestion NSS*.
 
-<<Gérez les identifiants NSS de votre compte BlueXP,Découvrez comment gérer les identifiants NSS de votre compte BlueXP>>.
 
 
-
-== Gérez les identifiants NSS pour votre connexion BlueXP
-
-Les identifiants NSS associés à votre connexion BlueXP permettent d'accéder à Digital Advisor et à des fonctionnalités de gestion des dossiers.
-
-* Lorsque vous accédez à Digital Advisor dans BlueXP, vous êtes invité à vous connecter à Digital Advisor en saisissant vos informations d'identification NSS. Une fois vos identifiants NSS saisi, ce compte NSS s'affiche en haut de la page gestion NSS. Vous pouvez alors gérer ces informations d'identification selon vos besoins.
-* Lorsque vous accédez à *support > case Management*, vous êtes invité à entrer vos informations d'identification NSS, si vous ne l'avez pas déjà fait. Cette page affiche les dossiers de demande de support associés à votre compte NSS et à votre entreprise.
-
-
-Remarque :
-
-* Le compte est géré au niveau de l'utilisateur, ce qui signifie qu'il n'est pas visible par les autres utilisateurs qui se connectent.
-* Le compte ne peut pas être utilisé avec d'autres fonctionnalités BlueXP : il n'est pas associé à la création d'Cloud Volumes ONTAP, aux licences ou à la création de dossiers de support.
-* Il ne peut y avoir qu'un seul compte NSS associé à Digital Advisor et à la gestion des dossiers, par utilisateur.
-
-
-.Étapes
-. Dans le coin supérieur droit de la console BlueXP, cliquez sur l'icône aide et sélectionnez *support*.
-+
-image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/media/screenshot-help-support.png["Capture d'écran du menu aide où support est la première option répertoriée"]
-
-. Cliquez sur *NSS Management*.
-. Sous *vos informations d'identification NSS*, cliquez sur *action* et choisissez l'une des options suivantes :
-+
-** *Utilisateur NSS associé* : ajoutez des informations d'identification pour un compte sur le site de support NetApp.
-** *Mettre à jour vos identifiants existants* : mettez à jour les identifiants pour votre compte sur le site de support NetApp.
-** *Supprimer* : supprimez le compte associé à votre compte utilisateur BlueXP.
-
-
-
-
-.Résultat
-BlueXP met à jour vos identifiants NSS. Les modifications seront prises en compte lorsque vous accédez à Digital Advisor ou à la page case Management.
-
-
-
-== Gérez les identifiants NSS de votre compte BlueXP
-
-Gérez les informations d'identification NSS associées à votre compte BlueXP afin que vous puissiez vous inscrire au support, créer des dossiers de support et activer les principaux workflows pour Cloud Volumes ONTAP.
-
-
-
-=== Ajouter un compte NSS
+== Ajouter un compte NSS
 
 Le tableau de bord de support vous permet d'ajouter et de gérer vos comptes du site de support NetApp pour les utiliser avec BlueXP au niveau de votre compte BlueXP.
 
@@ -153,7 +99,7 @@ Les utilisateurs peuvent désormais sélectionner le compte lors de la création
 
 
 
-=== Mettre à jour un compte NSS pour la nouvelle méthode d'authentification
+== Mettre à jour un compte NSS pour la nouvelle méthode d'authentification
 
 Depuis novembre 2021, NetApp utilise désormais Microsoft Azure Active Directory comme fournisseur d'identités pour les services d'authentification spécifiques au support et aux licences. Suite à cette mise à jour, BlueXP vous invitera à mettre à jour les informations d'identification de tous les comptes existants que vous avez ajoutés précédemment.
 
@@ -179,7 +125,7 @@ Une fois le processus terminé, le compte que vous avez mis à jour doit mainten
 
 
 
-=== Mettre à jour les identifiants NSS
+== Mettre à jour les identifiants NSS
 
 Vous devrez mettre à jour les informations d'identification de vos comptes NSS dans BlueXP lorsque l'un des cas suivants se produit :
 
@@ -203,7 +149,7 @@ NetApp utilise Microsoft Azure Active Directory comme fournisseur d'identités p
 
 
 
-=== Associez un environnement de travail à un autre compte NSS
+== Associez un environnement de travail à un autre compte NSS
 
 Si votre entreprise compte plusieurs comptes sur le site de support NetApp, vous pouvez modifier le compte associé à un système Cloud Volumes ONTAP.
 
@@ -227,7 +173,7 @@ image:screenshot-nss-change-account.png["Capture d'écran montrant le menu d'act
 
 
 
-=== Affichez l'adresse e-mail d'un compte NSS
+== Affichez l'adresse e-mail d'un compte NSS
 
 Lorsque les comptes du site de support NetApp utilisent Microsoft Azure Active Directory pour les services d'authentification, le nom d'utilisateur NSS qui s'affiche dans BlueXP est généralement un identifiant généré par Azure AD. Par conséquent, il se peut que vous ne sachiez pas immédiatement l'adresse e-mail associée à ce compte. Mais BlueXP a une option pour vous montrer l'adresse e-mail associée.
 
@@ -248,7 +194,7 @@ BlueXP affiche le nom d'utilisateur du site de support NetApp ainsi que l'adress
 
 
 
-=== Supprimer un compte NSS
+== Supprimer un compte NSS
 
 Supprimez tous les comptes NSS que vous ne souhaitez plus utiliser avec BlueXP.
 

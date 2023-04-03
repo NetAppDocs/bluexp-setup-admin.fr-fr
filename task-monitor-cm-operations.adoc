@@ -98,7 +98,7 @@ Vous pouvez envoyer par e-mail des types de notifications spécifiques afin de v
 
 [NOTE]
 ====
-* Les notifications sont alors envoyées par e-mail pour les fonctionnalités et services BlueXP suivants : connecteurs, Cloud Sync, sauvegarde dans le cloud et protection contre les attaques par ransomware. D'autres services seront ajoutés dans les prochaines versions.
+* Des notifications sont alors envoyées par e-mail pour les fonctionnalités et services BlueXP suivants : connecteurs, Cloud Sync, Cloud Backup, portefeuille digital et protection contre les ransomwares. D'autres services seront ajoutés dans les prochaines versions.
 * L'envoi de notifications par e-mail n'est pas pris en charge lorsque le connecteur est installé sur un site sans accès à Internet.
 
 

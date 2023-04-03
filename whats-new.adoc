@@ -18,6 +18,54 @@ Découvrez les nouveautés des fonctionnalités d'administration BlueXP : compte
 
 
 
+== 3 avril 2023
+
+
+
+=== Connecteur 3.9.28
+
+* Les notifications par e-mail sont désormais prises en charge par le portefeuille digital.
++
+Si vous configurez vos paramètres de notification, vous pouvez recevoir des notifications par e-mail lorsque vos licences BYOL vont expirer (une notification d'avertissement) ou si elles ont déjà expiré (une notification d'erreur).
+
++
+https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-monitor-cm-operations.html["Découvrez comment configurer les notifications par e-mail"].
+
+* Le connecteur est désormais pris en charge dans la région Google Cloud Turin.
++
+https://cloud.netapp.com/cloud-volumes-global-regions["Afficher la liste complète des régions prises en charge"^]
+
+* Vous pouvez désormais découvrir les serveurs VMware vCenter dans BlueXP.
++
+Une fois que vous avez découvert un serveur VMware vCenter Server exécuté dans AWS ou sur site, vous pouvez ouvrir l'environnement de travail pour afficher les détails sur les datastores et les machines virtuelles associés au serveur.
+
++
+La seule exigence est un connecteur qui dispose d'une connexion à un serveur VMware vCenter Server exécutant la version 7.0 ou ultérieure.
+
++
+Pour commencer, sélectionnez *Ajouter un environnement de travail*, *Amazon Web Services* ou *sur site*, puis *VMware vCenter Server*. Entrez le nom de domaine ou l'adresse IP du serveur, puis entrez le nom d'utilisateur et le mot de passe de l'utilisateur admin.
+
+* Vous pouvez désormais gérer les identifiants utilisateur associés à votre connexion BlueXP : identifiants ONTAP et identifiants NSS (NetApp support site).
++
+Lorsque vous accédez à *Paramètres > informations d'identification*, vous pouvez afficher les informations d'identification, les mettre à jour et les supprimer. Par exemple, si vous modifiez le mot de passe de ces informations d'identification, vous devez le mettre à jour dans BlueXP.
+
++
+link:task-manage-user-credentials.html["Découvrez comment gérer les informations d'identification des utilisateurs"].
+
+* Vous pouvez maintenant télécharger des pièces jointes lorsque vous créez un dossier de support ou lorsque vous mettez à jour les notes de dossier pour un dossier de support existant.
++
+https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-get-help.html#manage-your-support-cases["Découvrez comment créer et gérer des dossiers de demande de support"].
+
+* Cette version de Connector inclut également des améliorations apportées à Cloud Volumes ONTAP et des clusters ONTAP sur site.
++
+** https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#3-april-2023["Découvrez les améliorations apportées à Cloud Volumes ONTAP"^]
+** https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/whats-new.html#3-april-2023["Découvrez les améliorations apportées aux clusters sur site de ONTAP"^]
+
+
+
+
+
+
 == 5 mars 2023
 
 
