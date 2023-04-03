@@ -3087,8 +3087,6 @@
   <block id="70843c2315ee9e00dc50f03225c92953" category="paragraph">Pour commencer, sélectionnez *Ajouter un environnement de travail*, *Amazon Web Services* ou *sur site*, puis *VMware vCenter Server*. Entrez le nom de domaine ou l'adresse IP du serveur, puis entrez le nom d'utilisateur et le mot de passe de l'utilisateur admin.</block>
   <block id="fb378d84e11ead1b2c8c57bfabde81de" category="list-text">Vous pouvez désormais gérer les identifiants utilisateur associés à votre connexion BlueXP : identifiants ONTAP et identifiants NSS (NetApp support site).</block>
   <block id="f06293a36a992a2a1b8c6f6572b6caf8" category="paragraph">Lorsque vous accédez à *Paramètres &gt; informations d'identification*, vous pouvez afficher les informations d'identification, les mettre à jour et les supprimer. Par exemple, si vous modifiez le mot de passe de ces informations d'identification, vous devez le mettre à jour dans BlueXP.</block>
-  <block id="b74c77e09b66a8f63b22e9ec3917cbbc" category="inline-link-macro">Découvrez comment gérer les informations d'identification des utilisateurs</block>
-  <block id="43cddfbd5a5e952fa3a0613068b01922" category="paragraph"><block ref="f57f6e52027d92bbfed90d112fcd8715" category="inline-link-macro-rx"></block>.</block>
   <block id="4e46804b204e02c9bd12cc6d7232cca6" category="list-text">Vous pouvez maintenant télécharger des pièces jointes lorsque vous créez un dossier de support ou lorsque vous mettez à jour les notes de dossier pour un dossier de support existant.</block>
   <block id="72c3a2be47cc6617cea246e89af67993" category="inline-link">Découvrez comment créer et gérer des dossiers de demande de support</block>
   <block id="6d69140f9b878e098eb9bfcd623c9dbd" category="paragraph"><block ref="7f3b2cbcf14ed0f5a85962e6b9e3eba8" category="inline-link-rx"></block>.</block>
@@ -3097,4 +3095,6 @@
   <block id="c7f5c1a75acc58c6f004efc0ce1eba09" category="list-text">*Pièce jointe (facultatif)* : téléchargez jusqu'à cinq pièces jointes, une à la fois.</block>
   <block id="bfa80e7aaad6da353b431bff3a0e12d6" category="paragraph">Les pièces jointes sont limitées à 25 Mo par fichier. Les extensions de fichier suivantes sont prises en charge : txt, log, PDF, jpg/JPEG, rtf, doc/docx, xls/xlsx et csv.</block>
   <block id="8e6b52a532a4fbbfc98dca3ebfa5f1e6" category="list-text">*Mettre à jour les notes de cas* : fournir des détails supplémentaires sur votre problème ou sélectionner *Télécharger les fichiers* pour joindre jusqu'à cinq fichiers.</block>
+  <block id="6f6e8b4bb29cff7fb5a94ccadb883777" category="inline-link-macro">Découvrez comment gérer les informations d'identification des utilisateurs</block>
+  <block id="551a80734187b23f5368b6a5609f3de3" category="paragraph"><block ref="cf16e3f2aabf285f3de8d29b23130725" category="inline-link-macro-rx"></block>.</block>
 </blocks>
