@@ -70,7 +70,7 @@ Pour commencer, sélectionnez *Ajouter un environnement de travail*, *Amazon Web
 Lorsque vous accédez à *Paramètres > informations d'identification*, vous pouvez afficher les informations d'identification, les mettre à jour et les supprimer. Par exemple, si vous modifiez le mot de passe de ces informations d'identification, vous devez le mettre à jour dans BlueXP.
 
 +
-link:task-manage-user-credentials.html["Découvrez comment gérer les informations d'identification des utilisateurs"].
+https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-manage-user-credentials.html["Découvrez comment gérer les informations d'identification des utilisateurs"].
 
 * Vous pouvez maintenant télécharger des pièces jointes lorsque vous créez un dossier de support ou lorsque vous mettez à jour les notes de dossier pour un dossier de support existant.
 +
