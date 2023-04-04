@@ -63,7 +63,7 @@ Services AWS (amazonaws.com):
 | \https://management.usgovcloudapi.net \https://login.microsoftonline.us \https://blob.core.usgovcloudapi.net \https://core.usgovcloudapi.net | De gérer les ressources dans les régions Azure Government. 
 
 
-| \shttps://management.azure.microsoft.scloud \https://login.microsoftonline.microsoft.scloud \https://blob.core.microsoft.scloud \https://core.microsoft.scloud | Pour gérer les ressources dans la région d'Azure IL6. 
+| \https://management.azure.microsoft.scloud \https://login.microsoftonline.microsoft.scloud \https://blob.core.microsoft.scloud \https://core.microsoft.scloud | Pour gérer les ressources dans la région d'Azure IL6. 
 
 
 | \https://management.chinacloudapi.cn \https://login.chinacloudapi.cn \https://blob.core.chinacloudapi.cn \https://core.chinacloudapi.cn | De gérer les ressources dans les régions Azure China. 

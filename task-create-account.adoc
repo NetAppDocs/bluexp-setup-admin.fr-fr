@@ -1,0 +1,39 @@
+---
+sidebar: sidebar 
+permalink: task-create-account.html 
+keywords: create account, account, create, create another account, tenancy account, tenancy, tenancy account creation 
+summary: 'Lorsque vous vous inscrivez à BlueXP, vous êtes invité à créer un compte pour votre entreprise. Ce compte peut être tout ce dont vous avez besoin, mais si votre entreprise a besoin de plusieurs comptes, vous devrez créer des comptes supplémentaires à l"aide de l"API de location.' 
+---
+= Créez un autre compte BlueXP
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Lorsque vous vous inscrivez à BlueXP, vous êtes invité à créer un compte pour votre entreprise. Ce compte peut être tout ce dont vous avez besoin, mais si votre entreprise a besoin de plusieurs comptes, vous devrez créer des comptes supplémentaires à l'aide de l'API de location.
+
+Utilisez l'appel d'API suivant pour créer un compte BlueXP supplémentaire :
+
+POST `/tenancy/account/{accountName}`
+
+Si vous souhaitez activer le mode restreint, vous devez inclure les éléments suivants dans le corps de la demande :
+
+[source, JSON]
+----
+{
+  "isSaasDisabled": true
+}
+----
+
+NOTE: Vous ne pouvez pas modifier le paramètre de mode restreint une fois le compte créé par BlueXP. Vous ne pouvez pas activer le mode restreint ultérieurement et vous ne pouvez pas le désactiver ultérieurement. Elle doit être définie au moment de la création du compte.
+
+https://docs.netapp.com/us-en/cloud-manager-automation/tenancy/post-tenancy-account-.html["Découvrez comment utiliser cet appel d'API"^]
+
+.Liens connexes
+* link:concept-netapp-accounts.html["Découvrez les comptes BlueXP"]
+* link:concept-modes.html["Découvrez les modes de déploiement BlueXP"]
+

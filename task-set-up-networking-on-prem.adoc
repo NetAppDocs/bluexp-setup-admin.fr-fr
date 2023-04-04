@@ -1,0 +1,133 @@
+---
+sidebar: sidebar 
+permalink: task-set-up-networking-on-prem.html 
+keywords: networking, on prem networking, endpoints, urls, ports, ip address, proxy, proxy server, connections 
+summary: Configurez votre réseau de manière à ce que Connector puisse gérer les ressources et les processus dans votre environnement de cloud hybride. 
+---
+= Configuration du réseau sur site
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Configurez votre réseau de manière à ce que Connector puisse gérer les ressources et les processus dans votre environnement de cloud hybride.
+
+
+
+== Connexions aux réseaux cibles
+
+Un connecteur nécessite une connexion réseau au type d'environnement de travail que vous créez et aux services que vous prévoyez d'activer.
+
+Par exemple, si vous souhaitez lancer Cloud Volumes ONTAP dans le cloud, vous devez configurer une connexion VPN entre votre réseau d'entreprise et le réseau virtuel sur lequel vous prévoyez de lancer Cloud Volumes ONTAP.
+
+
+
+== Accès Internet sortant
+
+L'emplacement réseau où vous déployez le connecteur doit disposer d'une connexion Internet sortante.
+
+
+
+=== Points finaux contactés lors de l'installation manuelle
+
+Lorsque vous installez manuellement le connecteur sur votre propre hôte Linux, le programme d'installation du connecteur nécessite l'accès aux URL suivantes pendant le processus d'installation :
+
+* \https://support.netapp.com
+* \https://mysupport.netapp.com
+* \https://cloudmanager.cloud.netapp.com/tenancy
+* \https://stream.cloudmanager.cloud.netapp.com
+* \https://cloudmanagerinfraprod.azurecr.io
+* \https://production-artifacts.cloudmanager.cloud.netapp.com
+* \https://*.blob.core.windows.net
+
+
+L'hôte peut essayer de mettre à jour les packages du système d'exploitation lors de l'installation. L'hôte peut contacter différents sites de mise en miroir pour ces packages OS.
+
+
+
+=== Terminaux contactés pour les opérations quotidiennes
+
+Le connecteur nécessite un accès Internet sortant pour contacter les terminaux suivants afin de gérer les ressources et les processus au sein de votre environnement de cloud public.
+
+[cols="2*"]
+|===
+| Terminaux | Objectif 
+
+
+ a| 
+Services AWS (amazonaws.com):
+
+* CloudFormation
+* Cloud de calcul élastique (EC2)
+* Gestion des identités et des accès
+* Service de gestion des clés (KMS)
+* Service de jetons de sécurité (STS)
+* Service de stockage simple (S3)
+
+| Pour gérer les ressources dans AWS. Le point final exact dépend de la région dans laquelle vous déployez le connecteur. https://docs.aws.amazon.com/general/latest/gr/rande.html["Pour plus d'informations, consultez la documentation AWS"^] 
+
+
+| \https://management.azure.com \https://login.microsoftonline.com | Afin de gérer les ressources dans les régions publiques d'Azure. 
+
+
+| \https://management.chinacloudapi.cn \https://login.chinacloudapi.cn | De gérer les ressources dans les régions Azure China. 
+
+
+| \https://www.googleapis.com/compute/v1/ \https://cloudresourcemanager.googleapis.com/v1/projects \https://www.googleapis.com/compute/beta \https://storage.googleapis.com/storage/v1 \https://www.googleapis.com/storage/v1 \https://iam.googleapis.com/v1 \https://cloudkms.googleapis.com/v1 \https://www.googleapis.com/deploymentmanager/v2/projects | De gérer des ressources dans Google Cloud. 
+
+
+| \https://support.netapp.com | Pour obtenir des informations sur les licences et envoyer des messages AutoSupport au support NetApp. 
+
+
+ a| 
+\https://*.api.bluexp.netapp.com
+
+\https://api.bluexp.netapp.com
+
+\https://*.cloudmanager.cloud.netapp.com
+
+\https://cloudmanager.cloud.netapp.com
+ a| 
+Pour fournir des fonctions et des services SaaS dans BlueXP.
+
+
+NOTE: Le connecteur est en train de contacter « cloudmanager.cloud.netapp.com", mais il commencera à contacter « api.bluexp.netapp.com" » dans une prochaine version.
+
+
+
+| \https://cloudmanagerinfraprod.azurecr.io \https://*.blob.core.windows.net | Pour mettre à niveau le connecteur et ses composants Docker. 
+|===
+.Lien associé
+link:reference-networking-saas-console.html["Préparez la mise en réseau pour l'accès utilisateur à la console BlueXP"]
+
+
+
+== Serveur proxy
+
+Si votre organisation nécessite le déploiement d'un serveur proxy pour tout le trafic Internet sortant, obtenez les informations suivantes sur votre proxy HTTP ou HTTPS :
+
+* Adresse IP
+* Informations d'identification
+* Certificat HTTPS
+
+
+
+
+== Ports
+
+Il n'y a pas de trafic entrant vers le connecteur, sauf si vous le lancez ou si le connecteur est utilisé comme proxy pour les messages AutoSupport.
+
+* HTTP (80) et HTTPS (443) permettent d'accéder à l'interface utilisateur locale que vous utiliserez dans de rares circonstances.
+* SSH (22) n'est nécessaire que si vous devez vous connecter à l'hôte pour le dépannage.
+* Les connexions entrantes via le port 3128 sont requises si vous déployez des systèmes Cloud Volumes ONTAP dans un sous-réseau où aucune connexion Internet sortante n'est disponible.
+
+
+
+
+== Limitation de l'adresse IP
+
+Il existe un conflit possible avec des adresses IP dans la plage 172. https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-limitations.html["En savoir plus sur cette limitation"].

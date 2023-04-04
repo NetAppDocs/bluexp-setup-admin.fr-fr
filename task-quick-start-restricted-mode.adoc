@@ -1,0 +1,44 @@
+---
+sidebar: sidebar 
+permalink: task-quick-start-restricted-mode.html 
+keywords: quick start, restricted mode quick start 
+summary: Commencez à utiliser BlueXP en mode restreint en quelques étapes. 
+---
+= Démarrage rapide de BlueXP en mode restreint
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Commencez à utiliser BlueXP en mode restreint en quelques étapes.
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["Une seule"] Préparation du déploiement
+[role="quick-margin-list"]
+. Préparez un hôte Linux dédié qui répond aux exigences en matière de processeur, de RAM, d'espace disque, de moteur Docker et bien plus encore.
+. Configurez le réseau qui fournit un accès aux réseaux cibles, un accès Internet sortant pour les installations manuelles et un accès Internet sortant pour un accès quotidien.
+. Configurez des autorisations dans votre fournisseur de cloud afin que vous puissiez les associer à l'instance Connector après le déploiement.
+
+
+[role="quick-margin-para"]
+link:task-prepare-restricted-mode.html["Découvrez comment préparer le déploiement"].
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["Deux"] Déployez le connecteur
+[role="quick-margin-list"]
+. Installez le connecteur à partir du Marketplace de votre fournisseur de cloud ou en installant manuellement le logiciel sur votre propre hôte Linux.
+. Configurez BlueXP en ouvrant un navigateur Web et en entrant l'adresse IP de l'hôte Linux.
+. Fournissez à BlueXP les autorisations que vous avez précédemment configurées.
+
+
+[role="quick-margin-para"]
+link:task-install-restricted-mode.html["Apprenez à déployer le connecteur"].
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["Trois"] Abonnez-vous à BlueXP
+[role="quick-margin-para"]
+Abonnez-vous à BlueXP sur le marché de votre fournisseur cloud pour payer les services BlueXP à un taux horaire (PAYGO) ou un contrat annuel.
+
+[role="quick-margin-para"]
+link:task-subscribe-restricted-mode.html["Découvrez comment vous abonner à BlueXP"].

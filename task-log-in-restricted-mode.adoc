@@ -1,0 +1,41 @@
+---
+sidebar: sidebar 
+permalink: task-log-in-restricted-mode.html 
+keywords: logging in, log in, sign in, signing in, restricted mode, restricted mode log in, local log in, connector log in, log in connector 
+summary: 'Lorsque vous utilisez BlueXP en mode restreint, vous devez vous connecter à la console BlueXP à partir de l"interface utilisateur qui s"exécute localement sur le connecteur.' 
+---
+= Se connecter à BlueXP (mode restreint)
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Lorsque vous utilisez BlueXP en mode restreint, vous devez vous connecter à la console BlueXP à partir de l'interface utilisateur qui s'exécute localement sur le connecteur.
+
+.Options de connexion
+BlueXP prend en charge la connexion avec l'une des options suivantes lorsque votre compte est configuré en mode restreint :
+
+* Un identifiant NetApp Cloud avec votre adresse e-mail et un mot de passe
+* Une connexion fédérée
++
+Vous pouvez utiliser l'authentification unique pour vous connecter à l'aide des informations d'identification de votre annuaire d'entreprise (identité fédérée). link:concept-federation.html["Découvrez comment utiliser la fédération des identités avec BlueXP"].
+
+
+
+.Étapes
+. Ouvrez un navigateur Web et entrez l'URL suivante :
++
+https://_ipaddress_[]
+
++
+_Ipaddress_ peut être localhost, une adresse IP privée ou une adresse IP publique, selon la configuration de l'hôte où vous avez installé le connecteur. Par exemple, vous devrez peut-être entrer une adresse IP privée à partir d'un hôte qui a une connexion à l'hôte du connecteur.
+
+. Entrez votre nom d'utilisateur et votre mot de passe pour vous connecter.
+
+
+.Résultat
+Vous êtes maintenant connecté et pouvez commencer à utiliser BlueXP pour gérer votre infrastructure multicloud hybride.

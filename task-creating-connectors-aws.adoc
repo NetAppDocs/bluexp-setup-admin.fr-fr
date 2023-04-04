@@ -226,6 +226,7 @@ Services AWS (amazonaws.com):
 
 * CloudFormation
 * Cloud de calcul élastique (EC2)
+* Gestion des identités et des accès
 * Service de gestion des clés (KMS)
 * Service de jetons de sécurité (STS)
 * Service de stockage simple (S3)

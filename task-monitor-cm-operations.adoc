@@ -4,7 +4,7 @@ permalink: task-monitor-cm-operations.html
 keywords: administer, monitor, account, timeline, notifications, alerts, events, notification center, email 
 summary: 'Vous pouvez surveiller l"état des opérations que BlueXP effectue pour voir si des problèmes doivent être résolus. Vous pouvez afficher l"état dans le centre de notification, dans le calendrier ou envoyer des notifications à votre courrier électronique.' 
 ---
-= Surveillance des opérations dans votre compte
+= Contrôlez les opérations dans votre compte
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -16,7 +16,7 @@ summary: 'Vous pouvez surveiller l"état des opérations que BlueXP effectue pou
 [role="lead"]
 Vous pouvez surveiller l'état des opérations que BlueXP effectue pour voir si des problèmes doivent être résolus. Vous pouvez afficher l'état dans le centre de notification, dans le calendrier ou envoyer des notifications à votre courrier électronique.
 
-Ce tableau fournit une comparaison du centre de notification et du calendrier pour vous permettre de comprendre ce que chacun a à offrir.
+Le tableau suivant présente une comparaison entre le Centre de notification et le Calendrier pour vous permettre de comprendre ce que chacun a à offrir.
 
 [cols="47,47"]
 |===
@@ -26,7 +26,7 @@ Ce tableau fournit une comparaison du centre de notification et du calendrier po
 | Affiche l'état général des événements et des actions | Fournit des détails sur chaque événement ou action pour une enquête plus approfondie 
 
 
-| Affiche l'état de la session de connexion en cours - les informations n'apparaîtront pas dans le Centre de notification après la déconnexion | Conserve le statut pour le dernier mois 
+| Affiche l'état de la session de connexion en cours (les informations n'apparaîtront pas dans le Centre de notification après la déconnexion) | Conserve le statut pour le dernier mois 
 
 
 | Affiche uniquement les actions initiées dans l'interface utilisateur | Affiche toutes les actions à partir de l'interface utilisateur ou des API 
@@ -42,7 +42,7 @@ Ce tableau fournit une comparaison du centre de notification et du calendrier po
 |===
 
 
-== Surveillance des activités à l'aide du Centre de notification
+== Surveiller les activités à l'aide du Centre de notification
 
 Les notifications suivent la progression des opérations que vous avez lancées dans BlueXP pour vous permettre de vérifier si l'opération a réussi ou non. Elles vous permettent d'afficher l'état de nombreuses actions BlueXP que vous avez lancées pendant votre session de connexion actuelle. Tous les services ne rapportent pas d'informations au Centre de notification pour le moment.
 
@@ -50,7 +50,7 @@ Vous pouvez afficher les notifications en cliquant sur le signal sonore de notif
 
 image:screenshot_notification_full.png["Capture d'écran affichant la liste des notifications en cours dans le Centre de notification."]
 
-Vous pouvez également configurer BlueXP pour envoyer des notifications par e-mail afin de vous informer de l'activité système importante, même lorsque vous n'êtes pas connecté au système. Des e-mails sont envoyés à tous les utilisateurs qui font partie de votre compte cloud NetApp ou à tout autre destinataire ayant besoin de connaître certains types d'activité système. Voir <<Définition des paramètres de notification par e-mail,Définition des paramètres de notification par e-mail>> ci-dessous.
+Vous pouvez également configurer BlueXP pour envoyer des notifications par e-mail afin de vous informer de l'activité système importante, même lorsque vous n'êtes pas connecté au système. Des e-mails peuvent être envoyés à tous les utilisateurs qui font partie de votre compte BlueXP ou à tout autre destinataire qui doit connaître certains types d'activité système. Voir <<Définition des paramètres de notification par e-mail,Définition des paramètres de notification par e-mail>> ci-dessous.
 
 
 
@@ -82,7 +82,7 @@ Les notifications sont classées dans les catégories suivantes :
 |===
 
 
-=== Filtrage des notifications
+=== Filtrer les notifications
 
 Par défaut, toutes les notifications s'affichent. Vous pouvez filtrer les notifications que vous voyez dans le Centre de notification pour n'afficher que les notifications importantes pour vous. Vous pouvez filtrer par BlueXP "Service" et par notification "Type".
 
@@ -92,9 +92,9 @@ Par exemple, si vous souhaitez afficher uniquement les notifications "erreur" et
 
 
 
-=== Définition des paramètres de notification par e-mail
+=== Définir les paramètres de notification par e-mail
 
-Vous pouvez envoyer par e-mail des types de notifications spécifiques afin de vous informer de l'activité système importante, même lorsque vous n'êtes pas connecté à BlueXP. Il est possible d'envoyer des e-mails aux utilisateurs qui font partie de votre compte NetApp ou à tout autre destinataire ayant besoin de connaître certains types d'activité système.
+Vous pouvez envoyer par e-mail des types de notifications spécifiques afin de vous informer de l'activité système importante, même lorsque vous n'êtes pas connecté à BlueXP. Des e-mails peuvent être envoyés à tous les utilisateurs qui font partie de votre compte BlueXP ou à tout autre destinataire qui doit connaître certains types d'activité système.
 
 [NOTE]
 ====
@@ -108,14 +108,14 @@ Par défaut, les administrateurs de compte BlueXP recevront des e-mails pour tou
 Pour personnaliser les paramètres de notifications, vous devez être administrateur de compte.
 
 .Étapes
-. Dans la barre de menus BlueXP, cliquez sur *Paramètres > Paramètres d'alertes et de notifications*.
+. Dans la barre de menus BlueXP, sélectionnez *Paramètres > Paramètres des alertes et des notifications*.
 +
 image:screenshot-settings-notifications.png["Capture d'écran indiquant comment afficher la page Paramètres des alertes et des notifications."]
 
 . Sélectionnez un utilisateur ou plusieurs utilisateurs à partir de l'onglet _Account Users_ ou de l'onglet _Additional Recipients_, puis choisissez le type de notifications à envoyer :
 +
-** Pour apporter des modifications à un seul utilisateur, cliquez sur le menu dans la colonne Notifications de cet utilisateur, cochez les types de notifications à envoyer et cliquez sur *appliquer*.
-** Pour apporter des modifications à plusieurs utilisateurs, cochez la case de chaque utilisateur, cliquez sur *gérer les notifications par e-mail*, cochez les types de notifications à envoyer et cliquez sur *appliquer*.
+** Pour apporter des modifications à un seul utilisateur, sélectionnez le menu dans la colonne Notifications de cet utilisateur, vérifiez les types de notifications à envoyer et sélectionnez *appliquer*.
+** Pour apporter des modifications à plusieurs utilisateurs, cochez la case correspondant à chaque utilisateur, sélectionnez *gérer les notifications par e-mail*, cochez les types de notifications à envoyer et sélectionnez *appliquer*.
 
 
 +
@@ -125,39 +125,39 @@ image:screenshot-change-notifications.png["Capture d'écran montrant comment mod
 
 
 
-=== Ajout de destinataires d'e-mail supplémentaires
+=== Ajoutez des destinataires supplémentaires
 
-Les utilisateurs qui s'affichent dans l'onglet _Account Users_ sont automatiquement renseignés à partir du site NetApp Account (du link:task-managing-netapp-accounts.html#creating-and-managing-users["Gérer le compte"]). Vous pouvez ajouter des adresses e-mail dans l'onglet _destinataires supplémentaires_ pour d'autres personnes ou groupes qui n'ont pas accès à BlueXP, mais qui doivent être informés de certains types d'alertes et de notifications.
+Les utilisateurs qui apparaissent dans l'onglet _Account Users_ sont automatiquement renseignés à partir des utilisateurs de votre compte BlueXP (à partir du link:task-managing-netapp-accounts.html#creating-and-managing-users["Gérer le compte"]). Vous pouvez ajouter des adresses e-mail dans l'onglet _destinataires supplémentaires_ pour d'autres personnes ou groupes qui n'ont pas accès à BlueXP, mais qui doivent être informés de certains types d'alertes et de notifications.
 
 .Étapes
-. Dans la page Paramètres des alertes et notifications, cliquez sur *Ajouter de nouveaux destinataires*.
+. Dans la page Paramètres des alertes et notifications, sélectionnez *Ajouter de nouveaux destinataires*.
 +
 image:screenshot-add-email-recipient.png["Copie d'écran montrant comment ajouter de nouveaux destinataires pour les alertes et notifications."]
 
-. Entrez le nom, l'adresse e-mail et sélectionnez les types de notifications que le destinataire recevra, puis cliquez sur *Ajouter un nouveau destinataire*.
+. Entrez le nom, l'adresse e-mail et sélectionnez les types de notifications que le destinataire recevra, puis sélectionnez *Ajouter nouveau destinataire*.
 
 
 
 
-=== Rejet des notifications
+=== Rejeter les notifications
 
 Vous pouvez supprimer des notifications de la page si vous n'avez plus besoin de les voir. Vous pouvez rejeter toutes les notifications en une seule fois ou rejeter les notifications individuelles.
 
-Pour ignorer toutes les notifications, dans le Centre de notification, cliquez sur image:button_3_vert_dots.png["une icône avec trois points verticaux"] Et sélectionnez *rejeter tout*.image:screenshot_notification_menu.png["Capture d'écran affichant le menu Notifications pour sélectionner les paramètres et ignorer toutes les options."]
+Pour ignorer toutes les notifications, dans le Centre de notification, sélectionnez image:button_3_vert_dots.png["une icône avec trois points verticaux"] Et sélectionnez *rejeter tout*.image:screenshot_notification_menu.png["Capture d'écran affichant le menu Notifications pour sélectionner les paramètres et ignorer toutes les options."]
 
-Pour ignorer des notifications individuelles, placez le curseur sur la notification et cliquez sur *rejeter*.image:screenshot_notification_dismiss1.png["Capture d'écran montrant comment rejeter une seule notification."]
+Pour ignorer les notifications individuelles, placez le curseur sur la notification et sélectionnez *rejeter*.image:screenshot_notification_dismiss1.png["Capture d'écran montrant comment rejeter une seule notification."]
 
 
 
-== Audit de l'activité de l'utilisateur dans votre compte
+== Audit de l'activité des utilisateurs dans votre compte
 
 Le Timeline de BlueXP affiche les actions que les utilisateurs ont effectuées pour gérer votre compte. Cela inclut des actions de gestion telles que l'association d'utilisateurs, la création d'espaces de travail, la création de connecteurs, etc.
 
 La vérification de la chronologie peut être utile si vous devez identifier qui a effectué une action spécifique ou si vous devez identifier le statut d'une action.
 
 .Étapes
-. Dans la barre de menus BlueXP, cliquez sur *Paramètres > Chronologie*.
-. Sous filtres, cliquez sur *Service*, activez *Tenancy* et cliquez sur *appliquer*.
+. Dans la barre de menus BlueXP, sélectionnez *Paramètres > Chronologie*.
+. Sous filtres, sélectionnez *Service*, activez *Location* et sélectionnez *appliquer*.
 
 
 .Résultat

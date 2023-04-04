@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar 
 permalink: reference-whats-next.html 
-keywords: get started, create working environments, manage settings 
-summary: Maintenant que vous vous êtes connecté et que vous avez configuré BlueXP, les utilisateurs peuvent commencer à créer et découvrir des environnements de travail. 
+keywords: standard mode, what you can do 
+summary: Maintenant que vous vous êtes connecté et que vous avez configuré BlueXP en mode standard, les utilisateurs peuvent créer et découvrir des environnements de travail et utiliser les services BlueXP. 
 ---
-= Par où aller plus loin
+= Ce que vous pouvez faire ensuite (mode standard)
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,16 +14,6 @@ summary: Maintenant que vous vous êtes connecté et que vous avez configuré Bl
 
 
 [role="lead"]
-Maintenant que vous vous êtes connecté et que vous avez configuré BlueXP, les utilisateurs peuvent commencer à créer et découvrir des environnements de travail.
+Maintenant que vous vous êtes connecté et que vous avez configuré BlueXP en mode standard, les utilisateurs peuvent créer et découvrir des environnements de travail et utiliser les services de données BlueXP.
 
-* https://docs.netapp.com/us-en/cloud-manager-azure-netapp-files/task-quick-start.html["Azure NetApp Files"^]
-* https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/start/task-getting-started-fsx.html["Amazon FSX pour ONTAP"^]
-* https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-getting-started-aws.html["Cloud Volumes ONTAP pour AWS"^]
-* https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-getting-started-azure.html["Cloud Volumes ONTAP pour Azure"^]
-* https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-getting-started-gcp.html["Cloud Volumes ONTAP pour Google Cloud"^]
-* https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-service-gcp/task-set-up-google-cloud.html["Cloud Volumes Service pour Google Cloud"^]
-* https://docs.netapp.com/us-en/cloud-manager-e-series/task-discover-e-series.html["Systèmes E-Series"^]
-* https://docs.netapp.com/us-en/cloud-manager-kubernetes/task/task-k8s-quick-start.html["Clusters Kubernetes"^]
-* https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.html["Clusters ONTAP sur site"^]
-* https://docs.netapp.com/us-en/cloud-manager-storagegrid/task-discover-storagegrid.html["Systèmes StorageGRID"^]
-
+Pour obtenir de l'aide, consultez le https://docs.netapp.com/us-en/cloud-manager-family/["Page d'accueil de la documentation BlueXP"^] Pour afficher les documents relatifs à tous les services BlueXP.

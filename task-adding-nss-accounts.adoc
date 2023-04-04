@@ -51,12 +51,12 @@ Le tableau de bord de support vous permet d'ajouter et de gérer vos comptes du 
 
 
 .Étapes
-. Dans le coin supérieur droit de la console BlueXP, cliquez sur l'icône aide et sélectionnez *support*.
+. Dans le coin supérieur droit de la console BlueXP, sélectionnez l'icône aide, puis sélectionnez *support*.
 +
 image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/media/screenshot-help-support.png["Capture d'écran du menu aide où support est la première option répertoriée"]
 
-. Cliquez sur *NSS Management > Ajouter un compte NSS*.
-. Lorsque vous y êtes invité, cliquez sur *Continuer* pour être redirigé vers une page de connexion Microsoft.
+. Sélectionnez *gestion NSS > Ajouter un compte NSS*.
+. Lorsque vous y êtes invité, sélectionnez *Continuer* pour être redirigé vers une page de connexion Microsoft.
 +
 NetApp utilise Microsoft Azure Active Directory comme fournisseur d'identités pour les services d'authentification spécifiques au support et aux licences.
 
@@ -93,7 +93,7 @@ Les utilisateurs peuvent désormais sélectionner le compte lors de la création
 
 * https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-deploying-otc-aws.html["Lancement d'Cloud Volumes ONTAP dans AWS"^]
 * https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-deploying-otc-azure.html["Lancement d'Cloud Volumes ONTAP dans Azure"^]
-* https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-deploying-gcp.html["Lancement d'Cloud Volumes ONTAP dans GCP"^]
+* https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-deploying-gcp.html["Lancement d'Cloud Volumes ONTAP dans Google Cloud"^]
 * https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-registering.html["Enregistrement des systèmes de paiement à l'utilisation"^]
 
 
@@ -104,14 +104,14 @@ Les utilisateurs peuvent désormais sélectionner le compte lors de la création
 Depuis novembre 2021, NetApp utilise désormais Microsoft Azure Active Directory comme fournisseur d'identités pour les services d'authentification spécifiques au support et aux licences. Suite à cette mise à jour, BlueXP vous invitera à mettre à jour les informations d'identification de tous les comptes existants que vous avez ajoutés précédemment.
 
 .Étapes
-. Si ce n'est déjà fait, https://kb.netapp.com/Advice_and_Troubleshooting/Miscellaneous/FAQs_for_NetApp_adoption_of_MS_Azure_AD_B2C_for_login["Créez un compte Microsoft Azure Active Directory B2C qui sera lié à votre compte NetApp actuel"^].
-. Dans le coin supérieur droit de la console BlueXP, cliquez sur l'icône aide et sélectionnez *support*.
-. Cliquez sur *NSS Management*.
-. Pour le compte NSS à mettre à jour, cliquez sur *mettre à jour le compte*.
+. Si ce n'est déjà fait, https://kb.netapp.com/Advice_and_Troubleshooting/Miscellaneous/FAQs_for_NetApp_adoption_of_MS_Azure_AD_B2C_for_login["Créez un compte Microsoft Azure Active Directory B2C qui sera lié à votre compte BlueXP actuel"^].
+. Dans le coin supérieur droit de la console BlueXP, sélectionnez l'icône aide, puis sélectionnez *support*.
+. Sélectionnez *gestion NSS*.
+. Pour le compte NSS que vous souhaitez mettre à jour, sélectionnez *mettre à jour le compte*.
 +
 image:screenshot-nss-update-account.png["Capture d'écran affichant l'option mettre à jour le compte"]
 
-. Lorsque vous y êtes invité, cliquez sur *Continuer* pour être redirigé vers une page de connexion Microsoft.
+. Lorsque vous y êtes invité, sélectionnez *Continuer* pour être redirigé vers une page de connexion Microsoft.
 +
 NetApp utilise Microsoft Azure Active Directory comme fournisseur d'identités pour les services d'authentification spécifiques au support et aux licences.
 
@@ -120,7 +120,7 @@ NetApp utilise Microsoft Azure Active Directory comme fournisseur d'identités p
 Une fois le processus terminé, le compte que vous avez mis à jour doit maintenant être répertorié comme un _nouveau_ compte dans la table. La _vieille_ version du compte est toujours répertoriée dans le tableau, ainsi que toutes les associations d'environnement de travail existantes.
 
 . Si des environnements de travail Cloud Volumes ONTAP existants sont associés à l'ancienne version du compte, suivez les étapes ci-dessous à <<Associez un environnement de travail à un autre compte NSS,Reliez ces environnements de travail à un autre compte NSS>>.
-. Accédez à l'ancienne version du compte NSS, cliquez sur image:icon-action.png["Icône représentant trois points côte à côte"] Puis sélectionnez *Supprimer*.
+. Accédez à l'ancienne version du compte NSS, sélectionnez image:icon-action.png["Icône représentant trois points côte à côte"] Puis sélectionnez *Supprimer*.
 
 
 
@@ -134,13 +134,13 @@ Vous devrez mettre à jour les informations d'identification de vos comptes NSS 
 
 
 .Étapes
-. Dans le coin supérieur droit de la console BlueXP, cliquez sur l'icône aide et sélectionnez *support*.
-. Cliquez sur *NSS Management*.
-. Pour le compte NSS que vous souhaitez mettre à jour, cliquez sur image:icon-action.png["Icône représentant trois points côte à côte"] Puis sélectionnez *mettre à jour les informations d'identification*.
+. Dans le coin supérieur droit de la console BlueXP, sélectionnez l'icône aide, puis sélectionnez *support*.
+. Sélectionnez *gestion NSS*.
+. Pour le compte NSS que vous souhaitez mettre à jour, sélectionnez image:icon-action.png["Icône représentant trois points côte à côte"] Puis sélectionnez *mettre à jour les informations d'identification*.
 +
 image:screenshot-nss-update-credentials.png["Capture d'écran affichant le menu d'action d'un compte sur le site de support NetApp et dont la possibilité de choisir l'option Supprimer."]
 
-. Lorsque vous y êtes invité, cliquez sur *Continuer* pour être redirigé vers une page de connexion Microsoft.
+. Lorsque vous y êtes invité, sélectionnez *Continuer* pour être redirigé vers une page de connexion Microsoft.
 +
 NetApp utilise Microsoft Azure Active Directory comme fournisseur d'identités pour les services d'authentification spécifiques au support et aux licences.
 
@@ -153,20 +153,20 @@ NetApp utilise Microsoft Azure Active Directory comme fournisseur d'identités p
 
 Si votre entreprise compte plusieurs comptes sur le site de support NetApp, vous pouvez modifier le compte associé à un système Cloud Volumes ONTAP.
 
-Cette fonctionnalité n'est prise en charge que avec les comptes NSS configurés pour utiliser Microsoft Azure AD adopté par NetApp pour la gestion des identités. Avant de pouvoir utiliser cette fonction, vous devez cliquer sur *Ajouter un compte NSS* ou *mettre à jour le compte*.
+Cette fonctionnalité n'est prise en charge que avec les comptes NSS configurés pour utiliser Microsoft Azure AD adopté par NetApp pour la gestion des identités. Avant de pouvoir utiliser cette fonction, vous devez sélectionner *Ajouter un compte NSS* ou *mettre à jour le compte*.
 
 .Étapes
-. Dans le coin supérieur droit de la console BlueXP, cliquez sur l'icône aide et sélectionnez *support*.
-. Cliquez sur *NSS Management*.
+. Dans le coin supérieur droit de la console BlueXP, sélectionnez l'icône aide, puis sélectionnez *support*.
+. Sélectionnez *gestion NSS*.
 . Pour modifier le compte NSS, procédez comme suit :
 +
 .. Développez la ligne du compte du site de support NetApp auquel l'environnement de travail est actuellement associé.
-.. Pour l'environnement de travail pour lequel vous souhaitez modifier l'association, cliquez sur image:icon-action.png["Icône représentant trois points côte à côte"]
+.. Pour l'environnement de travail pour lequel vous souhaitez modifier l'association, sélectionnez image:icon-action.png["Icône représentant trois points côte à côte"]
 .. Sélectionnez *changer pour un autre compte NSS*.
 +
 image:screenshot-nss-change-account.png["Capture d'écran montrant le menu d'action pour un environnement de travail associé à un compte sur le site de support NetApp."]
 
-.. Sélectionnez le compte, puis cliquez sur *Enregistrer*.
+.. Sélectionnez le compte, puis sélectionnez *Enregistrer*.
 
 
 
@@ -181,9 +181,9 @@ Lorsque les comptes du site de support NetApp utilisent Microsoft Azure Active D
 TIP: Lorsque vous accédez à la page gestion NSS, BlueXP génère un jeton pour chaque compte de la table. Ce token inclut des informations sur l'adresse e-mail associée. Le jeton est alors supprimé lorsque vous quittez la page. Les informations ne sont jamais mises en cache, ce qui contribue à protéger votre vie privée.
 
 .Étapes
-. Dans le coin supérieur droit de la console BlueXP, cliquez sur l'icône aide et sélectionnez *support*.
-. Cliquez sur *NSS Management*.
-. Pour le compte NSS que vous souhaitez mettre à jour, cliquez sur image:icon-action.png["Icône représentant trois points côte à côte"] Puis sélectionnez *Afficher l'adresse électronique*.
+. Dans le coin supérieur droit de la console BlueXP, sélectionnez l'icône aide, puis sélectionnez *support*.
+. Sélectionnez *gestion NSS*.
+. Pour le compte NSS que vous souhaitez mettre à jour, sélectionnez image:icon-action.png["Icône représentant trois points côte à côte"] Puis sélectionnez *Afficher l'adresse électronique*.
 +
 image:screenshot-nss-display-email.png["Capture d'écran présentant le menu d'action d'un compte sur le site de support NetApp, qui inclut la possibilité d'afficher l'adresse e-mail."]
 
@@ -201,11 +201,11 @@ Supprimez tous les comptes NSS que vous ne souhaitez plus utiliser avec BlueXP.
 Notez que vous ne pouvez pas supprimer un compte actuellement associé à un environnement de travail Cloud Volumes ONTAP. Vous devez d'abord <<Associez un environnement de travail à un autre compte NSS,Reliez ces environnements de travail à un autre compte NSS>>.
 
 .Étapes
-. Dans le coin supérieur droit de la console BlueXP, cliquez sur l'icône aide et sélectionnez *support*.
-. Cliquez sur *NSS Management*.
-. Pour le compte NSS que vous souhaitez supprimer, cliquez sur image:icon-action.png["Icône représentant trois points côte à côte"] Puis sélectionnez *Supprimer*.
+. Dans le coin supérieur droit de la console BlueXP, sélectionnez l'icône aide, puis sélectionnez *support*.
+. Sélectionnez *gestion NSS*.
+. Pour le compte NSS à supprimer, sélectionnez image:icon-action.png["Icône représentant trois points côte à côte"] Puis sélectionnez *Supprimer*.
 +
 image:screenshot-nss-delete.png["Capture d'écran affichant le menu d'action d'un compte sur le site de support NetApp et dont la possibilité de choisir l'option Supprimer."]
 
-. Cliquez sur *Supprimer* pour confirmer.
+. Sélectionnez *Supprimer* pour confirmer.
 

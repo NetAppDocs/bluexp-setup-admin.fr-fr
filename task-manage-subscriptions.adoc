@@ -34,7 +34,7 @@ Vous ne verrez que les abonnements associés au compte que vous consultez actuel
 +
 image:screenshot-subscriptions-expand.png["Capture d'écran de l'onglet abonnements du porte-monnaie numérique dans laquelle vous pouvez sélectionner la flèche à la fin d'une ligne pour la développer."]
 
-** Cliquez sur image:icon-column-selector.png["l'icône plus à l'extrémité de l'en-tête de la table"] pour choisir les colonnes qui s'affichent dans le tableau.
+** Sélectionnez image:icon-column-selector.png["l'icône plus à l'extrémité de l'en-tête de la table"] pour choisir les colonnes qui s'affichent dans le tableau.
 +
 Notez que les colonnes Term et Auto Renew n'apparaissent pas par défaut. La colonne Renouvellement automatique affiche les informations de renouvellement des contrats Azure uniquement.
 
@@ -70,9 +70,9 @@ Par exemple, disons que vous avez deux comptes et que chacun est facturé par le
 .Étapes
 . Dans le menu de navigation BlueXP, sélectionnez *gouvernance > porte-monnaie numérique*.
 . Sélectionnez *abonnements*.
-. Cliquez sur le menu d'action de la ligne correspondant à l'abonnement que vous souhaitez gérer.
+. Sélectionnez le menu d'action dans la ligne correspondant à l'abonnement que vous souhaitez gérer.
 +
 image:screenshot-subscription-menu.png["Capture d'écran du menu d'action pour un abonnement."]
 
-. Vous pouvez renommer l'abonnement ou gérer les comptes NetApp associés à cet abonnement.
+. Choisissez de renommer l'abonnement ou de gérer les comptes BlueXP associés à l'abonnement.
 

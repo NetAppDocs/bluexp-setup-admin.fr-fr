@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: concept-accounts-azure.html 
 keywords: cloud provider accounts, azure, azure accounts, service principal, multiple accounts, permissions, policy, policies, subscriptions, credentials 
-summary: 'BlueXP vous permet de choisir les informations d"identification Azure à utiliser lors du déploiement de Cloud Volumes ONTAP. Vous pouvez déployer tous vos systèmes Cloud Volumes ONTAP à l"aide des identifiants Azure initiaux, ou ajouter des identifiants supplémentaires.' 
+summary: 'Vous devez comprendre comment BlueXP utilise les identifiants et les autorisations Azure pour pouvoir gérer les identifiants d"un ou plusieurs abonnements Azure.' 
 ---
 = Identifiants et autorisations Azure
 :hardbreaks:
@@ -14,13 +14,13 @@ summary: 'BlueXP vous permet de choisir les informations d"identification Azure 
 
 
 [role="lead"]
-BlueXP vous permet de choisir les informations d'identification Azure à utiliser lors du déploiement de Cloud Volumes ONTAP. Vous pouvez déployer tous vos systèmes Cloud Volumes ONTAP à l'aide des identifiants Azure initiaux, ou ajouter des identifiants supplémentaires.
+Vous devez comprendre comment BlueXP utilise les identifiants et les autorisations Azure pour pouvoir gérer les identifiants d'un ou plusieurs abonnements Azure.
 
 
 
 == Les identifiants initiaux d'Azure
 
-Lorsque vous déployez un connecteur depuis BlueXP, vous devez utiliser un compte ou un service principal Azure disposant des autorisations pour déployer la machine virtuelle Connector. Les autorisations requises sont répertoriées dans le link:task-creating-connectors-azure.html["Stratégie de déploiement de Connector pour Azure"].
+Lorsque vous déployez un connecteur depuis BlueXP, vous devez utiliser un compte ou un service principal Azure disposant des autorisations pour déployer la machine virtuelle Connector. Les autorisations requises sont répertoriées dans le link:task-set-up-permissions-azure.html["Stratégie de déploiement de Connector pour Azure"].
 
 Lorsque BlueXP déploie la machine virtuelle Connector dans Azure, il active un https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/overview["identité gérée attribuée par le système"^] sur une machine virtuelle, crée un rôle personnalisé et le attribue à la machine virtuelle. Le rôle fournit à BlueXP les autorisations requises pour gérer les ressources et les processus au sein de cet abonnement Azure. link:reference-permissions-azure.html["Consultez la manière dont BlueXP utilise les autorisations"].
 
@@ -30,32 +30,46 @@ BlueXP sélectionne ces informations d'identification Azure par défaut lorsque 
 
 image:screenshot_accounts_select_azure.gif["Capture d'écran indiquant l'option changer de compte dans la page Détails et AMP ; informations d'identification."]
 
+Vous pouvez déployer tous vos systèmes Cloud Volumes ONTAP à l'aide des identifiants Azure initiaux, ou ajouter des identifiants supplémentaires.
+
 
 
 == Des abonnements Azure supplémentaires pour une identité gérée
 
-L'identité gérée est associée à l'abonnement dans lequel vous avez lancé le connecteur. Si vous souhaitez sélectionner un autre abonnement Azure, vous devez le faire link:task-adding-azure-accounts.html#associating-additional-azure-subscriptions-with-a-managed-identity["associez l'identité gérée à ces abonnements"].
+L'identité gérée attribuée par le système à la VM Connector est associée à l'abonnement dans lequel vous avez lancé le connecteur. Si vous souhaitez sélectionner un autre abonnement Azure, vous devez le faire link:task-adding-azure-accounts.html#associating-additional-azure-subscriptions-with-a-managed-identity["associez l'identité gérée à ces abonnements"].
 
 
 
 == Autres identifiants Azure
 
-Si vous souhaitez déployer Cloud Volumes ONTAP avec différents identifiants Azure, vous devez accorder les autorisations requises par link:task-adding-azure-accounts.html["Création et configuration d'une entité de service dans Azure Active Directory"] Pour chaque compte Azure. L'image suivante montre deux comptes supplémentaires, chacun étant doté d'un rôle principal de service et personnalisé qui fournit des autorisations :
+Si vous souhaitez utiliser d'autres identifiants Azure avec BlueXP, vous devez accorder les autorisations requises par link:task-adding-azure-accounts.html["Création et configuration d'une entité de service dans Azure Active Directory"] Pour chaque compte Azure. L'image suivante montre deux comptes supplémentaires, chacun étant doté d'un rôle principal de service et personnalisé qui fournit des autorisations :
 
 image:diagram_permissions_multiple_azure.png["Image conceptuelle qui affiche le compte Azure initial, qui reçoit des autorisations par le biais d'un rôle personnalisé et d'une identité gérée, et deux comptes supplémentaires qui reçoivent des autorisations par l'intermédiaire d'un rôle et d'un entité de service personnalisés."]
 
 Vous le feriez alors link:task-adding-azure-accounts.html#adding-azure-accounts-to-cloud-manager["Ajoutez les informations d'identification du compte à BlueXP"] En fournissant des détails sur le principal du service AD.
 
-Après avoir ajouté un autre ensemble d'informations d'identification, vous pouvez les passer lors de la création d'un nouvel environnement de travail :
+Par exemple, vous pouvez basculer entre les informations d'identification lors de la création d'un nouvel environnement de travail Cloud Volumes ONTAP :
 
 image:screenshot_accounts_switch_azure.gif["Capture d'écran indiquant la sélection entre les comptes fournisseurs de services cloud après avoir cliqué sur changer de compte dans la page Détails etamp ; informations d'identification."]
 
-.Qu'en est-il des déploiements Marketplace et des déploiements sur site ?
-****
-Les sections ci-dessus décrivent la méthode de déploiement recommandée pour le connecteur, qui provient de BlueXP. Vous pouvez également déployer un connecteur dans Azure à partir du link:task-launching-azure-mktp.html["Azure Marketplace"], et vous pouvez link:task-installing-linux.html["Installer le connecteur sur site"].
 
-Si vous utilisez Marketplace, des autorisations sont fournies de la même manière. Il vous suffit de créer et de configurer manuellement l'identité gérée pour le connecteur, puis de fournir des autorisations pour tous les comptes supplémentaires.
 
-Pour les déploiements sur site, vous ne pouvez pas configurer une identité gérée pour le connecteur, mais vous pouvez fournir des autorisations comme vous le feriez pour des comptes supplémentaires en utilisant une entité de service.
+== Qu'en est-il des déploiements Marketplace et des déploiements sur site ?
 
-****
+Les sections ci-dessus décrivent la méthode de déploiement recommandée pour le connecteur, qui provient de BlueXP. Vous pouvez également déployer un connecteur dans Azure à partir d'Azure Marketplace et installer le logiciel Connector sur votre propre hôte Linux.
+
+Si vous utilisez Marketplace, vous pouvez fournir des autorisations en attribuant un rôle personnalisé à la VM Connector et à une identité gérée attribuée par le système, ou vous pouvez utiliser l'entité de service Azure AD.
+
+Pour les déploiements sur site, vous ne pouvez pas configurer d'identité gérée pour le connecteur, mais vous pouvez fournir des autorisations en utilisant une entité de service.
+
+Pour savoir comment configurer les autorisations, reportez-vous aux pages suivantes :
+
+* Mode standard
++
+** link:task-set-up-permissions-azure.html["Configurez les autorisations Azure"]
+** link:task-set-up-permissions-on-prem.html["Configurez les autorisations cloud pour les déploiements sur site"]
+
+
+* link:task-prepare-restricted-mode.html#prepare-cloud-permissions["Configurez les autorisations cloud pour le mode restreint"]
+* link:task-prepare-private-mode.html#prepare-cloud-permissions["Configurez les autorisations de cloud pour le mode privé"]
+

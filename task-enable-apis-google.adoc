@@ -1,0 +1,31 @@
+---
+sidebar: sidebar 
+permalink: task-enable-apis-google.html 
+keywords: aws networking, networking, connector networking, ports, proxy server, outbound internet, endpoints, urls, permissions, cloud permission, aws permissions, iam role, keys, aws keys, aws marketplace, marketplace install, manuall install, connector installer 
+summary: Déployez un connecteur dans AWS pour que BlueXP puisse gérer les ressources et les processus dans votre environnement de cloud public. 
+---
+= Activez les API Google Cloud
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Plusieurs API sont requises pour déployer le connecteur et Cloud Volumes ONTAP dans Google Cloud.
+
+.Étape
+. Activez les API Google Cloud suivantes dans votre projet :
++
+** API Cloud Deployment Manager V2
+** API de journalisation cloud
+** API Cloud Resource Manager
+** API du moteur de calcul
+** API de gestion des identités et des accès
+
+
+
+
+https://cloud.google.com/apis/docs/getting-started#enabling_apis["Documentation Google Cloud : activation des API"^]

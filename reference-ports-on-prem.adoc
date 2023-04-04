@@ -16,7 +16,7 @@ summary: 'Le connecteur utilise les ports entrants suivants lorsqu"il est instal
 [role="lead"]
 Le connecteur utilise les ports _Inbound_ suivants lorsqu'il est installé manuellement sur un hôte Linux sur site.
 
-Ces règles entrantes s'appliquent aux deux modèles de déploiement du connecteur sur site, installé avec accès à Internet ou sans accès à Internet.
+Ces règles entrantes s'appliquent à tous les modèles de déploiement BlueXP.
 
 [cols="10,10,80"]
 |===

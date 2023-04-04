@@ -1,0 +1,65 @@
+---
+sidebar: sidebar 
+permalink: task-provide-permissions-aws.html 
+keywords: aws permissions, set up aws permissions, iam role, json policy, bluexp policy, aws marketplace, aws access key, access key, iam policy, permissions 
+summary: Si vous avez installé manuellement le logiciel Connector sur votre propre hôte Linux, vous devez fournir à BlueXP les autorisations que vous avez précédemment configurées. 
+---
+= Fournissez les autorisations AWS à BlueXP
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Si vous avez installé manuellement le logiciel Connector sur votre propre hôte Linux, vous devez fournir à BlueXP les autorisations que vous avez précédemment configurées.
+
+link:task-set-up-permissions-aws.html["Découvrez comment configurer ces autorisations"].
+
+Ces étapes ne s'appliquent pas si vous avez déployé le connecteur directement à partir de BlueXP ou d'AWS Marketplace, car les autorisations requises ont été fournies lors du déploiement.
+
+[role="tabbed-block"]
+====
+.Rôle IAM
+--
+Reliez le rôle IAM que vous avez créé précédemment à l'instance Connector EC2.
+
+.Étapes
+. Accédez à la console Amazon EC2.
+. Sélectionnez *instances*.
+. Sélectionnez l'instance de connecteur.
+. Sélectionnez *actions > sécurité > Modifier le rôle IAM*.
+. Sélectionnez le rôle IAM et cliquez sur *mettre à jour le rôle IAM*.
+
+
+.Résultat
+BlueXP dispose désormais des autorisations dont il a besoin pour effectuer des actions dans AWS en votre nom. Accédez au https://console.bluexp.netapp.com["Console BlueXP"^] Pour commencer à utiliser le connecteur avec BlueXP.
+
+--
+.Clé d'accès AWS
+--
+Fournissez à BlueXP la clé d'accès AWS pour un utilisateur IAM qui dispose des autorisations requises.
+
+.Étapes
+. Assurez-vous que le bon connecteur est actuellement sélectionné dans BlueXP.
+. Dans le coin supérieur droit de la console BlueXP, cliquez sur l'icône Paramètres et sélectionnez *informations d'identification*.
++
+image:screenshot_settings_icon.gif["Capture d'écran affichant l'icône Paramètres dans le coin supérieur droit de la console BlueXP."]
+
+. Cliquez sur *Ajouter des informations d'identification* et suivez les étapes de l'assistant.
++
+.. *Emplacement des informations d'identification* : sélectionnez *Amazon Web Services > connecteur*.
+.. *Définir les informations d'identification* : saisissez une clé d'accès AWS et une clé secrète.
+.. *Abonnement Marketplace* : associez un abonnement Marketplace à ces identifiants en vous abonnant maintenant ou en sélectionnant un abonnement existant.
+.. *Review* : confirmez les détails des nouvelles informations d'identification et cliquez sur *Add*.
+
+
+
+
+.Résultat
+BlueXP dispose désormais des autorisations dont il a besoin pour effectuer des actions dans AWS en votre nom. Accédez au https://console.bluexp.netapp.com["Console BlueXP"^] Pour commencer à utiliser le connecteur avec BlueXP.
+
+--
+====

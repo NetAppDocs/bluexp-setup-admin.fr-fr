@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: task-logging-in.html 
 keywords: logging in, log in, sign in, signing in, cloud central, netapp cloud central, user account, federated, federation, federated login, federation login, login with netapp, log in with netapp, sign up, create account 
-summary: 'Une fois inscrit à BlueXP, vous pouvez vous connecter à partir de votre navigateur Web via l"interface utilisateur SaaS.' 
+summary: Une fois que vous vous êtes inscrit à BlueXP, vous pouvez vous connecter à partir de votre navigateur web via la console web. 
 ---
-= Connectez-vous à BlueXP
+= Se connecter à BlueXP (mode standard)
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,14 +14,10 @@ summary: 'Une fois inscrit à BlueXP, vous pouvez vous connecter à partir de vo
 
 
 [role="lead"]
-Une fois inscrit à BlueXP, vous pouvez vous connecter à partir de votre navigateur Web via l'interface utilisateur SaaS.
-
-link:task-sign-up-saas.html["Découvrez comment vous inscrire à BlueXP et créer un compte"].
-
-Si vous accédez à BlueXP à partir d'une région gouvernementale ou d'un site qui n'a pas d'accès Internet sortant, vous devez vous connecter à l'interface utilisateur BlueXP qui fonctionne localement sur le connecteur. link:task-managing-connectors.html#access-the-local-ui["Découvrez comment accéder à l'interface utilisateur locale sur le connecteur"].
+Une fois que vous vous êtes inscrit à BlueXP, vous pouvez vous connecter à partir de la console web.
 
 .Options de connexion
-Vous pouvez vous connecter à BlueXP à l'aide de l'une des options suivantes :
+Vous pouvez vous connecter à la console Web BlueXP à l'aide de l'une des options suivantes :
 
 * Vos identifiants existants du site de support NetApp (NSS)
 * Un identifiant NetApp Cloud avec votre adresse e-mail et un mot de passe

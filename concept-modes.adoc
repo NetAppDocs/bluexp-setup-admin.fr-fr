@@ -1,0 +1,405 @@
+---
+sidebar: sidebar 
+permalink: concept-modes.html 
+keywords: dark site, internet, on prem, no internet, supported deployments, govcloud, government access, environments, supported environments, deployment modes, modes, private mode, restricted mode, il6, sc2s, c2s, dark site, sovereign region, saas, government region 
+summary: 'BlueXP propose plusieurs modes de déploiement qui vous permettent d"utiliser BlueXP en fonction de vos exigences métier et de sécurité. Le mode standard exploite la couche SaaS BlueXP pour offrir des fonctionnalités complètes, tandis que le mode restreint et le mode privé sont disponibles pour les entreprises ayant des restrictions de connectivité.' 
+---
+= Modes de déploiement BlueXP
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+BlueXP propose plusieurs _modes de déploiement_ qui vous permettent d'utiliser BlueXP en fonction de vos exigences métier et de sécurité. _Standard mode_ exploite la couche SaaS de BlueXP pour fournir des fonctionnalités complètes, tandis que _restricted mode_ et _private mode_ sont disponibles pour les entreprises ayant des restrictions de connectivité.
+
+BlueXP inhibe le flux du trafic, de la communication et des données lorsqu'il est en mode restreint ou en mode privé. Il est de votre responsabilité de veiller au respect des réglementations requises par votre environnement (sur site et dans le cloud).
+
+
+
+== Présentation
+
+BlueXP propose les modes de déploiement suivants pour votre compte. Chaque mode varie en fonction des exigences de connectivité sortante, de l'emplacement de déploiement, du processus d'installation, de la méthode d'authentification, des services de données et de stockage disponibles et des méthodes de facturation.
+
+Mode standard:: BlueXP est accessible en tant que service cloud à partir de la console web. Selon les services BlueXP que vous prévoyez d'utiliser, un administrateur BlueXP crée un ou plusieurs connecteurs pour gérer les données au sein de votre environnement de cloud hybride.
++
+--
+Ce mode utilise la transmission de données chiffrées sur Internet public.
+
+--
+Mode restreint:: Un connecteur BlueXP est installé dans le cloud (dans une région gouvernementale, une région cloud souveraine ou une région commerciale) et sa connectivité sortante est limitée vers la couche SaaS de BlueXP. Les utilisateurs accèdent à BlueXP en local à partir de la console web disponible depuis le connecteur, et non depuis la couche SaaS.
++
+--
+Ce mode est généralement utilisé par les gouvernements d'état et locaux et les entreprises réglementées.
+
+<<Mode restreint,En savoir plus sur la connectivité sortante à la couche SaaS>>.
+
+--
+Mode privé:: Un connecteur BlueXP est installé sur site ou dans le cloud (dans une région sécurisée, une région cloud souveraine ou une région commerciale) et ne dispose d'aucune connectivité à la couche SaaS de BlueXP. Les utilisateurs accèdent à BlueXP en local à partir de la console web disponible depuis le connecteur, et non depuis la couche SaaS.
++
+--
+Une région sécurisée inclut https://aws.amazon.com/federal/us-intelligence-community/["AWS C2S ET SC2S"^] et https://learn.microsoft.com/en-us/azure/compliance/offerings/offering-dod-il6["Azure IL6"^]
+
+--
+
+
+Le tableau suivant fournit une comparaison de ces modes.
+
+[cols="16h,28,28,28"]
+|===
+|  | Mode standard | Mode restreint | Mode privé 
+
+
+| Connexion requise à la couche SaaS BlueXP ? | Oui. | Sortant uniquement | Non 
+
+
+| Connexion requise à votre fournisseur de cloud ? | Oui. | Oui, dans la région | Oui, dans la région (si vous utilisez Cloud Volumes ONTAP) 
+
+
+| Installation du connecteur | Depuis BlueXP, Cloud Marketplace ou une installation manuelle | Cloud Marketplace ou installation manuelle | Installation manuelle 
+
+
+| Mises à niveau des connecteurs | Mises à niveau automatiques du logiciel NetApp Connector | Mises à niveau automatiques du logiciel NetApp Connector | Mise à niveau manuelle requise 
+
+
+| Accès à l'interface utilisateur | De la couche SaaS BlueXP | Localement à partir de la VM connecteur | Localement à partir de la VM connecteur 
+
+
+| Terminal API | La couche SaaS de BlueXP | La couche SaaS de BlueXP | Le connecteur 
+
+
+| Authentification | Via SaaS en utilisant auth0, la connexion NSS ou la fédération des identités | Via SaaS en utilisant auth0 ou la fédération d'identité | Authentification utilisateur locale 
+
+
+| Et les services de données | Tous sont pris en charge | Nombre d'entre elles sont prises en charge | Plusieurs sont pris en charge 
+
+
+| Options de licence | Abonnements Marketplace et BYOL | Abonnements Marketplace et BYOL | BYOL 
+|===
+Consultez les sections suivantes pour en savoir plus sur ces modes, notamment les fonctionnalités et les services BlueXP pris en charge.
+
+
+
+== Mode standard
+
+L'image suivante est un exemple de déploiement en mode standard.
+
+image:diagram-standard-mode.png["Image conceptuelle montrant l'Internet public sur lequel sont disponibles la console Web, la couche SaaS et l'authentification auth0, réseau virtuel dans le cloud où un connecteur exécute et gère Cloud Volumes ONTAP et un cluster AFF dans un data Center sur site."]
+
+BlueXP fonctionne comme suit en mode standard :
+
+Communication sortante:: La connectivité est requise du connecteur à la couche SaaS BlueXP, aux ressources accessibles au public de votre fournisseur cloud et à d'autres composants essentiels pour les opérations quotidiennes.
++
+--
+* link:task-set-up-networking-aws.html#endpoints-contacted-for-day-to-day-operations["Terminaux que le connecteur contacte dans AWS"]
+* link:task-set-up-networking-azure.html#endpoints-contacted-for-day-to-day-operations["Terminaux que le connecteur contacte dans Azure"]
+* link:task-set-up-networking-google.html#endpoints-contacted-for-day-to-day-operations["Terminaux que le connecteur contacte dans Google Cloud"]
+
+
+--
+Emplacement pris en charge pour le connecteur:: En mode standard, le connecteur est pris en charge dans le cloud ou sur site.
+Installation du connecteur:: L'installation du connecteur est possible à partir d'un assistant d'installation de BlueXP, d'AWS ou d'Azure Marketplace, ou à l'aide d'un programme d'installation pour installer manuellement le connecteur sur votre propre hôte Linux dans votre data Center ou dans le cloud.
+Mises à niveau des connecteurs:: Les mises à niveau automatisées du logiciel du connecteur sont disponibles depuis BlueXP avec des mises à jour mensuelles.
+Accès à l'interface utilisateur:: L'interface utilisateur est accessible depuis la console Web fournie via la couche SaaS.
+Terminal API:: Les appels API sont effectués vers le noeud final suivant : \https://cloudmanager.cloud.netapp.com
+Authentification:: L'authentification est fournie via le service cloud de BlueXP via auth0 ou des connexions au site du support NetApp (NSS). la fédération des identités est disponible.
+Services BlueXP pris en charge:: Tous les services BlueXP sont disponibles pour les utilisateurs.
+Options de licence prises en charge:: Les abonnements Marketplace et BYOL sont pris en charge en mode standard. Toutefois, les options de licence prises en charge dépendent du service BlueXP que vous utilisez. Consultez la documentation de chaque service pour en savoir plus sur les options de licence disponibles.
+Comment démarrer avec le mode standard:: Accédez au https://console.bluexp.netapp.com["Console web BlueXP"^] et s'inscrire.
++
+--
+link:task-quick-start-standard-mode.html["Découvrez comment vous lancer avec le mode standard"].
+
+--
+
+
+
+
+== Mode restreint
+
+L'image suivante est un exemple de déploiement en mode restreint.
+
+image:diagram-restricted-mode.png["Image conceptuelle montrant l'Internet public dans lequel la couche SaaS et l'authentification auth0 sont disponibles, un réseau virtuel dans le cloud où un connecteur s'exécute et fournit un accès à la console Web. Elle gère Cloud Volumes ONTAP et un cluster AFF dans un data Center sur site."]
+
+BlueXP fonctionne comme suit en mode restreint :
+
+Communication sortante:: Une connectivité sortante est requise du connecteur vers la couche SaaS BlueXP pour utiliser les services de données BlueXP, pour permettre les mises à niveau logicielles automatiques du connecteur, pour utiliser l'authentification basée sur auth0 et pour envoyer des métadonnées à des fins de facturation (nom de la VM de stockage, capacité allouée, UUID, type et IOPS de volume).
++
+--
+La couche SaaS de BlueXP n'initie pas la communication avec le connecteur. Toutes les communications sont initiées par le connecteur, qui peut extraire ou envoyer des données de ou vers la couche SaaS, selon les besoins.
+
+Une connexion est également requise pour les ressources du fournisseur cloud provenant de la région.
+
+--
+Emplacement pris en charge pour le connecteur:: En mode restreint, le connecteur est pris en charge dans le cloud : dans une région gouvernementale, une région souveraine ou une région commerciale.
+Installation du connecteur:: L'installation du connecteur est possible depuis AWS Marketplace ou Azure Marketplace, ou une installation manuelle sur votre propre hôte Linux.
+Mises à niveau des connecteurs:: Les mises à niveau automatisées du logiciel du connecteur sont disponibles depuis BlueXP avec des mises à jour mensuelles.
+Accès à l'interface utilisateur:: L'interface utilisateur est accessible depuis le connecteur déployé dans votre région cloud.
+Terminal API:: Les appels API sont effectués vers le noeud final suivant : \https://cloudmanager.cloud.netapp.com
+Authentification:: L'authentification est fournie via le service cloud de BlueXP via auth0. la fédération des identités est également disponible.
+Services BlueXP pris en charge:: BlueXP prend en charge les services de données et de stockage suivants avec un mode restreint :
++
+--
+[cols="2*"]
+|===
+| Services pris en charge | Remarques 
+
+
+| Amazon FSX pour ONTAP | Support complet 
+
+
+| Azure NetApp Files | Support complet 
+
+
+| La sauvegarde dans le cloud | Pris en charge dans les régions gouvernementales et commerciales avec mode restreint. Non pris en charge dans les régions souveraines avec mode restreint. Les fonctionnalités suivantes ne sont pas prises en charge : applications, machines virtuelles et Kubernetes. 
+
+
+| Sens des données cloud  a| 
+Pris en charge dans les régions gouvernementales avec mode restreint. Non pris en charge dans les régions commerciales ou les régions souveraines en mode restreint.
+
+Les limitations suivantes s'appliquent :
+
+* Les comptes OneDrive, les comptes SharePoint et Google Drive ne peuvent pas être analysés.
+* Impossible d'intégrer la fonctionnalité de label Microsoft Azure information protection (AIP).
+
+
+
+
+| Cloud Volumes ONTAP | Support complet 
+
+
+| Portefeuille numérique | Vous pouvez utiliser le portefeuille digital avec les options de licence prises en charge répertoriées ci-dessous pour le mode restreint. 
+
+
+| Clusters ONTAP sur site | La découverte avec un connecteur et la découverte sans connecteur (découverte directe) sont toutes deux prises en charge. La vue avancée (System Manager) n'est pas prise en charge lorsque vous découvrez un cluster sur site avec un connecteur. 
+
+
+| La réplication | Pris en charge dans les régions gouvernementales avec mode restreint. Non pris en charge dans les régions commerciales ou les régions souveraines en mode restreint. 
+|===
+--
+Options de licence prises en charge:: Les options de licence suivantes sont prises en charge avec le mode restreint :
++
+--
+* Abonnements aux marchés (contrats à l'heure et à l'année)
++
+Notez ce qui suit :
+
++
+** Pour Cloud Volumes ONTAP, seules les licences basées sur la capacité sont prises en charge.
+** Dans Azure, les contrats annuels ne sont pas pris en charge par les régions gouvernementales.
+
+
+* BYOL
++
+Pour Cloud Volumes ONTAP, les licences basées sur la capacité et les licences basées sur les nœuds sont prises en charge par le modèle BYOL.
+
+
+
+--
+Comment démarrer avec le mode restreint:: Vous devez activer le mode restreint lorsque vous créez votre compte BlueXP.
++
+--
+Si vous n'avez pas encore de compte, vous serez invité à créer votre compte et à activer le mode restreint lorsque vous vous connecterez à BlueXP pour la première fois à partir d'un connecteur que vous avez installé manuellement ou que vous avez créé à partir du Marketplace de votre fournisseur cloud.
+
+Si vous avez déjà un compte et que vous souhaitez en créer un autre, vous devez utiliser l'API de location.
+
+Notez que vous ne pouvez pas modifier le paramètre du mode restreint après la création du compte par BlueXP. Vous ne pouvez pas activer le mode restreint ultérieurement et vous ne pouvez pas le désactiver ultérieurement. Elle doit être définie au moment de la création du compte.
+
+* link:task-quick-start-restricted-mode.html["Découvrez comment vous lancer avec le mode restreint"].
+* link:task-create-account.html["Découvrez comment créer un compte BlueXP supplémentaire"].
+
+
+--
+
+
+
+
+== Mode privé
+
+En mode privé, vous pouvez installer un connecteur sur site ou dans le cloud, puis utiliser BlueXP pour gérer les données dans votre cloud hybride. La couche SaaS BlueXP n'est pas connectée.
+
+L'image suivante montre un exemple de déploiement en mode privé où le connecteur est installé dans le cloud et gère à la fois Cloud Volumes ONTAP et un cluster ONTAP sur site.
+
+image:diagram-private-mode-cloud.png["Image conceptuelle qui montre un réseau virtuel dans le cloud où un connecteur s'exécute et donne accès à la console Web. Elle gère Cloud Volumes ONTAP et un cluster AFF dans un data Center sur site."]
+
+Pendant ce temps, la deuxième image présente un exemple de déploiement en mode privé où le connecteur est installé sur site, gère un cluster ONTAP sur site et permet d'accéder aux services de données BlueXP pris en charge.
+
+image:diagram-private-mode-onprem.png["Image conceptuelle qui montre un data Center sur site dans lequel un connecteur s'exécute et permet d'accéder à la console Web et aux services de données BlueXP. Il gère également un cluster AFF dans un data Center sur site."]
+
+BlueXP fonctionne comme suit en mode privé :
+
+Communication sortante:: Aucune connectivité sortante n'est requise. Tous les packages, dépendances et composants essentiels sont emballés avec le connecteur et servis à partir de la machine locale. La connectivité aux ressources accessibles au public de votre fournisseur cloud n'est requise que si vous déployez Cloud Volumes ONTAP.
+Emplacement pris en charge pour le connecteur:: En mode privé, le connecteur est pris en charge dans le cloud ou sur site.
+Installation du connecteur:: Les installations manuelles du connecteur sont prises en charge sur votre propre hôte Linux dans le cloud ou sur site.
+Mises à niveau des connecteurs:: Vous devez mettre à niveau le logiciel du connecteur manuellement. Le logiciel du connecteur est publié sur le site de support NetApp à intervalles non définis.
+Accès à l'interface utilisateur:: L'interface utilisateur est accessible depuis le connecteur déployé dans votre région cloud ou sur site.
+Terminal API:: Les appels API sont effectués vers la machine virtuelle du connecteur.
+Authentification:: L'authentification est assurée par la gestion et l'accès des utilisateurs locaux. L'authentification n'est pas fournie via le service cloud de BlueXP.
+Services BlueXP pris en charge dans les déploiements cloud:: BlueXP prend en charge les services de stockage et de données suivants avec le mode privé lorsque le connecteur est installé dans le cloud :
++
+--
+[cols="2*"]
+|===
+| Services pris en charge | Remarques 
+
+
+| La sauvegarde dans le cloud | Pris en charge dans les régions commerciales AWS et Azure. Non pris en charge dans Google Cloud ou dans https://aws.amazon.com/federal/us-intelligence-community/["AWS C2S/SC2S"^] ou https://learn.microsoft.com/en-us/azure/compliance/offerings/offering-dod-il6["Azure IL6"^] 
+
+
+| Cloud Volumes ONTAP | Comme il n'y a pas d'accès à Internet, les fonctionnalités suivantes ne sont pas disponibles : mises à niveau logicielles automatisées, informations sur les coûts d'AutoSupport et d'AWS. 
+
+
+| Portefeuille numérique | Vous pouvez utiliser le portefeuille digital avec les options de licence prises en charge répertoriées ci-dessous pour le mode privé. 
+
+
+| Clusters ONTAP sur site | Requiert une connectivité du cloud (où le connecteur est installé) à l'environnement sur site. La découverte sans connecteur (découverte directe) n'est pas prise en charge. 
+|===
+--
+Prise en charge des services BlueXP dans les déploiements sur site:: BlueXP prend en charge les services de stockage et de données suivants avec le mode privé lorsque le connecteur est installé sur votre site :
++
+--
+[cols="2*"]
+|===
+| Services pris en charge | Remarques 
+
+
+| La sauvegarde dans le cloud | Seules les opérations de sauvegarde et de restauration de volumes ONTAP sur site sur des systèmes StorageGRID sont prises en charge.https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-backup-onprem-private-cloud.html["Découvrez comment sauvegarder vos données ONTAP sur site dans StorageGRID"^] 
+
+
+| Sens des données cloud  a| 
+* Les seules sources de données prises en charge sont celles que vous pouvez découvrir localement.
++
+https://docs.netapp.com/us-en/cloud-manager-data-sense/task-deploy-compliance-dark-site.html#supported-data-sources["Affichez les sources que vous pouvez découvrir localement"^]
+
+* Les fonctionnalités nécessitant un accès Internet sortant ne sont pas prises en charge.
++
+https://docs.netapp.com/us-en/cloud-manager-data-sense/task-deploy-compliance-dark-site.html#limitations["Afficher les limites de la fonction"^]
+
+
+
+
+
+| Portefeuille numérique | Vous pouvez utiliser le portefeuille digital avec les options de licence prises en charge répertoriées ci-dessous pour le mode privé. 
+
+
+| Clusters ONTAP sur site | La découverte sans connecteur (découverte directe) n'est pas prise en charge. 
+
+
+| La réplication | Support complet 
+|===
+--
+Options de licence prises en charge:: Seul le modèle BYOL est pris en charge avec le mode privé.
++
+--
+Pour Cloud Volumes ONTAP BYOL, seules les licences basées sur les nœuds sont prises en charge. Les licences basées sur la capacité ne sont pas prises en charge. Comme aucune connexion Internet sortante n'est disponible, vous devez télécharger manuellement votre fichier de licence Cloud Volumes ONTAP dans le portefeuille numérique.
+
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-node-licenses.html#add-unassigned-licenses["Découvrez comment ajouter des licences au portefeuille digital"^]
+
+--
+Comment démarrer avec le mode privé:: Le mode privé est disponible en téléchargeant le programme d'installation « hors ligne » depuis le site de support NetApp.
++
+--
+link:task-quick-start-private-mode.html["Découvrez comment vous lancer avec le mode privé"].
+
+--
+
+
+
+
+== Comparaison des services et des fonctionnalités
+
+Le tableau suivant vous aide à identifier rapidement les services et fonctionnalités BlueXP pris en charge en mode restreint et en mode privé.
+
+Notez que certains services peuvent être pris en charge avec des limitations. Pour plus d'informations sur la prise en charge de ces services en mode restreint et en mode privé, reportez-vous aux sections ci-dessus.
+
+[cols="33h,33,33"]
+|===
+| Service ou fonctionnalité BlueXP | Mode restreint | Mode privé 
+
+
+| Amazon FSX pour ONTAP | Oui. | Non 
+
+
+| Amazon S3 | Non | Non 
+
+
+| AppTemplate | Non | Non 
+
+
+| Blob d'Azure | Non | Non 
+
+
+| Azure NetApp Files | Oui. | Non 
+
+
+| La sauvegarde dans le cloud | Oui. | Oui. 
+
+
+| Sens des données cloud | Oui. | Oui. 
+
+
+| Cloud Sync | Non | Non 
+
+
+| Tiering dans le cloud | Non | Non 
+
+
+| Cloud Volumes ONTAP | Oui. | Oui. 
+
+
+| Cloud Volumes Service pour Google Cloud | Non | Non 
+
+
+| Calcul | Non | Non 
+
+
+| Conseiller digital | Non | Non 
+
+
+| Portefeuille numérique | Oui. | Oui. 
+
+
+| E-Series | Non | Non 
+
+
+| Efficacité économique | Non | Non 
+
+
+| Cache global de fichiers | Non | Non 
+
+
+| Google Cloud Storage | Non | Non 
+
+
+| Clusters Kubernetes | Non | Non 
+
+
+| Clusters ONTAP sur site | Oui. | Oui. 
+
+
+| Résilience opérationnelle | Non | Non 
+
+
+| Protection contre les ransomwares | Non | Non 
+
+
+| La réplication | Oui. | Oui. 
+
+
+| StorageGRID | Non | Non 
+
+
+| Informations d'identification | Oui. | Oui. 
+
+
+| Comptes NSS | Oui. | Non 
+
+
+| Notifications | Oui. | Non 
+
+
+| De la chronologie | Oui. | Oui. 
+|===

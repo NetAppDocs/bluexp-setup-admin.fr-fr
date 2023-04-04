@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar 
 permalink: concept-netapp-accounts.html 
-keywords: accounts, workspaces, Connector, users, BlueXP website, admin, Account Admin, Workspace Admin, account settings, workspaces, users, members, connector, service connector, user accounts, what are users, what is a workspace, users and workspaces 
-summary: 'Un compte NetApp fournit une colocation et vous permet d"organiser les utilisateurs et les ressources dans des espaces de travail isolés à partir de BlueXP.' 
+keywords: accounts, workspaces, Connector, users, BlueXP website, admin, Account Admin, Workspace Admin, account settings, workspaces, users, members, connector, service connector, user accounts, what are users, what is a workspace, users and workspaces, bluexp account, netapp account 
+summary: 'Un compte BlueXP assure la colocation et vous permet d"organiser les utilisateurs et les ressources dans des espaces de travail isolés à partir de BlueXP.' 
 ---
-= En savoir plus sur les comptes NetApp
+= Découvrez les comptes BlueXP
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,44 +14,37 @@ summary: 'Un compte NetApp fournit une colocation et vous permet d"organiser les
 
 
 [role="lead"]
-Un _compte NetApp_ propose la colocation et vous permet d'organiser les utilisateurs et les ressources dans des espaces de travail isolés à partir de BlueXP.
+Un compte _BlueXP_ assure la colocation et vous permet d'organiser les utilisateurs et les ressources dans des espaces de travail isolés à partir de BlueXP. Par exemple, plusieurs utilisateurs peuvent déployer et gérer des systèmes Cloud Volumes ONTAP dans des environnements isolés appelés _espaces de travail_. Ces espaces de travail sont invisibles pour les autres utilisateurs, à moins qu'ils ne soient partagés.
 
-Par exemple, plusieurs utilisateurs peuvent déployer et gérer des systèmes Cloud Volumes ONTAP dans des environnements isolés appelés _espaces de travail_. Ces espaces de travail sont invisibles pour les autres utilisateurs, à moins qu'ils ne soient partagés.
+Lors de votre premier accès à BlueXP, vous êtes invité à sélectionner ou à créer un compte. Par exemple, l'écran suivant s'affiche si vous n'avez pas encore de compte :
 
-Lorsque vous accédez pour la première fois à BlueXP, vous êtes invité à sélectionner ou à créer un compte NetApp :
-
-image:screenshot-account-selection.png["Capture d'écran de l'assistant d'installation de BlueXP qui vous invite à saisir le compte NetApp dans lequel vous souhaitez créer BlueXP."]
+image:screenshot-account-selection.png["Capture d'écran de l'assistant d'installation BlueXP vous demandant de créer le compte BlueXP dans lequel vous souhaitez créer BlueXP."]
 
 Les administrateurs de compte BlueXP peuvent ensuite modifier les paramètres de ce compte en gérant les utilisateurs (membres), les espaces de travail et les connecteurs :
 
 image:screenshot-account-settings.png["Capture d'écran qui affiche le widget gérer un compte à partir duquel vous pouvez gérer des utilisateurs, des espaces de travail et des connecteurs."]
 
-Pour obtenir des instructions détaillées, reportez-vous à la section link:task-setting-up-netapp-accounts.html["Configuration du compte NetApp"].
+link:task-managing-netapp-accounts.html["Découvrez comment gérer votre compte BlueXP"].
 
 
 
-== Paramètres du compte
+== Modes de déploiement
 
-Le widget gérer des comptes de BlueXP permet aux administrateurs de comptes de gérer un compte NetApp. Si vous venez de créer votre compte, vous commencerez de zéro. Mais si vous avez déjà configuré un compte, vous verrez _All_ les utilisateurs, les espaces de travail et les connecteurs qui sont associés au compte.
+BlueXP propose pour votre compte les modes de déploiement suivants : mode standard, mode restreint et mode privé. Ces modes prennent en charge les environnements présentant différents niveaux de sécurité et de restrictions de connectivité.
 
-
-
-== Présentation
-
-La page vue d'ensemble affiche le nom du compte et l'ID du compte. Vous devrez peut-être fournir votre identifiant de compte lors de l'enregistrement de certains services. Cette page inclut également quelques options de configuration BlueXP.
+link:concept-modes.html["En savoir plus sur les modes de déploiement BlueXP"].
 
 
 
 == Membres
 
-Les membres sont des utilisateurs BlueXP que vous associez à votre compte NetApp. L'association d'un utilisateur à un compte et d'un ou plusieurs espaces de travail dans ce compte permet à ces utilisateurs de créer et de gérer des environnements de travail dans BlueXP.
+Les membres sont des utilisateurs BlueXP que vous associez à votre compte BlueXP. L'association d'un utilisateur à un compte et d'un ou plusieurs espaces de travail dans ce compte permet à ces utilisateurs de créer et de gérer des environnements de travail dans BlueXP.
 
 Lorsque vous associez un utilisateur, vous lui attribuez un rôle :
 
 * _Account Admin_: Peut effectuer n'importe quelle action dans BlueXP.
 * _Workspace Admin_ : permet de créer et de gérer des ressources dans l'espace de travail affecté.
 * _Compliance Viewer_: Peut uniquement afficher les informations de conformité Cloud Data Sense et générer des rapports pour les systèmes auxquels ils sont autorisés à accéder.
-* _Admin SnapCenter_: Peut utiliser le service SnapCenter pour créer des sauvegardes cohérentes avec les applications et restaurer les données à l'aide de ces sauvegardes. _Ce service est actuellement en version bêta._
 
 
 link:reference-user-roles.html["En savoir plus sur ces rôles"].
@@ -60,7 +53,7 @@ link:reference-user-roles.html["En savoir plus sur ces rôles"].
 
 == Espaces de travail
 
-Dans BlueXP, un espace de travail isole tout nombre d'environnements _fonctionnant_ d'autres environnements de travail. Les administrateurs de l'espace de travail ne peuvent pas accéder aux environnements de travail dans un espace de travail à moins que l'administrateur du compte n'associe l'administrateur à cet espace de travail.
+Dans BlueXP, un espace de travail isole tous les _environnements de travail_ des autres utilisateurs du compte. Les administrateurs de l'espace de travail ne peuvent pas accéder aux environnements de travail dans un espace de travail à moins que l'administrateur du compte n'associe l'administrateur à cet espace de travail.
 
 Un environnement de travail représente un système de stockage. Par exemple :
 
@@ -75,9 +68,9 @@ link:task-setting-up-netapp-accounts.html["Découvrez comment ajouter un espace 
 
 == Connecteurs
 
-Un connecteur permet à BlueXP de gérer les ressources et les processus au sein de votre environnement de cloud public. Il s'exécute sur une instance de machine virtuelle que vous déployez dans votre fournisseur cloud ou sur un hôte sur site que vous avez configuré.
+Un connecteur exécute les actions que BlueXP doit effectuer pour gérer votre infrastructure de données. Le connecteur s'exécute sur une instance de machine virtuelle que vous déployez auprès de votre fournisseur cloud ou sur un hôte sur site que vous avez configuré.
 
-Vous pouvez utiliser un connecteur avec plusieurs services de données cloud NetApp. Par exemple, si vous utilisez un connecteur pour gérer Cloud Volumes ONTAP, vous pouvez utiliser le même connecteur avec un autre service comme NetApp Cloud Tiering.
+Vous pouvez utiliser un connecteur avec plusieurs services BlueXP. Par exemple, si vous utilisez un connecteur pour gérer Cloud Volumes ONTAP, vous pouvez utiliser le même connecteur avec un autre service comme NetApp Cloud Tiering.
 
 link:concept-connectors.html["En savoir plus sur les connecteurs"].
 
@@ -88,22 +81,22 @@ link:concept-connectors.html["En savoir plus sur les connecteurs"].
 Les exemples suivants décrivent comment configurer vos comptes.
 
 
-NOTE: Dans les deux exemples d'images suivantes, le connecteur et les systèmes Cloud Volumes ONTAP ne résident pas _dans_ le compte NetApp --ils s'exécutent dans un fournisseur cloud. Il s'agit d'une représentation conceptuelle de la relation entre chaque composant.
+NOTE: Dans les deux exemples d'images qui suivent, le connecteur et les systèmes Cloud Volumes ONTAP ne résident pas _dans_ le compte BlueXP--ils s'exécutent dans un fournisseur cloud. Il s'agit d'une représentation conceptuelle de la relation entre chaque composant.
 
 
 
-=== Exemple 1
+=== Plusieurs espaces de travail
 
 L'exemple suivant montre un compte qui utilise deux espaces de travail pour créer des environnements isolés. Le premier espace de travail est pour un environnement de production et le second pour un environnement de développement.
 
-image:diagram_cloud_central_accounts_one.png["Un schéma représentant un compte NetApp unique qui contient deux espaces de travail. Chaque espace de travail est associé au même connecteur et chacun a son propre espace de travail Admin."]
+image:diagram_cloud_central_accounts_one.png["Diagramme illustrant un compte BlueXP unique qui contient deux espaces de travail. Chaque espace de travail est associé au même connecteur et chacun a son propre espace de travail Admin."]
 
 
 
-=== Exemple 2
+=== Plusieurs comptes
 
-Voici un autre exemple illustrant le niveau de colocation le plus élevé en utilisant deux comptes NetApp distincts. Par exemple, un fournisseur de services peut utiliser BlueXP pour fournir des services à ses clients, tout en utilisant un autre compte pour fournir une reprise après incident pour l'une de ses unités commerciales.
+Voici un autre exemple illustrant le niveau le plus élevé de colocation grâce à l'utilisation de deux comptes BlueXP distincts. Par exemple, un fournisseur de services peut utiliser BlueXP pour fournir des services à ses clients, tout en utilisant un autre compte pour fournir une reprise après incident pour l'une de ses unités commerciales.
 
 Notez que le compte 2 comprend deux connecteurs distincts. Cela peut arriver si vous disposez de systèmes dans des régions distinctes ou dans des fournisseurs cloud distincts.
 
-image:diagram_cloud_central_accounts_two.png["Un diagramme présentant deux comptes NetApp, chacun possédant plusieurs espaces de travail et leurs administrateurs d'espace de travail associés."]
+image:diagram_cloud_central_accounts_two.png["Ce diagramme présente deux comptes BlueXP, chacun doté de plusieurs espaces de travail et leurs administrateurs d'espace de travail associés."]

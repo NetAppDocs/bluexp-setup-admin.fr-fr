@@ -1,0 +1,171 @@
+---
+sidebar: sidebar 
+permalink: task-subscribe-restricted-mode.html 
+keywords: subscribe, subscription, marketplace subscription, paygo, contract, annual contract 
+summary: Abonnez-vous à BlueXP depuis le marché de votre fournisseur cloud pour payer les services BlueXP à un taux horaire ou via un contrat annuel. 
+---
+= Abonnement à BlueXP (mode restreint)
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Abonnez-vous à BlueXP sur le marché de votre fournisseur cloud pour payer les services BlueXP à un taux horaire (PAYGO) ou un contrat annuel.
+
+[role="tabbed-block"]
+====
+.AWS
+--
+.Étapes
+. Dans le coin supérieur droit de la console BlueXP, cliquez sur l'icône Paramètres et sélectionnez *informations d'identification*.
+. Cliquez sur le menu d'action correspondant à un ensemble d'informations d'identification, puis sélectionnez *associer un abonnement*.
++
+image:screenshot_associate_subscription.png["Capture d'écran du menu d'action pour un ensemble d'informations d'identification existantes."]
+
+. Pour associer les informations d'identification à un abonnement existant, sélectionnez-le dans la liste déroulante et cliquez sur *associer*.
+. Pour associer les informations d'identification à un nouvel abonnement, cliquez sur *Ajouter un abonnement > Continuer* et suivez les étapes de AWS Marketplace :
++
+.. Cliquez sur *Afficher les options d'achat*.
+.. Cliquez sur *Subscribe*.
+.. Cliquez sur *configurer votre compte*.
++
+Vous serez redirigé vers le site Web BlueXP.
+
+.. À partir de la page *attribution d'abonnement* :
++
+*** Sélectionnez les comptes BlueXP avec lesquels vous souhaitez associer cet abonnement.
+*** Dans le champ *remplacer l'abonnement existant*, choisissez si vous souhaitez remplacer automatiquement l'abonnement existant pour un compte par ce nouvel abonnement.
++
+BlueXP remplace l'abonnement existant pour toutes les informations d'identification du compte par ce nouvel abonnement. Si un ensemble d'informations d'identification n'a jamais été associé à un abonnement, ce nouvel abonnement ne sera pas associé à ces informations d'identification.
+
++
+Pour tous les autres comptes, vous devez associer manuellement l'abonnement en répétant ces étapes.
+
+*** Cliquez sur *Enregistrer*.
++
+La vidéo suivante décrit la procédure de souscription à partir d'AWS Marketplace :
+
++
+video::video_subscribing_aws.mp4[width=848,height=480]
+
+
+
+
+
+
+--
+.Azure
+--
+
+NOTE: Dans Azure, les contrats annuels ne sont pas pris en charge par les régions gouvernementales.
+
+.Étapes
+. Dans le coin supérieur droit de la console BlueXP, cliquez sur l'icône Paramètres et sélectionnez *informations d'identification*.
+. Cliquez sur le menu d'action correspondant à un ensemble d'informations d'identification, puis sélectionnez *associer un abonnement*.
++
+image:screenshot_azure_add_subscription.png["Capture d'écran du menu d'action pour un ensemble d'informations d'identification existantes."]
+
+. Pour associer les informations d'identification à un abonnement existant, sélectionnez-le dans la liste déroulante et cliquez sur *associer*.
+. Pour associer les informations d'identification à un nouvel abonnement, cliquez sur *Ajouter un abonnement > Continuer* et suivez les étapes dans Azure Marketplace :
++
+.. Si vous y êtes invité, connectez-vous à votre compte Azure.
+.. Cliquez sur *Subscribe*.
+.. Remplissez le formulaire et cliquez sur *Abonnez-vous*.
+.. Une fois le processus d'abonnement terminé, cliquez sur *configurer le compte maintenant*.
++
+Vous serez redirigé vers le site Web BlueXP.
+
+.. À partir de la page *attribution d'abonnement* :
++
+*** Sélectionnez les comptes BlueXP avec lesquels vous souhaitez associer cet abonnement.
+*** Dans le champ *remplacer l'abonnement existant*, choisissez si vous souhaitez remplacer automatiquement l'abonnement existant pour un compte par ce nouvel abonnement.
++
+BlueXP remplace l'abonnement existant pour toutes les informations d'identification du compte par ce nouvel abonnement. Si un ensemble d'informations d'identification n'a jamais été associé à un abonnement, ce nouvel abonnement ne sera pas associé à ces informations d'identification.
+
++
+Pour tous les autres comptes, vous devez associer manuellement l'abonnement en répétant ces étapes.
+
+*** Cliquez sur *Enregistrer*.
++
+La vidéo suivante explique comment vous abonner à Azure Marketplace :
+
++
+video::video_subscribing_azure.mp4[width=848,height=480]
+
+
+
+
+
+
+--
+.Google Cloud
+--
+.Étapes
+. Dans le coin supérieur droit de la console BlueXP, cliquez sur l'icône Paramètres et sélectionnez *informations d'identification*.
+. Cliquez sur le menu d'action correspondant à un ensemble d'informations d'identification, puis sélectionnez *associer un abonnement*.
++
+image:screenshot_gcp_add_subscription.png["Capture d'écran du menu d'action pour un ensemble d'informations d'identification existantes."]
+
+. Pour associer les informations d'identification à un abonnement existant, sélectionnez un projet Google Cloud et un abonnement dans la liste déroulante, puis cliquez sur *associé*.
++
+image:screenshot_gcp_associate.gif["Copie d'écran d'un projet Google Cloud et de l'abonnement sélectionnés pour les identifiants Google Cloud."]
+
+. Si vous n'avez pas encore d'abonnement, cliquez sur *Ajouter un abonnement > Continuer* et suivez les étapes de Google Cloud Marketplace.
++
+
+NOTE: Avant de terminer les étapes suivantes, assurez-vous que vous disposez des deux privilèges d'administrateur de facturation dans votre compte Google Cloud ainsi que d'une connexion BlueXP.
+
++
+.. Après avoir été redirigé vers le https://console.cloud.google.com/marketplace/product/netapp-cloudmanager/cloud-manager["Page NetApp BlueXP sur Google Cloud Marketplace"^], assurez-vous que le projet correct est sélectionné dans le menu de navigation supérieur.
++
+image:screenshot_gcp_cvo_marketplace.png["Copie d'écran de la page Cloud Volumes ONTAP Marketplace dans Google Cloud."]
+
+.. Cliquez sur *Subscribe*.
+.. Sélectionnez le compte de facturation approprié et acceptez les conditions générales.
+.. Cliquez sur *Subscribe*.
++
+Cette étape envoie votre demande de transfert à NetApp.
+
+.. Dans la boîte de dialogue contextuelle, cliquez sur *s'inscrire auprès de NetApp, Inc.*
++
+Cette étape doit être effectuée pour lier l'abonnement Google Cloud à votre compte BlueXP. Le processus de liaison d'un abonnement n'est pas terminé tant que vous n'êtes pas redirigé à partir de cette page, puis vous connecter à BlueXP.
+
++
+image:screenshot_gcp_marketplace_register.png["Capture d'écran d'une fenêtre contextuelle d'enregistrement."]
+
+.. Suivez les étapes de la page *attribution d'abonnement* :
++
+
+NOTE: Si un membre de votre entreprise a déjà souscrit à l'abonnement NetApp BlueXP à partir de votre compte de facturation, vous serez redirigé vers https://bluexp.netapp.com/ontap-cloud?x-gcp-marketplace-token=["La page Cloud Volumes ONTAP sur le site web de BlueXP"^] à la place. Si cela est inattendu, contactez votre équipe commerciale NetApp. Google n'autorise qu'un seul abonnement par compte de facturation Google.
+
++
+*** Sélectionnez les comptes BlueXP avec lesquels vous souhaitez associer cet abonnement.
+*** Dans le champ *remplacer l'abonnement existant*, choisissez si vous souhaitez remplacer automatiquement l'abonnement existant pour un compte par ce nouvel abonnement.
++
+BlueXP remplace l'abonnement existant pour toutes les informations d'identification du compte par ce nouvel abonnement. Si un ensemble d'informations d'identification n'a jamais été associé à un abonnement, ce nouvel abonnement ne sera pas associé à ces informations d'identification.
+
++
+Pour tous les autres comptes, vous devez associer manuellement l'abonnement en répétant ces étapes.
+
+*** Cliquez sur *Enregistrer*.
++
+Dans cette vidéo, vous instructions pour vous abonner à Google Cloud Marketplace :
+
++
+video::video-subscribing-google-cloud.mp4[width=848,height=480]
+
+
+.. Une fois ce processus terminé, revenez à la page d'informations d'identification dans BlueXP et sélectionnez ce nouvel abonnement.
++
+image:screenshot_gcp_associate.gif["Capture d'écran de la page d'affectation d'abonnement."]
+
+
+
+
+
+--
+====

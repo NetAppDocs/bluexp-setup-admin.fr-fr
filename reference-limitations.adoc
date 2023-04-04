@@ -44,7 +44,7 @@ Pour une sécurité améliorée, vous avez la possibilité de link:task-installi
 
 === Page blanche lors du chargement de l'interface utilisateur locale
 
-Si vous chargez l'interface utilisateur locale pour un connecteur, il est possible que l'interface utilisateur ne s'affiche pas parfois, et il vous suffit d'obtenir une page vide.
+Si vous chargez la console Web qui s'exécute sur un connecteur, l'interface peut ne pas s'afficher parfois et vous obtenez juste une page vierge.
 
 Ce problème est lié à un problème de mise en cache. La solution consiste à utiliser une session de navigateur Web privée ou incognito.
 
@@ -59,19 +59,3 @@ Le connecteur n'est pas pris en charge sur une machine virtuelle partagée avec 
 === agents et extensions tiers
 
 Les agents tiers ou les extensions VM ne sont pas pris en charge sur la VM Connector.
-
-
-
-== Limites de SaaS
-
-
-
-=== La plateforme SaaS est désactivée pour les régions du secteur public
-
-Si vous déployez un connecteur dans une région AWS GovCloud, une région Azure Government ou une région Azure DoD, l'accès à BlueXP est disponible uniquement via l'adresse IP hôte d'un connecteur. L'accès à la plateforme SaaS est désactivé pour l'ensemble du compte.
-
-Cela signifie que seuls les utilisateurs privilégiés qui peuvent accéder au VPC/vNet interne de l'utilisateur final peuvent utiliser l'interface utilisateur ou l'API de BlueXP.
-
-Il est à noter que les seuls services pris en charge dans ces régions sont Cloud Volumes ONTAP, Cloud Backup, Cloud Data Sense et la réplication. Aucun autre service NetApp n'est pris en charge dans les régions du secteur public.
-
-link:task-managing-connectors.html#access-the-local-ui["Découvrez comment accéder à l'interface utilisateur locale sur le connecteur"].

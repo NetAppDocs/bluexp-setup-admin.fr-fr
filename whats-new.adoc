@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: whats-new.html 
 keywords: 'what"s new, features, new, release notes, enhancements, fixes' 
-summary: 'Découvrez les nouveautés des fonctionnalités d"administration BlueXP : comptes NetApp, connecteurs, identifiants de fournisseur cloud et bien plus encore.' 
+summary: 'Découvrez les nouveautés des fonctionnalités d"administration BlueXP : comptes BlueXP, connecteurs, identifiants de fournisseur cloud, etc.' 
 ---
 = Quoi de neuf
 :hardbreaks:
@@ -14,7 +14,27 @@ summary: 'Découvrez les nouveautés des fonctionnalités d"administration BlueX
 
 
 [role="lead"]
-Découvrez les nouveautés des fonctionnalités d'administration BlueXP : comptes NetApp, connecteurs, identifiants de fournisseur cloud et bien plus encore.
+Découvrez les nouveautés des fonctionnalités d'administration BlueXP : comptes BlueXP, connecteurs, identifiants de fournisseur cloud, etc.
+
+
+
+== 4 avril 2023
+
+
+
+=== Modes de déploiement
+
+Les _modes de déploiement_ de BlueXP vous permettent d'utiliser BlueXP en fonction de vos exigences métier et de sécurité. Trois modes sont disponibles :
+
+* Mode standard
+* Mode restreint
+* Mode privé
+
+
+link:concept-modes.html["En savoir plus sur ces modes de déploiement"].
+
+
+NOTE: L'introduction du mode restreint remplace l'option d'activation ou de désactivation de la plate-forme SaaS. Vous pouvez activer le mode restreint au moment de la création du compte. Il ne peut pas être activé ou désactivé ultérieurement.
 
 
 
@@ -303,7 +323,7 @@ image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-setup-admin/mai
 
 * Le connecteur est désormais pris en charge dans la région Azure West US 3.
 +
-https://cloud.netapp.com/cloud-volumes-global-regions["Afficher la liste complète des régions prises en charge"^]
+https://bluexp.netapp.com/cloud-volumes-global-regions["Afficher la liste complète des régions prises en charge"^]
 
 * Cette version du connecteur inclut également des améliorations Cloud Volumes ONTAP.
 +
@@ -335,7 +355,7 @@ NOTE: Les identifiants de connexion existants qui utilisent une adresse e-mail e
 * Le connecteur est maintenant pris en charge dans la région AWS Jakarta (ap-sud-est-3).
 * Le connecteur est maintenant pris en charge dans la région du Sud-est d'Azure Brésil.
 +
-https://cloud.netapp.com/cloud-volumes-global-regions["Afficher la liste complète des régions prises en charge"^]
+https://bluexp.netapp.com/cloud-volumes-global-regions["Afficher la liste complète des régions prises en charge"^]
 
 * Cette version de Connector inclut également des améliorations apportées à Cloud Volumes ONTAP et des clusters ONTAP sur site.
 +
@@ -372,7 +392,7 @@ Nous avons mis à jour le connecteur pour introduire des correctifs. La correcti
 
 
 +
-https://cloud.netapp.com/cloud-volumes-global-regions["Afficher la liste complète des régions prises en charge"^]
+https://bluexp.netapp.com/cloud-volumes-global-regions["Afficher la liste complète des régions prises en charge"^]
 
 * Lorsque vous sélectionnez le compte de service Google Cloud à utiliser avec le connecteur, Cloud Manager affiche désormais l'adresse e-mail associée à chaque compte de service. L'affichage de l'adresse e-mail peut faciliter la distinction entre les comptes de service partageant le même nom.
 +
@@ -559,7 +579,7 @@ Nous avons repensé l'assistant *Add Connector* pour ajouter de nouvelles option
 
 * link:task-creating-connectors-aws.html["Créez un connecteur dans AWS"]
 * link:task-creating-connectors-azure.html["Créer un connecteur dans Azure"]
-* link:task-creating-connectors-gcp.html["Créer un connecteur dans GCP"]
+* link:task-creating-connectors-gcp.html["Créez un connecteur dans Google Cloud"]
 
 
 

@@ -22,7 +22,12 @@ BlueXP requiert des autorisations pour effectuer des actions dans Google Cloud. 
 
 Le rôle personnalisé illustré ci-dessous fournit les autorisations dont un connecteur a besoin pour gérer les ressources et les processus au sein de votre réseau Google Cloud.
 
-Vous devez appliquer ce rôle personnalisé à un compte de service rattaché à la machine virtuelle Connector. link:task-creating-connectors-gcp.html["Affichez les instructions détaillées"].
+Vous devez appliquer ce rôle personnalisé à un compte de service rattaché à la machine virtuelle Connector.
+
+* link:task-set-up-permissions-google.html["Définissez les autorisations pour le mode standard"]
+* link:task-prepare-restricted-mode.html#prepare-cloud-permissions["Définissez les autorisations pour le mode restreint"]
+* https://review.docs.netapp.com/us-en/cloud-manager-setup-admin_feb-2022-modes/task-prepare-private-mode.html#prepare-cloud-permissions["Configurez les autorisations pour le mode privé"]
+
 
 Vous devez également vous assurer que le rôle est à jour lorsque de nouvelles autorisations sont ajoutées dans les versions suivantes.
 

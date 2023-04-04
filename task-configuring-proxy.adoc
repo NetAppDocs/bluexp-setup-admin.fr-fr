@@ -31,28 +31,17 @@ Lorsque vous configurez un connecteur pour utiliser un serveur proxy, ce connect
 Notez que cette opération redémarre le connecteur. Assurez-vous que le connecteur n'effectue aucune opération avant de continuer.
 
 .Étapes
-. link:task-logging-in.html["Connectez-vous à l'interface BlueXP SaaS"^] À partir d'une machine dotée d'une connexion réseau à l'instance de connecteur.
-+
-Si le connecteur n'est pas doté d'une adresse IP publique, vous aurez besoin d'une connexion VPN ou vous devrez vous connecter à partir d'un hôte de secours situé sur le même réseau que le connecteur.
-
-. Cliquez sur la liste déroulante *Connector*, puis cliquez sur *allez à l'interface utilisateur locale* pour un connecteur spécifique.
-+
-image:screenshot_connector_local_ui.gif["Capture d'écran affichant l'icône du connecteur dans l'en-tête et l'action aller à l'interface utilisateur locale."]
-
-+
-L'interface BlueXP exécutée sur le connecteur se charge dans un nouvel onglet de navigateur.
-
-. Dans le coin supérieur droit de la console BlueXP, cliquez sur l'icône Paramètres, puis sélectionnez *Paramètres du connecteur*.
+. Dans le coin supérieur droit de la console BlueXP, sélectionnez l'icône Paramètres, puis sélectionnez *Paramètres du connecteur*.
 +
 image:screenshot_settings_icon.gif["Capture d'écran affichant l'icône Paramètres dans le coin supérieur droit de la console BlueXP."]
 
-. Sous *général*, cliquez sur *Configuration du proxy HTTP*.
+. Sous *général*, sélectionnez *HTTP Proxy Configuration*.
 . Configurez le proxy :
 +
-.. Cliquez sur *Activer proxy*.
+.. Sélectionnez *Activer le proxy*.
 .. Spécifiez le serveur à l'aide de la syntaxe http://_address:port_[] ou https://_address:port_[]
 .. Spécifiez un nom d'utilisateur et un mot de passe si une authentification de base est requise pour le serveur
-.. Cliquez sur *Enregistrer*.
+.. Sélectionnez *Enregistrer*.
 +
 
 NOTE: BlueXP ne prend pas en charge les mots de passe comprenant le caractère @.
@@ -69,13 +58,13 @@ Si vous avez configuré un connecteur pour utiliser un serveur proxy, vous pouve
 
 Si vous avez désactivé l'utilisation des liens privés Azure avec Cloud Volumes ONTAP et que vous utilisez plutôt des terminaux de service, vous devez activer le trafic d'API direct. Sinon, le trafic ne sera pas acheminé correctement.
 
-https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-enabling-private-link.html["En savoir plus sur l'utilisation d'un lien privé Azure ou de terminaux de service avec Cloud Volumes ONTAP"]
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-enabling-private-link.html["En savoir plus sur l'utilisation d'un lien privé Azure ou de terminaux de service avec Cloud Volumes ONTAP"^]
 
 .Étapes
-. Dans le coin supérieur droit de la console BlueXP, cliquez sur l'icône Paramètres, puis sélectionnez *Paramètres du connecteur*.
+. Dans le coin supérieur droit de la console BlueXP, sélectionnez l'icône Paramètres, puis sélectionnez *Paramètres du connecteur*.
 +
 image:screenshot_settings_icon.gif["Capture d'écran affichant l'icône Paramètres dans le coin supérieur droit de la console BlueXP."]
 
-. Sous *général*, cliquez sur *support Direct API Traffic*.
-. Cochez la case pour activer l'option, puis cliquez sur *Enregistrer*.
+. Sous *général*, sélectionnez *support Direct API Traffic*.
+. Cochez la case pour activer l'option, puis sélectionnez *Enregistrer*.
 

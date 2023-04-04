@@ -22,13 +22,21 @@ Lorsque BlueXP lance l'instance Connector dans AWS, il attache une règle à l'i
 
 Les règles IAM disponibles ci-dessous fournissent les autorisations nécessaires à un connecteur pour gérer les ressources et les processus au sein de votre environnement de cloud public, en fonction de votre région AWS.
 
-Si nécessaire, vous pouvez restreindre les règles IAM à l'aide de l'IAM `Condition` elément. https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition.html["Documentation AWS : élément de condition"^]
+Si nécessaire, vous pouvez restreindre les règles IAM à l'aide de l'IAM `Condition` elément. https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition.html["Documentation AWS : élément de condition"^]Si nécessaire, vous pouvez restreindre les règles IAM à l'aide de l'IAM `Condition` elément. https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition.html["Documentation AWS : élément de condition"^]
 
-Notez ce qui suit :
+Notez les points suivants :
 
 * Si vous créez un connecteur dans une région AWS standard directement depuis BlueXP, BlueXP applique automatiquement des stratégies au connecteur. Vous n'avez rien à faire dans ce cas.
 * Vous devez définir vous-même les règles si vous déployez le connecteur à partir d'AWS Marketplace, si vous installez manuellement le connecteur sur un hôte Linux ou si vous souhaitez ajouter des informations d'identification AWS supplémentaires à BlueXP.
 * Vous devez également vous assurer que les règles sont à jour lorsque de nouvelles autorisations sont ajoutées dans les versions suivantes.
+* Pour afficher des instructions détaillées sur l'utilisation de ces stratégies, reportez-vous aux pages suivantes :
++
+** link:task-set-up-permissions-aws.html["Configuration des autorisations pour l'installation des connecteurs dans AWS (mode standard)"]
+** link:task-set-up-permissions-on-prem.html["Configurer les autorisations pour l'installation des connecteurs sur site (mode standard)"]
+** link:task-prepare-restricted-mode.html#prepare-cloud-permissions["Définissez les autorisations pour le mode restreint"]
+** https://review.docs.netapp.com/us-en/cloud-manager-setup-admin_feb-2022-modes/task-prepare-private-mode.html#prepare-cloud-permissions["Configurez les autorisations pour le mode privé"]
+
+
 
 
 Sélectionnez votre région pour afficher les stratégies requises :
@@ -62,6 +70,7 @@ La deuxième politique fournit des autorisations pour les services suivants :
 [source, json]
 ----
 {
+    "Version": "2012-10-17",
     "Statement": [
         {
             "Action": [
@@ -344,6 +353,7 @@ La deuxième politique fournit des autorisations pour les services suivants :
 [source, json]
 ----
 {
+    "Version": "2012-10-17",
     "Statement": [
         {
             "Action": [
@@ -690,7 +700,7 @@ La deuxième politique fournit des autorisations pour les services suivants :
 
 == Utilisation des autorisations AWS
 
-Les sections suivantes décrivent la manière dont les autorisations sont utilisées pour chaque service cloud NetApp. Ces informations peuvent être utiles si vos stratégies d'entreprise exigent que les autorisations ne sont fournies que si nécessaire.
+Les sections suivantes décrivent comment les autorisations sont utilisées pour chaque service BlueXP. Ces informations peuvent être utiles si vos stratégies d'entreprise exigent que les autorisations ne sont fournies que si nécessaire.
 
 
 

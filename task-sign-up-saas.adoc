@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: task-sign-up-saas.html 
-keywords: sign up, signing up, sign in, signing in, login with netapp, log in with netapp, create account, account 
-summary: Lorsque vous commencez avec BlueXP, votre première étape est de vous inscrire. Vous aurez la possibilité de créer un compte, mais vous pouvez ignorer cette étape si vous êtes invité à un compte existant. 
+keywords: sign up, signing up, sign in, signing in, login with netapp, log in with netapp, create account, account, log in with nss, nss, nss login 
+summary: 'Lorsque vous commencez à utiliser BlueXP, vous commencez par vous inscrire à l"aide de vos identifiants du site du support NetApp ou en créant un identifiant de connexion cloud NetApp.' 
 ---
 = Inscrivez-vous à BlueXP
 :hardbreaks:
@@ -14,14 +14,9 @@ summary: Lorsque vous commencez avec BlueXP, votre première étape est de vous 
 
 
 [role="lead"]
-Lorsque vous commencez avec BlueXP, votre première étape est de vous inscrire. Vous aurez la possibilité de créer un compte, mais vous pouvez ignorer cette étape si vous êtes invité à un compte existant.
-
-.Une note sur les régions gouvernementales
-Si vous devez accéder à BlueXP à partir d'une région gouvernementale ou d'un site qui ne dispose pas d'un accès Internet sortant, vous devez créer un connecteur et vous connecter à l'interface utilisateur BlueXP qui fonctionne localement sur le connecteur. link:task-managing-connectors.html#access-the-local-ui["Découvrez comment accéder à l'interface utilisateur locale sur le connecteur"].
+BlueXP est accessible depuis une console web. Lorsque vous commencez à utiliser BlueXP, vous commencez par vous inscrire à l'aide de vos identifiants du site du support NetApp ou en créant un identifiant de connexion cloud NetApp.
 
 .Options d'inscription
-BlueXP est accessible depuis votre navigateur Web via une interface utilisateur SaaS.
-
 Vous pouvez vous inscrire à BlueXP à l'aide de l'une des options suivantes :
 
 * Vos identifiants existants du site de support NetApp (NSS)

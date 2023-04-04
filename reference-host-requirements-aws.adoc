@@ -1,0 +1,44 @@
+---
+sidebar: sidebar 
+permalink: reference-host-requirements-aws.html 
+keywords: cpu requirements, ram requirements, aws requirements, aws host requirements, connector host requirements, ec2 instance type 
+summary: 'Le logiciel du connecteur doit être exécuté sur un hôte qui répond à des exigences spécifiques du système d"exploitation, de la RAM, des ports, etc. Si vous prévoyez d"installer manuellement le connecteur, assurez-vous que votre hôte répond à ces exigences.' 
+---
+= Vérifiez la configuration requise pour les hôtes Connector pour les installations AWS
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Le logiciel du connecteur doit être exécuté sur un hôte qui répond à des exigences spécifiques du système d'exploitation, de la RAM, des ports, etc. Si vous prévoyez d'installer manuellement le connecteur, assurez-vous que votre hôte répond à ces exigences.
+
+Lorsque vous déployez le connecteur à partir de BlueXP ou d'AWS Marketplace, l'image inclut le système d'exploitation et les composants logiciels requis.
+
+Hôte dédié:: Le connecteur n'est pas pris en charge sur un hôte partagé avec d'autres applications. L'hôte doit être un hôte dédié.
+Systèmes d'exploitation pris en charge::
++
+--
+* CentOS 7.6, 7.7, 7.8 et 7.9
+* Red Hat Enterprise Linux 7.6, 7.7, 7.8, 7.9, 8.6 et 8.7
++
+L'hôte doit être enregistré auprès de Red Hat Subscription Management. S'il n'est pas enregistré, l'hôte ne peut pas accéder aux référentiels pour mettre à jour les logiciels tiers requis lors de l'installation du connecteur.
+
++
+Le connecteur est pris en charge sur les versions en anglais de ces systèmes d'exploitation.
+
+
+
+--
+Hyperviseur:: Un hyperviseur bare Metal ou hébergé certifié pour exécuter CentOS ou Red Hat Enterprise Linux est requis. https://access.redhat.com/certified-hypervisors["Solution Red Hat : quels hyperviseurs sont certifiés pour l'exécution de Red Hat Enterprise Linux ?"^]
+CPU:: 4 cœurs ou 4 CPU virtuels
+RAM:: 14 GO
+Type d'instance AWS EC2:: Type d'instance qui répond aux exigences relatives au CPU et à la RAM indiquées ci-dessus. Nous recommandons une instance t3.XLarge.
+Paire de clés:: Lorsque vous créez le connecteur à partir de BlueXP ou d'AWS Marketplace, vous devez sélectionner une paire de clés EC2 à utiliser avec l'instance.
+Espace disque dans /opt:: 100 Gio d'espace doit être disponible
+Espace disque dans /var:: 20 Gio d'espace doit être disponible
+Moteur Docker:: Docker Engine version 19.3.1 ou ultérieure est requis sur l'hôte avant d'installer le connecteur. https://docs.docker.com/engine/install/["Voir les instructions d'installation"^]
+

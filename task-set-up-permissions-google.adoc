@@ -1,0 +1,246 @@
+---
+sidebar: sidebar 
+permalink: task-set-up-permissions-google.html 
+keywords: set up permissions, set up gcp permissions, set up google cloud permissions, google permissions, gcp permissions, service account, create service account, gcp service account, google service account 
+summary: Configurez les autorisations Google Cloud pour utiliser BlueXP afin de gérer vos données et votre infrastructure de stockage dans Google Cloud. 
+---
+= Configurez les autorisations Google Cloud
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Configurez les autorisations Google Cloud pour utiliser BlueXP afin de gérer vos données et votre infrastructure de stockage dans Google Cloud.
+
+Vous devez configurer des autorisations Google Cloud comme suit :
+
+* Si vous prévoyez de créer le connecteur à partir de BlueXP ou à l'aide de gcloud, vous devez définir des autorisations pour l'utilisateur Google Cloud qui déploiera la VM Connector.
+* Configurez les autorisations pour le connecteur en créant un rôle et en accordant le rôle à un compte de service.
++
+Vous allez associer ce compte de service à la machine virtuelle Connector afin que BlueXP dispose des autorisations requises.
+
+
+
+En fonction de votre configuration, vous devrez peut-être également suivre les étapes suivantes :
+
+* Définissez des autorisations pour tous les projets
+* Configurez les autorisations pour un VPC partagé
+
+
+
+
+== Configurez les autorisations pour créer le connecteur à partir de BlueXP ou de gcloud
+
+Avant de pouvoir déployer un connecteur à partir de BlueXP ou à l'aide de gcloud, vous devez vous assurer que votre compte Google Cloud dispose des autorisations appropriées.
+
+.Étapes
+. Créez un rôle personnalisé dans Google Cloud :
++
+.. Créez un fichier YAML qui inclut les autorisations suivantes :
++
+[source, yaml]
+----
+title: Connector deployment policy
+description: Permissions for the user who deploys the Connector from BlueXP
+stage: GA
+includedPermissions:
+- compute.disks.create
+- compute.disks.get
+- compute.disks.list
+- compute.disks.setLabels
+- compute.disks.use
+- compute.firewalls.create
+- compute.firewalls.delete
+- compute.firewalls.get
+- compute.firewalls.list
+- compute.globalOperations.get
+- compute.images.get
+- compute.images.getFromFamily
+- compute.images.list
+- compute.images.useReadOnly
+- compute.instances.attachDisk
+- compute.instances.create
+- compute.instances.get
+- compute.instances.list
+- compute.instances.setDeletionProtection
+- compute.instances.setLabels
+- compute.instances.setMachineType
+- compute.instances.setMetadata
+- compute.instances.setTags
+- compute.instances.start
+- compute.instances.updateDisplayDevice
+- compute.machineTypes.get
+- compute.networks.get
+- compute.networks.list
+- compute.networks.updatePolicy
+- compute.projects.get
+- compute.regions.get
+- compute.regions.list
+- compute.subnetworks.get
+- compute.subnetworks.list
+- compute.zoneOperations.get
+- compute.zones.get
+- compute.zones.list
+- deploymentmanager.compositeTypes.get
+- deploymentmanager.compositeTypes.list
+- deploymentmanager.deployments.create
+- deploymentmanager.deployments.delete
+- deploymentmanager.deployments.get
+- deploymentmanager.deployments.list
+- deploymentmanager.manifests.get
+- deploymentmanager.manifests.list
+- deploymentmanager.operations.get
+- deploymentmanager.operations.list
+- deploymentmanager.resources.get
+- deploymentmanager.resources.list
+- deploymentmanager.typeProviders.get
+- deploymentmanager.typeProviders.list
+- deploymentmanager.types.get
+- deploymentmanager.types.list
+- resourcemanager.projects.get
+- compute.instances.setServiceAccount
+- iam.serviceAccounts.list
+----
+.. Dans Google Cloud, activez le shell cloud.
+.. Téléchargez le fichier YAML qui inclut les autorisations requises.
+.. Créez un rôle personnalisé à l'aide de `gcloud iam roles create` commande.
++
+L'exemple suivant crée un rôle nommé « connectorDeployment » au niveau du projet :
+
++
+Les rôles iam gcloud créent connectDeployment --project=myproject --file=Connector-deployment.yaml
+
++
+https://cloud.google.com/iam/docs/creating-custom-roles#iam-custom-roles-create-gcloud["Documents Google Cloud : création et gestion de rôles personnalisés"^]
+
+
+
+. Attribuez ce rôle personnalisé à l'utilisateur qui va déployer le connecteur à partir de BlueXP ou à l'aide de gcloud.
++
+https://cloud.google.com/iam/docs/granting-changing-revoking-access#grant-single-role["Documents Google Cloud : attribuez un rôle unique"^]
+
+
+
+.Résultat
+L'utilisateur Google Cloud dispose désormais des autorisations nécessaires pour créer le connecteur.
+
+
+
+== Définissez les autorisations pour le connecteur
+
+Un compte de service est requis pour fournir le connecteur avec les autorisations dont BlueXP a besoin pour gérer les ressources dans Google Cloud. Vous devez associer ce compte de service à la machine virtuelle Connector.
+
+.Étapes
+. Créez un rôle personnalisé dans Google Cloud :
++
+.. Créez un fichier YAML qui inclut le contenu du link:reference-permissions-gcp.html["Autorisations de compte de service pour le connecteur"].
+.. Dans Google Cloud, activez le shell cloud.
+.. Téléchargez le fichier YAML qui inclut les autorisations requises.
+.. Créez un rôle personnalisé à l'aide de `gcloud iam roles create` commande.
++
+L'exemple suivant crée un rôle nommé « connecteur » au niveau du projet :
+
++
+les rôles iam gcloud créent connecteur --projet=myproject --file=connector.yaml
+
++
+https://cloud.google.com/iam/docs/creating-custom-roles#iam-custom-roles-create-gcloud["Documents Google Cloud : création et gestion de rôles personnalisés"^]
+
+
+
+. Créez un compte de service dans Google Cloud :
++
+.. Dans le service IAM & Admin, cliquez sur *comptes de service > Créer un compte de service*.
+.. Entrez les détails du compte de service et cliquez sur *Créer et continuer*.
+.. Sélectionnez le rôle que vous venez de créer.
+.. Terminez les étapes restantes pour créer le rôle.
++
+https://cloud.google.com/iam/docs/creating-managing-service-accounts#creating_a_service_account["Documents Google Cloud : création d'un compte de service"^]
+
+
+
+
+
+.Résultat
+Le compte de service de la machine virtuelle Connector est configuré.
+
+
+
+== Définissez des autorisations pour tous les projets
+
+Si vous prévoyez de déployer des systèmes Cloud Volumes ONTAP dans différents projets que le projet sur lequel réside le connecteur, vous devrez fournir au compte de service du connecteur l'accès à ces projets.
+
+Disons, par exemple, que le connecteur est dans le projet 1 et que vous voulez créer des systèmes Cloud Volumes ONTAP dans le projet 2. Vous devrez accorder l'accès au compte de service dans le projet 2.
+
+.Étapes
+. Dans la console Google Cloud, accédez au service IAM et sélectionnez le projet auquel vous souhaitez créer des systèmes Cloud Volumes ONTAP.
+. Sur la page *IAM*, sélectionnez *accorder accès* et fournissez les détails nécessaires.
++
+** Saisissez l'e-mail du compte de service du connecteur.
+** Sélectionnez le rôle personnalisé du connecteur.
+** Cliquez sur *Enregistrer*.
+
+
+
+
+Pour plus de détails, reportez-vous à https://cloud.google.com/iam/docs/granting-changing-revoking-access#grant-single-role["Documentation Google Cloud"^]
+
+
+
+== Configurez les autorisations VPC partagées
+
+Si vous utilisez un VPC partagé pour déployer des ressources dans un projet de service, vous devrez préparer vos autorisations.
+
+Ce tableau est fourni à titre de référence et votre environnement doit refléter la table des autorisations lorsque la configuration IAM est terminée.
+
+[cols="10,10,10,20,20,30"]
+|===
+| Identité | Créateur | Hébergé dans | Autorisations de projet de service | Autorisations de projet hôte | Objectif 
+
+
+| Compte Google pour déployer le connecteur | Personnalisées | Projet de service  a| 
+link:task-set-up-permissions-google.html#set-up-permissions-to-create-the-connector-from-bluexp-or-gcloud["Stratégie de déploiement de connecteur"]
+ a| 
+compute.networkUser
+| Déploiement du connecteur dans le projet de service 
+
+
+| Connecteur de compte de service | Personnalisées | Projet de service  a| 
+link:reference-permissions-gcp.html["Stratégie de compte de service de connecteur"]
+ a| 
+* compute.networkUser
+* deploymentmanager.editor
+
+| Déploiement et maintenance de Cloud Volumes ONTAP et des services dans le projet de service 
+
+
+| Compte de service Cloud Volumes ONTAP | Personnalisées | Projet de service  a| 
+* storage.admin
+* Membre: Compte de service BlueXP à partir de serviceAccount.user
+
+| S/O | (Facultatif) pour le Tiering des données et la sauvegarde dans le cloud 
+
+
+| Agent de service Google API | Google Cloud | Projet de service  a| 
+Editeur (par défaut)
+ a| 
+compute.networkUser
+| Interagit avec les API Google Cloud pour le compte du déploiement. Permet à BlueXP d'utiliser le réseau partagé. 
+
+
+| Compte de service par défaut Google Compute Engine | Google Cloud | Projet de service  a| 
+Editeur (par défaut)
+ a| 
+compute.networkUser
+| Déploie les instances Google Cloud et l'infrastructure de calcul pour le compte du déploiement. Permet à BlueXP d'utiliser le réseau partagé. 
+|===
+Remarques :
+
+. deploymentmanager.Editor est uniquement requis au niveau du projet hôte si vous ne passez pas de règles de pare-feu au déploiement et que vous choisissez de laisser BlueXP les créer pour vous. BlueXP créera un déploiement dans le projet hôte qui contient la règle de pare-feu VPC0 si aucune règle n'est spécifiée.
+. Firewall.create et firewall.delete ne sont nécessaires que si vous ne passez pas de règles de pare-feu au déploiement et que vous choisissez de laisser BlueXP les créer pour vous. Ces autorisations résident dans le fichier .yaml du compte BlueXP. Si vous déployez une paire HA à l'aide d'un VPC partagé, ces autorisations seront utilisées pour créer les règles de pare-feu pour VPC1, 2 et 3. Pour tous les autres déploiements, ces autorisations seront également utilisées pour créer des règles pour VPC0.
+. Pour le Tiering des données, le compte de service de Tiering doit avoir le rôle serviceAccount.user sur le compte de service, et pas seulement au niveau du projet. Actuellement, si vous attribuez serviceAccount.user au niveau du projet, les autorisations ne s'affichent pas lorsque vous interrogez le compte de service avec getIAMPolicy.
+

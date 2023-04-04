@@ -1,0 +1,28 @@
+---
+sidebar: sidebar 
+permalink: reference-whats-next-restricted-mode.html 
+keywords: private mode, what you can do 
+summary: Une fois que vous êtes opérationnel avec BlueXP en mode restreint, vous pouvez commencer à utiliser les services BlueXP pris en charge avec le mode restreint. 
+---
+= Ce que vous pouvez faire ensuite (mode restreint)
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Une fois que vous êtes opérationnel avec BlueXP en mode restreint, vous pouvez commencer à utiliser les services BlueXP pris en charge avec le mode restreint.
+
+Pour obtenir de l'aide, reportez-vous à la documentation de ces services :
+
+* https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/index.html["Documents Amazon FSX pour ONTAP"^]
+* https://docs.netapp.com/us-en/cloud-manager-azure-netapp-files/index.html["Documentation Azure NetApp Files"^]
+* https://docs.netapp.com/us-en/cloud-manager-backup-restore/index.html["Documentation Cloud Backup"^]
+* https://docs.netapp.com/us-en/cloud-manager-data-sense/index.html["Documentation Cloud Data Sense"^]
+* https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/index.html["Documentation Cloud Volumes ONTAP"^]
+* https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/index.html["Documentation sur le cluster ONTAP sur site"^]
+* https://docs.netapp.com/us-en/cloud-manager-replication/index.html["Documents de réplication"^]
+
