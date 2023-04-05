@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: task-install-connector-on-prem.html 
 keywords: install connector, on prem connector installation, on prem connector, install connector on prem, manual install 
-summary: 'Installez le connecteur sur site, puis connectez-vous et configurez-le pour qu"il fonctionne avec votre compte BlueXP.' 
+summary: 'Installez un connecteur sur site, puis connectez-vous et configurez-le pour qu"il fonctionne avec votre compte BlueXP.' 
 ---
-= Installez et configurez le connecteur sur site
+= Installez et configurez un connecteur sur site
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: 'Installez le connecteur sur site, puis connectez-vous et configurez-le
 
 
 [role="lead"]
-Installez le connecteur sur site, puis connectez-vous et configurez-le pour qu'il fonctionne avec votre compte BlueXP.
+Installez un connecteur sur site, puis connectez-vous et configurez-le pour qu'il fonctionne avec votre compte BlueXP.
 
 
 
