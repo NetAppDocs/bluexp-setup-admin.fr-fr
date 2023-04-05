@@ -31,7 +31,7 @@ Les _modes de déploiement_ de BlueXP vous permettent d'utiliser BlueXP en fonct
 * Mode privé
 
 
-link:concept-modes.html["En savoir plus sur ces modes de déploiement"].
+https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-modes.html["En savoir plus sur ces modes de déploiement"].
 
 
 NOTE: L'introduction du mode restreint remplace l'option d'activation ou de désactivation de la plate-forme SaaS. Vous pouvez activer le mode restreint au moment de la création du compte. Il ne peut pas être activé ou désactivé ultérieurement.
