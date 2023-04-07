@@ -1,6 +1,6 @@
 ---
 settings:
-  name: Set up and administration
+  name: Setup and administration
   platform: cloud
   internal:
     pdf_enabled: true
@@ -11,7 +11,7 @@ settings:
   langs: fr-fr,us-en,ja-jp,ko-kr,zh-cn,zh-tw,de-de,es-es
 sidebar:
   entries:
-  - title: Configuration et administration des documents
+  - title: Documents de configuration et d'administration
     url: "/index.html"
   - title: Notes de mise à jour
     entries:

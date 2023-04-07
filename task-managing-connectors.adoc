@@ -158,7 +158,7 @@ system configuration backup settings modify -destination ""
 
 == Modifier les URI d'un connecteur
 
-Ajouter et supprimer les URI d'un connecteur.
+Ajoutez et supprimez l'URI (Uniform Resource identifier) d'un connecteur.
 
 .Étapes
 . Sélectionnez la liste déroulante *Connector* dans l'en-tête BlueXP.

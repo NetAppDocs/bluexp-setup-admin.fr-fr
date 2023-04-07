@@ -5,7 +5,7 @@ permalink: index.html
 lead: Get started with NetApp BlueXP so that you can start building, protecting, and governing data across your on-premises and cloud environments. After set up is complete, you can administer your BlueXP accounts, Connectors, cloud provider accounts, and more. 
 summary: Commencez à utiliser NetApp BlueXP pour commencer à créer, protéger et régir les données dans vos environnements sur site et cloud. Une fois la configuration terminée, vous pouvez gérer vos comptes BlueXP, vos connecteurs, vos comptes de fournisseur cloud, etc. 
 ---
-= Configuration et administration de BlueXP
+= Documentation sur la configuration et l'administration BlueXP
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

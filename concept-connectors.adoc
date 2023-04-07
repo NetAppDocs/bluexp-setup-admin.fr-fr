@@ -130,7 +130,7 @@ Un administrateur de compte BlueXP peut créer un connecteur directement à part
 
 == Autorisations
 
-Des autorisations spécifiques sont nécessaires pour créer le connecteur directement à partir de BlueXP et un autre ensemble d'autorisations est nécessaire pour l'instance de connecteur elle-même. Si vous créez le connecteur dans AWS ou Azure directement à partir de BlueXP, BlueXP crée le connecteur avec les autorisations dont il a besoin. Il n'y a rien d'autre que vous devez faire.
+Des autorisations spécifiques sont nécessaires pour créer le connecteur directement à partir de BlueXP et un autre ensemble d'autorisations est nécessaire pour l'instance de connecteur elle-même. Si vous créez le connecteur dans AWS ou Azure directement à partir de BlueXP, BlueXP crée le connecteur avec les autorisations dont il a besoin.
 
 Pour savoir comment configurer les autorisations, reportez-vous aux pages suivantes :
 
@@ -161,7 +161,7 @@ Nous mettons généralement à jour le logiciel de connecteur chaque mois pour i
 
 Le connecteur met automatiquement à jour son logiciel avec la dernière version, tant qu'il dispose d'un accès Internet sortant pour obtenir la mise à jour du logiciel. Si vous utilisez BlueXP en mode privé, vous devez mettre à niveau manuellement le connecteur.
 
-link:task-managing-connectors.html["Apprenez à mettre à niveau manuellement le logiciel du connecteur"]
+link:task-managing-connectors.html["Apprenez à mettre à niveau manuellement le logiciel du connecteur"].
 
 
 
