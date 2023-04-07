@@ -65,12 +65,16 @@ Lorsque vous utilisez BlueXP en mode standard, un connecteur est requis pour les
 * Tiering dans le cloud
 * Cloud Volumes ONTAP
 * Systèmes E-Series
+* Efficacité économique ^1^
 * Cache global de fichiers
 * Découverte de Google Cloud Storage
 * Clusters Kubernetes
 * Intégration de clusters ONTAP sur site avec les services de données BlueXP
+* Résilience opérationnelle ^1^
 * StorageGRID
 
+
+^1^ bien que vous puissiez accéder à ces services sans connecteur, un connecteur est nécessaire pour lancer des actions à partir des services.
 
 
 
