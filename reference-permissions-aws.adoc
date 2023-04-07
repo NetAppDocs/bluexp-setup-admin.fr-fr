@@ -33,7 +33,7 @@ Notez ce qui suit :
 ** link:task-set-up-permissions-aws.html["Configuration des autorisations pour l'installation des connecteurs dans AWS (mode standard)"]
 ** link:task-set-up-permissions-on-prem.html["Configurer les autorisations pour l'installation des connecteurs sur site (mode standard)"]
 ** link:task-prepare-restricted-mode.html#prepare-cloud-permissions["Définissez les autorisations pour le mode restreint"]
-** https://review.docs.netapp.com/us-en/cloud-manager-setup-admin_feb-2022-modes/task-prepare-private-mode.html#prepare-cloud-permissions["Configurez les autorisations pour le mode privé"]
+** link:task-prepare-private-mode.html#prepare-cloud-permissions["Configurez les autorisations pour le mode privé"]
 
 
 

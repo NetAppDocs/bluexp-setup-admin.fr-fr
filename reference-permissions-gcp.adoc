@@ -26,7 +26,7 @@ Vous devez appliquer ce rôle personnalisé à un compte de service rattaché à
 
 * link:task-set-up-permissions-google.html["Définissez les autorisations pour le mode standard"]
 * link:task-prepare-restricted-mode.html#prepare-cloud-permissions["Définissez les autorisations pour le mode restreint"]
-* https://review.docs.netapp.com/us-en/cloud-manager-setup-admin_feb-2022-modes/task-prepare-private-mode.html#prepare-cloud-permissions["Configurez les autorisations pour le mode privé"]
+* link:task-prepare-private-mode.html#prepare-cloud-permissions["Configurez les autorisations pour le mode privé"]
 
 
 Vous devez également vous assurer que le rôle est à jour lorsque de nouvelles autorisations sont ajoutées dans les versions suivantes.
