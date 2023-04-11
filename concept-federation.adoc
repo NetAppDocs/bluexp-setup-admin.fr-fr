@@ -18,6 +18,18 @@ _fédération des identités_ active l'authentification unique avec BlueXP pour 
 
 
 
+== fédération des identités avec informations d'identification NSS
+
+Si vous utilisez vos identifiants du site du support NetApp (NSS) pour vous connecter à BlueXP, vous ne devez pas suivre les instructions sur cette page pour configurer la fédération des identités. Procédez comme suit :
+
+* Téléchargez et complétez le https://kb.netapp.com/@api/deki/files/98382/NetApp-B2C-Federation-Request-Form-April-2022.docx?revision=1["Formulaire de demande de la fédération NetApp"^]
+* Envoyez le formulaire à l'adresse électronique indiquée dans le formulaire
+
+
+L'équipe de gestion des identités et des accès de NetApp examine votre demande.
+
+
+
 == Fonctionnement de la fédération des identités
 
 La configuration de la fédération des identités crée une connexion de confiance entre le fournisseur de services d'authentification (auth0) de BlueXP et votre propre fournisseur de gestion des identités.
@@ -56,6 +68,8 @@ BlueXP prend uniquement en charge les SSO initiées par le fournisseur de servic
 == Présentation du processus de configuration
 
 Avant de configurer une connexion entre BlueXP et votre fournisseur de gestion des identités, vous devez connaître les étapes à suivre pour vous préparer en conséquence.
+
+Ces étapes sont spécifiques aux utilisateurs qui se connectent à BlueXP via un identifiant cloud NetApp. Si vous utilisez vos identifiants NSS pour vous connecter à BlueXP, <<fédération des identités avec informations d'identification NSS,Découvrez comment configurer la fédération des identités avec les informations d'identification NSS>>.
 
 
 
