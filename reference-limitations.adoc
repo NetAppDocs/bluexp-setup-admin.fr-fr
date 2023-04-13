@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: reference-limitations.html 
-keywords: limitations, active directory, ad, iscsi, key managers, ip address, govcloud, BlueXP, Cloud Volumes ONTAP, days, running, Connectors should remain running 
+keywords: limitations, active directory, ad, iscsi, key managers, ip address, govcloud, BlueXP, Cloud Volumes ONTAP, days, running, Connectors should remain running, imdsv2, httpstokens 
 summary: Les limitations connues identifient les plateformes, les périphériques ou les fonctions qui ne sont pas pris en charge par cette version du produit, ou qui ne fonctionnent pas correctement avec elle. Examinez attentivement ces limites. 
 ---
 = Limites connues
@@ -21,6 +21,18 @@ Ces limitations sont spécifiques à la configuration et à l'administration de 
 
 
 == Limitations du connecteur
+
+
+
+=== Les paramètres par défaut de l'instance EC2 ne doivent pas être modifiés
+
+Lorsque vous déployez le connecteur dans AWS, les paramètres d'instance EC2 suivants sont configurés par défaut :
+
+* IMDSv2 est défini sur facultatif
+* HttpTokens est défini sur facultatif
+
+
+Ces paramètres ne doivent pas être modifiés sur requis. La modification de ces paramètres sur requis a une incidence sur la disponibilité du connecteur et du Cloud Volumes ONTAP.
 
 
 

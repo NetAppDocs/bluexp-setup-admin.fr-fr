@@ -3583,4 +3583,9 @@
   <block id="40ad51959fd74fabd0db9de7c8f3dfe5" category="inline-xref">Découvrez comment configurer la fédération des identités avec les informations d'identification NSS</block>
   <block id="ab4a64ac474b344fc1e5bf29106eab3b" category="paragraph">Ces étapes sont spécifiques aux utilisateurs qui se connectent à BlueXP via un identifiant cloud NetApp. Si vous utilisez vos identifiants NSS pour vous connecter à BlueXP, <block ref="8f31bfd2719da60e22fa205d55b4f4b7" category="inline-xref-macro-rx"></block>.</block>
   <block id="47bf230a49ecee72c3b36a37f9758812" category="cell">\https://www.googleapis.com/compute/v1/ \https://compute.googleapis.com/compute/v1 \https://cloudresourcemanager.googleapis.com/v1/projects \https://www.googleapis.com/compute/beta \https://storage.googleapis.com/storage/v1 \https://www.googleapis.com/storage/v1 \https://iam.googleapis.com/v1 \https://cloudkms.googleapis.com/v1 \https://www.googleapis.com/deploymentmanager/v2/projects</block>
+  <block id="cf4525e15b866700f10e91573643ba54" category="section-title">Les paramètres par défaut de l'instance EC2 ne doivent pas être modifiés</block>
+  <block id="505d2a7358228b26711e097c3ca6dc24" category="paragraph">Lorsque vous déployez le connecteur dans AWS, les paramètres d'instance EC2 suivants sont configurés par défaut :</block>
+  <block id="b6c588d5cb8cbc221e66a15877aed30a" category="list-text">IMDSv2 est défini sur facultatif</block>
+  <block id="b29d18da75a3c01939275500a8fc2e70" category="list-text">HttpTokens est défini sur facultatif</block>
+  <block id="a91c1c121088ffbd72985e0bf2459f87" category="paragraph">Ces paramètres ne doivent pas être modifiés sur requis. La modification de ces paramètres sur requis a une incidence sur la disponibilité du connecteur et du Cloud Volumes ONTAP.</block>
 </blocks>
