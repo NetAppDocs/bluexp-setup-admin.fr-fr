@@ -71,8 +71,6 @@
   <block id="fe4a785cf549e843e958f443c4baf0fe" category="section-title">Connecteurs</block>
   <block id="649d75c6283da2a4b802839db32a41af" category="inline-link-macro">En savoir plus sur les connecteurs</block>
   <block id="75599088791b92751fdc2c9cee3a481e" category="paragraph"><block ref="c5bcec7879e3189e4c7a5fdbd8b19a5b" category="inline-link-macro-rx"></block>.</block>
-  <block id="4ca2c509994c2776d0880357b4e8e5be" category="section-title">Abonnements</block>
-  <block id="eb6dd0692058cd4edb3fb82f48db1f57" category="paragraph">Par exemple, disons que vous avez deux comptes et que chacun est facturé par le biais d'abonnements distincts. Vous pouvez dissocier un abonnement de l'un des comptes afin que les utilisateurs de ce compte ne choisissent pas accidentellement l'abonnement incorrect lors de la création d'un environnement de travail Cloud Volume ONTAP.</block>
   <block id="ff7c0fcd6a31e735a61c001f75426961" category="section-title">Exemples</block>
   <block id="6643fe16b29885768bd30191d9673e3e" category="paragraph">Les exemples suivants décrivent comment configurer vos comptes.</block>
   <block id="ddc6e5885facb249d958d56dc9bb1acc" category="paragraph">L'exemple suivant montre un compte qui utilise deux espaces de travail pour créer des environnements isolés. Le premier espace de travail est pour un environnement de production et le second pour un environnement de développement.</block>
@@ -1121,31 +1119,6 @@
   <block id="0563c947402024d2534f6ea4df2cd5e1" category="paragraph">Le Timeline de BlueXP affiche les actions que les utilisateurs ont effectuées pour gérer votre compte. Cela inclut des actions de gestion telles que l'association d'utilisateurs, la création d'espaces de travail, la création de connecteurs, etc.</block>
   <block id="322812be635bbd80fb94dbae450a00b4" category="paragraph">La vérification de la chronologie peut être utile si vous devez identifier qui a effectué une action spécifique ou si vous devez identifier le statut d'une action.</block>
   <block id="7aa6a4ffdbdc6eccd7f131257c7de6a8" category="paragraph">La chronologie est mise à jour pour vous montrer les actions de gestion de compte.</block>
-  <block id="4d17b7f0d1f8c0ae69c0ec8d32fea349" category="summary">Lorsque vous vous abonnez à BlueXP depuis le marché d'un fournisseur de services Cloud, vous êtes redirigé vers le site Web BlueXP où vous devez enregistrer votre abonnement et l'associer à des comptes spécifiques. Après votre inscription, vous pouvez gérer chaque abonnement à partir du porte-monnaie numérique.</block>
-  <block id="b01b1be092b95233172f870dc729234b" category="doc">Gérer les abonnements et les contrats PAYGO</block>
-  <block id="e858f445394700e621aa67dd8e3fe958" category="section-title">Afficher vos abonnements</block>
-  <block id="9c1b3fb5f48f73ce89025933ec931382" category="paragraph">Le porte-monnaie numérique fournit des informations détaillées sur chaque abonnement PAYGO et contrat annuel associé à votre compte BlueXP et à Astra (Astra utilise le service de facturation de BlueXP).</block>
-  <block id="43bfd35e9b57eaace0eafa6750af5ff7" category="list-text">Dans le menu de navigation BlueXP, sélectionnez *gouvernance &gt; porte-monnaie numérique*.</block>
-  <block id="8c3682e85d7f4dbe8a46485082335dec" category="list-text">Sélectionnez *abonnements*.</block>
-  <block id="1422eb9c77ef6c74d6abe35beedc5d64" category="paragraph">Vous ne verrez que les abonnements associés au compte que vous consultez actuellement.</block>
-  <block id="572e470335e0a6d55da05c732a01aed3" category="list-text">Lorsque vous affichez les informations relatives à vos abonnements, vous pouvez interagir avec les détails du tableau comme suit :</block>
-  <block id="6a1de13d318f22872902849cd26467b4" category="list-text">Développez une ligne pour afficher plus de détails.</block>
-  <block id="d61aec883b403c61da2d8d8e19d78473" category="inline-image-macro">Capture d'écran de l'onglet abonnements du porte-monnaie numérique dans laquelle vous pouvez sélectionner la flèche à la fin d'une ligne pour la développer.</block>
-  <block id="3a9d2caf2b3b63f1b3ab7d00e469b158" category="paragraph"><block ref="3a9d2caf2b3b63f1b3ab7d00e469b158" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="56594b7222b35921f9fe676eadf6bbdf" category="inline-image-macro">l'icône plus à l'extrémité de l'en-tête de la table</block>
-  <block id="c090ce3dc0b8ea780bfa95c666328c67" category="paragraph">Notez que les colonnes Term et Auto Renew n'apparaissent pas par défaut. La colonne Renouvellement automatique affiche les informations de renouvellement des contrats Azure uniquement.</block>
-  <block id="48772efe35cdbabca3c0abdab7360b57" category="paragraph">Notez ce qui suit à propos de ce que vous voyez dans le tableau :</block>
-  <block id="4d34f1097f6c8b9cee28bca8b78bbee9" category="list-text">Date de début</block>
-  <block id="d1686d74b72c58f44c6fceaf3011df0b" category="list-text">La date de début est la date à laquelle vous avez correctement associé l'abonnement à votre compte et que la facturation a commencé.</block>
-  <block id="716e98867696fbbeed00e3dcd1f76758" category="list-text">Si vous voyez N/A dans le tableau, les informations ne sont pas disponibles dans l'API du fournisseur de cloud pour le moment.</block>
-  <block id="cd494d76449d5dfe0c0adfb2f3447761" category="list-text">Contrats</block>
-  <block id="8090b542b799e2f0268fddd048d44eda" category="list-text">Si vous développez les détails d'un contrat, le porte-monnaie numérique affiche les éléments disponibles pour votre plan actuel : les options et unités du contrat (capacité ou nombre de nœuds).</block>
-  <block id="7f96d1365390f4c6a7c1befe0b068769" category="list-text">Le porte-monnaie numérique identifie la date de fin et indique si le contrat sera bientôt renouvelé ou s'il a déjà pris fin.</block>
-  <block id="d1d7830f95588ae511ee592eab47c2b0" category="list-text">Si vous avez souscrit un contrat AWS et que vous avez modifié l'une des options du contrat après la date de début, veillez à valider les options de contrat depuis AWS.</block>
-  <block id="6942b724002d90bb0f705f478cdd6bf3" category="section-title">Gérez vos abonnements</block>
-  <block id="ac3dad7b0d90a8896f44e77f84726619" category="paragraph">Vous pouvez gérer vos abonnements à partir du porte-monnaie numérique en renommant un abonnement et en choisissant les comptes associés à l'abonnement.</block>
-  <block id="1dea06c0cd8c3b77e4597670a860c155" category="inline-image-macro">Capture d'écran du menu d'action pour un abonnement.</block>
-  <block id="23531331db8be0d13d9ce3c0685c0c8e" category="paragraph"><block ref="23531331db8be0d13d9ce3c0685c0c8e" category="inline-image-macro-rx" type="image"></block></block>
   <block id="6505fd7495c0d65d3dcf8a473c69ddcf" category="doc">Créez un connecteur à partir d'Azure Marketplace</block>
   <block id="40ca3108b6381f9eda9574daf00c3b01" category="list-text">Rendez-vous sur la page NetApp Connector VM du Marketplace Azure.</block>
   <block id="0c5f74a83e5cbc5c6c230dd0caf096f7" category="inline-link">Page Azure Marketplace pour les régions commerciales</block>
@@ -2025,7 +1998,6 @@
   <block id="5bf5309465f91318228a7f956b826348" category="list-text"><block ref="5bf5309465f91318228a7f956b826348" category="inline-link-macro-rx"></block></block>
   <block id="0e2bc9c853e0af52ead12823c025e58b" category="list-text"><block ref="0e2bc9c853e0af52ead12823c025e58b" category="inline-link-macro-rx"></block></block>
   <block id="02efcbea18b9485a78a41871dce1e64d" category="list-text"><block ref="02efcbea18b9485a78a41871dce1e64d" category="inline-link-macro-rx"></block></block>
-  <block id="3933fdb8f34cb01278a72748377338a5" category="cell">\https://www.googleapis.com/compute/v1/ \https://cloudresourcemanager.googleapis.com/v1/projects \https://www.googleapis.com/compute/beta \https://storage.googleapis.com/storage/v1 \https://www.googleapis.com/storage/v1 \https://iam.googleapis.com/v1 \https://cloudkms.googleapis.com/v1 \https://www.googleapis.com/deploymentmanager/v2/projects</block>
   <block id="d377a02fb22cec7bf850087d3c9a31fa" category="cell">De gérer des ressources dans Google Cloud.</block>
   <block id="4ce604ab4b6f3184f26713f30bde1bbe" category="cell">- Cloudkms.cryptoKeys.get - cloudkms.cryptomonnaies.getIamPolicy - cloudkms.cryptomonnaies.list - cloudkms.cryptoKeys.setIamPolicy - cloudkms.keyrings.get - cloudkms.keyrings.getIamPolicy - cloudkms.keyrings.list - cloudkms.keyRings.setIamPolicy</block>
   <block id="9e4edb2eed22d4c91a667b29567ee08d" category="cell">Pour sélectionner vos propres clés gérées par le client dans l'assistant d'activation de Cloud Backup au lieu d'utiliser les clés de chiffrement gérées par Google par défaut.</block>
@@ -3372,9 +3344,6 @@
   <block id="b7afeec70319496f1e3eb3a317ae30c3" category="doc">Configuration du réseau Google Cloud</block>
   <block id="acb3a31b8e79039416f86dfe140a002a" category="section-title">VPC et sous-réseau</block>
   <block id="2ece2735ee78ce884898c747bead2708" category="paragraph">Lorsque vous créez le connecteur, vous devez spécifier le VPC et le sous-réseau sur lesquels le connecteur doit résider.</block>
-  <block id="33d90cc16eaedf37738a3faf06f00f36" category="list-text">Sélectionnez <block ref="98b11313fea6c4106e5a3c018f0ffbc9" category="inline-image-macro-rx" type="image"></block> pour choisir les colonnes qui s'affichent dans le tableau.</block>
-  <block id="e97d1d1134e32a84fb4d6d796e3e56a9" category="list-text">Sélectionnez le menu d'action dans la ligne correspondant à l'abonnement que vous souhaitez gérer.</block>
-  <block id="1201c1bd99e40a424aee33ac62838b92" category="list-text">Choisissez de renommer l'abonnement ou de gérer les comptes BlueXP associés à l'abonnement.</block>
   <block id="7badfd12f4665ef65fdb218a565f47d6" category="summary">Vous devez comprendre les éléments nécessaires à la mise en service de BlueXP en mode privé pour préparer votre environnement.</block>
   <block id="5f1067df496bfafd5eb793369b955e41" category="doc">Préparez le déploiement en mode privé</block>
   <block id="c597b49a830c4a4ce2fd66c374de3113" category="paragraph">Vous devez comprendre les éléments nécessaires pour démarrer avec BlueXP en mode privé afin de préparer votre environnement.</block>
@@ -3613,4 +3582,5 @@
   <block id="2ffd4295ac6fb250f496a1c2b7840422" category="paragraph">L'équipe de gestion des identités et des accès de NetApp examine votre demande.</block>
   <block id="40ad51959fd74fabd0db9de7c8f3dfe5" category="inline-xref">Découvrez comment configurer la fédération des identités avec les informations d'identification NSS</block>
   <block id="ab4a64ac474b344fc1e5bf29106eab3b" category="paragraph">Ces étapes sont spécifiques aux utilisateurs qui se connectent à BlueXP via un identifiant cloud NetApp. Si vous utilisez vos identifiants NSS pour vous connecter à BlueXP, <block ref="8f31bfd2719da60e22fa205d55b4f4b7" category="inline-xref-macro-rx"></block>.</block>
+  <block id="47bf230a49ecee72c3b36a37f9758812" category="cell">\https://www.googleapis.com/compute/v1/ \https://compute.googleapis.com/compute/v1 \https://cloudresourcemanager.googleapis.com/v1/projects \https://www.googleapis.com/compute/beta \https://storage.googleapis.com/storage/v1 \https://www.googleapis.com/storage/v1 \https://iam.googleapis.com/v1 \https://cloudkms.googleapis.com/v1 \https://www.googleapis.com/deploymentmanager/v2/projects</block>
 </blocks>
