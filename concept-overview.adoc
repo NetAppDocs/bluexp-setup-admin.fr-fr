@@ -40,33 +40,33 @@ Stockage:: Découvrez, déployez et gérez le stockage, que ce soit dans AWS, Az
 ** Systèmes StorageGRID
 
 
+* Orchestrez et protégez https://bluexp.netapp.com/solutions/kubernetes["Données persistantes Kubernetes"^]
 
 
 --
 Mobilité:: Déplacez vos données là où vous en avez besoin grâce à la synchronisation, la copie, le Tiering et la mise en cache.
 +
 --
-* https://bluexp.netapp.com/cloud-sync-service["Cloud Sync"^]
-* https://bluexp.netapp.com/cloud-tiering["Tiering dans le cloud"^]
-* https://bluexp.netapp.com/global-file-cache["Cache global de fichiers"^]
+* https://bluexp.netapp.com/cloud-sync-service["Copie et synchronisation"^]
+* https://bluexp.netapp.com/global-file-cache["La mise en cache en périphérie"^]
+* https://bluexp.netapp.com/cloud-tiering["Tiering"^]
 
 
 --
 La protection:: Utilisez des mécanismes de protection automatisés pour protéger vos données contre les pertes de données, les pannes imprévues, les ransomware et autres cybermenaces.
 +
 --
-* https://bluexp.netapp.com/cloud-backup["La sauvegarde dans le cloud"^]
+* https://bluexp.netapp.com/cloud-backup["Sauvegarde et restauration"^]
 * https://bluexp.netapp.com/replication["La réplication"^]
-* https://bluexp.netapp.com/ransomware-protection["Protection contre les ransomwares"^]
-* https://bluexp.netapp.com/k8s["Kubernetes"^]
 
 
 --
 Analyse et contrôle:: Utilisez des outils pour surveiller, cartographier et optimiser votre infrastructure et votre stockage de données.
 +
 --
-* https://bluexp.netapp.com/netapp-cloud-data-sense["Sens des données cloud"^]
+* https://bluexp.netapp.com/netapp-cloud-data-sense["Classement"^]
 * https://bluexp.netapp.com/digital-advisor["Conseiller digital"^]
+* https://bluexp.netapp.com/ransomware-protection["Protection par ransomware"^]
 
 
 --
@@ -126,6 +126,6 @@ link:concept-modes.html["En savoir plus sur les modes de déploiement BlueXP"].
 
 == Certification SOC 2 Type 2
 
-Nous avons étudié BlueXP, Cloud Sync, Cloud Tiering, Cloud Data Sense et Cloud Backup (plateforme BlueXP), et confirmé que leur cabinet d'experts-comptables indépendant a réussi à générer des rapports SOC 2 de type 2 d'après les critères des services de confiance applicables.
+Un comptable public indépendant et un vérificateur des services ont examiné BlueXP et confirmé qu'il a obtenu des rapports SOC 2 de type 2 en fonction des critères des services de fiducie applicables.
 
 https://www.netapp.com/company/trust-center/compliance/soc-2/["Consultez les rapports SOC 2 de NetApp"^]

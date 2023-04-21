@@ -26,21 +26,21 @@ Vous pouvez utiliser les fonctionnalités et services BlueXP suivants sans conne
 
 * Création d'un environnement de travail Amazon FSX pour NetApp ONTAP
 +
-Aucun connecteur n'est nécessaire pour créer un environnement de travail, mais il est nécessaire de créer et de gérer des volumes, de répliquer des données et d'intégrer FSX pour ONTAP avec les services BlueXP, tels que Data Sense et Cloud Sync.
+Aucun connecteur n'est nécessaire pour créer un environnement de travail, mais il est nécessaire de créer et de gérer des volumes, de répliquer des données et d'intégrer FSX pour ONTAP avec des services tels que la classification BlueXP et la copie et la synchronisation BlueXP.
 
 * Azure NetApp Files
 +
-Même si un connecteur n'est pas nécessaire pour configurer et gérer Azure NetApp Files, il est nécessaire d'utiliser un connecteur si vous souhaitez analyser les données Azure NetApp Files avec Cloud Data SENSE.
+Aucun connecteur n'est nécessaire pour configurer et gérer Azure NetApp Files, mais vous devez utiliser un connecteur pour analyser les données Azure NetApp Files à l'aide de la classification BlueXP.
 
-* Cloud Sync
 * Cloud Volumes Service pour Google Cloud
+* Copie et synchronisation
 * Conseiller digital
-* Portefeuille numérique
+* Portefeuille digital
 +
-Dans presque tous les cas, vous pouvez ajouter une licence au porte-monnaie numérique sans connecteur.
+Dans presque tous les cas, vous pouvez ajouter une licence au portefeuille numérique sans connecteur.
 
 +
-La seule fois qu'un connecteur est nécessaire pour ajouter une licence au porte-monnaie numérique est pour les licences Cloud Volumes ONTAP _node-based_. Dans ce cas, un connecteur est requis car les données sont extraites des licences installées sur les systèmes Cloud Volumes ONTAP.
+La seule fois qu'un connecteur est nécessaire pour ajouter une licence au portefeuille numérique est pour les licences Cloud Volumes ONTAP _basées sur le nœud_. Dans ce cas, un connecteur est requis car les données sont extraites des licences installées sur les systèmes Cloud Volumes ONTAP.
 
 * Découverte directe des clusters ONTAP sur site
 +
@@ -60,18 +60,18 @@ Lorsque vous utilisez BlueXP en mode standard, un connecteur est requis pour les
 * Fonctions de gestion d'Amazon FSX pour ONTAP
 * Découverte Amazon S3
 * Découverte d'Azure Blob
-* La sauvegarde dans le cloud
-* Sens des données cloud
-* Tiering dans le cloud
+* Sauvegarde et restauration
+* Classement
 * Cloud Volumes ONTAP
 * Systèmes E-Series
 * Efficacité économique ^1^
-* Cache global de fichiers
+* La mise en cache en périphérie
 * Découverte de Google Cloud Storage
 * Clusters Kubernetes
 * Intégration de clusters ONTAP sur site avec les services de données BlueXP
 * Résilience opérationnelle ^1^
-* StorageGRID
+* Systèmes StorageGRID
+* Tiering
 
 
 ^1^ bien que vous puissiez accéder à ces services sans connecteur, un connecteur est nécessaire pour lancer des actions à partir des services.
@@ -195,7 +195,7 @@ Dans certains cas, vous n'avez peut-être besoin que d'un seul connecteur, mais 
 
 Voici quelques exemples :
 
-* Vous avez un environnement multicloud (AWS et Azure) et vous préférez avoir un connecteur dans AWS et un autre dans Azure. Chacun gère les systèmes Cloud Volumes ONTAP exécutés dans ces environnements.
+* Vous avez un environnement multicloud (AWS et Azure, par exemple) et vous préférez avoir un connecteur dans AWS et un autre dans Azure. Chacun gère les systèmes Cloud Volumes ONTAP exécutés dans ces environnements.
 * Un fournisseur de services peut utiliser un compte BlueXP pour fournir des services à ses clients, tout en utilisant un autre compte pour assurer la reprise après incident pour l'une de ses unités commerciales. Chaque compte aurait des connecteurs distincts.
 
 

@@ -16,7 +16,7 @@ summary: 'Une fois que vous avez installé un connecteur dans Azure, BlueXP peut
 [role="lead"]
 Une fois que vous avez installé un connecteur dans Azure, BlueXP peut détecter automatiquement des informations sur les comptes de stockage Azure qui résident dans les abonnements Azure où le connecteur est installé. Un environnement de travail Azure Blob est ajouté à Canvas pour vous permettre d'afficher ces informations.
 
-Vous pouvez afficher des informations détaillées sur vos comptes de stockage Azure, notamment l'emplacement, le groupe de ressources, la capacité totale et utilisée, etc. Ces comptes peuvent être utilisés comme destinations pour les opérations Cloud Backup, Cloud Tiering ou Cloud Sync.
+Vous pouvez afficher des informations détaillées sur vos comptes de stockage Azure, notamment l'emplacement, le groupe de ressources, la capacité totale et utilisée, etc. Ces comptes peuvent être utilisés comme destinations pour la sauvegarde et la restauration BlueXP, le Tiering BlueXP ou les opérations de copie et de synchronisation BlueXP.
 
 .Étapes
 . Installez un connecteur dans le compte Azure où vous souhaitez afficher vos comptes de stockage Azure.
@@ -33,7 +33,7 @@ image:screenshot-azure-actions.png["Capture d'écran affichant le volet actions 
 
 . Sélectionnez *Synchroniser les données* pour synchroniser les données depuis ou vers le stockage Azure Blob.
 +
-Pour plus de détails, voir https://docs.netapp.com/us-en/cloud-manager-sync/concept-cloud-sync.html["La présentation du service Cloud Sync"^]
+Pour plus de détails, voir https://docs.netapp.com/us-en/cloud-manager-sync/concept-cloud-sync.html["Présentation de la copie et de la synchronisation BlueXP"^]
 
 . Sélectionnez *entrer l'environnement de travail* pour afficher les détails sur les comptes de stockage Azure dans vos Blobs Azure.
 +

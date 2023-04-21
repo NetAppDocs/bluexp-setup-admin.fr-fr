@@ -31,13 +31,13 @@ Le groupe de sécurité Azure pour le connecteur nécessite à la fois des règl
 | HTTP | 80 | Fournit un accès HTTP à partir des navigateurs Web du client vers l'interface utilisateur locale 
 
 
-| HTTPS | 443 | Fournit un accès HTTPS à partir des navigateurs Web du client vers l'interface utilisateur locale et des connexions à partir de l'instance Cloud Data Sense 
+| HTTPS | 443 | Fournit un accès HTTPS à l'interface utilisateur locale depuis les navigateurs Web client et des connexions à partir de l'instance de classification BlueXP 
 
 
 | TCP | 3128 | Permet à Cloud Volumes ONTAP d'accéder à Internet pour l'envoi des messages AutoSupport au support NetApp. Vous devez ouvrir ce port manuellement après le déploiement. https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-verify-autosupport.html["Découvrez comment le connecteur est utilisé comme proxy pour les messages AutoSupport"^] 
 
 
-| TCP | 9060 février 9061 | Permet d'activer et d'utiliser Cloud Data Sense et Cloud Backup dans les régions du gouvernement. 
+| TCP | 9060 février 9061 | Permet d'activer et d'utiliser la classification BlueXP ainsi que la sauvegarde et la restauration BlueXP dans les régions du gouvernement. 
 |===
 
 
@@ -75,10 +75,10 @@ NOTE: L'adresse IP source est l'hôte du connecteur.
 | Service | Protocole | Port | Destination | Objectif 
 
 
-| Appels API et AutoSupport | HTTPS | 443 | LIF de gestion de cluster ONTAP et Internet sortant | Appels d'API vers Azure et ONTAP, vers le cloud Data Sense, vers le service ransomware et envoi de messages AutoSupport à NetApp 
+| Appels API et AutoSupport | HTTPS | 443 | LIF de gestion de cluster ONTAP et Internet sortant | Appels d'API vers Google Cloud et ONTAP, vers la classification BlueXP, vers la protection BlueXP contre les ransomwares, et envoi de messages AutoSupport à NetApp 
 
 
-| Appels API | TCP | 8080 | Détection des données | Sonde vers l'instance Data Sense pendant le déploiement 
+| Appels API | TCP | 8080 | Classification BlueXP | Sonde à instance de classification BlueXP pendant le déploiement 
 
 
 | DNS | UDP | 53 | DNS | Utilisé pour la résolution DNS par BlueXP 

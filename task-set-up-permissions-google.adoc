@@ -222,7 +222,7 @@ link:reference-permissions-gcp.html["Stratégie de compte de service de connecte
 * storage.admin
 * Membre: Compte de service BlueXP à partir de serviceAccount.user
 
-| S/O | (Facultatif) pour le Tiering des données et la sauvegarde dans le cloud 
+| S/O | (Facultatif) pour le Tiering des données et la sauvegarde et la restauration BlueXP 
 
 
 | Agent de service Google API | Google Cloud | Projet de service  a| 

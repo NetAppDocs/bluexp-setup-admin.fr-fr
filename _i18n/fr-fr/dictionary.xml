@@ -62,7 +62,6 @@
   <block id="40b681a46714eeb24e21a893a14eac81" category="paragraph">Lorsque vous associez un utilisateur, vous lui attribuez un rôle :</block>
   <block id="d8b443dec47ef3fe29b32e2c5b56a6ec" category="list-text">_Account Admin_: Peut effectuer n'importe quelle action dans BlueXP.</block>
   <block id="d67e41e5b96d2ab3e94f85f61f3e3591" category="list-text">_Workspace Admin_ : permet de créer et de gérer des ressources dans l'espace de travail affecté.</block>
-  <block id="e6a4828475cf518e1e053e7e425cf375" category="list-text">_Compliance Viewer_: Peut uniquement afficher les informations de conformité Cloud Data Sense et générer des rapports pour les systèmes auxquels ils sont autorisés à accéder.</block>
   <block id="e9b0a93b5b5cd95f3a2c544875c51ae3" category="inline-link-macro">En savoir plus sur ces rôles</block>
   <block id="7895b348f81fb8e1118370d6314dfb51" category="paragraph"><block ref="a7cac0974b1a57b009ba128474746390" category="inline-link-macro-rx"></block>.</block>
   <block id="d5e92609cf510f5f97ac326e907a0540" category="section-title">Espaces de travail</block>
@@ -156,8 +155,6 @@
   <block id="83b9ca4036ac15d5479b1b6947eb5d6b" category="paragraph">Si vous déployez le connecteur à partir d'Azure Marketplace ou si vous installez manuellement le connecteur sur un hôte Linux, vous devrez définir vous-même le rôle personnalisé.</block>
   <block id="c5078b96055d6b776ee265ca4c7650c2" category="paragraph">Vous devez également vous assurer que le rôle est à jour lorsque de nouvelles autorisations sont ajoutées dans les versions suivantes.</block>
   <block id="92ec95b8916ebc493b6546010073c81f" category="section-title">Utilisation des autorisations Azure</block>
-  <block id="c6705240238244043d7e0d39f6ce1db1" category="section-title">Balises AppTemplate</block>
-  <block id="36403db09ed916406c9f181948f4d246" category="paragraph">Le connecteur effectue les requêtes API suivantes pour gérer les balises sur les ressources Azure lorsque vous utilisez le service de balisage AppTemplate :</block>
   <block id="e53322337eb6e5958408340612abf40d" category="list-text">Microsoft.Ressources/ressources/lecture</block>
   <block id="5d5a38f96b2eb95a1bae225c6959a21b" category="list-text">Microsoft.Ressources/abonnements/résultats d'opération/lecture</block>
   <block id="ed53cedfd937c8697136ea80c8441bdf" category="list-text">Microsoft.Ressources/abonnements/resourceGroups/read</block>
@@ -171,8 +168,6 @@
   <block id="d532d42cdca6427a0c94a0fe2b7724bf" category="list-text">Microsoft.NetApp/netAppAccounts/capacityPools/volumes/write</block>
   <block id="8a2ef2886600a50e48c7ea77de74ad9a" category="list-text">Microsoft.NetApp/netAppAccounts/capacityPools/volumes/read</block>
   <block id="c937da506293f901431e22784134365b" category="list-text">Microsoft.NetApp/netAppAccounts/capacityPools/volumes/delete</block>
-  <block id="dad57e95fc9a5390302ad830888cbdb9" category="section-title">La sauvegarde dans le cloud</block>
-  <block id="88d71627ded79fcdc49d9c19d3af5b25" category="paragraph">Il effectue les demandes d'API suivantes pour les opérations de sauvegarde et de restauration :</block>
   <block id="134f51c649d847fb47aa19ce2c4e1169" category="list-text">Microsoft.Compute/virtualMachines/read</block>
   <block id="4497a0f6eec879d6bbc81dfce25df573" category="list-text">Microsoft.Compute/virtualMachines/start/action</block>
   <block id="b1de839ceaf94f5ba40464d57753cc0a" category="list-text">Microsoft.Compute/virtualMachines/deallocate/action</block>
@@ -213,8 +208,6 @@
   <block id="993e916f1302e857660bb8e0c6afb098" category="list-text">Microsoft.Synapse/espaces de travail/firewallRules/read</block>
   <block id="bb2b2f1cc8d96247f3ee60242af20fc2" category="list-text">Microsoft.Synapse/espaces de travail/replace AllIpFirewallRules/action</block>
   <block id="8f2699621ad2c9f04e098e13e8158e06" category="list-text">Microsoft.Synapse/espaces de travail/opérationnalizResults/read</block>
-  <block id="d882bf73cd5caf1e5aa39edbf893ad74" category="section-title">Sens des données cloud</block>
-  <block id="6794a7ecd8e477b5ee60d4ca8d1e16b3" category="paragraph">Lorsque vous utilisez Cloud Data Sense, il effectue les requêtes d'API suivantes.</block>
   <block id="004bf6c9a40003140292e97330236c53" category="cell">Action</block>
   <block id="271544c6feabf3364f5e9d9d71e81991" category="cell">Utilisé pour la configuration ?</block>
   <block id="536dc5b351662225d606f29978fb2842" category="cell">Utilisé pour les opérations quotidiennes ?</block>
@@ -251,8 +244,6 @@
   <block id="c5af106b19c135afd294afc60320be5c" category="cell">Microsoft.Ressources/déploiements/lecture</block>
   <block id="54df0a2876eee919ba664e42f103b6ba" category="cell">Microsoft.Ressources/déploiements/écriture</block>
   <block id="74dce501370cb2231ed37ef5776a5fff" category="cell">Microsoft.Ressources/abonnements/resourceGroups/delete</block>
-  <block id="92d2b6aba6afa3f690540cf3dba9b633" category="section-title">Tiering dans le cloud</block>
-  <block id="02c5fd18db0663d9ef0e6c225f1cc7a7" category="paragraph">Lors de la configuration de Cloud Tiering, il effectue les requêtes d'API suivantes.</block>
   <block id="f786a140deb938ac21ab095b7c402176" category="paragraph">Le connecteur effectue les demandes d'API suivantes pour les opérations quotidiennes.</block>
   <block id="47ddffc293a6a5748897c2f965fa7212" category="list-text">Microsoft.Storage/storageAccounts/managePolicies/read</block>
   <block id="a2fd314f394dbb1eeb56c09e3cd9770f" category="list-text">Microsoft.Storage/storageAccounts/managePolicies/write</block>
@@ -312,8 +303,6 @@
   <block id="66c0e418af8f4db80b2c543835e5ec08" category="cell">Balises de lecture, d'écriture et de suppression associées aux ressources Cloud Volumes ONTAP</block>
   <block id="bcbc02e34d63373cb18f0b84bea918b2" category="cell">Microsoft.Ressources/balises/Supprimer</block>
   <block id="c9c484fe908813be17fe13bbdeabfb1d" category="cell">Crypter les comptes de stockage pendant leur création</block>
-  <block id="24e6e2f6171b43a847fe194a9a9b5cd0" category="section-title">Cache global de fichiers</block>
-  <block id="50b420e26df31f72aafe4415d5f0ea4c" category="paragraph">Lorsque vous utilisez Global File cache, le connecteur effectue les demandes d'API suivantes :</block>
   <block id="f4b5566a2cd5de876b361e9f7aaa2d92" category="list-text">Microsoft.Insights/Metrics/Read</block>
   <block id="542e0e990e0a90f3111cc38f8fc96301" category="list-text">Microsoft.Compute/virtualMachines/extensions/write</block>
   <block id="027acd9694c335956d7cb35872c2d7f5" category="list-text">Microsoft.Compute/virtualMachines/extensions/read</block>
@@ -334,7 +323,6 @@
   <block id="63b34d7f22329c0eb7915fca7a346007" category="cell">Fournit un accès HTTP à partir des navigateurs Web du client vers l'interface utilisateur locale</block>
   <block id="0e8433f9a404f1f3ba601c14b026d321" category="cell">HTTPS</block>
   <block id="13f3cf8c531952d72e5847c4183e6910" category="cell">443</block>
-  <block id="0c01b3b7191c43507ad9ca43d6443731" category="cell">Fournit un accès HTTPS à partir des navigateurs Web du client vers l'interface utilisateur locale et des connexions à partir de l'instance Cloud Data Sense</block>
   <block id="b136ef5f6a01d816991fe3cf7a6ac763" category="cell">TCP</block>
   <block id="dff8e9c2ac33381546d96deea9922999" category="cell">3128</block>
   <block id="7fcf8a20eb9257fce9235438893a7754" category="section-title">Règles de sortie</block>
@@ -352,7 +340,6 @@
   <block id="12007e1d59f4d09c87dbe2c438256244" category="cell">Destination</block>
   <block id="241b5fab8e737eaa79c543efe7307059" category="cell">Appels API et AutoSupport</block>
   <block id="096a28c32a85d3d48462b468a3700d9a" category="cell">LIF de gestion de cluster ONTAP et Internet sortant</block>
-  <block id="d17764ffa4b2b993f35778d5e7c1f22e" category="cell">Appels d'API vers Azure et ONTAP, vers le cloud Data Sense, vers le service ransomware et envoi de messages AutoSupport à NetApp</block>
   <block id="ed5f2bdecbd4bd349d09412d1ff6a6fb" category="cell">DNS</block>
   <block id="f5ef036b4d8b630721e51fe23489fbc9" category="cell">UDP</block>
   <block id="d82c8d1619ad8176d665453cfb2e55f0" category="cell">53</block>
@@ -485,7 +472,6 @@
   <block id="739bf63a1a7b0a2e180e692ece9b9b11" category="cell">- compute.networks.updatePolicy</block>
   <block id="40601d6546f763ec088fee026a0da641" category="cell">Pour appliquer des règles de pare-feu sur les VPC et les sous-réseaux d'une paire HA.</block>
   <block id="7ae509c8f6a49ea947573abf4cb9d134" category="cell">- compute.subnetworks.use - compute.subnetworks.useExternalIp - compute.instances.addAccessConfig</block>
-  <block id="cfce2399f4f36929c6a0ea17350ac8aa" category="cell">Pour activer le sens des données du cloud.</block>
   <block id="f85c74998244978e7f2016bbc795aea2" category="cell">- container.cluster.get - container.cluster.list</block>
   <block id="ddfb140a67cb8f801143468683f3e453" category="cell">Pour détecter les clusters Kubernetes s'exécutant dans Google Kubernetes Engine.</block>
   <block id="54f877a36cc65a39f4c972facb5d5a3d" category="cell">- Monitoring.timeseries.list - Storage.seaux.getIamPolicy</block>
@@ -625,12 +611,7 @@
   <block id="85eb427901278daf26f132cb3e076914" category="list-text">Clusters Kubernetes</block>
   <block id="6c253a8aff5dfa835a77545b3006abc8" category="list-text">Clusters ONTAP sur site</block>
   <block id="392d70ca39f31f10bd637936769788df" category="list-text">StorageGRID</block>
-  <block id="f079f17b0940258743d34e7b771c715f" category="list-text">Conseiller digital</block>
-  <block id="d4f99f1852ac22c1cad9673e75e03dc1" category="paragraph">Même si un connecteur n'est pas nécessaire pour configurer et gérer Azure NetApp Files, il est nécessaire d'utiliser un connecteur si vous souhaitez analyser les données Azure NetApp Files avec Cloud Data SENSE.</block>
   <block id="b0cee72642f5457a71ddd0b49efb6d93" category="list-text">Cloud Volumes Service pour Google Cloud</block>
-  <block id="e367efbc26bd12c0d6ae37dd6a55ef9b" category="list-text">Cloud Sync</block>
-  <block id="cbe129909ca1b56ccace7cbd5ffca407" category="paragraph">Dans presque tous les cas, vous pouvez ajouter une licence au porte-monnaie numérique sans connecteur.</block>
-  <block id="1ab568c31a52b2095bb19460f2f7bac6" category="paragraph">La seule fois qu'un connecteur est nécessaire pour ajouter une licence au porte-monnaie numérique est pour les licences Cloud Volumes ONTAP _node-based_. Dans ce cas, un connecteur est requis car les données sont extraites des licences installées sur les systèmes Cloud Volumes ONTAP.</block>
   <block id="ff0e00d64f60db5d99e55c6d706306cc" category="section-title">Emplacements pris en charge</block>
   <block id="a92005953b68970af3654f93b3a572c1" category="paragraph">Un connecteur est pris en charge aux emplacements suivants :</block>
   <block id="6beccc67ff905f7da0b29dece26b0485" category="list-text">Amazon Web Services</block>
@@ -769,9 +750,7 @@
   <block id="efd9710de9c698fbbeb7b7b11597f70b" category="summary">Une fois que vous avez installé un connecteur dans AWS, BlueXP peut détecter automatiquement les informations relatives aux compartiments Amazon S3 qui résident dans le compte AWS où le connecteur est installé. Un environnement de travail Amazon S3 est ajouté à Canvas pour que vous puissiez visualiser ces informations.</block>
   <block id="69e6c31f6140607f08425260f2faecb5" category="list-text">Dans le menu de navigation, sélectionnez *stockage &gt; Canvas*.</block>
   <block id="620734ddcf438083fa8f2f7a7550fbbf" category="inline-image-macro">Copie d'écran d'un environnement de travail Amazon S3.</block>
-  <block id="2eb089b7bd4ffecd4fb1075d13738904" category="inline-link">La présentation du service Cloud Sync</block>
   <block id="3747d8dfb456f8cefbe5ea8eed8a4289" category="summary">Une fois que vous avez installé un connecteur dans Azure, BlueXP peut détecter automatiquement des informations sur les comptes de stockage Azure qui résident dans les abonnements Azure où le connecteur est installé. Un environnement de travail Azure Blob est ajouté à Canvas pour vous permettre d'afficher ces informations.</block>
-  <block id="8038b7f4543340933f0702ca9be2c9c5" category="paragraph">Vous pouvez afficher des informations détaillées sur vos comptes de stockage Azure, notamment l'emplacement, le groupe de ressources, la capacité totale et utilisée, etc. Ces comptes peuvent être utilisés comme destinations pour les opérations Cloud Backup, Cloud Tiering ou Cloud Sync.</block>
   <block id="4fa9fc9591ffa247eeef55070b3327a0" category="paragraph">Vous devriez voir automatiquement un environnement de travail Azure Blob peu de temps après.</block>
   <block id="2ed919302195764ff313fc8d75b59525" category="inline-image-macro">Copie d'écran d'un environnement de travail Azure Blob.</block>
   <block id="33b5e081bfc2a4ff553d44178d68dda0" category="paragraph"><block ref="33b5e081bfc2a4ff553d44178d68dda0" category="inline-image-macro-rx" type="image"></block></block>
@@ -807,7 +786,6 @@
   <block id="1e88d77d48ab40f10d18398d6d56110a" category="list-text">storage.admin</block>
   <block id="6596ec425be852d6a717fb02e701c2b2" category="list-text">Membre: Compte de service BlueXP à partir de serviceAccount.user</block>
   <block id="382b0f5185773fa0f67a8ed8056c7759" category="cell">S/O</block>
-  <block id="9da64c05f602835b1e7e3c537166bbc1" category="cell">(Facultatif) pour le Tiering des données et la sauvegarde dans le cloud</block>
   <block id="386abe7036c62f0f27d3787e317b4aff" category="cell">Agent de service Google API</block>
   <block id="f295764441aac0df9246f1a621487073" category="list-text">Editeur (par défaut)</block>
   <block id="ae01528f579ff3037811a74d75459f03" category="cell">Interagit avec les API Google Cloud pour le compte du déploiement. Permet à BlueXP d'utiliser le réseau partagé.</block>
@@ -887,7 +865,6 @@
   <block id="1411debdb32e6b128ca27ec92a708cbd" category="open-title">GovCloud (USA)</block>
   <block id="a8416eae2db8c97eb943559351fab358" category="open-title">Environnement C2S</block>
   <block id="abc9b009fdeb5b04ca7bcd60cdae2434" category="section-title">Utilisation des autorisations AWS</block>
-  <block id="0cae22bc84eb90b52cc86e22b140eb0c" category="paragraph">Lorsque vous utilisez le service de balisage AppTemplate, le connecteur effectue les requêtes API suivantes pour gérer les balises sur les ressources AWS :</block>
   <block id="693adfb773a054f1c9287da186e8ce5d" category="list-text">ec2:CreateTags</block>
   <block id="3a2cbdfb7b022d729d851d5052148241" category="list-text">ec2:DeleteTags</block>
   <block id="684a1bfe5fbc91f18d96de978a7df58a" category="list-text">ec2:Etiquettes descriptives</block>
@@ -896,7 +873,6 @@
   <block id="f624e5f75138eb92caddd44e1bc7342e" category="list-text">Tag:getTagValues</block>
   <block id="5e665d8f5cf0c341dce9f3bd5e7f4cc0" category="list-text">Tag:TagResources</block>
   <block id="5e10058ad3f07bfeca3eef81de09ce28" category="list-text">Tag:UntagResources</block>
-  <block id="ea6a60190611f087b7d1024fdd12f16c" category="paragraph">Il crée les demandes d'API suivantes pour déployer l'instance de restauration pour Cloud Backup :</block>
   <block id="027d28fab935de1ef9181da062feac6b" category="list-text">ec2:déclarations de début</block>
   <block id="68d58bcae13312f57154b0dc5bd5bee5" category="list-text">ec2:StopInances</block>
   <block id="c8e20ceabac2b519b4f4eb301166c9bd" category="list-text">ec2:descriptifs</block>
@@ -965,7 +941,6 @@
   <block id="c188f3200de41a855c54a31c5e486db6" category="paragraph">Si vous utilisez un autre compte AWS pour vos sauvegardes Cloud Volumes ONTAP que ce que vous utilisez pour les volumes source, ce connecteur effectue les requêtes d'API suivantes :</block>
   <block id="4b9c42bf1853fa25d534302dbc43f035" category="list-text">s3:PutBuckePolicy</block>
   <block id="fa4d7248969f7582be82c5aa4b15e08b" category="list-text">s3 : commandes PutBuckeOwnerShipControls</block>
-  <block id="1ff2ee005f6ebf372516a77eb1822174" category="paragraph">Il crée l'instance Cloud Data Sense suivante :</block>
   <block id="a5ea263b5c1fc9d98e3502347db5f38a" category="list-text">ec2 : AttachVolume</block>
   <block id="5c1d3b82016ca9ba106bc6c28ab8c44a" category="list-text">ec2:DeleteSecurityGroup</block>
   <block id="f81c1800b5bdeba91c623d2a3d6cd80b" category="list-text">ec2:descriptifs des groupes de sécurité</block>
@@ -977,12 +952,10 @@
   <block id="d734a02593a16de307a6ba72b9e0a84f" category="list-text">iam:AddRoleToInstanceProfile</block>
   <block id="5e56dcab5a3d5a272d5e0ea580b6ef9c" category="list-text">ec2:AssociateIamInstanceProfile</block>
   <block id="878addcc09e93b6f03a1af8fb9aa5472" category="list-text">ec2:DécriesIamInstanceProfileassociations</block>
-  <block id="cf515733161bef5174a0b4727d3a287a" category="paragraph">Lors de l'utilisation de Cloud Data Sense, il effectue les demandes d'API suivantes pour analyser les compartiments S3 :</block>
   <block id="e0c462b127c385a7109b2d96fee158ff" category="list-text">s3:GetBucketPolicyStatus</block>
   <block id="19c320aeee7c39747dcce0815428eea9" category="list-text">s3:GetBucketPolicy</block>
   <block id="9dcf380856979ca5b723d30e996e1f95" category="list-text">iam:GetRole</block>
   <block id="60cfe31830d467874bb430da1683504e" category="list-text">sts : AssumeRole</block>
-  <block id="a5ee53db07b5874a6adfc974dafbbd58" category="paragraph">Ce connecteur effectue les demandes d'API suivantes pour transférer les données vers Amazon S3 lorsque vous utilisez NetApp Cloud Tiering.</block>
   <block id="5af7e92e7fbd51883a785485859afd3d" category="cell">Créer et gérer des rôles IAM et des profils d'instance pour les instances Cloud Volumes ONTAP</block>
   <block id="e3282902ca031e34a1aa86c7ee684a82" category="cell">iam:ListenceProfiles</block>
   <block id="3b8d1aa9f2727ee5948e48b70e7ea00b" category="cell">iam:CreateRole</block>
@@ -1049,18 +1022,15 @@
   <block id="f3edb201fee35ccc535ef38207132cb5" category="cell">Créez et gérez des agrégats prenant en charge la fonctionnalité Amazon EBS Elastic volumes</block>
   <block id="9708e121f9f5200cf3806e89c2633b16" category="cell">ec2:Describvolumesmodificateurs</block>
   <block id="a0343d4d10d8960a1347cc4819cae46b" category="cell">ec2 : Modifier le volume</block>
-  <block id="fced0ebf1fcf946eb97f030a892b2b08" category="paragraph">Le connecteur effectue les demandes d'API suivantes pour déployer des instances de cache de fichier global pendant le déploiement :</block>
   <block id="3a902f1e8a6db9861a0a7608e2c5f711" category="list-text">cloudwatch:GetMetricStatistics</block>
   <block id="1bad3fa525f7b2c60b554cc8a36a911c" category="list-text">Cloudformation:ListSacks</block>
   <block id="36df1b975561708b246ef1801ea416e5" category="section-title">FSX pour ONTAP</block>
-  <block id="2e0aa8db26606696ba7bb05ec89284a7" category="paragraph">Le connecteur effectue les requêtes API suivantes pour gérer FSX pour ONTAP :</block>
   <block id="6c2169e32dbe273efb12c5de01180bd2" category="list-text">ec2:DescribeReserveInstanciesOfferings</block>
   <block id="c7d6e8e55ec100d2a5894fa3c2eaabd4" category="list-text">ec2:descriptifs des groupes</block>
   <block id="8e07bbd9f07bb93eda5ce53675e2dd26" category="paragraph">Le connecteur effectue les requêtes API suivantes pour détecter et gérer les clusters Amazon EKS :</block>
   <block id="b272876bb8d27e636bb70f2dce15cb34" category="list-text">eks:Listclusters</block>
   <block id="457a1b6178515d282232753f808e8cf5" category="list-text">eks:DescribeCluster</block>
   <block id="53ac904630fdbb4d62f208e001934c7c" category="list-text">iam:GetInstanceProfile</block>
-  <block id="4e505c18a3df31a39f42336b9b57fa97" category="section-title">Découverte des compartiments S3</block>
   <block id="1fd4dfa3fe95514f04e3ecdd7e8a001d" category="paragraph">Il effectue la demande d'API suivante pour détecter les compartiments Amazon S3 :</block>
   <block id="080045bf6ab788297df2820c007203af" category="paragraph">s3:GetEncryptionConfiguration</block>
   <block id="fa63e1e893cffd937dfc1bfa0546daf3" category="summary">Vous pouvez surveiller l'état des opérations que BlueXP effectue pour voir si des problèmes doivent être résolus. Vous pouvez afficher l'état dans le centre de notification, dans le calendrier ou envoyer des notifications à votre courrier électronique.</block>
@@ -1167,7 +1137,6 @@
   <block id="ab92d1e2231079f7f278e33e63f88ee9" category="paragraph">Si vous souhaitez gérer les paramètres de votre compte en envoyant des demandes API, vous devez utiliser l'API _Tenancy_. Cette API est différente de l'API BlueXP, que vous utilisez pour créer et gérer des environnements de travail Cloud Volumes ONTAP.</block>
   <block id="1dc658529d6408dff5a6f0516b76a420" category="inline-link">Affichez les terminaux de l'API de colocation</block>
   <block id="a2eed12a43b27297c587170e14b434f9" category="paragraph"><block ref="a2eed12a43b27297c587170e14b434f9" category="inline-link-rx"></block></block>
-  <block id="64eb307ccc4921e5984431f546f8ac36" category="list-text">*Compliance Viewer* : peut uniquement afficher les informations de conformité de Cloud Data Sense et générer des rapports pour les espaces de travail auxquels ils sont autorisés à accéder.</block>
   <block id="cd300641cc6f26fb104a34058424d793" category="list-text">Si vous avez sélectionné Workspace Admin ou Compliance Viewer, sélectionnez un ou plusieurs espaces de travail à associer à cet utilisateur.</block>
   <block id="c7ff327cee5edeb542a8940b9fe77bf0" category="paragraph">L'utilisateur doit recevoir un e-mail de NetApp BlueXP intitulé « Account Association ». L'e-mail inclut les informations nécessaires pour accéder à BlueXP.</block>
   <block id="8ecff25aa4ee2497099b60f83bd4dde7" category="paragraph">Vous pouvez associer et dissocier les administrateurs d'espace de travail avec des espaces de travail à tout moment. L'association de l'utilisateur lui permet de créer et d'afficher les environnements de travail dans cet espace de travail.</block>
@@ -1203,7 +1172,6 @@
   <block id="54734e5bba3b83b2757e43d1ff24b2c4" category="section-title">Activation du trafic API direct</block>
   <block id="6d7e2c1c0f4420a7bd5fd9b30ef6949e" category="summary">Le groupe de sécurité AWS du connecteur nécessite à la fois des règles entrantes et sortantes.</block>
   <block id="60f0453bf0393ab630be6aa37dc20180" category="doc">Règles de groupe de sécurité dans AWS</block>
-  <block id="a6a8d3a613b6b7ece18f688d168e5cda" category="cell">Appels d'API vers AWS et ONTAP, vers le cloud Data Sense, vers le service ransomware et envoi de messages AutoSupport à NetApp</block>
   <block id="22043367a89ddcf3eb99eec509a967ba" category="cell">Appels API</block>
   <block id="e93028bdc1aacdfb3687181f2031765d" category="cell">3000</block>
   <block id="e9ed822bdea417e9dfd79a2c81634ba4" category="cell">ONTAP HA médiateur</block>
@@ -1339,7 +1307,6 @@
   <block id="41adb69bcb6f24f8432b590170f61d23" category="list-text">Une fois connecté, configurez BlueXP :</block>
   <block id="773752fa8722d25b5cb88d771e3c6459" category="summary">Après avoir installé un connecteur dans Google Cloud, BlueXP peut automatiquement découvrir des informations sur les compartiments Google Cloud qui résident dans le compte Google où le connecteur est installé. Un environnement de travail Google Cloud Storage est ajouté à Canvas pour vous permettre de visualiser ces informations.</block>
   <block id="e952b1c060b2dc1be5663131351e06a5" category="paragraph">Après avoir installé un connecteur dans Google Cloud, BlueXP peut automatiquement découvrir des informations sur les compartiments Google Cloud Storage qui résident dans le compte Google où le connecteur est installé. Un environnement de travail Google Cloud Storage est ajouté à Canvas pour vous permettre de visualiser ces informations.</block>
-  <block id="d7d3898c944de3ebf19acbb6fcf8c7c4" category="paragraph">Vous trouverez des informations détaillées sur vos compartiments Google Cloud Storage : l'emplacement, l'état d'accès, la classe de stockage, la capacité totale et utilisée, entre autres. Ces compartiments peuvent être utilisés comme destinations pour les opérations Cloud Backup, Cloud Tiering ou Cloud Sync.</block>
   <block id="18fe44f15840f7116c5288c8e5b736da" category="paragraph">Vous devriez voir automatiquement un environnement de travail Google Cloud Storage peu après.</block>
   <block id="21b1bc909131728ad1b5d3d05c538f6b" category="inline-image-macro">Copie d'écran d'un environnement de travail Google Cloud Storage.</block>
   <block id="94bd1056e53b5ba66af1269a83d9d853" category="paragraph"><block ref="94bd1056e53b5ba66af1269a83d9d853" category="inline-image-macro-rx" type="image"></block></block>
@@ -1379,7 +1346,6 @@
   <block id="11cf550820ecd5e75ae1a9046f7f7f05" category="section-title">Services à la demande</block>
   <block id="249345af661bafcf4f8bd3a0b9d6e949" category="inline-link-macro">En savoir plus sur le moment où les connecteurs sont nécessaires et leur fonctionnement</block>
   <block id="0b43e955bb49e08923e9b43ee20ef2b3" category="section-title">Certification SOC 2 Type 2</block>
-  <block id="def802d2deb64de5ee040ba416bab8f8" category="paragraph">Nous avons étudié BlueXP, Cloud Sync, Cloud Tiering, Cloud Data Sense et Cloud Backup (plateforme BlueXP), et confirmé que leur cabinet d'experts-comptables indépendant a réussi à générer des rapports SOC 2 de type 2 d'après les critères des services de confiance applicables.</block>
   <block id="582a36961cbdd6ca90f6672041cdab83" category="inline-link">Consultez les rapports SOC 2 de NetApp</block>
   <block id="958c315a8c40765f65895091ecc83488" category="paragraph"><block ref="958c315a8c40765f65895091ecc83488" category="inline-link-rx"></block></block>
   <block id="0384f4ba39f6a15ffd9b42bfb03b8d83" category="doc">Projets, autorisations et comptes Google Cloud</block>
@@ -1420,7 +1386,6 @@
   <block id="e6ec8d6dff39d45a9056311495699cef" category="paragraph"><block ref="e6ec8d6dff39d45a9056311495699cef" category="inline-image-macro-rx" type="image"></block></block>
   <block id="cb11319a6aac10698937e0bc23986201" category="summary">Les rôles Administrateur de compte, Administrateur d'espace de travail, Visionneuse de conformité et Administrateur SnapCenter fournissent des autorisations spécifiques aux utilisateurs.</block>
   <block id="a5cd3ed116608dac017f14c046ea56bf" category="doc">Rôles</block>
-  <block id="e8620e3ad7e6d5204676f884b932b598" category="paragraph">Le rôle Compliance Viewer permet l'accès en lecture seule à Cloud Data SENSE.</block>
   <block id="eaeb30f9f18e0c50b178676f3eaef45f" category="cell">Tâche</block>
   <block id="023bddc1580239bc605771883a09c8ff" category="cell">Administrateur du compte</block>
   <block id="7088282dd5defa41ae1744ff713534b6" category="cell">Administrateur de l'espace de travail</block>
@@ -1431,7 +1396,6 @@
   <block id="e111db5964f3341f9a0b4794494aa9bf" category="cell">Afficher l'état de la réplication des données</block>
   <block id="f8ed80d1b6ae9da0960249538d655425" category="cell">Afficher la chronologie</block>
   <block id="39ac68e476b37c123efa68256cf31a7d" category="cell">Basculer entre les espaces de travail</block>
-  <block id="a1a25779aa065eac4e0c23fa2f66bbb5" category="cell">Afficher les résultats de l'acquisition de détection de données</block>
   <block id="93b557fcf4dca896b9a77328a5ae0e92" category="cell">Supprimer les environnements de travail</block>
   <block id="ff1717f17ee6eef1b2a1bb43f6547a36" category="cell">Connectez les clusters Kubernetes aux environnements de travail</block>
   <block id="778cfbd8e3739e3af0e367072a92b2c3" category="cell">Recevoir le rapport Cloud Volumes ONTAP</block>
@@ -1608,7 +1572,6 @@
   <block id="490414e0366b091220802d406e52c076" category="doc">Quoi de neuf</block>
   <block id="5a4346a01828d72104a6540080377b25" category="section-title">6 novembre 2022</block>
   <block id="f658ebadeb22d41618c5222998030cb9" category="section-title">Connecteur 3.9.23</block>
-  <block id="a7dad5ac7e311dedf2a82e4bb5a713dd" category="list-text">Vos abonnements PAYGO et vos contrats annuels pour BlueXP sont désormais disponibles pour la consultation et la gestion à partir du portefeuille numérique.</block>
   <block id="949b19dd7e9f6496c1125f7166270450" category="inline-link">Découvrez comment gérer vos abonnements</block>
   <block id="efa03f1c1a0f03001f1680681d9ac8a7" category="paragraph"><block ref="efa03f1c1a0f03001f1680681d9ac8a7" category="inline-link-rx"></block></block>
   <block id="e8249b4253d6a921188373a80621c098" category="list-text">Cette version du connecteur inclut également des améliorations Cloud Volumes ONTAP.</block>
@@ -1818,10 +1781,6 @@
   <block id="0e5308fba9cc92e9ff80d599c7e865ca" category="paragraph">Ce compte utilisateur s'exécute localement sur le système. Il n'y a pas de connexion au service auth0 disponible via BlueXP.</block>
   <block id="b530111cab51b765877bc100b0a43e1f" category="list-text">*Revue* : consultez les détails, acceptez le contrat de licence, puis cliquez sur *configurer*.</block>
   <block id="d847fd38c43b77f685712342ed5f2a9a" category="list-text">Connectez-vous à BlueXP à l'aide de l'utilisateur admin que vous venez de créer.</block>
-  <block id="89b945901df4999cfbb07b91df7f3e83" category="inline-link">Sauvegarde des données de volumes ONTAP sur site dans StorageGRID à l'aide de Cloud Backup</block>
-  <block id="0ef5e09df96e6b4d97470a69c3a5bb03" category="list-text"><block ref="0ef5e09df96e6b4d97470a69c3a5bb03" category="inline-link-rx"></block></block>
-  <block id="c6e51205c48cc37a7cc66b973d442adf" category="inline-link">Analysez les données de volume ONTAP sur site à l'aide de la solution Cloud Data Sense</block>
-  <block id="a2946220130b0d51ecc66e35f8a65cbe" category="list-text"><block ref="a2946220130b0d51ecc66e35f8a65cbe" category="inline-link-rx"></block></block>
   <block id="c4d9d6c8e652595e9d46970f56499783" category="inline-link-macro">Apprenez à mettre à niveau le connecteur</block>
   <block id="ab75cfa6ae53348a737404e49985eb65" category="paragraph">Dès que de nouvelles versions du logiciel Connector sont disponibles, elles seront publiées sur le site de support NetApp. <block ref="f17f7484922764d58b748b63a8956073" category="inline-link-macro-rx"></block>.</block>
   <block id="7d0ee6fed10d3d4e5c9ee496729ab519" category="sidebar">Notes de mise à jour</block>
@@ -1869,7 +1828,6 @@
   <block id="481dd59686d42d2d6a74eae1a1d763ad" category="paragraph">Pour les régions standard, les autorisations sont réparties entre deux règles. Deux règles sont requises en raison d'une taille maximale de caractères pour les stratégies gérées dans AWS.</block>
   <block id="989bc9b22ba83d48ca30cdc4d2a0cbb8" category="paragraph">La première politique fournit des autorisations pour les services suivants :</block>
   <block id="bf43596ea2ef9041f13ded2298cba686" category="paragraph">La deuxième politique fournit des autorisations pour les services suivants :</block>
-  <block id="6db3bf95be125a91f9ff9118d152f966" category="list-text">Balisage AppTemplate</block>
   <block id="995c7db8420cf7c1d22ec979a1f735ba" category="open-title">Politique no 1</block>
   <block id="897099bfef7e48dc4adcaa1be92bf1a8" category="open-title">Politique no 2</block>
   <block id="64a39273573e4fc2b712d51106db7a4e" category="section-title">Journal des modifications</block>
@@ -1884,8 +1842,6 @@
   <block id="50a1dc01b7312307c34a888071586955" category="list-text">Copiez le numéro de série de votre compte à l'étape 2 ci-dessus, vérifiez sa sécurité, puis lisez la Déclaration de confidentialité des données NetApp.</block>
   <block id="cc8b0535948da368f832027c19b7f853" category="list-text">Veillez à copier le numéro de série du compte (960xxxx) utilisé ci-dessus pour le champ Numéro de série. Le traitement du compte sera ainsi accéléré.</block>
   <block id="0b4c13076b9b5e7ba5fa39333693ef77" category="paragraph">Les autorisations suivantes ont été ajoutées à la politique JSON :</block>
-  <block id="e9c8bdcc91d25115e46e6c43d23fe563" category="paragraph">Cette autorisation est requise pour Cloud Backup et Cloud Tiering.</block>
-  <block id="175e0c32b0d1e82352dde70ca6ad31a2" category="paragraph">Ces autorisations sont requises pour Cloud Backup.</block>
   <block id="1ff61a19534f16f8c2b0aa752b13fb0a" category="paragraph">Les autorisations suivantes ont été supprimées de la politique JSON car elles ne sont plus requises :</block>
   <block id="3a9d5bd356ec8e4fc31c11150128b7ac" category="list-text">Ouvrez un navigateur Web et accédez au<block ref="a47e12f4350b725a128875f50f785a3b" category="inline-link-rx"></block></block>
   <block id="83ec139c80a3d5b2f11f1a94eed47cd2" category="section-title">4 décembre 2022</block>
@@ -1947,15 +1903,6 @@
   <block id="f06223f9afc23bac523c7b9854772040" category="inline-link">le stockage sur site</block>
   <block id="3404cce75db90acf6a9d52860721a139" category="list-text">Clusters ONTAP</block>
   <block id="7fcb7f97cbc710b693fef37b5e86770f" category="list-text">Systèmes StorageGRID</block>
-  <block id="0edddc509df3db4e8717d189e32db020" category="list-text"><block ref="0edddc509df3db4e8717d189e32db020" category="inline-link-rx"></block></block>
-  <block id="19e49e48b1b7dfb345807d478924695e" category="list-text"><block ref="19e49e48b1b7dfb345807d478924695e" category="inline-link-rx"></block></block>
-  <block id="c0daf6fd97668893647e484d22abfa87" category="list-text"><block ref="c0daf6fd97668893647e484d22abfa87" category="inline-link-rx"></block></block>
-  <block id="b53201308fec60a975760c1edb55b773" category="list-text"><block ref="b53201308fec60a975760c1edb55b773" category="inline-link-rx"></block></block>
-  <block id="b2b0ea38d4048b69c988dce66f1d0b1d" category="list-text"><block ref="b2b0ea38d4048b69c988dce66f1d0b1d" category="inline-link-rx"></block></block>
-  <block id="8a7565a3d3fd48c7fc9f1e196dfdca92" category="list-text"><block ref="8a7565a3d3fd48c7fc9f1e196dfdca92" category="inline-link-rx"></block></block>
-  <block id="fcb8e4813d92a80a1bbc9b8070ca196b" category="list-text"><block ref="fcb8e4813d92a80a1bbc9b8070ca196b" category="inline-link-rx"></block></block>
-  <block id="950604af87c30e09716e6d097eb491db" category="inline-link">Protection contre les ransomwares</block>
-  <block id="a2caf1b1186133b845d3659ba1a714e8" category="list-text"><block ref="a2caf1b1186133b845d3659ba1a714e8" category="inline-link-rx"></block></block>
   <block id="8c340dc334134096f68b880b42a8692c" category="inline-link">La réplication</block>
   <block id="e5335d776982e29d68ce5591f7857b38" category="list-text"><block ref="e5335d776982e29d68ce5591f7857b38" category="inline-link-rx"></block></block>
   <block id="902e65d33784bd8924eb05e622aa2dda" category="section-title">Fournisseurs cloud pris en charge</block>
@@ -1967,7 +1914,6 @@
   <block id="9efb399c3a128a79f4671ff959339e79" category="list-text">Microsoft.Storage/storageAccounts/listAccountSas/action</block>
   <block id="a5b807c71b066c1d33685818cfa2806e" category="list-text">Microsoft.Synapse/espaces de travail/privateEndpointConnectionsApproval/action</block>
   <block id="176944a9db0702558233e827d21e2f80" category="section-title">5 janvier 2023</block>
-  <block id="267cfa5c9c91dc1d99dc797e89903dfa" category="paragraph">Ces autorisations sont requises pour Cloud Backup.</block>
   <block id="b73f51f05a3d7aca4e9b86bf6b66c214" category="paragraph">Cette autorisation est requise pour le déploiement de Cloud Volumes ONTAP.</block>
   <block id="1d37387582eb7a955869d3991c1dab28" category="section-title">1er décembre 2022</block>
   <block id="5847199ca78e66e581ccd10e8e88b057" category="list-text">Pour créer le rôle personnalisé, utilisez l'interface de ligne de commandes Azure :</block>
@@ -1999,7 +1945,6 @@
   <block id="02efcbea18b9485a78a41871dce1e64d" category="list-text"><block ref="02efcbea18b9485a78a41871dce1e64d" category="inline-link-macro-rx"></block></block>
   <block id="d377a02fb22cec7bf850087d3c9a31fa" category="cell">De gérer des ressources dans Google Cloud.</block>
   <block id="4ce604ab4b6f3184f26713f30bde1bbe" category="cell">- Cloudkms.cryptoKeys.get - cloudkms.cryptomonnaies.getIamPolicy - cloudkms.cryptomonnaies.list - cloudkms.cryptoKeys.setIamPolicy - cloudkms.keyrings.get - cloudkms.keyrings.getIamPolicy - cloudkms.keyrings.list - cloudkms.keyRings.setIamPolicy</block>
-  <block id="9e4edb2eed22d4c91a667b29567ee08d" category="cell">Pour sélectionner vos propres clés gérées par le client dans l'assistant d'activation de Cloud Backup au lieu d'utiliser les clés de chiffrement gérées par Google par défaut.</block>
   <block id="8988a38ba3aaf6cb48e549dc3babd50e" category="section-title">27 janvier 2023</block>
   <block id="6f3dd3aa6f04d6f98a881afe84a14828" category="paragraph">Les autorisations suivantes ont été ajoutées à la stratégie :</block>
   <block id="d5b52c55f0ffe2752d39b0d85f9ad0ef" category="list-text">Cloudkms.cryptoKeys.getIamPolicy</block>
@@ -2108,7 +2053,6 @@
   <block id="1c1c040e218e35ae634138db5c2055f4" category="list-text">Cliquez sur *Afficher les options d'achat*.</block>
   <block id="8258ac0fb8b015087851de720e92f796" category="list-text">ec2:DescribeVpcEndpoints</block>
   <block id="1be1ae3d277ebf372ecefda4d444dbbb" category="section-title">14 février 2023</block>
-  <block id="fae746653dec0583228106493b15ac1a" category="paragraph">L'autorisation suivante est désormais requise pour Cloud Tiering :</block>
   <block id="296337985ff5f0cc398e02f1aff0b176" category="paragraph">Si le connecteur est installé sur site, vous ne pouvez pas utiliser cette méthode d'authentification. Vous devez utiliser des clés AWS.</block>
   <block id="a4a42c8639c0aa2e10cb3a3eaaae664b" category="paragraph">Vous devez utiliser cette méthode d'authentification si le connecteur est installé sur site. Vous ne pouvez pas utiliser de rôle IAM.</block>
   <block id="edd15fbeb7b2dffa163336ecd4f3e80c" category="section-title">Options d'auto-assistance</block>
@@ -2116,8 +2060,6 @@
   <block id="08d96fdd1a845d80db99e6e1dffb8bc7" category="list-text">Sur la page *Ressources*, choisissez l'une des options disponibles sous assistance technique :</block>
   <block id="5be2e1dfe4bf215289731df45ec8157b" category="list-text">Cliquez sur *Créer un dossier* pour ouvrir un dossier auprès d'un spécialiste du support NetApp :</block>
   <block id="d4a973e303ec37692cc8923e3148eef7" category="cell">8080</block>
-  <block id="0773be92494e9aa5f52a2d6834a7c90f" category="cell">Détection des données</block>
-  <block id="f1ec925a41746bf6e895d454b6a6eddb" category="cell">Sonde vers l'instance Data Sense pendant le déploiement</block>
   <block id="3cae1bb62504fde722824fee95046472" category="doc">Gérez les informations d'identification et les abonnements Azure pour BlueXP</block>
   <block id="ee7f5aec4e9ac5fecb93d224c17fcd43" category="list-text">CentOS 7.6, 7.7, 7.8 et 7.9</block>
   <block id="fe342f4d7fb16d9eddf02f4c613dfb19" category="list-text">Red Hat Enterprise Linux 7.6, 7.7, 7.8, 7.9, 8.6 et 8.7</block>
@@ -2181,7 +2123,6 @@
   <block id="796ced97a72330e5ce3c0935b7b09f45" category="paragraph"><block ref="622b6e7f4143df2aca06b538ee1d864e" category="inline-link-rx"></block>.</block>
   <block id="dd9b32305d0c33f8845bee1cdfcfc85a" category="list-text">Le connecteur est désormais pris en charge sur un hôte exécutant Red Hat Enterprise Linux 8.7.</block>
   <block id="9954c00cefacf69f28fa1994e949ff83" category="paragraph"><block ref="1c471069dafa2d25f3a632cea0250222" category="inline-link-rx"></block>.</block>
-  <block id="33b6f29ed1acfc0fbed883a6e1f44ef2" category="paragraph">Pour commencer, installez manuellement le logiciel Connector, connectez-vous à la console BlueXP exécutée sur le connecteur, ajoutez votre licence BYOL au portefeuille digital, puis déployez Cloud Volumes ONTAP.</block>
   <block id="376a158ceb7d344fa563cce2aa16018f" category="inline-link">Installez le connecteur dans un emplacement sans accès à Internet</block>
   <block id="6bfdfb1d6b845d41edac4f1eb0065216" category="list-text"><block ref="6bfdfb1d6b845d41edac4f1eb0065216" category="inline-link-rx"></block></block>
   <block id="cbea6f8d2cd687c094438e0a7a38fedf" category="inline-link">Accéder à la console BlueXP sur le connecteur</block>
@@ -2201,7 +2142,6 @@
   <block id="fe4ddc4ad605bbd0c66fc946f65fb17c" category="cell">Créer et gérer des groupes de sécurité réseau</block>
   <block id="7b82c8bb5f712b74fd5cab9947ae81fb" category="cell">Requis pour certains déploiements de machines virtuelles, en fonction du matériel physique sous-jacent</block>
   <block id="93850b8e1d97181700833dcae4c7e219" category="paragraph"><block ref="93850b8e1d97181700833dcae4c7e219" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="ea59f5a18533f0723be7342656f4c831" category="paragraph">Vous pouvez afficher des informations détaillées sur vos compartiments S3, notamment la région, la règle d'accès, le compte, la capacité totale et utilisée, et plus encore. Ces compartiments peuvent être utilisés comme destinations pour les opérations Cloud Backup, Cloud Tiering ou Cloud Sync. Vous pouvez également utiliser Cloud Data Sense pour scanner ces compartiments.</block>
   <block id="d564f41f7e0ffa3f9e8bc7a809230f94" category="list-text">Connector vous permet désormais d'ajouter et de gérer des compartiments Amazon S3 à partir de BlueXP.</block>
   <block id="f19dd7eba16fe45d9a801001a9371842" category="inline-link">Découvrez comment ajouter de nouveaux compartiments Amazon S3 dans votre compte AWS à partir de BlueXP</block>
   <block id="3fdb23ee61e644ed849519b472ba51ae" category="paragraph"><block ref="35aa20e861d3bf81209592fa160bd4e4" category="inline-link-rx"></block>.</block>
@@ -2209,7 +2149,6 @@
   <block id="6282017b43dee5b3762b81c0124c425c" category="paragraph">Si vous avez configuré un connecteur pour utiliser un serveur proxy, vous pouvez activer le trafic API direct sur le connecteur afin d'envoyer des appels API directement aux services du fournisseur cloud sans passer par le proxy. Cette option est prise en charge avec des connecteurs s'exécutant dans AWS, dans Azure ou dans Google Cloud.</block>
   <block id="37bccc08c3c6cebbbf500cfe54775991" category="paragraph">Si vous avez désactivé l'utilisation des liens privés Azure avec Cloud Volumes ONTAP et que vous utilisez plutôt des terminaux de service, vous devez activer le trafic d'API direct. Sinon, le trafic ne sera pas acheminé correctement.</block>
   <block id="ac10c9401f16ed5ff0a029bce2712adc" category="inline-link">En savoir plus sur l'utilisation d'un lien privé Azure ou de terminaux de service avec Cloud Volumes ONTAP</block>
-  <block id="a8709880418b83b1477f57ddb74c84e3" category="list-text">Le connecteur est désormais pris en charge dans tout environnement cloud totalement isolé d'Internet. Vous pouvez ensuite utiliser la console BlueXP exécutée sur le connecteur pour déployer Cloud Volumes ONTAP au même emplacement et découvrir les clusters ONTAP sur site (si vous disposez d'une connexion entre votre environnement cloud et votre environnement sur site). Vous pouvez également utiliser Cloud Backup pour sauvegarder les volumes Cloud Volumes ONTAP dans les régions commerciales AWS et Azure. Aucun autre service BlueXP n'est pris en charge dans ce type de déploiement, à l'exception du portefeuille digital.</block>
   <block id="5bf7ac4937c946ab4eedfb091ffa67ab" category="section-title">Les connecteurs doivent toujours être opérationnels</block>
   <block id="5e546ca24430fc2b79e0e409176438c9" category="paragraph">Cette documentation est régie par le CLUF. Si le produit n'est pas utilisé conformément à la documentation, la fonctionnalité et le fonctionnement du produit, ainsi que vos droits en vertu du CLUF, peuvent être affectés.</block>
   <block id="65f052fa67c6645d7ad3edc14e47de13" category="paragraph">Un connecteur est un composant clé de l'intégrité et du fonctionnement de Cloud Volumes ONTAP. Si un connecteur est hors tension, les systèmes Cloud Volumes ONTAP PAYGO et les systèmes BYOL basés sur la capacité sont arrêtés après avoir perdu la communication avec un connecteur pendant plus de 14 jours. Cela se produit car le connecteur actualise les licences du système chaque jour.</block>
@@ -2307,7 +2246,6 @@
   <block id="5409221a62615b6b2cf0061a5376c983" category="inline-link">Documentation AWS : élément de condition</block>
   <block id="7d6d11737dd3bca1243f4e22e7aeaec1" category="list-text">Vous devez définir vous-même les règles si vous déployez le connecteur à partir d'AWS Marketplace, si vous installez manuellement le connecteur sur un hôte Linux ou si vous souhaitez ajouter des informations d'identification AWS supplémentaires à BlueXP.</block>
   <block id="0c511f4078f33be6ce46a7b4c4d64f3e" category="section-title">23 mars 2023</block>
-  <block id="43908e244f944d05ab87a4987453f7bc" category="paragraph">Cloud Data Sense ne requiert plus l'autorisation « Microsoft.Storage/storageAccounts/delete ».</block>
   <block id="47e8280c2cd82cf2f49537bfd5661b15" category="paragraph">Cette autorisation est toujours requise pour Cloud Volumes ONTAP.</block>
   <block id="15f7c3376619ce497205d543fd1d7767" category="paragraph">Si nécessaire, vous pouvez restreindre la politique IAM à l'aide de l'IAM<block ref="9e2941b3c81256fac10392aaca4ccfde" prefix=" " category="inline-code"></block> elément.<block ref="19ffef022087e160f1e54b9948795943" category="inline-link-rx"></block></block>
   <block id="81fa6885ef2dca44d4868d3d8ea203c9" category="summary">Selon les actions que vous avez effectuées dans BlueXP, vous pouvez avoir associé des informations d'identification ONTAP et des informations d'identification NSS sur le site du support NetApp avec votre identifiant utilisateur BlueXP. Vous pouvez afficher et gérer ces identifiants dans BlueXP une fois que vous les avez associés. Par exemple, si vous modifiez le mot de passe de ces informations d'identification, vous devez le mettre à jour dans BlueXP.</block>
@@ -2336,10 +2274,8 @@
   <block id="8c79ce7ab82c8c7e3fb9c6e8a73f8960" category="doc">Gérez les identifiants NSS associés à un compte BlueXP</block>
   <block id="3d41446101a1daf0639146f4555b623b" category="inline-link-macro">Découvrez comment gérer les identifiants de niveau utilisateur</block>
   <block id="45b496845c319f5bc16fa44745aea5f0" category="admonition">BlueXP prend également en charge l'association d'un compte NSS par utilisateur BlueXP. <block ref="92ab4e1c25ae34810f6c6d2ede81f4ab" category="inline-link-macro-rx"></block>.</block>
-  <block id="05c6578f55ba6f40e6bb7dd1d07e0243" category="list-text">Des notifications sont alors envoyées par e-mail pour les fonctionnalités et services BlueXP suivants : connecteurs, Cloud Sync, Cloud Backup, portefeuille digital et protection contre les ransomwares. D'autres services seront ajoutés dans les prochaines versions.</block>
   <block id="102787ed6297b34a7504b527e91d01d3" category="section-title">3 avril 2023</block>
   <block id="a62f3b1b0c4abf78f5d81609e7bdd908" category="section-title">Connecteur 3.9.28</block>
-  <block id="a08572617e25a61e8569807ac103ab07" category="list-text">Les notifications par e-mail sont désormais prises en charge par le portefeuille digital.</block>
   <block id="380d0a0b2cec998dcd9f52b91b24304c" category="paragraph">Si vous configurez vos paramètres de notification, vous pouvez recevoir des notifications par e-mail lorsque vos licences BYOL vont expirer (une notification d'avertissement) ou si elles ont déjà expiré (une notification d'erreur).</block>
   <block id="335e7f21f0fdfecbe9c04540dcb8cdd6" category="inline-link">Découvrez comment configurer les notifications par e-mail</block>
   <block id="e16804d7658f4d3132a1170b8cec7c7e" category="paragraph"><block ref="9ce9eb475c326d02a5c224ef8589bc0a" category="inline-link-rx"></block>.</block>
@@ -2413,10 +2349,6 @@
   <block id="93c4b1c8038b5a62672e86507e821a44" category="list-text"><block ref="93c4b1c8038b5a62672e86507e821a44" category="inline-link-rx"></block></block>
   <block id="d75d347ae1d51e933d39fea688b0abf1" category="inline-link">Documentation Azure NetApp Files</block>
   <block id="35103f93972f18deb45061fb09cb2d8c" category="list-text"><block ref="35103f93972f18deb45061fb09cb2d8c" category="inline-link-rx"></block></block>
-  <block id="76cc4d7d39e779cc966a6cb01a3b17aa" category="inline-link">Documentation Cloud Backup</block>
-  <block id="ef649b10994a3a896e81d7db3f197141" category="list-text"><block ref="ef649b10994a3a896e81d7db3f197141" category="inline-link-rx"></block></block>
-  <block id="1a3dd42e7f140871b4724418e36e52fb" category="inline-link">Documentation Cloud Data Sense</block>
-  <block id="5534f1b9a14e4fa1da051d1058b5a27e" category="list-text"><block ref="5534f1b9a14e4fa1da051d1058b5a27e" category="inline-link-rx"></block></block>
   <block id="2971acb1ab572cfb61b7c86d49e2b300" category="inline-link">Documentation Cloud Volumes ONTAP</block>
   <block id="fb7763dbe5d55a79ba826c779c80f403" category="list-text"><block ref="fb7763dbe5d55a79ba826c779c80f403" category="inline-link-rx"></block></block>
   <block id="3014dc2d87cf02248e7abe6b8ac89106" category="inline-link">Documentation sur le cluster ONTAP sur site</block>
@@ -2599,7 +2531,6 @@
   <block id="dee8aad8e11608028ff3bcbb674cdcde" category="list-text">Installez un connecteur dans le compte Azure où vous souhaitez afficher vos comptes de stockage Azure.</block>
   <block id="f0574ea9efbf61e3005311c1ed736537" category="list-text">Sélectionnez l'environnement de travail et sélectionnez une action dans le volet de droite.</block>
   <block id="1b4dd0d5e9a98e510340de3c3938e7c5" category="list-text">Sélectionnez *Synchroniser les données* pour synchroniser les données depuis ou vers le stockage Azure Blob.</block>
-  <block id="fff64362bc30daf97d5d1c62c6073918" category="paragraph">Pour plus de détails, voir<block ref="9a75baacec67d9c9539ea0017722641e" category="inline-link-rx"></block></block>
   <block id="9e6c19e48717319b0b71ece6d5735a24" category="list-text">Sélectionnez *entrer l'environnement de travail* pour afficher les détails sur les comptes de stockage Azure dans vos Blobs Azure.</block>
   <block id="111374538bcb0d5c90baaab097278e39" category="doc">Configuration du réseau sur site</block>
   <block id="caf7fd71047bbc17e23e603d7a448234" category="paragraph">Par exemple, si vous souhaitez lancer Cloud Volumes ONTAP dans le cloud, vous devez configurer une connexion VPN entre votre réseau d'entreprise et le réseau virtuel sur lequel vous prévoyez de lancer Cloud Volumes ONTAP.</block>
@@ -2792,8 +2723,6 @@
   <block id="9bff93d1123789b473f27a881c3e00c6" category="paragraph">Les limitations suivantes s'appliquent :</block>
   <block id="b3478a494adde25715314b14559dd6a4" category="list-text">Les comptes OneDrive, les comptes SharePoint et Google Drive ne peuvent pas être analysés.</block>
   <block id="d1f03114b8fef49b0f0cb0a28049ecdf" category="list-text">Impossible d'intégrer la fonctionnalité de label Microsoft Azure information protection (AIP).</block>
-  <block id="986e1f3279b4d74444bd32d4f833afbd" category="cell">Portefeuille numérique</block>
-  <block id="cc8064d3e1bb6b19068e502f8184cd13" category="cell">Vous pouvez utiliser le portefeuille digital avec les options de licence prises en charge répertoriées ci-dessous pour le mode restreint.</block>
   <block id="2bd6e3220a2a60e7217c63bc76d9f73c" category="cell">La découverte avec un connecteur et la découverte sans connecteur (découverte directe) sont toutes deux prises en charge. La vue avancée (System Manager) n'est pas prise en charge lorsque vous découvrez un cluster sur site avec un connecteur.</block>
   <block id="c26e19b0ab82c81e1df83e4f6d44e6af" category="list-text">Les options de licence suivantes sont prises en charge avec le mode restreint :</block>
   <block id="b012b5d8eb383d0a82055699469c06d6" category="list-text">Abonnements aux marchés (contrats à l'heure et à l'année)</block>
@@ -2829,7 +2758,6 @@
   <block id="5cab93e720177e480ed8d2fe603b87b8" category="inline-link">AWS C2S/SC2S</block>
   <block id="ed6f21c8b73c49053eac72fb867ecff6" category="cell">Pris en charge dans les régions commerciales AWS et Azure. Non pris en charge dans Google Cloud ou dans<block ref="5388026a167091fc23180597ac85e174" category="inline-link-rx"></block> ou<block ref="360910fe60b5d1cf9b7056b9b6f46685" category="inline-link-rx"></block></block>
   <block id="2c4d2c4938d2e881355a7e09fe8b1993" category="cell">Comme il n'y a pas d'accès à Internet, les fonctionnalités suivantes ne sont pas disponibles : mises à niveau logicielles automatisées, informations sur les coûts d'AutoSupport et d'AWS.</block>
-  <block id="d03ae597cdf50a2b89f6e5251f47b120" category="cell">Vous pouvez utiliser le portefeuille digital avec les options de licence prises en charge répertoriées ci-dessous pour le mode privé.</block>
   <block id="71fa0def55e8ba28f8cea8204dcaaf4f" category="cell">Requiert une connectivité du cloud (où le connecteur est installé) à l'environnement sur site. La découverte sans connecteur (découverte directe) n'est pas prise en charge.</block>
   <block id="99f9fe7adce4b6282eee924da977b6d4" category="list-text">Prise en charge des services BlueXP dans les déploiements sur site</block>
   <block id="614a24e7adcef9d83ca4454cd4443cbd" category="list-text">BlueXP prend en charge les services de stockage et de données suivants avec le mode privé lorsque le connecteur est installé sur votre site :</block>
@@ -2843,9 +2771,6 @@
   <block id="99c122e20a5a32c6ec7f2ed80295f621" category="paragraph"><block ref="99c122e20a5a32c6ec7f2ed80295f621" category="inline-link-rx"></block></block>
   <block id="a1f7f260dba9f32dd3bfb503eb84c441" category="cell">La découverte sans connecteur (découverte directe) n'est pas prise en charge.</block>
   <block id="f4c24ff9a6eed35a6103620418728351" category="list-text">Seul le modèle BYOL est pris en charge avec le mode privé.</block>
-  <block id="d3bd60d6bdd0ac6233d73ffc756a0c8d" category="paragraph">Pour Cloud Volumes ONTAP BYOL, seules les licences basées sur les nœuds sont prises en charge. Les licences basées sur la capacité ne sont pas prises en charge. Comme aucune connexion Internet sortante n'est disponible, vous devez télécharger manuellement votre fichier de licence Cloud Volumes ONTAP dans le portefeuille numérique.</block>
-  <block id="e0df5354301b91c962ce1097c0b84bf8" category="inline-link">Découvrez comment ajouter des licences au portefeuille digital</block>
-  <block id="b03cdf01875037d95adbbb6b58b3cc8f" category="paragraph"><block ref="b03cdf01875037d95adbbb6b58b3cc8f" category="inline-link-rx"></block></block>
   <block id="83e5d949613547f552890cbaf97a52db" category="list-text">Comment démarrer avec le mode privé</block>
   <block id="2ec8b0a0f85b8d5eb1e817dd692d490d" category="list-text">Le mode privé est disponible en téléchargeant le programme d'installation « hors ligne » depuis le site de support NetApp.</block>
   <block id="fb45c34b4268797014451aa41c2ea38f" category="inline-link-macro">Découvrez comment vous lancer avec le mode privé</block>
@@ -2855,9 +2780,7 @@
   <block id="b04b058acf83e4616c9312ab2b951050" category="paragraph">Notez que certains services peuvent être pris en charge avec des limitations. Pour plus d'informations sur la prise en charge de ces services en mode restreint et en mode privé, reportez-vous aux sections ci-dessus.</block>
   <block id="7e4b1c5ec6c6adb1fa50f4ca17076845" category="cell">Service ou fonctionnalité BlueXP</block>
   <block id="270fcb785810d0206945029bb05f4e97" category="cell">Amazon S3</block>
-  <block id="ca9106b8b82ff55b6fdce530ccb952a7" category="cell">AppTemplate</block>
   <block id="52745271323ee9ea30e3a37d0338d118" category="cell">Blob d'Azure</block>
-  <block id="a623a8d0366bf079411aa30be45b2d10" category="cell">Calcul</block>
   <block id="4a17f9505c41e2b9d2fdf8e21809e428" category="cell">E-Series</block>
   <block id="723ffd15eb7b4453afd0fa0af42c04c3" category="cell">Efficacité économique</block>
   <block id="833c2c211a541e50ad94433664e4b5c1" category="cell">Google Cloud Storage</block>
@@ -2964,7 +2887,6 @@
   <block id="87c8bd0bab910ee42d9dcd76825a8518" category="paragraph">Les membres sont des utilisateurs BlueXP que vous associez à votre compte BlueXP. L'association d'un utilisateur à un compte et d'un ou plusieurs espaces de travail dans ce compte permet à ces utilisateurs de créer et de gérer des environnements de travail dans BlueXP.</block>
   <block id="7c7a58e5b2c203f9e3345dac2f055a34" category="paragraph">Dans BlueXP, un espace de travail isole tous les _environnements de travail_ des autres utilisateurs du compte. Les administrateurs de l'espace de travail ne peuvent pas accéder aux environnements de travail dans un espace de travail à moins que l'administrateur du compte n'associe l'administrateur à cet espace de travail.</block>
   <block id="fff317b16975fac3ed7dff38b2438221" category="paragraph">Un connecteur exécute les actions que BlueXP doit effectuer pour gérer votre infrastructure de données. Le connecteur s'exécute sur une instance de machine virtuelle que vous déployez auprès de votre fournisseur cloud ou sur un hôte sur site que vous avez configuré.</block>
-  <block id="be694a56b8a2f7a27116411c11b24402" category="paragraph">Vous pouvez utiliser un connecteur avec plusieurs services BlueXP. Par exemple, si vous utilisez un connecteur pour gérer Cloud Volumes ONTAP, vous pouvez utiliser le même connecteur avec un autre service comme NetApp Cloud Tiering.</block>
   <block id="55d306b0964facf3eec9eb4328a8f318" category="admonition">Dans les deux exemples d'images qui suivent, le connecteur et les systèmes Cloud Volumes ONTAP ne résident pas _dans_ le compte BlueXP--ils s'exécutent dans un fournisseur cloud. Il s'agit d'une représentation conceptuelle de la relation entre chaque composant.</block>
   <block id="383125a3caa092f6d45708ef9ada6bf3" category="section-title">Plusieurs espaces de travail</block>
   <block id="bd77fae89cd1084b07d3a302df90985c" category="inline-image-macro">Diagramme illustrant un compte BlueXP unique qui contient deux espaces de travail. Chaque espace de travail est associé au même connecteur et chacun a son propre espace de travail Admin.</block>
@@ -3097,7 +3019,6 @@
   <block id="4d3fca1d2cf37433752c20e52858221f" category="paragraph">Il n'est pas nécessaire de disposer d'un connecteur pour démarrer avec BlueXP. Vous pouvez utiliser plusieurs fonctionnalités et services au sein de BlueXP sans créer de connecteur.</block>
   <block id="224dffcf542a8351c726ceb793464d58" category="paragraph">Vous pouvez utiliser les fonctionnalités et services BlueXP suivants sans connecteur :</block>
   <block id="9c4069a5e9e7edebdcc575a42ef2628d" category="list-text">Création d'un environnement de travail Amazon FSX pour NetApp ONTAP</block>
-  <block id="b9b05c62c4e5b4ec378906abe5d103b4" category="paragraph">Aucun connecteur n'est nécessaire pour créer un environnement de travail, mais il est nécessaire de créer et de gérer des volumes, de répliquer des données et d'intégrer FSX pour ONTAP avec les services BlueXP, tels que Data Sense et Cloud Sync.</block>
   <block id="bf2f35a1367a7ddb519a7dd3cedacfdd" category="paragraph">Lorsque vous utilisez BlueXP en mode standard, un connecteur est requis pour les fonctionnalités et les services suivants dans BlueXP :</block>
   <block id="dd42f0ca79b192af5e1f5734b490f194" category="paragraph">Les connecteurs sont un élément fondamental de l'architecture de service BlueXP. Il est de votre responsabilité de vous assurer que les connecteurs appropriés sont en place, opérationnels et accessibles à tout moment. Bien que le service soit conçu pour surmonter les courtes pannes de la disponibilité des connecteurs, vous devez prendre des mesures immédiates pour remédier aux défaillances de l'infrastructure.</block>
   <block id="5d5a04495ebcd46b843dcafaea428460" category="section-title">Impact sur Cloud Volumes ONTAP</block>
@@ -3119,7 +3040,6 @@
   <block id="2162bc1fbb13d2539c146b3472921eb5" category="paragraph"><block ref="7270aabdb0c26b6b937d76a49fcda623" category="inline-xref-macro-rx"></block>.</block>
   <block id="3feb0795a14e1cc974940057fc75d0e7" category="section-title">Plusieurs environnements de travail</block>
   <block id="c6d129878583320db44cb10e4daa0ffc" category="section-title">Connecteurs multiples</block>
-  <block id="f15be64e48b25e22d44e20b016cb78f3" category="list-text">Vous avez un environnement multicloud (AWS et Azure) et vous préférez avoir un connecteur dans AWS et un autre dans Azure. Chacun gère les systèmes Cloud Volumes ONTAP exécutés dans ces environnements.</block>
   <block id="c76efa6c691a8c8806671433356c1493" category="list-text">Un fournisseur de services peut utiliser un compte BlueXP pour fournir des services à ses clients, tout en utilisant un autre compte pour assurer la reprise après incident pour l'une de ses unités commerciales. Chaque compte aurait des connecteurs distincts.</block>
   <block id="b7baf76babc410282d303dd810fc0a0e" category="section-title">Quand changer</block>
   <block id="645a84975202e30700b572b49a5ee29d" category="section-title">Reprise après incident</block>
@@ -3237,7 +3157,6 @@
   <block id="c8b77e7a211a8e1bbb884962a105fc2f" category="paragraph"><block ref="c8b77e7a211a8e1bbb884962a105fc2f" category="inline-link-rx"></block></block>
   <block id="d2b9555443522ab868fc3d3de8b07657" category="list-text">Si vous souhaitez déployer Cloud Volumes ONTAP dans d'autres projets, autorisez l'accès en ajoutant le compte de service doté du rôle BlueXP à ce projet. Vous devrez répéter cette étape pour chaque projet.</block>
   <block id="a6e38b80693d553a1debbba70e8974ef" category="paragraph">BlueXP dispose désormais des autorisations dont il a besoin pour effectuer des actions en votre nom dans Google Cloud.</block>
-  <block id="1a97d500b0ebbf49d9d9119231576127" category="cell">Appels d'API vers Google Cloud et ONTAP, vers Cloud Data Sense, vers le service ransomware et envoi de messages AutoSupport à NetApp</block>
   <block id="6e1fe4f37983acdfa6e1690c77b55704" category="list-text">Sous *Authentication*, sélectionnez l'option d'authentification qui correspond à la façon dont vous configurez les autorisations Azure :</block>
   <block id="ca5c14dd1767138ec0ae60d1c4d7a128" category="list-text">Sélectionnez *compte utilisateur Azure* pour vous connecter à votre compte Microsoft, qui doit disposer des autorisations requises.</block>
   <block id="0a3420a284048b3146bfedfda39bc929" category="list-text">Sélectionnez *Active Directory service principal* pour entrer des informations sur le service principal Azure Active Directory qui accorde les autorisations requises :</block>
@@ -3248,7 +3167,6 @@
   <block id="827aaa681f80dbd83d41241979226f5a" category="paragraph">Ce paramètre est important car une identité gérée permet à la machine virtuelle Connector de s'identifier à Azure Active Directory sans fournir d'informations d'identification. Une fois que vous avez terminé, vous devez attribuer le rôle personnalisé que vous avez créé à<block ref="f91ce7faef49711445322691b4d6ac64" category="inline-link-rx"></block>.</block>
   <block id="f6f67a41d5743f1fd41a2fb8b54fd85b" category="paragraph"><block ref="7e9e5669a04928e1ffa0a9abd020b87e" category="inline-link-macro-rx"></block>.</block>
   <block id="d6b9b2693793c8b69bb62289f0f20b06" category="list-text">Identité gérée activée sur la machine virtuelle dans Azure, qui permet de fournir les autorisations Azure requises via un rôle personnalisé.</block>
-  <block id="51669cca9ffbfee269cac3b36b36d8dc" category="cell">Permet d'activer et d'utiliser Cloud Data Sense et Cloud Backup dans les régions du gouvernement.</block>
   <block id="037ab8e28d036e5a218a1692a62fd8b5" category="summary">Créez un connecteur dans AWS en choisissant une option d'installation, en configurant la mise en réseau, en préparant les autorisations, etc.</block>
   <block id="62114d729bedb37529f10ca13d76d0cc" category="doc">Démarrage rapide pour créer un connecteur dans AWS</block>
   <block id="7e09fb77e206a242f3f06e7cc61dd58a" category="paragraph">La façon standard de créer un connecteur dans AWS se fait directement à partir de BlueXP, mais vous pouvez également le créer à partir d'AWS Marketplace ou vous pouvez installer manuellement le logiciel sur un hôte Linux existant.</block>
@@ -3596,4 +3514,86 @@
   <block id="6de9f5682041f68bedd20c6f93964068" category="list-text"><block ref="6de9f5682041f68bedd20c6f93964068" category="inline-link-macro-rx"></block></block>
   <block id="554b8b833efd1a5f6c0982f18f3d0820" category="inline-link-macro">Points finaux contactés lors de l'installation manuelle du connecteur (mode standard)</block>
   <block id="5474364eb5af84ea9df4135b22224135" category="list-text"><block ref="5474364eb5af84ea9df4135b22224135" category="inline-link-macro-rx"></block></block>
+  <block id="6187e32203fd05e22e575166349f5b99" category="inline-link">Documents de sauvegarde et de restauration</block>
+  <block id="76d9a5dea95540afb28da7fa24268202" category="list-text"><block ref="76d9a5dea95540afb28da7fa24268202" category="inline-link-rx"></block></block>
+  <block id="e97ae785ddbd746339946844f92175e6" category="inline-link">Documents de classification</block>
+  <block id="6ace1bb8e25748132410e221b0e64ef6" category="list-text"><block ref="6ace1bb8e25748132410e221b0e64ef6" category="inline-link-rx"></block></block>
+  <block id="4a5a2cb37f05953f58468c7fed5af846" category="paragraph">Vous trouverez des informations détaillées sur vos compartiments Google Cloud Storage : l'emplacement, l'état d'accès, la classe de stockage, la capacité totale et utilisée, entre autres. Ces compartiments peuvent être utilisés comme destinations pour la sauvegarde et la restauration BlueXP, le Tiering BlueXP ou les opérations de copie et de synchronisation BlueXP.</block>
+  <block id="6beafc0ddd3d2d40e91fd1f10beca6f6" category="inline-link">Présentation de la copie et de la synchronisation BlueXP</block>
+  <block id="ee90cf76aa6a254e315cff26d976093f" category="paragraph">Pour plus de détails, voir<block ref="8af593d4462fc8676f0e240f30c73049" category="inline-link-rx"></block></block>
+  <block id="2c125f3d8875ad209c20028d0cda71b1" category="cell">Fournit un accès HTTPS à l'interface utilisateur locale depuis les navigateurs Web client et des connexions à partir de l'instance de classification BlueXP</block>
+  <block id="32b02dfce56d1f6d0b5202b932316b0f" category="cell">Permet d'activer et d'utiliser la classification BlueXP ainsi que la sauvegarde et la restauration BlueXP dans les régions du gouvernement.</block>
+  <block id="7863903e1b4b84391267ab5c4af6a68d" category="cell">Appels d'API vers Google Cloud et ONTAP, vers la classification BlueXP, vers la protection BlueXP contre les ransomwares, et envoi de messages AutoSupport à NetApp</block>
+  <block id="4cc849f381058f76f6b72a1c4279393d" category="cell">Classification BlueXP</block>
+  <block id="7af87632248c69a759bc2d380248af61" category="cell">Sonde à instance de classification BlueXP pendant le déploiement</block>
+  <block id="df329246877a4bd1e46b66f9dd6845df" category="paragraph">Vous pouvez afficher des informations détaillées sur vos comptes de stockage Azure, notamment l'emplacement, le groupe de ressources, la capacité totale et utilisée, etc. Ces comptes peuvent être utilisés comme destinations pour la sauvegarde et la restauration BlueXP, le Tiering BlueXP ou les opérations de copie et de synchronisation BlueXP.</block>
+  <block id="d9bef132ebdee987c9b28b5929df0f95" category="list-text">*Compliance Viewer* : peut uniquement afficher les informations de conformité pour la classification BlueXP et générer des rapports pour les espaces de travail auxquels ils ont accès.</block>
+  <block id="be062cdcabbb3055334e8f19b4bdf378" category="cell">Sauvegarde et restauration</block>
+  <block id="5c9335b28e6277ddbe0137f04e5e58a7" category="cell">Classement</block>
+  <block id="2049421a4e8e45e83cd7cf18ffc00a12" category="cell">Portefeuille digital</block>
+  <block id="8adfa152daa2970174717fd5e24151b2" category="cell">Vous pouvez utiliser le portefeuille numérique avec les options de licence prises en charge répertoriées ci-dessous pour le mode restreint.</block>
+  <block id="5ddc4e154584048fc0f47939b47c7b63" category="cell">Vous pouvez utiliser le portefeuille numérique avec les options de licence prises en charge répertoriées ci-dessous pour le mode privé.</block>
+  <block id="ea8570ee20c71345a250f37d7cf934d0" category="paragraph">Pour Cloud Volumes ONTAP BYOL, seules les licences basées sur les nœuds sont prises en charge. Les licences basées sur la capacité ne sont pas prises en charge. Aucune connexion Internet sortante n'est disponible. Vous devrez donc charger manuellement votre fichier de licence Cloud Volumes ONTAP dans le portefeuille digital BlueXP.</block>
+  <block id="f2a226835ff2494dede4925c14c2dd09" category="inline-link">Découvrez comment ajouter des licences au portefeuille digital BlueXP</block>
+  <block id="77b23cd504443833949223b951f576ce" category="paragraph"><block ref="77b23cd504443833949223b951f576ce" category="inline-link-rx"></block></block>
+  <block id="aa200c19289e5050e77edc0bccc67c2b" category="cell">Zone du produit</block>
+  <block id="4e74f624e4d0f3f558ca01aa93696658" category="cell">*Environnements de travail*</block>
+  <block id="1376d64de9953f470f0708fc6e330334" category="cell">*Services*</block>
+  <block id="5b942e8f71976a7f4120006aa3ac54cc" category="cell">OPS cloud</block>
+  <block id="e216b7a924341f796bca310d1d812baf" category="cell">Copie et synchronisation</block>
+  <block id="3d2e7e90fac12bab6a0d0736a593b5b4" category="cell">Conseiller digital</block>
+  <block id="ba695b3cf8b635f89946173735838948" category="cell">La mise en cache en périphérie</block>
+  <block id="7478f8f98c41fc2f5747e6f31892fe6f" category="cell">Protection par ransomware</block>
+  <block id="282baca6aef56652f503adce6afa9f07" category="cell">Résolution</block>
+  <block id="337c62c6b6eb7319bae58701105e889c" category="cell">Tiering</block>
+  <block id="86d0f8f9c44b93c040cb35a58ca2f2ff" category="cell">*Caractéristiques*</block>
+  <block id="46cbe9208ff114439409f262e659f93e" category="list-text">Des notifications sont alors envoyées par e-mail pour les fonctionnalités et services BlueXP suivants : connecteurs, copie et synchronisation BlueXP, sauvegarde et restauration BlueXP, portefeuille digital BlueXP et protection contre les ransomwares BlueXP. D'autres services seront ajoutés dans les prochaines versions.</block>
+  <block id="04237c890a793096d11b1355ee22f62a" category="cell">Pour activer la classification BlueXP.</block>
+  <block id="9ea66326ca6d5092554050a37582c56a" category="cell">Pour sélectionner vos propres clés gérées par le client dans l'assistant d'activation de la sauvegarde et de la restauration BlueXP au lieu d'utiliser les clés de chiffrement gérées par Google par défaut.</block>
+  <block id="7c68c9240932ba8b284de266f9564faa" category="paragraph">Ces autorisations sont requises pour la sauvegarde et la restauration BlueXP.</block>
+  <block id="056f501b387d3252fe17b9dbb4d42ad7" category="cell">(Facultatif) pour le Tiering des données et la sauvegarde et la restauration BlueXP</block>
+  <block id="03b89967f5c54805ba0d4a833ad07e0b" category="paragraph">Il effectue les requêtes API suivantes pour la sauvegarde et la restauration BlueXP :</block>
+  <block id="aee1dcbe4ed716a099022329741eafb0" category="paragraph">Lorsque vous utilisez la classification BlueXP, le connecteur fait les requêtes d'API suivantes.</block>
+  <block id="7608a34983244db8bcef26f95b5ca79a" category="paragraph">Lorsque vous utilisez la mise en cache BlueXP Edge, Connector effectue les requêtes API suivantes :</block>
+  <block id="92b5575604daffe3be8d9be7e9eea83d" category="paragraph">Connector effectue les requêtes d'API suivantes pour gérer les balises sur les ressources Azure lorsque vous utilisez la correction BlueXP :</block>
+  <block id="826e9938777ea2a0280d06c76218f7c7" category="paragraph">Lorsque vous configurez le Tiering BlueXP, Connector effectue les requêtes d'API suivantes.</block>
+  <block id="6bf8cf4546732effc9436b03e26fd3ab" category="paragraph">L'autorisation « Microsoft.Storage/storageAccounts/delete » n'est plus nécessaire pour la classification BlueXP.</block>
+  <block id="56e09b1406b08f4b77233f0e7ec35a49" category="paragraph">Cette autorisation est requise pour la sauvegarde et la restauration BlueXP et le Tiering BlueXP.</block>
+  <block id="82492651a82d98ca83599fcd9c536c5d" category="paragraph">Cette autorisation est requise pour la sauvegarde et la restauration BlueXP.</block>
+  <block id="7cd82008ab5d353c3e33f87f49f92961" category="paragraph">Aucun connecteur n'est nécessaire pour créer un environnement de travail, mais il est nécessaire de créer et de gérer des volumes, de répliquer des données et d'intégrer FSX pour ONTAP avec des services tels que la classification BlueXP et la copie et la synchronisation BlueXP.</block>
+  <block id="60404bf35ed1506b74cc9cfac99f0818" category="paragraph">Aucun connecteur n'est nécessaire pour configurer et gérer Azure NetApp Files, mais vous devez utiliser un connecteur pour analyser les données Azure NetApp Files à l'aide de la classification BlueXP.</block>
+  <block id="dd37176246e6abf3e559086afcadce82" category="paragraph">Dans presque tous les cas, vous pouvez ajouter une licence au portefeuille numérique sans connecteur.</block>
+  <block id="da48a166a29b8e248a3113d9bd6cba04" category="paragraph">La seule fois qu'un connecteur est nécessaire pour ajouter une licence au portefeuille numérique est pour les licences Cloud Volumes ONTAP _basées sur le nœud_. Dans ce cas, un connecteur est requis car les données sont extraites des licences installées sur les systèmes Cloud Volumes ONTAP.</block>
+  <block id="aa043b4c9a6fa32b0f3811520156579a" category="list-text">Vous avez un environnement multicloud (AWS et Azure, par exemple) et vous préférez avoir un connecteur dans AWS et un autre dans Azure. Chacun gère les systèmes Cloud Volumes ONTAP exécutés dans ces environnements.</block>
+  <block id="36eb10a8720e9fc3cc595882ff021ccf" category="inline-link">Analysez les données de volumes ONTAP sur site à l'aide de la classification BlueXP</block>
+  <block id="91a5418c9d864303136bc2d6b75e3f8d" category="list-text"><block ref="91a5418c9d864303136bc2d6b75e3f8d" category="inline-link-rx"></block></block>
+  <block id="04b86b3e706875b04f815d45eb8e76ee" category="inline-link">Sauvegardez les données de volumes ONTAP sur site dans StorageGRID à l'aide de la sauvegarde et de la restauration BlueXP</block>
+  <block id="b3546a00b1f480b6adbc2f6acf6e7301" category="list-text"><block ref="b3546a00b1f480b6adbc2f6acf6e7301" category="inline-link-rx"></block></block>
+  <block id="d282481c14e6e7d0691f4297fb3551e1" category="list-text">_Compliance Viewer_ : peut uniquement afficher les informations de conformité pour la classification BlueXP et générer des rapports pour les espaces de travail auxquels ils ont accès.</block>
+  <block id="20dcfd7d53957cc7f9ffca8bea6d9956" category="paragraph">Vous pouvez utiliser un connecteur avec plusieurs services BlueXP. Par exemple, si vous utilisez un connecteur pour gérer Cloud Volumes ONTAP, vous pouvez utiliser ce même connecteur avec un autre service tel que le Tiering BlueXP.</block>
+  <block id="d128bda2634e1051cc984231da065144" category="list-text">Le portefeuille digital BlueXP prend désormais en charge les notifications par e-mail.</block>
+  <block id="d2792d178cbdf6c41f2b8f2ae64424ed" category="list-text">Le connecteur est désormais pris en charge dans tout environnement cloud totalement isolé d'Internet. Vous pouvez ensuite utiliser la console BlueXP exécutée sur le connecteur pour déployer Cloud Volumes ONTAP au même emplacement et découvrir les clusters ONTAP sur site (si vous disposez d'une connexion entre votre environnement cloud et votre environnement sur site). Vous pouvez également utiliser BlueXP Backup and Recovery pour sauvegarder les volumes Cloud Volumes ONTAP dans les régions commerciales AWS et Azure. Aucun autre service BlueXP n'est pris en charge dans ce type de déploiement, à l'exception du portefeuille digital BlueXP.</block>
+  <block id="75327cdc175eca204abf0a4aa66413b3" category="paragraph">Pour commencer, installez manuellement le logiciel Connector, connectez-vous à la console BlueXP exécutée sur le connecteur, ajoutez votre licence BYOL au portefeuille digital BlueXP, puis déployez Cloud Volumes ONTAP.</block>
+  <block id="c35e844c4a277ceb06b238910d3b86e7" category="list-text">Vos abonnements PAYGO et vos contrats annuels pour BlueXP sont désormais disponibles. Vous pouvez les consulter et les gérer depuis le portefeuille digital.</block>
+  <block id="706c30f817a6d965f23bc2798759eb15" category="paragraph">Le rôle Compliance Viewer est destiné à l'accès à la classification BlueXP en lecture seule.</block>
+  <block id="838203d064fe980b5ae00097d667d9f4" category="cell">Afficher les résultats de l'analyse de classification BlueXP</block>
+  <block id="7f346b4ef7825b27ccadbbf10f2d2cd0" category="inline-link">Données persistantes Kubernetes</block>
+  <block id="bf51187e0e630c8bb2fbde7d3c4a5f69" category="list-text">Orchestrez et protégez<block ref="17466ff7cb59071f2d4e860ff4e2c4e1" category="inline-link-rx"></block></block>
+  <block id="f74f0f0050569783e8c306d738c4d91e" category="list-text"><block ref="f74f0f0050569783e8c306d738c4d91e" category="inline-link-rx"></block></block>
+  <block id="a062a07503c91ac212c0a374cd04a732" category="list-text"><block ref="a062a07503c91ac212c0a374cd04a732" category="inline-link-rx"></block></block>
+  <block id="81bcb3e3c1a8f797192f8c3c33e62033" category="list-text"><block ref="81bcb3e3c1a8f797192f8c3c33e62033" category="inline-link-rx"></block></block>
+  <block id="118f003038811dac1d88399f8ad54969" category="list-text"><block ref="118f003038811dac1d88399f8ad54969" category="inline-link-rx"></block></block>
+  <block id="3e347fe716ab17eefd02acef8c0347bf" category="list-text"><block ref="3e347fe716ab17eefd02acef8c0347bf" category="inline-link-rx"></block></block>
+  <block id="86d4d1274a29106954740fc239a0af79" category="list-text"><block ref="86d4d1274a29106954740fc239a0af79" category="inline-link-rx"></block></block>
+  <block id="ecbf594bb3a0b1f21d5ca3e417aec924" category="list-text"><block ref="ecbf594bb3a0b1f21d5ca3e417aec924" category="inline-link-rx"></block></block>
+  <block id="7f275ad0568e7861b2f443f918043809" category="paragraph">Un comptable public indépendant et un vérificateur des services ont examiné BlueXP et confirmé qu'il a obtenu des rapports SOC 2 de type 2 en fonction des critères des services de fiducie applicables.</block>
+  <block id="07ef1eb956a87b51e019643b6f5d73a5" category="list-text">Découverte des compartiments Amazon S3</block>
+  <block id="06be37baefaab50eae9f413a227fd74c" category="paragraph">Connector effectue les requêtes API suivantes pour gérer Amazon FSX pour ONTAP :</block>
+  <block id="c3e5a959900f5ea4a9038689fc120adf" category="paragraph">Le connecteur effectue les requêtes API suivantes pour déployer l'instance de restauration pour la sauvegarde et la restauration BlueXP :</block>
+  <block id="39d07ebcd5d124c58373130bccc9d9ed" category="paragraph">Le connecteur fait les requêtes d'API suivantes pour déployer l'instance de classification BlueXP :</block>
+  <block id="bd4943e8a78dece7069c2be53901fcd6" category="paragraph">Le connecteur effectue les requêtes d'API suivantes pour analyser les compartiments S3 lorsque vous utilisez la classification BlueXP :</block>
+  <block id="ce8d47df551a9c3116f52b1c75165f0c" category="paragraph">Le connecteur fait les requêtes d'API suivantes pour déployer les instances de mise en cache BlueXP Edge pendant le déploiement :</block>
+  <block id="c8a11657cad4105099bd9eb0d4bdbaec" category="paragraph">Connector effectue les requêtes d'API suivantes pour gérer les balises sur les ressources AWS lorsque vous utilisez la correction BlueXP :</block>
+  <block id="bf9c7c9727a11f040da47cdd589f7ea6" category="paragraph">L'autorisation suivante est désormais requise pour le Tiering BlueXP :</block>
+  <block id="54301079e01fc865e928c6fe22deeeef" category="paragraph">Vous pouvez afficher des informations détaillées sur vos compartiments S3, notamment la région, la règle d'accès, le compte, la capacité totale et utilisée, et plus encore. Ces compartiments peuvent être utilisés comme destinations pour la sauvegarde et la restauration BlueXP, le Tiering BlueXP ou les opérations de copie et de synchronisation BlueXP. En outre, vous pouvez utiliser la classification BlueXP pour analyser ces compartiments.</block>
 </blocks>

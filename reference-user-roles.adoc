@@ -16,7 +16,7 @@ summary: 'Les rôles Administrateur de compte, Administrateur d"espace de travai
 [role="lead"]
 Les rôles Administrateur de compte, Administrateur d'espace de travail, Visionneuse de conformité et Administrateur SnapCenter fournissent des autorisations spécifiques aux utilisateurs.
 
-Le rôle Compliance Viewer permet l'accès en lecture seule à Cloud Data SENSE.
+Le rôle Compliance Viewer est destiné à l'accès à la classification BlueXP en lecture seule.
 
 [cols="24,19,19,19,19"]
 |===
@@ -38,7 +38,7 @@ Le rôle Compliance Viewer permet l'accès en lecture seule à Cloud Data SENSE.
 | Basculer entre les espaces de travail | Oui. | Oui. | Oui. | Non 
 
 
-| Afficher les résultats de l'acquisition de détection de données | Oui. | Oui. | Oui. | Non 
+| Afficher les résultats de l'analyse de classification BlueXP | Oui. | Oui. | Oui. | Non 
 
 
 | Supprimer les environnements de travail | Oui. | Non | Non | Non 

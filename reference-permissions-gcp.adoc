@@ -231,7 +231,7 @@ includedPermissions:
 | - compute.networks.updatePolicy | Pour appliquer des règles de pare-feu sur les VPC et les sous-réseaux d'une paire HA. 
 
 
-| - compute.subnetworks.use - compute.subnetworks.useExternalIp - compute.instances.addAccessConfig | Pour activer le sens des données du cloud. 
+| - compute.subnetworks.use - compute.subnetworks.useExternalIp - compute.instances.addAccessConfig | Pour activer la classification BlueXP. 
 
 
 | - container.cluster.get - container.cluster.list | Pour détecter les clusters Kubernetes s'exécutant dans Google Kubernetes Engine. 
@@ -243,7 +243,7 @@ includedPermissions:
 | - Monitoring.timeseries.list - Storage.seaux.getIamPolicy | Pour découvrir des compartiments Google Cloud Storage. 
 
 
-| - Cloudkms.cryptoKeys.get - cloudkms.cryptomonnaies.getIamPolicy - cloudkms.cryptomonnaies.list - cloudkms.cryptoKeys.setIamPolicy - cloudkms.keyrings.get - cloudkms.keyrings.getIamPolicy - cloudkms.keyrings.list - cloudkms.keyRings.setIamPolicy | Pour sélectionner vos propres clés gérées par le client dans l'assistant d'activation de Cloud Backup au lieu d'utiliser les clés de chiffrement gérées par Google par défaut. 
+| - Cloudkms.cryptoKeys.get - cloudkms.cryptomonnaies.getIamPolicy - cloudkms.cryptomonnaies.list - cloudkms.cryptoKeys.setIamPolicy - cloudkms.keyrings.get - cloudkms.keyrings.getIamPolicy - cloudkms.keyrings.list - cloudkms.keyRings.setIamPolicy | Pour sélectionner vos propres clés gérées par le client dans l'assistant d'activation de la sauvegarde et de la restauration BlueXP au lieu d'utiliser les clés de chiffrement gérées par Google par défaut. 
 |===
 
 
@@ -275,4 +275,4 @@ Les autorisations suivantes ont été ajoutées à la stratégie :
 * cloudkms.keyRings.setIamPolicy
 
 
-Ces autorisations sont requises pour Cloud Backup.
+Ces autorisations sont requises pour la sauvegarde et la restauration BlueXP.

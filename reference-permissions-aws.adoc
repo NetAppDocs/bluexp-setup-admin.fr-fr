@@ -47,19 +47,19 @@ Pour les régions standard, les autorisations sont réparties entre deux règles
 
 La première politique fournit des autorisations pour les services suivants :
 
-* La sauvegarde dans le cloud
-* Sens des données cloud
-* Tiering dans le cloud
+* Découverte des compartiments Amazon S3
+* Sauvegarde et restauration
+* Classement
 * Cloud Volumes ONTAP
 * FSX pour ONTAP
-* Découverte des compartiments S3
+* Tiering
 
 
 La deuxième politique fournit des autorisations pour les services suivants :
 
-* Balisage AppTemplate
-* Cache global de fichiers
+* La mise en cache en périphérie
 * Kubernetes
+* Résolution
 
 
 [role="tabbed-block"]
@@ -703,25 +703,53 @@ Les sections suivantes décrivent comment les autorisations sont utilisées pour
 
 
 
-=== Balises AppTemplate
+=== Amazon FSX pour ONTAP
 
-Lorsque vous utilisez le service de balisage AppTemplate, le connecteur effectue les requêtes API suivantes pour gérer les balises sur les ressources AWS :
+Connector effectue les requêtes API suivantes pour gérer Amazon FSX pour ONTAP :
 
+* ec2:descriptifs
+* ec2:DécriesInstanceStatus
+* ec2:DescribeInstanceAttribute
+* ec2:DescribeRoutetables
+* ec2:descriptifs
 * ec2:CreateTags
-* ec2:DeleteTags
+* ec2:Describvolumes
+* ec2:descriptifs des groupes de sécurité
+* ec2:DescribeNetworkinterfaces
+* ec2:DescribeSubnets
+* ec2 : descriptif
+* ec2:DescribeDhcpOptions
+* ec2:snapshots descriptifs
+* ec2:Décrivez des Keypaires
+* ec2:régions descriptives
 * ec2:Etiquettes descriptives
-* Tag:getResources
-* Tag:getTagKeys
-* Tag:getTagValues
-* Tag:TagResources
-* Tag:UntagResources
+* ec2:DécriesIamInstanceProfileassociations
+* ec2:DescribeReserveInstanciesOfferings
+* ec2:DescribeVpcEndpoints
+* ec2 : descriptif
+* ec2:Describvolumesmodificateurs
+* ec2:descriptifs des groupes
+* Km:liste*
+* Km:décrire*
+* Kms:CreateGrant
+* Kms:Listalas
+* fsx:décrire*
+* fsx:liste*
 
 
 
 
-=== La sauvegarde dans le cloud
+=== Découverte des compartiments Amazon S3
 
-Il crée les demandes d'API suivantes pour déployer l'instance de restauration pour Cloud Backup :
+Il effectue la demande d'API suivante pour détecter les compartiments Amazon S3 :
+
+s3:GetEncryptionConfiguration
+
+
+
+=== Sauvegarde et restauration
+
+Le connecteur effectue les requêtes API suivantes pour déployer l'instance de restauration pour la sauvegarde et la restauration BlueXP :
 
 * ec2:déclarations de début
 * ec2:StopInances
@@ -825,9 +853,9 @@ Si vous utilisez un autre compte AWS pour vos sauvegardes Cloud Volumes ONTAP qu
 
 
 
-=== Sens des données cloud
+=== Classement
 
-Il crée l'instance Cloud Data Sense suivante :
+Le connecteur fait les requêtes d'API suivantes pour déployer l'instance de classification BlueXP :
 
 * ec2:descriptifs
 * ec2:DécriesInstanceStatus
@@ -855,7 +883,7 @@ Il crée l'instance Cloud Data Sense suivante :
 * ec2:DécriesIamInstanceProfileassociations
 
 
-Lors de l'utilisation de Cloud Data Sense, il effectue les demandes d'API suivantes pour analyser les compartiments S3 :
+Le connecteur effectue les requêtes d'API suivantes pour analyser les compartiments S3 lorsque vous utilisez la classification BlueXP :
 
 * iam:AddRoleToInstanceProfile
 * ec2:AssociateIamInstanceProfile
@@ -875,31 +903,6 @@ Lors de l'utilisation de Cloud Data Sense, il effectue les demandes d'API suivan
 * sts : AssumeRole
 
 
-
-
-=== Tiering dans le cloud
-
-Ce connecteur effectue les demandes d'API suivantes pour transférer les données vers Amazon S3 lorsque vous utilisez NetApp Cloud Tiering.
-
-[cols="3*"]
-|===
-| Action | Utilisé pour la configuration ? | Utilisé pour les opérations quotidiennes ? 
-
-
-| s3:CreateBucket | Oui. | Non 
-
-
-| s3:PutLifecyclConfiguration | Oui. | Non 
-
-
-| s3:GetLifecyclConfiguration | Oui. | Oui. 
-
-
-| ec2:régions descriptives | Oui. | Non 
-
-
-| ec2:DescribeVpcEndpoints | Oui. | Non 
-|===
 
 
 === Cloud Volumes ONTAP
@@ -1173,49 +1176,13 @@ Il effectue les requêtes d'API suivantes pour déployer et gérer Cloud Volumes
 |===
 
 
-=== Cache global de fichiers
+=== La mise en cache en périphérie
 
-Le connecteur effectue les demandes d'API suivantes pour déployer des instances de cache de fichier global pendant le déploiement :
+Le connecteur fait les requêtes d'API suivantes pour déployer les instances de mise en cache BlueXP Edge pendant le déploiement :
 
 * Cloudformation:DescribeSacks
 * cloudwatch:GetMetricStatistics
 * Cloudformation:ListSacks
-
-
-
-
-=== FSX pour ONTAP
-
-Le connecteur effectue les requêtes API suivantes pour gérer FSX pour ONTAP :
-
-* ec2:descriptifs
-* ec2:DécriesInstanceStatus
-* ec2:DescribeInstanceAttribute
-* ec2:DescribeRoutetables
-* ec2:descriptifs
-* ec2:CreateTags
-* ec2:Describvolumes
-* ec2:descriptifs des groupes de sécurité
-* ec2:DescribeNetworkinterfaces
-* ec2:DescribeSubnets
-* ec2 : descriptif
-* ec2:DescribeDhcpOptions
-* ec2:snapshots descriptifs
-* ec2:Décrivez des Keypaires
-* ec2:régions descriptives
-* ec2:Etiquettes descriptives
-* ec2:DécriesIamInstanceProfileassociations
-* ec2:DescribeReserveInstanciesOfferings
-* ec2:DescribeVpcEndpoints
-* ec2 : descriptif
-* ec2:Describvolumesmodificateurs
-* ec2:descriptifs des groupes
-* Km:liste*
-* Km:décrire*
-* Kms:CreateGrant
-* Kms:Listalas
-* fsx:décrire*
-* fsx:liste*
 
 
 
@@ -1232,11 +1199,19 @@ Le connecteur effectue les requêtes API suivantes pour détecter et gérer les 
 
 
 
-=== Découverte des compartiments S3
+=== Résolution
 
-Il effectue la demande d'API suivante pour détecter les compartiments Amazon S3 :
+Connector effectue les requêtes d'API suivantes pour gérer les balises sur les ressources AWS lorsque vous utilisez la correction BlueXP :
 
-s3:GetEncryptionConfiguration
+* ec2:CreateTags
+* ec2:DeleteTags
+* ec2:Etiquettes descriptives
+* Tag:getResources
+* Tag:getTagKeys
+* Tag:getTagValues
+* Tag:TagResources
+* Tag:UntagResources
+
 
 
 
@@ -1248,6 +1223,6 @@ Lorsque des autorisations sont ajoutées et supprimées, nous les noterons dans 
 
 === 14 février 2023
 
-L'autorisation suivante est désormais requise pour Cloud Tiering :
+L'autorisation suivante est désormais requise pour le Tiering BlueXP :
 
 ec2:DescribeVpcEndpoints
