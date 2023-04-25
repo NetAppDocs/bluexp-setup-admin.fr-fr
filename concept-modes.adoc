@@ -4,7 +4,7 @@ permalink: concept-modes.html
 keywords: dark site, internet, on prem, no internet, supported deployments, govcloud, government access, environments, supported environments, deployment modes, modes, private mode, restricted mode, il6, sc2s, c2s, dark site, sovereign region, saas, government region 
 summary: 'BlueXP propose plusieurs modes de déploiement qui vous permettent d"utiliser BlueXP en fonction de vos exigences métier et de sécurité. Le mode standard exploite la couche SaaS BlueXP pour offrir des fonctionnalités complètes, tandis que le mode restreint et le mode privé sont disponibles pour les entreprises ayant des restrictions de connectivité.' 
 ---
-= Modes de déploiement BlueXP
+= Découvrez les modes de déploiement BlueXP
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
