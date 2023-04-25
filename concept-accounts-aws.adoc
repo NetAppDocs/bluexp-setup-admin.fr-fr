@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: concept-accounts-aws.html 
 keywords: cloud provider accounts, aws, aws accounts, keys, multiple accounts, permissions, aws permissions, policy, policies, credentials 
-summary: 'Découvrez comment BlueXP utilise les identifiants et les autorisations AWS pour gérer les identifiants d"un ou plusieurs comptes AWS. Par exemple, vous pourriez vouloir en savoir plus sur l"ajout d"identifiants AWS supplémentaires à BlueXP.' 
+summary: 'Découvrez comment BlueXP utilise les identifiants et les autorisations AWS pour effectuer des actions en votre nom. Ces informations peuvent vous être utiles lorsque vous gérez les identifiants d"un ou plusieurs comptes AWS dans BlueXP. Par exemple, vous pouvez savoir quand ajouter des informations d"identification AWS supplémentaires à BlueXP.' 
 ---
 = Identifiants et autorisations AWS
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: 'Découvrez comment BlueXP utilise les identifiants et les autorisation
 
 
 [role="lead"]
-Découvrez comment BlueXP utilise les identifiants et les autorisations AWS pour gérer les identifiants d'un ou plusieurs comptes AWS. Par exemple, vous pourriez vouloir en savoir plus sur l'ajout d'identifiants AWS supplémentaires à BlueXP.
+Découvrez comment BlueXP utilise les identifiants et les autorisations AWS pour effectuer des actions en votre nom. Ces informations peuvent vous être utiles lorsque vous gérez les identifiants d'un ou plusieurs comptes AWS dans BlueXP. Par exemple, vous pouvez savoir quand ajouter des informations d'identification AWS supplémentaires à BlueXP.
 
 
 
