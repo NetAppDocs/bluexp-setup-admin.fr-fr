@@ -53,7 +53,10 @@ Le formulaire est détenu et hébergé par Google. Vos identifiants ne sont pas 
 ** *Détails* : saisissez un nom pour l'instance de machine virtuelle, spécifiez des balises, sélectionnez un projet, puis sélectionnez le compte de service qui dispose des autorisations requises (reportez-vous à la section ci-dessus pour plus de détails).
 ** *Location* : spécifiez une région, une zone, un VPC et un sous-réseau pour l'instance.
 ** *Réseau* : permet d'activer ou non une adresse IP publique et de spécifier éventuellement une configuration proxy.
-** *Politique de pare-feu* : Choisissez si vous souhaitez créer une nouvelle politique de pare-feu ou si vous souhaitez sélectionner une politique de pare-feu existante qui autorise l'accès HTTP, HTTPS et SSH entrant.
+** *Stratégie de pare-feu* : choisissez de créer une nouvelle politique de pare-feu ou de sélectionner une politique de pare-feu existante qui autorise les règles entrantes et sortantes requises.
++
+link:reference-ports-gcp.html["Règles de pare-feu dans Google Cloud"]
+
 ** *Review* : consultez vos sélections pour vérifier que votre configuration est correcte.
 
 

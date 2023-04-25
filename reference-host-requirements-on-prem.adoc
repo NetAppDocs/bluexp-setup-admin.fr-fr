@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: reference-host-requirements-on-prem.html 
 keywords: cpu requirements, ram requirements, on prem requirements, on prem host requirements, connector host requirements 
-summary: 'Le logiciel du connecteur doit être exécuté sur un hôte qui répond à des exigences spécifiques du système d"exploitation, de la RAM, des ports, etc.' 
+summary: 'Le logiciel du connecteur doit être exécuté sur un hôte qui répond à des exigences spécifiques du système d"exploitation, de la RAM, des ports, etc. Assurez-vous que votre hôte répond à ces exigences avant d"installer le connecteur.' 
 ---
 = Passez en revue la configuration requise pour les hôtes de connecteur pour les installations sur site
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: 'Le logiciel du connecteur doit être exécuté sur un hôte qui répon
 
 
 [role="lead"]
-Le logiciel du connecteur doit être exécuté sur un hôte qui répond à des exigences spécifiques du système d'exploitation, de la RAM, des ports, etc.
+Le logiciel du connecteur doit être exécuté sur un hôte qui répond à des exigences spécifiques du système d'exploitation, de la RAM, des ports, etc. Assurez-vous que votre hôte répond à ces exigences avant d'installer le connecteur.
 
 Hôte dédié:: Le connecteur n'est pas pris en charge sur un hôte partagé avec d'autres applications. L'hôte doit être un hôte dédié.
 Systèmes d'exploitation pris en charge::

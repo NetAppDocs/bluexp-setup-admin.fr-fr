@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-set-up-networking-google.html 
 keywords: networking, on prem networking, endpoints, urls, ports, ip address, proxy, proxy server, connections 
-summary: Configurez votre réseau de manière à ce que Connector puisse gérer les ressources et les processus dans votre environnement de cloud hybride. 
+summary: 'Configurez votre réseau de manière à ce que Connector puisse gérer les ressources et les processus dans votre environnement de cloud hybride. Par exemple, vous devez vous assurer que les connexions sont disponibles pour les réseaux cibles et que l"accès Internet sortant est disponible.' 
 ---
 = Configuration du réseau Google Cloud
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: Configurez votre réseau de manière à ce que Connector puisse gérer 
 
 
 [role="lead"]
-Configurez votre réseau de manière à ce que Connector puisse gérer les ressources et les processus dans votre environnement de cloud hybride.
+Configurez votre réseau de manière à ce que Connector puisse gérer les ressources et les processus dans votre environnement de cloud hybride. Par exemple, vous devez vous assurer que les connexions sont disponibles pour les réseaux cibles et que l'accès Internet sortant est disponible.
 
 
 

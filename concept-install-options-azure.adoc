@@ -14,7 +14,7 @@ summary: 'Il existe plusieurs façons de créer un connecteur dans Azure. La mé
 
 
 [role="lead"]
-Il existe plusieurs façons de créer un connecteur dans Azure. La méthode la plus courante est d'accéder directement à BlueXP.
+Il existe plusieurs façons de créer un connecteur dans Azure. La méthode la plus courante est d'accéder directement à BlueXP. L'option d'installation que vous choisissez détermine la manière dont vous préparez le déploiement.
 
 Les options d'installation suivantes sont disponibles :
 

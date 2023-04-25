@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-set-up-permissions-aws.html 
 keywords: aws permissions, set up permissions, set up aws permissions, permissions, iam role, iam policy, json, policy, role, credentials 
-summary: 'Configurez les autorisations AWS pour que vous puissiez utiliser BlueXP pour gérer vos données et votre infrastructure de stockage dans AWS. La manière dont vous configurez les autorisations dépend de l"option d"installation que vous prévoyez d"utiliser.' 
+summary: 'Configurez les autorisations dans AWS pour que vous puissiez déployer le connecteur avec les autorisations dont les équipes IT ont besoin pour gérer vos données et votre infrastructure de stockage. La manière dont vous configurez et fournissez les autorisations dépend de l"option d"installation que vous prévoyez d"utiliser.' 
 ---
 = Configurez les autorisations AWS
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: 'Configurez les autorisations AWS pour que vous puissiez utiliser BlueX
 
 
 [role="lead"]
-Configurez les autorisations AWS pour que vous puissiez utiliser BlueXP pour gérer vos données et votre infrastructure de stockage dans AWS. La manière dont vous configurez les autorisations dépend de l'option d'installation que vous prévoyez d'utiliser.
+Configurez les autorisations dans AWS pour que vous puissiez déployer le connecteur avec les autorisations dont les équipes IT ont besoin pour gérer vos données et votre infrastructure de stockage. La manière dont vous configurez et fournissez les autorisations dépend de l'option d'installation que vous prévoyez d'utiliser.
 
 Vous pouvez choisir parmi les options d'installation suivantes :
 

@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: reference-ports-on-prem.html 
 keywords: networking, network, requirements, ports, on-prem, linux, http, https 
-summary: 'Le connecteur utilise les ports entrants suivants lorsqu"il est installé manuellement sur un hôte Linux sur site.' 
+summary: 'Le connecteur utilise des ports entrants lorsqu"il est installé manuellement sur un hôte Linux sur site. Vous devrez peut-être vous référer à ces ports à des fins de planification.' 
 ---
 = Ports pour le connecteur sur site
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: 'Le connecteur utilise les ports entrants suivants lorsqu"il est instal
 
 
 [role="lead"]
-Le connecteur utilise les ports _Inbound_ suivants lorsqu'il est installé manuellement sur un hôte Linux sur site.
+Le connecteur utilise des ports _inbound_ lorsqu'il est installé manuellement sur un hôte Linux sur site. Vous devrez peut-être vous référer à ces ports à des fins de planification.
 
 Ces règles entrantes s'appliquent à tous les modèles de déploiement BlueXP.
 

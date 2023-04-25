@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-install-restricted-mode.html 
 keywords: government region, gov, govcloud, connector, sovereign cloud 
-summary: 'Pour utiliser BlueXP en mode restreint, vous devez déployer un connecteur, puis configurer BlueXP en accédant à l"interface utilisateur qui s"exécute sur le connecteur.' 
+summary: 'Déployez le connecteur en mode restreint pour utiliser BlueXP avec une connectivité sortante limitée vers la couche SaaS BlueXP. Pour commencer, installez le connecteur, configurez BlueXP en accédant à l"interface utilisateur exécutée sur le connecteur, puis fournissez les autorisations cloud que vous avez précédemment configurées.' 
 ---
 = Déployez le connecteur en mode restreint
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: 'Pour utiliser BlueXP en mode restreint, vous devez déployer un connec
 
 
 [role="lead"]
-Pour utiliser BlueXP en mode restreint, vous devez installer le connecteur, configurer BlueXP en accédant à l'interface utilisateur qui s'exécute sur le connecteur, puis fournir des autorisations cloud.
+Déployez le connecteur en mode restreint pour utiliser BlueXP avec une connectivité sortante limitée vers la couche SaaS BlueXP. Pour commencer, installez le connecteur, configurez BlueXP en accédant à l'interface utilisateur exécutée sur le connecteur, puis fournissez les autorisations cloud que vous avez précédemment configurées.
 
 
 

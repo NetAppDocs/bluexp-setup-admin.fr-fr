@@ -14,7 +14,7 @@ summary: Configurez les autorisations Google Cloud pour utiliser BlueXP afin de 
 
 
 [role="lead"]
-Configurez les autorisations Google Cloud pour utiliser BlueXP afin de gérer vos données et votre infrastructure de stockage dans Google Cloud.
+Configurez les autorisations dans Google Cloud afin que vous puissiez déployer le connecteur avec les autorisations dont le service IT a besoin pour gérer vos données et votre infrastructure de stockage.
 
 Vous devez configurer des autorisations Google Cloud comme suit :
 

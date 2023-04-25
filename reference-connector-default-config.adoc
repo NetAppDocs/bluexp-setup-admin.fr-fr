@@ -14,7 +14,7 @@ summary: 'Vous voudrez peut-être en savoir plus sur le connecteur avant de le d
 
 
 [role="lead"]
-Vous voudrez peut-être en savoir plus sur le connecteur avant de le déployer ou pour résoudre d'autres problèmes.
+Vous pouvez en savoir plus sur la configuration du connecteur avant de le déployer ou si vous devez résoudre des problèmes.
 
 
 

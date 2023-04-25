@@ -65,7 +65,10 @@ TIP: Si vous choisissez *supposons rôle*, vous pouvez créer le premier ensembl
 +
 Assurez-vous que vous disposez de la paire de clés appropriée à utiliser avec le connecteur. Sans paire de clés, vous ne pourrez pas accéder à la machine virtuelle Connector.
 
-** *Groupe de sécurité* : choisissez de créer ou non un nouveau groupe de sécurité ou de sélectionner un groupe de sécurité existant qui autorise l'accès HTTP, HTTPS et SSH entrant.
+** *Groupe de sécurité* : choisissez de créer un nouveau groupe de sécurité ou de sélectionner un groupe de sécurité existant qui autorise les règles entrantes et sortantes requises.
++
+link:reference-ports-aws.html["Afficher les règles des groupes de sécurité pour AWS"].
+
 ** *Review* : consultez vos sélections pour vérifier que votre configuration est correcte.
 
 
@@ -84,11 +87,11 @@ Une fois le processus terminé, le connecteur est disponible pour être utilisé
 .Ce dont vous avez besoin
 * VPC et sous-réseau qui répondent aux exigences réseau.
 +
-link:task-set-up-networking-aws.html["En savoir plus sur les exigences de mise en réseau"]
+link:task-set-up-networking-aws.html["En savoir plus sur les exigences de mise en réseau"].
 
 * Un rôle IAM avec une stratégie jointe qui inclut les autorisations requises pour le connecteur.
 +
-link:task-set-up-permissions-aws.html["Découvrez comment configurer des autorisations AWS"]
+link:task-set-up-permissions-aws.html["Découvrez comment configurer des autorisations AWS"].
 
 * Autorisations de vous abonner à AWS Marketplace et de vous désabonner pour votre utilisateur IAM.
 * Une paire de clés pour l'instance EC2.
@@ -119,6 +122,12 @@ link:reference-host-requirements-aws.html["Vérifiez les conditions requises pou
 *** Choisissez le VPC et le sous-réseau souhaités.
 *** Spécifiez si l'instance doit avoir une adresse IP publique.
 *** Spécifiez les paramètres de pare-feu qui activent les méthodes de connexion requises pour l'instance de connecteur : SSH, HTTP et HTTPS.
++
+Quelques règles supplémentaires sont requises pour des configurations spécifiques.
+
++
+link:reference-ports-aws.html["Afficher les règles des groupes de sécurité pour AWS"].
+
 
 
 ** *Configurer le stockage* : conservez les options de stockage par défaut.

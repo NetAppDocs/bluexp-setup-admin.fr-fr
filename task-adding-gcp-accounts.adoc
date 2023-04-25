@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-adding-gcp-accounts.html 
 keywords: permissions, gcp, marketplace, gcp subscription, subscription, gcp marketplace, subscribe, data tiering, tiering, setup, requirements, account for data tiering, account for tiering, interoperable, interoperability, interoperable storage access keys, access keys 
-summary: 'Vous pouvez gérer les identifiants Google Cloud associés à l"instance de machine virtuelle Connector.' 
+summary: 'Vous pouvez gérer les informations d"identification Google Cloud associées à l"instance de VM Connector en associant un abonnement Marketplace et en dépannant le processus d"abonnement. Ces deux tâches vous permettent d"utiliser votre abonnement Marketplace pour payer les services BlueXP.' 
 ---
 = Gérez les identifiants Google Cloud et les abonnements pour BlueXP
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: 'Vous pouvez gérer les identifiants Google Cloud associés à l"instan
 
 
 [role="lead"]
-Vous pouvez gérer les identifiants Google Cloud associés à l'instance de machine virtuelle Connector.
+Vous pouvez gérer les informations d'identification Google Cloud associées à l'instance de VM Connector en associant un abonnement Marketplace et en dépannant le processus d'abonnement. Ces deux tâches vous permettent d'utiliser votre abonnement Marketplace pour payer les services BlueXP.
 
 
 

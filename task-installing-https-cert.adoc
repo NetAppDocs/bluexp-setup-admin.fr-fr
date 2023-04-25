@@ -14,7 +14,7 @@ summary: 'Par défaut, BlueXP utilise un certificat auto-signé pour l"accès HT
 
 
 [role="lead"]
-Par défaut, BlueXP utilise un certificat auto-signé pour l'accès HTTPS à la console Web. Vous pouvez installer un certificat signé par une autorité de certification (CA), qui offre une meilleure protection de la sécurité qu'un certificat auto-signé.
+Par défaut, BlueXP utilise un certificat auto-signé pour l'accès HTTPS à la console Web. Si votre entreprise l'exige, vous pouvez installer un certificat signé par une autorité de certification, ce qui offre une meilleure protection de sécurité qu'un certificat auto-signé.
 
 
 

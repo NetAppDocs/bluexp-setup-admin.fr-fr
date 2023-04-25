@@ -76,7 +76,10 @@ link:task-set-up-permissions-azure.html["Apprenez à obtenir ces valeurs pour un
 Notez que vous pouvez choisir les abonnements associés à ce rôle. Chaque abonnement que vous choisissez fournit au connecteur les autorisations de déploiement de Cloud Volumes ONTAP dans ces abonnements.
 
 ** *Réseau* : choisissez un réseau VNet et un sous-réseau, si vous souhaitez activer une adresse IP publique, et spécifiez éventuellement une configuration proxy.
-** *Groupe de sécurité* : choisissez de créer ou non un nouveau groupe de sécurité ou de sélectionner un groupe de sécurité existant qui autorise l'accès HTTP, HTTPS et SSH entrant.
+** *Groupe de sécurité* : choisissez de créer un nouveau groupe de sécurité ou de sélectionner un groupe de sécurité existant qui autorise les règles entrantes et sortantes requises.
++
+link:reference-ports-azure.html["Afficher les règles des groupes de sécurité pour Azure"].
+
 ** *Review* : consultez vos sélections pour vérifier que votre configuration est correcte.
 
 
@@ -108,9 +111,9 @@ Noter les éléments suivants lors de la configuration de la machine virtuelle :
 +
 link:reference-host-requirements-azure["Vérifier les exigences relatives aux machines virtuelles"].
 
-** Pour le groupe de sécurité réseau, le connecteur nécessite des connexions entrantes via SSH, HTTP et HTTPS.
+** Pour le groupe de sécurité réseau, le connecteur nécessite des connexions entrantes via SSH, HTTP et HTTPS. Quelques règles supplémentaires sont requises pour des configurations spécifiques.
 +
-link:reference-ports-azure.html["En savoir plus sur les règles de groupe de sécurité pour le connecteur"].
+link:reference-ports-azure.html["Afficher les règles des groupes de sécurité pour Azure"].
 
 ** Sous *Management*, activez *identité gérée attribuée par le système* pour la machine virtuelle du connecteur en sélectionnant *on*.
 +

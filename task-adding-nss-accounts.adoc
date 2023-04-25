@@ -14,7 +14,7 @@ summary: 'Fournissez les identifiants de vos comptes sur le site du support NetA
 
 
 [role="lead"]
-Fournissez les identifiants de vos comptes sur le site du support NetApp (NSS) pour vous inscrire au support, activer des workflows clés pour Cloud Volumes ONTAP et bien plus encore. Ces informations d'identification NSS sont associées à l'ensemble du compte BlueXP.
+Fournissez les informations d'identification nécessaires à vos comptes sur le site de support NetApp (NSS) pour s'inscrire au support, activer les workflows clés pour Cloud Volumes ONTAP et bien plus encore. Ces informations d'identification NSS sont associées à l'ensemble du compte BlueXP.
 
 
 NOTE: BlueXP prend également en charge l'association d'un compte NSS par utilisateur BlueXP. link:task-manage-user-credentials.html["Découvrez comment gérer les identifiants de niveau utilisateur"].

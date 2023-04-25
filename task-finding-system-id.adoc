@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-finding-system-id.html 
 keywords: system id, id, BlueXP system id, connector system id 
-summary: 'Pour vous aider à vous lancer, votre représentant NetApp peut vous demander l"ID système d"un connecteur. L"ID est généralement utilisé à des fins de licence et de dépannage.' 
+summary: 'Pour vous aider à démarrer, votre conseiller NetApp peut vous demander l"identifiant système de votre connecteur. L"ID est généralement utilisé à des fins de licence et de dépannage.' 
 ---
 = Recherchez l'ID système d'un connecteur
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: 'Pour vous aider à vous lancer, votre représentant NetApp peut vous d
 
 
 [role="lead"]
-Pour vous aider à vous lancer, votre représentant NetApp peut vous demander l'ID système d'un connecteur. L'ID est généralement utilisé à des fins de licence et de dépannage.
+Pour vous aider à démarrer, votre conseiller NetApp peut vous demander l'identifiant système de votre connecteur. L'ID est généralement utilisé à des fins de licence et de dépannage.
 
 .Étapes
 . Dans l'angle supérieur droit de la console BlueXP, sélectionnez l'icône aide.

@@ -14,7 +14,7 @@ summary: 'Configurez les autorisations Azure pour que vous puissiez utiliser Blu
 
 
 [role="lead"]
-Configurez les autorisations Azure pour que vous puissiez utiliser BlueXP pour gérer vos données et votre infrastructure de stockage dans Azure. La manière dont vous configurez les autorisations dépend de l'option d'installation que vous prévoyez d'utiliser.
+Configurez les autorisations dans Azure pour que vous puissiez déployer le connecteur avec les autorisations dont le service IT a besoin pour gérer vos données et votre infrastructure de stockage. La manière dont vous configurez les autorisations dépend de l'option d'installation que vous prévoyez d'utiliser.
 
 Vous pouvez choisir parmi les options d'installation suivantes :
 

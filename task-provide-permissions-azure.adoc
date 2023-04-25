@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-provide-permissions-azure.html 
 keywords: azure permissions, connector permissions, custom role, azure custom role, service principal, how to provide azure permissions, set up azure permissions, provide azure permissions, permissions 
-summary: 'Si vous avez créé le connecteur à partir d"Azure Marketplace ou installé manuellement le logiciel, vous devez fournir à BlueXP les autorisations que vous avez précédemment configurées.' 
+summary: 'Si vous avez créé le connecteur à partir d"Azure Marketplace ou installé manuellement le logiciel, vous devez fournir à BlueXP les autorisations que vous avez précédemment configurées. Si vous disposez des autorisations requises, BlueXP peut gérer vos données et votre infrastructure de stockage dans Azure.' 
 ---
 = Fournissez des autorisations Azure à BlueXP
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: 'Si vous avez créé le connecteur à partir d"Azure Marketplace ou ins
 
 
 [role="lead"]
-Si vous avez créé le connecteur à partir d'Azure Marketplace ou installé manuellement le logiciel, vous devez fournir à BlueXP les autorisations que vous avez précédemment configurées.
+Si vous avez créé le connecteur à partir d'Azure Marketplace ou installé manuellement le logiciel, vous devez fournir à BlueXP les autorisations que vous avez précédemment configurées. Si vous disposez des autorisations requises, BlueXP peut gérer vos données et votre infrastructure de stockage dans Azure.
 
 link:task-set-up-permissions-azure.html["Découvrez comment configurer ces autorisations"].
 
