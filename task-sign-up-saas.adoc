@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-sign-up-saas.html 
 keywords: sign up, signing up, sign in, signing in, login with netapp, log in with netapp, create account, account, log in with nss, nss, nss login 
-summary: 'Lorsque vous commencez à utiliser BlueXP, vous commencez par vous inscrire à l"aide de vos identifiants du site du support NetApp ou en créant un identifiant de connexion cloud NetApp.' 
+summary: 'BlueXP est accessible depuis une console web. Lorsque vous commencez à utiliser BlueXP, vous commencez par vous inscrire à l"aide de vos identifiants du site du support NetApp ou en créant un identifiant de connexion cloud NetApp.' 
 ---
 = Inscrivez-vous à BlueXP
 :hardbreaks:
@@ -27,22 +27,14 @@ Les deux options prennent en charge une connexion fédérée, qui permet une aut
 
 .Étapes
 . Ouvrez un navigateur Web et accédez au https://console.bluexp.netapp.com["Console BlueXP"^]
-. Sur la page *connexion*, sélectionnez *Inscription*.
+. Si vous possédez un compte sur le site de support NetApp, entrez l'adresse e-mail associée à votre compte NSS directement sur la page *connexion*.
 +
+Vous pouvez ignorer la page d'inscription si vous avez un compte NSS. BlueXP vous inscrit dans le cadre de cette connexion initiale.
 
-TIP: Si vous prévoyez d'utiliser vos identifiants NSS existants, vous pouvez ignorer la page d'inscription et entrer votre adresse e-mail directement dans la page de connexion. BlueXP vous inscrit dans le cadre de cette connexion initiale.
-
-. Sur la page *s'inscrire*, choisissez l'une des options de connexion :
-+
-** Si vous possédez déjà un compte sur le site de support NetApp, sélectionnez *Inscrivez-vous avec vos identifiants du site de support NetApp*.
-+
-Lorsque vous utilisez cette option, vos identifiants du site du support NetApp ne sont pas ajoutés à BlueXP dans le tableau de bord du support. link:task-adding-nss-accounts.html["Découvrez comment ajouter vos identifiants NSS au tableau de bord du support pour activer les flux de travail clés"].
-
-** Si vous ne disposez pas d'un compte NSS et que vous n'avez pas créé de identifiants cloud NetApp, entrez les informations requises pour créer un identifiant dans le cloud NetApp.
+. Si vous ne possédez pas de compte NSS et que vous souhaitez vous inscrire en créant un identifiant cloud NetApp, sélectionnez *s'inscrire*.
+. Sur la page *s'inscrire*, entrez les informations requises pour créer un identifiant NetApp Cloud.
 +
 Notez que seuls les caractères anglais sont autorisés dans le formulaire d'inscription.
-
-
 
 . Lorsque vous y êtes invité, consultez le contrat de licence de l'utilisateur final et acceptez les conditions.
 . Sur la page *Bienvenue*, saisissez un nom pour votre compte.

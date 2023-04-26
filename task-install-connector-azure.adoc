@@ -30,6 +30,10 @@ Créez un connecteur directement à partir de la console web BlueXP, d'Azure Mar
 ** Certificat HTTPS
 
 
+* Une clé publique SSH, si vous souhaitez utiliser cette méthode d'authentification pour la machine virtuelle Connector. L'autre option de la méthode d'authentification est d'utiliser un mot de passe.
++
+https://learn.microsoft.com/en-us/azure/virtual-machines/linux-vm-connect?tabs=Linux["Découvrez comment vous connecter à une VM Linux dans Azure"^]
+
 * Si vous ne souhaitez pas que BlueXP crée automatiquement un rôle Azure pour le connecteur, vous devrez créer votre propre rôle link:reference-permissions-azure.html["utilisation de la stratégie sur cette page"].
 +
 Ces autorisations sont pour l'instance de connecteur elle-même. Il s'agit d'un jeu d'autorisations différent de ce que vous avez configuré précédemment pour déployer simplement le connecteur.
@@ -70,7 +74,13 @@ link:task-set-up-permissions-azure.html["Apprenez à obtenir ces valeurs pour un
 
 . Suivez les étapes de l'assistant pour créer le connecteur :
 +
-** *Authentification VM* : choisissez un abonnement Azure, un emplacement, un nouveau groupe de ressources ou un groupe de ressources existant, puis choisissez une méthode d'authentification.
+** *VM Authentication* : choisissez un abonnement Azure, un emplacement, un nouveau groupe de ressources ou un groupe de ressources existant, puis choisissez une méthode d'authentification pour la machine virtuelle Connector que vous créez.
++
+La méthode d'authentification de la machine virtuelle peut être un mot de passe ou une clé publique SSH.
+
++
+https://learn.microsoft.com/en-us/azure/virtual-machines/linux-vm-connect?tabs=Linux["Découvrez comment vous connecter à une VM Linux dans Azure"^]
+
 ** *Détails* : saisissez un nom pour l'instance, spécifiez les balises et choisissez si vous souhaitez que BlueXP crée un nouveau rôle avec les autorisations requises ou si vous souhaitez sélectionner un rôle existant avec lequel vous avez configuré link:reference-permissions-azure.html["les autorisations requises"].
 +
 Notez que vous pouvez choisir les abonnements associés à ce rôle. Chaque abonnement que vous choisissez fournit au connecteur les autorisations de déploiement de Cloud Volumes ONTAP dans ces abonnements.
