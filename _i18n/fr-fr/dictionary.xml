@@ -496,7 +496,6 @@
   <block id="abc66ca669cfbd9be590874c67e8d7ef" category="cell">\https://widget.intercom.io</block>
   <block id="30fe214f0e8ecaf9b895a0137cad8ce9" category="cell">Vous bénéficiez d'un chat en ligne pour discuter avec des experts du cloud NetApp.</block>
   <block id="9827c1dc4f901b9ac9340f0034c5a996" category="list-text">L'emplacement réseau où vous déployez le connecteur doit disposer d'une connexion Internet sortante.</block>
-  <block id="ffcad347e7fbe5448bc3fabe48be2db8" category="paragraph">Le connecteur nécessite un accès Internet sortant pour contacter les terminaux suivants afin de gérer les ressources et les processus au sein de votre environnement de cloud public.</block>
   <block id="8963387394e2ee3e2a5a9ba160566a58" category="cell">\https://support.netapp.com</block>
   <block id="db9e137068a05efe5440105c2494b7f1" category="cell">Pour obtenir des informations sur les licences et envoyer des messages AutoSupport au support NetApp.</block>
   <block id="554841a7559bd190d883de523464d1d1" category="cell">\https://cloudmanagerinfraprod.azurecr.io \https://*.blob.core.windows.net</block>
@@ -2280,7 +2279,6 @@
   <block id="e977076f329f114f070ba24997d6ea89" category="paragraph">Un connecteur nécessite une connexion réseau à l'emplacement où vous prévoyez de créer et de gérer des environnements de travail.</block>
   <block id="9d1c31fa96e155af1c5f2d21f024ae6b" category="section-title">Points finaux contactés lors de l'installation manuelle</block>
   <block id="6017dcd09765a1c92a35f18a704f3fb7" category="paragraph">Si vous prévoyez d'installer manuellement le connecteur sur votre propre hôte Linux, le programme d'installation du connecteur nécessite l'accès aux URL suivantes pendant le processus d'installation :</block>
-  <block id="6b928849399b5939b51343f6c87ad310" category="section-title">Terminaux contactés pour les opérations quotidiennes</block>
   <block id="06afa66cf6eca938a45be835a47030e1" category="paragraph-title">Lien associé</block>
   <block id="74f7ea1e969abd8d8ec017d333bead7e" category="inline-link-macro">Préparez la mise en réseau pour l'accès utilisateur à la console BlueXP</block>
   <block id="8ae42ef1699b44390c771e4ea6cb78df" category="paragraph"><block ref="8ae42ef1699b44390c771e4ea6cb78df" category="inline-link-macro-rx"></block></block>
@@ -2650,11 +2648,8 @@
   <block id="7b0c55f247d6f53c6782615b53af4619" category="list-text">Communication sortante</block>
   <block id="b765b1f4695cc75eccd54629c696871c" category="list-text">La connectivité est requise du connecteur à la couche SaaS BlueXP, aux ressources accessibles au public de votre fournisseur cloud et à d'autres composants essentiels pour les opérations quotidiennes.</block>
   <block id="481967699cb23b1212553273ddd07956" category="inline-link-macro">Terminaux que le connecteur contacte dans AWS</block>
-  <block id="ab8177880a13f92d2c6c296fd85611c9" category="list-text"><block ref="ab8177880a13f92d2c6c296fd85611c9" category="inline-link-macro-rx"></block></block>
   <block id="bc9ca29d6605d1cf6f70076a23749d7d" category="inline-link-macro">Terminaux que le connecteur contacte dans Azure</block>
-  <block id="3f6e7a440a8cae86f238db2ca1da0175" category="list-text"><block ref="3f6e7a440a8cae86f238db2ca1da0175" category="inline-link-macro-rx"></block></block>
   <block id="b9ae7144d8994b521f00e7ea998af276" category="inline-link-macro">Terminaux que le connecteur contacte dans Google Cloud</block>
-  <block id="a0a5f0a2e1c920dc11829154cff84abd" category="list-text"><block ref="a0a5f0a2e1c920dc11829154cff84abd" category="inline-link-macro-rx"></block></block>
   <block id="3bf5c9324dc0745f8cad507c90fe86b2" category="list-text">Emplacement pris en charge pour le connecteur</block>
   <block id="916a2669af97d2f4130e6923cd637b3f" category="list-text">En mode standard, le connecteur est pris en charge dans le cloud ou sur site.</block>
   <block id="fd18b98fb0c01efb9ebdfe9d8aac583c" category="list-text">L'installation du connecteur est possible à partir d'un assistant d'installation de BlueXP, d'AWS ou d'Azure Marketplace, ou à l'aide d'un programme d'installation pour installer manuellement le connecteur sur votre propre hôte Linux dans votre data Center ou dans le cloud.</block>
@@ -3456,11 +3451,8 @@
   <block id="bfb1a8284652de834f7e5f10d70d1b28" category="inline-link-macro">Préparation du réseau pour l'accès des utilisateurs à la console BlueXP (mode restreint)</block>
   <block id="bbeb91503e087c169e5b9723b8e20883" category="list-text"><block ref="bbeb91503e087c169e5b9723b8e20883" category="inline-link-macro-rx"></block></block>
   <block id="2860cec66f88d15f252631c132ac68ce" category="inline-link-macro">Terminaux que le connecteur contacte dans AWS (mode standard)</block>
-  <block id="c5671cdad008988d217498ffee18763f" category="list-text"><block ref="c5671cdad008988d217498ffee18763f" category="inline-link-macro-rx"></block></block>
   <block id="f30c2ab09bb92e952f9dc522c1d59a4b" category="inline-link-macro">Terminaux que le connecteur contacte dans Azure (mode standard)</block>
-  <block id="befb6b1b01e0761a5d0ce6f028c4edd2" category="list-text"><block ref="befb6b1b01e0761a5d0ce6f028c4edd2" category="inline-link-macro-rx"></block></block>
   <block id="51592248285ea432f62366d3bb873cd2" category="inline-link-macro">Terminaux que le connecteur contacte dans Google Cloud (mode standard)</block>
-  <block id="6de9f5682041f68bedd20c6f93964068" category="list-text"><block ref="6de9f5682041f68bedd20c6f93964068" category="inline-link-macro-rx"></block></block>
   <block id="554b8b833efd1a5f6c0982f18f3d0820" category="inline-link-macro">Points finaux contactés lors de l'installation manuelle du connecteur (mode standard)</block>
   <block id="5474364eb5af84ea9df4135b22224135" category="list-text"><block ref="5474364eb5af84ea9df4135b22224135" category="inline-link-macro-rx"></block></block>
   <block id="6187e32203fd05e22e575166349f5b99" category="inline-link">Documents de sauvegarde et de restauration</block>
@@ -3614,4 +3606,17 @@
   <block id="61bd9c463723beb495c6ca6a1a35e0eb" category="paragraph">Vous pouvez ignorer la page d'inscription si vous avez un compte NSS. BlueXP vous inscrit dans le cadre de cette connexion initiale.</block>
   <block id="7c74a9177ae92ae3e635c6ec91ce1d71" category="list-text">Si vous ne possédez pas de compte NSS et que vous souhaitez vous inscrire en créant un identifiant cloud NetApp, sélectionnez *s'inscrire*.</block>
   <block id="9c27b53d053eec29dd123f70f05c5d03" category="list-text">Sur la page *s'inscrire*, entrez les informations requises pour créer un identifiant NetApp Cloud.</block>
+  <block id="71afd6b2cb4c08d6d8f78d761345d34b" category="paragraph">L'emplacement réseau où vous déployez le connecteur doit disposer d'une connexion Internet sortante. Un accès Internet sortant est également requis depuis votre navigateur Web lors du déploiement du connecteur à partir de la console BlueXP.</block>
+  <block id="6dffc69caefdf6586b8f4562e4f891ff" category="section-title">Terminaux contactés depuis la console BlueXP</block>
+  <block id="7e793e0926dc898cd9fdf640dab8b7d2" category="paragraph">Lorsque vous utilisez la console web BlueXP fournie via la couche SaaS, elle contacte plusieurs terminaux pour effectuer les tâches de gestion des données. Cela inclut les terminaux contactés pour déployer le connecteur à partir de la console BlueXP.</block>
+  <block id="de3d7dbdd97c240a233066ad7479c6c2" category="inline-link-macro">Consultez la liste des terminaux contactés depuis la console BlueXP</block>
+  <block id="638887c7fa101cc437e1eb7f6041b91e" category="paragraph"><block ref="7d376f679e4be0527c6e11d1cf760c68" category="inline-link-macro-rx"></block>.</block>
+  <block id="715f0347cb236dfb96b8932c5f17b0ea" category="section-title">Points d'extrémité contactés depuis le connecteur</block>
+  <block id="5519fcf85b24bd3271825a502543232a" category="paragraph">Le connecteur nécessite un accès Internet sortant pour contacter les terminaux suivants afin de gérer les ressources et les processus au sein de votre environnement de cloud public pour les opérations quotidiennes.</block>
+  <block id="4904eb58ec6f09d17bea1bcb4209ac4b" category="list-text"><block ref="4904eb58ec6f09d17bea1bcb4209ac4b" category="inline-link-macro-rx"></block></block>
+  <block id="1a989b3502c194d5e9de1168533c7d28" category="list-text"><block ref="1a989b3502c194d5e9de1168533c7d28" category="inline-link-macro-rx"></block></block>
+  <block id="ef12cf012477b5ad02d81be8ada8b95c" category="list-text"><block ref="ef12cf012477b5ad02d81be8ada8b95c" category="inline-link-macro-rx"></block></block>
+  <block id="f4986cf63781254c431f585eade70914" category="list-text"><block ref="f4986cf63781254c431f585eade70914" category="inline-link-macro-rx"></block></block>
+  <block id="d4725a75fbee6904284f3109fa5e079a" category="list-text"><block ref="d4725a75fbee6904284f3109fa5e079a" category="inline-link-macro-rx"></block></block>
+  <block id="31dec7fbef975d09b76f499ef8abfb62" category="list-text"><block ref="31dec7fbef975d09b76f499ef8abfb62" category="inline-link-macro-rx"></block></block>
 </blocks>

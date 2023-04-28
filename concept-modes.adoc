@@ -94,9 +94,9 @@ BlueXP fonctionne comme suit en mode standard :
 Communication sortante:: La connectivité est requise du connecteur à la couche SaaS BlueXP, aux ressources accessibles au public de votre fournisseur cloud et à d'autres composants essentiels pour les opérations quotidiennes.
 +
 --
-* link:task-set-up-networking-aws.html#endpoints-contacted-for-day-to-day-operations["Terminaux que le connecteur contacte dans AWS"]
-* link:task-set-up-networking-azure.html#endpoints-contacted-for-day-to-day-operations["Terminaux que le connecteur contacte dans Azure"]
-* link:task-set-up-networking-google.html#endpoints-contacted-for-day-to-day-operations["Terminaux que le connecteur contacte dans Google Cloud"]
+* link:task-set-up-networking-aws.html#endpoints-contacted-from-the-connector["Terminaux que le connecteur contacte dans AWS"]
+* link:task-set-up-networking-azure.html#endpoints-contacted-from-the-connector["Terminaux que le connecteur contacte dans Azure"]
+* link:task-set-up-networking-google.html#endpoints-contacted-from-the-connector["Terminaux que le connecteur contacte dans Google Cloud"]
 
 
 --

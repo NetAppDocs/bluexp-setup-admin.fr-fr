@@ -49,9 +49,9 @@ L'hôte peut essayer de mettre à jour les packages du système d'exploitation l
 
 
 
-=== Terminaux contactés pour les opérations quotidiennes
+=== Points d'extrémité contactés depuis le connecteur
 
-Le connecteur nécessite un accès Internet sortant pour contacter les terminaux suivants afin de gérer les ressources et les processus au sein de votre environnement de cloud public.
+Le connecteur nécessite un accès Internet sortant pour contacter les terminaux suivants afin de gérer les ressources et les processus au sein de votre environnement de cloud public pour les opérations quotidiennes.
 
 [cols="2*"]
 |===
