@@ -76,6 +76,10 @@ Plusieurs API sont requises pour déployer le connecteur et Cloud Volumes ONTAP 
 * API Cloud Resource Manager
 * API du moteur de calcul
 * API de gestion des identités et des accès
+* API KMS (Cloud Key Management Service
++
+(Requis uniquement si vous prévoyez d'utiliser la sauvegarde et la restauration BlueXP avec des clés de chiffrement gérées par le client (CMEK))
+
 
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-6.png["Six"] Créer le connecteur
