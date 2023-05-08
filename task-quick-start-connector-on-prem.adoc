@@ -35,10 +35,10 @@ link:task-set-up-networking-on-prem.html["En savoir plus sur les exigences de mi
 Le logiciel du connecteur doit être exécuté sur un hôte répondant à des exigences spécifiques. Les principales exigences sont les suivantes :
 
 [role="quick-margin-list"]
-* Hôte dédié exécutant CentOS ou Red Hat Enterprise Linux
+* Un hôte dédié exécutant Ubuntu 22.04, CentOS 7.6 à 7.9 ou RHEL 7.6 à 7.9
 * 4 processeurs
 * 14 Go de RAM
-* Moteur Docker
+* Docker Engine 19.3.1 ou version ultérieure
 
 
 [role="quick-margin-para"]

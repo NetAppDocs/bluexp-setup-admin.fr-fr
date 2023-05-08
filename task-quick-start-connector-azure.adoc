@@ -39,16 +39,16 @@ link:task-set-up-networking-azure.html["En savoir plus sur les exigences de mise
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["Trois"] Vérifiez la configuration requise pour l'hôte
 [role="quick-margin-para"]
-Le logiciel du connecteur doit être exécuté sur un hôte répondant à des exigences spécifiques. Si vous prévoyez d'installer manuellement le logiciel Connector sur votre propre hôte Linux, vous devez vous assurer que votre hôte répond à ces exigences. Si vous créez le connecteur à partir de BlueXP ou d'Azure Marketplace, vous devez prendre en charge ces exigences, car le logiciel est déployé à partir d'une image.
+Si vous souhaitez installer manuellement le logiciel Connector sur votre propre hôte Linux, vous devez vous assurer que votre hôte répond à des exigences spécifiques. Si vous créez le connecteur à partir de BlueXP ou d'Azure Marketplace, vous devez prendre en charge ces exigences, car le logiciel est déployé à partir d'une image.
 
 [role="quick-margin-para"]
 Les principales exigences sont les suivantes :
 
 [role="quick-margin-list"]
-* Hôte dédié exécutant CentOS ou Red Hat Enterprise Linux
+* Un hôte dédié exécutant Ubuntu 22.04, CentOS 7.6 à 7.9 ou RHEL 7.6 à 7.9
 * 4 processeurs
 * 14 Go de RAM
-* Moteur Docker
+* Docker Engine 19.3.1 ou version ultérieure
 
 
 [role="quick-margin-para"]

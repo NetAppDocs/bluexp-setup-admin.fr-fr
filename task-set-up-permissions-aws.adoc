@@ -47,7 +47,7 @@ Quelle que soit l'option choisie, la première étape consiste à créer une pol
 Si nécessaire, vous pouvez restreindre la politique IAM à l'aide de l'IAM `Condition` elément. https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition.html["Documentation AWS : élément de condition"^]
 
 
-TIP: Lorsque BlueXP crée le connecteur, il applique un nouvel ensemble d'autorisations à l'instance Connector qui active le connecteur aux ressources AWS.
+TIP: Lorsque BlueXP crée le connecteur, il applique un nouvel ensemble d'autorisations à l'instance Connector qui permet au connecteur de gérer les ressources AWS.
 
 .Étapes
 . Accédez à la console IAM AWS.

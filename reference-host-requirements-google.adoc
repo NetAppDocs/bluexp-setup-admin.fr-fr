@@ -22,8 +22,9 @@ Hôte dédié:: Le connecteur n'est pas pris en charge sur un hôte partagé ave
 Systèmes d'exploitation pris en charge::
 +
 --
+* Ubuntu 22.04
 * CentOS 7.6, 7.7, 7.8 et 7.9
-* Red Hat Enterprise Linux 7.6, 7.7, 7.8, 7.9, 8.6 et 8.7
+* Red Hat Enterprise Linux 7.6, 7.7, 7.8 et 7.9
 +
 L'hôte doit être enregistré auprès de Red Hat Subscription Management. S'il n'est pas enregistré, l'hôte ne peut pas accéder aux référentiels pour mettre à jour les logiciels tiers requis lors de l'installation du connecteur.
 
@@ -33,7 +34,12 @@ Le connecteur est pris en charge sur les versions en anglais de ces systèmes d'
 
 
 --
-Hyperviseur:: Un hyperviseur bare Metal ou hébergé certifié pour exécuter CentOS ou Red Hat Enterprise Linux est requis. https://access.redhat.com/certified-hypervisors["Solution Red Hat : quels hyperviseurs sont certifiés pour l'exécution de Red Hat Enterprise Linux ?"^]
+Hyperviseur:: Un hyperviseur bare Metal ou hébergé certifié pour exécuter Ubuntu, CentOS ou Red Hat Enterprise Linux est requis.
++
+--
+https://access.redhat.com/certified-hypervisors["Solution Red Hat : quels hyperviseurs sont certifiés pour l'exécution de Red Hat Enterprise Linux ?"^]
+
+--
 CPU:: 4 cœurs ou 4 CPU virtuels
 RAM:: 14 GO
 Type de machine Google Cloud:: Type d'instance qui répond aux exigences relatives au CPU et à la RAM indiquées ci-dessus. Nous recommandons n2-standard-4.

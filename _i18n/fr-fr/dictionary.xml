@@ -352,17 +352,14 @@
   <block id="5eeca886fa07462826a9ea747483f528" category="section-title">Détails d'AWS</block>
   <block id="a0676ac5cfebaef69b53ff7e37cd8c3c" category="paragraph">Si vous avez déployé le connecteur depuis BlueXP ou depuis le marché du fournisseur cloud, remarque :</block>
   <block id="6b3a1b41a32e70a38db42e8ec15a6fba" category="list-text">Le type d'instance EC2 est t3.XLarge.</block>
-  <block id="1c4a1f461d9d9ab860d5238735bbfa23" category="list-text">Le système d'exploitation de l'image est Red Hat Enterprise Linux 7.6 (HVM).</block>
   <block id="953e61420be6157aa122dfd3475d4070" category="paragraph">Le système d'exploitation n'inclut pas d'interface graphique. Vous devez utiliser un terminal pour accéder au système.</block>
   <block id="09572768e7bd2d34b2a051ebb8774173" category="list-text">Le nom d'utilisateur de l'instance Linux EC2 est utilisateur ec2.</block>
   <block id="efabd80ebdd217a47d9be936e5f0b8aa" category="list-text">Le disque système par défaut est un disque gp2 de 100 Gio.</block>
   <block id="b8c4a5bd8ed4eb470e80955a542dd4bf" category="section-title">Détails d'Azure</block>
   <block id="82e44dd5e94a855110f9dea154fed0ed" category="list-text">Le type de machine virtuelle est DS3 v2.</block>
-  <block id="6b20346212b35fa23c8778f7b40af243" category="list-text">Le système d'exploitation de l'image est CentOS 7.6.</block>
   <block id="474a089504b47eb34ee00ee62f121108" category="list-text">Le disque système par défaut est un disque SSD premium de 100 Gio.</block>
   <block id="f246cf5f23e765f0a7ebed4a6c1d923a" category="section-title">Détails sur Google Cloud</block>
   <block id="0964bfe0dd83b0d60f5d55fd4502a11b" category="list-text">L'instance de machine virtuelle est n2-standard-4.</block>
-  <block id="9683999221dec5e41e35756b2a8aee04" category="list-text">Le système d'exploitation de l'image est Red Hat Enterprise Linux 8.6.</block>
   <block id="6cb5fb9b61376b8ee3092321445fdea4" category="list-text">Le disque système par défaut est un disque persistant SSD de 100 Gio.</block>
   <block id="bc4aa6323016172de14a6835883b27c7" category="section-title">Dossier d'installation</block>
   <block id="6bcce13786258734e514d9a072a3c23a" category="paragraph">Le dossier d'installation du connecteur se trouve à l'emplacement suivant :</block>
@@ -1693,11 +1690,6 @@
   <block id="b965147e511dac4e3aebd73ea41829e3" category="section-title">Un nouveau service de notification a été ajouté</block>
   <block id="3c1b23b324258ff4cbade594bf9bba9d" category="inline-link-macro">Découvrez comment surveiller les opérations de votre compte</block>
   <block id="e2945895b2a6a405c218350491024401" category="paragraph">Le service de notification a été introduit afin de consulter l'état des opérations Cloud Manager que vous avez lancées pendant votre session de connexion en cours. Vous pouvez vérifier si l'opération a réussi ou si elle a échoué. <block ref="f47b918ef0cfcb851278e7a8f756b776" category="inline-link-macro-rx"></block>.</block>
-  <block id="9e27c4a53794e4f6cfc9949de58e5091" category="section-title">1er août 2021</block>
-  <block id="81de4fabd4db5e6833366e4bcef85f1e" category="section-title">Prise en charge de RHEL 7.9 avec le connecteur</block>
-  <block id="a95742b809057568fda07a87694945f1" category="paragraph">Le connecteur est désormais pris en charge sur un hôte exécutant Red Hat Enterprise Linux 7.9.</block>
-  <block id="2a75ac250c22787b79b100a2a614a4e2" category="inline-link-macro">Afficher la configuration système requise pour le connecteur</block>
-  <block id="3d3993351431dd156dcaa0d507b8983f" category="paragraph"><block ref="bee2a520a8b2c506ca8f5164283ec407" category="inline-link-macro-rx"></block>.</block>
   <block id="916678dfdf53de83f6afdf8fca563fb3" category="section-title">7 juillet 2021</block>
   <block id="087ea838180b315ad53e36db764cd8d2" category="section-title">Améliorations apportées à l'assistant Ajout de connecteur</block>
   <block id="49b04ecdbf78ac3e84e01d5ad6dcb05f" category="paragraph">Nous avons repensé l'assistant *Add Connector* pour ajouter de nouvelles options et le rendre plus facile à utiliser. Vous pouvez à présent ajouter des balises, spécifier un rôle (pour AWS ou Azure), charger un certificat racine pour un serveur proxy, afficher du code pour l'automatisation Terraform, afficher des détails de progression, etc.</block>
@@ -2038,7 +2030,6 @@
   <block id="d4a973e303ec37692cc8923e3148eef7" category="cell">8080</block>
   <block id="3cae1bb62504fde722824fee95046472" category="doc">Gérez les informations d'identification et les abonnements Azure pour BlueXP</block>
   <block id="ee7f5aec4e9ac5fecb93d224c17fcd43" category="list-text">CentOS 7.6, 7.7, 7.8 et 7.9</block>
-  <block id="fe342f4d7fb16d9eddf02f4c613dfb19" category="list-text">Red Hat Enterprise Linux 7.6, 7.7, 7.8, 7.9, 8.6 et 8.7</block>
   <block id="643a877b7c306b1bcece42c8f03bebfb" category="paragraph">Où &lt;version&gt; est la version du connecteur que vous avez téléchargé.</block>
   <block id="4965002502fb4ea58d2f984e3fe0a110" category="paragraph">La région cloud peut être une région pour des agences américaines sécurisées comme AWS C2S/SC2S, Azure IL6 ou n'importe quelle région commerciale.</block>
   <block id="4a2f661974665defd7d188133a1ab48b" category="paragraph">Pour activer les tâches suivantes dans BlueXP, vous devez associer les informations d'identification du site de support NetApp à votre ID de compte BlueXP :</block>
@@ -2097,8 +2088,6 @@
   <block id="4be68bdee3a27bc0218c6188d192fc95" category="paragraph"><block ref="4be68bdee3a27bc0218c6188d192fc95" category="inline-image-macro-rx" type="image"></block></block>
   <block id="a48a6aaa99b4cf4a4e641c293de897fa" category="inline-link">Découvrez comment gérer vos dossiers de demande de support</block>
   <block id="796ced97a72330e5ce3c0935b7b09f45" category="paragraph"><block ref="622b6e7f4143df2aca06b538ee1d864e" category="inline-link-rx"></block>.</block>
-  <block id="dd9b32305d0c33f8845bee1cdfcfc85a" category="list-text">Le connecteur est désormais pris en charge sur un hôte exécutant Red Hat Enterprise Linux 8.7.</block>
-  <block id="9954c00cefacf69f28fa1994e949ff83" category="paragraph"><block ref="1c471069dafa2d25f3a632cea0250222" category="inline-link-rx"></block>.</block>
   <block id="376a158ceb7d344fa563cce2aa16018f" category="inline-link">Installez le connecteur dans un emplacement sans accès à Internet</block>
   <block id="6bfdfb1d6b845d41edac4f1eb0065216" category="list-text"><block ref="6bfdfb1d6b845d41edac4f1eb0065216" category="inline-link-rx"></block></block>
   <block id="cbea6f8d2cd687c094438e0a7a38fedf" category="inline-link">Accéder à la console BlueXP sur le connecteur</block>
@@ -2256,10 +2245,6 @@
   <block id="335e7f21f0fdfecbe9c04540dcb8cdd6" category="inline-link">Découvrez comment configurer les notifications par e-mail</block>
   <block id="e16804d7658f4d3132a1170b8cec7c7e" category="paragraph"><block ref="9ce9eb475c326d02a5c224ef8589bc0a" category="inline-link-rx"></block>.</block>
   <block id="1ba259cc1a092c9c30c1a18ccc612c75" category="list-text">Le connecteur est désormais pris en charge dans la région Google Cloud Turin.</block>
-  <block id="e9c35e9b853bc286e0f3b1a7ee2e338a" category="list-text">Vous pouvez désormais découvrir les serveurs VMware vCenter dans BlueXP.</block>
-  <block id="a5b1ab8743c3279fbcf5a93dcd6de23d" category="paragraph">Une fois que vous avez découvert un serveur VMware vCenter Server exécuté dans AWS ou sur site, vous pouvez ouvrir l'environnement de travail pour afficher les détails sur les datastores et les machines virtuelles associés au serveur.</block>
-  <block id="10cc8c1f48423a72bf1e617861999cae" category="paragraph">La seule exigence est un connecteur qui dispose d'une connexion à un serveur VMware vCenter Server exécutant la version 7.0 ou ultérieure.</block>
-  <block id="70843c2315ee9e00dc50f03225c92953" category="paragraph">Pour commencer, sélectionnez *Ajouter un environnement de travail*, *Amazon Web Services* ou *sur site*, puis *VMware vCenter Server*. Entrez le nom de domaine ou l'adresse IP du serveur, puis entrez le nom d'utilisateur et le mot de passe de l'utilisateur admin.</block>
   <block id="fb378d84e11ead1b2c8c57bfabde81de" category="list-text">Vous pouvez désormais gérer les identifiants utilisateur associés à votre connexion BlueXP : identifiants ONTAP et identifiants NSS (NetApp support site).</block>
   <block id="f06293a36a992a2a1b8c6f6572b6caf8" category="paragraph">Lorsque vous accédez à *Paramètres &gt; informations d'identification*, vous pouvez afficher les informations d'identification, les mettre à jour et les supprimer. Par exemple, si vous modifiez le mot de passe de ces informations d'identification, vous devez le mettre à jour dans BlueXP.</block>
   <block id="4e46804b204e02c9bd12cc6d7232cca6" category="list-text">Vous pouvez maintenant télécharger des pièces jointes lorsque vous créez un dossier de support ou lorsque vous mettez à jour les notes de dossier pour un dossier de support existant.</block>
@@ -2342,9 +2327,7 @@
   <block id="a5ee79c4e6a740f92d76e4ae26f7efd9" category="inline-link-macro">En savoir plus sur les exigences de mise en réseau</block>
   <block id="587b8633f80536ad1f87ba680eaf93e0" category="paragraph"><block ref="48e0e005bc28fbf668fbd01539cd6de0" category="inline-link-macro-rx"></block>.</block>
   <block id="41c4e1e04e36e331e0bc8306e8c462e4" category="paragraph-title"><block ref="05b2444faffd66d76e88602ea7dd353f" category="inline-image-macro-rx" type="image"></block> Vérifiez la configuration requise pour l'hôte</block>
-  <block id="8cf82bb665e40bb25d9a540e444e36b3" category="paragraph">Le logiciel du connecteur doit être exécuté sur un hôte répondant à des exigences spécifiques. Si vous prévoyez d'installer manuellement le logiciel Connector sur votre propre hôte Linux, vous devez vous assurer que votre hôte répond à ces exigences. Si vous créez le connecteur à partir de BlueXP ou d'Azure Marketplace, vous devez prendre en charge ces exigences, car le logiciel est déployé à partir d'une image.</block>
   <block id="c0cf348e555529bd637208dfcf54a870" category="paragraph">Les principales exigences sont les suivantes :</block>
-  <block id="8d870988502027508b00629d082d4d40" category="list-text">Hôte dédié exécutant CentOS ou Red Hat Enterprise Linux</block>
   <block id="fd7f01f6e4333c9d37efa65b264ff2a2" category="list-text">4 processeurs</block>
   <block id="ccdc6c134c96d6c386d088a2301d4f2b" category="list-text">14 Go de RAM</block>
   <block id="6cfd8f6d3354ebd55131c33afd96d4f1" category="inline-link-macro">En savoir plus sur la configuration requise pour ces hôtes</block>
@@ -2427,7 +2410,6 @@
   <block id="512bfa3bd93d6398b4e5010a77b6b397" category="paragraph">Lorsque vous déployez le connecteur à partir de BlueXP ou d'AWS Marketplace, l'image inclut le système d'exploitation et les composants logiciels requis.</block>
   <block id="9cf68904e16d6d689d242f4868ec6c3f" category="list-text">Hôte dédié</block>
   <block id="24dfedb0d4bd46f0cd823d4e245f7642" category="paragraph">L'hôte doit être enregistré auprès de Red Hat Subscription Management. S'il n'est pas enregistré, l'hôte ne peut pas accéder aux référentiels pour mettre à jour les logiciels tiers requis lors de l'installation du connecteur.</block>
-  <block id="6e1a44ecc6a3c7f575a069cf7334fbae" category="list-text">Un hyperviseur bare Metal ou hébergé certifié pour exécuter CentOS ou Red Hat Enterprise Linux est requis.<block ref="e9e3991507328b97d5307322157c9608" category="inline-link-rx"></block></block>
   <block id="6cd56a4cc4ddbbfd2bc9d57de5d788aa" category="list-text">Paire de clés</block>
   <block id="58b11c8ddf3d2ba8e39859b658696729" category="list-text">Lorsque vous créez le connecteur à partir de BlueXP ou d'AWS Marketplace, vous devez sélectionner une paire de clés EC2 à utiliser avec l'instance.</block>
   <block id="d27c20ffdc2a86f7372d5fe1b59e028f" category="summary">Créez un connecteur sur site en configurant la mise en réseau, en préparant un hôte, en préparant les autorisations cloud, etc.</block>
@@ -3130,7 +3112,6 @@
   <block id="a56be8fcf9cdfe04c839d8381b610ad9" category="paragraph"><block ref="ade0887db526f72ed0d1d6c5708f3e13" category="inline-link-macro-rx"></block>.</block>
   <block id="bcbc9fff8d4487788c2d9340f7d3f30a" category="list-text">Un VPC et un sous-réseau</block>
   <block id="b2f11e007fbc7abca64e5c1d6c2b7128" category="paragraph"><block ref="8e7b3f5f067e9282c1888d205cec32d1" category="inline-link-macro-rx"></block>.</block>
-  <block id="6349ee97072121bbd5a4507bac2e8735" category="paragraph">Le logiciel du connecteur doit être exécuté sur un hôte répondant à des exigences spécifiques. Si vous prévoyez d'installer manuellement le logiciel Connector sur votre propre hôte Linux, vous devez vous assurer que votre hôte répond à ces exigences. Si vous créez le connecteur à partir de BlueXP ou d'AWS Marketplace, vous devez prendre en charge ces exigences, car le logiciel est déployé à partir d'une image.</block>
   <block id="a210968d517dd722bb07b30a19848aba" category="paragraph"><block ref="a0def2bb90da07c3ee565e52d86737eb" category="inline-link-macro-rx"></block>.</block>
   <block id="9b2016503a2a16403edd8e4505d62007" category="paragraph-title"><block ref="beadfa85a2fdca06b91edc1131c603e6" category="inline-image-macro-rx" type="image"></block> Configurez les autorisations AWS</block>
   <block id="c405be6f63207e29490377f138661fe6" category="paragraph">Configurez les autorisations AWS en fonction de l'option d'installation que vous prévoyez d'utiliser :</block>
@@ -3192,7 +3173,6 @@
   <block id="7a396f953e409fc4113a3eeb3714978c" category="paragraph">La méthode standard pour créer un connecteur dans Google Cloud se trouve directement à partir de BlueXP, mais vous pouvez également le créer à l'aide de gcloud ou en installant manuellement le logiciel sur un hôte Linux existant.</block>
   <block id="d6b2edc88b04bf885cb72e8cf0bdb02e" category="paragraph"><block ref="7faab28792959edccdd5bb629174a43b" category="inline-link-macro-rx"></block>.</block>
   <block id="6d117b41618cb9d361db392dd6ff151b" category="paragraph"><block ref="10b8794b5b9549957094545036a01876" category="inline-link-macro-rx"></block>.</block>
-  <block id="2d1ed7591f7f80cfce8c5b951e513704" category="paragraph">Le logiciel du connecteur doit être exécuté sur un hôte répondant à des exigences spécifiques. Si vous prévoyez d'installer manuellement le logiciel Connector sur votre propre hôte Linux, vous devez vous assurer que votre hôte répond à ces exigences. Si vous créez le connecteur à partir de BlueXP ou à l'aide de gcloud, vous devez respecter ces exigences, car le logiciel est déployé à partir d'une image.</block>
   <block id="3633aaf72e18b72ee7d2e915e82be0c6" category="paragraph"><block ref="2d4899440637ad0f9b80e78751923630" category="inline-link-macro-rx"></block>.</block>
   <block id="7a48e91302c9dc7f85920f518f25f1d7" category="paragraph-title"><block ref="beadfa85a2fdca06b91edc1131c603e6" category="inline-image-macro-rx" type="image"></block> Configurez les autorisations Google Cloud</block>
   <block id="f7b1947038df0eb1bf72eca001af4938" category="paragraph">Configurez les autorisations Google Cloud pour l'option d'installation que vous prévoyez d'utiliser :</block>
@@ -3244,7 +3224,6 @@
   <block id="df7114b91c38b799f7e55c741aae2b74" category="list-text">*Manual install* : créez des stratégies IAM et attachez-les à un rôle IAM ou à un utilisateur IAM.</block>
   <block id="d427acae4bc956af9fed6c72fb68b12a" category="paragraph"><block ref="b2113e9e3a9e0e0062402d34fe3bdc2d" category="inline-xref-macro-rx"></block>.</block>
   <block id="8098dd228e3c3acafd4ab6231ee02a5b" category="paragraph">Quelle que soit l'option choisie, la première étape consiste à créer une politique IAM. Cette politique contient uniquement les autorisations nécessaires pour lancer l'instance Connector dans AWS à partir de BlueXP.</block>
-  <block id="475ac26bd29a47d7852c43b6768e1e79" category="admonition">Lorsque BlueXP crée le connecteur, il applique un nouvel ensemble d'autorisations à l'instance Connector qui active le connecteur aux ressources AWS.</block>
   <block id="1bd08699c526c66f71094b5ff54dc839" category="list-text">Reliez la règle à un rôle IAM que BlueXP peut assumer ou à un utilisateur IAM pour que vous puissiez fournir BlueXP avec des clés d'accès :</block>
   <block id="87b8ba43578311804ba14d80f6c8cb89" category="list-text">(Option 1) configurer un rôle IAM que BlueXP peut assumer :</block>
   <block id="bf10cb047f4db72713407e74d30df1e9" category="list-text">(Option 2) configurez les autorisations d'accès pour un utilisateur IAM afin que vous puissiez fournir BlueXP avec des clés d'accès :</block>
@@ -3621,4 +3600,26 @@
   <block id="31dec7fbef975d09b76f499ef8abfb62" category="list-text"><block ref="31dec7fbef975d09b76f499ef8abfb62" category="inline-link-macro-rx"></block></block>
   <block id="b86699cce9d5045d0f0bc82298a74e55" category="list-text">API KMS (Cloud Key Management Service</block>
   <block id="5cb2601217dd646515fe8e7cba8643b1" category="paragraph">(Requis uniquement si vous prévoyez d'utiliser la sauvegarde et la restauration BlueXP avec des clés de chiffrement gérées par le client (CMEK))</block>
+  <block id="e5051949dc3a37f9077e85df0f1c8a21" category="list-text">Ubuntu 22.04</block>
+  <block id="eaf5618d0182a88179ac8580cc418219" category="list-text">Red Hat Enterprise Linux 7.6, 7.7, 7.8 et 7.9</block>
+  <block id="0791add814d036f56d1303750c34ee31" category="list-text">Un hyperviseur bare Metal ou hébergé certifié pour exécuter Ubuntu, CentOS ou Red Hat Enterprise Linux est requis.</block>
+  <block id="394349da65ddd77a10f3cdb6426b7439" category="paragraph"><block ref="394349da65ddd77a10f3cdb6426b7439" category="inline-link-rx"></block></block>
+  <block id="c1e102579945406fac37126823f71dd7" category="paragraph">Si vous souhaitez installer manuellement le logiciel Connector sur votre propre hôte Linux, vous devez vous assurer que votre hôte répond à des exigences spécifiques. Si vous créez le connecteur à partir de BlueXP ou d'Azure Marketplace, vous devez prendre en charge ces exigences, car le logiciel est déployé à partir d'une image.</block>
+  <block id="458ff6a54977b54b851374a784615658" category="list-text">Un hôte dédié exécutant Ubuntu 22.04, CentOS 7.6 à 7.9 ou RHEL 7.6 à 7.9</block>
+  <block id="3140bd3be2a4f9fe830514ff5b18be1f" category="list-text">Docker Engine 19.3.1 ou version ultérieure</block>
+  <block id="71bff2737bdd059023a4784358e71a64" category="section-title">7 mai 2023</block>
+  <block id="d13015f8ae4fd0f7f263eba9f81f4caa" category="section-title">Connecteur 3.9.29</block>
+  <block id="05263fcc56b50972b2dfe4be20698328" category="list-text">Ubuntu 22.04 est le nouveau système d'exploitation du connecteur lorsque vous déployez un connecteur à partir de BlueXP ou du marché de votre fournisseur de cloud.</block>
+  <block id="9ab8f4fa1e0839b1101d04c9cd4e1bae" category="paragraph">Vous avez également la possibilité d'installer manuellement le connecteur sur votre propre hôte Linux exécutant Ubuntu 22.04.</block>
+  <block id="dfcaca26de191f6219819bb7091c9ebe" category="list-text">Red Hat Enterprise Linux 8.6 et 8.7 ne sont plus pris en charge avec les nouveaux déploiements de connecteurs.</block>
+  <block id="2f5617aecec1df3805ada7f05da46bde" category="paragraph">Ces versions ne sont pas prises en charge par les nouveaux déploiements, car Red Hat ne prend plus en charge Docker, requis pour le connecteur. Si vous disposez d'un connecteur existant sous RHEL 8.6 ou 8.7, NetApp continuera à prendre en charge votre configuration.</block>
+  <block id="470821fb08a53bb45ecda66d23c58d6f" category="paragraph">Red Hat 7.6, 7.7, 7.8 et 7.9 sont toujours pris en charge avec les connecteurs nouveaux et existants.</block>
+  <block id="a2619f6db1e9fa217b857129c75384ab" category="list-text">Le connecteur est désormais pris en charge dans la région Qatar de Google Cloud.</block>
+  <block id="368c64d1828dfb51f85a6ad8427db46c" category="list-text">Le connecteur est également pris en charge dans la région centrale de Suède de Microsoft Azure.</block>
+  <block id="cff120b14e79d2501e83070f59bb2387" category="paragraph"><block ref="cff120b14e79d2501e83070f59bb2387" category="inline-link-rx"></block></block>
+  <block id="a12b9d09313df9b379fff76f6080b543" category="paragraph">Si vous souhaitez installer manuellement le logiciel Connector sur votre propre hôte Linux, vous devez vous assurer que votre hôte répond à des exigences spécifiques. Si vous créez le connecteur à partir de BlueXP ou d'AWS Marketplace, vous devez prendre en charge ces exigences, car le logiciel est déployé à partir d'une image.</block>
+  <block id="8a9983b753881349972a7c0a24378110" category="paragraph">Si vous souhaitez installer manuellement le logiciel Connector sur votre propre hôte Linux, vous devez vous assurer que votre hôte répond à des exigences spécifiques. Si vous créez le connecteur à partir de BlueXP ou à l'aide de gcloud, vous devez respecter ces exigences, car le logiciel est déployé à partir d'une image.</block>
+  <block id="eebb9a8111d1623667243e7e41ed0e71" category="list-text">Le système d'exploitation de l'image est Ubuntu 22.04.</block>
+  <block id="ba5aa0edf5aca9e505ac70fc6e55851d" category="paragraph">Si vous avez déployé le connecteur à partir de BlueXP, notez les points suivants :</block>
+  <block id="09eadec3a9869ab363e913c06ab259a3" category="admonition">Lorsque BlueXP crée le connecteur, il applique un nouvel ensemble d'autorisations à l'instance Connector qui permet au connecteur de gérer les ressources AWS.</block>
 </blocks>
