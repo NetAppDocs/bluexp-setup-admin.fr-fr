@@ -33,7 +33,7 @@ Services AWS (amazonaws.com):
 * Service de jetons de sécurité (STS)
 * Service de stockage simple (S3)
 
-| Nécessaire pour déployer un connecteur depuis BlueXP dans AWS. Le point final exact dépend de la région dans laquelle vous déployez le connecteur. https://docs.aws.amazon.com/general/latest/gr/rande.html["Reportez-vous à la documentation AWS pour plus de détails."^] 
+| Nécessaire pour déployer un connecteur depuis BlueXP dans AWS. Le point final exact dépend de la région dans laquelle vous déployez le connecteur. https://["Reportez-vous à la documentation AWS pour plus de détails."^] 
 
 
 | \https://management.azure.com \https://login.microsoftonline.com | Nécessaire au déploiement d'un connecteur depuis BlueXP dans la plupart des régions Azure. 

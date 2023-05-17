@@ -98,7 +98,7 @@ link:task-set-up-permissions-aws.html["Découvrez comment configurer des autoris
 
 
 .Étapes
-. Accédez au https://aws.amazon.com/marketplace/pp/B018REK8QG["BlueXP, page sur AWS Marketplace"^]
+. Accédez au https://["BlueXP, page sur AWS Marketplace"^]
 . Sur la page Marketplace, cliquez sur *Continuer pour s'abonner*, puis cliquez sur *Continuer la configuration*.
 +
 image:screenshot-subscribe-aws.png["Une capture d'écran affiche les boutons Continuer à s'abonner et Continuer la configuration sur AWS Marketplace."]
@@ -143,7 +143,7 @@ AWS lance le logiciel avec les paramètres spécifiés. L'instance de connecteur
 
 . Ouvrez un navigateur Web à partir d'un hôte connecté à la machine virtuelle Connector et entrez l'URL suivante :
 +
-https://_ipaddress_[]
+https://[]
 
 . Une fois connecté, configurez le connecteur :
 +
@@ -161,7 +161,7 @@ Vous devez désactiver le mode restreint, car ces étapes décrivent l'utilisati
 .Résultat
 Le connecteur est maintenant installé et configuré avec votre compte BlueXP.
 
-Ouvrez un navigateur Web et accédez au https://console.bluexp.netapp.com["Console BlueXP"^] Pour commencer à utiliser le connecteur avec BlueXP.
+Ouvrez un navigateur Web et accédez au https://["Console BlueXP"^] Pour commencer à utiliser le connecteur avec BlueXP.
 
 --
 .Installation manuelle
@@ -200,7 +200,7 @@ unset https_proxy
 +
 Si vous ne supprimez pas ces variables système, l'installation échouera.
 
-. Téléchargez le logiciel du connecteur à partir du https://mysupport.netapp.com/site/products/all/details/cloud-manager/downloads-tab["Site de support NetApp"^], Puis copiez-le sur l'hôte Linux.
+. Téléchargez le logiciel du connecteur à partir du https://["Site de support NetApp"^], Puis copiez-le sur l'hôte Linux.
 +
 Vous devez télécharger le programme d'installation du connecteur « en ligne » destiné à être utilisé sur votre réseau ou dans le cloud. Un programme d'installation séparé « hors ligne » est disponible pour le connecteur, mais il n'est pris en charge que pour les déploiements en mode privé.
 
@@ -249,7 +249,7 @@ Voici un exemple de commande utilisant les deux paramètres facultatifs :
 
 . Ouvrez un navigateur Web à partir d'un hôte connecté à la machine virtuelle Connector et entrez l'URL suivante :
 +
-https://_ipaddress_[]
+https://[]
 
 . Une fois connecté, configurez le connecteur :
 +

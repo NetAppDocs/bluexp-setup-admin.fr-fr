@@ -18,11 +18,11 @@ NetApp prend en charge BlueXP et ses services cloud de différentes manières. D
 
 Ces options sont disponibles gratuitement, 24 heures sur 24, 7 jours sur 7 :
 
-* https://kb.netapp.com/Cloud/BlueXP["Base de connaissances"^]
+* https://["Base de connaissances"^]
 +
 Recherchez dans la base de connaissances BlueXP des articles utiles pour résoudre les problèmes.
 
-* http://community.netapp.com/["Communautés"^]
+* http://["Communautés"^]
 +
 Rejoignez la communauté BlueXP pour suivre des discussions en cours ou en créer de nouveaux.
 
@@ -92,7 +92,7 @@ Il est possible que vous rencontriez le message d'erreur suivant lors de la cré
 Cette erreur peut signifier que le compte NSS et la société d'enregistrement auquel il est associé n'est pas la même société d'enregistrement pour le numéro de série du compte BlueXP (par exemple 960xxxx) ou le numéro de série de l'environnement de travail. Vous pouvez consulter votre liste de comptes NSS en haut du formulaire *Créer un dossier* pour trouver la correspondance appropriée, ou vous pouvez demander de l'aide en utilisant l'une des options suivantes :
 
 * Utilisez le chat du produit
-* Soumettre un dossier non technique à https://mysupport.netapp.com/site/help[]
+* Soumettre un dossier non technique à https://[]
 
 
 

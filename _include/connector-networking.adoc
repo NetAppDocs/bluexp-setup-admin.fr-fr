@@ -54,7 +54,7 @@ Services AWS (amazonaws.com):
 * Service de jetons de sécurité (STS)
 * Service de stockage simple (S3)
 
-| Pour gérer les ressources dans AWS. Le point final exact dépend de la région dans laquelle vous déployez le connecteur. https://docs.aws.amazon.com/general/latest/gr/rande.html["Pour plus d'informations, consultez la documentation AWS"^] 
+| Pour gérer les ressources dans AWS. Le point final exact dépend de la région dans laquelle vous déployez le connecteur. https://["Pour plus d'informations, consultez la documentation AWS"^] 
 
 
 | \https://management.azure.com \https://login.microsoftonline.com \https://blob.core.windows.net \https://core.windows.net | Afin de gérer les ressources dans les régions publiques d'Azure. 
@@ -86,10 +86,10 @@ Si votre organisation nécessite le déploiement d'un serveur proxy pour tout le
 
 === Groupe de sécurité
 
-Il n'y a pas de trafic entrant vers le connecteur, sauf si vous le lancez ou si le connecteur est utilisé comme proxy pour les messages AutoSupport. HTTP et HTTPS permettent l'accès au https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html#the-local-user-interface["Interface utilisateur locale"], que vous utiliserez dans de rares circonstances. SSH n'est nécessaire que si vous devez vous connecter à l'hôte pour le dépannage.
+Il n'y a pas de trafic entrant vers le connecteur, sauf si vous le lancez ou si le connecteur est utilisé comme proxy pour les messages AutoSupport. HTTP et HTTPS permettent l'accès au https://["Interface utilisateur locale"], que vous utiliserez dans de rares circonstances. SSH n'est nécessaire que si vous devez vous connecter à l'hôte pour le dépannage.
 
 
 
 === Limitation de l'adresse IP
 
-Il existe un conflit possible avec des adresses IP dans la plage 172. https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-limitations.html["En savoir plus sur cette limitation"].
+Il existe un conflit possible avec des adresses IP dans la plage 172. https://["En savoir plus sur cette limitation"].

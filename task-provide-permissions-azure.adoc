@@ -50,13 +50,13 @@ NOTE: BlueXP Operator est le nom par défaut fourni dans la stratégie BlueXP. S
 BlueXP dispose désormais des autorisations dont il a besoin pour effectuer des actions dans Azure en votre nom.
 
 .Et la suite ?
-Accédez au https://console.bluexp.netapp.com["Console BlueXP"^] Pour commencer à utiliser le connecteur avec BlueXP.
+Accédez au https://["Console BlueXP"^] Pour commencer à utiliser le connecteur avec BlueXP.
 
 --
 .Principal du service
 --
 .Étapes
-. Accédez au https://console.bluexp.netapp.com["Console BlueXP"^] et connectez-vous.
+. Accédez au https://["Console BlueXP"^] et connectez-vous.
 . Dans le coin supérieur droit de la console BlueXP, cliquez sur l'icône Paramètres et sélectionnez *informations d'identification*.
 +
 image:screenshot_settings_icon.gif["Capture d'écran affichant l'icône Paramètres dans le coin supérieur droit de la console BlueXP."]

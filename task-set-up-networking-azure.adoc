@@ -26,9 +26,9 @@ Lorsque vous créez le connecteur, vous devez spécifier le réseau virtuel et l
 
 == Région Azure
 
-Le connecteur doit être déployé dans la même région Azure que les systèmes Cloud Volumes ONTAP qu'il gère ou dans https://docs.microsoft.com/en-us/azure/availability-zones/cross-region-replication-azure#azure-cross-region-replication-pairings-for-all-geographies["Paire de régions Azure"^] Pour les systèmes Cloud Volumes ONTAP. Cette exigence garantit qu'une connexion Azure Private Link est utilisée entre Cloud Volumes ONTAP et les comptes de stockage associés.
+Le connecteur doit être déployé dans la même région Azure que les systèmes Cloud Volumes ONTAP qu'il gère ou dans https://["Paire de régions Azure"^] Pour les systèmes Cloud Volumes ONTAP. Cette exigence garantit qu'une connexion Azure Private Link est utilisée entre Cloud Volumes ONTAP et les comptes de stockage associés.
 
-https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-enabling-private-link.html["Découvrez comment Cloud Volumes ONTAP utilise une liaison privée Azure"^]
+https://["Découvrez comment Cloud Volumes ONTAP utilise une liaison privée Azure"^]
 
 
 
@@ -131,4 +131,4 @@ Il n'y a pas de trafic entrant vers le connecteur, sauf si vous le lancez ou si 
 
 == Limitation de l'adresse IP
 
-Il existe un conflit possible avec des adresses IP dans la plage 172. https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-limitations.html["En savoir plus sur cette limitation"].
+Il existe un conflit possible avec des adresses IP dans la plage 172. https://["En savoir plus sur cette limitation"].

@@ -115,13 +115,13 @@ L'exemple suivant crée un rôle nommé « connectorDeployment » au niveau du p
 Les rôles iam gcloud créent connectDeployment --project=myproject --file=Connector-deployment.yaml
 
 +
-https://cloud.google.com/iam/docs/creating-custom-roles#iam-custom-roles-create-gcloud["Documents Google Cloud : création et gestion de rôles personnalisés"^]
+https://["Documents Google Cloud : création et gestion de rôles personnalisés"^]
 
 
 
 . Attribuez ce rôle personnalisé à l'utilisateur qui va déployer le connecteur à partir de BlueXP ou à l'aide de gcloud.
 +
-https://cloud.google.com/iam/docs/granting-changing-revoking-access#grant-single-role["Documents Google Cloud : attribuez un rôle unique"^]
+https://["Documents Google Cloud : attribuez un rôle unique"^]
 
 
 
@@ -148,7 +148,7 @@ L'exemple suivant crée un rôle nommé « connecteur » au niveau du projet :
 les rôles iam gcloud créent connecteur --projet=myproject --file=connector.yaml
 
 +
-https://cloud.google.com/iam/docs/creating-custom-roles#iam-custom-roles-create-gcloud["Documents Google Cloud : création et gestion de rôles personnalisés"^]
+https://["Documents Google Cloud : création et gestion de rôles personnalisés"^]
 
 
 
@@ -159,7 +159,7 @@ https://cloud.google.com/iam/docs/creating-custom-roles#iam-custom-roles-create-
 .. Sélectionnez le rôle que vous venez de créer.
 .. Terminez les étapes restantes pour créer le rôle.
 +
-https://cloud.google.com/iam/docs/creating-managing-service-accounts#creating_a_service_account["Documents Google Cloud : création d'un compte de service"^]
+https://["Documents Google Cloud : création d'un compte de service"^]
 
 
 
@@ -187,7 +187,7 @@ Disons, par exemple, que le connecteur est dans le projet 1 et que vous voulez c
 
 
 
-Pour plus de détails, reportez-vous à https://cloud.google.com/iam/docs/granting-changing-revoking-access#grant-single-role["Documentation Google Cloud"^]
+Pour plus de détails, reportez-vous à https://["Documentation Google Cloud"^]
 
 
 

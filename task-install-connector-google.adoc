@@ -153,7 +153,7 @@ L'exécution de la commande déploie le connecteur à l'aide de l'image de réf�
 
 . Ouvrez un navigateur Web à partir d'un hôte connecté à l'instance Connector et saisissez l'URL suivante :
 +
-https://_ipaddress_[]
+https://[]
 
 . Une fois connecté, configurez le connecteur :
 +
@@ -169,7 +169,7 @@ link:concept-netapp-accounts.html["Découvrez les comptes BlueXP"].
 .Résultat
 Le connecteur est maintenant installé et configuré avec votre compte BlueXP.
 
-Ouvrez un navigateur Web et accédez au https://console.bluexp.netapp.com["Console BlueXP"^] Pour commencer à utiliser le connecteur avec BlueXP.
+Ouvrez un navigateur Web et accédez au https://["Console BlueXP"^] Pour commencer à utiliser le connecteur avec BlueXP.
 
 --
 .Installation manuelle
@@ -208,7 +208,7 @@ unset https_proxy
 +
 Si vous ne supprimez pas ces variables système, l'installation échouera.
 
-. Téléchargez le logiciel du connecteur à partir du https://mysupport.netapp.com/site/products/all/details/cloud-manager/downloads-tab["Site de support NetApp"^], Puis copiez-le sur l'hôte Linux.
+. Téléchargez le logiciel du connecteur à partir du https://["Site de support NetApp"^], Puis copiez-le sur l'hôte Linux.
 +
 Vous devez télécharger le programme d'installation du connecteur « en ligne » destiné à être utilisé sur votre réseau ou dans le cloud. Un programme d'installation séparé « hors ligne » est disponible pour le connecteur, mais il n'est pris en charge que pour les déploiements en mode privé.
 
@@ -257,7 +257,7 @@ Voici un exemple de commande utilisant les deux paramètres facultatifs :
 
 . Ouvrez un navigateur Web à partir d'un hôte connecté à la machine virtuelle Connector et entrez l'URL suivante :
 +
-https://_ipaddress_[]
+https://[]
 
 . Une fois connecté, configurez le connecteur :
 +

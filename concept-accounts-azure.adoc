@@ -22,7 +22,7 @@ Découvrez comment BlueXP utilise les identifiants et les autorisations Azure po
 
 Lorsque vous déployez un connecteur depuis BlueXP, vous devez utiliser un compte ou un service principal Azure disposant des autorisations pour déployer la machine virtuelle Connector. Les autorisations requises sont répertoriées dans le link:task-set-up-permissions-azure.html["Stratégie de déploiement de Connector pour Azure"].
 
-Lorsque BlueXP déploie la machine virtuelle Connector dans Azure, il active un https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/overview["identité gérée attribuée par le système"^] sur une machine virtuelle, crée un rôle personnalisé et le attribue à la machine virtuelle. Le rôle fournit à BlueXP les autorisations requises pour gérer les ressources et les processus au sein de cet abonnement Azure. link:reference-permissions-azure.html["Consultez la manière dont BlueXP utilise les autorisations"].
+Lorsque BlueXP déploie la machine virtuelle Connector dans Azure, il active un https://["identité gérée attribuée par le système"^] sur une machine virtuelle, crée un rôle personnalisé et le attribue à la machine virtuelle. Le rôle fournit à BlueXP les autorisations requises pour gérer les ressources et les processus au sein de cet abonnement Azure. link:reference-permissions-azure.html["Consultez la manière dont BlueXP utilise les autorisations"].
 
 image:diagram_permissions_initial_azure.png["Image conceptuelle qui montre BlueXP déploiement d'un connecteur dans un compte et un abonnement Azure. Une identité gérée attribuée par le système est activée et un rôle personnalisé est attribué à la machine virtuelle du connecteur."]
 

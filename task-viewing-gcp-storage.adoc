@@ -33,7 +33,7 @@ image:screenshot-gcp-cloud-storage-actions.png["Copie d'écran affichant le vole
 
 . Sélectionnez *Synchroniser les données* pour synchroniser les données depuis ou vers des compartiments de stockage Google Cloud.
 +
-Pour plus de détails, voir https://docs.netapp.com/us-en/cloud-manager-sync/concept-cloud-sync.html["Présentation de la copie et de la synchronisation BlueXP"^]
+Pour plus de détails, voir https://["Présentation de la copie et de la synchronisation BlueXP"^]
 
 . Sélectionnez *entrer l'environnement de travail* pour afficher les détails des compartiments de votre compte Google.
 +

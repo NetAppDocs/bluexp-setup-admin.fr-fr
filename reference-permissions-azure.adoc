@@ -86,7 +86,6 @@ Vous devez également vous assurer que le rôle est à jour lorsque de nouvelles
                     "Microsoft.Storage/storageAccounts/delete",
                     "Microsoft.Storage/storageAccounts/write",
                     "Microsoft.Storage/storageAccounts/blobServices/containers/read",
-                    "Microsoft.Storage/storageAccounts/blobServices/containers/write",
                     "Microsoft.Storage/storageAccounts/listAccountSas/action",
                     "Microsoft.Storage/usages/read",
                     "Microsoft.Compute/snapshots/write",
@@ -161,9 +160,10 @@ Vous devez également vous assurer que le rôle est à jour lorsque de nouvelles
                     "Microsoft.Synapse/workspaces/firewallRules/read",
                     "Microsoft.Synapse/workspaces/replaceAllIpFirewallRules/action",
                     "Microsoft.Synapse/workspaces/operationResults/read",
-                    "Microsoft.Network/publicIPAddresses/delete",
                     "Microsoft.Synapse/workspaces/privateEndpointConnectionsApproval/action",
-                    "Microsoft.ManagedIdentity/userAssignedIdentities/assign/action"
+                    "Microsoft.ManagedIdentity/userAssignedIdentities/assign/action",
+                    "Microsoft.Compute/images/write",
+                    "Microsoft.Network/loadBalancers/frontendIPConfigurations/read"
     ],
     "NotActions": [],
     "AssignableScopes": [],
@@ -226,8 +226,6 @@ Il effectue les requêtes API suivantes pour la sauvegarde et la restauration Bl
 * Microsoft.Network/networkInterfaces/delete
 * Microsoft.Network/networkSecurityGroups/delete
 * Microsoft.Ressources/déploiements/suppression
-* Microsoft.Network/publicIPAddresses/delete
-* Microsoft.Storage/storageAccounts/blobServices/containers/write
 * Microsoft.ManagedIdentity/userAssignedIdentities/attributable/action
 
 
@@ -443,7 +441,10 @@ Il effectue les requêtes d'API suivantes pour déployer et gérer Cloud Volumes
 | Microsoft.Ressources/déploiements/suppression | Oui. | Non | Non 
 
 
-| Déployez à partir d'un VHD | Microsoft.Compute/images/read | Oui. | Non | Non 
+.2+| Déployez à partir d'un VHD | Microsoft.Compute/images/read | Oui. | Non | Non 
+
+
+| Microsoft.Compute/images/write | Oui. | Non | Non 
 
 
 .4+| Créez et gérez des interfaces réseau dans le sous-réseau cible | Microsoft.Network/networkInterfaces/read | Oui. | Oui. | Non 
@@ -590,7 +591,7 @@ Il effectue les requêtes d'API suivantes pour déployer et gérer Cloud Volumes
 | Microsoft.MarketplaceOrdering/Offres/éditeurs/offres/plans/accords/écrire | Oui. | Oui. | Non 
 
 
-.8+| Gérer un équilibreur de charge pour les paires HA | Microsoft.Network/loadBalancers/read | Oui. | Oui. | Non 
+.9+| Gérer un équilibreur de charge pour les paires HA | Microsoft.Network/loadBalancers/read | Oui. | Oui. | Non 
 
 
 | Microsoft.Network/loadBalancers/write | Oui. | Non | Non 
@@ -603,6 +604,9 @@ Il effectue les requêtes d'API suivantes pour déployer et gérer Cloud Volumes
 
 
 | Microsoft.Network/loadBalancers/backendAddressPools/join/action | Oui. | Non | Non 
+
+
+| Microsoft.Network/loadBalancers/frontendIPConfigurations/read | Oui. | Oui. | Non 
 
 
 | Microsoft.Network/loadBalancers/loadBalancingRules/read | Oui. | Non | Non 
@@ -756,7 +760,6 @@ Lorsque vous configurez le Tiering BlueXP, Connector effectue les requêtes d'AP
 Le connecteur effectue les demandes d'API suivantes pour les opérations quotidiennes.
 
 * Microsoft.Storage/storageAccounts/blobServices/containers/read
-* Microsoft.Storage/storageAccounts/blobServices/containers/write
 * Microsoft.Storage/storageAccounts/managePolicies/read
 * Microsoft.Storage/storageAccounts/managePolicies/write
 * Microsoft.Storage/storageAccounts/read
@@ -767,6 +770,22 @@ Le connecteur effectue les demandes d'API suivantes pour les opérations quotidi
 == Journal des modifications
 
 Lorsque des autorisations sont ajoutées et supprimées, nous les noterons dans les sections ci-dessous.
+
+
+
+=== 12 mai 2023
+
+Les autorisations suivantes ont été ajoutées à la règle JSON car elles sont requises pour la gestion de Cloud Volumes ONTAP :
+
+* Microsoft.Compute/images/write
+* Microsoft.Network/loadBalancers/frontendIPConfigurations/read
+
+
+Les autorisations suivantes ont été supprimées de la politique JSON car elles ne sont plus requises :
+
+* Microsoft.Storage/storageAccounts/blobServices/containers/write
+* Microsoft.Network/publicIPAddresses/delete
+
 
 
 
@@ -791,27 +810,4 @@ Ces autorisations sont requises pour la sauvegarde et la restauration BlueXP.
 +
 Cette autorisation est requise pour le déploiement de Cloud Volumes ONTAP.
 
-
-
-
-
-=== 1er décembre 2022
-
-Les autorisations suivantes ont été ajoutées à la politique JSON :
-
-* Microsoft.Storage/storageAccounts/blobServices/containers/write
-+
-Cette autorisation est requise pour la sauvegarde et la restauration BlueXP et le Tiering BlueXP.
-
-* Microsoft.Network/publicIPAddresses/delete
-+
-Cette autorisation est requise pour la sauvegarde et la restauration BlueXP.
-
-
-
-Les autorisations suivantes ont été supprimées de la politique JSON car elles ne sont plus requises :
-
-* Microsoft.Compute/images/write
-* Microsoft.Network/loadBalancers/frontendIPConfigurations/read
-* Microsoft.Storage/storageAccounts/regénérateur/action
 

@@ -18,13 +18,13 @@ Une fois que vous êtes opérationnel avec BlueXP en mode restreint, vous pouvez
 
 Pour obtenir de l'aide, reportez-vous à la documentation de ces services :
 
-* https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/index.html["Documents Amazon FSX pour ONTAP"^]
-* https://docs.netapp.com/us-en/cloud-manager-azure-netapp-files/index.html["Documentation Azure NetApp Files"^]
-* https://docs.netapp.com/us-en/cloud-manager-backup-restore/index.html["Documents de sauvegarde et de restauration"^]
-* https://docs.netapp.com/us-en/cloud-manager-data-sense/index.html["Documents de classification"^]
-* https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/index.html["Documentation Cloud Volumes ONTAP"^]
-* https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/index.html["Documentation sur le cluster ONTAP sur site"^]
-* https://docs.netapp.com/us-en/cloud-manager-replication/index.html["Documents de réplication"^]
+* https://["Documents Amazon FSX pour ONTAP"^]
+* https://["Documentation Azure NetApp Files"^]
+* https://["Documents de sauvegarde et de restauration"^]
+* https://["Documents de classification"^]
+* https://["Documentation Cloud Volumes ONTAP"^]
+* https://["Documentation sur le cluster ONTAP sur site"^]
+* https://["Documents de réplication"^]
 
 
 .Lien associé

@@ -42,7 +42,7 @@ image:screenshot_settings_icon.gif["Capture d'écran affichant l'icône Paramèt
 
 
 .Résultat
-BlueXP dispose désormais des autorisations dont il a besoin pour effectuer des actions dans AWS en votre nom. Vous pouvez maintenant accéder au https://console.bluexp.netapp.com["Console BlueXP"^] Pour commencer à utiliser le connecteur avec BlueXP.
+BlueXP dispose désormais des autorisations dont il a besoin pour effectuer des actions dans AWS en votre nom. Vous pouvez maintenant accéder au https://["Console BlueXP"^] Pour commencer à utiliser le connecteur avec BlueXP.
 
 --
 .Azure
@@ -72,7 +72,7 @@ image:screenshot_settings_icon.gif["Capture d'écran affichant l'icône Paramèt
 
 
 .Résultat
-BlueXP dispose désormais des autorisations dont il a besoin pour effectuer des actions dans Azure en votre nom. Vous pouvez maintenant accéder au https://console.bluexp.netapp.com["Console BlueXP"^] Pour commencer à utiliser le connecteur avec BlueXP.
+BlueXP dispose désormais des autorisations dont il a besoin pour effectuer des actions dans Azure en votre nom. Vous pouvez maintenant accéder au https://["Console BlueXP"^] Pour commencer à utiliser le connecteur avec BlueXP.
 
 --
 ====

@@ -91,10 +91,10 @@ Cette option vous invite à vous reconnecter. Notez que le jeton de ces comptes 
 .Et la suite ?
 Les utilisateurs peuvent désormais sélectionner le compte lors de la création de nouveaux systèmes Cloud Volumes ONTAP, lors de l'enregistrement des systèmes Cloud Volumes ONTAP existants et lors de l'inscription au support.
 
-* https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-deploying-otc-aws.html["Lancement d'Cloud Volumes ONTAP dans AWS"^]
-* https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-deploying-otc-azure.html["Lancement d'Cloud Volumes ONTAP dans Azure"^]
-* https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-deploying-gcp.html["Lancement d'Cloud Volumes ONTAP dans Google Cloud"^]
-* https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-registering.html["Enregistrement des systèmes de paiement à l'utilisation"^]
+* https://["Lancement d'Cloud Volumes ONTAP dans AWS"^]
+* https://["Lancement d'Cloud Volumes ONTAP dans Azure"^]
+* https://["Lancement d'Cloud Volumes ONTAP dans Google Cloud"^]
+* https://["Enregistrement des systèmes de paiement à l'utilisation"^]
 
 
 
@@ -104,7 +104,7 @@ Les utilisateurs peuvent désormais sélectionner le compte lors de la création
 Depuis novembre 2021, NetApp utilise désormais Microsoft Azure Active Directory comme fournisseur d'identités pour les services d'authentification spécifiques au support et aux licences. Suite à cette mise à jour, BlueXP vous invitera à mettre à jour les informations d'identification de tous les comptes existants que vous avez ajoutés précédemment.
 
 .Étapes
-. Si ce n'est déjà fait, https://kb.netapp.com/Advice_and_Troubleshooting/Miscellaneous/FAQs_for_NetApp_adoption_of_MS_Azure_AD_B2C_for_login["Créez un compte Microsoft Azure Active Directory B2C qui sera lié à votre compte BlueXP actuel"^].
+. Si ce n'est déjà fait, https://["Créez un compte Microsoft Azure Active Directory B2C qui sera lié à votre compte BlueXP actuel"^].
 . Dans le coin supérieur droit de la console BlueXP, sélectionnez l'icône aide, puis sélectionnez *support*.
 . Sélectionnez *gestion NSS*.
 . Pour le compte NSS que vous souhaitez mettre à jour, sélectionnez *mettre à jour le compte*.

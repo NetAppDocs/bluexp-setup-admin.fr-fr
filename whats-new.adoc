@@ -38,11 +38,11 @@ Red Hat 7.6, 7.7, 7.8 et 7.9 sont toujours pris en charge avec les connecteurs n
 * Le connecteur est désormais pris en charge dans la région Qatar de Google Cloud.
 * Le connecteur est également pris en charge dans la région centrale de Suède de Microsoft Azure.
 +
-https://cloud.netapp.com/cloud-volumes-global-regions["Afficher la liste complète des régions prises en charge"^]
+https://["Afficher la liste complète des régions prises en charge"^]
 
 * Cette version du connecteur inclut des améliorations Cloud Volumes ONTAP.
 +
-https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#7-may-2023["Découvrez les améliorations apportées à Cloud Volumes ONTAP"^]
+https://["Découvrez les améliorations apportées à Cloud Volumes ONTAP"^]
 
 
 
@@ -61,7 +61,7 @@ Les _modes de déploiement_ de BlueXP vous permettent d'utiliser BlueXP en fonct
 * Mode privé
 
 
-https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-modes.html["En savoir plus sur ces modes de déploiement"].
+https://["En savoir plus sur ces modes de déploiement"].
 
 
 NOTE: L'introduction du mode restreint remplace l'option d'activation ou de désactivation de la plate-forme SaaS. Vous pouvez activer le mode restreint au moment de la création du compte. Il ne peut pas être activé ou désactivé ultérieurement.
@@ -79,27 +79,27 @@ NOTE: L'introduction du mode restreint remplace l'option d'activation ou de dés
 Si vous configurez vos paramètres de notification, vous pouvez recevoir des notifications par e-mail lorsque vos licences BYOL vont expirer (une notification d'avertissement) ou si elles ont déjà expiré (une notification d'erreur).
 
 +
-https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-monitor-cm-operations.html["Découvrez comment configurer les notifications par e-mail"].
+https://["Découvrez comment configurer les notifications par e-mail"].
 
 * Le connecteur est désormais pris en charge dans la région Google Cloud Turin.
 +
-https://cloud.netapp.com/cloud-volumes-global-regions["Afficher la liste complète des régions prises en charge"^]
+https://["Afficher la liste complète des régions prises en charge"^]
 
 * Vous pouvez désormais gérer les identifiants utilisateur associés à votre connexion BlueXP : identifiants ONTAP et identifiants NSS (NetApp support site).
 +
 Lorsque vous accédez à *Paramètres > informations d'identification*, vous pouvez afficher les informations d'identification, les mettre à jour et les supprimer. Par exemple, si vous modifiez le mot de passe de ces informations d'identification, vous devez le mettre à jour dans BlueXP.
 
 +
-https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-manage-user-credentials.html["Découvrez comment gérer les informations d'identification des utilisateurs"].
+https://["Découvrez comment gérer les informations d'identification des utilisateurs"].
 
 * Vous pouvez maintenant télécharger des pièces jointes lorsque vous créez un dossier de support ou lorsque vous mettez à jour les notes de dossier pour un dossier de support existant.
 +
-https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-get-help.html#manage-your-support-cases["Découvrez comment créer et gérer des dossiers de demande de support"].
+https://["Découvrez comment créer et gérer des dossiers de demande de support"].
 
 * Cette version de Connector inclut également des améliorations apportées à Cloud Volumes ONTAP et des clusters ONTAP sur site.
 +
-** https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#3-april-2023["Découvrez les améliorations apportées à Cloud Volumes ONTAP"^]
-** https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/whats-new.html#3-april-2023["Découvrez les améliorations apportées aux clusters sur site de ONTAP"^]
+** https://["Découvrez les améliorations apportées à Cloud Volumes ONTAP"^]
+** https://["Découvrez les améliorations apportées aux clusters sur site de ONTAP"^]
 
 
 
@@ -118,7 +118,7 @@ image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-setup-admin/mai
 
 * Vous pouvez afficher et gérer les dossiers de support actifs et résolus directement à partir de BlueXP. Vous pouvez gérer les dossiers associés à votre compte NSS et à votre entreprise.
 +
-https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-get-help.html#manage-your-support-cases["Découvrez comment gérer vos dossiers de demande de support"].
+https://["Découvrez comment gérer vos dossiers de demande de support"].
 
 * Le connecteur est désormais pris en charge dans tout environnement cloud totalement isolé d'Internet. Vous pouvez ensuite utiliser la console BlueXP exécutée sur le connecteur pour déployer Cloud Volumes ONTAP au même emplacement et découvrir les clusters ONTAP sur site (si vous disposez d'une connexion entre votre environnement cloud et votre environnement sur site). Vous pouvez également utiliser BlueXP Backup and Recovery pour sauvegarder les volumes Cloud Volumes ONTAP dans les régions commerciales AWS et Azure. Aucun autre service BlueXP n'est pris en charge dans ce type de déploiement, à l'exception du portefeuille digital BlueXP.
 +
@@ -128,19 +128,19 @@ La région cloud peut être une région pour des agences américaines sécurisé
 Pour commencer, installez manuellement le logiciel Connector, connectez-vous à la console BlueXP exécutée sur le connecteur, ajoutez votre licence BYOL au portefeuille digital BlueXP, puis déployez Cloud Volumes ONTAP.
 
 +
-** https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-install-connector-onprem-no-internet.html["Installez le connecteur dans un emplacement sans accès à Internet"^]
-** https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-managing-connectors.html#access-the-local-ui["Accéder à la console BlueXP sur le connecteur"^]
-** https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-node-licenses.html#manage-byol-licenses["Ajouter une licence non attribuée"^]
-** https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-overview-cvo.html["Lancez-vous avec Cloud Volumes ONTAP"^]
+** https://["Installez le connecteur dans un emplacement sans accès à Internet"^]
+** https://["Accéder à la console BlueXP sur le connecteur"^]
+** https://["Ajouter une licence non attribuée"^]
+** https://["Lancez-vous avec Cloud Volumes ONTAP"^]
 
 
 * Connector vous permet désormais d'ajouter et de gérer des compartiments Amazon S3 à partir de BlueXP.
 +
-https://docs.netapp.com/us-en/bluexp-s3-storage/task-add-s3-bucket.html["Découvrez comment ajouter de nouveaux compartiments Amazon S3 dans votre compte AWS à partir de BlueXP"^].
+https://["Découvrez comment ajouter de nouveaux compartiments Amazon S3 dans votre compte AWS à partir de BlueXP"^].
 
 * Cette version du connecteur inclut des améliorations Cloud Volumes ONTAP.
 +
-https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#5-march-2023["Découvrez les améliorations apportées à Cloud Volumes ONTAP"^]
+https://["Découvrez les améliorations apportées à Cloud Volumes ONTAP"^]
 
 
 
@@ -168,15 +168,15 @@ image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-setup-admin/mai
 image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-setup-admin/main/media/screenshot-aws-subscription.png["Capture d'écran indiquant l'affectation d'abonnement pour un compte BlueXP."]
 
 +
-** https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-aws-accounts.html#associate-an-aws-subscription["Découvrez comment associer un abonnement AWS"]
-** https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-azure-accounts.html#associating-an-azure-marketplace-subscription-to-credentials["Découvrez comment associer un abonnement Azure"]
-** https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-gcp-accounts.html["Découvrez comment associer un abonnement Google Cloud"]
+** https://["Découvrez comment associer un abonnement AWS"]
+** https://["Découvrez comment associer un abonnement Azure"]
+** https://["Découvrez comment associer un abonnement Google Cloud"]
 
 
 * BlueXP vous avertira désormais si votre connecteur a été mis hors tension pendant 14 jours ou plus.
 +
-** https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-monitor-cm-operations.html["En savoir plus sur les notifications BlueXP"]
-** https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html#connectors-should-remain-running["Découvrez pourquoi les connecteurs doivent rester en fonctionnement"]
+** https://["En savoir plus sur les notifications BlueXP"]
+** https://["Découvrez pourquoi les connecteurs doivent rester en fonctionnement"]
 
 
 * Nous avons mis à jour la règle de connecteur pour Google Cloud afin d'inclure une autorisation requise pour créer et gérer des machines virtuelles de stockage sur des paires haute disponibilité Cloud Volumes ONTAP :
@@ -184,11 +184,11 @@ image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-setup-admin/mai
 compute.instances.updateNetworkInterface
 
 +
-https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-gcp.html["Afficher les autorisations Google Cloud pour le connecteur"].
+https://["Afficher les autorisations Google Cloud pour le connecteur"].
 
 * Cette version du connecteur inclut des améliorations Cloud Volumes ONTAP.
 +
-https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#5-february-2023["Découvrez les améliorations apportées à Cloud Volumes ONTAP"^]
+https://["Découvrez les améliorations apportées à Cloud Volumes ONTAP"^]
 
 
 
@@ -202,7 +202,7 @@ https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#5
 
 Cette version de Connector inclut des améliorations de Cloud Volumes ONTAP et des correctifs.
 
-https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#1-january-2023["Découvrez les améliorations apportées à Cloud Volumes ONTAP"^]
+https://["Découvrez les améliorations apportées à Cloud Volumes ONTAP"^]
 
 
 
@@ -212,12 +212,12 @@ https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#1
 
 === Connecteur 3.9.24
 
-* Nous avons mis à jour l'URL de la console BlueXP vers https://console.bluexp.netapp.com[]
+* Nous avons mis à jour l'URL de la console BlueXP vers https://[]
 * Le connecteur est désormais pris en charge dans la région de Google Cloud Israël.
 * Cette version de Connector inclut également des améliorations apportées à Cloud Volumes ONTAP et des clusters ONTAP sur site.
 +
-** https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#4-december-2022["Découvrez les améliorations apportées à Cloud Volumes ONTAP"^]
-** https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/whats-new.html#4-december-2022["Découvrez les améliorations apportées aux clusters sur site de ONTAP"^]
+** https://["Découvrez les améliorations apportées à Cloud Volumes ONTAP"^]
+** https://["Découvrez les améliorations apportées aux clusters sur site de ONTAP"^]
 
 
 
@@ -232,11 +232,11 @@ https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#1
 
 * Vos abonnements PAYGO et vos contrats annuels pour BlueXP sont désormais disponibles. Vous pouvez les consulter et les gérer depuis le portefeuille digital.
 +
-https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-manage-subscriptions.html["Découvrez comment gérer vos abonnements"^]
+https://["Découvrez comment gérer vos abonnements"^]
 
 * Cette version du connecteur inclut également des améliorations Cloud Volumes ONTAP.
 +
-https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#6-november-2022["Découvrez les améliorations apportées à Cloud Volumes ONTAP"^]
+https://["Découvrez les améliorations apportées à Cloud Volumes ONTAP"^]
 
 
 
@@ -244,7 +244,7 @@ https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#6
 
 == 1er novembre 2022
 
-Cloud Manager vous invite à mettre à jour les identifiants associés à vos comptes sur le site de support NetApp lorsque le jeton de mise à jour associé à votre compte expire au bout de 3 mois. https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-nss-accounts.html#update-nss-credentials["Découvrez comment gérer des comptes NSS"^]
+Cloud Manager vous invite à mettre à jour les identifiants associés à vos comptes sur le site de support NetApp lorsque le jeton de mise à jour associé à votre compte expire au bout de 3 mois. https://["Découvrez comment gérer des comptes NSS"^]
 
 
 
@@ -257,11 +257,11 @@ Cloud Manager vous invite à mettre à jour les identifiants associés à vos co
 * Nous avons amélioré l'assistant de déploiement de connecteur en ajoutant un _Guide produit_ qui fournit des étapes permettant de répondre aux exigences minimales pour l'installation de connecteurs : autorisations, authentification et mise en réseau.
 * Vous pouvez désormais créer un dossier de demande de support NetApp directement depuis Cloud Manager dans *support Dashboard*.
 +
-https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-get-help.html#netapp-support["Découvrez comment créer un dossier"].
+https://["Découvrez comment créer un dossier"].
 
 * Cette version du connecteur inclut également des améliorations Cloud Volumes ONTAP.
 +
-https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#18-september-2022["Découvrez les améliorations apportées à Cloud Volumes ONTAP"^]
+https://["Découvrez les améliorations apportées à Cloud Volumes ONTAP"^]
 
 
 
@@ -281,11 +281,11 @@ Sur la toile, l'onglet *Mes opportunités* fournit un emplacement centralisé po
 Dans cette version initiale, My Opportunities vous permet de découvrir les systèmes de fichiers FSX pour ONTAP existants dans votre compte AWS.
 
 +
-https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-creating-fsx-working-environment.html#discover-using-my-opportunities["Découvrez comment découvrir FSX pour ONTAP à l'aide de Mes opportunités"^]
+https://["Découvrez comment découvrir FSX pour ONTAP à l'aide de Mes opportunités"^]
 
 * Cette version du connecteur inclut également des améliorations Cloud Volumes ONTAP.
 +
-https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#31-july-2022["Découvrez les améliorations apportées à Cloud Volumes ONTAP"^]
+https://["Découvrez les améliorations apportées à Cloud Volumes ONTAP"^]
 
 
 
@@ -299,9 +299,9 @@ https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#3
 
 Nous avons mis à jour la documentation en ajoutant des règles Cloud Manager directement dans les documents. Cela signifie que vous pouvez désormais afficher les autorisations requises pour le connecteur et le Cloud Volumes ONTAP en même temps que les étapes qui décrivent la configuration de ces connecteurs. Ces règles étaient auparavant accessibles à partir d'une page du site de support NetApp.
 
-https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-aws.html#create-an-iam-policy["Voici un exemple illustrant les autorisations de rôle IAM AWS utilisées pour créer un connecteur"].
+https://["Voici un exemple illustrant les autorisations de rôle IAM AWS utilisées pour créer un connecteur"].
 
-Nous avons également créé une page qui contient des liens vers chacune des politiques. https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions.html["Consultez le récapitulatif des autorisations pour Cloud Manager"].
+Nous avons également créé une page qui contient des liens vers chacune des politiques. https://["Consultez le récapitulatif des autorisations pour Cloud Manager"].
 
 
 
@@ -317,7 +317,7 @@ image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-setup-admin/mai
 
 * Vous pouvez désormais configurer Cloud Manager pour envoyer des notifications par e-mail, afin que vous soyez informé de l'activité importante du système, même lorsque vous n'êtes pas connecté au système.
 +
-https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-monitor-cm-operations.html["Pour en savoir plus sur la surveillance des opérations, consultez votre compte"].
+https://["Pour en savoir plus sur la surveillance des opérations, consultez votre compte"].
 
 * Cloud Manager prend désormais en charge le stockage Azure Blob et Google Cloud Storage en tant qu'environnements de travail, similaires à la prise en charge d'Amazon S3.
 +
@@ -339,11 +339,11 @@ image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-setup-admin/mai
 
 * Le connecteur est désormais pris en charge dans la région Azure West US 3.
 +
-https://bluexp.netapp.com/cloud-volumes-global-regions["Afficher la liste complète des régions prises en charge"^]
+https://["Afficher la liste complète des régions prises en charge"^]
 
 * Cette version du connecteur inclut également des améliorations Cloud Volumes ONTAP.
 +
-https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#2-july-2022["Découvrez les améliorations apportées à Cloud Volumes ONTAP"^]
+https://["Découvrez les améliorations apportées à Cloud Volumes ONTAP"^]
 
 
 
@@ -371,12 +371,12 @@ NOTE: Les identifiants de connexion existants qui utilisent une adresse e-mail e
 * Le connecteur est maintenant pris en charge dans la région AWS Jakarta (ap-sud-est-3).
 * Le connecteur est maintenant pris en charge dans la région du Sud-est d'Azure Brésil.
 +
-https://bluexp.netapp.com/cloud-volumes-global-regions["Afficher la liste complète des régions prises en charge"^]
+https://["Afficher la liste complète des régions prises en charge"^]
 
 * Cette version de Connector inclut également des améliorations apportées à Cloud Volumes ONTAP et des clusters ONTAP sur site.
 +
-** https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#7-june-2022["Découvrez les améliorations apportées à Cloud Volumes ONTAP"^]
-** https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/whats-new.html#7-june-2022["Découvrez les améliorations apportées aux clusters sur site de ONTAP"^]
+** https://["Découvrez les améliorations apportées à Cloud Volumes ONTAP"^]
+** https://["Découvrez les améliorations apportées aux clusters sur site de ONTAP"^]
 
 
 
@@ -408,14 +408,14 @@ Nous avons mis à jour le connecteur pour introduire des correctifs. La correcti
 
 
 +
-https://bluexp.netapp.com/cloud-volumes-global-regions["Afficher la liste complète des régions prises en charge"^]
+https://["Afficher la liste complète des régions prises en charge"^]
 
 * Lorsque vous sélectionnez le compte de service Google Cloud à utiliser avec le connecteur, Cloud Manager affiche désormais l'adresse e-mail associée à chaque compte de service. L'affichage de l'adresse e-mail peut faciliter la distinction entre les comptes de service partageant le même nom.
 +
 image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-setup-admin/main/media/screenshot-google-cloud-service-account.png["Capture d'écran du champ du compte de service"]
 
-* Nous avons certifié le connecteur dans Google Cloud sur une instance de machine virtuelle avec un système d'exploitation pris en charge https://cloud.google.com/compute/shielded-vm/docs/shielded-vm["Fonctionnalités MV blindées"^]
-* Cette version du connecteur inclut également des améliorations Cloud Volumes ONTAP. https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#2-may-2022["Découvrez ces améliorations"^]
+* Nous avons certifié le connecteur dans Google Cloud sur une instance de machine virtuelle avec un système d'exploitation pris en charge https://["Fonctionnalités MV blindées"^]
+* Cette version du connecteur inclut également des améliorations Cloud Volumes ONTAP. https://["Découvrez ces améliorations"^]
 * De nouvelles autorisations AWS sont requises pour que Connector puisse déployer Cloud Volumes ONTAP.
 +
 Les autorisations suivantes sont désormais nécessaires pour créer un groupe de placement AWS SprÃ ad se trouvant dans une même zone de disponibilité lors du déploiement d'une paire haute disponibilité :
@@ -444,9 +444,9 @@ Veillez à fournir ces autorisations à chaque ensemble d'identifiants AWS que v
 
 * Vous pouvez maintenant créer un connecteur en laissant Cloud Manager assumer un rôle IAM que vous configurez dans votre environnement. Cette méthode d'authentification est plus sécurisée que le partage d'une clé d'accès AWS et d'une clé secrète.
 +
-https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-aws.html["Apprendre à créer un connecteur à l'aide d'un rôle IAM"].
+https://["Apprendre à créer un connecteur à l'aide d'un rôle IAM"].
 
-* Cette version du connecteur inclut également des améliorations Cloud Volumes ONTAP. https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#3-april-2022["Découvrez ces améliorations"^]
+* Cette version du connecteur inclut également des améliorations Cloud Volumes ONTAP. https://["Découvrez ces améliorations"^]
 
 
 
@@ -458,7 +458,7 @@ https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors
 === Connecteur 3.9.16
 
 * Lorsque vous créez un nouveau connecteur dans Google Cloud, Cloud Manager affichera désormais toutes vos politiques de pare-feu existantes. Auparavant, Cloud Manager n'affichera aucune règle ne disposant pas d'étiquette cible.
-* Cette version du connecteur inclut également des améliorations Cloud Volumes ONTAP. https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#27-february-2022["Découvrez ces améliorations"^]
+* Cette version du connecteur inclut également des améliorations Cloud Volumes ONTAP. https://["Découvrez ces améliorations"^]
 
 
 
@@ -469,7 +469,7 @@ https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors
 
 === Connecteur 3.9.15
 
-Cette version du connecteur inclut des améliorations Cloud Volumes ONTAP. https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html#30-january-2022["Découvrez ces améliorations"^]
+Cette version du connecteur inclut des améliorations Cloud Volumes ONTAP. https://["Découvrez ces améliorations"^]
 
 
 
@@ -481,7 +481,7 @@ Cette version du connecteur inclut des améliorations Cloud Volumes ONTAP. https
 
 Nous avons réduit le nombre de terminaux qu'un connecteur doit contacter pour gérer les ressources et les processus au sein de votre environnement de cloud public.
 
-https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-checklist-cm.html["Afficher la liste des terminaux requis"]
+https://["Afficher la liste des terminaux requis"]
 
 
 
@@ -512,7 +512,7 @@ Depuis décembre 2021, NetApp utilise désormais Microsoft Azure Active Director
 Si vous n'avez pas encore migré votre compte NSS vers IDaaS, vous devez d'abord migrer le compte, puis mettre à jour vos identifiants dans Cloud Manager.
 
 * link:task-adding-nss-accounts.html#update-an-nss-account-for-the-new-authentication-method["Découvrez comment mettre à jour un compte NSS avec la nouvelle méthode d'authentification"].
-* https://kb.netapp.com/Advice_and_Troubleshooting/Miscellaneous/FAQs_for_NetApp_adoption_of_MS_Azure_AD_B2C_for_login["En savoir plus sur l'utilisation par NetApp de Microsoft Azure AD pour la gestion des identités"^]
+* https://["En savoir plus sur l'utilisation par NetApp de Microsoft Azure AD pour la gestion des identités"^]
 
 
 
@@ -533,7 +533,7 @@ link:task-adding-nss-accounts.html#attach-a-working-environment-to-a-different-n
 
 Nous avons étudié Cloud Manager, Cloud Sync, Cloud Tiering, Cloud Data Sense et Cloud Backup (plateforme Cloud Manager), et confirmé que notre cabinet d'experts indépendants a réussi à produire des rapports SOC 2 Type 2 d'après les critères des services de confiance applicables.
 
-https://www.netapp.com/company/trust-center/compliance/soc-2/["Consultez les rapports SOC 2 de NetApp"^].
+https://["Consultez les rapports SOC 2 de NetApp"^].
 
 
 
@@ -541,7 +541,7 @@ https://www.netapp.com/company/trust-center/compliance/soc-2/["Consultez les rap
 
 Vous ne pouvez plus utiliser Cloud Manager Connector comme serveur proxy pour envoyer des messages AutoSupport depuis Cloud Volumes ONTAP. Cette fonctionnalité a été supprimée et n'est plus prise en charge. Vous devrez fournir une connectivité AutoSupport via une instance NAT ou les services proxy de votre environnement.
 
-https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-verify-autosupport.html["En savoir plus sur la vérification de AutoSupport avec Cloud Volumes ONTAP"^]
+https://["En savoir plus sur la vérification de AutoSupport avec Cloud Volumes ONTAP"^]
 
 
 

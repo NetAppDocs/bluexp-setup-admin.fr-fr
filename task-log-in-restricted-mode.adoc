@@ -29,7 +29,7 @@ Vous pouvez utiliser l'authentification unique pour vous connecter à l'aide des
 .Étapes
 . Ouvrez un navigateur Web et entrez l'URL suivante :
 +
-https://_ipaddress_[]
+https://[]
 
 +
 _Ipaddress_ peut être localhost, une adresse IP privée ou une adresse IP publique, selon la configuration de l'hôte où vous avez installé le connecteur. Par exemple, vous devrez peut-être entrer une adresse IP privée à partir d'un hôte qui a une connexion à l'hôte du connecteur.

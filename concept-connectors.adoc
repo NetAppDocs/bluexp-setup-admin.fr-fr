@@ -47,7 +47,7 @@ La seule fois qu'un connecteur est nécessaire pour ajouter une licence au porte
 Même si aucun connecteur n'est nécessaire pour la découverte directe d'un cluster ONTAP sur site, un connecteur est nécessaire pour tirer parti des fonctionnalités BlueXP supplémentaires.
 
 +
-https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.html["En savoir plus sur les options de découverte et de gestion des clusters ONTAP sur site"^]
+https://["En savoir plus sur les options de découverte et de gestion des clusters ONTAP sur site"^]
 
 
 
@@ -101,7 +101,7 @@ Un connecteur est pris en charge aux emplacements suivants :
 * Amazon Web Services
 * Microsoft Azure
 +
-Un connecteur dans Azure doit être déployé dans la même région Azure que les systèmes Cloud Volumes ONTAP qu'il gère, ou dans le https://docs.microsoft.com/en-us/azure/availability-zones/cross-region-replication-azure#azure-cross-region-replication-pairings-for-all-geographies["Paire de régions Azure"^] Pour les systèmes Cloud Volumes ONTAP. Cette exigence garantit qu'une connexion Azure Private Link est utilisée entre Cloud Volumes ONTAP et les comptes de stockage associés. https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-enabling-private-link.html["Découvrez comment Cloud Volumes ONTAP utilise une liaison privée Azure"^]
+Un connecteur dans Azure doit être déployé dans la même région Azure que les systèmes Cloud Volumes ONTAP qu'il gère, ou dans le https://["Paire de régions Azure"^] Pour les systèmes Cloud Volumes ONTAP. Cette exigence garantit qu'une connexion Azure Private Link est utilisée entre Cloud Volumes ONTAP et les comptes de stockage associés. https://["Découvrez comment Cloud Volumes ONTAP utilise une liaison privée Azure"^]
 
 * Google Cloud
 +
@@ -218,11 +218,11 @@ Pour configurer cette configuration :
 . link:task-managing-connectors.html["Basculer vers un autre connecteur"].
 . Découvrir l'environnement de travail existant
 +
-** https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-adding-systems.html["Ajout de systèmes Cloud Volumes ONTAP existants à BlueXP"^]
-** https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.html["Découvrir les clusters ONTAP"^]
+** https://["Ajout de systèmes Cloud Volumes ONTAP existants à BlueXP"^]
+** https://["Découvrir les clusters ONTAP"^]
 
 
-. Réglez le https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-storage-management.html["Mode de gestion de la capacité"^]
+. Réglez le https://["Mode de gestion de la capacité"^]
 +
 Seul le connecteur principal doit être réglé sur *mode automatique*. Si vous basculez vers un autre connecteur pour la reprise après incident, vous pouvez modifier le mode de gestion de la capacité selon vos besoins.
 
