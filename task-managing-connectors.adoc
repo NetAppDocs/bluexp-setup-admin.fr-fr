@@ -80,19 +80,19 @@ Si vous devez vous connecter à la machine virtuelle Linux sur laquelle s'exécu
 AWS:: Lorsque vous avez créé l'instance Connector dans AWS, vous avez fourni une clé d'accès AWS et une clé secrète. Vous pouvez utiliser cette paire de clés vers SSH à l'instance.
 +
 --
-https://["AWS Docs : connectez-vous à votre instance Linux"^]
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AccessingInstances.html["AWS Docs : connectez-vous à votre instance Linux"^]
 
 --
 Azure:: Lorsque vous avez créé la machine virtuelle Connector dans Azure, vous avez choisi de vous authentifier avec un mot de passe ou une clé publique SSH. Utiliser la méthode d'authentification que vous avez choisie pour vous connecter à la machine virtuelle.
 +
 --
-https://["Azure Docs : connexion SSH à votre machine virtuelle"^]
+https://docs.microsoft.com/en-us/azure/virtual-machines/linux/mac-create-ssh-keys#ssh-into-your-vm["Azure Docs : connexion SSH à votre machine virtuelle"^]
 
 --
 Google Cloud:: Vous ne pouvez pas spécifier de méthode d'authentification lorsque vous créez un connecteur dans Google Cloud. Vous pouvez toutefois vous connecter à l'instance de machine virtuelle Linux à l'aide de Google Cloud Console ou de Google Cloud CLI (gCloud).
 +
 --
-https://["Google Cloud Docs : connectez-vous aux machines virtuelles Linux"^]
+https://cloud.google.com/compute/docs/instances/connecting-to-instance["Google Cloud Docs : connectez-vous aux machines virtuelles Linux"^]
 
 --
 
@@ -109,7 +109,7 @@ Le connecteur doit redémarrer pendant le processus de mise à niveau afin que l
 NOTE: Sur les hôtes disposant d'un accès Internet, le connecteur met automatiquement à jour son logiciel vers la dernière version, tant qu'il dispose d'un accès Internet sortant pour obtenir la mise à jour du logiciel.
 
 .Étapes
-. Téléchargez le logiciel du connecteur à partir du https://["Site de support NetApp"^].
+. Téléchargez le logiciel du connecteur à partir du https://mysupport.netapp.com/site/products/all/details/cloud-manager/downloads-tab["Site de support NetApp"^].
 . Copiez le programme d'installation sur l'hôte Linux.
 . Attribuez des autorisations pour exécuter le script.
 +
@@ -192,7 +192,7 @@ Notez que 32 est un exemple de valeur. La valeur que vous devez utiliser dépend
 
 
 
-https://["En savoir plus sur l'appel API /ocm/config"^]
+https://docs.netapp.com/us-en/cloud-manager-automation/cm/api_ref_resources.html#occmconfig["En savoir plus sur l'appel API /ocm/config"^]
 
 
 

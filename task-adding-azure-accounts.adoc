@@ -32,7 +32,7 @@ Il existe deux façons d'ajouter des abonnements et des informations d'identific
 
 == Associez des abonnements Azure supplémentaires à une identité gérée
 
-BlueXP vous permet de choisir les identifiants Azure et l'abonnement Azure dans lesquels vous souhaitez déployer Cloud Volumes ONTAP. Vous ne pouvez pas sélectionner un autre abonnement Azure pour le profil d'identité gérée à moins d'associer le https://["identité gérée"^] avec ces abonnements.
+BlueXP vous permet de choisir les identifiants Azure et l'abonnement Azure dans lesquels vous souhaitez déployer Cloud Volumes ONTAP. Vous ne pouvez pas sélectionner un autre abonnement Azure pour le profil d'identité gérée à moins d'associer le https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/overview["identité gérée"^] avec ces abonnements.
 
 .Description de la tâche
 Une identité gérée est link:concept-accounts-azure.html["Compte Azure initial"] Lorsque vous déployez un connecteur depuis BlueXP. Lorsque vous avez déployé le connecteur, BlueXP a créé le rôle opérateur BlueXP et l'a affecté à la machine virtuelle Connector.
@@ -102,7 +102,7 @@ image:diagram_azure_authentication.png["Image conceptuelle qui montre BlueXP obt
 Créez une application et une entité de service Azure Active Directory (AD) que BlueXP peut utiliser pour le contrôle d'accès basé sur des rôles.
 
 .Avant de commencer
-Vous devez disposer des droits d'accès dans Azure pour créer une application Active Directory et attribuer l'application à un rôle. Pour plus de détails, reportez-vous à https://["Documentation Microsoft Azure : autorisations requises"^].
+Vous devez disposer des droits d'accès dans Azure pour créer une application Active Directory et attribuer l'application à un rôle. Pour plus de détails, reportez-vous à https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-create-service-principal-portal#required-permissions/["Documentation Microsoft Azure : autorisations requises"^].
 
 .Étapes
 . À partir du portail Azure, ouvrez le service *Azure Active Directory*.
@@ -154,7 +154,7 @@ Vous devez ajouter l'ID de chaque abonnement Azure à partir duquel les utilisat
 Les étapes suivantes expliquent comment créer le rôle à l'aide de Bash dans Azure Cloud Shell.
 
 +
-*** Démarrer https://["Shell cloud Azure"^] Et choisissez l'environnement Bash.
+*** Démarrer https://docs.microsoft.com/en-us/azure/cloud-shell/overview["Shell cloud Azure"^] Et choisissez l'environnement Bash.
 *** Téléchargez le fichier JSON.
 +
 image:screenshot_azure_shell_upload.png["Capture d'écran d'Azure Cloud Shell sur laquelle vous pouvez choisir de charger un fichier."]
@@ -298,7 +298,7 @@ Pour payer Cloud Volumes ONTAP à l'heure (PAYGO), ces identifiants Azure doiven
 
 
 .Résultat
-Vous pouvez maintenant passer à différents ensembles d'informations d'identification à partir de la page Détails et informations d'identification https://["lors de la création d'un nouvel environnement de travail"^]
+Vous pouvez maintenant passer à différents ensembles d'informations d'identification à partir de la page Détails et informations d'identification https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-deploying-otc-azure.html["lors de la création d'un nouvel environnement de travail"^]
 
 image:screenshot_accounts_switch_azure.gif["Une capture d'écran qui montre la sélection entre les informations d'identification après avoir sélectionné Modifier les informations d'identification dans la page Détails  informations d'identification."]
 

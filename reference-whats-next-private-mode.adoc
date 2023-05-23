@@ -18,11 +18,11 @@ Une fois que vous êtes opérationnel avec BlueXP en mode privé, vous pouvez co
 
 Pour obtenir de l'aide, reportez-vous à la documentation suivante :
 
-* https://["Création de systèmes Cloud Volumes ONTAP"^]
-* https://["Découvrez les clusters ONTAP sur site"^]
-* https://["Réplication des données"^]
-* https://["Analysez les données de volumes ONTAP sur site à l'aide de la classification BlueXP"^]
-* https://["Sauvegardez les données de volumes ONTAP sur site dans StorageGRID à l'aide de la sauvegarde et de la restauration BlueXP"^]
+* https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/index.html["Création de systèmes Cloud Volumes ONTAP"^]
+* https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/index.html["Découvrez les clusters ONTAP sur site"^]
+* https://docs.netapp.com/us-en/cloud-manager-replication/index.html["Réplication des données"^]
+* https://docs.netapp.com/us-en/cloud-manager-data-sense/task-deploy-compliance-dark-site.html["Analysez les données de volumes ONTAP sur site à l'aide de la classification BlueXP"^]
+* https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-backup-onprem-private-cloud.html["Sauvegardez les données de volumes ONTAP sur site dans StorageGRID à l'aide de la sauvegarde et de la restauration BlueXP"^]
 
 
 .Lien associé

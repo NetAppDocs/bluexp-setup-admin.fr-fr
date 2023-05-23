@@ -31,7 +31,7 @@ Si vous souhaitez activer le mode restreint, vous devez inclure les éléments s
 
 NOTE: Vous ne pouvez pas modifier le paramètre de mode restreint une fois le compte créé par BlueXP. Vous ne pouvez pas activer le mode restreint ultérieurement et vous ne pouvez pas le désactiver ultérieurement. Elle doit être définie au moment de la création du compte.
 
-https://["Découvrez comment utiliser cet appel d'API"^]
+https://docs.netapp.com/us-en/cloud-manager-automation/tenancy/post-tenancy-account-.html["Découvrez comment utiliser cet appel d'API"^]
 
 .Liens connexes
 * link:concept-netapp-accounts.html["Découvrez les comptes BlueXP"]

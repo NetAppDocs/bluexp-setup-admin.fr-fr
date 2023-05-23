@@ -20,4 +20,4 @@ image:screenshot-amazon-s3-we.png["Copie d'écran d'un environnement de travail 
 
 Vous pouvez afficher des informations détaillées sur vos compartiments S3, notamment la région, la règle d'accès, le compte, la capacité totale et utilisée, et plus encore. Ces compartiments peuvent être utilisés comme destinations pour la sauvegarde et la restauration BlueXP, le Tiering BlueXP ou les opérations de copie et de synchronisation BlueXP. En outre, vous pouvez utiliser la classification BlueXP pour analyser ces compartiments.
 
-Une nouvelle fonctionnalité vous permet désormais de créer et de modifier des compartiments S3. https://["Accédez ici pour découvrir comment afficher, créer et gérer vos compartiments S3 à l'aide de BlueXP"^]
+Une nouvelle fonctionnalité vous permet désormais de créer et de modifier des compartiments S3. https://docs.netapp.com/us-en/bluexp-s3-storage/index.html["Accédez ici pour découvrir comment afficher, créer et gérer vos compartiments S3 à l'aide de BlueXP"^]

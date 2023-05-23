@@ -38,7 +38,7 @@ image:screenshot_gcp_associate.gif["Copie d'écran d'un projet Google Cloud et d
 NOTE: Avant de terminer les étapes suivantes, assurez-vous que vous disposez des deux privilèges d'administrateur de facturation dans votre compte Google Cloud ainsi que d'une connexion BlueXP.
 
 +
-.. Après avoir été redirigé vers le https://["Page NetApp BlueXP sur Google Cloud Marketplace"^], assurez-vous que le projet correct est sélectionné dans le menu de navigation supérieur.
+.. Après avoir été redirigé vers le https://console.cloud.google.com/marketplace/product/netapp-cloudmanager/cloud-manager["Page NetApp BlueXP sur Google Cloud Marketplace"^], assurez-vous que le projet correct est sélectionné dans le menu de navigation supérieur.
 +
 image:screenshot_gcp_cvo_marketplace.png["Copie d'écran de la page Cloud Volumes ONTAP Marketplace dans Google Cloud."]
 
@@ -58,7 +58,7 @@ image:screenshot_gcp_marketplace_register.png["Capture d'écran d'une fenêtre c
 .. Suivez les étapes de la page *attribution d'abonnement* :
 +
 
-NOTE: Si un membre de votre entreprise a déjà souscrit à l'abonnement NetApp BlueXP à partir de votre compte de facturation, vous serez redirigé vers https://["La page Cloud Volumes ONTAP sur le site web de BlueXP"^] à la place. Si cela est inattendu, contactez votre équipe commerciale NetApp. Google n'autorise qu'un seul abonnement par compte de facturation Google.
+NOTE: Si un membre de votre entreprise a déjà souscrit à l'abonnement NetApp BlueXP à partir de votre compte de facturation, vous serez redirigé vers https://bluexp.netapp.com/ontap-cloud?x-gcp-marketplace-token=["La page Cloud Volumes ONTAP sur le site web de BlueXP"^] à la place. Si cela est inattendu, contactez votre équipe commerciale NetApp. Google n'autorise qu'un seul abonnement par compte de facturation Google.
 
 +
 *** Sélectionnez les comptes BlueXP avec lesquels vous souhaitez associer cet abonnement.
@@ -92,7 +92,7 @@ image:screenshot_gcp_associate.gif["Capture d'écran de la page d'affectation d'
 L'abonnement à BlueXP via Google Cloud Marketplace peut parfois être fragmenté à cause d'autorisations incorrectes ou accidentellement non après la redirection vers le site web de BlueXP. Dans ce cas, procédez comme suit pour terminer le processus d'abonnement.
 
 .Étapes
-. Accédez au https://["Page NetApp BlueXP sur Google Cloud Marketplace"^] pour vérifier l'état de la commande. Si la page indique *gérer sur le fournisseur*, faites défiler la page vers le bas et sélectionnez *gérer les commandes*.
+. Accédez au https://console.cloud.google.com/marketplace/product/netapp-cloudmanager/cloud-manager["Page NetApp BlueXP sur Google Cloud Marketplace"^] pour vérifier l'état de la commande. Si la page indique *gérer sur le fournisseur*, faites défiler la page vers le bas et sélectionnez *gérer les commandes*.
 +
 image:screenshot_gcp_manage_orders.png["Capture d'écran de la page Marketplace post-abonnement."]
 

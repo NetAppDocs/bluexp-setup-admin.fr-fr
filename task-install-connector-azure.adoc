@@ -32,7 +32,7 @@ Créez un connecteur directement à partir de la console web BlueXP, d'Azure Mar
 
 * Une clé publique SSH, si vous souhaitez utiliser cette méthode d'authentification pour la machine virtuelle Connector. L'autre option de la méthode d'authentification est d'utiliser un mot de passe.
 +
-https://["Découvrez comment vous connecter à une VM Linux dans Azure"^]
+https://learn.microsoft.com/en-us/azure/virtual-machines/linux-vm-connect?tabs=Linux["Découvrez comment vous connecter à une VM Linux dans Azure"^]
 
 * Si vous ne souhaitez pas que BlueXP crée automatiquement un rôle Azure pour le connecteur, vous devrez créer votre propre rôle link:reference-permissions-azure.html["utilisation de la stratégie sur cette page"].
 +
@@ -79,7 +79,7 @@ link:task-set-up-permissions-azure.html["Apprenez à obtenir ces valeurs pour un
 La méthode d'authentification de la machine virtuelle peut être un mot de passe ou une clé publique SSH.
 
 +
-https://["Découvrez comment vous connecter à une VM Linux dans Azure"^]
+https://learn.microsoft.com/en-us/azure/virtual-machines/linux-vm-connect?tabs=Linux["Découvrez comment vous connecter à une VM Linux dans Azure"^]
 
 ** *Détails* : saisissez un nom pour l'instance, spécifiez les balises et choisissez si vous souhaitez que BlueXP crée un nouveau rôle avec les autorisations requises ou si vous souhaitez sélectionner un rôle existant avec lequel vous avez configuré link:reference-permissions-azure.html["les autorisations requises"].
 +
@@ -108,7 +108,7 @@ Une fois le processus terminé, le connecteur est disponible pour être utilisé
 .Étapes
 . Rendez-vous sur la page NetApp Connector VM du Marketplace Azure.
 +
-https://["Page Azure Marketplace pour les régions commerciales"^]
+https://azuremarketplace.microsoft.com/en-us/marketplace/apps/netapp.netapp-oncommand-cloud-manager["Page Azure Marketplace pour les régions commerciales"^]
 
 . Cliquez sur *l'obtenir maintenant*, puis sur *Continuer*.
 . Sur le portail Azure, cliquez sur *Créer* et suivez les étapes de configuration de la machine virtuelle.
@@ -127,7 +127,7 @@ link:reference-ports-azure.html["Afficher les règles des groupes de sécurité 
 
 ** Sous *Management*, activez *identité gérée attribuée par le système* pour la machine virtuelle du connecteur en sélectionnant *on*.
 +
-Ce paramètre est important car une identité gérée permet à la machine virtuelle Connector de s'identifier à Azure Active Directory sans fournir d'informations d'identification. Une fois que vous avez terminé, vous devez attribuer le rôle personnalisé que vous avez créé à https://["En savoir plus sur les identités gérées pour les ressources Azure"^].
+Ce paramètre est important car une identité gérée permet à la machine virtuelle Connector de s'identifier à Azure Active Directory sans fournir d'informations d'identification. Une fois que vous avez terminé, vous devez attribuer le rôle personnalisé que vous avez créé à https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/overview["En savoir plus sur les identités gérées pour les ressources Azure"^].
 
 
 
@@ -137,7 +137,7 @@ Azure déploie la machine virtuelle avec les paramètres spécifiés. Le logicie
 
 . Ouvrez un navigateur Web à partir d'un hôte connecté à la machine virtuelle Connector et entrez l'URL suivante :
 +
-https://[]
+https://_ipaddress_[]
 
 . Une fois connecté, configurez le connecteur :
 +
@@ -169,7 +169,7 @@ Vous avez la possibilité de configurer un serveur proxy après l'installation, 
 * Un certificat signé par une autorité de certification, si le serveur proxy utilise HTTPS ou si le proxy est un proxy interceptant.
 * Identité gérée activée sur la machine virtuelle dans Azure, qui permet de fournir les autorisations Azure requises via un rôle personnalisé.
 +
-https://["Documentation Microsoft Azure : configurez les identités gérées des ressources Azure sur une machine virtuelle à l'aide du portail Azure"^]
+https://learn.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/qs-configure-portal-windows-vm["Documentation Microsoft Azure : configurez les identités gérées des ressources Azure sur une machine virtuelle à l'aide du portail Azure"^]
 
 
 
@@ -198,7 +198,7 @@ unset https_proxy
 +
 Si vous ne supprimez pas ces variables système, l'installation échouera.
 
-. Téléchargez le logiciel du connecteur à partir du https://["Site de support NetApp"^], Puis copiez-le sur l'hôte Linux.
+. Téléchargez le logiciel du connecteur à partir du https://mysupport.netapp.com/site/products/all/details/cloud-manager/downloads-tab["Site de support NetApp"^], Puis copiez-le sur l'hôte Linux.
 +
 Vous devez télécharger le programme d'installation du connecteur « en ligne » destiné à être utilisé sur votre réseau ou dans le cloud. Un programme d'installation séparé « hors ligne » est disponible pour le connecteur, mais il n'est pris en charge que pour les déploiements en mode privé.
 
@@ -247,7 +247,7 @@ Voici un exemple de commande utilisant les deux paramètres facultatifs :
 
 . Ouvrez un navigateur Web à partir d'un hôte connecté à la machine virtuelle Connector et entrez l'URL suivante :
 +
-https://[]
+https://_ipaddress_[]
 
 . Une fois connecté, configurez le connecteur :
 +

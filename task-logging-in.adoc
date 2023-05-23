@@ -28,7 +28,7 @@ Vous pouvez utiliser l'authentification unique pour vous connecter à l'aide des
 
 
 .Étapes
-. Ouvrez un navigateur Web et accédez au https://["Console BlueXP"^]
+. Ouvrez un navigateur Web et accédez au https://console.bluexp.netapp.com["Console BlueXP"^]
 . Sur la page *connexion*, entrez l'adresse e-mail associée à votre connexion.
 . En fonction de la méthode d'authentification associée à votre connexion, vous serez invité à saisir vos informations d'identification :
 +

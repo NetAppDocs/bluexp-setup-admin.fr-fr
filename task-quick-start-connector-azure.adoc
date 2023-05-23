@@ -73,8 +73,8 @@ Créez le connecteur à l'aide de l'une des options d'installation disponibles :
 
 [role="quick-margin-list"]
 * *À partir de BlueXP* : cliquez sur la liste déroulante connecteur, sélectionnez *Ajouter un connecteur* et suivez les invites.
-* *À partir d'Azure Marketplace* : rendez-vous sur le https://["Page VM NetApp Connector dans Azure Marketplace"^] Et suivez les invites pour créer la VM du connecteur.
-* *Installation manuelle* : téléchargez le logiciel du connecteur à partir du https://["Site de support NetApp"] et exécutez le script d'installation.
+* *À partir d'Azure Marketplace* : rendez-vous sur le https://azuremarketplace.microsoft.com/en-us/marketplace/apps/netapp.netapp-oncommand-cloud-manager["Page VM NetApp Connector dans Azure Marketplace"^] Et suivez les invites pour créer la VM du connecteur.
+* *Installation manuelle* : téléchargez le logiciel du connecteur à partir du https://mysupport.netapp.com/site/products/all/details/cloud-manager/downloads-tab["Site de support NetApp"] et exécutez le script d'installation.
 
 
 [role="quick-margin-para"]

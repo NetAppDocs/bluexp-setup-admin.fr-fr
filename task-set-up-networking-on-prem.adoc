@@ -68,7 +68,7 @@ Services AWS (amazonaws.com):
 * Service de jetons de sécurité (STS)
 * Service de stockage simple (S3)
 
-| Pour gérer les ressources dans AWS. Le point final exact dépend de la région dans laquelle vous déployez le connecteur. https://["Pour plus d'informations, consultez la documentation AWS"^] 
+| Pour gérer les ressources dans AWS. Le point final exact dépend de la région dans laquelle vous déployez le connecteur. https://docs.aws.amazon.com/general/latest/gr/rande.html["Pour plus d'informations, consultez la documentation AWS"^] 
 
 
 | \https://management.azure.com \https://login.microsoftonline.com | Afin de gérer les ressources dans les régions publiques d'Azure. 
@@ -130,4 +130,4 @@ Il n'y a pas de trafic entrant vers le connecteur, sauf si vous le lancez ou si 
 
 == Limitation de l'adresse IP
 
-Il existe un conflit possible avec des adresses IP dans la plage 172. https://["En savoir plus sur cette limitation"].
+Il existe un conflit possible avec des adresses IP dans la plage 172. https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-limitations.html["En savoir plus sur cette limitation"].

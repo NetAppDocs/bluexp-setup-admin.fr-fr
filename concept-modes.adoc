@@ -41,7 +41,7 @@ Ce mode est généralement utilisé par les gouvernements d'état et locaux et l
 Mode privé:: Un connecteur BlueXP est installé sur site ou dans le cloud (dans une région sécurisée, une région cloud souveraine ou une région commerciale) et ne dispose d'aucune connectivité à la couche SaaS de BlueXP. Les utilisateurs accèdent à BlueXP en local à partir de la console web disponible depuis le connecteur, et non depuis la couche SaaS.
 +
 --
-Une région sécurisée inclut https://["AWS C2S ET SC2S"^] et https://["Azure IL6"^]
+Une région sécurisée inclut https://aws.amazon.com/federal/us-intelligence-community/["AWS C2S ET SC2S"^] et https://learn.microsoft.com/en-us/azure/compliance/offerings/offering-dod-il6["Azure IL6"^]
 
 --
 
@@ -108,7 +108,7 @@ Terminal API:: Les appels API sont effectués vers le noeud final suivant : \htt
 Authentification:: L'authentification est fournie via le service cloud de BlueXP via auth0 ou des connexions au site du support NetApp (NSS). la fédération des identités est disponible.
 Services BlueXP pris en charge:: Tous les services BlueXP sont disponibles pour les utilisateurs.
 Options de licence prises en charge:: Les abonnements Marketplace et BYOL sont pris en charge en mode standard. Toutefois, les options de licence prises en charge dépendent du service BlueXP que vous utilisez. Consultez la documentation de chaque service pour en savoir plus sur les options de licence disponibles.
-Comment démarrer avec le mode standard:: Accédez au https://["Console web BlueXP"^] et s'inscrire.
+Comment démarrer avec le mode standard:: Accédez au https://console.bluexp.netapp.com["Console web BlueXP"^] et s'inscrire.
 +
 --
 link:task-quick-start-standard-mode.html["Découvrez comment vous lancer avec le mode standard"].
@@ -246,7 +246,7 @@ Services BlueXP pris en charge dans les déploiements cloud:: BlueXP prend en ch
 | Services pris en charge | Remarques 
 
 
-| Sauvegarde et restauration | Pris en charge dans les régions commerciales AWS et Azure. Non pris en charge dans Google Cloud ou dans https://["AWS C2S/SC2S"^] ou https://["Azure IL6"^] 
+| Sauvegarde et restauration | Pris en charge dans les régions commerciales AWS et Azure. Non pris en charge dans Google Cloud ou dans https://aws.amazon.com/federal/us-intelligence-community/["AWS C2S/SC2S"^] ou https://learn.microsoft.com/en-us/azure/compliance/offerings/offering-dod-il6["Azure IL6"^] 
 
 
 | Cloud Volumes ONTAP | Comme il n'y a pas d'accès à Internet, les fonctionnalités suivantes ne sont pas disponibles : mises à niveau logicielles automatisées, informations sur les coûts d'AutoSupport et d'AWS. 
@@ -266,17 +266,17 @@ Prise en charge des services BlueXP dans les déploiements sur site:: BlueXP pre
 | Services pris en charge | Remarques 
 
 
-| Sauvegarde et restauration | Seules les opérations de sauvegarde et de restauration de volumes ONTAP sur site sur des systèmes StorageGRID sont prises en charge.https://["Découvrez comment sauvegarder vos données ONTAP sur site dans StorageGRID"^] 
+| Sauvegarde et restauration | Seules les opérations de sauvegarde et de restauration de volumes ONTAP sur site sur des systèmes StorageGRID sont prises en charge.https://docs.netapp.com/us-en/cloud-manager-backup-restore/task-backup-onprem-private-cloud.html["Découvrez comment sauvegarder vos données ONTAP sur site dans StorageGRID"^] 
 
 
 | Classement  a| 
 * Les seules sources de données prises en charge sont celles que vous pouvez découvrir localement.
 +
-https://["Affichez les sources que vous pouvez découvrir localement"^]
+https://docs.netapp.com/us-en/cloud-manager-data-sense/task-deploy-compliance-dark-site.html#supported-data-sources["Affichez les sources que vous pouvez découvrir localement"^]
 
 * Les fonctionnalités nécessitant un accès Internet sortant ne sont pas prises en charge.
 +
-https://["Afficher les limites de la fonction"^]
+https://docs.netapp.com/us-en/cloud-manager-data-sense/task-deploy-compliance-dark-site.html#limitations["Afficher les limites de la fonction"^]
 
 
 
@@ -296,7 +296,7 @@ Options de licence prises en charge:: Seul le modèle BYOL est pris en charge av
 --
 Pour Cloud Volumes ONTAP BYOL, seules les licences basées sur les nœuds sont prises en charge. Les licences basées sur la capacité ne sont pas prises en charge. Aucune connexion Internet sortante n'est disponible. Vous devrez donc charger manuellement votre fichier de licence Cloud Volumes ONTAP dans le portefeuille digital BlueXP.
 
-https://["Découvrez comment ajouter des licences au portefeuille digital BlueXP"^]
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-node-licenses.html#add-unassigned-licenses["Découvrez comment ajouter des licences au portefeuille digital BlueXP"^]
 
 --
 Comment démarrer avec le mode privé:: Le mode privé est disponible en téléchargeant le programme d'installation « hors ligne » depuis le site de support NetApp.

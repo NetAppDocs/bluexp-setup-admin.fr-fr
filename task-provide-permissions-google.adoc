@@ -23,7 +23,7 @@ Ces étapes ne s'appliquent pas si vous avez déployé le connecteur directement
 .Étapes
 . Accédez au portail Google Cloud et attribuez le compte de service à l'instance de la VM Connector.
 +
-https://["Documentation Google Cloud : modification du compte de service et des étendues d'accès pour une instance"^]
+https://cloud.google.com/compute/docs/access/create-enable-service-accounts-for-instances#changeserviceaccountandscopes["Documentation Google Cloud : modification du compte de service et des étendues d'accès pour une instance"^]
 
 . Si vous souhaitez déployer Cloud Volumes ONTAP dans d'autres projets, autorisez l'accès en ajoutant le compte de service doté du rôle BlueXP à ce projet. Vous devrez répéter cette étape pour chaque projet.
 

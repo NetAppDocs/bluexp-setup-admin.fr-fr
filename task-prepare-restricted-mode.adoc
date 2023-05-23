@@ -66,7 +66,7 @@ Le connecteur est pris en charge sur les versions en anglais de ces systèmes d'
 Hyperviseur:: Un hyperviseur bare Metal ou hébergé certifié pour exécuter Ubuntu, CentOS ou Red Hat Enterprise Linux est requis.
 +
 --
-https://["Solution Red Hat : quels hyperviseurs sont certifiés pour l'exécution de Red Hat Enterprise Linux ?"^]
+https://access.redhat.com/certified-hypervisors["Solution Red Hat : quels hyperviseurs sont certifiés pour l'exécution de Red Hat Enterprise Linux ?"^]
 
 --
 CPU:: 4 cœurs ou 4 CPU virtuels
@@ -76,12 +76,12 @@ Taille des machines virtuelles Azure:: Type d'instance qui répond aux exigences
 Type de machine Google Cloud:: Type d'instance qui répond aux exigences relatives au CPU et à la RAM indiquées ci-dessus. Nous recommandons n2-standard-4.
 +
 --
-Ce connecteur est pris en charge dans Google Cloud sur une instance de machine virtuelle avec un système d'exploitation pris en charge https://["Fonctionnalités MV blindées"^]
+Ce connecteur est pris en charge dans Google Cloud sur une instance de machine virtuelle avec un système d'exploitation pris en charge https://cloud.google.com/compute/shielded-vm/docs/shielded-vm["Fonctionnalités MV blindées"^]
 
 --
 Espace disque dans /opt:: 100 Gio d'espace doit être disponible
 Espace disque dans /var:: 20 Gio d'espace doit être disponible
-Moteur Docker:: Docker Engine version 19.3.1 ou ultérieure est requis sur l'hôte avant d'installer le connecteur. https://["Voir les instructions d'installation"^]
+Moteur Docker:: Docker Engine version 19.3.1 ou ultérieure est requis sur l'hôte avant d'installer le connecteur. https://docs.docker.com/engine/install/["Voir les instructions d'installation"^]
 
 
 
@@ -134,7 +134,7 @@ Services AWS (amazonaws.com):
 * Service de jetons de sécurité (STS)
 * Service de stockage simple (S3)
 
-| Pour gérer les ressources dans AWS. Le point final exact dépend de la région dans laquelle vous déployez le connecteur. https://["Pour plus d'informations, consultez la documentation AWS"^] 
+| Pour gérer les ressources dans AWS. Le point final exact dépend de la région dans laquelle vous déployez le connecteur. https://docs.aws.amazon.com/general/latest/gr/rande.html["Pour plus d'informations, consultez la documentation AWS"^] 
 
 
 | \https://management.azure.com \https://login.microsoftonline.com \https://blob.core.windows.net \https://core.windows.net | Afin de gérer les ressources dans les régions publiques d'Azure. 
@@ -191,7 +191,7 @@ image:screenshot-azure-sku.png["Capture d'écran de la création d'une nouvelle 
 
 Si vous utilisez une adresse IP de référence standard, BlueXP utilise l'adresse IP _private_ du connecteur, au lieu de l'adresse IP publique. Si la machine que vous utilisez pour accéder à la console BlueXP n'a pas accès à cette adresse IP privée, les actions de la console BlueXP échouent.
 
-https://["Documentation Azure : référence IP publique"^]
+https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/public-ip-addresses#sku["Documentation Azure : référence IP publique"^]
 
 
 
@@ -283,8 +283,8 @@ Pour les régions standard, les autorisations sont réparties entre deux règles
 
 . Associer les règles à un utilisateur IAM.
 +
-** https://["Documentation AWS : création de rôles IAM"^]
-** https://["Documentation AWS : ajout et suppression de règles IAM"^]
+** https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create.html["Documentation AWS : création de rôles IAM"^]
+** https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_manage-attach-detach.html["Documentation AWS : ajout et suppression de règles IAM"^]
 
 
 . Assurez-vous que l'utilisateur dispose de clés d'accès que vous pouvez ajouter à BlueXP après l'installation du connecteur.
@@ -301,7 +301,7 @@ Créez un rôle Azure personnalisé avec les autorisations requises. Vous allez 
 .Étapes
 . Si vous prévoyez d'installer manuellement le logiciel sur votre propre hôte, activez une identité gérée attribuée par le système sur le afin de fournir les autorisations Azure requises par le biais d'un rôle personnalisé.
 +
-https://["Documentation Microsoft Azure : configurez les identités gérées des ressources Azure sur une machine virtuelle à l'aide du portail Azure"^]
+https://learn.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/qs-configure-portal-windows-vm["Documentation Microsoft Azure : configurez les identités gérées des ressources Azure sur une machine virtuelle à l'aide du portail Azure"^]
 
 . Copier le contenu du link:reference-permissions-azure.html["Autorisations de rôle personnalisées pour le connecteur"] Et les enregistrer dans un fichier JSON.
 . Modifiez le fichier JSON en ajoutant des identifiants d'abonnement Azure à l'étendue assignable.
@@ -324,7 +324,7 @@ Vous devez ajouter l'ID de chaque abonnement Azure à partir duquel les utilisat
 Les étapes suivantes expliquent comment créer le rôle à l'aide de Bash dans Azure Cloud Shell.
 
 +
-.. Démarrer https://["Shell cloud Azure"^] Et choisissez l'environnement Bash.
+.. Démarrer https://docs.microsoft.com/en-us/azure/cloud-shell/overview["Shell cloud Azure"^] Et choisissez l'environnement Bash.
 .. Téléchargez le fichier JSON.
 +
 image:screenshot_azure_shell_upload.png["Capture d'écran d'Azure Cloud Shell sur laquelle vous pouvez choisir de charger un fichier."]
@@ -350,7 +350,7 @@ Créez et configurez un principal de service dans Azure Active Directory et obte
 .Créez une application Azure Active Directory pour le contrôle d'accès basé sur des rôles
 . Assurez-vous que vous disposez des autorisations dans Azure pour créer une application Active Directory et attribuer l'application à un rôle.
 +
-Pour plus de détails, reportez-vous à https://["Documentation Microsoft Azure : autorisations requises"^].
+Pour plus de détails, reportez-vous à https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-create-service-principal-portal#required-permissions/["Documentation Microsoft Azure : autorisations requises"^].
 
 . À partir du portail Azure, ouvrez le service *Azure Active Directory*.
 +
@@ -466,7 +466,7 @@ L'exemple suivant crée un rôle nommé « connecteur » au niveau du projet :
 gcloud iam roles create connector --project=myproject --file=connector.yaml
 ----
 +
-https://["Documents Google Cloud : création et gestion de rôles personnalisés"^]
+https://cloud.google.com/iam/docs/creating-custom-roles#iam-custom-roles-create-gcloud["Documents Google Cloud : création et gestion de rôles personnalisés"^]
 
 
 
@@ -477,7 +477,7 @@ https://["Documents Google Cloud : création et gestion de rôles personnalisés
 .. Sélectionnez le rôle que vous venez de créer.
 .. Terminez les étapes restantes pour créer le rôle.
 +
-https://["Documents Google Cloud : création d'un compte de service"^]
+https://cloud.google.com/iam/docs/creating-managing-service-accounts#creating_a_service_account["Documents Google Cloud : création d'un compte de service"^]
 
 
 
@@ -495,7 +495,7 @@ Vous disposez désormais d'un compte de service que vous pouvez attribuer à l'i
 Plusieurs API sont requises pour déployer Cloud Volumes ONTAP dans Google Cloud.
 
 .Étape
-. https://["Activez les API Google Cloud suivantes dans votre projet"^]
+. https://cloud.google.com/apis/docs/getting-started#enabling_apis["Activez les API Google Cloud suivantes dans votre projet"^]
 +
 ** API Cloud Deployment Manager V2
 ** API de journalisation cloud

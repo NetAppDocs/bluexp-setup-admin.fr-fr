@@ -44,7 +44,7 @@ BlueXP doit s'authentifier auprès d'AWS avant de pouvoir déployer l'instance d
 
 Quelle que soit l'option choisie, la première étape consiste à créer une politique IAM. Cette politique contient uniquement les autorisations nécessaires pour lancer l'instance Connector dans AWS à partir de BlueXP.
 
-Si nécessaire, vous pouvez restreindre la politique IAM à l'aide de l'IAM `Condition` elément. https://["Documentation AWS : élément de condition"^]
+Si nécessaire, vous pouvez restreindre la politique IAM à l'aide de l'IAM `Condition` elément. https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition.html["Documentation AWS : élément de condition"^]
 
 
 TIP: Lorsque BlueXP crée le connecteur, il applique un nouvel ensemble d'autorisations à l'instance Connector qui permet au connecteur de gérer les ressources AWS.
@@ -252,8 +252,8 @@ Pour les régions standard, les autorisations sont réparties entre deux règles
 
 . Associer les règles à un utilisateur IAM.
 +
-** https://["Documentation AWS : création de rôles IAM"^]
-** https://["Documentation AWS : ajout et suppression de règles IAM"^]
+** https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create.html["Documentation AWS : création de rôles IAM"^]
+** https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_manage-attach-detach.html["Documentation AWS : ajout et suppression de règles IAM"^]
 
 
 . Assurez-vous que l'utilisateur dispose d'une clé d'accès que vous pouvez ajouter à BlueXP après l'installation du connecteur.

@@ -24,7 +24,7 @@ link:concept-netapp-accounts.html["Découvrez le fonctionnement des comptes Blue
 
 Si vous souhaitez gérer les paramètres de votre compte en envoyant des demandes API, vous devez utiliser l'API _Tenancy_. Cette API est différente de l'API BlueXP, que vous utilisez pour créer et gérer des environnements de travail Cloud Volumes ONTAP.
 
-https://["Affichez les terminaux de l'API de colocation"^]
+https://docs.netapp.com/us-en/cloud-manager-automation/tenancy/overview.html["Affichez les terminaux de l'API de colocation"^]
 
 
 
@@ -39,7 +39,7 @@ Les utilisateurs de votre compte peuvent accéder aux ressources et les gérer d
 Associez les utilisateurs à votre compte BlueXP pour créer et gérer des environnements de travail dans BlueXP.
 
 .Étapes
-. Si l'utilisateur ne l'a pas déjà fait, demandez-lui d'aller à https://["Site Web NetApp BlueXP"^] et s'inscrire.
+. Si l'utilisateur ne l'a pas déjà fait, demandez-lui d'aller à https://bluexp.netapp.com/["Site Web NetApp BlueXP"^] et s'inscrire.
 . Dans le haut de BlueXP, sélectionnez la liste déroulante *compte*.
 +
 image:screenshot-account-settings-menu.png["Capture d'écran qui montre l'option Paramètres du compte dans la bannière supérieure de BlueXP."]
@@ -148,9 +148,9 @@ Le secret client n'est visible qu'une seule fois et n'est pas stocké n'importe 
 
 === Obtenir un jeton porteur pour un compte de service
 
-Pour passer des appels API à https://["API de location"^], vous devrez obtenir un jeton de porteur pour un compte de service.
+Pour passer des appels API à https://docs.netapp.com/us-en/cloud-manager-automation/tenancy/overview.html["API de location"^], vous devrez obtenir un jeton de porteur pour un compte de service.
 
-https://["Découvrez comment créer un jeton de compte de service"^]
+https://docs.netapp.com/us-en/cloud-manager-automation/platform/create_service_token.html["Découvrez comment créer un jeton de compte de service"^]
 
 
 

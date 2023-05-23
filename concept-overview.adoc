@@ -25,54 +25,54 @@ La plateforme BlueXP offre quatre piliers fondamentaux pour la gestion des donn�
 Stockage:: Découvrez, déployez et gérez le stockage, que ce soit dans AWS, Azure, Google Cloud ou sur site.
 +
 --
-* Configuration et utilisation https://["Cloud Volumes ONTAP"^] pour une gestion efficace des données multiprotocole sur l'ensemble des clouds.
+* Configuration et utilisation https://bluexp.netapp.com/ontap-cloud["Cloud Volumes ONTAP"^] pour une gestion efficace des données multiprotocole sur l'ensemble des clouds.
 * Configurez et utilisez les services cloud de stockage de fichiers :
 +
-** https://["Azure NetApp Files"^]
-** https://["Amazon FSX pour ONTAP"^]
-** https://["Cloud Volumes Service pour Google Cloud"^]
+** https://bluexp.netapp.com/azure-netapp-files["Azure NetApp Files"^]
+** https://bluexp.netapp.com/fsx-for-ontap["Amazon FSX pour ONTAP"^]
+** https://bluexp.netapp.com/cloud-volumes-service-for-gcp["Cloud Volumes Service pour Google Cloud"^]
 
 
-* Détection et gestion https://["le stockage sur site"^]:
+* Détection et gestion https://bluexp.netapp.com/netapp-on-premises["le stockage sur site"^]:
 +
 ** Systèmes E-Series
 ** Clusters ONTAP
 ** Systèmes StorageGRID
 
 
-* Orchestrez et protégez https://["Données persistantes Kubernetes"^]
+* Orchestrez et protégez https://bluexp.netapp.com/solutions/kubernetes["Données persistantes Kubernetes"^]
 
 
 --
 Mobilité:: Déplacez vos données là où vous en avez besoin grâce à la synchronisation, la copie, le Tiering et la mise en cache.
 +
 --
-* https://["Copie et synchronisation"^]
-* https://["La mise en cache en périphérie"^]
-* https://["Tiering"^]
+* https://bluexp.netapp.com/cloud-sync-service["Copie et synchronisation"^]
+* https://bluexp.netapp.com/global-file-cache["La mise en cache en périphérie"^]
+* https://bluexp.netapp.com/cloud-tiering["Tiering"^]
 
 
 --
 La protection:: Utilisez des mécanismes de protection automatisés pour protéger vos données contre les pertes de données, les pannes imprévues, les ransomware et autres cybermenaces.
 +
 --
-* https://["Sauvegarde et restauration"^]
-* https://["La réplication"^]
+* https://bluexp.netapp.com/cloud-backup["Sauvegarde et restauration"^]
+* https://bluexp.netapp.com/replication["La réplication"^]
 
 
 --
 Analyse et contrôle:: Utilisez des outils pour surveiller, cartographier et optimiser votre infrastructure et votre stockage de données.
 +
 --
-* https://["Classement"^]
-* https://["Conseiller digital"^]
-* https://["Protection par ransomware"^]
+* https://bluexp.netapp.com/netapp-cloud-data-sense["Classement"^]
+* https://bluexp.netapp.com/digital-advisor["Conseiller digital"^]
+* https://bluexp.netapp.com/ransomware-protection["Protection par ransomware"^]
 
 
 --
 
 
-https://["Découvrez comment utiliser BlueXP pour aider votre entreprise"^]
+https://bluexp.netapp.com/["Découvrez comment utiliser BlueXP pour aider votre entreprise"^]
 
 
 
@@ -84,7 +84,7 @@ BlueXP vous permet de gérer le stockage cloud et d'utiliser les services cloud 
 
 == Le coût
 
-Le prix de BlueXP dépend des services que vous prévoyez d'utiliser. https://["En savoir plus sur les tarifs BlueXP"^]
+Le prix de BlueXP dépend des services que vous prévoyez d'utiliser. https://bluexp.netapp.com/pricing["En savoir plus sur les tarifs BlueXP"^]
 
 
 
@@ -96,7 +96,7 @@ BlueXP inclut une console web fournie via la couche SaaS, des comptes fournissan
 
 === Services à la demande
 
-BlueXP est accessible via un https://["console web"^] Et les API. Cette expérience SaaS vous permet d'accéder automatiquement aux dernières fonctionnalités dès leur sortie et de basculer facilement entre vos comptes BlueXP et les connecteurs.
+BlueXP est accessible via un https://console.bluexp.netapp.com["console web"^] Et les API. Cette expérience SaaS vous permet d'accéder automatiquement aux dernières fonctionnalités dès leur sortie et de basculer facilement entre vos comptes BlueXP et les connecteurs.
 
 
 
@@ -128,4 +128,4 @@ link:concept-modes.html["En savoir plus sur les modes de déploiement BlueXP"].
 
 Un comptable public indépendant et un vérificateur des services ont examiné BlueXP et confirmé qu'il a obtenu des rapports SOC 2 de type 2 en fonction des critères des services de fiducie applicables.
 
-https://["Consultez les rapports SOC 2 de NetApp"^]
+https://www.netapp.com/company/trust-center/compliance/soc-2/["Consultez les rapports SOC 2 de NetApp"^]

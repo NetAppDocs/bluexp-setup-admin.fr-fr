@@ -26,7 +26,7 @@ Vous pouvez vous inscrire à BlueXP à l'aide de l'une des options suivantes :
 Les deux options prennent en charge une connexion fédérée, qui permet une authentification unique à l'aide des informations d'identification de votre annuaire d'entreprise (identité fédérée). Vous pouvez configurer une connexion de fédération après vous être inscrit. link:concept-federation.html["Découvrez comment utiliser la fédération des identités avec BlueXP"].
 
 .Étapes
-. Ouvrez un navigateur Web et accédez au https://["Console BlueXP"^]
+. Ouvrez un navigateur Web et accédez au https://console.bluexp.netapp.com["Console BlueXP"^]
 . Si vous possédez un compte sur le site de support NetApp, entrez l'adresse e-mail associée à votre compte NSS directement sur la page *connexion*.
 +
 Vous pouvez ignorer la page d'inscription si vous avez un compte NSS. BlueXP vous inscrit dans le cadre de cette connexion initiale.

@@ -32,4 +32,4 @@ Vous devez activer plusieurs API Google Cloud avant de pouvoir déployer le conn
 
 
 
-https://["Documentation Google Cloud : activation des API"^]
+https://cloud.google.com/apis/docs/getting-started#enabling_apis["Documentation Google Cloud : activation des API"^]
