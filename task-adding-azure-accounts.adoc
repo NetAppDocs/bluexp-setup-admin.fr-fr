@@ -298,7 +298,7 @@ Pour payer Cloud Volumes ONTAP à l'heure (PAYGO), ces identifiants Azure doiven
 
 
 .Résultat
-Vous pouvez maintenant passer à différents ensembles d'informations d'identification à partir de la page Détails et informations d'identification https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-deploying-otc-azure.html["lors de la création d'un nouvel environnement de travail"^]
+Vous pouvez maintenant passer à différents ensembles d'informations d'identification à partir de la page Détails et informations d'identification https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-deploying-otc-azure.html["lors de la création d'un nouvel environnement de travail"^]
 
 image:screenshot_accounts_switch_azure.gif["Une capture d'écran qui montre la sélection entre les informations d'identification après avoir sélectionné Modifier les informations d'identification dans la page Détails  informations d'identification."]
 

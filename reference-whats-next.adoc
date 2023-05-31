@@ -16,7 +16,7 @@ summary: Maintenant que vous vous êtes connecté et que vous avez configuré Bl
 [role="lead"]
 Maintenant que vous vous êtes connecté et que vous avez configuré BlueXP en mode standard, les utilisateurs peuvent créer et découvrir des environnements de travail et utiliser les services de données BlueXP.
 
-Pour obtenir de l'aide, consultez le https://docs.netapp.com/us-en/cloud-manager-family/["Page d'accueil de la documentation BlueXP"^] Pour afficher les documents relatifs à tous les services BlueXP.
+Pour obtenir de l'aide, consultez le https://docs.netapp.com/us-en/bluexp-family/["Page d'accueil de la documentation BlueXP"^] Pour afficher les documents relatifs à tous les services BlueXP.
 
 .Lien associé
 link:concept-modes.html["Modes de déploiement BlueXP"]

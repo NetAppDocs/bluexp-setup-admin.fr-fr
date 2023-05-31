@@ -32,7 +32,7 @@ L'ajout de nouvelles informations d'identification AWS à BlueXP offre à BlueXP
 
 * Ajoutez des informations d'identification AWS à BlueXP pour FSX pour ONTAP
 +
-L'ajout de nouvelles informations d'identification AWS à BlueXP offre à BlueXP les autorisations nécessaires pour créer et gérer FSX pour ONTAP. https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/requirements/task-setting-up-permissions-fsx.html["Découvrez comment configurer des autorisations pour FSX pour ONTAP"^]
+L'ajout de nouvelles informations d'identification AWS à BlueXP offre à BlueXP les autorisations nécessaires pour créer et gérer FSX pour ONTAP. https://docs.netapp.com/us-en/bluexp-fsx-ontap/requirements/task-setting-up-permissions-fsx.html["Découvrez comment configurer des autorisations pour FSX pour ONTAP"^]
 
 
 
@@ -175,7 +175,7 @@ Assurez-vous de faire ce qui suit :
 ** Sélectionnez *un autre compte AWS* et saisissez l'ID du service BlueXP SaaS : 952013314444
 ** Créez une stratégie qui inclut les autorisations requises pour créer un connecteur.
 +
-*** https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/requirements/task-setting-up-permissions-fsx.html["Affichez les autorisations nécessaires pour FSX pour ONTAP"^]
+*** https://docs.netapp.com/us-en/bluexp-fsx-ontap/requirements/task-setting-up-permissions-fsx.html["Affichez les autorisations nécessaires pour FSX pour ONTAP"^]
 *** link:task-set-up-permissions-aws.html["Afficher la règle de déploiement des connecteurs"]
 
 
@@ -217,7 +217,7 @@ Vous pouvez maintenant utiliser les informations d'identification lors de la cr�
 
 == Ajoutez des identifiants à BlueXP pour Amazon FSX pour ONTAP
 
-Pour plus de détails, reportez-vous à la https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/requirements/task-setting-up-permissions-fsx.html["Documentation BlueXP pour Amazon FSX pour ONTAP"^]
+Pour plus de détails, reportez-vous à la https://docs.netapp.com/us-en/bluexp-fsx-ontap/requirements/task-setting-up-permissions-fsx.html["Documentation BlueXP pour Amazon FSX pour ONTAP"^]
 
 
 
