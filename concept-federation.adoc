@@ -116,6 +116,9 @@ Pour effectuer cette étape, vous devez obtenir les informations suivantes aupr�
 Après avoir créé la connexion à l'aide de ces informations, la page Configuration de la fédération répertorie les paramètres que vous pouvez envoyer à votre administrateur AD pour terminer la configuration à l'étape suivante.
 
 
+NOTE: Notez la date d'expiration du certificat. Vous devez revenir à la page de configuration de la fédération et mettre à jour le certificat _avant_ qu'il n'expire. C'est votre responsabilité. BlueXP ne suit pas la date d'expiration. Il est préférable de travailler avec votre équipe AD pour être alerté à temps.
+
+
 
 | 3 | AD admin | Terminez la configuration sur le fournisseur d'identité en utilisant les paramètres indiqués sur la page Configuration de la fédération après avoir terminé l'étape 2. 
 
@@ -156,6 +159,9 @@ Pour effectuer cette étape, vous devez obtenir les informations suivantes aupr�
 Après avoir créé la connexion à l'aide de ces informations, la page Configuration de la fédération répertorie les paramètres que vous pouvez envoyer à votre administrateur AD pour terminer la configuration à l'étape suivante.
 
 
+NOTE: Notez la date d'expiration de la clé secrète. Vous devez revenir à la page de configuration de la fédération et mettre à jour le certificat _avant_ qu'il n'expire. C'est votre responsabilité. BlueXP ne suit pas la date d'expiration. Il est préférable de travailler avec votre équipe AD pour être alerté à temps.
+
+
 
 | 3 | AD admin | Terminez la configuration dans Azure AD en utilisant les paramètres affichés sur la page Configuration de la fédération après avoir terminé l'étape 2. 
 
@@ -186,6 +192,9 @@ Accédez au https://services.cloud.netapp.com/federation-setup["Page d'installat
 Pour effectuer cette étape, vous devez obtenir les informations suivantes auprès de votre administrateur AD : l'URL du serveur ADFS ou du fichier de métadonnées de fédération.
 
 Après avoir créé la connexion à l'aide de ces informations, la page Configuration de la fédération répertorie les paramètres que vous pouvez envoyer à votre administrateur AD pour terminer la configuration à l'étape suivante.
+
+
+NOTE: Notez la date d'expiration du certificat. Vous devez revenir à la page de configuration de la fédération et mettre à jour le certificat _avant_ qu'il n'expire. C'est votre responsabilité. BlueXP ne suit pas la date d'expiration. Il est préférable de travailler avec votre équipe AD pour être alerté à temps.
 
 
 
@@ -225,6 +234,9 @@ Pour effectuer cette étape, vous devez obtenir les informations suivantes aupr�
 
 
 Après avoir créé la connexion à l'aide de ces informations, la page Configuration de la fédération répertorie les paramètres que vous pouvez envoyer à votre administrateur AD pour terminer la configuration à l'étape suivante.
+
+
+NOTE: Notez la date d'expiration du certificat. Vous devez revenir à la page de configuration de la fédération et mettre à jour le certificat _avant_ qu'il n'expire. C'est votre responsabilité. BlueXP ne suit pas la date d'expiration. Il est préférable de travailler avec votre équipe AD pour être alerté à temps.
 
 
 

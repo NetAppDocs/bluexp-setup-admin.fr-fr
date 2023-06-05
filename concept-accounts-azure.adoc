@@ -36,7 +36,7 @@ Vous pouvez déployer tous vos systèmes Cloud Volumes ONTAP à l'aide des ident
 
 == Des abonnements Azure supplémentaires pour une identité gérée
 
-L'identité gérée attribuée par le système à la VM Connector est associée à l'abonnement dans lequel vous avez lancé le connecteur. Si vous souhaitez sélectionner un autre abonnement Azure, vous devez le faire link:task-adding-azure-accounts.html#associating-additional-azure-subscriptions-with-a-managed-identity["associez l'identité gérée à ces abonnements"].
+L'identité gérée attribuée par le système à la VM Connector est associée à l'abonnement dans lequel vous avez lancé le connecteur. Si vous souhaitez sélectionner un autre abonnement Azure, vous devez le faire link:task-adding-azure-accounts.html#associate-additional-azure-subscriptions-with-a-managed-identity["associez l'identité gérée à ces abonnements"].
 
 
 
@@ -46,7 +46,7 @@ Si vous souhaitez utiliser d'autres identifiants Azure avec BlueXP, vous devez a
 
 image:diagram_permissions_multiple_azure.png["Image conceptuelle qui affiche le compte Azure initial, qui reçoit des autorisations par le biais d'un rôle personnalisé et d'une identité gérée, et deux comptes supplémentaires qui reçoivent des autorisations par l'intermédiaire d'un rôle et d'un entité de service personnalisés."]
 
-Vous le feriez alors link:task-adding-azure-accounts.html#adding-azure-accounts-to-cloud-manager["Ajoutez les informations d'identification du compte à BlueXP"] En fournissant des détails sur le principal du service AD.
+Vous le feriez alors link:task-adding-azure-accounts.html#add-additional-azure-credentials-to-bluexp["Ajoutez les informations d'identification du compte à BlueXP"] En fournissant des détails sur le principal du service AD.
 
 Par exemple, vous pouvez basculer entre les informations d'identification lors de la création d'un nouvel environnement de travail Cloud Volumes ONTAP :
 

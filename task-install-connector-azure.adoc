@@ -119,7 +119,7 @@ Noter les éléments suivants lors de la configuration de la machine virtuelle :
 ** Le connecteur offre des performances optimales avec des disques durs ou SSD.
 ** Choisissez une taille de machine virtuelle qui répond aux exigences en matière de CPU et de RAM. Nous recommandons DS3 v2.
 +
-link:reference-host-requirements-azure["Vérifier les exigences relatives aux machines virtuelles"].
+link:reference-host-requirements-azure.html["Vérifier les exigences relatives aux machines virtuelles"].
 
 ** Pour le groupe de sécurité réseau, le connecteur nécessite des connexions entrantes via SSH, HTTP et HTTPS. Quelques règles supplémentaires sont requises pour des configurations spécifiques.
 +

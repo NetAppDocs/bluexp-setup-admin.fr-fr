@@ -58,7 +58,7 @@ Après avoir ajouté un autre ensemble d'informations d'identification, vous pou
 
 image:screenshot_accounts_switch_aws.png["Capture d'écran indiquant la sélection entre les comptes fournisseurs de services cloud après avoir cliqué sur changer de compte dans la page Détails etamp ; informations d'identification."]
 
-link:task-adding-aws-accounts.html#add-credentials-to-a-connector["Découvrez comment ajouter des informations d'identification AWS à un connecteur existant."]
+link:task-adding-aws-accounts.html#add-additional-credentials-to-a-connector["Découvrez comment ajouter des informations d'identification AWS à un connecteur existant."]
 
 
 
@@ -67,7 +67,7 @@ link:task-adding-aws-accounts.html#add-credentials-to-a-connector["Découvrez co
 L'ajout de nouvelles informations d'identification AWS à BlueXP fournit les autorisations nécessaires pour créer et gérer un environnement de travail FSX pour ONTAP ou pour créer un connecteur.
 
 * link:task-adding-aws-accounts.html#add-credentials-to-bluexp-for-creating-a-connector["Découvrez comment ajouter des identifiants AWS à BlueXP pour Amazon FSX pour ONTAP"^]
-* link:task-adding-aws-accounts.html#add-credentials-to-a-connector["Découvrez comment ajouter des informations d'identification AWS à BlueXP pour créer un connecteur"]
+* link:task-adding-aws-accounts.html#add-additional-credentials-to-a-connector["Découvrez comment ajouter des informations d'identification AWS à BlueXP pour créer un connecteur"]
 
 
 

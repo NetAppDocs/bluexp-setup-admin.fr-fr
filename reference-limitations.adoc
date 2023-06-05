@@ -24,6 +24,12 @@ Ces limitations sont spécifiques à la configuration et à l'administration de 
 
 
 
+=== Configuration du proxy avec les utilisateurs du domaine
+
+BlueXP ne prend pas en charge les utilisateurs de domaine lors de la configuration d'un serveur proxy pour le connecteur. Lorsque vous entrez un nom d'utilisateur pour le serveur proxy, il doit s'agir d'un utilisateur local.
+
+
+
 === Les paramètres par défaut de l'instance EC2 ne doivent pas être modifiés
 
 Lorsque vous déployez le connecteur dans AWS, les paramètres d'instance EC2 suivants sont configurés par défaut :
