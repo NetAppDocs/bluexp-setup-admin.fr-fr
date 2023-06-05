@@ -18,6 +18,58 @@ Découvrez les nouveautés des fonctionnalités d'administration BlueXP : compte
 
 
 
+== 4 juin 2023
+
+
+
+=== Connecteur 3.9.30
+
+* Lorsque vous ouvrez un dossier de support NetApp à partir du tableau de bord de support, BlueXP ouvre désormais le dossier à l'aide du compte sur le site de support NetApp associé à votre connexion BlueXP. BlueXP utilisait auparavant le compte du site de support NetApp associé à l'ensemble du compte BlueXP.
++
+Cette modification entraîne l'enregistrement d'un compte BlueXP via le compte du site de support NetApp associé à la connexion BlueXP. Auparavant, l'enregistrement du support avait lieu via un compte NSS associé à l'ensemble du compte BlueXP. Par conséquent, les autres utilisateurs BlueXP ne verront pas le même statut d'enregistrement du support s'ils n'ont pas associé de compte sur le site de support NetApp à leur connexion BlueXP. Si vous avez précédemment enregistré votre compte BlueXP pour le support, votre statut d'enregistrement reste valide. Il vous suffit d'ajouter un compte NSS de niveau utilisateur pour voir l'état.
+
++
+** https://docs.netapp.com/us-en/bluexp-setup-admin/task-get-help.html#create-a-case-with-netapp-support["Découvrez comment créer un dossier avec le support NetApp"]
+** https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-manage-user-credentials.html["Découvrez comment gérer les identifiants associés à votre connexion BlueXP"]
+** https://docs.netapp.com/us-en/bluexp-setup-admin/task-support-registration.html["Découvrez comment vous inscrire à de l'aide"]
+
+
+* Vous pouvez désormais rechercher de la documentation à partir de BlueXP. Les résultats de la recherche fournissent maintenant des liens vers le contenu sur docs.netapp.com et kb.netapp.com, ce qui pourrait aider à répondre à une question que vous avez.
++
+image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-setup-admin/main/media/screenshot-search-docs.png["Copie d'écran de la recherche BlueXP disponible en haut de la console."]
+
+* Le connecteur est désormais pris en charge dans les régions AWS suivantes :
++
+** Hyderabad (ap-sud-2)
+** Melbourne (ap-sud-est-4)
+** Espagne (ue-Sud-2)
+** Eau (me-centre-1)
+** Zurich (eu-centre-2)
+
+
+* Le connecteur est désormais pris en charge dans les régions Azure suivantes :
++
+** Brésil Sud
+** France Sud
+** Jio Inde Centrale
+** Jio Inde Ouest
+** Pologne Centre
+** Qatar Central
+
+
+* Le connecteur est désormais pris en charge dans les régions Google Cloud suivantes :
++
+** Columbus (US-east5)
+** Dallas (US-south1)
+
+
++
+https://cloud.netapp.com/cloud-volumes-global-regions["Afficher la liste complète des régions prises en charge"^]
+
+
+
+
+
 == 7 mai 2023
 
 

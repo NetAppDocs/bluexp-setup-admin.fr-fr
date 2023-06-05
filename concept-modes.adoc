@@ -403,5 +403,5 @@ Notez que certains services peuvent être pris en charge avec des limitations. P
 | Notifications | Oui. | Non 
 
 
-| De la chronologie | Oui. | Oui. 
+| Recherche | Oui. | Non 
 |===
