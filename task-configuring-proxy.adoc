@@ -41,6 +41,9 @@ image:screenshot_settings_icon.gif["Capture d'écran affichant l'icône Paramèt
 .. Sélectionnez *Activer le proxy*.
 .. Spécifiez le serveur à l'aide de la syntaxe http://_address:port_[] ou https://_address:port_[]
 .. Spécifiez un nom d'utilisateur et un mot de passe si une authentification de base est requise pour le serveur
++
+L'utilisateur doit être un utilisateur local. Les utilisateurs du domaine ne sont pas pris en charge.
+
 .. Sélectionnez *Enregistrer*.
 +
 

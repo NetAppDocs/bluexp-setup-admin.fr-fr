@@ -167,7 +167,8 @@ La deuxième politique fournit des autorisations pour les services suivants :
                 "ce:GetCostAndUsage",
                 "ce:GetTags",
                 "fsx:Describe*",
-                "fsx:List*"
+                "fsx:List*",
+                "kms:GenerateDataKeyWithoutPlaintext"
             ],
             "Resource": "*",
             "Effect": "Allow",
@@ -1133,7 +1134,7 @@ Il effectue les requêtes d'API suivantes pour déployer et gérer Cloud Volumes
 | s3:ListBucket | Non | Oui. | Non 
 
 
-.4+| Chiffrement des données Cloud Volumes ONTAP possible à l'aide du service AWS Key Management Service (KMS) | Km:liste* | Oui. | Oui. | Non 
+.5+| Chiffrement des données Cloud Volumes ONTAP possible à l'aide du service AWS Key Management Service (KMS) | Km:liste* | Oui. | Oui. | Non 
 
 
 | Kms:Recrypter* | Oui. | Non | Non 
@@ -1143,6 +1144,9 @@ Il effectue les requêtes d'API suivantes pour déployer et gérer Cloud Volumes
 
 
 | Kms:CreateGrant | Oui. | Oui. | Non 
+
+
+| Kms:GenerateDataKeyWithoutPlaintext | Oui. | Oui. | Non 
 
 
 .4+| Obtenez des données de coût AWS pour Cloud Volumes ONTAP | ce:GetReservationUtilization | Non | Oui. | Non 
@@ -1218,6 +1222,14 @@ Connector effectue les requêtes d'API suivantes pour gérer les balises sur les
 == Journal des modifications
 
 Lorsque des autorisations sont ajoutées et supprimées, nous les noterons dans les sections ci-dessous.
+
+
+
+=== 6 juin 2023
+
+L'autorisation suivante est désormais requise pour Cloud Volumes ONTAP :
+
+Kms:GenerateDataKeyWithoutPlaintext
 
 
 

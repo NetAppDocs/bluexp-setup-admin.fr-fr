@@ -238,6 +238,9 @@ Voici un exemple de commande utilisant les deux paramètres facultatifs :
 ** \http://username:password@address:port
 ** \https://address:port
 ** \https://username:password@address:port
++
+L'utilisateur doit être un utilisateur local. Les utilisateurs du domaine ne sont pas pris en charge.
+
 
 
 +
