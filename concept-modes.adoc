@@ -379,6 +379,9 @@ Notez que certains services peuvent être pris en charge avec des limitations. P
 | La mise en cache en périphérie | Non | Non 
 
 
+| Rapports de migration | Non | Non 
+
+
 | Résilience opérationnelle | Non | Non 
 
 
@@ -391,17 +394,20 @@ Notez que certains services peuvent être pris en charge avec des limitations. P
 | La réplication | Oui. | Oui. 
 
 
-| Tiering | Non | Non 
+| Tiering | Non | Non | Mise en cache du volume 
 
 
-.4+| *Caractéristiques* | Informations d'identification | Oui. | Oui. 
+| Non | Non .4+| *Caractéristiques* | Informations d'identification 
 
 
-| Comptes NSS | Oui. | Non 
+| Oui. | Oui. | Comptes NSS 
 
 
-| Notifications | Oui. | Non 
+| Oui. | Non | Notifications 
 
 
-| Recherche | Oui. | Non 
+| Oui. | Non | Recherche 
+
+
+| Oui. | Non | De la chronologie | Oui. 
 |===
