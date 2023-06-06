@@ -1244,8 +1244,6 @@
   <block id="7c521ef00b3568ffec78f7d18b3f23a1" category="section-title">Poser le connecteur</block>
   <block id="7bc3966adb932d8b546fbfa4ef7113d7" category="paragraph">Les privilèges root sont requis pour installer le connecteur.</block>
   <block id="bbe48fb854ea022537208eeeff822f91" category="list-title">Description de la tâche</block>
-  <block id="3a0381e5879eb05d4447518a0fe21601" category="list-text">L'installation installe les outils de ligne de commande AWS (awscli), afin d'activer les procédures de reprise à partir du support NetApp.</block>
-  <block id="c421e739c1e3aa36da0456d7f369e45f" category="paragraph">Si vous recevez un message indiquant que l'installation de awscli a échoué, vous pouvez ignorer le message en toute sécurité. Le connecteur peut fonctionner sans outils.</block>
   <block id="aad3dfdc62f79a4c10e86004046d9509" category="list-text">Le programme d'installation disponible sur le site du support NetApp peut être une version antérieure. Après l'installation, le connecteur se met automatiquement à jour si une nouvelle version est disponible.</block>
   <block id="7e64bcd49d202a618920fe22d66f21ac" category="list-text">Téléchargez le logiciel du connecteur à partir du<block ref="99637e01fa8caa34a544049093cac68c" category="inline-link-rx"></block>, Puis copiez-le sur l'hôte Linux.</block>
   <block id="325740f998865be7879e32048d406868" category="list-text">Exécutez le script d'installation.</block>
@@ -1942,8 +1940,6 @@
   <block id="a3b3ed2f72536d95b268a4a67722c55d" category="list-text">Enregistrement des systèmes Cloud Volumes ONTAP avec paiement à l'utilisation</block>
   <block id="f5135b68b75a8404803a1eb438e40c5e" category="list-text">Mise à niveau du logiciel Cloud Volumes ONTAP vers la dernière version</block>
   <block id="a86ad85ddb4228477c624e47ab659180" category="paragraph">Ces identifiants sont associés à votre ID de compte BlueXP. Les utilisateurs qui appartiennent au compte BlueXP peuvent accéder à ces informations d'identification depuis *support &gt; gestion NSS*.</block>
-  <block id="d4b8ea0f438d980b900fa0c72d88710f" category="list-text">Le compte ne peut pas être utilisé avec d'autres fonctionnalités BlueXP : il n'est pas associé à la création d'Cloud Volumes ONTAP, aux licences ou à la création de dossiers de support.</block>
-  <block id="37ab7585b9575599c51022bd3b09813a" category="list-text">Il ne peut y avoir qu'un seul compte NSS associé à Digital Advisor et à la gestion des dossiers, par utilisateur.</block>
   <block id="9a030ad8abbc9b1e402feade38bdec50" category="paragraph">Le tableau de bord de support vous permet d'ajouter et de gérer vos comptes du site de support NetApp pour les utiliser avec BlueXP au niveau de votre compte BlueXP.</block>
   <block id="ec084bb25ed5b934c09b361069c246b2" category="list-text">Le compte NSS doit être un compte de niveau client (pas un compte invité ou temporaire). Vous pouvez avoir plusieurs comptes NSS de niveau client.</block>
   <block id="27387009488fe78dcc7cb7e3e432792f" category="list-text">Il ne peut y avoir qu'un seul compte NSS si ce compte est un compte de niveau partenaire. Si vous essayez d'ajouter des comptes NSS de niveau client et qu'un compte de niveau partenaire existe, le message d'erreur suivant s'affiche :</block>
@@ -3598,7 +3594,6 @@
   <block id="b5d4819a4e8d73d085630d52e025ce10" category="paragraph">Cette action enregistre le compte BlueXP pour le support et active les droits au support. Un seul utilisateur de votre compte BlueXP doit associer un compte sur le site de support NetApp à sa connexion BlueXP pour s'inscrire au support et activer les droits de support. Une fois cette opération terminée, la page *Ressources* indique que votre compte est enregistré pour l'assistance.</block>
   <block id="aefc4dbe9b72d17b676f3fa6cb3d70e1" category="paragraph"><block ref="aefc4dbe9b72d17b676f3fa6cb3d70e1" category="inline-link-rx"></block></block>
   <block id="1f41c927d23b7f472c07e8cefaaa4155" category="list-text">Lorsque vous accédez à *support &gt; case Management*, vous êtes invité à entrer vos informations d'identification NSS, si vous ne l'avez pas déjà fait. Cette page vous permet de créer et de gérer les dossiers de demande de support associés à votre compte NSS et à votre entreprise.</block>
-  <block id="455362b49d80ddf5f9cd87d0f39e81ab" category="paragraph">Les identifiants du site de support NetApp sont également associés au compte BlueXP dont vous êtes membre. Les identifiants NSS au niveau du compte vous permettent de déployer Cloud Volumes ONTAP avec votre propre licence (BYOL), etc.</block>
   <block id="920fe1428c19533eda6222fe7e58efbe" category="inline-link">Découvrez comment gérer les identifiants associés à votre connexion BlueXP</block>
   <block id="e1d2e1a634647fd631081bc4f6f8e523" category="list-text">Pour utiliser la fonctionnalité *Créer un cas*, vous devez d'abord associer vos informations d'identification du site de support NetApp à votre connexion BlueXP.<block ref="2a0d8b66ca9e99d023b48cf25f40fb12" category="inline-link-rx"></block>.</block>
   <block id="e49aa971c20ec071f1b5bbc3c7266769" category="list-text">Si vous ouvrez un dossier pour un système ONTAP doté d'un numéro de série, votre compte NSS doit être associé au numéro de série de ce système.</block>
@@ -3673,4 +3668,7 @@ Vous devez également vous assurer que la stratégie est à jour lorsque de nouv
   <block id="390e388eccc77b388b4d54d73b76f902" category="list-text">Compartiments de stockage Google Cloud</block>
   <block id="ac7b3cf10ea08c788a374e0291742517" category="list-text">Rapports de migration</block>
   <block id="ff45d71e69fb5930de79de7c94326d7b" category="list-text">Mise en cache du volume</block>
+  <block id="816a41c8cb7108ca970b7fdff9e2b798" category="list-text">Le compte ne peut pas être utilisé avec les licences Cloud Volumes ONTAP.</block>
+  <block id="fcaf3921e62bfc728003fed248ffa3f9" category="list-text">Par utilisateur, il ne peut y avoir qu'un seul compte NSS associé à Digital Advisor et à la gestion des dossiers de support.</block>
+  <block id="2c0e4e5466a7db131a747ad4e195dc2c" category="paragraph">Vous pouvez également associer les informations d'identification du site de support NetApp au compte BlueXP dont vous êtes membre. Les identifiants NSS de niveau compte vous permettent de déployer Cloud Volumes ONTAP avec votre propre licence (BYOL), d'enregistrer des systèmes PAYGO et de mettre à niveau le logiciel Cloud Volumes ONTAP.</block>
 </blocks>
