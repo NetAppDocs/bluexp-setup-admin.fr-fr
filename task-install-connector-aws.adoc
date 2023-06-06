@@ -176,12 +176,7 @@ Vous avez la possibilité de configurer un serveur proxy après l'installation, 
 
 
 .Description de la tâche
-* L'installation installe les outils de ligne de commande AWS (awscli), afin d'activer les procédures de reprise à partir du support NetApp.
-+
-Si vous recevez un message indiquant que l'installation de awscli a échoué, vous pouvez ignorer le message en toute sécurité. Le connecteur peut fonctionner sans outils.
-
-* Le programme d'installation disponible sur le site du support NetApp peut être une version antérieure. Après l'installation, le connecteur se met automatiquement à jour si une nouvelle version est disponible.
-
+Le programme d'installation disponible sur le site du support NetApp peut être une version antérieure. Après l'installation, le connecteur se met automatiquement à jour si une nouvelle version est disponible.
 
 .Étapes
 . Vérifiez que docker est activé et exécuté.
