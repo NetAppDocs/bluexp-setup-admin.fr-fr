@@ -38,6 +38,10 @@ Cette modification entraîne l'enregistrement d'un compte BlueXP via le compte d
 +
 image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-setup-admin/main/media/screenshot-search-docs.png["Copie d'écran de la recherche BlueXP disponible en haut de la console."]
 
+* Grâce à Connector, vous pouvez désormais ajouter et gérer des comptes de stockage Azure à partir de BlueXP.
++
+https://docs.netapp.com/us-en/bluexp-blob-storage/task-add-blob-storage.html["Découvrez comment ajouter de nouveaux comptes de stockage Azure dans vos abonnements Azure à partir de BlueXP"^].
+
 * Le connecteur est désormais pris en charge dans les régions AWS suivantes :
 +
 ** Hyderabad (ap-sud-2)
