@@ -750,27 +750,6 @@ s3:GetEncryptionConfiguration
 
 === Sauvegarde et restauration
 
-Le connecteur effectue les requêtes API suivantes pour déployer l'instance de restauration pour la sauvegarde et la restauration BlueXP :
-
-* ec2:déclarations de début
-* ec2:StopInances
-* ec2:descriptifs
-* ec2:DécriesInstanceStatus
-* ec2:RunInstances
-* ec2:désactivation des instructions
-* ec2:DescribeInstanceAttribute
-* ec2:descriptifs
-* ec2:CreateTags
-* ec2 : CreateVolume
-* ec2:CreateSecurityGroup
-* ec2:DescribeSubnets
-* ec2 : descriptif
-* ec2:régions descriptives
-* Cloudformation:CreateStack
-* Cloudformation:DeleteStack
-* Cloudformation:DescribeSacks
-
-
 Ce connecteur effectue les requêtes API suivantes pour gérer les sauvegardes dans Amazon S3 :
 
 * s3:GetBucketLocation
