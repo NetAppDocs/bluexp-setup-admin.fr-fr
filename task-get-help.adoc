@@ -14,7 +14,7 @@ NetApp prend en charge BlueXP et ses services cloud de différentes manières. D
 
 
 
-== Options d'auto-assistance
+== Utilisation d'options de support en libre-service
 
 Ces options sont disponibles gratuitement, 24 heures sur 24, 7 jours sur 7 :
 
@@ -38,7 +38,7 @@ Nous accordons une grande importance à vos commentaires. Envoyez vos commentair
 
 
 
-== Créez un dossier avec le service de support NetApp
+== Créez un dossier de demande de support auprès du support NetApp
 
 Outre les options d'auto-support mentionnées ci-dessus, vous pouvez travailler avec un spécialiste du support NetApp pour résoudre tous les problèmes après avoir activé le service de support.
 
@@ -49,7 +49,7 @@ Outre les options d'auto-support mentionnées ci-dessus, vous pouvez travailler 
 
 .Étapes
 . Dans BlueXP, cliquez sur *aide > support*.
-. Sur la page *Ressources*, choisissez l'une des options disponibles sous assistance technique :
+. Sur la page *Ressources*, choisissez l'une des options disponibles sous support technique :
 +
 .. Cliquez sur *appelez-nous* si vous souhaitez parler avec quelqu'un au téléphone. Vous serez dirigé vers une page netapp.com qui répertorie les numéros de téléphone que vous pouvez appeler.
 .. Cliquez sur *Créer un dossier* pour ouvrir un dossier auprès d'un spécialiste du support NetApp :

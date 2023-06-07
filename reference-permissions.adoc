@@ -71,5 +71,7 @@ link:reference-permissions-azure.html["Autorisations Azure pour le connecteur"]
 | Déploiement de connecteurs | L'utilisateur Google Cloud qui déploie un connecteur depuis BlueXP a besoin d'autorisations spécifiques pour déployer le connecteur dans Google Cloud. | link:task-set-up-permissions-google.html#set-up-permissions-to-create-the-connector-from-bluexp-or-gcloud["Configurez les autorisations de déploiement du connecteur"] 
 
 
-| Fonctionnement du connecteur | Le compte de service de l'instance de VM Connector doit disposer d'autorisations spécifiques pour les opérations quotidiennes. Vous devez associer le compte de service au connecteur lorsque vous le déployez depuis BlueXP. Vous devez également vous assurer que la stratégie est à jour lorsque de nouvelles autorisations sont ajoutées dans les versions suivantes. | link:reference-permissions-gcp.html["Autorisations Google Cloud pour le connecteur"] 
+| Fonctionnement du connecteur | Le compte de service de l'instance de VM Connector doit disposer d'autorisations spécifiques pour les opérations quotidiennes. Vous devez associer le compte de service au connecteur lorsque vous le déployez depuis BlueXP.
+
+Vous devez également vous assurer que la stratégie est à jour lorsque de nouvelles autorisations sont ajoutées dans les versions suivantes. | link:reference-permissions-gcp.html["Autorisations Google Cloud pour le connecteur"] 
 |===

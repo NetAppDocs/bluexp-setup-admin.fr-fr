@@ -79,7 +79,8 @@ Le dossier d'installation du connecteur se trouve à l'emplacement suivant :
 
 Les fichiers journaux sont contenus dans les dossiers suivants :
 
-* /opt/application/netapp/cloudmanager/log ou
+* /opt/application/netapp/cloudmanager/log
+ou
 * /opt/application/netapp/service-manager-2/logs (à partir de 3.9.23 nouvelles installations)
 +
 Les journaux de ces dossiers fournissent des détails sur le connecteur et les images de docker.

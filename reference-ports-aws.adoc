@@ -59,7 +59,7 @@ Le groupe de sécurité prédéfini pour le connecteur inclut les règles de tra
 | Tous les protocoles TCP | Tout | Tout le trafic sortant 
 
 
-| Tous les protocoles UDP | Tout | Tout le trafic sortant 
+| Tous UDP | Tout | Tout le trafic sortant 
 |===
 
 

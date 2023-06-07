@@ -20,7 +20,7 @@ Découvrez comment BlueXP utilise les identifiants et les autorisations AWS pour
 
 == Identifiants AWS initiaux
 
-Lorsque vous déployez un connecteur depuis BlueXP, vous devez fournir l'ARN d'un rôle IAM ou de clés d'accès pour un utilisateur IAM. La méthode d'authentification que vous utilisez doit disposer des autorisations requises pour déployer l'instance de connecteur dans AWS. Les autorisations requises sont répertoriées dans le link:task-set-up-permissions-aws.html["Règle de déploiement du connecteur pour AWS"].
+Lorsque vous déployez un connecteur depuis BlueXP, vous devez fournir l'ARN d'un rôle IAM ou de clés d'accès pour un utilisateur IAM. La méthode d'authentification que vous utilisez doit disposer des autorisations requises pour déployer l'instance de connecteur dans AWS. Les autorisations requises sont répertoriées dans le link:task-set-up-permissions-aws.html["Politique de déploiement de connecteur pour AWS"].
 
 Lorsque BlueXP lance l'instance Connector dans AWS, il crée un rôle IAM et un profil d'instance pour l'instance. Il attache également une règle qui fournit au connecteur les autorisations nécessaires pour gérer les ressources et les processus de ce compte AWS. link:reference-permissions-aws.html["Consultez la manière dont BlueXP utilise les autorisations"].
 
@@ -28,7 +28,7 @@ image:diagram_permissions_initial_aws.png["Image conceptuelle qui montre BlueXP 
 
 BlueXP sélectionne ces identifiants AWS par défaut lorsque vous créez un nouvel environnement de travail pour Cloud Volumes ONTAP :
 
-image:screenshot_accounts_select_aws.gif["Capture d'écran indiquant l'option changer de compte dans la page Détails et AMP ; informations d'identification."]
+image:screenshot_accounts_select_aws.gif["Capture d'écran affichant l'option changer de compte dans la page Détails  informations d'identification."]
 
 Vous pouvez déployer tous vos systèmes Cloud Volumes ONTAP à l'aide des identifiants AWS initiaux, ou ajouter des identifiants supplémentaires.
 
@@ -56,7 +56,7 @@ Vous pouvez ensuite ajouter les informations d'identification du compte à BlueX
 
 Après avoir ajouté un autre ensemble d'informations d'identification, vous pouvez les passer lors de la création d'un nouvel environnement de travail :
 
-image:screenshot_accounts_switch_aws.png["Capture d'écran indiquant la sélection entre les comptes fournisseurs de services cloud après avoir cliqué sur changer de compte dans la page Détails etamp ; informations d'identification."]
+image:screenshot_accounts_switch_aws.png["Capture d'écran permettant de sélectionner un compte de fournisseur cloud après avoir cliqué sur changer de compte dans la page Détails  Credentials."]
 
 link:task-adding-aws-accounts.html#add-additional-credentials-to-a-connector["Découvrez comment ajouter des informations d'identification AWS à un connecteur existant."]
 

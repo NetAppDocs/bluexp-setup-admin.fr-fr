@@ -18,7 +18,7 @@ Lorsque BlueXP lance l'instance Connector dans AWS, il attache une règle à l'i
 
 
 
-== Règles IAM
+== Politiques IAM
 
 Les règles IAM disponibles ci-dessous fournissent les autorisations nécessaires à un connecteur pour gérer les ressources et les processus au sein de votre environnement de cloud public, en fonction de votre région AWS.
 

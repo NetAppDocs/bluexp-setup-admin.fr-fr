@@ -26,5 +26,5 @@ Ces règles entrantes s'appliquent à tous les modèles de déploiement BlueXP.
 | HTTP | 80 | Fournit un accès HTTP à partir des navigateurs Web du client vers l'interface utilisateur locale 
 
 
-| HTTPS | 443 | Fournit un accès HTTPS à partir des navigateurs Web du client vers l'interface utilisateur locale 
+| HTTPS | 443 | Fournit un accès HTTPS à l'interface utilisateur locale à partir des navigateurs Web clients 
 |===

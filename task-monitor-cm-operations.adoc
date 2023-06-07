@@ -143,9 +143,11 @@ image:screenshot-add-email-recipient.png["Copie d'écran montrant comment ajoute
 
 Vous pouvez supprimer des notifications de la page si vous n'avez plus besoin de les voir. Vous pouvez rejeter toutes les notifications en une seule fois ou rejeter les notifications individuelles.
 
-Pour ignorer toutes les notifications, dans le Centre de notification, sélectionnez image:button_3_vert_dots.png["une icône avec trois points verticaux"] Et sélectionnez *rejeter tout*.image:screenshot_notification_menu.png["Capture d'écran affichant le menu Notifications pour sélectionner les paramètres et ignorer toutes les options."]
+Pour ignorer toutes les notifications, dans le Centre de notification, sélectionnez image:button_3_vert_dots.png["une icône avec trois points verticaux"] Et sélectionnez *rejeter tout*.
+image:screenshot_notification_menu.png["Capture d'écran affichant le menu Notifications pour sélectionner les paramètres et ignorer toutes les options."]
 
-Pour ignorer les notifications individuelles, placez le curseur sur la notification et sélectionnez *rejeter*.image:screenshot_notification_dismiss1.png["Capture d'écran montrant comment rejeter une seule notification."]
+Pour ignorer les notifications individuelles, placez le curseur sur la notification et sélectionnez *rejeter*.
+image:screenshot_notification_dismiss1.png["Capture d'écran montrant comment rejeter une seule notification."]
 
 
 

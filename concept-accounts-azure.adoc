@@ -28,7 +28,7 @@ image:diagram_permissions_initial_azure.png["Image conceptuelle qui montre BlueX
 
 BlueXP sélectionne ces informations d'identification Azure par défaut lorsque vous créez un nouvel environnement de travail pour Cloud Volumes ONTAP :
 
-image:screenshot_accounts_select_azure.gif["Capture d'écran indiquant l'option changer de compte dans la page Détails et AMP ; informations d'identification."]
+image:screenshot_accounts_select_azure.gif["Capture d'écran affichant l'option changer de compte dans la page Détails  informations d'identification."]
 
 Vous pouvez déployer tous vos systèmes Cloud Volumes ONTAP à l'aide des identifiants Azure initiaux, ou ajouter des identifiants supplémentaires.
 
@@ -50,7 +50,7 @@ Vous le feriez alors link:task-adding-azure-accounts.html#add-additional-azure-c
 
 Par exemple, vous pouvez basculer entre les informations d'identification lors de la création d'un nouvel environnement de travail Cloud Volumes ONTAP :
 
-image:screenshot_accounts_switch_azure.gif["Capture d'écran indiquant la sélection entre les comptes fournisseurs de services cloud après avoir cliqué sur changer de compte dans la page Détails etamp ; informations d'identification."]
+image:screenshot_accounts_switch_azure.gif["Capture d'écran permettant de sélectionner un compte de fournisseur cloud après avoir cliqué sur changer de compte dans la page Détails  Credentials."]
 
 
 

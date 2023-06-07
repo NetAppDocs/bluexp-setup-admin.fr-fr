@@ -31,7 +31,7 @@ Les règles de pare-feu Google Cloud pour le connecteur exigent à la fois des r
 | HTTP | 80 | Fournit un accès HTTP à partir des navigateurs Web du client vers l'interface utilisateur locale 
 
 
-| HTTPS | 443 | Fournit un accès HTTPS à partir des navigateurs Web du client vers l'interface utilisateur locale 
+| HTTPS | 443 | Fournit un accès HTTPS à l'interface utilisateur locale à partir des navigateurs Web clients 
 
 
 | TCP | 3128 | Permet à Cloud Volumes ONTAP d'accéder à Internet pour l'envoi des messages AutoSupport au support NetApp. Vous devez ouvrir ce port manuellement après le déploiement. https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-verify-autosupport.html["Découvrez comment le connecteur est utilisé comme proxy pour les messages AutoSupport"^] 
@@ -56,7 +56,7 @@ Les règles de pare-feu prédéfinies pour le connecteur comprennent les règles
 | Tous les protocoles TCP | Tout | Tout le trafic sortant 
 
 
-| Tous les protocoles UDP | Tout | Tout le trafic sortant 
+| Tous UDP | Tout | Tout le trafic sortant 
 |===
 
 
