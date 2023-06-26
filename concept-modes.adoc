@@ -365,7 +365,7 @@ Notez que certains services peuvent être pris en charge avec des limitations. P
 | StorageGRID | Non | Non 
 
 
-.15+| *Services* | Sauvegarde et restauration | Oui. | Oui. 
+.16+| *Services* | Sauvegarde et restauration | Oui. | Oui. 
 
 
 | Classement | Oui. | Oui. 
@@ -402,6 +402,9 @@ Notez que certains services peuvent être pris en charge avec des limitations. P
 
 
 | La réplication | Oui. | Oui. 
+
+
+| Durabilité | Non | Non 
 
 
 | Tiering | Non | Non 
