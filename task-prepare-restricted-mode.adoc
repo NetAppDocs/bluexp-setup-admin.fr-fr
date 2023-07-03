@@ -106,9 +106,16 @@ Si vous prévoyez d'installer manuellement le connecteur sur votre propre hôte 
 * \https://mysupport.netapp.com
 * \https://cloudmanager.cloud.netapp.com/tenancy
 * \https://stream.cloudmanager.cloud.netapp.com
-* \https://cloudmanagerinfraprod.azurecr.io
 * \https://production-artifacts.cloudmanager.cloud.netapp.com
 * \https://*.blob.core.windows.net
+* \https://cloudmanagerinfraprod.azurecr.io
++
+Ce terminal n'est pas requis dans les régions Azure Government.
+
+* \https://occmclientinfragov.azurecr.us
++
+Ce terminal n'est requis que dans les régions Azure Government.
+
 
 
 L'hôte peut essayer de mettre à jour les packages du système d'exploitation lors de l'installation. L'hôte peut contacter différents sites de mise en miroir pour ces packages OS.
@@ -185,9 +192,13 @@ NOTE: Le connecteur est en train de contacter « cloudmanager.cloud.netapp.com",
 
 
 
-| \https://cloudmanagerinfraprod.azurecr.io
+| \https://*.blob.core.windows.net
 
-\https://*.blob.core.windows.net | Pour mettre à niveau le connecteur et ses composants Docker. 
+\https://cloudmanagerinfraprod.azurecr.io
+Ce terminal n'est pas requis dans les régions Azure Government.
+
+\https://occmclientinfragov.azurecr.us
+Ce terminal n'est requis que dans les régions Azure Government. | Pour mettre à niveau le connecteur et ses composants Docker. 
 |===
 
 

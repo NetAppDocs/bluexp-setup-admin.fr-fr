@@ -3792,4 +3792,23 @@ La découverte sans connecteur (découverte directe) n'est pas prise en charge.<
   <block id="ad203e818e0c9d7f42f1c260b33875f3" category="sidebar">Webinaires sur le cloud</block>
   <block id="7a45e6298bb69116e2c6db653fb88884" category="sidebar">Toute la documentation BlueXP</block>
   <block id="19bea5bec76c66ef8bd189aa23a4c860" category="cell">Durabilité</block>
+  <block id="f73b546b2cf111d3a080443f2cd3b97f" category="section-title">2 juillet 2023</block>
+  <block id="78ee56d07ea6442fbe0c88b1ea3be7ad" category="section-title">Connecteur 3.9.31</block>
+  <block id="9f1d24d5ab10dd326cb52dffc172eea5" category="list-text">Vous pouvez maintenant découvrir les clusters ONTAP sur site à partir de l'onglet *My Estate* (auparavant *My Opportunities*)</block>
+  <block id="5a7621b5dce7d879d4fc86499c34c6e6" category="inline-link">Découvrez comment découvrir des clusters sur la page My Estate</block>
+  <block id="92adae4e241e70163adb8c5469771a82" category="paragraph"><block ref="24b3a807a9407b81f5101322f988421d" category="inline-link-rx"></block>.</block>
+  <block id="6bdb2baa8fe05cff12c22f9f6f8e9e7f" category="list-text">Si vous utilisez le connecteur dans une région Azure Government, assurez-vous que ce connecteur peut contacter le terminal suivant :</block>
+  <block id="1f29f58c7cdabd46095c6ad242933991" category="paragraph">\https://occmclientinfragov.azurecr.us</block>
+  <block id="7cbd2e15c5d25612181f48c177cab04b" category="paragraph">Ce noeud final est nécessaire pour installer manuellement le connecteur et pour mettre à niveau le connecteur et ses composants Docker.</block>
+  <block id="49145759efbc79c21fc5ba75bb2aaf72" category="paragraph">Suite à cette modification, un connecteur d'une région Azure Government ne contacte plus le terminal suivant :</block>
+  <block id="979b0001d7bec41aff8509faf7b59bef" category="paragraph">Notez que ce noeud final est toujours requis pour toutes les autres configurations en mode restreint et pour le mode standard.</block>
+  <block id="b7e5db85ee5e5c349f5841d09bf19cbe" category="paragraph">Ce terminal n'est pas requis dans les régions Azure Government.</block>
+  <block id="8e1098945acc0cdc1dade8505d9ce607" category="paragraph">Ce terminal n'est requis que dans les régions Azure Government.</block>
+  <block id="2ecb939d80f14a8df5cdeee557b8a6a2" category="cell">\https://*.blob.core.windows.net
+
+\https://cloudmanagerinfraprod.azurecr.io
+Ce terminal n'est pas requis dans les régions Azure Government.
+
+\https://occmclientinfragov.azurecr.us
+Ce terminal n'est requis que dans les régions Azure Government.</block>
 </blocks>

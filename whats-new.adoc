@@ -18,6 +18,36 @@ Découvrez les nouveautés des fonctionnalités d'administration BlueXP : compte
 
 
 
+== 2 juillet 2023
+
+
+
+=== Connecteur 3.9.31
+
+* Vous pouvez maintenant découvrir les clusters ONTAP sur site à partir de l'onglet *My Estate* (auparavant *My Opportunities*)
++
+https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html#add-a-pre-discovered-cluster["Découvrez comment découvrir des clusters sur la page My Estate"].
+
+* Si vous utilisez le connecteur dans une région Azure Government, assurez-vous que ce connecteur peut contacter le terminal suivant :
++
+\https://occmclientinfragov.azurecr.us
+
++
+Ce noeud final est nécessaire pour installer manuellement le connecteur et pour mettre à niveau le connecteur et ses composants Docker.
+
++
+Suite à cette modification, un connecteur d'une région Azure Government ne contacte plus le terminal suivant :
+
++
+\https://cloudmanagerinfraprod.azurecr.io
+
++
+Notez que ce noeud final est toujours requis pour toutes les autres configurations en mode restreint et pour le mode standard.
+
+
+
+
+
 == 4 juin 2023
 
 
