@@ -140,7 +140,7 @@ image:screenshot_settings_icon.gif["Capture d'écran affichant l'icône Paramèt
 .. *Définir les informations d'identification* : fournir l'ARN (Amazon Resource Name) d'un rôle IAM approuvé, ou entrer une clé d'accès AWS et une clé secrète.
 .. *Abonnement Marketplace* : associez un abonnement Marketplace à ces identifiants en vous abonnant maintenant ou en sélectionnant un abonnement existant.
 +
-Pour payer Cloud Volumes ONTAP à l'heure (PAYGO) ou par un contrat annuel, vous devez associer des identifiants AWS à un abonnement à Cloud Volumes ONTAP depuis AWS Marketplace.
+Pour payer les services BlueXP à un taux horaire (PAYGO) ou dans le cadre d'un contrat annuel, les identifiants AWS doivent être associés à un abonnement AWS Marketplace.
 
 .. *Révision* : confirmez les détails des nouvelles informations d'identification et sélectionnez *Ajouter*.
 

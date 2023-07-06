@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: concept-netapp-accounts.html 
 keywords: accounts, workspaces, Connector, users, BlueXP website, admin, Account Admin, Workspace Admin, account settings, workspaces, users, members, connector, service connector, user accounts, what are users, what is a workspace, users and workspaces, bluexp account, netapp account 
-summary: 'Un compte BlueXP assure la colocation de votre entreprise, ce qui vous permet d"organiser les utilisateurs et les ressources dans des espaces de travail isolés. Par exemple, un groupe d"utilisateurs peut déployer et gérer des systèmes Cloud Volumes ONTAP dans un espace de travail qui n"est pas visible par les autres utilisateurs.' 
+summary: 'Un compte BlueXP assure la colocation de votre entreprise, ce qui vous permet d"organiser les utilisateurs et les ressources dans des espaces de travail isolés. Par exemple, un groupe d"utilisateurs peut déployer et gérer des systèmes Cloud Volumes ONTAP dans un espace de travail qui n"est pas visible par les autres utilisateurs qui gèrent différents types d"environnements de travail dans un autre espace de travail.' 
 ---
 = Découvrez les comptes BlueXP
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: 'Un compte BlueXP assure la colocation de votre entreprise, ce qui vous
 
 
 [role="lead"]
-Un compte _BlueXP_ fournit une colocation pour votre entreprise, qui vous permet d'organiser les utilisateurs et les ressources dans des _espaces de travail_ isolés. Par exemple, un groupe d'utilisateurs peut déployer et gérer des systèmes Cloud Volumes ONTAP dans un espace de travail qui n'est pas visible par les autres utilisateurs.
+Un compte _BlueXP_ fournit une colocation pour votre entreprise, qui vous permet d'organiser les utilisateurs et les ressources dans des _espaces de travail_ isolés. Par exemple, un groupe d'utilisateurs peut déployer et gérer des systèmes Cloud Volumes ONTAP dans un espace de travail qui n'est pas visible par les autres utilisateurs qui gèrent différents types d'environnements de travail dans un autre espace de travail.
 
 Lors de votre premier accès à BlueXP, vous êtes invité à sélectionner ou à créer un compte. Par exemple, l'écran suivant s'affiche si vous n'avez pas encore de compte :
 

@@ -25,7 +25,7 @@ Ces étapes ne s'appliquent pas si vous avez déployé le connecteur directement
 +
 https://cloud.google.com/compute/docs/access/create-enable-service-accounts-for-instances#changeserviceaccountandscopes["Documentation Google Cloud : modification du compte de service et des étendues d'accès pour une instance"^]
 
-. Si vous souhaitez déployer Cloud Volumes ONTAP dans d'autres projets, autorisez l'accès en ajoutant le compte de service doté du rôle BlueXP à ce projet. Vous devrez répéter cette étape pour chaque projet.
+. Si vous souhaitez gérer des ressources dans d'autres projets Google Cloud, autorisez l'accès en ajoutant le compte de service doté du rôle BlueXP à ce projet. Vous devrez répéter cette étape pour chaque projet.
 
 
 .Résultat

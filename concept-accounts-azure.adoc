@@ -26,7 +26,7 @@ Lorsque BlueXP déploie la machine virtuelle Connector dans Azure, il active un 
 
 image:diagram_permissions_initial_azure.png["Image conceptuelle qui montre BlueXP déploiement d'un connecteur dans un compte et un abonnement Azure. Une identité gérée attribuée par le système est activée et un rôle personnalisé est attribué à la machine virtuelle du connecteur."]
 
-BlueXP sélectionne ces informations d'identification Azure par défaut lorsque vous créez un nouvel environnement de travail pour Cloud Volumes ONTAP :
+Si vous créez un nouvel environnement de travail pour Cloud Volumes ONTAP, BlueXP sélectionne les informations d'identification Azure suivantes par défaut :
 
 image:screenshot_accounts_select_azure.gif["Capture d'écran affichant l'option changer de compte dans la page Détails  informations d'identification."]
 

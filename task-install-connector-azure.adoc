@@ -83,7 +83,7 @@ https://learn.microsoft.com/en-us/azure/virtual-machines/linux-vm-connect?tabs=L
 
 ** *Détails* : saisissez un nom pour l'instance, spécifiez les balises et choisissez si vous souhaitez que BlueXP crée un nouveau rôle avec les autorisations requises ou si vous souhaitez sélectionner un rôle existant avec lequel vous avez configuré link:reference-permissions-azure.html["les autorisations requises"].
 +
-Notez que vous pouvez choisir les abonnements associés à ce rôle. Chaque abonnement que vous choisissez fournit au connecteur les autorisations de déploiement de Cloud Volumes ONTAP dans ces abonnements.
+Notez que vous pouvez choisir les abonnements Azure associés à ce rôle. Chaque abonnement que vous choisissez fournit les autorisations de connecteur pour gérer les ressources de cet abonnement (par exemple, Cloud Volumes ONTAP).
 
 ** *Réseau* : choisissez un réseau VNet et un sous-réseau, si vous souhaitez activer une adresse IP publique, et spécifiez éventuellement une configuration proxy.
 ** *Groupe de sécurité* : choisissez de créer un nouveau groupe de sécurité ou de sélectionner un groupe de sécurité existant qui autorise les règles entrantes et sortantes requises.

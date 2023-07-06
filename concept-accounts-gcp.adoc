@@ -25,7 +25,7 @@ Avant de pouvoir utiliser BlueXP pour gérer les ressources de votre projet Goog
 Deux ensembles d'autorisations doivent être en place avant de déployer un connecteur directement depuis BlueXP :
 
 . Vous devez déployer un connecteur à l'aide d'un compte Google disposant des autorisations nécessaires pour lancer l'instance VM Connector à partir de BlueXP.
-. Lorsque vous déployez le connecteur, vous êtes invité à sélectionner un https://cloud.google.com/iam/docs/service-accounts["compte de service"^] Pour l'instance de VM. BlueXP obtient les autorisations du compte de service pour créer et gérer des systèmes Cloud Volumes ONTAP en votre nom, et bien plus encore. Les autorisations sont fournies en ajoutant un rôle personnalisé au compte de service.
+. Lorsque vous déployez le connecteur, vous êtes invité à sélectionner un https://cloud.google.com/iam/docs/service-accounts["compte de service"^] Pour l'instance de VM. BlueXP obtient les autorisations du compte de service pour créer et gérer les systèmes Cloud Volumes ONTAP, gérer les sauvegardes à l'aide de la sauvegarde et de la restauration BlueXP, etc. Les autorisations sont fournies en ajoutant un rôle personnalisé au compte de service.
 
 
 L'image suivante décrit les conditions d'autorisation décrites aux numéros 1 et 2 ci-dessus :

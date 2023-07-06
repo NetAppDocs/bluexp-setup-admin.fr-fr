@@ -41,7 +41,7 @@ NOTE: BlueXP Operator est le nom par défaut fourni dans la stratégie BlueXP. S
 .. Cliquez sur *Sélectionner*.
 .. Cliquez sur *Suivant*.
 .. Cliquez sur *Revue + affecter*.
-.. Si vous souhaitez déployer Cloud Volumes ONTAP à partir d'abonnements supplémentaires, passez à cet abonnement, puis répétez ces étapes.
+.. Si vous souhaitez gérer les ressources d'autres abonnements Azure, passez à cet abonnement, puis répétez ces étapes.
 
 
 

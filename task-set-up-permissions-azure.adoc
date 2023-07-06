@@ -252,7 +252,7 @@ image:screenshot_azure_service_principal_role.png["Une capture d'écran du porta
 Le principal de service dispose désormais des autorisations Azure nécessaires pour déployer le connecteur.
 
 +
-Si vous souhaitez déployer Cloud Volumes ONTAP à partir de plusieurs abonnements Azure, vous devez lier le principal de service à chacun de ces abonnements. BlueXP vous permet de sélectionner l'abonnement que vous souhaitez utiliser lors du déploiement de Cloud Volumes ONTAP.
+Si vous souhaitez gérer les ressources de plusieurs abonnements Azure, vous devez lier le principal de service à chacun de ces abonnements. Par exemple, BlueXP vous permet de sélectionner l'abonnement que vous souhaitez utiliser lors du déploiement de Cloud Volumes ONTAP.
 
 
 
@@ -322,7 +322,7 @@ https://learn.microsoft.com/en-us/azure/active-directory/managed-identities-azur
 . Copier le contenu du link:reference-permissions-azure.html["Autorisations de rôle personnalisées pour le connecteur"] Et les enregistrer dans un fichier JSON.
 . Modifiez le fichier JSON en ajoutant des identifiants d'abonnement Azure à l'étendue assignable.
 +
-Vous devez ajouter l'ID de chaque abonnement Azure à partir duquel les utilisateurs créeront des systèmes Cloud Volumes ONTAP.
+Vous devez ajouter l'identifiant de chaque abonnement Azure que vous souhaitez utiliser avec BlueXP.
 
 +
 *Exemple*
@@ -417,7 +417,7 @@ image:screenshot_azure_service_principal_role.png["Une capture d'écran du porta
 Le principal de service dispose désormais des autorisations Azure nécessaires pour déployer le connecteur.
 
 +
-Si vous souhaitez déployer Cloud Volumes ONTAP à partir de plusieurs abonnements Azure, vous devez lier le principal de service à chacun de ces abonnements. BlueXP vous permet de sélectionner l'abonnement que vous souhaitez utiliser lors du déploiement de Cloud Volumes ONTAP.
+Si vous souhaitez gérer les ressources de plusieurs abonnements Azure, vous devez lier le principal de service à chacun de ces abonnements. Par exemple, BlueXP vous permet de sélectionner l'abonnement que vous souhaitez utiliser lors du déploiement de Cloud Volumes ONTAP.
 
 
 
