@@ -44,13 +44,13 @@ Le tableau suivant présente une comparaison entre le Centre de notification et 
 
 == Surveiller les activités à l'aide du Centre de notification
 
-Les notifications suivent la progression des opérations que vous avez lancées dans BlueXP pour vous permettre de vérifier si l'opération a réussi ou non. Elles vous permettent d'afficher l'état de nombreuses actions BlueXP que vous avez lancées pendant votre session de connexion actuelle. Tous les services ne rapportent pas d'informations au Centre de notification pour le moment.
+Les notifications suivent la progression des opérations que vous avez lancées dans BlueXP pour vous permettre de vérifier si l'opération a réussi ou non. Elles vous permettent d'afficher l'état de nombreuses actions BlueXP que vous avez lancées pendant votre session de connexion actuelle. Tous les services BlueXP ne rapportent pas d'informations dans le Centre de notification pour le moment.
 
 Vous pouvez afficher les notifications en cliquant sur le signal sonore de notification (image:icon_bell.png["signal sonore de notification"]) dans la barre de menus. La couleur de la petite bulle dans la cloche indique la notification de gravité de niveau le plus élevé qui est active. Si vous voyez une bulle rouge, cela signifie qu'il y a une notification importante que vous devriez regarder.
 
 image:screenshot_notification_full.png["Capture d'écran affichant la liste des notifications en cours dans le Centre de notification."]
 
-Vous pouvez également configurer BlueXP pour envoyer des notifications par e-mail afin de vous informer de l'activité système importante, même lorsque vous n'êtes pas connecté au système. Des e-mails peuvent être envoyés à tous les utilisateurs qui font partie de votre compte BlueXP ou à tout autre destinataire qui doit connaître certains types d'activité système. Voir <<Définition des paramètres de notification par e-mail,Définition des paramètres de notification par e-mail>> ci-dessous.
+Vous pouvez également configurer BlueXP pour envoyer certains types de notifications par e-mail afin de vous tenir informé de l'activité système importante, même si vous n'êtes pas connecté au système. Des e-mails peuvent être envoyés à tous les utilisateurs qui font partie de votre compte BlueXP ou à tout autre destinataire qui doit connaître certains types d'activité système. Découvrez comment <<Définir les paramètres de notification par e-mail,définir les paramètres de notification par e-mail>>.
 
 
 
@@ -58,7 +58,7 @@ Vous pouvez également configurer BlueXP pour envoyer des notifications par e-ma
 
 Les notifications sont classées dans les catégories suivantes :
 
-[cols="22,58"]
+[cols="20,60"]
 |===
 | Type de notification | Description 
 
@@ -84,11 +84,23 @@ Les notifications sont classées dans les catégories suivantes :
 
 === Filtrer les notifications
 
-Par défaut, toutes les notifications s'affichent. Vous pouvez filtrer les notifications que vous voyez dans le Centre de notification pour n'afficher que les notifications importantes pour vous. Vous pouvez filtrer par BlueXP "Service" et par notification "Type".
+Par défaut, toutes les notifications actives s'affichent dans le Centre de notification. Vous pouvez filtrer les notifications que vous voyez pour n'afficher que les notifications importantes pour vous. Vous pouvez filtrer par BlueXP "Service" et par notification "Type".
 
 image:screenshot_notification_filters.png["Capture d'écran montrant les deux types de filtres disponibles dans le Centre de notification."]
 
 Par exemple, si vous souhaitez afficher uniquement les notifications "erreur" et "Avertissement" pour les opérations BlueXP, sélectionnez ces entrées et vous ne verrez que ces types de notifications.
+
+
+
+=== Rejeter les notifications
+
+Vous pouvez supprimer des notifications de la page si vous n'avez plus besoin de les voir. Vous pouvez rejeter toutes les notifications en une seule fois ou rejeter les notifications individuelles.
+
+Pour ignorer toutes les notifications, dans le Centre de notification, sélectionnez image:button_3_vert_dots.png["une icône avec trois points verticaux"] Et sélectionnez *rejeter tout*.
+image:screenshot_notification_menu.png["Capture d'écran affichant le menu Notifications pour sélectionner les paramètres et ignorer toutes les options."]
+
+Pour ignorer les notifications individuelles, placez le curseur sur la notification et sélectionnez *rejeter*.
+image:screenshot_notification_dismiss1.png["Capture d'écran montrant comment rejeter une seule notification."]
 
 
 
@@ -98,12 +110,14 @@ Vous pouvez envoyer par e-mail des types de notifications spécifiques afin de v
 
 [NOTE]
 ====
-* Des notifications sont alors envoyées par e-mail pour les fonctionnalités et services BlueXP suivants : connecteurs, copie et synchronisation BlueXP, sauvegarde et restauration BlueXP, portefeuille digital BlueXP et protection contre les ransomwares BlueXP. D'autres services seront ajoutés dans les prochaines versions.
+* Des notifications sont alors envoyées par e-mail pour les fonctionnalités et services BlueXP suivants : connecteur, copie et synchronisation BlueXP, sauvegarde et restauration BlueXP, portefeuille digital BlueXP et protection contre les ransomwares BlueXP. D'autres services seront ajoutés dans les prochaines versions.
 * L'envoi de notifications par e-mail n'est pas pris en charge lorsque le connecteur est installé sur un site sans accès à Internet.
 
 
 ====
-Par défaut, les administrateurs de compte BlueXP recevront des e-mails pour toutes les notifications « critiques » et « recommandations ». Par défaut, tous les autres utilisateurs et destinataires sont configurés pour ne pas recevoir d'e-mails de notification.
+Les filtres définis dans le Centre de notification ne déterminent pas les types de notifications que vous recevrez par e-mail. Par défaut, les administrateurs de compte BlueXP recevront des e-mails pour toutes les notifications « critiques » et « recommandations ». Ces notifications concernent tous les services. Vous ne pouvez pas choisir de recevoir de notifications pour certains services uniquement, par exemple les connecteurs ou la sauvegarde et restauration BlueXP.
+
+Tous les autres utilisateurs et destinataires sont configurés pour ne pas recevoir d'e-mails de notification. Vous devez donc configurer les paramètres de notification pour les utilisateurs supplémentaires.
 
 Pour personnaliser les paramètres de notifications, vous devez être administrateur de compte.
 
@@ -136,18 +150,6 @@ image:screenshot-add-email-recipient.png["Copie d'écran montrant comment ajoute
 
 . Entrez le nom, l'adresse e-mail et sélectionnez les types de notifications que le destinataire recevra, puis sélectionnez *Ajouter nouveau destinataire*.
 
-
-
-
-=== Rejeter les notifications
-
-Vous pouvez supprimer des notifications de la page si vous n'avez plus besoin de les voir. Vous pouvez rejeter toutes les notifications en une seule fois ou rejeter les notifications individuelles.
-
-Pour ignorer toutes les notifications, dans le Centre de notification, sélectionnez image:button_3_vert_dots.png["une icône avec trois points verticaux"] Et sélectionnez *rejeter tout*.
-image:screenshot_notification_menu.png["Capture d'écran affichant le menu Notifications pour sélectionner les paramètres et ignorer toutes les options."]
-
-Pour ignorer les notifications individuelles, placez le curseur sur la notification et sélectionnez *rejeter*.
-image:screenshot_notification_dismiss1.png["Capture d'écran montrant comment rejeter une seule notification."]
 
 
 
