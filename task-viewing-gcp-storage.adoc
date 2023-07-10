@@ -16,27 +16,8 @@ summary: Après avoir installé un connecteur dans Google Cloud, BlueXP peut aut
 [role="lead"]
 Après avoir installé un connecteur dans Google Cloud, BlueXP peut automatiquement découvrir des informations sur les compartiments Google Cloud Storage qui résident dans le compte Google où le connecteur est installé. Un environnement de travail Google Cloud Storage est ajouté à Canvas pour vous permettre de visualiser ces informations.
 
-Vous trouverez des informations détaillées sur vos compartiments Google Cloud Storage : l'emplacement, l'état d'accès, la classe de stockage, la capacité totale et utilisée, entre autres. Ces compartiments peuvent être utilisés comme destinations pour la sauvegarde et la restauration BlueXP, le Tiering BlueXP ou les opérations de copie et de synchronisation BlueXP.
-
-.Étapes
-. Installez un connecteur dans le compte Google où vous souhaitez afficher vos compartiments Google Cloud Storage.
-. Dans le menu de navigation, sélectionnez *stockage > Canvas*.
-+
-Vous devriez voir automatiquement un environnement de travail Google Cloud Storage peu après.
-
-+
 image:screenshot-gcp-cloud-storage-we.png["Copie d'écran d'un environnement de travail Google Cloud Storage."]
 
-. Sélectionnez l'environnement de travail et sélectionnez une action dans le volet de droite.
-+
-image:screenshot-gcp-cloud-storage-actions.png["Copie d'écran affichant le volet actions une fois que vous avez sélectionné un environnement de travail Google Cloud Storage. Le volet affiche le nombre total de compartiments et une action pour l'utilisation du service de synchronisation."]
+Vous trouverez des informations détaillées sur vos compartiments Google Cloud Storage : l'emplacement, l'état d'accès, la classe de stockage, la capacité totale et utilisée, entre autres. Ces compartiments peuvent être utilisés comme destinations pour la sauvegarde et la restauration BlueXP, le Tiering BlueXP ou les opérations de copie et de synchronisation BlueXP.
 
-. Sélectionnez *Synchroniser les données* pour synchroniser les données depuis ou vers des compartiments de stockage Google Cloud.
-+
-Pour plus de détails, voir https://docs.netapp.com/us-en/bluexp-copy-sync/concept-cloud-sync.html["Présentation de la copie et de la synchronisation BlueXP"^]
-
-. Sélectionnez *entrer l'environnement de travail* pour afficher les détails des compartiments de votre compte Google.
-+
-image:screenshot-gcp-cloud-storage-details.png["Une capture d'écran présente les détails d'un environnement de travail Google Cloud Storage : le nombre total de compartiments, de capacité et d'emplacements, puis un tableau présentant des informations détaillées sur chaque compartiment."]
-
-
+Une nouvelle fonctionnalité vous permet désormais de créer et de modifier des compartiments Google Cloud Storage. https://docs.netapp.com/us-en/bluexp-google-cloud-storage/index.html["Accédez ici pour découvrir comment afficher, créer et gérer vos compartiments de stockage cloud à l'aide de BlueXP"^].
