@@ -1,0 +1,44 @@
+= 
+:allow-uri-read: 
+
+
+.Étapes
+. Dans le coin supérieur droit de la console BlueXP, cliquez sur l'icône Paramètres et sélectionnez *informations d'identification*.
+. Cliquez sur le menu d'action correspondant à un ensemble d'informations d'identification, puis sélectionnez *associer un abonnement*.
++
+Vous devez sélectionner les informations d'identification associées à un connecteur. Vous ne pouvez pas associer un abonnement Marketplace aux informations d'identification associées à BlueXP.
+
++
+image:screenshot_azure_add_subscription.png["Capture d'écran du menu d'action pour un ensemble d'informations d'identification existantes."]
+
+. Pour associer les informations d'identification à un abonnement existant, sélectionnez-le dans la liste déroulante et cliquez sur *associer*.
+. Pour associer les informations d'identification à un nouvel abonnement, cliquez sur *Ajouter un abonnement > Continuer* et suivez les étapes dans Azure Marketplace :
++
+.. Si vous y êtes invité, connectez-vous à votre compte Azure.
+.. Cliquez sur *Subscribe*.
+.. Remplissez le formulaire et cliquez sur *Abonnez-vous*.
+.. Une fois le processus d'abonnement terminé, cliquez sur *configurer le compte maintenant*.
++
+Vous serez redirigé vers le site Web BlueXP.
+
+.. À partir de la page *attribution d'abonnement* :
++
+*** Sélectionnez les comptes BlueXP avec lesquels vous souhaitez associer cet abonnement.
+*** Dans le champ *remplacer l'abonnement existant*, choisissez si vous souhaitez remplacer automatiquement l'abonnement existant pour un compte par ce nouvel abonnement.
++
+BlueXP remplace l'abonnement existant pour toutes les informations d'identification du compte par ce nouvel abonnement. Si un ensemble d'informations d'identification n'a jamais été associé à un abonnement, ce nouvel abonnement ne sera pas associé à ces informations d'identification.
+
++
+Pour tous les autres comptes, vous devez associer manuellement l'abonnement en répétant ces étapes.
+
+*** Cliquez sur *Enregistrer*.
++
+La vidéo suivante explique comment vous abonner à Azure Marketplace :
+
++
+video::video_subscribing_azure.mp4[width=848,height=480]
+
+
+
+
+

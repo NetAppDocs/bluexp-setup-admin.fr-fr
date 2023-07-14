@@ -1,0 +1,11 @@
+= 
+:allow-uri-read: 
+
+
+Si vous souhaitez utiliser une adresse IP publique avec la machine virtuelle du connecteur dans Azure, l'adresse IP doit utiliser une référence de base pour garantir que BlueXP utilise cette adresse IP publique.
+
+image:screenshot-azure-sku.png["Capture d'écran de la création d'une nouvelle adresse IP dans Azure qui vous permet de choisir Basic sous dans le champ SKU."]
+
+Si vous utilisez une adresse IP de référence standard, BlueXP utilise l'adresse IP _private_ du connecteur, au lieu de l'adresse IP publique. Si la machine que vous utilisez pour accéder à la console BlueXP n'a pas accès à cette adresse IP privée, les actions de la console BlueXP échouent.
+
+https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/public-ip-addresses#sku["Documentation Azure : référence IP publique"^]

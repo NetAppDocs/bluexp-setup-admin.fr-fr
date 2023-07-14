@@ -1,0 +1,12 @@
+= 
+:allow-uri-read: 
+
+
+Si votre organisation nécessite le déploiement d'un serveur proxy pour tout le trafic Internet sortant, obtenez les informations suivantes sur votre proxy HTTP ou HTTPS :
+
+* Adresse IP
+* Informations d'identification
+* Certificat HTTPS
+
+
+Vous devrez fournir ces informations pendant l'installation.

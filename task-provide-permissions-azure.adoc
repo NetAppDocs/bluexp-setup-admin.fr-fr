@@ -56,7 +56,6 @@ Accédez au https://console.bluexp.netapp.com["Console BlueXP"^] Pour commencer 
 .Principal du service
 --
 .Étapes
-. Accédez au https://console.bluexp.netapp.com["Console BlueXP"^] et connectez-vous.
 . Dans le coin supérieur droit de la console BlueXP, cliquez sur l'icône Paramètres et sélectionnez *informations d'identification*.
 +
 image:screenshot_settings_icon.gif["Capture d'écran affichant l'icône Paramètres dans le coin supérieur droit de la console BlueXP."]

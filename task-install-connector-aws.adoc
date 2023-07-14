@@ -20,7 +20,9 @@ Créez un connecteur directement à partir de la console web BlueXP, d'AWS Marke
 ====
 .BlueXP
 --
-.Ce dont vous avez besoin
+.Avant de commencer
+Vous devez disposer des éléments suivants :
+
 * Méthode d'authentification AWS : rôle IAM ou clés d'accès pour un utilisateur IAM disposant des autorisations requises.
 +
 link:task-set-up-permissions-aws.html["Découvrez comment configurer des autorisations AWS"]
@@ -84,7 +86,9 @@ Une fois le processus terminé, le connecteur est disponible pour être utilisé
 --
 .AWS Marketplace
 --
-.Ce dont vous avez besoin
+.Avant de commencer
+Vous devez disposer des éléments suivants :
+
 * VPC et sous-réseau qui répondent aux exigences réseau.
 +
 link:task-set-up-networking-aws.html["En savoir plus sur les exigences de mise en réseau"].
@@ -94,6 +98,10 @@ link:task-set-up-networking-aws.html["En savoir plus sur les exigences de mise e
 link:task-set-up-permissions-aws.html["Découvrez comment configurer des autorisations AWS"].
 
 * Autorisations de vous abonner à AWS Marketplace et de vous désabonner pour votre utilisateur IAM.
+* Compréhension des exigences en termes de CPU et de RAM pour l'instance.
++
+link:reference-host-requirements-aws.html["Passez en revue les exigences relatives aux instances"].
+
 * Une paire de clés pour l'instance EC2.
 
 
@@ -112,10 +120,7 @@ Ces étapes décrivent comment lancer l'instance à partir de la console EC2, ca
 +
 ** *Nom et balises* : saisissez un nom et des balises pour l'instance.
 ** *Image de l'application et de l'OS* : passez cette section. Le connecteur ami est déjà sélectionné.
-** *Type d'instance* : selon la disponibilité de la région, choisissez l'un des types d'instance pris en charge (t3.XLarge est recommandé).
-+
-link:reference-host-requirements-aws.html["Vérifiez les conditions requises pour l'instance"].
-
+** *Type d'instance* : en fonction de la disponibilité de la région, choisissez un type d'instance qui répond aux exigences de RAM et de CPU (t3.xlarge est recommandé).
 ** *Paire de clés (login)* : sélectionnez la paire de clés que vous souhaitez utiliser pour vous connecter en toute sécurité à l'instance.
 ** *Paramètres réseau* : modifiez les paramètres réseau selon vos besoins :
 +
@@ -132,9 +137,6 @@ link:reference-ports-aws.html["Afficher les règles des groupes de sécurité po
 
 ** *Configurer le stockage* : conservez les options de stockage par défaut.
 ** *Détails avancés* : sous *profil d'instance IAM*, choisissez le rôle IAM qui inclut les autorisations requises pour le connecteur.
-+
-link:task-set-up-permissions-aws.html["Découvrez comment configurer des autorisations AWS"].
-
 ** *Résumé* : consultez le résumé et cliquez sur *lancer l'instance*.
 
 
@@ -166,7 +168,9 @@ Ouvrez un navigateur Web et accédez au https://console.bluexp.netapp.com["Conso
 --
 .Installation manuelle
 --
-.Ce dont vous avez besoin
+.Avant de commencer
+Vous devez disposer des éléments suivants :
+
 * Privilèges root pour installer le connecteur.
 * Détails sur un serveur proxy, si un proxy est requis pour accéder à Internet à partir du connecteur.
 +

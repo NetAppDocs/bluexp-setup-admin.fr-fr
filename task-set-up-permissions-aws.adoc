@@ -55,7 +55,7 @@ TIP: Lorsque BlueXP crée le connecteur, il applique un nouvel ensemble d'autori
 . Cliquez sur *JSON*.
 . Copiez et collez la stratégie suivante :
 +
-Pour rappel, cette règle contient uniquement les autorisations nécessaires pour lancer l'instance Connector dans AWS à partir de BlueXP. link:reference-permissions-aws.html["Autorisations de vue requises pour l'instance de connecteur"].
+Pour rappel, cette règle contient uniquement les autorisations nécessaires pour lancer l'instance Connector dans AWS à partir de BlueXP. link:reference-permissions-aws.html["Droits d'accès requis pour l'instance de connecteur elle-même"].
 
 +
 [source, json]
@@ -163,27 +163,25 @@ Vous devez maintenant disposer d'un rôle IAM qui possède les autorisations req
 
 == Configurez les autorisations pour le connecteur lors d'un déploiement à partir d'AWS Marketplace
 
-Créez des politiques IAM dans AWS et associez-les à un rôle IAM. Lorsque vous créez le connecteur à partir d'AWS Marketplace, vous êtes invité à sélectionner ce rôle IAM.
+Pour préparer un déploiement Marketplace, créez des politiques IAM dans AWS et associez-les à un rôle IAM. Lorsque vous créez le connecteur à partir d'AWS Marketplace, vous êtes invité à sélectionner ce rôle IAM.
 
 .Étapes
-. Depuis la console IAM, créer une policy :
+. Connectez-vous à la console AWS et accédez au service IAM.
+. Création d'une règle :
 +
 .. Cliquez sur *stratégies > Créer une stratégie*.
-.. Sélectionnez *JSON* et copiez et collez le contenu du link:reference-permissions-aws.html["Stratégies IAM pour le connecteur"].
+.. Sélectionnez *JSON* et copiez et collez le contenu du link:reference-permissions-aws.html["Politique IAM pour le connecteur"].
 .. Terminez les étapes restantes pour créer la stratégie.
 +
-Selon les services BlueXP que vous prévoyez d'utiliser, il peut être nécessaire de créer une seconde règle.
-
-+
-Pour les régions standard, les autorisations sont réparties entre deux règles. Deux règles sont requises en raison d'une taille maximale de caractères pour les stratégies gérées dans AWS.
+Selon les services BlueXP que vous prévoyez d'utiliser, il peut être nécessaire de créer une seconde règle. Pour les régions standard, les autorisations sont réparties entre deux règles. Deux règles sont requises en raison d'une taille maximale de caractères pour les stratégies gérées dans AWS. link:reference-permissions-aws.html["En savoir plus sur les règles IAM pour le connecteur"].
 
 
 
-. De retour dans la console IAM, créer un rôle IAM :
+. Créer un rôle IAM :
 +
 .. Cliquez sur *rôles > Créer un rôle*.
 .. Sélectionnez *AWS service > EC2*.
-.. Ajoutez des autorisations en joignant les stratégies que vous avez créées à l'étape précédente.
+.. Ajoutez des autorisations en joignant la stratégie que vous venez de créer.
 .. Terminez les étapes restantes pour créer le rôle.
 
 
@@ -196,7 +194,7 @@ Vous pouvez désormais associer un rôle IAM à l'instance EC2 lors du déploiem
 
 == Définissez les autorisations à attribuer après l'installation manuelle
 
-Si vous installez manuellement le logiciel Connector sur votre propre hôte Linux dans AWS, vous pouvez fournir des autorisations de la manière suivante :
+Si vous prévoyez d'installer manuellement le logiciel Connector sur votre propre hôte Linux dans AWS, vous pouvez fournir les autorisations de plusieurs manières :
 
 * Option 1 : créez des règles IAM et associez-les à un rôle IAM que vous pouvez associer à l'instance EC2.
 * Option 2 : fournissez à BlueXP des clés d'accès AWS pour un utilisateur IAM qui dispose des autorisations requises.
@@ -207,24 +205,22 @@ Si vous installez manuellement le logiciel Connector sur votre propre hôte Linu
 .Rôle IAM
 --
 .Étapes
-. Depuis la console IAM, créer une policy :
+. Connectez-vous à la console AWS et accédez au service IAM.
+. Création d'une règle :
 +
 .. Cliquez sur *stratégies > Créer une stratégie*.
 .. Sélectionnez *JSON* et copiez et collez le contenu du link:reference-permissions-aws.html["Politique IAM pour le connecteur"].
 .. Terminez les étapes restantes pour créer la stratégie.
 +
-Selon les services BlueXP que vous prévoyez d'utiliser, il peut être nécessaire de créer une seconde règle.
-
-+
-Pour les régions standard, les autorisations sont réparties entre deux règles. Deux règles sont requises en raison d'une taille maximale de caractères pour les stratégies gérées dans AWS. link:reference-permissions-aws.html["En savoir plus sur les règles IAM pour le connecteur"].
+Selon les services BlueXP que vous prévoyez d'utiliser, il peut être nécessaire de créer une seconde règle. Pour les régions standard, les autorisations sont réparties entre deux règles. Deux règles sont requises en raison d'une taille maximale de caractères pour les stratégies gérées dans AWS. link:reference-permissions-aws.html["En savoir plus sur les règles IAM pour le connecteur"].
 
 
 
-. De retour dans la console IAM, créer un rôle IAM :
+. Créer un rôle IAM :
 +
 .. Cliquez sur *rôles > Créer un rôle*.
 .. Sélectionnez *AWS service > EC2*.
-.. Ajoutez des autorisations en joignant les stratégies que vous avez créées à l'étape précédente.
+.. Ajoutez des autorisations en joignant la stratégie que vous venez de créer.
 .. Terminez les étapes restantes pour créer le rôle.
 
 
@@ -237,7 +233,8 @@ Vous disposez désormais d'un rôle IAM que vous pouvez associer à l'instance E
 .Clé d'accès AWS
 --
 .Étapes
-. Depuis la console IAM, créer une policy :
+. Connectez-vous à la console AWS et accédez au service IAM.
+. Création d'une règle :
 +
 .. Cliquez sur *stratégies > Créer une stratégie*.
 .. Sélectionnez *JSON* et copiez et collez le contenu du link:reference-permissions-aws.html["Politique IAM pour le connecteur"].

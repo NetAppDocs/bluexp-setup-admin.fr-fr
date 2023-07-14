@@ -231,21 +231,24 @@ Deux scénarios peuvent vous être associés à un abonnement AWS Marketplace un
 * Vous souhaitez remplacer un abonnement AWS Marketplace existant par un nouvel abonnement.
 
 
-.Ce dont vous avez besoin
+.Avant de commencer
 Vous devez créer un connecteur avant de pouvoir modifier les paramètres BlueXP. link:concept-connectors.html#how-to-create-a-connector["Apprenez à créer un connecteur"].
 
 .Étapes
-. Dans le coin supérieur droit de la console BlueXP, sélectionnez l'icône Paramètres, puis sélectionnez *informations d'identification*.
-. Sur la page *informations d'identification du compte*, sélectionnez le menu d'action correspondant à un ensemble d'informations d'identification, puis sélectionnez *abonnement associé*.
+. Dans le coin supérieur droit de la console BlueXP, cliquez sur l'icône Paramètres et sélectionnez *informations d'identification*.
+. Cliquez sur le menu d'action correspondant à un ensemble d'informations d'identification, puis sélectionnez *associer un abonnement*.
++
+Vous devez sélectionner les informations d'identification associées à un connecteur. Vous ne pouvez pas associer un abonnement Marketplace aux informations d'identification associées à BlueXP.
+
 +
 image:screenshot_associate_subscription.png["Capture d'écran du menu d'action pour un ensemble d'informations d'identification existantes."]
 
-. Pour associer les informations d'identification à un abonnement existant, sélectionnez l'abonnement dans la liste déroulante et sélectionnez *associer*.
-. Pour associer les informations d'identification à un nouvel abonnement, sélectionnez *Ajouter un abonnement > Continuer* et suivez les étapes indiquées dans AWS Marketplace :
+. Pour associer les informations d'identification à un abonnement existant, sélectionnez-le dans la liste déroulante et cliquez sur *associer*.
+. Pour associer les informations d'identification à un nouvel abonnement, cliquez sur *Ajouter un abonnement > Continuer* et suivez les étapes de AWS Marketplace :
 +
-.. Sélectionnez *Afficher les options d'achat*.
-.. Sélectionnez *s'abonner*.
-.. Sélectionnez *configurer votre compte*.
+.. Cliquez sur *Afficher les options d'achat*.
+.. Cliquez sur *Subscribe*.
+.. Cliquez sur *configurer votre compte*.
 +
 Vous serez redirigé vers le site Web BlueXP.
 
@@ -259,9 +262,9 @@ BlueXP remplace l'abonnement existant pour toutes les informations d'identificat
 +
 Pour tous les autres comptes, vous devez associer manuellement l'abonnement en répétant ces étapes.
 
-*** Sélectionnez *Enregistrer*.
+*** Cliquez sur *Enregistrer*.
 +
-Dans cette vidéo, vous instructions pour vous abonner à Google Cloud Marketplace :
+La vidéo suivante décrit la procédure de souscription à partir d'AWS Marketplace :
 
 +
 video::video_subscribing_aws.mp4[width=848,height=480]

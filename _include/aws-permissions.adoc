@@ -1,0 +1,32 @@
+= 
+:allow-uri-read: 
+
+
+. Connectez-vous à la console AWS et accédez au service IAM.
+. Création d'une règle :
++
+.. Cliquez sur *stratégies > Créer une stratégie*.
+.. Sélectionnez *JSON* et copiez et collez le contenu du link:reference-permissions-aws.html["Politique IAM pour le connecteur"].
+.. Terminez les étapes restantes pour créer la stratégie.
+
+
+
+
+. Créer un rôle IAM :
++
+.. Cliquez sur *rôles > Créer un rôle*.
+.. Sélectionnez *AWS service > EC2*.
+.. Ajoutez des autorisations en joignant la stratégie que vous venez de créer.
+.. Terminez les étapes restantes pour créer le rôle.
+
+
+
+
+. Associer les règles à un utilisateur IAM.
++
+** https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create.html["Documentation AWS : création de rôles IAM"^]
+** https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_manage-attach-detach.html["Documentation AWS : ajout et suppression de règles IAM"^]
+
+
+. Assurez-vous que l'utilisateur dispose d'une clé d'accès que vous pouvez ajouter à BlueXP après l'installation du connecteur.
+

@@ -65,7 +65,6 @@
   <block id="a31342596e31d918d08c0417177a8f77" category="list-text">Accédez au portail Google Cloud et attribuez le compte de service à l'instance de la VM Connector.</block>
   <block id="81c722be01f6c1251ced26ff2ff9dd3f" category="inline-link">Documentation Google Cloud : modification du compte de service et des étendues d'accès pour une instance</block>
   <block id="c8b77e7a211a8e1bbb884962a105fc2f" category="paragraph"><block ref="c8b77e7a211a8e1bbb884962a105fc2f" category="inline-link-rx"></block></block>
-  <block id="d2b9555443522ab868fc3d3de8b07657" category="list-text">Si vous souhaitez déployer Cloud Volumes ONTAP dans d'autres projets, autorisez l'accès en ajoutant le compte de service doté du rôle BlueXP à ce projet. Vous devrez répéter cette étape pour chaque projet.</block>
   <block id="8eea62084ca7e541d918e823422bd82e" category="paragraph-title">Résultat</block>
   <block id="a6e38b80693d553a1debbba70e8974ef" category="paragraph">BlueXP dispose désormais des autorisations dont il a besoin pour effectuer des actions en votre nom dans Google Cloud.</block>
   <block id="9a4eb6738f043a9d449205f3ee2089f1" category="summary">Si vous avez installé manuellement le logiciel Connector sur votre propre hôte Linux, vous devez fournir à BlueXP les autorisations que vous avez précédemment configurées. Si vous disposez des autorisations requises, BlueXP peut gérer vos données et votre infrastructure de stockage dans AWS.</block>
@@ -80,7 +79,6 @@
   <block id="87116be258b420bc3c65682ee8c3c80b" category="list-text">Sélectionnez *actions &gt; sécurité &gt; Modifier le rôle IAM*.</block>
   <block id="0608ae08455224c5aa2037a0505848e7" category="list-text">Sélectionnez le rôle IAM et cliquez sur *mettre à jour le rôle IAM*.</block>
   <block id="5975f7e9036c78e6217b16f295f0ca75" category="inline-link">Console BlueXP</block>
-  <block id="514ac875ad197ec214123cd7b67f5488" category="paragraph">BlueXP dispose désormais des autorisations dont il a besoin pour effectuer des actions dans AWS en votre nom. Accédez au<block ref="a47e12f4350b725a128875f50f785a3b" category="inline-link-rx"></block> Pour commencer à utiliser le connecteur avec BlueXP.</block>
   <block id="1f2b7de34bbdaf655d7cd7c95b1bbd93" category="open-title">Clé d'accès AWS</block>
   <block id="fcfd4daeb24b4db3bb89c89c8f03c50e" category="paragraph">Fournissez à BlueXP la clé d'accès AWS pour un utilisateur IAM qui dispose des autorisations requises.</block>
   <block id="8ee9f4a3034e4f87e8571e2c3b43e9a2" category="list-text">Assurez-vous que le bon connecteur est actuellement sélectionné dans BlueXP.</block>
@@ -113,7 +111,6 @@
   <block id="b03fc4422539272712e207a8d897a72c" category="summary">Créez un connecteur directement à partir de la console web BlueXP, d'Azure Marketplace ou en installant le logiciel sur votre propre hôte Linux.</block>
   <block id="09b97c28476d2fd5c125ffc638225bae" category="doc">Créer un connecteur dans Azure</block>
   <block id="9b9477e579c3b44dd623d5a6e1ea8d78" category="open-title">BlueXP</block>
-  <block id="d59db7846bd10b6d60d21543df9faa9e" category="list-title">Ce dont vous avez besoin</block>
   <block id="cec61994be2c9633fc4acb202e4b9c41" category="list-text">Un abonnement Azure.</block>
   <block id="3c8e2502b00949bb2ead22830ddfa05d" category="list-text">Un vnet et un sous-réseau dans votre région Azure de votre choix.</block>
   <block id="eea7ea20469c0fce0042b06e0bb1327a" category="list-text">Détails sur un serveur proxy, si votre organisation nécessite un proxy pour tout le trafic Internet sortant :</block>
@@ -161,14 +158,7 @@
   <block id="225df19c00186b6ea3e256ba18a0a186" category="list-text">Cliquez sur *l'obtenir maintenant*, puis sur *Continuer*.</block>
   <block id="74056a9be421d18494e08827c2a4c7f6" category="list-text">Sur le portail Azure, cliquez sur *Créer* et suivez les étapes de configuration de la machine virtuelle.</block>
   <block id="d110361593d3c3b635cec5b83db5e311" category="paragraph">Noter les éléments suivants lors de la configuration de la machine virtuelle :</block>
-  <block id="0e1b45b3594b4c3ece1911fc871e9fe5" category="list-text">Le connecteur offre des performances optimales avec des disques durs ou SSD.</block>
-  <block id="e0a5a00fea28c51159fd804f7ff48797" category="list-text">Choisissez une taille de machine virtuelle qui répond aux exigences en matière de CPU et de RAM. Nous recommandons DS3 v2.</block>
-  <block id="b88f3d4f001239da017477be9254c32d" category="inline-link-macro">Vérifier les exigences relatives aux machines virtuelles</block>
-  <block id="41f10588fd19d4ce9160a06b3b02b971" category="paragraph"><block ref="a42750006c41b7be8d7d74e88b9209f7" category="inline-link-macro-rx"></block>.</block>
-  <block id="11a18f62e791e7273c427425165765aa" category="list-text">Pour le groupe de sécurité réseau, le connecteur nécessite des connexions entrantes via SSH, HTTP et HTTPS. Quelques règles supplémentaires sont requises pour des configurations spécifiques.</block>
-  <block id="2ad12e29d6b612d0df73a715eb04038a" category="list-text">Sous *Management*, activez *identité gérée attribuée par le système* pour la machine virtuelle du connecteur en sélectionnant *on*.</block>
   <block id="089f373f5f48b55cde8c8de1db96243c" category="inline-link">En savoir plus sur les identités gérées pour les ressources Azure</block>
-  <block id="827aaa681f80dbd83d41241979226f5a" category="paragraph">Ce paramètre est important car une identité gérée permet à la machine virtuelle Connector de s'identifier à Azure Active Directory sans fournir d'informations d'identification. Une fois que vous avez terminé, vous devez attribuer le rôle personnalisé que vous avez créé à<block ref="f91ce7faef49711445322691b4d6ac64" category="inline-link-rx"></block>.</block>
   <block id="cf4a06fce4c7b1055a372af2e026d54e" category="list-text">Dans la page *Revue + créer*, vérifiez vos sélections et cliquez sur *Créer* pour démarrer le déploiement.</block>
   <block id="764960e87b4fddf3ade9ee834c310b2b" category="paragraph">Azure déploie la machine virtuelle avec les paramètres spécifiés. Le logiciel de la machine virtuelle et du connecteur doit s'exécuter en cinq minutes environ.</block>
   <block id="f8cccaed0b932ef662605b0a2cef04df" category="list-text">Ouvrez un navigateur Web à partir d'un hôte connecté à la machine virtuelle Connector et entrez l'URL suivante :</block>
@@ -267,7 +257,6 @@
   <block id="de3d7dbdd97c240a233066ad7479c6c2" category="inline-link-macro">Consultez la liste des terminaux contactés depuis la console BlueXP</block>
   <block id="638887c7fa101cc437e1eb7f6041b91e" category="paragraph"><block ref="7d376f679e4be0527c6e11d1cf760c68" category="inline-link-macro-rx"></block>.</block>
   <block id="9d1c31fa96e155af1c5f2d21f024ae6b" category="section-title">Points finaux contactés lors de l'installation manuelle</block>
-  <block id="6017dcd09765a1c92a35f18a704f3fb7" category="paragraph">Si vous prévoyez d'installer manuellement le connecteur sur votre propre hôte Linux, le programme d'installation du connecteur nécessite l'accès aux URL suivantes pendant le processus d'installation :</block>
   <block id="8963387394e2ee3e2a5a9ba160566a58" category="list-text">\https://support.netapp.com</block>
   <block id="d03b3625d28d43168905850da108e917" category="list-text">\https://mysupport.netapp.com</block>
   <block id="648b7f3d6699305c92d33129e6ea00fe" category="list-text">\https://cloudmanager.cloud.netapp.com/tenancy</block>
@@ -296,17 +285,12 @@
   <block id="115781a0043a85f8707c5c99fd02dc75" category="paragraph">\https://cloudmanager.cloud.netapp.com</block>
   <block id="23486ca53d499245ebae5460cf6d10ad" category="paragraph">Pour fournir des fonctions et des services SaaS dans BlueXP.</block>
   <block id="7eea1027ea51763c57b7b5965f1ba900" category="admonition">Le connecteur est en train de contacter « cloudmanager.cloud.netapp.com", mais il commencera à contacter « api.bluexp.netapp.com" » dans une prochaine version.</block>
-  <block id="554841a7559bd190d883de523464d1d1" category="cell">\https://cloudmanagerinfraprod.azurecr.io
-
-\https://*.blob.core.windows.net</block>
   <block id="065880318484084e9bfe33ea9c6a8702" category="cell">Pour mettre à niveau le connecteur et ses composants Docker.</block>
   <block id="824f455afa0ae197e5e7156988b6dc50" category="section-title">Serveur proxy</block>
   <block id="dae5521ccadea1321150f5f74aad0a58" category="paragraph">Si votre organisation nécessite le déploiement d'un serveur proxy pour tout le trafic Internet sortant, obtenez les informations suivantes sur votre proxy HTTP ou HTTPS :</block>
   <block id="407c4e9fac86b98147da49acd4fa0d01" category="section-title">Ports</block>
-  <block id="998d660873d63ba9e547f1686fd6383b" category="paragraph">Il n'y a pas de trafic entrant vers le connecteur, sauf si vous le lancez ou si le connecteur est utilisé comme proxy pour les messages AutoSupport.</block>
   <block id="b68600c18c6dd9598d4518bc4a3f2c90" category="list-text">HTTP (80) et HTTPS (443) permettent d'accéder à l'interface utilisateur locale que vous utiliserez dans de rares circonstances.</block>
   <block id="a72a43431413f493c5087ab72327a680" category="list-text">SSH (22) n'est nécessaire que si vous devez vous connecter à l'hôte pour le dépannage.</block>
-  <block id="84b297044f3a3c5d5e62a0dca0957998" category="list-text">Les connexions entrantes via le port 3128 sont requises si vous déployez des systèmes Cloud Volumes ONTAP dans un sous-réseau où aucune connexion Internet sortante n'est disponible. Si les systèmes Cloud Volumes ONTAP ne disposent pas d'une connexion Internet sortante pour envoyer des messages AutoSupport, BlueXP configure automatiquement ces systèmes Cloud Volumes ONTAP pour utiliser un serveur proxy inclus avec le connecteur. La seule condition est de s'assurer que le groupe de sécurité du connecteur autorise les connexions entrantes sur le port 3128. Vous devrez ouvrir ce port après le déploiement du connecteur.</block>
   <block id="d72a801b2f49d6a4ed170ebdf3cf0efc" category="section-title">Limitation de l'adresse IP</block>
   <block id="65d425afa00c3ead65e6a786e55b60bc" category="inline-link">En savoir plus sur cette limitation</block>
   <block id="c7353b14a4a7612afd3864b6595a72b7" category="paragraph">Il existe un conflit possible avec des adresses IP dans la plage 172.<block ref="a310fc31ed10a191d1bb25f21e014658" category="inline-link-rx"></block>.</block>
@@ -720,7 +704,6 @@
   <block id="586136b5d097497746a02a0ee9fbf106" category="inline-link">En savoir plus sur les tarifs BlueXP</block>
   <block id="a3811f7a922aa3527f60315673066094" category="paragraph">Le prix de BlueXP dépend des services que vous prévoyez d'utiliser.<block ref="75160bc8e8d9a72990607b919e54f0eb" category="inline-link-rx"></block></block>
   <block id="a2513e72ab3ae9830fac174977d58572" category="section-title">Fonctionnement de BlueXP</block>
-  <block id="0cd1b5bbabf8e064c489482c4f5c1266" category="paragraph">BlueXP inclut une console web fournie via la couche SaaS, des comptes fournissant une colocation et des connecteurs qui gèrent Cloud Volumes ONTAP et d'autres services cloud.</block>
   <block id="11cf550820ecd5e75ae1a9046f7f7f05" category="section-title">Services à la demande</block>
   <block id="22412f0c62e1935807bc2c96a82d38cd" category="inline-link">console web</block>
   <block id="1b0e5ba1a856c5bcdb8e3362b25e7bfb" category="paragraph">BlueXP est accessible via un<block ref="2f36e092fa6569e04c3ec0f6ff9041a3" category="inline-link-rx"></block> Et les API. Cette expérience SaaS vous permet d'accéder automatiquement aux dernières fonctionnalités dès leur sortie et de basculer facilement entre vos comptes BlueXP et les connecteurs.</block>
@@ -728,7 +711,6 @@
   <block id="62acc1e12893f4b92864cd95803b816b" category="paragraph">Lorsque vous vous connectez à BlueXP pour la première fois, vous êtes invité à créer un compte _BlueXP_. Ce compte fournit la colocation et vous permet d'organiser les utilisateurs et les ressources dans des _espaces de travail_ isolés.</block>
   <block id="129817058db903a45b87ffbf2c08a0d2" category="inline-link-macro">En savoir plus sur les comptes</block>
   <block id="74a4ede1451c1e5d5746c24e1fc77924" category="paragraph"><block ref="7a5209a3744a7cace63a040ed3f3ce07" category="inline-link-macro-rx"></block>.</block>
-  <block id="b7ffaf906b575603b3ec9613a0b6ea30" category="paragraph">Vous n'avez pas besoin d'un connecteur pour démarrer avec BlueXP, mais vous devez créer un connecteur pour déverrouiller toutes les fonctionnalités et tous les services BlueXP. Un connecteur vous permet de gérer les ressources et les processus dans vos environnements sur site et cloud. L'utilisation de Cloud Volumes ONTAP et d'autres services de données est indispensable.</block>
   <block id="b8af0c827fddecff5686f66caf50fc37" category="section-title">Mode restreint et mode privé</block>
   <block id="0b2713c18a328b85808183d496d2d28c" category="paragraph">BlueXP est également pris en charge dans les environnements soumis à des restrictions de sécurité et de connectivité. Vous pouvez utiliser _restricted mode_ ou _private mode_ pour limiter la connectivité sortante à la couche SaaS de BlueXP.</block>
   <block id="0b43e955bb49e08923e9b43ee20ef2b3" category="section-title">Certification SOC 2 Type 2</block>
@@ -1293,8 +1275,6 @@
   <block id="cda6184a38ec01634b0cabf02341cb56" category="list-text">Cliquez sur *stratégies &gt; Créer une stratégie*.</block>
   <block id="b52a6ab6cdcb340c9e1189b56821ffd8" category="list-text">Cliquez sur *JSON*.</block>
   <block id="26d4a7a50dfbae842d907e3b8000633e" category="list-text">Copiez et collez la stratégie suivante :</block>
-  <block id="c7e8dc746d7263609202186d1ac75c65" category="inline-link-macro">Autorisations de vue requises pour l'instance de connecteur</block>
-  <block id="5a25157670ec0b889a34ec2b3905bc26" category="paragraph">Pour rappel, cette règle contient uniquement les autorisations nécessaires pour lancer l'instance Connector dans AWS à partir de BlueXP. <block ref="e99a10e3be28ba86573878700d04f6c5" category="inline-link-macro-rx"></block>.</block>
   <block id="e46847d94dd6255ac0cabcdc93eed31f" category="list-text">Cliquez sur *Suivant* et ajoutez des balises, si nécessaire.</block>
   <block id="83f97720ed2c284e94fe989612d7ae1a" category="list-text">Cliquez sur *Suivant* et entrez un nom et une description.</block>
   <block id="ab899735d36938b4c6cb8edd18a222e5" category="list-text">Cliquez sur *Créer une stratégie*.</block>
@@ -1314,21 +1294,14 @@
   <block id="c34ab4140439856fda51871a0f20b53c" category="list-text">Assurez-vous que vous disposez de la clé d'accès et de la clé secrète pour l'utilisateur IAM.</block>
   <block id="faeb6083a2ae4785925222b65d1d968f" category="paragraph">Vous devez maintenant disposer d'un rôle IAM qui possède les autorisations requises ou d'un utilisateur IAM qui dispose des autorisations requises. Lorsque vous créez le connecteur à partir de BlueXP, vous pouvez fournir des informations sur le rôle ou les clés d'accès.</block>
   <block id="59d21ffd9004e044bf10a41bde94377c" category="section-title">Configurez les autorisations pour le connecteur lors d'un déploiement à partir d'AWS Marketplace</block>
-  <block id="4016e0befba9dfa16e5bfe9ffaf75e05" category="paragraph">Créez des politiques IAM dans AWS et associez-les à un rôle IAM. Lorsque vous créez le connecteur à partir d'AWS Marketplace, vous êtes invité à sélectionner ce rôle IAM.</block>
-  <block id="eaa47fa9b523422adaa51b1134fb4aef" category="list-text">Depuis la console IAM, créer une policy :</block>
-  <block id="3bd4de60aaa4adf9b41bf20b9147d412" category="inline-link-macro">Stratégies IAM pour le connecteur</block>
-  <block id="85674d5e5e23b466a05d63a56f43dbe9" category="list-text">Sélectionnez *JSON* et copiez et collez le contenu du <block ref="6db1553cd75a3ccfbb7f9ca949da3fb6" category="inline-link-macro-rx"></block>.</block>
   <block id="c0b444d12ee4e633b23b686f19a32aaa" category="list-text">Terminez les étapes restantes pour créer la stratégie.</block>
   <block id="b905fd344340f966488111072eda83d7" category="paragraph">Selon les services BlueXP que vous prévoyez d'utiliser, il peut être nécessaire de créer une seconde règle.</block>
   <block id="481dd59686d42d2d6a74eae1a1d763ad" category="paragraph">Pour les régions standard, les autorisations sont réparties entre deux règles. Deux règles sont requises en raison d'une taille maximale de caractères pour les stratégies gérées dans AWS.</block>
-  <block id="65e6b624109b7e78928f771ce0481ac1" category="list-text">De retour dans la console IAM, créer un rôle IAM :</block>
   <block id="d570f412d2674b04019b74531c43fed8" category="list-text">Cliquez sur *rôles &gt; Créer un rôle*.</block>
   <block id="caab423eeeabf261321ce00d10ad838a" category="list-text">Sélectionnez *AWS service &gt; EC2*.</block>
-  <block id="447bc2158889f1f9ece8e2851030f328" category="list-text">Ajoutez des autorisations en joignant les stratégies que vous avez créées à l'étape précédente.</block>
   <block id="0543e6140cb57d05d778d01c055f1dc0" category="list-text">Terminez les étapes restantes pour créer le rôle.</block>
   <block id="97f503ba18358d479d025475ba069bec" category="paragraph">Vous pouvez désormais associer un rôle IAM à l'instance EC2 lors du déploiement depuis AWS Marketplace.</block>
   <block id="4d2d01568f9b93e826d4d27986238904" category="section-title">Définissez les autorisations à attribuer après l'installation manuelle</block>
-  <block id="301609f114a1e5116c928dacc85e0280" category="paragraph">Si vous installez manuellement le logiciel Connector sur votre propre hôte Linux dans AWS, vous pouvez fournir des autorisations de la manière suivante :</block>
   <block id="168b098cb315f9dde326e5fcaa738ac3" category="list-text">Option 1 : créez des règles IAM et associez-les à un rôle IAM que vous pouvez associer à l'instance EC2.</block>
   <block id="330d1c128dd39c2609ba6f24835a6934" category="list-text">Option 2 : fournissez à BlueXP des clés d'accès AWS pour un utilisateur IAM qui dispose des autorisations requises.</block>
   <block id="09c9c82c723e5b567f845ec916d3a4d3" category="inline-link-macro">Politique IAM pour le connecteur</block>
@@ -1377,7 +1350,6 @@
   <block id="4847e034bb0a55fcbc8a3380d6a3ab80" category="open-title">AWS</block>
   <block id="e1ef579b405a3d1b9ab7d84e56f110d3" category="paragraph">Lorsque le connecteur est installé sur site, vous devez fournir BlueXP avec des autorisations AWS en ajoutant des clés d'accès à un utilisateur IAM qui dispose des autorisations requises.</block>
   <block id="a4a42c8639c0aa2e10cb3a3eaaae664b" category="paragraph">Vous devez utiliser cette méthode d'authentification si le connecteur est installé sur site. Vous ne pouvez pas utiliser de rôle IAM.</block>
-  <block id="68907f5cb5ea8d48e55a2b1c3052b510" category="list-text">Assurez-vous que l'utilisateur dispose de clés d'accès que vous pouvez ajouter à BlueXP après l'installation du connecteur.</block>
   <block id="c6a2a62c2d06a1633aadd355cae5e2d6" category="paragraph">Vous devez maintenant disposer des clés d'accès pour un utilisateur IAM qui dispose des autorisations requises. Après avoir installé le connecteur, vous devez associer ces informations d'identification au connecteur de BlueXP.</block>
   <block id="46c117d35b7e35d840f713eed7c57cba" category="paragraph"><block ref="4d598d4763799d9bfff84dccd242be80" category="inline-link-macro-rx"></block>.</block>
   <block id="3a580f142203677f1f0bc30898f63f53" category="open-title">Azure</block>
@@ -1385,7 +1357,6 @@
   <block id="ac572c9e1fee2fbf598102a8524251e8" category="list-title">Créez une application Azure Active Directory pour le contrôle d'accès basé sur des rôles</block>
   <block id="2189e37a9b7c751d238d4e13fd8f634b" category="list-text">Assurez-vous que vous disposez des autorisations dans Azure pour créer une application Active Directory et attribuer l'application à un rôle.</block>
   <block id="9e0b4c608c2ed027fef07ddc68aae407" category="inline-link">Documentation Microsoft Azure : autorisations requises</block>
-  <block id="3efac1d41c4ede08329882077e04c299" category="paragraph">Pour plus de détails, reportez-vous à<block ref="f85f976c363ea77b8f2232a1ebbc4d2d" category="inline-link-rx"></block>.</block>
   <block id="c9bae6707a626ab71ed3b97345b5becf" category="list-text">À partir du portail Azure, ouvrez le service *Azure Active Directory*.</block>
   <block id="2edcc284e8171b76333ca90d4cda988f" category="inline-image-macro">Affiche le service Active Directory dans Microsoft Azure.</block>
   <block id="2947c6ef91b5c925ae2fcec9d7750590" category="paragraph"><block ref="2947c6ef91b5c925ae2fcec9d7750590" category="inline-image-macro-rx" type="image"></block></block>
@@ -1500,22 +1471,17 @@
   <block id="209e33f8aa50ade8c82e5bc82a8c023d" category="section-title">Associez un abonnement Marketplace avec des identifiants Google Cloud</block>
   <block id="e6bd6cdf191b4526ecbd9326bd7b5c24" category="paragraph">Lorsque vous déployez un connecteur dans Google Cloud, BlueXP crée un ensemble d'informations d'identification par défaut qui sont associées à l'instance de VM Connector. Vous pouvez à tout moment modifier l'abonnement Marketplace associé à ces informations d'identification. L'abonnement vous permet de créer un système Cloud Volumes ONTAP avec paiement à l'utilisation et d'utiliser d'autres services BlueXP.</block>
   <block id="0307a12e5749f8dd930472ee78f69d2c" category="list-text">Dans le coin supérieur droit de la console BlueXP, sélectionnez l'icône Paramètres, puis sélectionnez *informations d'identification*.</block>
-  <block id="1d21982a0fb04ffa8cd96a66707e7353" category="list-text">Sur la page *informations d'identification du compte*, sélectionnez le menu d'action correspondant à un ensemble d'informations d'identification, puis sélectionnez *abonnement associé*.</block>
   <block id="0d28acbceed906f52a206d0f3fb0add2" category="inline-image-macro">Capture d'écran du menu d'action pour un ensemble d'informations d'identification existantes.</block>
   <block id="ea765af20d763fe16d94ba9ef03fd31b" category="paragraph"><block ref="ea765af20d763fe16d94ba9ef03fd31b" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="497002c594b6f249087bf6b22381ee4d" category="list-text">Pour associer les informations d'identification à un abonnement existant, sélectionnez un projet Google Cloud et un abonnement dans la liste déroulante, puis sélectionnez *associer*.</block>
   <block id="fff6f5125be05a94543d2e88dbd30b27" category="inline-image-macro">Copie d'écran d'un projet Google Cloud et de l'abonnement sélectionnés pour les identifiants Google Cloud.</block>
   <block id="cab980518d03aa36afc924b709828a6e" category="paragraph"><block ref="cab980518d03aa36afc924b709828a6e" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="ba192d211ab8fe6aceb98f59e685d1bb" category="list-text">Si vous n'avez pas encore d'abonnement, sélectionnez *Ajouter un abonnement &gt; Continuer* et suivez les étapes indiquées dans Google Cloud Marketplace.</block>
   <block id="7a0df3203d8f6522d2b39b5f4c38db03" category="admonition">Avant de terminer les étapes suivantes, assurez-vous que vous disposez des deux privilèges d'administrateur de facturation dans votre compte Google Cloud ainsi que d'une connexion BlueXP.</block>
   <block id="cdcf076c3fd3e62a3c7e3691d02894db" category="inline-link">Page NetApp BlueXP sur Google Cloud Marketplace</block>
   <block id="b7e7a20500f8489bfa6b8a559c74a1d4" category="list-text">Après avoir été redirigé vers le<block ref="d9d3d72c24d9b3446210d5b539c6bbf5" category="inline-link-rx"></block>, assurez-vous que le projet correct est sélectionné dans le menu de navigation supérieur.</block>
   <block id="40f2e5d436dc35fac268a0971862a68e" category="inline-image-macro">Copie d'écran de la page Cloud Volumes ONTAP Marketplace dans Google Cloud.</block>
   <block id="f59e6f594c03905c8d1965c57967806e" category="paragraph"><block ref="f59e6f594c03905c8d1965c57967806e" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="12975d5f412a47bef9db3c7a4d365814" category="list-text">Sélectionnez *s'abonner*.</block>
   <block id="861c99531853674511342d75aef34187" category="list-text">Sélectionnez le compte de facturation approprié et acceptez les conditions générales.</block>
   <block id="ca4f48bdc60c2a16dd59109486af30ee" category="paragraph">Cette étape envoie votre demande de transfert à NetApp.</block>
-  <block id="375b5c037ddde62b74d4b30381271828" category="list-text">Dans la boîte de dialogue qui s'affiche, sélectionnez *s'inscrire auprès de NetApp, Inc.*</block>
   <block id="9b3006787e316852bcbc8a44b5e05f58" category="paragraph">Cette étape doit être effectuée pour lier l'abonnement Google Cloud à votre compte BlueXP. Le processus de liaison d'un abonnement n'est pas terminé tant que vous n'êtes pas redirigé à partir de cette page, puis vous connecter à BlueXP.</block>
   <block id="e3d03a33db92a9024d72af3cae4684fd" category="inline-image-macro">Capture d'écran d'une fenêtre contextuelle d'enregistrement.</block>
   <block id="6373a7d66fb33193565645f81635ec0c" category="paragraph"><block ref="6373a7d66fb33193565645f81635ec0c" category="inline-image-macro-rx" type="image"></block></block>
@@ -1788,7 +1754,6 @@
   <block id="490ec1422ed033ebd41a56ee1a3d7bca" category="list-text">Attribuez l'accès à une identité *gérée*.</block>
   <block id="f3c300467d5973dfb4bb4ac50c1635b4" category="list-text">Cliquez sur *Sélectionner les membres*, sélectionnez l'abonnement dans lequel la machine virtuelle de connecteur a été créée, choisissez *machine virtuelle*, puis sélectionnez la machine virtuelle de connecteur.</block>
   <block id="a2396693254d9ec35f0b6faa885e8f58" category="list-text">Cliquez sur *Sélectionner*.</block>
-  <block id="14a3ec4432f577b0adffd0ed91b508cd" category="list-text">Si vous souhaitez déployer Cloud Volumes ONTAP à partir d'abonnements supplémentaires, passez à cet abonnement, puis répétez ces étapes.</block>
   <block id="8dca68d83a53837ae38b833a53560cb9" category="paragraph">BlueXP dispose désormais des autorisations dont il a besoin pour effectuer des actions dans Azure en votre nom.</block>
   <block id="201a0e8a9a7e1b007b99b4e4c24c017d" category="open-title">Principal de service Azure</block>
   <block id="e326875367720b38c29c8fa0afd491be" category="paragraph">Fournissez à BlueXP les informations d'identification du principal de service Azure que vous avez précédemment configuré.</block>
@@ -2246,7 +2211,6 @@
   <block id="d3f43fed60f0a507e6418503d2e5133b" category="inline-link-macro">Autorisations de compte de service pour le connecteur</block>
   <block id="89c19793fa4fd34426a128c4ebe03948" category="list-text">Créez un fichier YAML qui inclut le contenu du <block ref="16c885f571f66caafdba8f3cb6f880e3" category="inline-link-macro-rx"></block>.</block>
   <block id="60696c8c3376d314543ef1f6c5dd3364" category="paragraph">L'exemple suivant crée un rôle nommé « connecteur » au niveau du projet :</block>
-  <block id="c95ec05c4ecf0f3a1ae9ac9ed3381eba" category="paragraph">les rôles iam gcloud créent connecteur --projet=myproject --file=connector.yaml</block>
   <block id="bd67573655874b669c5ced800e8181a2" category="list-text">Créez un compte de service dans Google Cloud :</block>
   <block id="e81e4e7ef7043b471a5f895cfe2932ff" category="list-text">Dans le service IAM &amp; Admin, cliquez sur *comptes de service &gt; Créer un compte de service*.</block>
   <block id="4335cd428e49ade89c004cb921b74ae5" category="list-text">Entrez les détails du compte de service et cliquez sur *Créer et continuer*.</block>
@@ -2496,11 +2460,7 @@ ou</block>
   <block id="caf7fd71047bbc17e23e603d7a448234" category="paragraph">Par exemple, si vous souhaitez lancer Cloud Volumes ONTAP dans le cloud, vous devez configurer une connexion VPN entre votre réseau d'entreprise et le réseau virtuel sur lequel vous prévoyez de lancer Cloud Volumes ONTAP.</block>
   <block id="9827c1dc4f901b9ac9340f0034c5a996" category="paragraph">L'emplacement réseau où vous déployez le connecteur doit disposer d'une connexion Internet sortante.</block>
   <block id="8efafb8ae5af62e571308cca0bdcb4f0" category="paragraph">Lorsque vous installez manuellement le connecteur sur votre propre hôte Linux, le programme d'installation du connecteur nécessite l'accès aux URL suivantes pendant le processus d'installation :</block>
-  <block id="cc328ccddf672987f092ca6f44c9f9cf" category="cell">\https://management.azure.com
-\https://login.microsoftonline.com</block>
   <block id="068395f3cd26ca40ad905de3790c9435" category="cell">Afin de gérer les ressources dans les régions publiques d'Azure.</block>
-  <block id="c9499afcd46d4343e88fb1acd8c931d8" category="cell">\https://management.chinacloudapi.cn
-\https://login.chinacloudapi.cn</block>
   <block id="232055d452a21264f8d549e50d695b18" category="cell">De gérer les ressources dans les régions Azure China.</block>
   <block id="47bf230a49ecee72c3b36a37f9758812" category="cell">\https://www.googleapis.com/compute/v1/
 \https://compute.googleapis.com/compute/v1
@@ -2573,7 +2533,6 @@ ou</block>
   <block id="608216b752e1b11f41d17b75b772c3a3" category="paragraph">Configurer les autorisations et une clé d'accès pour un utilisateur IAM. Une fois le connecteur installé et configuré BlueXP, vous devez fournir BlueXP avec la clé d'accès AWS.</block>
   <block id="5850d39c612d40f90f438e324ad5d585" category="paragraph">Le compte dispose désormais des autorisations requises.</block>
   <block id="e204418b1dd1e0b04b4cf51c3a87d8b4" category="paragraph">Créez un rôle Azure personnalisé avec les autorisations requises. Vous allez attribuer ce rôle à la machine virtuelle Connector.</block>
-  <block id="9433f67eb0f8e2b22e40c7a8a3c3c1ea" category="list-text">Si vous prévoyez d'installer manuellement le logiciel sur votre propre hôte, activez une identité gérée attribuée par le système sur le afin de fournir les autorisations Azure requises par le biais d'un rôle personnalisé.</block>
   <block id="a05caac06592f9dd951208e6ba7ea716" category="paragraph">Créez et configurez un principal de service dans Azure Active Directory et obtenez les identifiants Azure dont BlueXP a besoin. Après avoir installé le connecteur et configuré BlueXP, vous devez fournir ces informations d'identification à BlueXP.</block>
   <block id="173005bb35533114a1987fe6db4b3ce0" category="list-title">Attribuez le rôle personnalisé à l'application</block>
   <block id="0f49f1997355db31e21cf44f968bde0d" category="paragraph">Votre principal de service est maintenant configuré et vous devez avoir copié l'ID de l'application (client), l'ID du répertoire (tenant) et la valeur du secret client. Vous devez saisir ces informations dans BlueXP lorsque vous ajoutez un compte Azure.</block>
@@ -2592,7 +2551,6 @@ ou</block>
   <block id="119ea98564cae99d8f3083158d800124" category="paragraph">Pour obtenir de l'aide, consultez le<block ref="fcad168018b4f932b8d61fdac1ba9c7f" category="inline-link-rx"></block> Pour afficher les documents relatifs à tous les services BlueXP.</block>
   <block id="250b0cf2e6c1131d20df693fd390488e" category="doc">Fournissez les autorisations nécessaires à BlueXP pour les installations sur site</block>
   <block id="d22e9ad90e63b8313cb68883a39b3a99" category="paragraph">Si vous venez de créer ces identifiants dans AWS, leur utilisation peut prendre quelques minutes. Attendez quelques minutes avant d'ajouter les informations d'identification à BlueXP.</block>
-  <block id="54c25e7c37b21775d310a39426f89a60" category="paragraph">BlueXP dispose désormais des autorisations dont il a besoin pour effectuer des actions dans AWS en votre nom. Vous pouvez maintenant accéder au<block ref="a47e12f4350b725a128875f50f785a3b" category="inline-link-rx"></block> Pour commencer à utiliser le connecteur avec BlueXP.</block>
   <block id="6a5cc7195e9c182dffb225cfc25d01e7" category="paragraph">Si vous venez de créer ces identifiants dans Azure, leur mise à disposition peut prendre quelques minutes. Attendez quelques minutes avant d'ajouter les informations d'identification à BlueXP.</block>
   <block id="ffb0fc074900d8a4132e4776f5a4f956" category="paragraph">BlueXP dispose désormais des autorisations dont il a besoin pour effectuer des actions dans Azure en votre nom. Vous pouvez maintenant accéder au<block ref="a47e12f4350b725a128875f50f785a3b" category="inline-link-rx"></block> Pour commencer à utiliser le connecteur avec BlueXP.</block>
   <block id="b7afeec70319496f1e3eb3a317ae30c3" category="doc">Configuration du réseau Google Cloud</block>
@@ -2655,9 +2613,7 @@ ou</block>
   <block id="b3472ff32fca13e95a664d2516fabc9d" category="list-text">Suivez les invites pour configurer et déployer l'instance :</block>
   <block id="d062afbb0dab008c992fc7630e6e5b1d" category="list-text">*Nom et balises* : saisissez un nom et des balises pour l'instance.</block>
   <block id="5fa511356078e407d467aeb21afa8311" category="list-text">*Image de l'application et de l'OS* : passez cette section. Le connecteur ami est déjà sélectionné.</block>
-  <block id="2ddbec48a3825e36a3669e60058351a9" category="list-text">*Type d'instance* : selon la disponibilité de la région, choisissez l'un des types d'instance pris en charge (t3.XLarge est recommandé).</block>
   <block id="3346e4a27b0ab9e94d29515e25908ed6" category="inline-link-macro">Vérifiez les conditions requises pour l'instance</block>
-  <block id="05e081ba3d1f97f915e56b333c47f27b" category="paragraph"><block ref="89d3d9236821c4e007d2db1f213f2df3" category="inline-link-macro-rx"></block>.</block>
   <block id="a2edeeec0c237aa79e3b1f0eb87b07e4" category="list-text">*Paire de clés (login)* : sélectionnez la paire de clés que vous souhaitez utiliser pour vous connecter en toute sécurité à l'instance.</block>
   <block id="db8b616682d262766c36f81013b4f840" category="list-text">*Paramètres réseau* : modifiez les paramètres réseau selon vos besoins :</block>
   <block id="c04d267ebc445e8f04c29787ecab6547" category="list-text">Choisissez le VPC et le sous-réseau souhaités.</block>
@@ -3003,7 +2959,6 @@ Vous devez également vous assurer que la stratégie est à jour lorsque de nouv
   <block id="dd5f2c116815cb1eac2ffe4f6e18517f" category="open-title">Rôle personnalisé</block>
   <block id="ec09b900c630334c74f96f6faf3eee8e" category="paragraph">Accédez au<block ref="a47e12f4350b725a128875f50f785a3b" category="inline-link-rx"></block> Pour commencer à utiliser le connecteur avec BlueXP.</block>
   <block id="6019d7a828098995320847394d1a9a09" category="open-title">Principal du service</block>
-  <block id="a197424e0c6707a6742c9ba5368dab83" category="list-text">Accédez au<block ref="a47e12f4350b725a128875f50f785a3b" category="inline-link-rx"></block> et connectez-vous.</block>
   <block id="fa63e1e893cffd937dfc1bfa0546daf3" category="summary">Vous pouvez surveiller l'état des opérations que BlueXP effectue pour voir si des problèmes doivent être résolus. Vous pouvez afficher l'état dans le centre de notification, dans le calendrier ou envoyer des notifications à votre courrier électronique.</block>
   <block id="1016d21e7c7301d878d5d5b3e38eabe0" category="doc">Contrôlez les opérations dans votre compte</block>
   <block id="01fd2503a6dcf5702d25f8877eaa869e" category="paragraph">Le tableau suivant présente une comparaison entre le Centre de notification et le Calendrier pour vous permettre de comprendre ce que chacun a à offrir.</block>
@@ -3121,34 +3076,14 @@ Vous devez également vous assurer que la stratégie est à jour lorsque de nouv
   <block id="f80027e1697bb881bbd28096ec4eb44d" category="section-title">Créez une application Azure Active Directory</block>
   <block id="bde31a3498404dfaa1dada9308b8c172" category="paragraph">Créez une application et une entité de service Azure Active Directory (AD) que BlueXP peut utiliser pour le contrôle d'accès basé sur des rôles.</block>
   <block id="135b308ed83c53f1516b7c754566d1c4" category="paragraph-title">Avant de commencer</block>
-  <block id="f628a927678590abbad75664aa87e9c9" category="paragraph">Vous devez disposer des droits d'accès dans Azure pour créer une application Active Directory et attribuer l'application à un rôle. Pour plus de détails, reportez-vous à<block ref="f85f976c363ea77b8f2232a1ebbc4d2d" category="inline-link-rx"></block>.</block>
-  <block id="b6903fcc348dc2286adda5751418a7f9" category="list-text">Dans le menu, sélectionnez *enregistrements d'applications*.</block>
-  <block id="6d730ff41d50e6c38331a70a20a46df3" category="list-text">Sélectionnez *nouvel enregistrement*.</block>
-  <block id="b5249314aff5fae6b6de54ce7f13f16b" category="list-text">Sélectionnez *Enregistrer*.</block>
   <block id="805d5c27eec50dcf481d2dff37f36287" category="paragraph">Vous devez lier l'entité de service à un ou plusieurs abonnements Azure et lui attribuer le rôle "opérateur BlueXP" personnalisé afin que BlueXP dispose d'autorisations dans Azure.</block>
-  <block id="4373f2885ec5493eabb4edec6b9422e4" category="list-text">Sélectionnez *contrôle d'accès (IAM) &gt; Ajouter &gt; Ajouter une affectation de rôle*.</block>
-  <block id="ac594ce6138d4938493333dec80544b8" category="list-text">Dans l'onglet *role*, sélectionnez le rôle *BlueXP Operator* et sélectionnez *Next*.</block>
-  <block id="049d14d05ca9e7adafff9e17ed48736e" category="list-text">Sélectionnez *Sélectionner membres*.</block>
-  <block id="ce2590ec8b406b42ba7a670543c8ab81" category="list-text">Sélectionnez l'application et sélectionnez *Sélectionner*.</block>
-  <block id="e6cd86d61f4639c8a27006c6c29b3e9f" category="list-text">Sélectionnez *Suivant*.</block>
-  <block id="85b8cec39bdb05ec73cd076b2359cfd1" category="list-text">Sélectionnez *consulter + affecter*.</block>
   <block id="10976842fc02803e74db1e7ad1d16d24" category="paragraph">Le principal de service doit disposer d'autorisations « API de gestion des services Windows Azure ».</block>
-  <block id="9993d6f6284200668a6f4c51df9812da" category="list-text">Dans le service *Azure Active Directory*, sélectionnez *App recalages* et sélectionnez l'application.</block>
-  <block id="69dc2d1327bf480b016b4aed7cd7d900" category="list-text">Sélectionnez *autorisations API &gt; Ajouter une autorisation*.</block>
-  <block id="4477be44a064848adbf1b5f50428e0cd" category="list-text">Sélectionnez *accéder à Azure Service Management en tant qu'utilisateurs de l'organisation*, puis sélectionnez *Ajouter des autorisations*.</block>
   <block id="4c8a0043df6fc20c84f393cad42133de" category="section-title">Obtenir l'ID de l'application et l'ID du répertoire</block>
   <block id="38551ea5316187f2da6d181a1e614e38" category="paragraph">Vous devez créer un secret client, puis fournir à BlueXP la valeur du secret pour que BlueXP puisse l'utiliser pour s'authentifier avec Azure AD.</block>
-  <block id="39ec83d3cc8c12b784bf30f64700b168" category="list-text">Sélectionnez *enregistrements d'applications* et sélectionnez votre application.</block>
-  <block id="05498c836fbd4349a752efbb54e8949c" category="list-text">Sélectionnez *certificats et secrets &gt; Nouveau secret client*.</block>
-  <block id="fa12509cfb8e8ccded16e2a254e988c4" category="list-text">Sélectionnez *Ajouter*.</block>
   <block id="6186e185b0ea9b1c5909f6190ea935aa" category="section-title">Ajoutez les identifiants à BlueXP</block>
   <block id="897558c0bcdd42cd68064bdca7591b82" category="paragraph">Une fois que vous avez mis à disposition un compte Azure avec les autorisations requises, vous pouvez ajouter les informations d'identification pour ce compte à BlueXP. Cette étape vous permet de lancer Cloud Volumes ONTAP à l'aide de différentes identifiants Azure.</block>
   <block id="15bb02041f104dbc655746382fa7ea1c" category="paragraph">Si vous venez de créer ces identifiants dans votre fournisseur cloud, il vous faudra quelques minutes pour les utiliser. Attendez quelques minutes avant d'ajouter les informations d'identification à BlueXP.</block>
   <block id="c70e0a237dbda00edf1f26ee4ad8e9da" category="list-text">Sur la page *informations d'identification du compte*, sélectionnez *Ajouter des informations d'identification* et suivez les étapes de l'assistant.</block>
-  <block id="42dedb42cdb310c29307f9649dd6b146" category="list-text">ID de l'application (client) : voir <block ref="6e43fddc58b77d10342452e0c5f86200" category="inline-xref-macro-rx"></block>.</block>
-  <block id="e6bfb5bdb5586f534e2e3adf3bc1f74a" category="list-text">ID de répertoire (locataire) : voir <block ref="6e43fddc58b77d10342452e0c5f86200" category="inline-xref-macro-rx"></block>.</block>
-  <block id="aca5096ac18d904bd7d20b609f13571d" category="list-text">Secret client : voir <block ref="2f8da44aff19ae4d1a810f6d1d618984" category="inline-xref-macro-rx"></block>.</block>
-  <block id="4276b916b690158619b1af5fba643f85" category="paragraph">Pour payer Cloud Volumes ONTAP à l'heure (PAYGO), ces identifiants Azure doivent être associés à un abonnement depuis Azure Marketplace.</block>
   <block id="7113a4a81ece56ecd0ba9c041db4bc9b" category="list-text">*Révision* : confirmez les détails des nouvelles informations d'identification et sélectionnez *Ajouter*.</block>
   <block id="f9e1290b868bffdf198b52e0ebc715f0" category="inline-link">lors de la création d'un nouvel environnement de travail</block>
   <block id="73d53f23610cc3c7f3876a7e295ff03f" category="paragraph">Vous pouvez maintenant passer à différents ensembles d'informations d'identification à partir de la page Détails et informations d'identification<block ref="b755550aa4c4ad31a42757f4fc357592" category="inline-link-rx"></block></block>
@@ -3162,11 +3097,7 @@ Vous devez également vous assurer que la stratégie est à jour lorsque de nouv
   <block id="20e15acf80fa51f5de6b9e96c9c64fde" category="list-text">Vous n'avez pas associé d'abonnement lorsque vous avez initialement ajouté les informations d'identification à BlueXP.</block>
   <block id="086754afbe30b09d7f6a643dd6e05800" category="list-text">Vous souhaitez remplacer un abonnement Azure Marketplace existant par un nouvel abonnement.</block>
   <block id="20a8a479e52579cf8f1fe773676218bc" category="paragraph"><block ref="20a8a479e52579cf8f1fe773676218bc" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="5aa5ca3c4ae1419b335323e6ee592b93" category="list-text">Pour associer les informations d'identification à un abonnement existant, sélectionnez l'abonnement dans la liste déroulante et sélectionnez *associer*.</block>
-  <block id="875d095c260fa8c96e0e69a41dd336b7" category="list-text">Pour associer les informations d'identification à un nouvel abonnement, sélectionnez *Ajouter un abonnement &gt; Continuer* et suivez les étapes dans Azure Marketplace :</block>
   <block id="7dffa6296286b12f66d638f53340316c" category="list-text">Si vous y êtes invité, connectez-vous à votre compte Azure.</block>
-  <block id="9dc9a5b2f23fe90a0fd71125f3034dfd" category="list-text">Remplissez le formulaire et sélectionnez *s'abonner*.</block>
-  <block id="3221538307211e131f96e1a83b1a5235" category="list-text">Une fois le processus d'abonnement terminé, sélectionnez *configurer le compte maintenant*.</block>
   <block id="344ece1ef43a9e3bbb281e15f3df6442" category="paragraph">Vous serez redirigé vers le site Web BlueXP.</block>
   <block id="cb735ebf950ed5c7902b507f70582bd3" category="list-text">À partir de la page *attribution d'abonnement* :</block>
   <block id="89d8b3b4c08395fc5dbef0d35cb50529" category="paragraph">La vidéo suivante explique comment vous abonner à Azure Marketplace :</block>
@@ -3196,7 +3127,6 @@ Vous devez également vous assurer que la stratégie est à jour lorsque de nouv
   <block id="278a1d20d474323c7730eb5c88c86df3" category="paragraph"><block ref="278a1d20d474323c7730eb5c88c86df3" category="inline-link-macro-rx"></block></block>
   <block id="438ce182950c9739961cbff47dcf19b1" category="paragraph"><block ref="438ce182950c9739961cbff47dcf19b1" category="inline-link-macro-rx"></block></block>
   <block id="bf240a359c3f187f19fe389d739230dc" category="paragraph"><block ref="3b2280c8dd3c1825b88cbc43ff0a1ace" category="inline-link-macro-rx"></block>.</block>
-  <block id="89f08adbe2eea8d4ad13aa85324753d5" category="paragraph"><block ref="0364077b6383fbad3e255f395f90199b" category="inline-link-macro-rx"></block>.</block>
   <block id="8a13274378538e70b1d8db3110b13a90" category="paragraph">Configurez BlueXP.</block>
   <block id="d919f0caf7e85368ea2bd20d82569c6b" category="open-title">AWS Gov Marketplace</block>
   <block id="ed9be66b9d8a87806a591a3395f501d5" category="list-text">Accédez à l'offre BlueXP sur AWS Marketplace.</block>
@@ -3224,10 +3154,8 @@ Vous devez également vous assurer que la stratégie est à jour lorsque de nouv
   <block id="a1b5555e7e142564665e7630a1fce8a8" category="list-text">*Disques* : le connecteur peut fonctionner de manière optimale avec des disques durs ou SSD.</block>
   <block id="fd5bdaf26d6756bb4ba2d2c659da9808" category="list-text">*Public IP* : si vous souhaitez utiliser une adresse IP publique avec la machine virtuelle du connecteur, l'adresse IP doit utiliser une référence SKU de base pour garantir que BlueXP utilise cette adresse IP publique.</block>
   <block id="0b7c0e66015972c9e3c3e051249db480" category="list-text">*Groupe de sécurité réseau* : le connecteur nécessite des connexions entrantes utilisant SSH, HTTP et HTTPS.</block>
-  <block id="fa3bb4277cf5dc26f344f033088ae043" category="paragraph"><block ref="278a1d20d474323c7730eb5c88c86df3" category="inline-link-macro-rx"></block>.</block>
   <block id="92fa0fc1299e55c066d0a19cd22b4e7b" category="list-text">*Identité* : sous *gestion*, sélectionnez *Activer l'identité gérée attribuée par le système*.</block>
   <block id="76f2625388817626b5d20572023827a8" category="paragraph">Ce paramètre est important car une identité gérée permet à la machine virtuelle Connector de s'identifier à Azure Active Directory sans fournir d'informations d'identification.<block ref="f91ce7faef49711445322691b4d6ac64" category="inline-link-rx"></block>.</block>
-  <block id="3e8ba1431756e2a93ebf350f3b13fbec" category="paragraph">--cacert spécifie un certificat signé par une autorité de certification à utiliser pour l'accès HTTPS entre le connecteur et le serveur proxy. h</block>
   <block id="2d3bb174766a8cbc78a4d5d0a2739c56" category="paragraph">Lorsque vous accédez pour la première fois à la console BlueXP, vous êtes invité à choisir un compte auquel associer le connecteur et vous devez activer le mode restreint.</block>
   <block id="b22816a3d20c18e89e4ef89984ca5df6" category="inline-link-macro">Découvrez comment créer un compte BlueXP supplémentaire</block>
   <block id="432f719258fc9e575a2982302eac9cdc" category="admonition">Si vous avez déjà un compte et que vous souhaitez en créer un autre, vous devez utiliser l'API de location. <block ref="987610e2980e99ab837daf2502634d0e" category="inline-link-macro-rx"></block>.</block>
@@ -3419,9 +3347,6 @@ Vous devez également vous assurer que la stratégie est à jour lorsque de nouv
   <block id="7061e8aac5780f13c42d7f3d3010b5c2" category="inline-link-macro">Apprenez à créer un connecteur</block>
   <block id="4affaad75ff37743ed549d6641de07e8" category="paragraph">Vous devez créer un connecteur avant de pouvoir modifier les paramètres BlueXP. <block ref="ffb61fe647da5972e7e78ecadafdfb45" category="inline-link-macro-rx"></block>.</block>
   <block id="583059f51a0b347f747db9f8d2421392" category="paragraph"><block ref="583059f51a0b347f747db9f8d2421392" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="6d2d5c49a26a8339a26911674ee69f80" category="list-text">Pour associer les informations d'identification à un nouvel abonnement, sélectionnez *Ajouter un abonnement &gt; Continuer* et suivez les étapes indiquées dans AWS Marketplace :</block>
-  <block id="cc5b03fa4f937c63363767c812feeb34" category="list-text">Sélectionnez *Afficher les options d'achat*.</block>
-  <block id="0b45e429b84384fa541446c3364409c9" category="list-text">Sélectionnez *configurer votre compte*.</block>
   <block id="eceb74088d706d5484df6b70296f87ad" category="paragraph">Modifiez vos informations d'identification AWS dans BlueXP en modifiant le type de compte (clés AWS ou rôle supposons), en modifiant le nom ou en mettant à jour les informations d'identification elles-mêmes (clés ou rôle ARN).</block>
   <block id="608e5d2c6ae29eafd4acefb54d76730a" category="admonition">Vous ne pouvez pas modifier les informations d'identification d'un profil d'instance associé à une instance de connecteur.</block>
   <block id="a53da898c0e5410eb934bcf693e8290e" category="admonition">Vous ne pouvez pas supprimer les informations d'identification d'un profil d'instance associé à une instance de connecteur.</block>
@@ -3440,7 +3365,6 @@ Vous devez également vous assurer que la stratégie est à jour lorsque de nouv
 \https://blob.core.microsoft.scloud
 \https://core.microsoft.scloud</block>
   <block id="8ec83edee8d0c8a3dd001c3d7e558479" category="cell">Pour gérer les ressources dans la région d'Azure IL6.</block>
-  <block id="1483a88c66072bf6c3c93fdac06fd57e" category="paragraph">Si votre organisation nécessite le déploiement d'un serveur proxy pour le trafic Internet sortant, procurez-vous les informations suivantes sur votre proxy HTTP ou HTTPS :</block>
   <block id="5b9a9863d7ad33310f21a8e9b1c1d682" category="paragraph">Avec le mode privé, la seule fois que BlueXP envoie le trafic sortant est à votre fournisseur cloud pour créer un système Cloud Volumes ONTAP.</block>
   <block id="41d07a4a0a908721d3dbbf8c6e1a98a4" category="paragraph">Si vous prévoyez de créer des systèmes Cloud Volumes ONTAP, BlueXP requiert des autorisations de votre fournisseur cloud. Vous devez définir des autorisations dans votre fournisseur de cloud, puis les associer à l'instance Connector après l'avoir installée.</block>
   <block id="3d715e57805c2356f84c41d139ed45c5" category="paragraph">Si vous devez installer Connector sur site, vous devez fournir des autorisations à l'aide de clés d'accès AWS ou d'un principal de service Azure. Les autres options ne sont pas prises en charge.</block>
@@ -3660,12 +3584,6 @@ La découverte sans connecteur (découverte directe) n'est pas prise en charge.<
   <block id="9816c573c33f4a6c99fc578d678ba65a" category="summary">Les règles de pare-feu Google Cloud pour le connecteur exigent à la fois des règles entrantes et sortantes. BlueXP crée automatiquement ce groupe de sécurité lorsque vous créez un connecteur à partir de BlueXP. Vous devez configurer ce groupe de sécurité pour toutes les autres options d'installation.</block>
   <block id="aa414a57d6f1347fc5212beb06655a8e" category="paragraph">Les règles de pare-feu prédéfinies pour le connecteur ouvrent tout le trafic sortant. Si cela est acceptable, suivez les règles de base de l'appel sortant. Si vous avez besoin de règles plus rigides, utilisez les règles de sortie avancées.</block>
   <block id="bd83f7d2350eb6b777b2622dfd275ab6" category="paragraph">Les règles de pare-feu prédéfinies pour le connecteur comprennent les règles de trafic sortant suivantes.</block>
-  <block id="be541d1f37f2cc0c7ba1cfd7fcfbb4db" category="doc">Connexion aux réseaux cibles</block>
-  <block id="3f92e0c134aea90b900c9d9fb8728adc" category="paragraph">Par exemple, si vous installez un connecteur dans votre réseau d'entreprise, vous devez configurer une connexion VPN au réseau virtuel dans lequel vous lancez Cloud Volumes ONTAP.</block>
-  <block id="c0dfa216f26874dae52a89e0090a3358" category="paragraph">Le connecteur nécessite un accès Internet sortant pour gérer les ressources et les processus au sein de votre environnement de cloud public.</block>
-  <block id="338578acf7e0dc54ebcd8c3592f0b022" category="section-title">Groupe de sécurité</block>
-  <block id="ae6252cb830dbd695650f78870fe4309" category="inline-link">Interface utilisateur locale</block>
-  <block id="cdaa40a72c6d3044b5345516c0e4e251" category="paragraph">Il n'y a pas de trafic entrant vers le connecteur, sauf si vous le lancez ou si le connecteur est utilisé comme proxy pour les messages AutoSupport. HTTP et HTTPS permettent l'accès au<block ref="cf3f5d195cacf9f3415f4c81082e9d29" category="inline-link-rx"></block>, que vous utiliserez dans de rares circonstances. SSH n'est nécessaire que si vous devez vous connecter à l'hôte pour le dépannage.</block>
   <block id="5dba83ec70c57d2bf0180e542772a92f" category="summary">Une fois que vous vous êtes inscrit à BlueXP, vous pouvez vous connecter à partir de la console web pour commencer à gérer vos données et votre infrastructure de stockage.</block>
   <block id="8ccd00d958a4b1c81d6eb1a97c4cc8b6" category="doc">Se connecter à BlueXP (mode standard)</block>
   <block id="ba4b1c8da80214fd24d3e708e6d5a43e" category="paragraph">Vous pouvez vous connecter à la console Web BlueXP à l'aide de l'une des options suivantes :</block>
@@ -3776,13 +3694,6 @@ La découverte sans connecteur (découverte directe) n'est pas prise en charge.<
   <block id="979b0001d7bec41aff8509faf7b59bef" category="paragraph">Notez que ce noeud final est toujours requis pour toutes les autres configurations en mode restreint et pour le mode standard.</block>
   <block id="b7e5db85ee5e5c349f5841d09bf19cbe" category="paragraph">Ce terminal n'est pas requis dans les régions Azure Government.</block>
   <block id="8e1098945acc0cdc1dade8505d9ce607" category="paragraph">Ce terminal n'est requis que dans les régions Azure Government.</block>
-  <block id="2ecb939d80f14a8df5cdeee557b8a6a2" category="cell">\https://*.blob.core.windows.net
-
-\https://cloudmanagerinfraprod.azurecr.io
-Ce terminal n'est pas requis dans les régions Azure Government.
-
-\https://occmclientinfragov.azurecr.us
-Ce terminal n'est requis que dans les régions Azure Government.</block>
   <block id="297a49f6150dc8dc8d45620c0f09f393" category="list-text">Si vous souhaitez gérer des ressources dans d'autres projets Google Cloud, autorisez l'accès en ajoutant le compte de service doté du rôle BlueXP à ce projet. Vous devrez répéter cette étape pour chaque projet.</block>
   <block id="1f7d098197ba2def0ffc66c388b2aa6c" category="paragraph">Si vous créez un nouvel environnement de travail pour Cloud Volumes ONTAP, BlueXP sélectionne les informations d'identification AWS suivantes par défaut :</block>
   <block id="1c16bd0b2377f4460ae56ecb40a419ae" category="paragraph">Notez que vous pouvez choisir les abonnements Azure associés à ce rôle. Chaque abonnement que vous choisissez fournit les autorisations de connecteur pour gérer les ressources de cet abonnement (par exemple, Cloud Volumes ONTAP).</block>
@@ -3794,7 +3705,6 @@ Ce terminal n'est requis que dans les régions Azure Government.</block>
   <block id="4f700fdc55105ee1225978e0ecbf1046" category="paragraph">Si vous utilisez Cloud Volumes ONTAP, le connecteur doit être déployé dans la même région Azure que les systèmes Cloud Volumes ONTAP qu'il gère, ou dans le<block ref="71e0e9a7366955554f0600c5ea8cfc7f" category="inline-link-rx"></block> Pour les systèmes Cloud Volumes ONTAP. Cette exigence garantit qu'une connexion Azure Private Link est utilisée entre Cloud Volumes ONTAP et les comptes de stockage associés.</block>
   <block id="ddc3be173496396ad174fa34013f6165" category="list-text">Si vous souhaitez gérer les ressources d'autres abonnements Azure, passez à cet abonnement, puis répétez ces étapes.</block>
   <block id="89297fbbf3c86991163b7008fe105840" category="paragraph">Pour payer les services BlueXP à un taux horaire (PAYGO) ou dans le cadre d'un contrat annuel, les identifiants AWS doivent être associés à un abonnement AWS Marketplace.</block>
-  <block id="4047ebfdbd8672d8c7471db55440e35a" category="list-text">Si vous souhaitez gérer des ressources dans des abonnements supplémentaires, passez à cet abonnement, puis répétez ces étapes.</block>
   <block id="cb4a26e3cea7ec3938d93961d212ef39" category="list-text">Si vous souhaitez gérer des ressources dans d'autres projets, accordez l'accès en ajoutant le compte de service doté du rôle BlueXP à ce projet. Vous devrez répéter cette étape pour chaque projet.</block>
   <block id="c063b725387c641804ed10699362a645" category="list-text">Lorsque vous déployez le connecteur, vous êtes invité à sélectionner un<block ref="98f22f2dda0728ebb39af9a8fe826c8e" category="inline-link-rx"></block> Pour l'instance de VM. BlueXP obtient les autorisations du compte de service pour créer et gérer les systèmes Cloud Volumes ONTAP, gérer les sauvegardes à l'aide de la sauvegarde et de la restauration BlueXP, etc. Les autorisations sont fournies en ajoutant un rôle personnalisé au compte de service.</block>
   <block id="4196d70b52fef46e6943a70842908897" category="paragraph">Si vous créez un nouvel environnement de travail pour Cloud Volumes ONTAP, BlueXP sélectionne les informations d'identification Azure suivantes par défaut :</block>
@@ -3809,4 +3719,68 @@ Ce terminal n'est requis que dans les régions Azure Government.</block>
   <block id="238db521ba5110fd4f7c460de28dd0c8" category="inline-link">Accédez ici pour découvrir comment afficher, créer et gérer vos compartiments de stockage cloud à l'aide de BlueXP</block>
   <block id="8bc5e348bcf49d1543e86fd28ce45f86" category="paragraph">Une nouvelle fonctionnalité vous permet désormais de créer et de modifier des compartiments Google Cloud Storage.<block ref="640cf64376886268ca971c71c762f644" category="inline-link-rx"></block>.</block>
   <block id="19b587cc77ce4b8566975983ec907303" category="sidebar">Gérez vos compartiments de stockage Google Cloud</block>
+  <block id="161fbe930f63fa83671b46be2b2b3d58" category="paragraph">Vous devez disposer des éléments suivants :</block>
+  <block id="7e0b6f72a006c5db4d352632364cae2a" category="paragraph">Pour plus de détails, reportez-vous à<block ref="f85f976c363ea77b8f2232a1ebbc4d2d" category="inline-link-rx"></block></block>
+  <block id="d6feb2cb4605dd3d35a1cfeb944fe219" category="paragraph">Vous devrez fournir ces informations pendant l'installation.</block>
+  <block id="1b6d3b3a89f4e066eb8bb8d481156cbb" category="list-text">*Type d'instance* : en fonction de la disponibilité de la région, choisissez un type d'instance qui répond aux exigences de RAM et de CPU (t3.xlarge est recommandé).</block>
+  <block id="2ad37577d6b48e75deace7b9df85fa0f" category="paragraph">Il n'y a pas de trafic entrant vers le connecteur, sauf si vous l'initiez ou si le connecteur est utilisé comme proxy pour envoyer des messages AutoSupport de Cloud Volumes ONTAP au support NetApp.</block>
+  <block id="46b7ac383833d40797a3c63596b781a1" category="list-text">Les connexions entrantes via le port 3128 sont requises si vous déployez des systèmes Cloud Volumes ONTAP dans un sous-réseau où aucune connexion Internet sortante n'est disponible.</block>
+  <block id="b9ea60abcff3cae1e1a8e213a053504b" category="paragraph">| Services AWS (amazonaws.com):</block>
+  <block id="29181ef9f282c2bfcd708d63d5d8f305" category="paragraph">| pour gérer les ressources dans AWS. Le point final exact dépend de la région dans laquelle vous déployez le connecteur.<block ref="04572646466baf6f86d09965eb5c3c86" category="inline-link-rx"></block></block>
+  <block id="37602e8df38580064bdd885f0963ea8e" category="paragraph">| \https://management.azure.com
+\https://login.microsoftonline.com
+\https://blob.core.windows.net
+\https://core.windows.net</block>
+  <block id="d0707af2c187855ac589f3f34f06301d" category="paragraph">| pour gérer les ressources des régions publiques Azure.</block>
+  <block id="513d0b8eda207c9dd9f97d05730dcca2" category="paragraph">|
+\https://management.azure.microsoft.scloud
+\https://login.microsoftonline.microsoft.scloud
+\https://blob.core.microsoft.scloud
+\https://core.microsoft.scloud</block>
+  <block id="fd714c80a926246e93190f123399eb29" category="paragraph">| pour gérer les ressources de la région Azure IL6.</block>
+  <block id="3f49531f207c66c4938d5b68ae2cc805" category="paragraph">| \https://management.usgovcloudapi.net
+\https://login.microsoftonline.us
+\https://blob.core.usgovcloudapi.net
+\https://core.usgovcloudapi.net</block>
+  <block id="4e223f64569ea1042cb81c1032cff1f8" category="paragraph">| pour gérer les ressources dans les régions Azure Government.</block>
+  <block id="2b7f6d951b3a705af72cb63a7d0788dd" category="paragraph">| \https://management.chinacloudapi.cn
+\https://login.chinacloudapi.cn
+\https://blob.core.chinacloudapi.cn
+\https://core.chinacloudapi.cn</block>
+  <block id="6fc418bd4d8d26d716d678ffb2c516e9" category="paragraph">| pour gérer les ressources dans les régions Azure Chine.</block>
+  <block id="1e20d05d6d0ad597892e7e3d08324340" category="paragraph">| \https://www.googleapis.com/compute/v1/
+\https://compute.googleapis.com/compute/v1
+\https://cloudresourcemanager.googleapis.com/v1/projects
+\https://www.googleapis.com/compute/beta
+\https://storage.googleapis.com/storage/v1
+\https://www.googleapis.com/storage/v1
+\https://iam.googleapis.com/v1
+\https://cloudkms.googleapis.com/v1
+\https://www.googleapis.com/deploymentmanager/v2/projects</block>
+  <block id="641d1f191c2b819061a8e9b6046fdbeb" category="paragraph">| pour gérer les ressources dans Google Cloud.</block>
+  <block id="a6587e3625a6fa744cab6741d34f5a2b" category="paragraph">| \https://support.netapp.com | pour obtenir des informations de licence et envoyer des messages AutoSupport au support NetApp.</block>
+  <block id="cbb0e5cc736eaf87107f863bf695f576" category="paragraph">| \https://*.api.bluexp.netapp.com</block>
+  <block id="6032f72586d36689e65d40f24d6a282a" category="paragraph">| fournir des fonctionnalités et des services SaaS dans BlueXP.</block>
+  <block id="315cc875789c13a43c4e0c550413aeb3" category="paragraph">| \https://*.blob.core.windows.net</block>
+  <block id="f921751bfd3f9ccb8d1939fdcf454c55" category="paragraph">| pour mettre à niveau le connecteur et ses composants Docker.</block>
+  <block id="8e999f16c9e1bf3513a187ca219b352d" category="paragraph">\https://cloudmanagerinfraprod.azurecr.io
+Ce terminal n'est pas requis dans les régions Azure Government.</block>
+  <block id="badc30c7f0d12562a8053216959ee48c" category="paragraph">\https://occmclientinfragov.azurecr.us
+Ce terminal n'est requis que dans les régions Azure Government.</block>
+  <block id="d7a02621d52c29a3c5f7895e817cba5b" category="list-text">Catalogue d'automatisation</block>
+  <block id="37b89c92faa8fead3ede2cb2c162ef52" category="inline-link-macro">Droits d'accès requis pour l'instance de connecteur elle-même</block>
+  <block id="9c7ace21b2c703b0c1706b0f405490ae" category="paragraph">Pour rappel, cette règle contient uniquement les autorisations nécessaires pour lancer l'instance Connector dans AWS à partir de BlueXP. <block ref="1803651c0d8d31da6be94aca23bd6fb9" category="inline-link-macro-rx"></block>.</block>
+  <block id="ee0f5d3d76febb57f0cd8c307401026c" category="paragraph">Pour préparer un déploiement Marketplace, créez des politiques IAM dans AWS et associez-les à un rôle IAM. Lorsque vous créez le connecteur à partir d'AWS Marketplace, vous êtes invité à sélectionner ce rôle IAM.</block>
+  <block id="b8173d0c4669ed6158a49dda320b1515" category="paragraph">Selon les services BlueXP que vous prévoyez d'utiliser, il peut être nécessaire de créer une seconde règle. Pour les régions standard, les autorisations sont réparties entre deux règles. Deux règles sont requises en raison d'une taille maximale de caractères pour les stratégies gérées dans AWS. <block ref="60507836418f54f0b2b646fcefa2cf2c" category="inline-link-macro-rx"></block>.</block>
+  <block id="4150e60305a134c529d4dd6e3ef8fd36" category="paragraph">Si vous prévoyez d'installer manuellement le logiciel Connector sur votre propre hôte Linux dans AWS, vous pouvez fournir les autorisations de plusieurs manières :</block>
+  <block id="ad76b7ae56285d87ab9015cde946bbf4" category="list-text"><block ref="ad76b7ae56285d87ab9015cde946bbf4" category="inline-link-rx"></block></block>
+  <block id="89db269549ff807cf08533caabe7fa9b" category="list-text"><block ref="89db269549ff807cf08533caabe7fa9b" category="inline-link-rx"></block></block>
+  <block id="c1278cf8c27b19d3b52a16894e40dc28" category="paragraph">BlueXP inclut une console web fournie via la couche SaaS, des comptes fournissant une colocation, et des connecteurs qui gèrent les environnements de travail et permettent les services cloud BlueXP.</block>
+  <block id="d9e04d29678e517946d6cb6e93b9d025" category="paragraph">Vous n'avez pas besoin d'un connecteur pour démarrer avec BlueXP, mais vous devez créer un connecteur pour déverrouiller toutes les fonctionnalités et tous les services BlueXP. Un connecteur vous permet de gérer les ressources et les processus dans vos environnements sur site et cloud. Il est nécessaire de gérer les environnements de travail (par exemple, les clusters ONTAP Cloud Volumes ONTAP et sur site) et d'utiliser de nombreux services de données BlueXP.</block>
+  <block id="64f210f4d96dcba2f41cec7b537055f7" category="list-text">Compréhension des exigences en termes de CPU et de RAM pour l'instance.</block>
+  <block id="fbeff5cf304fefe21e93306905a53be6" category="inline-link-macro">Passez en revue les exigences relatives aux instances</block>
+  <block id="beb06263e55dbf1e5b833f9e70adbd3b" category="paragraph"><block ref="56d1d87d56f0c6205965b459b10a28f6" category="inline-link-macro-rx"></block>.</block>
+  <block id="06b41e54acce796724e94edceaa8bd8c" category="paragraph"><block ref="172f848c0eaf289ec1091e3eb6e7272a" category="inline-link-macro-rx"></block>.</block>
+  <block id="faa2f324a4d310b356e12aa82056254e" category="paragraph"><block ref="c95ec05c4ecf0f3a1ae9ac9ed3381eba" prefix="" category="inline-code"></block></block>
+  <block id="9a29204f81d065ca790be5e05be49951" category="paragraph">Vous pouvez maintenant accéder au<block ref="a47e12f4350b725a128875f50f785a3b" category="inline-link-rx"></block> Pour commencer à utiliser le connecteur avec BlueXP.</block>
 </blocks>

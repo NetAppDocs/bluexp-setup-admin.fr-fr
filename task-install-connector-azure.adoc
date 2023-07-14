@@ -20,7 +20,9 @@ Créez un connecteur directement à partir de la console web BlueXP, d'Azure Mar
 ====
 .BlueXP
 --
-.Ce dont vous avez besoin
+.Avant de commencer
+Vous devez disposer des éléments suivants :
+
 * Un abonnement Azure.
 * Un vnet et un sous-réseau dans votre région Azure de votre choix.
 * Détails sur un serveur proxy, si votre organisation nécessite un proxy pour tout le trafic Internet sortant :
@@ -116,18 +118,15 @@ https://azuremarketplace.microsoft.com/en-us/marketplace/apps/netapp.netapp-onco
 Noter les éléments suivants lors de la configuration de la machine virtuelle :
 
 +
-** Le connecteur offre des performances optimales avec des disques durs ou SSD.
-** Choisissez une taille de machine virtuelle qui répond aux exigences en matière de CPU et de RAM. Nous recommandons DS3 v2.
-+
-link:reference-host-requirements-azure.html["Vérifier les exigences relatives aux machines virtuelles"].
-
-** Pour le groupe de sécurité réseau, le connecteur nécessite des connexions entrantes via SSH, HTTP et HTTPS. Quelques règles supplémentaires sont requises pour des configurations spécifiques.
+** *Taille de la VM* : choisissez une taille de VM qui répond aux exigences de CPU et de RAM. Nous recommandons DS3 v2.
+** *Disques* : le connecteur peut fonctionner de manière optimale avec des disques durs ou SSD.
+** *Groupe de sécurité réseau* : le connecteur nécessite des connexions entrantes utilisant SSH, HTTP et HTTPS.
 +
 link:reference-ports-azure.html["Afficher les règles des groupes de sécurité pour Azure"].
 
-** Sous *Management*, activez *identité gérée attribuée par le système* pour la machine virtuelle du connecteur en sélectionnant *on*.
+** *Identité* : sous *gestion*, sélectionnez *Activer l'identité gérée attribuée par le système*.
 +
-Ce paramètre est important car une identité gérée permet à la machine virtuelle Connector de s'identifier à Azure Active Directory sans fournir d'informations d'identification. Une fois que vous avez terminé, vous devez attribuer le rôle personnalisé que vous avez créé à https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/overview["En savoir plus sur les identités gérées pour les ressources Azure"^].
+Ce paramètre est important car une identité gérée permet à la machine virtuelle Connector de s'identifier à Azure Active Directory sans fournir d'informations d'identification. https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/overview["En savoir plus sur les identités gérées pour les ressources Azure"^].
 
 
 
@@ -160,7 +159,9 @@ link:task-provide-permissions-azure.html["Fournissez à BlueXP les autorisations
 --
 .Installation manuelle
 --
-.Ce dont vous avez besoin
+.Avant de commencer
+Vous devez disposer des éléments suivants :
+
 * Privilèges root pour installer le connecteur.
 * Détails sur un serveur proxy, si un proxy est requis pour accéder à Internet à partir du connecteur.
 +

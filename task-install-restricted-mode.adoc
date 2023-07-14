@@ -26,7 +26,9 @@ Installez le connecteur à partir du Marketplace de votre fournisseur de cloud o
 ====
 .AWS commercial Marketplace
 --
-.Ce dont vous avez besoin
+.Avant de commencer
+Vous devez disposer des éléments suivants :
+
 * VPC et sous-réseau qui répondent aux exigences réseau.
 +
 link:task-prepare-restricted-mode.html["En savoir plus sur les exigences de mise en réseau"]
@@ -36,6 +38,10 @@ link:task-prepare-restricted-mode.html["En savoir plus sur les exigences de mise
 link:task-prepare-restricted-mode.html#prepare-cloud-permissions["Découvrez comment configurer des autorisations AWS"]
 
 * Autorisations de vous abonner à AWS Marketplace et de vous désabonner pour votre utilisateur IAM.
+* Compréhension des exigences en termes de CPU et de RAM pour l'instance.
++
+link:task-prepare-restricted-mode.html#review-host-requirements["Passez en revue les exigences relatives aux instances"].
+
 * Une paire de clés pour l'instance EC2.
 
 
@@ -54,23 +60,23 @@ Ces étapes décrivent comment lancer l'instance à partir de la console EC2, ca
 +
 ** *Nom et balises* : saisissez un nom et des balises pour l'instance.
 ** *Image de l'application et de l'OS* : passez cette section. Le connecteur ami est déjà sélectionné.
-** *Type d'instance* : selon la disponibilité de la région, choisissez l'un des types d'instance pris en charge (t3.XLarge est recommandé).
-+
-link:task-prepare-restricted-mode.html["Vérifiez les conditions requises pour l'instance"].
-
+** *Type d'instance* : en fonction de la disponibilité de la région, choisissez un type d'instance qui répond aux exigences de RAM et de CPU (t3.xlarge est recommandé).
 ** *Paire de clés (login)* : sélectionnez la paire de clés que vous souhaitez utiliser pour vous connecter en toute sécurité à l'instance.
 ** *Paramètres réseau* : modifiez les paramètres réseau selon vos besoins :
 +
 *** Choisissez le VPC et le sous-réseau souhaités.
 *** Spécifiez si l'instance doit avoir une adresse IP publique.
 *** Spécifiez les paramètres de pare-feu qui activent les méthodes de connexion requises pour l'instance de connecteur : SSH, HTTP et HTTPS.
++
+Quelques règles supplémentaires sont requises pour des configurations spécifiques.
+
++
+link:reference-ports-aws.html["Afficher les règles des groupes de sécurité pour AWS"].
+
 
 
 ** *Configurer le stockage* : conservez les options de stockage par défaut.
 ** *Détails avancés* : sous *profil d'instance IAM*, choisissez le rôle IAM qui inclut les autorisations requises pour le connecteur.
-+
-link:task-prepare-restricted-mode.html["Découvrez comment configurer des autorisations AWS"].
-
 ** *Résumé* : consultez le résumé et cliquez sur *lancer l'instance*.
 
 
@@ -85,7 +91,9 @@ Configurez BlueXP.
 --
 .AWS Gov Marketplace
 --
-.Ce dont vous avez besoin
+.Avant de commencer
+Vous devez disposer des éléments suivants :
+
 * VPC et sous-réseau qui répondent aux exigences réseau.
 +
 link:task-prepare-restricted-mode.html["En savoir plus sur les exigences de mise en réseau"]
@@ -137,7 +145,9 @@ Configurez BlueXP.
 --
 .Azure Marketplace
 --
-.Ce dont vous avez besoin
+.Avant de commencer
+Vous devez disposer des éléments suivants :
+
 * Vnet et sous-réseau répondant aux exigences de mise en réseau.
 +
 link:task-prepare-restricted-mode.html["En savoir plus sur les exigences de mise en réseau"]
@@ -175,7 +185,7 @@ https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/public-ip-ad
 
 ** *Groupe de sécurité réseau* : le connecteur nécessite des connexions entrantes utilisant SSH, HTTP et HTTPS.
 +
-link:task-prepare-restricted-mode.html["En savoir plus sur les exigences de mise en réseau"].
+link:reference-ports-azure.html["Afficher les règles des groupes de sécurité pour Azure"].
 
 ** *Identité* : sous *gestion*, sélectionnez *Activer l'identité gérée attribuée par le système*.
 +
@@ -195,7 +205,9 @@ Configurez BlueXP.
 --
 .Installation manuelle
 --
-.Ce dont vous avez besoin
+.Avant de commencer
+Vous devez disposer des éléments suivants :
+
 * Privilèges root pour installer le connecteur.
 * Détails sur un serveur proxy, si un proxy est requis pour accéder à Internet à partir du connecteur.
 +
@@ -268,7 +280,7 @@ L'utilisateur doit être un utilisateur local. Les utilisateurs du domaine ne so
 
 
 +
---cacert spécifie un certificat signé par une autorité de certification à utiliser pour l'accès HTTPS entre le connecteur et le serveur proxy. h
+--cacert spécifie un certificat signé par une autorité de certification à utiliser pour l'accès HTTPS entre le connecteur et le serveur proxy. Ce paramètre est requis uniquement si vous spécifiez un serveur proxy HTTPS ou si le proxy est un proxy interceptant.
 
 
 
@@ -359,7 +371,6 @@ BlueXP dispose désormais des autorisations dont il a besoin pour effectuer des 
 Fournissez à BlueXP la clé d'accès AWS pour un utilisateur IAM qui dispose des autorisations requises.
 
 .Étapes
-. Assurez-vous que le bon connecteur est actuellement sélectionné dans BlueXP.
 . Dans le coin supérieur droit de la console BlueXP, cliquez sur l'icône Paramètres et sélectionnez *informations d'identification*.
 +
 image:screenshot_settings_icon.gif["Capture d'écran affichant l'icône Paramètres dans le coin supérieur droit de la console BlueXP."]
@@ -397,7 +408,7 @@ NOTE: BlueXP Operator est le nom par défaut fourni dans la stratégie BlueXP. S
 .. Cliquez sur *Sélectionner*.
 .. Cliquez sur *Suivant*.
 .. Cliquez sur *Revue + affecter*.
-.. Si vous souhaitez gérer des ressources dans des abonnements supplémentaires, passez à cet abonnement, puis répétez ces étapes.
+.. Si vous souhaitez gérer les ressources d'autres abonnements Azure, passez à cet abonnement, puis répétez ces étapes.
 
 
 
@@ -411,7 +422,6 @@ BlueXP dispose désormais des autorisations dont il a besoin pour effectuer des 
 Fournissez à BlueXP les informations d'identification du principal de service Azure que vous avez précédemment configuré.
 
 .Étapes
-. Accédez au https://console.bluexp.netapp.com["Console BlueXP"^] et connectez-vous.
 . Dans le coin supérieur droit de la console BlueXP, cliquez sur l'icône Paramètres et sélectionnez *informations d'identification*.
 +
 image:screenshot_settings_icon.gif["Capture d'écran affichant l'icône Paramètres dans le coin supérieur droit de la console BlueXP."]

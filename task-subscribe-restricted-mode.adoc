@@ -14,7 +14,7 @@ summary: 'Abonnez-vous à BlueXP depuis le marché de votre fournisseur cloud po
 
 
 [role="lead"]
-Abonnez-vous à BlueXP depuis le marché de votre fournisseur cloud pour payer les services BlueXP à un taux horaire ou via un contrat annuel. Si vous avez acheté une licence auprès de NetApp, vous devez également souscrire à l'offre Marketplace. Votre licence est toujours facturée en premier, mais vous serez facturé au taux horaire si vous dépassez votre capacité sous licence ou si la période de validité de la licence expire.
+Abonnez-vous à BlueXP sur le marché de votre fournisseur cloud pour payer les services BlueXP à un taux horaire (PAYGO) ou un contrat annuel. Si vous avez acheté une licence NetApp (BYOL), vous devez également souscrire à l'offre Marketplace. Votre licence est toujours facturée en premier, mais vous serez facturé au taux horaire si vous dépassez votre capacité sous licence ou si la période de validité de la licence expire.
 
 Un abonnement Marketplace permet de facturer les services BlueXP suivants en mode restreint :
 
@@ -73,9 +73,6 @@ video::video_subscribing_aws.mp4[width=848,height=480]
 --
 .Azure
 --
-
-NOTE: Dans Azure, les contrats annuels ne sont pas pris en charge par les régions gouvernementales.
-
 .Étapes
 . Dans le coin supérieur droit de la console BlueXP, cliquez sur l'icône Paramètres et sélectionnez *informations d'identification*.
 . Cliquez sur le menu d'action correspondant à un ensemble d'informations d'identification, puis sélectionnez *associer un abonnement*.

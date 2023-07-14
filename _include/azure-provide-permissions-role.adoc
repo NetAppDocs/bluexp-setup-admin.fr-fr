@@ -1,0 +1,28 @@
+= 
+:allow-uri-read: 
+
+
+Accédez au portail Azure et attribuez le rôle personnalisé Azure à la machine virtuelle Connector pour un ou plusieurs abonnements.
+
+.Étapes
+. Sur le portail Azure, ouvrez le service *Subscriptions* et sélectionnez votre abonnement.
+. Cliquez sur *contrôle d'accès (IAM)* > *Ajouter* > *Ajouter affectation de rôle*.
+. Dans l'onglet *role*, sélectionnez le rôle *BlueXP Operator* et cliquez sur *Next*.
++
+
+NOTE: BlueXP Operator est le nom par défaut fourni dans la stratégie BlueXP. Si vous avez choisi un autre nom pour le rôle, sélectionnez-le à la place.
+
+. Dans l'onglet *membres*, procédez comme suit :
++
+.. Attribuez l'accès à une identité *gérée*.
+.. Cliquez sur *Sélectionner les membres*, sélectionnez l'abonnement dans lequel la machine virtuelle de connecteur a été créée, choisissez *machine virtuelle*, puis sélectionnez la machine virtuelle de connecteur.
+.. Cliquez sur *Sélectionner*.
+.. Cliquez sur *Suivant*.
+.. Cliquez sur *Revue + affecter*.
+.. Si vous souhaitez gérer les ressources d'autres abonnements Azure, passez à cet abonnement, puis répétez ces étapes.
+
+
+
+
+.Résultat
+BlueXP dispose désormais des autorisations dont il a besoin pour effectuer des actions dans Azure en votre nom.

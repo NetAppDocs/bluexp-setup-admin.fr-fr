@@ -145,7 +145,7 @@ Un compte de service est requis pour fournir le connecteur avec les autorisation
 L'exemple suivant crée un rôle nommé « connecteur » au niveau du projet :
 
 +
-les rôles iam gcloud créent connecteur --projet=myproject --file=connector.yaml
+`gcloud iam roles create connector --project=myproject --file=connector.yaml`
 
 +
 https://cloud.google.com/iam/docs/creating-custom-roles#iam-custom-roles-create-gcloud["Documents Google Cloud : création et gestion de rôles personnalisés"^]

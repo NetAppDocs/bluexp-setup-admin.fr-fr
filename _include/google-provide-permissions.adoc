@@ -1,0 +1,16 @@
+= 
+:allow-uri-read: 
+
+
+Associez le compte de service à la VM Connector.
+
+.Étapes
+. Accédez au portail Google Cloud et attribuez le compte de service à l'instance de la VM Connector.
++
+https://cloud.google.com/compute/docs/access/create-enable-service-accounts-for-instances#changeserviceaccountandscopes["Documentation Google Cloud : modification du compte de service et des étendues d'accès pour une instance"^]
+
+. Si vous souhaitez gérer des ressources dans d'autres projets, accordez l'accès en ajoutant le compte de service doté du rôle BlueXP à ce projet. Vous devrez répéter cette étape pour chaque projet.
+
+
+.Résultat
+BlueXP dispose désormais des autorisations dont il a besoin pour effectuer des actions en votre nom dans Google Cloud.
