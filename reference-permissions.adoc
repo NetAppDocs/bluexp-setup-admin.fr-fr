@@ -36,6 +36,18 @@ Vous devez également vous assurer que la stratégie est à jour lorsque de nouv
 
 
 | Fonctionnement du Cloud Volumes ONTAP | Un rôle IAM doit être associé à chaque nœud Cloud Volumes ONTAP dans AWS. Il en va de même pour le médiateur HA. L'option par défaut est de permettre à BlueXP de créer les rôles IAM pour vous, mais vous pouvez utiliser votre propre. | https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-set-up-iam-roles.html["Découvrez comment configurer vous-même les rôles IAM"^] 
+
+
+| Sauvegardez vos clusters ONTAP sur site dans Amazon S3 | Lors de l'activation des sauvegardes sur vos volumes ONTAP, la sauvegarde et la restauration BlueXP vous invite à saisir une clé d'accès et un secret pour un utilisateur IAM qui dispose d'autorisations spécifiques. | https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-onprem-to-aws.html#set-up-s3-permissions["Configurez les autorisations S3 pour les sauvegardes"^] 
+
+
+| Sauvegardez vos clusters ONTAP sur site dans StorageGRID | Lorsque vous préparez StorageGRID en tant que cible de sauvegarde pour les clusters ONTAP, BlueXP Backup and Recovery vous invite à entrer une clé d'accès et un secret pour un utilisateur IAM qui possède des autorisations spécifiques. | https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-onprem-private-cloud.html#prepare-storagegrid-as-your-backup-target["Préparez StorageGRID en tant que cible de sauvegarde"^] 
+
+
+| Tiering des clusters ONTAP sur site dans AWS | Lorsque vous activez le Tiering BlueXP vers AWS, l'assistant vous invite à saisir une clé d'accès et une clé secrète. Ces identifiants sont transmis au cluster ONTAP afin que ONTAP puisse hiérarchiser les données dans le compartiment S3. | https://docs.netapp.com/us-en/bluexp-tiering/task-tiering-onprem-aws.html#set-up-s3-permissions["Configurez les autorisations S3 pour le Tiering"^] 
+
+
+| Déplacez les clusters ONTAP sur site vers StorageGRID | Lorsque vous configurez le Tiering BlueXP vers StorageGRID, vous devez fournir le Tiering BlueXP avec une clé d'accès S3 et une clé secrète. Le Tiering BlueXP utilise les clés pour accéder à vos compartiments. | https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-onprem-private-cloud.html#prepare-storagegrid-as-your-backup-target["Préparez le Tiering vers StorageGRID"^] 
 |===
 
 
@@ -74,4 +86,20 @@ link:reference-permissions-azure.html["Autorisations Azure pour le connecteur"]
 | Fonctionnement du connecteur | Le compte de service de l'instance de VM Connector doit disposer d'autorisations spécifiques pour les opérations quotidiennes. Vous devez associer le compte de service au connecteur lorsque vous le déployez depuis BlueXP.
 
 Vous devez également vous assurer que la stratégie est à jour lorsque de nouvelles autorisations sont ajoutées dans les versions suivantes. | link:reference-permissions-gcp.html["Autorisations Google Cloud pour le connecteur"] 
+
+
+| Sauvegarde de Cloud Volumes ONTAP dans Google Cloud  a| 
+Lorsque vous utilisez la sauvegarde et la restauration BlueXP pour sauvegarder Cloud Volumes ONTAP, vous devez ajouter des autorisations au connecteur dans les scénarios suivants :
+
+* Vous souhaitez utiliser la fonctionnalité « Rechercher et restaurer »
+* Vous souhaitez utiliser des clés de chiffrement gérées par le client (CMEK)
+
+ a| 
+* https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-to-gcp.html#verify-or-add-permissions-to-the-connector["Autorisations pour la recherche et l'amplificateur ; fonctionnalité de restauration"^]
+* https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-to-gcp.html#required-information-for-using-customer-managed-encryption-keys-cmek["Autorisations pour les CMEKs"^]
+
+
+
+
+| Sauvegardez les clusters ONTAP sur site dans Google Cloud | Lorsque vous utilisez la sauvegarde et la restauration BlueXP pour sauvegarder des clusters ONTAP sur site, vous devez ajouter des autorisations au connecteur pour utiliser la fonctionnalité de recherche et de restauration. | https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-onprem-to-gcp.html#verify-or-add-permissions-to-the-connector["Autorisations pour la recherche et l'amplificateur ; fonctionnalité de restauration"^] 
 |===

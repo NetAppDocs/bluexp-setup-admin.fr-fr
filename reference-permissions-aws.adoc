@@ -785,7 +785,7 @@ Lorsque vous utilisez la méthode de recherche et de restauration pour restaurer
 * s3:PutBuckePublicAccessBlock
 * s3:AbortMultipartUpload
 * s3:ListMultipartUploadParts
-* athena:StartQueryExecutionc
+* athena:StartQueryExecution
 * athena:GetQueryResults
 * athena:GetQueryExecution
 * athena:StopQueryExecution

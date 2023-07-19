@@ -237,7 +237,7 @@ image:diagram-private-mode-onprem.png["Image conceptuelle qui montre un data Cen
 
 BlueXP fonctionne comme suit en mode privé :
 
-Communication sortante:: Aucune connectivité sortante n'est requise. Tous les packages, dépendances et composants essentiels sont emballés avec le connecteur et servis à partir de la machine locale. La connectivité aux ressources accessibles au public de votre fournisseur cloud n'est requise que si vous déployez Cloud Volumes ONTAP.
+Communication sortante:: Aucune connectivité sortante n'est requise vers la couche SaaS BlueXP. Tous les packages, dépendances et composants essentiels sont emballés avec le connecteur et servis à partir de la machine locale. La connectivité aux ressources accessibles au public de votre fournisseur cloud n'est requise que si vous déployez Cloud Volumes ONTAP.
 Emplacement pris en charge pour le connecteur:: En mode privé, le connecteur est pris en charge dans le cloud ou sur site.
 Installation du connecteur:: Les installations manuelles du connecteur sont prises en charge sur votre propre hôte Linux dans le cloud ou sur site.
 Mises à niveau des connecteurs:: Vous devez mettre à niveau le logiciel du connecteur manuellement. Le logiciel du connecteur est publié sur le site de support NetApp à intervalles non définis.

@@ -50,6 +50,8 @@ Avec les deux options, la première étape consiste à créer un rôle personnal
 
 Créez un rôle personnalisé que vous pouvez attribuer à votre compte Azure ou à un principal de service.
 
+Notez que vous pouvez créer un rôle personnalisé Azure à l'aide du portail Azure, d'Azure PowerShell, de l'interface de ligne de commandes Azure ou de l'API REST. La procédure suivante explique comment créer le rôle à l'aide de l'interface de ligne de commandes Azure. Si vous préférez utiliser une autre méthode, reportez-vous à la section https://learn.microsoft.com/en-us/azure/role-based-access-control/custom-roles#steps-to-create-a-custom-role["Documentation Azure"^]
+
 .Étapes
 . Copiez les autorisations requises pour un nouveau rôle personnalisé dans Azure et enregistrez-les dans un fichier JSON.
 +
@@ -314,6 +316,8 @@ Si vous déployez le connecteur à partir d'Azure Marketplace ou si vous install
 ====
 .Rôle personnalisé
 --
+Notez que vous pouvez créer un rôle personnalisé Azure à l'aide du portail Azure, d'Azure PowerShell, de l'interface de ligne de commandes Azure ou de l'API REST. La procédure suivante explique comment créer le rôle à l'aide de l'interface de ligne de commandes Azure. Si vous préférez utiliser une autre méthode, reportez-vous à la section https://learn.microsoft.com/en-us/azure/role-based-access-control/custom-roles#steps-to-create-a-custom-role["Documentation Azure"^]
+
 .Étapes
 . Si vous prévoyez d'installer manuellement le logiciel sur votre propre hôte, activez une identité gérée attribuée par le système sur la machine virtuelle afin de fournir les autorisations Azure requises via un rôle personnalisé.
 +
@@ -391,6 +395,9 @@ Vous avez créé l'application AD et le principal de service.
 
 .Attribuez l'application à un rôle
 . Création d'un rôle personnalisé :
++
+Notez que vous pouvez créer un rôle personnalisé Azure à l'aide du portail Azure, d'Azure PowerShell, de l'interface de ligne de commandes Azure ou de l'API REST. La procédure suivante explique comment créer le rôle à l'aide de l'interface de ligne de commandes Azure. Si vous préférez utiliser une autre méthode, reportez-vous à la section https://learn.microsoft.com/en-us/azure/role-based-access-control/custom-roles#steps-to-create-a-custom-role["Documentation Azure"^]
+
 +
 .. Copier le contenu du link:reference-permissions-azure.html["Autorisations de rôle personnalisées pour le connecteur"] Et les enregistrer dans un fichier JSON.
 .. Modifiez le fichier JSON en ajoutant des identifiants d'abonnement Azure à l'étendue assignable.
