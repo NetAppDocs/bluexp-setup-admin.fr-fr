@@ -2906,9 +2906,7 @@ Notez que la page s'actualise entre le test de la connexion et l'activation de l
   <block id="be01cd1242a81da984b776c6a5aacb83" category="section-title">Autoriser les services tiers</block>
   <block id="0d36dab0ce71c33a40b8ea4c8c773291" category="paragraph">Autoriser les services tiers de votre compte à accéder à des services tiers disponibles dans BlueXP. Les services clouds tiers sont similaires aux services proposés par NetApp, mais ils sont gérés et pris en charge par des sociétés tierces.</block>
   <block id="90837faa596ab1d28c90a381b6997722" category="list-text">Dans l'onglet *Présentation*, activez le paramètre *Autoriser les services tiers*.</block>
-  <block id="84dddaa8f7ae88c549f969e61659e03a" category="summary">Pour utiliser les fonctionnalités et services de BlueXP, vous devez fournir des autorisations pour que BlueXP puisse effectuer des opérations dans votre environnement cloud. Utilisez les liens de cette page pour accéder rapidement aux autorisations requises dans BlueXP.</block>
   <block id="f664478fbdfbd15104b014e41c35e88c" category="doc">Résumé des autorisations pour BlueXP</block>
-  <block id="b26840ebf08ae862c7d257c1229a3091" category="paragraph">Pour utiliser les fonctionnalités et services de BlueXP, vous devez fournir des autorisations pour que BlueXP puisse effectuer des opérations dans votre environnement cloud. Utilisez les liens de cette page pour accéder rapidement aux autorisations dont vous avez besoin en fonction de votre objectif.</block>
   <block id="d2c0c7feb18d0e89bab9d23b6ec4c042" category="section-title">Autorisations AWS</block>
   <block id="97e7c9a7d06eac006a28bf05467fcc8b" category="cell">Lien</block>
   <block id="eec108a26c2c4c3392174c931352146b" category="cell">Déployez des connecteurs à partir de BlueXP</block>
@@ -3780,7 +3778,6 @@ Ce terminal n'est requis que dans les régions Azure Government.</block>
   <block id="649c5239d0163afb3411e36c5e857809" category="cell">Lorsque vous préparez StorageGRID en tant que cible de sauvegarde pour les clusters ONTAP, BlueXP Backup and Recovery vous invite à entrer une clé d'accès et un secret pour un utilisateur IAM qui possède des autorisations spécifiques.</block>
   <block id="08cdeb7ce64fda06111111c8fea66510" category="inline-link">Préparez StorageGRID en tant que cible de sauvegarde</block>
   <block id="62d09ae20af8b1a53c08a95792d3bdb1" category="cell"><block ref="62d09ae20af8b1a53c08a95792d3bdb1" category="inline-link-rx"></block></block>
-  <block id="746562efc5b1b0667c7d322c1bda9554" category="cell">Tiering des clusters ONTAP sur site dans AWS</block>
   <block id="e6b202bba8f7c7c067b2137e58a41397" category="cell">Lorsque vous activez le Tiering BlueXP vers AWS, l'assistant vous invite à saisir une clé d'accès et une clé secrète. Ces identifiants sont transmis au cluster ONTAP afin que ONTAP puisse hiérarchiser les données dans le compartiment S3.</block>
   <block id="827bb82562627531a1105788bd9826e6" category="inline-link">Configurez les autorisations S3 pour le Tiering</block>
   <block id="5f2c172dbfc6022aa5027029dc114852" category="cell"><block ref="5f2c172dbfc6022aa5027029dc114852" category="inline-link-rx"></block></block>
@@ -3815,4 +3812,7 @@ Ce terminal n'est requis que dans les régions Azure Government.</block>
   <block id="d1c50736002ef3676d1c143a04d4cc59" category="list-text">athena:StartQueryExecution</block>
   <block id="e7a0ee2f9390b4213bbeb8838f2d3896" category="list-text">Aucune connectivité sortante n'est requise vers la couche SaaS BlueXP. Tous les packages, dépendances et composants essentiels sont emballés avec le connecteur et servis à partir de la machine locale. La connectivité aux ressources accessibles au public de votre fournisseur cloud n'est requise que si vous déployez Cloud Volumes ONTAP.</block>
   <block id="75dbd7f878d584e6e9f033b3806519ac" category="sidebar">Préparation de la mise en réseau</block>
+  <block id="48f169efc2b522ea6ab10451a2a28cd8" category="summary">Pour utiliser les fonctionnalités et les services BlueXP, vous devez fournir des autorisations afin que BlueXP puisse effectuer des opérations dans votre environnement cloud. Utilisez les liens de cette page pour accéder rapidement aux autorisations dont vous avez besoin en fonction de votre objectif.</block>
+  <block id="6bc8bd282f003afcaaf88391550efbaf" category="cell">Tiering des clusters ONTAP sur site dans Amazon S3</block>
+  <block id="23c27147b4e0e766d76ac0f6e872424e" category="section-title">Autorisations StorageGRID</block>
 </blocks>
