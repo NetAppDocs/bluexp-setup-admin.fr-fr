@@ -1828,7 +1828,6 @@
   <block id="12007e1d59f4d09c87dbe2c438256244" category="cell">Destination</block>
   <block id="241b5fab8e737eaa79c543efe7307059" category="cell">Appels API et AutoSupport</block>
   <block id="096a28c32a85d3d48462b468a3700d9a" category="cell">LIF de gestion de cluster ONTAP et Internet sortant</block>
-  <block id="7863903e1b4b84391267ab5c4af6a68d" category="cell">Appels d'API vers Google Cloud et ONTAP, vers la classification BlueXP, vers la protection BlueXP contre les ransomwares, et envoi de messages AutoSupport à NetApp</block>
   <block id="22043367a89ddcf3eb99eec509a967ba" category="cell">Appels API</block>
   <block id="e93028bdc1aacdfb3687181f2031765d" category="cell">3000</block>
   <block id="e9ed822bdea417e9dfd79a2c81634ba4" category="cell">ONTAP HA médiateur</block>
@@ -3815,4 +3814,7 @@ Ce terminal n'est requis que dans les régions Azure Government.</block>
   <block id="48f169efc2b522ea6ab10451a2a28cd8" category="summary">Pour utiliser les fonctionnalités et les services BlueXP, vous devez fournir des autorisations afin que BlueXP puisse effectuer des opérations dans votre environnement cloud. Utilisez les liens de cette page pour accéder rapidement aux autorisations dont vous avez besoin en fonction de votre objectif.</block>
   <block id="6bc8bd282f003afcaaf88391550efbaf" category="cell">Tiering des clusters ONTAP sur site dans Amazon S3</block>
   <block id="23c27147b4e0e766d76ac0f6e872424e" category="section-title">Autorisations StorageGRID</block>
+  <block id="eb44d47feda5532d1121c79d84128d2e" category="cell">Appels d'API vers AWS, vers ONTAP, vers la classification BlueXP, vers la protection BlueXP contre les ransomware et envoi de messages AutoSupport à NetApp</block>
+  <block id="e671b39f5fdb18b38eb5c968b368b3aa" category="cell">Appels d'API vers Azure, vers ONTAP, vers la classification BlueXP, vers la protection BlueXP contre les ransomware et envoi de messages AutoSupport à NetApp</block>
+  <block id="8150638aa57d2b5755445cf3ab8eac20" category="cell">Appels d'API vers Google Cloud, vers ONTAP, vers la classification BlueXP, vers la protection BlueXP contre les ransomware et envoi de messages AutoSupport à NetApp</block>
 </blocks>
