@@ -168,14 +168,12 @@ De gérer des ressources dans Google Cloud.
 
 === Serveur proxy
 
-Si votre organisation nécessite le déploiement d'un serveur proxy pour tout le trafic Internet sortant, obtenez les informations suivantes sur votre proxy HTTP ou HTTPS :
+Si votre organisation nécessite le déploiement d'un serveur proxy pour tout le trafic Internet sortant, procurez-vous les informations suivantes sur votre proxy HTTP ou HTTPS. Vous devrez fournir ces informations pendant l'installation.
 
 * Adresse IP
 * Informations d'identification
 * Certificat HTTPS
 
-
-Vous devrez fournir ces informations pendant l'installation.
 
 Avec le mode privé, la seule fois que BlueXP envoie le trafic sortant est à votre fournisseur cloud pour créer un système Cloud Volumes ONTAP.
 

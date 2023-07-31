@@ -273,10 +273,8 @@
   <block id="9e434ddc2ad4b9de005368b77254223d" category="paragraph">\https://*.cloudmanager.cloud.netapp.com</block>
   <block id="115781a0043a85f8707c5c99fd02dc75" category="paragraph">\https://cloudmanager.cloud.netapp.com</block>
   <block id="23486ca53d499245ebae5460cf6d10ad" category="paragraph">Pour fournir des fonctions et des services SaaS dans BlueXP.</block>
-  <block id="7eea1027ea51763c57b7b5965f1ba900" category="admonition">Le connecteur est en train de contacter « cloudmanager.cloud.netapp.com", mais il commencera à contacter « api.bluexp.netapp.com" » dans une prochaine version.</block>
   <block id="065880318484084e9bfe33ea9c6a8702" category="cell">Pour mettre à niveau le connecteur et ses composants Docker.</block>
   <block id="824f455afa0ae197e5e7156988b6dc50" category="section-title">Serveur proxy</block>
-  <block id="dae5521ccadea1321150f5f74aad0a58" category="paragraph">Si votre organisation nécessite le déploiement d'un serveur proxy pour tout le trafic Internet sortant, obtenez les informations suivantes sur votre proxy HTTP ou HTTPS :</block>
   <block id="407c4e9fac86b98147da49acd4fa0d01" category="section-title">Ports</block>
   <block id="b68600c18c6dd9598d4518bc4a3f2c90" category="list-text">HTTP (80) et HTTPS (443) permettent d'accéder à l'interface utilisateur locale que vous utiliserez dans de rares circonstances.</block>
   <block id="a72a43431413f493c5087ab72327a680" category="list-text">SSH (22) n'est nécessaire que si vous devez vous connecter à l'hôte pour le dépannage.</block>
@@ -3614,7 +3612,6 @@ La découverte sans connecteur (découverte directe) n'est pas prise en charge.<
   <block id="19b587cc77ce4b8566975983ec907303" category="sidebar">Gérez vos compartiments de stockage Google Cloud</block>
   <block id="161fbe930f63fa83671b46be2b2b3d58" category="paragraph">Vous devez disposer des éléments suivants :</block>
   <block id="7e0b6f72a006c5db4d352632364cae2a" category="paragraph">Pour plus de détails, reportez-vous à<block ref="f85f976c363ea77b8f2232a1ebbc4d2d" category="inline-link-rx"></block></block>
-  <block id="d6feb2cb4605dd3d35a1cfeb944fe219" category="paragraph">Vous devrez fournir ces informations pendant l'installation.</block>
   <block id="1b6d3b3a89f4e066eb8bb8d481156cbb" category="list-text">*Type d'instance* : en fonction de la disponibilité de la région, choisissez un type d'instance qui répond aux exigences de RAM et de CPU (t3.xlarge est recommandé).</block>
   <block id="2ad37577d6b48e75deace7b9df85fa0f" category="paragraph">Il n'y a pas de trafic entrant vers le connecteur, sauf si vous l'initiez ou si le connecteur est utilisé comme proxy pour envoyer des messages AutoSupport de Cloud Volumes ONTAP au support NetApp.</block>
   <block id="46b7ac383833d40797a3c63596b781a1" category="list-text">Les connexions entrantes via le port 3128 sont requises si vous déployez des systèmes Cloud Volumes ONTAP dans un sous-réseau où aucune connexion Internet sortante n'est disponible.</block>
@@ -3818,4 +3815,41 @@ Ce terminal n'est requis que dans les régions Azure Government.</block>
   <block id="ecbc764762d64c7a0728c929154e75f5" category="list-text">Sélectionnez *configurer Nouveau BlueXP* et suivez les invites pour configurer le système.</block>
   <block id="22cb2add8f3bffef4e749ab0af395ded" category="list-text">*Révision* : consultez les détails, acceptez le contrat de licence, puis sélectionnez *configurer*.</block>
   <block id="451c5548be4e9e7bdee0e30d3122050a" category="paragraph"><block ref="5df7abb03e9cd39c0665b677aaa45ef4" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="6a60f29cdbb848f0645646b0cceee422" category="paragraph">Notez que le connecteur est actuellement en contact avec « cloudmanager.cloud.netapp.com", mais il commencera à contacter « api.bluexp.netapp.com" dans une prochaine version.</block>
+  <block id="2da6f1af030756bb235fd83baa6abd7b" category="paragraph">Si votre organisation nécessite le déploiement d'un serveur proxy pour tout le trafic Internet sortant, procurez-vous les informations suivantes sur votre proxy HTTP ou HTTPS. Vous devrez fournir ces informations pendant l'installation.</block>
+  <block id="f68132eadaa2c37170b842a86fa6955d" category="paragraph">Si les systèmes Cloud Volumes ONTAP ne disposent pas d'une connexion Internet sortante pour envoyer des messages AutoSupport, BlueXP les configure automatiquement pour qu'ils utilisent un serveur proxy inclus avec le connecteur. La seule condition est de s'assurer que le groupe de sécurité du connecteur autorise les connexions entrantes sur le port 3128. Vous devrez ouvrir ce port après le déploiement du connecteur.</block>
+  <block id="e12fb4f30abef516bf6f5e0e9a5b72b7" category="doc">Créez un connecteur dans Azure à partir de BlueXP</block>
+  <block id="5b943b0498231c38714aca470c3c0dab" category="paragraph">Configurez votre réseau, préparez les autorisations Azure, puis créez un connecteur dans Azure à partir de BlueXP.</block>
+  <block id="42f8643eb52a942747937327c72c8361" category="section-title">Présentation du déploiement</block>
+  <block id="ac5d5b7ded11cc7f8b4df462f961d2e8" category="paragraph">Les étapes suivantes fournissent un résumé général des tâches que vous allez effectuer sur cette page. Des détails supplémentaires sur chacune de ces étapes sont disponibles dans les sections ci-dessous.</block>
+  <block id="2ef15946081a8510366177e6ee7e5111" category="paragraph">Configurez votre réseau de manière à ce que Connector puisse gérer les ressources et les processus dans votre environnement de cloud hybride. Par exemple, vous avez besoin d'un réseau virtuel disposant d'un accès Internet sortant et de connexions réseau aux réseaux cibles.</block>
+  <block id="c794110cfe04873f3ea19458fb48df3c" category="inline-xref">Afficher les exigences réseau</block>
+  <block id="582b3a879115844ed6c92eedc860c81a" category="paragraph"><block ref="01fbc73f2f4d3ada99434a64c61d271f" category="inline-xref-macro-rx"></block>.</block>
+  <block id="3cf3b3a2d331d9973e9029f5ee423d59" category="paragraph-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block> Configurez les autorisations Azure</block>
+  <block id="1503a9f546164361607faf57c69eae56" category="paragraph">Créez un rôle personnalisé, puis appliquez-le à votre compte Azure ou à un principal de service Azure AD. BlueXP s'authentifie auprès d'Azure et utilise ces autorisations pour créer l'instance de connecteur en votre nom.</block>
+  <block id="e82d7f6d0b7a997d6eac1814ff1c2863" category="paragraph"><block ref="74b20113240190c7a71403f57a3cd8fc" category="inline-xref-macro-rx"></block>.</block>
+  <block id="aea46324800b152c6a50caff1d14e2fc" category="paragraph-title"><block ref="05b2444faffd66d76e88602ea7dd353f" category="inline-image-macro-rx" type="image"></block> Créer le connecteur</block>
+  <block id="985afe15de341c249321c6704172a4ea" category="paragraph">Depuis BlueXP, cliquez sur la liste déroulante connecteur, sélectionnez *Ajouter un connecteur* et suivez les invites.</block>
+  <block id="1dc565e14b0401db0c6aee5f8e24ef79" category="paragraph"><block ref="450d1cb8d9a0a316433d14e18974a979" category="inline-xref-macro-rx"></block>.</block>
+  <block id="95643ce42bab17c218d7c19a0c0040bb" category="paragraph">Assurez-vous que l'emplacement réseau où vous prévoyez d'installer le connecteur prend en charge les exigences suivantes.</block>
+  <block id="83bb814dc9552aa2612588ab7ce9f0e9" category="list-text">Un connecteur nécessite une connexion réseau à l'emplacement où vous prévoyez de créer et de gérer des environnements de travail. Par exemple, le vnet sur lequel vous prévoyez de créer des systèmes Cloud Volumes ONTAP ou le stockage dans votre environnement sur site.</block>
+  <block id="8e97b7d14c907dc59419c53c5e813e4d" category="list-text">L'emplacement réseau où vous déployez le connecteur doit disposer d'une connexion Internet sortante pour contacter des points finaux spécifiques, comme décrit dans les sections suivantes.</block>
+  <block id="864fadbab69859b77befd9c5a1c37c61" category="paragraph">Lors de la création du connecteur à partir de BlueXP, vous devez fournir un identifiant qui permet à BlueXP de s'authentifier auprès d'Azure et de déployer la machine virtuelle. Vous avez deux options :</block>
+  <block id="79a9c2b8e447685125856ec6046d8128" category="admonition">Ce rôle personnalisé contient uniquement les autorisations nécessaires pour lancer la machine virtuelle Connector dans Azure à partir de BlueXP. N'utilisez pas cette politique dans d'autres situations. Lorsque BlueXP crée le connecteur, il applique un nouvel ensemble d'autorisations à la VM Connector qui permet au connecteur de gérer les ressources de votre environnement de cloud public.</block>
+  <block id="00e80b4b164dd96954a27ed3236c9728" category="paragraph">Pour déployer le connecteur, BlueXP doit s'authentifier auprès d'Azure. Vous pouvez choisir entre deux méthodes d'authentification Azure.</block>
+  <block id="6dc4f3e9aa2dada18f0a17189fa7d079" category="list-text">Cliquez sur *contrôle d'accès (IAM)*.</block>
+  <block id="761218505548d0e5a2977bd7c31de50a" category="list-text">Cliquez sur *Ajouter* &gt; *Ajouter une affectation de rôle*, puis ajoutez les autorisations suivantes :</block>
+  <block id="407df91196b1a54a89a9911a8ac6a332" category="list-text">Sélectionnez le rôle *Azure SetupAsService* et cliquez sur *Suivant*.</block>
+  <block id="42cffe053a918fe3b27cd3bef2758b91" category="list-text">Cliquez sur *Sélectionner les membres*, choisissez votre compte utilisateur et cliquez sur *Sélectionner*.</block>
+  <block id="5a378b18f7bf0c4cabc6c655cd2f535e" category="list-text">Cliquez sur *Suivant*.</block>
+  <block id="e3bbb08034982e47da96f9df0529c14b" category="list-text">Cliquez sur *Revue + affecter*.</block>
+  <block id="8174c4d89029818113468594f8347c70" category="list-text">Cliquez sur *contrôle d'accès (IAM) &gt; Ajouter &gt; Ajouter une affectation de rôle*.</block>
+  <block id="54b14f07c36bed41295c2086ea238332" category="list-text">Dans l'onglet *role*, sélectionnez le rôle *BlueXP Operator* et cliquez sur *Next*.</block>
+  <block id="e567d156455b03053b50302bf4ff266e" category="list-text">Cliquez sur *Sélectionner les membres*.</block>
+  <block id="e33ca9bd2b94654f882a0e0ed82dec19" category="list-text">Sélectionnez l'application et cliquez sur *Sélectionner*.</block>
+  <block id="16d491a352eff99aff3a3090f243e9a7" category="paragraph">Créez le connecteur directement à partir de la console web BlueXP.</block>
+  <block id="38c0deaf9ce4435ad8d471fc04a21ac0" category="paragraph">Ces autorisations sont pour l'instance de connecteur elle-même. Il s'agit d'un ensemble d'autorisations différent de ce que vous avez configuré précédemment pour déployer la machine virtuelle Connector.</block>
+  <block id="d2b74161d054c69894469355bb22cb63" category="list-text">Si vous créez votre premier environnement de travail, cliquez sur *Ajouter un environnement de travail* et suivez les invites. Sinon, cliquez sur la liste déroulante *Connector* et sélectionnez *Add Connector*.</block>
+  <block id="7dafa3d9179efddb7b70ff753d853a0e" category="paragraph"><block ref="29949bbccf251af183678449a2465f09" category="inline-xref-macro-rx"></block>.</block>
+  <block id="7dee7e783d13b6d5d415926ce0bfc306" category="list-text">Cliquez sur *Ajouter*.</block>
 </blocks>
