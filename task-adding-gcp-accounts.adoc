@@ -23,16 +23,16 @@ Vous pouvez gérer les informations d'identification Google Cloud associées à 
 Lorsque vous déployez un connecteur dans Google Cloud, BlueXP crée un ensemble d'informations d'identification par défaut qui sont associées à l'instance de VM Connector. Vous pouvez à tout moment modifier l'abonnement Marketplace associé à ces informations d'identification. L'abonnement vous permet de créer un système Cloud Volumes ONTAP avec paiement à l'utilisation et d'utiliser d'autres services BlueXP.
 
 .Étapes
-. Dans le coin supérieur droit de la console BlueXP, cliquez sur l'icône Paramètres et sélectionnez *informations d'identification*.
-. Cliquez sur le menu d'action correspondant à un ensemble d'informations d'identification, puis sélectionnez *associer un abonnement*.
+. Dans le coin supérieur droit de la console BlueXP, sélectionnez l'icône Paramètres, puis sélectionnez *informations d'identification*.
+. Sélectionnez le menu d'action correspondant à un ensemble d'informations d'identification, puis sélectionnez *abonnement associé*.
 +
 image:screenshot_gcp_add_subscription.png["Capture d'écran du menu d'action pour un ensemble d'informations d'identification existantes."]
 
-. Pour associer les informations d'identification à un abonnement existant, sélectionnez un projet Google Cloud et un abonnement dans la liste déroulante, puis cliquez sur *associé*.
+. Pour associer les informations d'identification à un abonnement existant, sélectionnez un projet Google Cloud et un abonnement dans la liste déroulante, puis sélectionnez *associer*.
 +
 image:screenshot_gcp_associate.gif["Copie d'écran d'un projet Google Cloud et de l'abonnement sélectionnés pour les identifiants Google Cloud."]
 
-. Si vous n'avez pas encore d'abonnement, cliquez sur *Ajouter un abonnement > Continuer* et suivez les étapes de Google Cloud Marketplace.
+. Si vous n'avez pas encore d'abonnement, sélectionnez *Ajouter un abonnement > Continuer* et suivez les étapes indiquées dans Google Cloud Marketplace.
 +
 
 NOTE: Avant de terminer les étapes suivantes, assurez-vous que vous disposez des deux privilèges d'administrateur de facturation dans votre compte Google Cloud ainsi que d'une connexion BlueXP.
@@ -42,13 +42,13 @@ NOTE: Avant de terminer les étapes suivantes, assurez-vous que vous disposez de
 +
 image:screenshot_gcp_cvo_marketplace.png["Copie d'écran de la page Cloud Volumes ONTAP Marketplace dans Google Cloud."]
 
-.. Cliquez sur *Subscribe*.
+.. Sélectionnez *s'abonner*.
 .. Sélectionnez le compte de facturation approprié et acceptez les conditions générales.
-.. Cliquez sur *Subscribe*.
+.. Sélectionnez *s'abonner*.
 +
 Cette étape envoie votre demande de transfert à NetApp.
 
-.. Dans la boîte de dialogue contextuelle, cliquez sur *s'inscrire auprès de NetApp, Inc.*
+.. Dans la boîte de dialogue qui s'affiche, sélectionnez *s'inscrire auprès de NetApp, Inc.*
 +
 Cette étape doit être effectuée pour lier l'abonnement Google Cloud à votre compte BlueXP. Le processus de liaison d'un abonnement n'est pas terminé tant que vous n'êtes pas redirigé à partir de cette page, puis vous connecter à BlueXP.
 
@@ -69,7 +69,7 @@ BlueXP remplace l'abonnement existant pour toutes les informations d'identificat
 +
 Pour tous les autres comptes, vous devez associer manuellement l'abonnement en répétant ces étapes.
 
-*** Cliquez sur *Enregistrer*.
+*** Sélectionnez *Enregistrer*.
 +
 Dans cette vidéo, vous instructions pour vous abonner à Google Cloud Marketplace :
 

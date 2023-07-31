@@ -27,16 +27,16 @@ TIP: Pourquoi ne pas Google Cloud ? Une fois le connecteur installé sur votre s
 Si vous venez de créer ces identifiants dans AWS, leur utilisation peut prendre quelques minutes. Attendez quelques minutes avant d'ajouter les informations d'identification à BlueXP.
 
 .Étapes
-. Dans le coin supérieur droit de la console BlueXP, cliquez sur l'icône Paramètres et sélectionnez *informations d'identification*.
+. Dans le coin supérieur droit de la console BlueXP, sélectionnez l'icône Paramètres, puis sélectionnez *informations d'identification*.
 +
 image:screenshot_settings_icon.gif["Capture d'écran affichant l'icône Paramètres dans le coin supérieur droit de la console BlueXP."]
 
-. Cliquez sur *Ajouter des informations d'identification* et suivez les étapes de l'assistant.
+. Sélectionnez *Ajouter des informations d'identification* et suivez les étapes de l'assistant.
 +
 .. *Emplacement des informations d'identification* : sélectionnez *Amazon Web Services > connecteur*.
 .. *Définir les informations d'identification* : saisissez une clé d'accès AWS et une clé secrète.
 .. *Abonnement Marketplace* : associez un abonnement Marketplace à ces identifiants en vous abonnant maintenant ou en sélectionnant un abonnement existant.
-.. *Review* : confirmez les détails des nouvelles informations d'identification et cliquez sur *Add*.
+.. *Révision* : confirmez les détails des nouvelles informations d'identification et sélectionnez *Ajouter*.
 
 
 
@@ -53,11 +53,11 @@ Vous pouvez maintenant accéder au https://console.bluexp.netapp.com["Console Bl
 Si vous venez de créer ces identifiants dans Azure, leur mise à disposition peut prendre quelques minutes. Attendez quelques minutes avant d'ajouter les informations d'identification à BlueXP.
 
 .Étapes
-. Dans le coin supérieur droit de la console BlueXP, cliquez sur l'icône Paramètres et sélectionnez *informations d'identification*.
+. Dans le coin supérieur droit de la console BlueXP, sélectionnez l'icône Paramètres, puis sélectionnez *informations d'identification*.
 +
 image:screenshot_settings_icon.gif["Capture d'écran affichant l'icône Paramètres dans le coin supérieur droit de la console BlueXP."]
 
-. Cliquez sur *Ajouter des informations d'identification* et suivez les étapes de l'assistant.
+. Sélectionnez *Ajouter des informations d'identification* et suivez les étapes de l'assistant.
 +
 .. *Emplacement des informations d'identification* : sélectionnez *Microsoft Azure > connecteur*.
 .. *Définir les informations d'identification* : saisissez des informations sur l'entité principale du service Azure Active Directory qui accorde les autorisations requises :
@@ -68,7 +68,7 @@ image:screenshot_settings_icon.gif["Capture d'écran affichant l'icône Paramèt
 
 
 .. *Abonnement Marketplace* : associez un abonnement Marketplace à ces identifiants en vous abonnant maintenant ou en sélectionnant un abonnement existant.
-.. *Review* : confirmez les détails des nouvelles informations d'identification et cliquez sur *Add*.
+.. *Révision* : confirmez les détails des nouvelles informations d'identification et sélectionnez *Ajouter*.
 
 
 

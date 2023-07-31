@@ -43,7 +43,7 @@ Ces autorisations sont pour l'instance de connecteur elle-même. Il s'agit d'un 
 
 
 .Étapes
-. Si vous créez votre premier environnement de travail, cliquez sur *Ajouter un environnement de travail* et suivez les invites. Sinon, cliquez sur la liste déroulante *Connector* et sélectionnez *Add Connector*.
+. Si vous créez votre premier environnement de travail, sélectionnez *Ajouter un environnement de travail* et suivez les invites. Sinon, sélectionnez la liste déroulante *Connector* et sélectionnez *Add Connector*.
 +
 image:screenshot_connector_add.gif["Capture d'écran affichant l'icône du connecteur dans l'en-tête et l'action Ajouter un connecteur."]
 
@@ -95,7 +95,7 @@ link:reference-ports-azure.html["Afficher les règles des groupes de sécurité 
 ** *Review* : consultez vos sélections pour vérifier que votre configuration est correcte.
 
 
-. Cliquez sur *Ajouter*.
+. Sélectionnez *Ajouter*.
 +
 La machine virtuelle doit être prête en 7 minutes environ. Vous devez rester sur la page jusqu'à ce que le processus soit terminé.
 
@@ -112,8 +112,8 @@ Une fois le processus terminé, le connecteur est disponible pour être utilisé
 +
 https://azuremarketplace.microsoft.com/en-us/marketplace/apps/netapp.netapp-oncommand-cloud-manager["Page Azure Marketplace pour les régions commerciales"^]
 
-. Cliquez sur *l'obtenir maintenant*, puis sur *Continuer*.
-. Sur le portail Azure, cliquez sur *Créer* et suivez les étapes de configuration de la machine virtuelle.
+. Sélectionnez *obtenir maintenant*, puis *Continuer*.
+. Dans le portail Azure, sélectionnez *Create* et suivez les étapes pour configurer la machine virtuelle.
 +
 Noter les éléments suivants lors de la configuration de la machine virtuelle :
 
@@ -130,7 +130,7 @@ Ce paramètre est important car une identité gérée permet à la machine virtu
 
 
 
-. Dans la page *Revue + créer*, vérifiez vos sélections et cliquez sur *Créer* pour démarrer le déploiement.
+. Sur la page *consulter + créer*, vérifiez vos sélections et sélectionnez *Créer* pour démarrer le déploiement.
 +
 Azure déploie la machine virtuelle avec les paramètres spécifiés. Le logiciel de la machine virtuelle et du connecteur doit s'exécuter en cinq minutes environ.
 
@@ -146,7 +146,7 @@ https://_ipaddress_[]
 +
 Vous devez désactiver le mode restreint, car ces étapes décrivent l'utilisation de BlueXP en mode standard. Vous devez activer le mode restreint uniquement si vous disposez d'un environnement sécurisé et souhaitez déconnecter ce compte des services back-end BlueXP. Si c'est le cas, link:task-quick-start-restricted-mode.html["Suivez les étapes pour démarrer avec BlueXP en mode restreint"].
 
-.. Cliquez sur *commençons*.
+.. Sélectionnez *commençons*.
 
 
 
@@ -256,7 +256,7 @@ https://_ipaddress_[]
 +
 Vous devez désactiver le mode restreint, car ces étapes décrivent l'utilisation de BlueXP en mode standard. Vous devez activer le mode restreint uniquement si vous disposez d'un environnement sécurisé et souhaitez déconnecter ce compte des services back-end BlueXP. Si c'est le cas, link:task-quick-start-restricted-mode.html["Suivez les étapes pour démarrer avec BlueXP en mode restreint"].
 
-.. Cliquez sur *commençons*.
+.. Sélectionnez *commençons*.
 
 
 

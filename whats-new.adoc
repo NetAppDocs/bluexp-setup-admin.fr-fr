@@ -18,6 +18,32 @@ Découvrez les nouveautés des fonctionnalités d'administration BlueXP : compte
 
 
 
+== 30 juillet
+
+
+
+=== Connecteur 3.9.32
+
+* Vous pouvez désormais exporter les journaux d'audit à l'aide de l'API du service d'audit BlueXP.
++
+Le service d'audit enregistre les informations relatives aux opérations effectuées par les services BlueXP. Cela inclut les adresses IP d'origine, les espaces de travail, les connecteurs utilisés et d'autres données de télémétrie. Vous pouvez utiliser ces données pour déterminer quelles actions ont été effectuées, qui les a effectuées et quand elles ont eu lieu.
+
++
+https://docs.netapp.com/us-en/bluexp-automation/audit/overview.html["En savoir plus sur l'utilisation de l'API de service d'audit"^]
+
++
+Notez que ce lien est également accessible depuis l'interface utilisateur BlueXP sur la page Chronologie.
+
+* Cette version de Connector inclut également des améliorations apportées à Cloud Volumes ONTAP et des clusters ONTAP sur site.
++
+** https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html#30-july-2023["Découvrez les améliorations apportées à Cloud Volumes ONTAP"^]
+** https://docs.netapp.com/us-en/bluexp-ontap-onprem/whats-new.html#30-july-2023["Découvrez les améliorations apportées aux clusters sur site de ONTAP"^]
+
+
+
+
+
+
 == 2 juillet 2023
 
 
@@ -238,7 +264,7 @@ https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html#5-march-
 
 === Connecteur 3.9.26
 
-* Sur la page *connexion*, vous êtes invité à saisir l'adresse e-mail associée à votre connexion. Après avoir cliqué sur *Suivant*, BlueXP vous invite à vous authentifier à l'aide de la méthode d'authentification associée à votre connexion :
+* Sur la page *connexion*, vous êtes invité à saisir l'adresse e-mail associée à votre connexion. Après avoir sélectionné *Next*, BlueXP vous invite à vous authentifier à l'aide de la méthode d'authentification associée à votre connexion :
 +
 ** Le mot de passe de vos identifiants cloud NetApp
 ** Vos identifiants d'identité fédérés

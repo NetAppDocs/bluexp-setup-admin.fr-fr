@@ -37,7 +37,6 @@
   <block id="e5d9de39f7ca1ba2637e5640af3ae8aa" category="inline-image-macro">Cinq</block>
   <block id="0db7fae0cbffb2606b92943c020175f6" category="paragraph-title"><block ref="99e8b2f00e172bfcff96afdce69907bc" category="inline-image-macro-rx" type="image"></block> Créer le connecteur</block>
   <block id="58dfb3b98f86ab56e2908a35ae6b090f" category="paragraph">Créez le connecteur à l'aide de l'une des options d'installation disponibles :</block>
-  <block id="c74633a8da806f7e37e5c3ff44c2e479" category="list-text">*À partir de BlueXP* : cliquez sur la liste déroulante connecteur, sélectionnez *Ajouter un connecteur* et suivez les invites.</block>
   <block id="5be6bb31e75b1dd8bd94a7ae6af3e755" category="inline-link">Page VM NetApp Connector dans Azure Marketplace</block>
   <block id="29e1a7cf06605bf888586cc76182b640" category="list-text">*À partir d'Azure Marketplace* : rendez-vous sur le<block ref="ed0d2d9c900d50a83f742250d29abeec" category="inline-link-rx"></block> Et suivez les invites pour créer la VM du connecteur.</block>
   <block id="9d2169c1c2855b78a7aeaa4f42d27dc7" category="inline-link">Site de support NetApp</block>
@@ -77,19 +76,15 @@
   <block id="18387052a5adf3d55c9d07f70f3141e7" category="list-text">Sélectionnez *instances*.</block>
   <block id="e09de68bcf89e3f1adb5c29284597f34" category="list-text">Sélectionnez l'instance de connecteur.</block>
   <block id="87116be258b420bc3c65682ee8c3c80b" category="list-text">Sélectionnez *actions &gt; sécurité &gt; Modifier le rôle IAM*.</block>
-  <block id="0608ae08455224c5aa2037a0505848e7" category="list-text">Sélectionnez le rôle IAM et cliquez sur *mettre à jour le rôle IAM*.</block>
   <block id="5975f7e9036c78e6217b16f295f0ca75" category="inline-link">Console BlueXP</block>
   <block id="1f2b7de34bbdaf655d7cd7c95b1bbd93" category="open-title">Clé d'accès AWS</block>
   <block id="fcfd4daeb24b4db3bb89c89c8f03c50e" category="paragraph">Fournissez à BlueXP la clé d'accès AWS pour un utilisateur IAM qui dispose des autorisations requises.</block>
   <block id="8ee9f4a3034e4f87e8571e2c3b43e9a2" category="list-text">Assurez-vous que le bon connecteur est actuellement sélectionné dans BlueXP.</block>
-  <block id="b019ab068deba8494415cbd226ca0c4e" category="list-text">Dans le coin supérieur droit de la console BlueXP, cliquez sur l'icône Paramètres et sélectionnez *informations d'identification*.</block>
   <block id="be9d7b7687f0c55f7e65f14cd2b0f530" category="inline-image-macro">Capture d'écran affichant l'icône Paramètres dans le coin supérieur droit de la console BlueXP.</block>
   <block id="cb9e3791dcb67c8a699c104be6a1c49c" category="paragraph"><block ref="cb9e3791dcb67c8a699c104be6a1c49c" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="11832df968cbb4cdb8e45984c11a77d0" category="list-text">Cliquez sur *Ajouter des informations d'identification* et suivez les étapes de l'assistant.</block>
   <block id="5e15e451ab1dcb5e3bfae55f8b58e524" category="list-text">*Emplacement des informations d'identification* : sélectionnez *Amazon Web Services &gt; connecteur*.</block>
   <block id="8117407a9689d4f991904d5739091c47" category="list-text">*Définir les informations d'identification* : saisissez une clé d'accès AWS et une clé secrète.</block>
   <block id="dc6e318a413899b5467eabc5f69ad366" category="list-text">*Abonnement Marketplace* : associez un abonnement Marketplace à ces identifiants en vous abonnant maintenant ou en sélectionnant un abonnement existant.</block>
-  <block id="cc993521b8909c4085841bf25067d9c0" category="list-text">*Review* : confirmez les détails des nouvelles informations d'identification et cliquez sur *Add*.</block>
   <block id="3747d8dfb456f8cefbe5ea8eed8a4289" category="summary">Une fois que vous avez installé un connecteur dans Azure, BlueXP peut détecter automatiquement des informations sur les comptes de stockage Azure qui résident dans les abonnements Azure où le connecteur est installé. Un environnement de travail Azure Blob est ajouté à Canvas pour vous permettre d'afficher ces informations.</block>
   <block id="70c85793f0a33ef534a67f193287a992" category="doc">Gérez vos comptes Azure Blob</block>
   <block id="2ed919302195764ff313fc8d75b59525" category="inline-image-macro">Copie d'écran d'un environnement de travail Azure Blob.</block>
@@ -123,7 +118,6 @@
   <block id="bc3d26f932a03033b70d3ed650139a18" category="inline-link-macro">utilisation de la stratégie sur cette page</block>
   <block id="578821444383a169c989590dba162c8a" category="list-text">Si vous ne souhaitez pas que BlueXP crée automatiquement un rôle Azure pour le connecteur, vous devrez créer votre propre rôle <block ref="7706b04266d0a3d170ef3034140acd41" category="inline-link-macro-rx"></block>.</block>
   <block id="bb0af45d6e9045bc2046c5f245006f7c" category="paragraph">Ces autorisations sont pour l'instance de connecteur elle-même. Il s'agit d'un jeu d'autorisations différent de ce que vous avez configuré précédemment pour déployer simplement le connecteur.</block>
-  <block id="d2b74161d054c69894469355bb22cb63" category="list-text">Si vous créez votre premier environnement de travail, cliquez sur *Ajouter un environnement de travail* et suivez les invites. Sinon, cliquez sur la liste déroulante *Connector* et sélectionnez *Add Connector*.</block>
   <block id="df5b4e7d7b6a4648ec54c1e80de11594" category="inline-image-macro">Capture d'écran affichant l'icône du connecteur dans l'en-tête et l'action Ajouter un connecteur.</block>
   <block id="6afef7f4017876f5216334b8130f14fb" category="paragraph"><block ref="6afef7f4017876f5216334b8130f14fb" category="inline-image-macro-rx" type="image"></block></block>
   <block id="02a8c4a4e553694e2236fd17bb20b197" category="list-text">Choisissez *Microsoft Azure* comme fournisseur cloud.</block>
@@ -148,18 +142,14 @@
   <block id="ffcf64d34f1dcc41900c7060705863c1" category="inline-link-macro">Afficher les règles des groupes de sécurité pour Azure</block>
   <block id="27d00e27487104fffbc6a7d63cbf6baf" category="paragraph"><block ref="bfc1f993753d234d09b3194b930d1b96" category="inline-link-macro-rx"></block>.</block>
   <block id="77c0c575c550fbbb80de7e5c1eda4fbc" category="list-text">*Review* : consultez vos sélections pour vérifier que votre configuration est correcte.</block>
-  <block id="7dee7e783d13b6d5d415926ce0bfc306" category="list-text">Cliquez sur *Ajouter*.</block>
   <block id="a1630873c12a4c232f890d319c1b34a5" category="paragraph">La machine virtuelle doit être prête en 7 minutes environ. Vous devez rester sur la page jusqu'à ce que le processus soit terminé.</block>
   <block id="06a2a1a9babe72982d387f96f2be2014" category="paragraph">Une fois le processus terminé, le connecteur est disponible pour être utilisé depuis BlueXP.</block>
   <block id="21e74b3c28d006317f38a2bc8eb1da3b" category="open-title">Azure Marketplace</block>
   <block id="40ca3108b6381f9eda9574daf00c3b01" category="list-text">Rendez-vous sur la page NetApp Connector VM du Marketplace Azure.</block>
   <block id="0c5f74a83e5cbc5c6c230dd0caf096f7" category="inline-link">Page Azure Marketplace pour les régions commerciales</block>
   <block id="5fb9ace1b2fee444b848b1ad1c5d886c" category="paragraph"><block ref="5fb9ace1b2fee444b848b1ad1c5d886c" category="inline-link-rx"></block></block>
-  <block id="225df19c00186b6ea3e256ba18a0a186" category="list-text">Cliquez sur *l'obtenir maintenant*, puis sur *Continuer*.</block>
-  <block id="74056a9be421d18494e08827c2a4c7f6" category="list-text">Sur le portail Azure, cliquez sur *Créer* et suivez les étapes de configuration de la machine virtuelle.</block>
   <block id="d110361593d3c3b635cec5b83db5e311" category="paragraph">Noter les éléments suivants lors de la configuration de la machine virtuelle :</block>
   <block id="089f373f5f48b55cde8c8de1db96243c" category="inline-link">En savoir plus sur les identités gérées pour les ressources Azure</block>
-  <block id="cf4a06fce4c7b1055a372af2e026d54e" category="list-text">Dans la page *Revue + créer*, vérifiez vos sélections et cliquez sur *Créer* pour démarrer le déploiement.</block>
   <block id="764960e87b4fddf3ade9ee834c310b2b" category="paragraph">Azure déploie la machine virtuelle avec les paramètres spécifiés. Le logiciel de la machine virtuelle et du connecteur doit s'exécuter en cinq minutes environ.</block>
   <block id="f8cccaed0b932ef662605b0a2cef04df" category="list-text">Ouvrez un navigateur Web à partir d'un hôte connecté à la machine virtuelle Connector et entrez l'URL suivante :</block>
   <block id="d41d8cd98f00b204e9800998ecf8427e" category="inline-link"></block>
@@ -170,7 +160,6 @@
   <block id="bc2db05002588dce0afea6db153376bc" category="list-text">Sous *exécutez-vous dans un environnement sécurisé ?* maintenez le mode restreint désactivé.</block>
   <block id="443d63c9ee87e9dac12aa2216b54f52d" category="inline-link-macro">Suivez les étapes pour démarrer avec BlueXP en mode restreint</block>
   <block id="47b475ce8fffd929f1fc89967e693fe0" category="paragraph">Vous devez désactiver le mode restreint, car ces étapes décrivent l'utilisation de BlueXP en mode standard. Vous devez activer le mode restreint uniquement si vous disposez d'un environnement sécurisé et souhaitez déconnecter ce compte des services back-end BlueXP. Si c'est le cas, <block ref="d4230e2957fd67694fbeb2d4cebbd012" category="inline-link-macro-rx"></block>.</block>
-  <block id="78d81209f9229f459cb7adc59599a9f9" category="list-text">Cliquez sur *commençons*.</block>
   <block id="e48cc2b8b425580d8ee1508fd8a29ab2" category="paragraph">Le connecteur est maintenant installé et configuré avec votre compte BlueXP.</block>
   <block id="58eaebf972358f1cf03d386a4ade1a0f" category="paragraph-title">Et la suite ?</block>
   <block id="ba997697bddbedc57faeb5fdc16c15a6" category="inline-link-macro">Fournissez à BlueXP les autorisations que vous avez précédemment configurées</block>
@@ -815,7 +804,6 @@
   <block id="dacf2f246c2efb276c3709c141985f7c" category="paragraph"><block ref="4734e8f3bab5a9c00aebb286a2f16deb" category="inline-link-macro-rx"></block>.</block>
   <block id="cc96a4cc30e50577aa6671b076af72e1" category="section-title">Gérez vos informations d'identification utilisateur</block>
   <block id="fa6e9e9d0c238d856c9d80111986b0b1" category="paragraph">Gérez vos informations d'identification en mettant à jour le nom d'utilisateur et le mot de passe ou en supprimant les informations d'identification.</block>
-  <block id="41e1e3cff4a07ce2ecc08e6c09f11092" category="list-text">Cliquez sur *informations d'identification de l'utilisateur*.</block>
   <block id="9afc8b6b41174c0836030fc8ac89ce5a" category="list-text">Si vous ne possédez pas encore d'informations d'identification, vous pouvez sélectionner *Ajouter des informations d'identification NSS* pour ajouter votre compte sur le site de support NetApp.</block>
   <block id="f89f00feaba2fad2b55607ff15acc121" category="list-text">Gérez les informations d'identification existantes en choisissant les options suivantes :</block>
   <block id="73877140c9191100114cf829d4df1aa5" category="list-text">*Mettre à jour les informations d'identification* : mettez à jour le nom d'utilisateur et le mot de passe du compte.</block>
@@ -862,7 +850,6 @@
   <block id="d9027b224a5d127be0b2843b650e4806" category="list-text"><block ref="d9027b224a5d127be0b2843b650e4806" category="inline-link-macro-rx"></block></block>
   <block id="92ec95b8916ebc493b6546010073c81f" category="section-title">Utilisation des autorisations Azure</block>
   <block id="815957003313e5f9581718376c2c472f" category="paragraph">Les sections suivantes décrivent comment les autorisations sont utilisées pour chaque service BlueXP. Ces informations peuvent être utiles si vos stratégies d'entreprise exigent que les autorisations ne sont fournies que si nécessaire.</block>
-  <block id="cff963a7ee056005e400757f5bb06556" category="paragraph">Il effectue les requêtes d'API suivantes pour gérer les environnements de travail Azure NetApp Files :</block>
   <block id="e400a17015f6033633700b6ba11625ba" category="list-text">Microsoft.NetApp/netAppAccounts/read</block>
   <block id="6db1cf4cd8e4d2dd21411cc7d81bfe62" category="list-text">Microsoft.NetApp/netAppAccounts/capacityPools/read</block>
   <block id="d532d42cdca6427a0c94a0fe2b7724bf" category="list-text">Microsoft.NetApp/netAppAccounts/capacityPools/volumes/write</block>
@@ -1046,11 +1033,8 @@
   <block id="482049a2c27830202c448327d329f378" category="list-text">VPC et sous-réseau qui répondent aux exigences réseau.</block>
   <block id="b66539d8d1c1e3f97e751ce32b201932" category="inline-link-macro">En savoir plus sur les exigences de mise en réseau</block>
   <block id="1e2c4b5ca22d40c55b8d98ccd5e1ba09" category="paragraph"><block ref="1e2c4b5ca22d40c55b8d98ccd5e1ba09" category="inline-link-macro-rx"></block></block>
-  <block id="18e6b8699d1a4d091a3257edbd45153c" category="list-text">Cliquez sur le menu déroulant *Connector* et sélectionnez *Ajouter un connecteur*.</block>
   <block id="5ec1fdc717a09349991e1304c5bd757a" category="list-text">Choisissez *Google Cloud Platform* comme fournisseur de cloud.</block>
   <block id="1fbc47392baedd9a8a771f5372aa43d4" category="list-text">Sur la page *déploiement d'un connecteur*, consultez les détails de ce dont vous aurez besoin. Vous avez deux options :</block>
-  <block id="639c5d452ac23b93fb028a8d3101d2c2" category="list-text">Cliquez sur *Continuer* pour préparer le déploiement à l'aide du guide d'utilisation du produit. Chaque étape du guide du produit inclut les informations contenues sur cette page de la documentation.</block>
-  <block id="ce670b5c6b0b9f0203bdb18071265645" category="list-text">Cliquez sur *passer au déploiement* si vous avez déjà préparé en suivant les étapes de cette page.</block>
   <block id="12e9d88275170959cb7167c4c85f6c77" category="list-text">Si vous y êtes invité, connectez-vous à votre compte Google, qui devrait disposer des autorisations requises pour créer l'instance de machine virtuelle.</block>
   <block id="29b28ad1793cec26548948fbe79ebfd5" category="paragraph">Le formulaire est détenu et hébergé par Google. Vos identifiants ne sont pas fournis à NetApp.</block>
   <block id="abfd76b9567ca082322504a092e076c7" category="list-text">*Détails* : saisissez un nom pour l'instance de machine virtuelle, spécifiez des balises, sélectionnez un projet, puis sélectionnez le compte de service qui dispose des autorisations requises (reportez-vous à la section ci-dessus pour plus de détails).</block>
@@ -1136,10 +1120,7 @@
   <block id="920fe1428c19533eda6222fe7e58efbe" category="inline-link">Découvrez comment gérer les identifiants associés à votre connexion BlueXP</block>
   <block id="e1d2e1a634647fd631081bc4f6f8e523" category="list-text">Pour utiliser la fonctionnalité *Créer un cas*, vous devez d'abord associer vos informations d'identification du site de support NetApp à votre connexion BlueXP.<block ref="2a0d8b66ca9e99d023b48cf25f40fb12" category="inline-link-rx"></block>.</block>
   <block id="e49aa971c20ec071f1b5bbc3c7266769" category="list-text">Si vous ouvrez un dossier pour un système ONTAP doté d'un numéro de série, votre compte NSS doit être associé au numéro de série de ce système.</block>
-  <block id="6254a4afeeb76765a127fe74d31c1b3d" category="list-text">Dans BlueXP, cliquez sur *aide &gt; support*.</block>
   <block id="08d96fdd1a845d80db99e6e1dffb8bc7" category="list-text">Sur la page *Ressources*, choisissez l'une des options disponibles sous support technique :</block>
-  <block id="383133cb6f7207b1c65c3ace94aa5e95" category="list-text">Cliquez sur *appelez-nous* si vous souhaitez parler avec quelqu'un au téléphone. Vous serez dirigé vers une page netapp.com qui répertorie les numéros de téléphone que vous pouvez appeler.</block>
-  <block id="5be2e1dfe4bf215289731df45ec8157b" category="list-text">Cliquez sur *Créer un dossier* pour ouvrir un dossier auprès d'un spécialiste du support NetApp :</block>
   <block id="d63bf50426f4c712554faec55b30c548" category="list-text">*Service* : sélectionnez le service auquel le problème est associé. Par exemple, BlueXP lorsqu'il est spécifique à un problème de support technique avec des flux de travail ou des fonctionnalités au sein du service.</block>
   <block id="2e50c5f85523f0aba9ff2db10f18279c" category="list-text">*Environnement de travail* : si applicable au stockage, sélectionnez *Cloud Volumes ONTAP* ou *sur site*, puis l'environnement de travail associé.</block>
   <block id="aa996e20900197b0ea41485ada083d8c" category="paragraph">La liste des environnements de travail est comprise dans le cadre du compte, de l'espace de travail et du connecteur BlueXP que vous avez sélectionnés dans la bannière supérieure du service.</block>
@@ -1153,7 +1134,6 @@
   <block id="509259be6d5e15d8959f705cbe0cbcc1" category="paragraph"><block ref="509259be6d5e15d8959f705cbe0cbcc1" category="inline-image-macro-rx" type="image"></block></block>
   <block id="bd965e38a0c9cf27aa1bde099308e23f" category="paragraph-title">Une fois que vous avez terminé</block>
   <block id="18f487556417bb6d9721a7005ae097c9" category="paragraph">Une fenêtre contextuelle contenant votre numéro de dossier de support s'affiche. Un spécialiste du support NetApp va étudier votre dossier et vous recontacterons très rapidement.</block>
-  <block id="04e15da1deae9568b4dcda64fbb0c8d5" category="paragraph">Pour consulter l'historique de vos dossiers d'assistance, vous pouvez cliquer sur *Paramètres &gt; Chronologie* et rechercher les actions nommées "Créer un dossier de support". Un bouton à l'extrême droite vous permet de développer l'action pour voir les détails.</block>
   <block id="5c56753585e89a84941bb3a78bc681af" category="paragraph">Il est possible que vous rencontriez le message d'erreur suivant lors de la création d'un dossier :</block>
   <block id="a30f69ab0ec85d427a3e8835713525bd" category="paragraph">« Vous n'êtes pas autorisé à créer un dossier pour le service sélectionné »</block>
   <block id="c7b7a5ae9f37fd7d24e4d641b9186fe9" category="paragraph">Cette erreur peut signifier que le compte NSS et la société d'enregistrement auquel il est associé n'est pas la même société d'enregistrement pour le numéro de série du compte BlueXP (par exemple 960xxxx) ou le numéro de série de l'environnement de travail. Vous pouvez demander de l'aide en utilisant l'une des options suivantes :</block>
@@ -1169,10 +1149,8 @@
   <block id="56dcadeee6b0e5c47a52673f9b5a0bb3" category="list-text">Vous pouvez ajouter ou supprimer des colonnes d'intérêt et filtrer le contenu des colonnes telles que priorité et Statut. D'autres colonnes offrent uniquement des fonctions de tri.</block>
   <block id="6f936762e1223311f031685422fcd3a4" category="paragraph">Pour plus d'informations, consultez les étapes ci-dessous.</block>
   <block id="b14929795a61440e9b4ec9f8a4885ae3" category="list-text">Au niveau de chaque dossier, nous offrons la possibilité de mettre à jour les notes de dossier ou de fermer un dossier qui n'est pas déjà à l'état fermé ou en attente fermée.</block>
-  <block id="34b1296d31cefa72dae9b3a364b1f444" category="list-text">Cliquez sur *case Management* et si vous y êtes invité, ajoutez votre compte NSS à BlueXP.</block>
   <block id="d8ce1865cf1fe3cffd60300b4b86ad63" category="paragraph">La page *gestion des cas* affiche les cas ouverts associés au compte NSS associé à votre compte utilisateur BlueXP. Il s'agit du même compte NSS qui apparaît en haut de la page *gestion NSS*.</block>
   <block id="2ae5ae78bdb2d222f15fd8e89248709c" category="list-text">Modifiez éventuellement les informations qui s'affichent dans le tableau :</block>
-  <block id="27635a52fe4c34c39ffc6430f4244ec6" category="list-text">Sous *cas de l'organisation*, cliquez sur *Afficher* pour afficher tous les cas associés à votre société.</block>
   <block id="059e856250b59be3069246887b74a23c" category="list-text">Modifiez la plage de dates en choisissant une plage de dates exacte ou en choisissant une autre période.</block>
   <block id="dfb3764bce2548df4e06357403f9c7d0" category="inline-image-macro">Capture d'écran de l'option au-dessus du tableau de la page gestion des cas qui vous permet de choisir une plage de dates exacte ou les 7 derniers jours, 30 derniers jours ou 3 derniers mois.</block>
   <block id="0972db30d942fdb65d1732e6e84bde99" category="paragraph"><block ref="0972db30d942fdb65d1732e6e84bde99" category="inline-image-macro-rx" type="image"></block></block>
@@ -1180,14 +1158,11 @@
   <block id="3753f10a59e21f58b30e3e67d416453e" category="inline-image-macro">Capture d'écran de l'option de filtre dans la colonne État qui vous permet de filtrer les dossiers correspondant à un état spécifique, comme actif ou fermé.</block>
   <block id="cb6a777dd3c6e43b0dc441d38519d219" category="paragraph"><block ref="cb6a777dd3c6e43b0dc441d38519d219" category="inline-image-macro-rx" type="image"></block></block>
   <block id="1c6ea5ef583389e18e7d7bda70beaa71" category="inline-image-macro">Icône plus qui apparaît dans le tableau</block>
-  <block id="0f6cac2f77150840994f84044fc1b12b" category="list-text">Modifiez les colonnes qui apparaissent dans le tableau en cliquant sur <block ref="b574dd55d604ddb721d869a0fc302007" category="inline-image-macro-rx" type="image"></block> puis choisissez les colonnes que vous souhaitez afficher.</block>
   <block id="370b44009f1b82d0b6b178bb80cc62fa" category="inline-image-macro">Capture d'écran affichant les colonnes que vous pouvez afficher dans le tableau.</block>
   <block id="e65065c4fd326b9f3a1eeb9453c30d73" category="paragraph"><block ref="e65065c4fd326b9f3a1eeb9453c30d73" category="inline-image-macro-rx" type="image"></block></block>
   <block id="ad0ae9ea1f2e8d973a9a0f6bb169f494" category="inline-image-macro">Icône avec trois points qui apparaît dans la dernière colonne du tableau</block>
-  <block id="6ba7d68d8b3ef0f3398afb9d3ea96172" category="list-text">Pour gérer un dossier de demande de support existant, cliquez sur <block ref="566c029d89e7d5421080767a37bf443e" category="inline-image-macro-rx" type="image"></block> et en sélectionnant l'une des options disponibles :</block>
   <block id="6d9dd74e7709ef802d299966f7898f6b" category="list-text">*Voir cas*: Afficher tous les détails sur un cas spécifique.</block>
   <block id="8e6b52a532a4fbbfc98dca3ebfa5f1e6" category="list-text">*Mettre à jour les notes de cas* : fournir des détails supplémentaires sur votre problème ou sélectionner *Télécharger les fichiers* pour joindre jusqu'à cinq fichiers.</block>
-  <block id="f791bc685c526af8296381acff10f6a0" category="list-text">*Fermer le cas* : fournissez des détails sur la raison pour laquelle vous fermez le cas et cliquez sur *Fermer le cas*.</block>
   <block id="e93217b2f709a398ce3c0fb753beb05f" category="inline-image-macro">Capture d'écran qui montre les actions que vous pouvez effectuer après avoir sélectionné le menu dans la dernière colonne du tableau.</block>
   <block id="2ea260929e27ffcb623c8aa35689bd18" category="paragraph"><block ref="2ea260929e27ffcb623c8aa35689bd18" category="inline-image-macro-rx" type="image"></block></block>
   <block id="4453e7502515d4db1f3a4a1c28c48f13" category="summary">Le logiciel du connecteur doit être exécuté sur un hôte qui répond à des exigences spécifiques du système d'exploitation, de la RAM, des ports, etc. Si vous prévoyez d'installer manuellement le connecteur, assurez-vous que votre hôte répond à ces exigences. Assurez-vous que votre hôte répond à ces exigences avant d'installer le connecteur.</block>
@@ -1221,8 +1196,6 @@
   <block id="9d28e4868b7fcb2d0b7ab54f9d7f7b3c" category="inline-link-macro">Ajoutez les informations d'identification du compte à BlueXP</block>
   <block id="f25b2b221edfa2bdf4fb0df0c1b2c9d5" category="paragraph">Vous le feriez alors <block ref="d81a76d92186f9ebef738a7789fc0680" category="inline-link-macro-rx"></block> En fournissant des détails sur le principal du service AD.</block>
   <block id="eb99e348d38c212372a6e836f66f7356" category="paragraph">Par exemple, vous pouvez basculer entre les informations d'identification lors de la création d'un nouvel environnement de travail Cloud Volumes ONTAP :</block>
-  <block id="22b179015545d216826bf3c224079c70" category="inline-image-macro">Capture d'écran permettant de sélectionner un compte de fournisseur cloud après avoir cliqué sur changer de compte dans la page Détails &amp;amp; Credentials.</block>
-  <block id="920013a5de0f78687797397a6c0ee0d8" category="paragraph"><block ref="96ae547f4f3f25ad031b61cef1d8f2b8" category="inline-image-macro-rx" type="image"></block></block>
   <block id="baa9dd166d2a7f1d62e78a829f4b35a6" category="section-title">Qu'en est-il des déploiements Marketplace et des déploiements sur site ?</block>
   <block id="018f02432b76c440f6d0c2a5da5a1a5d" category="paragraph">Les sections ci-dessus décrivent la méthode de déploiement recommandée pour le connecteur, qui provient de BlueXP. Vous pouvez également déployer un connecteur dans Azure à partir d'Azure Marketplace et installer le logiciel Connector sur votre propre hôte Linux.</block>
   <block id="f0e36fc8cdf840530f36b60220f9185b" category="paragraph">Si vous utilisez Marketplace, vous pouvez fournir des autorisations en attribuant un rôle personnalisé à la VM Connector et à une identité gérée attribuée par le système, ou vous pouvez utiliser l'entité de service Azure AD.</block>
@@ -1261,32 +1234,22 @@
   <block id="15f7c3376619ce497205d543fd1d7767" category="paragraph">Si nécessaire, vous pouvez restreindre la politique IAM à l'aide de l'IAM<block ref="9e2941b3c81256fac10392aaca4ccfde" prefix=" " category="inline-code"></block> elément.<block ref="19ffef022087e160f1e54b9948795943" category="inline-link-rx"></block></block>
   <block id="09eadec3a9869ab363e913c06ab259a3" category="admonition">Lorsque BlueXP crée le connecteur, il applique un nouvel ensemble d'autorisations à l'instance Connector qui permet au connecteur de gérer les ressources AWS.</block>
   <block id="1e71ce7defc90d8f5a2c46c08ba968df" category="list-text">Accédez à la console IAM AWS.</block>
-  <block id="cda6184a38ec01634b0cabf02341cb56" category="list-text">Cliquez sur *stratégies &gt; Créer une stratégie*.</block>
-  <block id="b52a6ab6cdcb340c9e1189b56821ffd8" category="list-text">Cliquez sur *JSON*.</block>
   <block id="26d4a7a50dfbae842d907e3b8000633e" category="list-text">Copiez et collez la stratégie suivante :</block>
-  <block id="e46847d94dd6255ac0cabcdc93eed31f" category="list-text">Cliquez sur *Suivant* et ajoutez des balises, si nécessaire.</block>
-  <block id="83f97720ed2c284e94fe989612d7ae1a" category="list-text">Cliquez sur *Suivant* et entrez un nom et une description.</block>
-  <block id="ab899735d36938b4c6cb8edd18a222e5" category="list-text">Cliquez sur *Créer une stratégie*.</block>
   <block id="1bd08699c526c66f71094b5ff54dc839" category="list-text">Reliez la règle à un rôle IAM que BlueXP peut assumer ou à un utilisateur IAM pour que vous puissiez fournir BlueXP avec des clés d'accès :</block>
   <block id="87b8ba43578311804ba14d80f6c8cb89" category="list-text">(Option 1) configurer un rôle IAM que BlueXP peut assumer :</block>
   <block id="0e78dc7220ea8b6abafe6ef7aaad9998" category="list-text">Accédez à la console IAM AWS dans le compte cible.</block>
-  <block id="7f4640b00b5df83a54d4aaaa51f7d6ab" category="list-text">Sous gestion des accès, cliquez sur *rôles &gt; Créer un rôle* et suivez les étapes pour créer le rôle.</block>
   <block id="e506de832b98c2693eb3f400ef0722c0" category="list-text">Sous *Type d'entité approuvée*, sélectionnez *compte AWS*.</block>
   <block id="b3c7a22f0973e84651078c58ec8c36f6" category="list-text">Sélectionnez *un autre compte AWS* et saisissez l'ID du compte BlueXP SaaS : 952013314444</block>
   <block id="dbab690717fb052924566c13e8768748" category="list-text">Sélectionnez la stratégie que vous avez créée dans la section précédente.</block>
   <block id="b132a51c84b6101c058abbb40225f87d" category="list-text">Après avoir créé le rôle, copiez le rôle ARN afin de pouvoir le coller dans BlueXP lorsque vous créez le connecteur.</block>
   <block id="bf10cb047f4db72713407e74d30df1e9" category="list-text">(Option 2) configurez les autorisations d'accès pour un utilisateur IAM afin que vous puissiez fournir BlueXP avec des clés d'accès :</block>
-  <block id="380aef99fa69053a3675c5cd0a2aaee2" category="list-text">Dans la console IAM AWS, cliquez sur *utilisateurs*, puis sélectionnez le nom d'utilisateur.</block>
-  <block id="91ae93d60d63596e2482a109b23c1290" category="list-text">Cliquez sur *Ajouter des autorisations &gt; attacher des stratégies existantes directement*.</block>
   <block id="8bcbf62e98416780ffe2095559aba87a" category="list-text">Sélectionnez la stratégie que vous avez créée.</block>
-  <block id="7480dbf3472d377494469f75467b8989" category="list-text">Cliquez sur *Suivant*, puis sur *Ajouter des autorisations*.</block>
   <block id="c34ab4140439856fda51871a0f20b53c" category="list-text">Assurez-vous que vous disposez de la clé d'accès et de la clé secrète pour l'utilisateur IAM.</block>
   <block id="faeb6083a2ae4785925222b65d1d968f" category="paragraph">Vous devez maintenant disposer d'un rôle IAM qui possède les autorisations requises ou d'un utilisateur IAM qui dispose des autorisations requises. Lorsque vous créez le connecteur à partir de BlueXP, vous pouvez fournir des informations sur le rôle ou les clés d'accès.</block>
   <block id="59d21ffd9004e044bf10a41bde94377c" category="section-title">Configurez les autorisations pour le connecteur lors d'un déploiement à partir d'AWS Marketplace</block>
   <block id="c0b444d12ee4e633b23b686f19a32aaa" category="list-text">Terminez les étapes restantes pour créer la stratégie.</block>
   <block id="b905fd344340f966488111072eda83d7" category="paragraph">Selon les services BlueXP que vous prévoyez d'utiliser, il peut être nécessaire de créer une seconde règle.</block>
   <block id="481dd59686d42d2d6a74eae1a1d763ad" category="paragraph">Pour les régions standard, les autorisations sont réparties entre deux règles. Deux règles sont requises en raison d'une taille maximale de caractères pour les stratégies gérées dans AWS.</block>
-  <block id="d570f412d2674b04019b74531c43fed8" category="list-text">Cliquez sur *rôles &gt; Créer un rôle*.</block>
   <block id="caab423eeeabf261321ce00d10ad838a" category="list-text">Sélectionnez *AWS service &gt; EC2*.</block>
   <block id="0543e6140cb57d05d778d01c055f1dc0" category="list-text">Terminez les étapes restantes pour créer le rôle.</block>
   <block id="97f503ba18358d479d025475ba069bec" category="paragraph">Vous pouvez désormais associer un rôle IAM à l'instance EC2 lors du déploiement depuis AWS Marketplace.</block>
@@ -1349,13 +1312,10 @@
   <block id="c9bae6707a626ab71ed3b97345b5becf" category="list-text">À partir du portail Azure, ouvrez le service *Azure Active Directory*.</block>
   <block id="2edcc284e8171b76333ca90d4cda988f" category="inline-image-macro">Affiche le service Active Directory dans Microsoft Azure.</block>
   <block id="2947c6ef91b5c925ae2fcec9d7750590" category="paragraph"><block ref="2947c6ef91b5c925ae2fcec9d7750590" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="af88b24a1b0f5294f806d8d9f2744f27" category="list-text">Dans le menu, cliquez sur *enregistrements d'applications*.</block>
-  <block id="0e1ac21d4b9ed97a0c89007cafe6b733" category="list-text">Cliquez sur *Nouvelle inscription*.</block>
   <block id="c9034af778b085a9440ffcb8389cc4db" category="list-text">Spécifiez les détails de l'application :</block>
   <block id="46beecb01aa2327ae1886dfc53955977" category="list-text">*Nom* : saisissez un nom pour l'application.</block>
   <block id="c1433d2b36933dc034014d989542d7e9" category="list-text">*Type de compte* : sélectionnez un type de compte (tout fonctionne avec BlueXP).</block>
   <block id="47a80925db7f7667c76a27c384c35793" category="list-text">*URI de redirection*: Vous pouvez laisser ce champ vide.</block>
-  <block id="9909e23ede42f2318acada35ac10bd3e" category="list-text">Cliquez sur *Enregistrer*.</block>
   <block id="07429b136ade673e85f1a27e25a0239c" category="paragraph">Vous avez créé l'application AD et le principal de service.</block>
   <block id="705ea5b8b9077bcdc0aedb01e5cc4c58" category="list-title">Attribuez l'application à un rôle</block>
   <block id="6534ae3540891eec0e4feef8e844bf94" category="list-text">Création d'un rôle personnalisé :</block>
@@ -1375,29 +1335,20 @@
   <block id="1efe3dd87fa14ed122c5ea4f702755d8" category="list-text">Attribuez l'application au rôle :</block>
   <block id="973ddd4ad0d28fecb4f9f0a53ca5ab21" category="list-text">À partir du portail Azure, ouvrez le service *abonnements*.</block>
   <block id="9d13605979e591928497f3c94aa907c2" category="list-text">Sélectionnez l'abonnement.</block>
-  <block id="8174c4d89029818113468594f8347c70" category="list-text">Cliquez sur *contrôle d'accès (IAM) &gt; Ajouter &gt; Ajouter une affectation de rôle*.</block>
-  <block id="54b14f07c36bed41295c2086ea238332" category="list-text">Dans l'onglet *role*, sélectionnez le rôle *BlueXP Operator* et cliquez sur *Next*.</block>
   <block id="0a6c621aa17fc5940d876eaadda3bb73" category="list-text">Dans l'onglet *membres*, procédez comme suit :</block>
   <block id="8663f7025266bcb72c4429db8da6c602" category="list-text">Conserver *utilisateur, groupe ou entité de service* sélectionnée.</block>
-  <block id="e567d156455b03053b50302bf4ff266e" category="list-text">Cliquez sur *Sélectionner les membres*.</block>
   <block id="0972e60de3c49ba718e1aa6c9313eebc" category="inline-image-macro">Capture d'écran du portail Azure affichant l'onglet membres lors de l'ajout d'un rôle à une application.</block>
   <block id="4156bc2d0a73e1d63625fa6f09d010d4" category="paragraph"><block ref="4156bc2d0a73e1d63625fa6f09d010d4" category="inline-image-macro-rx" type="image"></block></block>
   <block id="33aa57c696b6d88350adf8cda157f866" category="list-text">Recherchez le nom de l'application.</block>
   <block id="4d947fe0b5c4693f487f4fd1a4295c99" category="paragraph">Voici un exemple :</block>
   <block id="f6f55020a29188338bc94800ac249ad7" category="inline-image-macro">Une capture d'écran du portail Azure affichant le formulaire d'affectation de rôle Add dans le portail Azure.</block>
   <block id="14c3fe204bce9316486ab448ad8a4874" category="paragraph"><block ref="14c3fe204bce9316486ab448ad8a4874" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="e33ca9bd2b94654f882a0e0ed82dec19" category="list-text">Sélectionnez l'application et cliquez sur *Sélectionner*.</block>
-  <block id="5a378b18f7bf0c4cabc6c655cd2f535e" category="list-text">Cliquez sur *Suivant*.</block>
-  <block id="e3bbb08034982e47da96f9df0529c14b" category="list-text">Cliquez sur *Revue + affecter*.</block>
   <block id="868bd2cfec146290fe12785061d21aff" category="paragraph">Le principal de service dispose désormais des autorisations Azure nécessaires pour déployer le connecteur.</block>
   <block id="b95f8b6a159c207e3d8204b8b1c4f172" category="paragraph">Si vous souhaitez déployer Cloud Volumes ONTAP à partir de plusieurs abonnements Azure, vous devez lier le principal de service à chacun de ces abonnements. BlueXP vous permet de sélectionner l'abonnement que vous souhaitez utiliser lors du déploiement de Cloud Volumes ONTAP.</block>
   <block id="45cd180c1610798f49999ab014a177fa" category="list-title">Ajoutez des autorisations d'API de gestion de service Windows Azure</block>
-  <block id="bd77e589abdaf3d4c3901b4aa35638e1" category="list-text">Dans le service *Azure Active Directory*, cliquez sur *App inscriptions* et sélectionnez l'application.</block>
-  <block id="4c8edaa7cd1534af6a107fe9b79e805b" category="list-text">Cliquez sur *autorisations API &gt; Ajouter une autorisation*.</block>
   <block id="121258133fb4072956407593231a70d2" category="list-text">Sous *Microsoft API*, sélectionnez *Azure Service Management*.</block>
   <block id="0f208ec7c0ee2f540820aa9624359349" category="inline-image-macro">Capture d'écran du portail Azure affichant les autorisations de l'API de gestion de services Azure.</block>
   <block id="44ec446c110f865aefee64ec02e6dfe6" category="paragraph"><block ref="44ec446c110f865aefee64ec02e6dfe6" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="397f8e229dc6a378e7b85f319690a7fd" category="list-text">Cliquez sur *Access Azure Service Management en tant qu'utilisateurs d'organisation*, puis sur *Add permissions*.</block>
   <block id="09ac154e6995039c28007bd218615b7e" category="inline-image-macro">Une capture d'écran du portail Azure montrant l'ajout des API de gestion de services Azure.</block>
   <block id="1e957f13620bb4b87171f37fc42387b1" category="paragraph"><block ref="1e957f13620bb4b87171f37fc42387b1" category="inline-image-macro-rx" type="image"></block></block>
   <block id="f7cb8eeaecd418d11a034c2be7337f33" category="list-title">Obtenez l'ID d'application et l'ID de répertoire de l'application</block>
@@ -1407,8 +1358,6 @@
   <block id="6f49aa80c50bf9d897f387113aee3a15" category="paragraph">Lorsque vous ajoutez le compte Azure à BlueXP, vous devez fournir l'ID d'application (client) et l'ID de répertoire (tenant) de l'application. BlueXP utilise les ID pour se connecter par programmation.</block>
   <block id="3a1ecf20407e16f0524dacb991fefae3" category="list-title">Créez un secret client</block>
   <block id="eeae8e1dd73b92b26863247fdba559d5" category="list-text">Ouvrez le service *Azure Active Directory*.</block>
-  <block id="5f4efbf7cfcfcc9f45c4a3b9ea4dd3a2" category="list-text">Cliquez sur *App Inregistrations* et sélectionnez votre application.</block>
-  <block id="814ab761b05ac26a224a99eac97f2f4d" category="list-text">Cliquez sur *certificats et secrets &gt; Nouveau secret client*.</block>
   <block id="56c696c4118c8dc3d2947c159fdbbb7c" category="list-text">Fournissez une description du secret et une durée.</block>
   <block id="a91d60261e2974b6b9f5d3d3d0abacdd" category="list-text">Copier la valeur du secret client.</block>
   <block id="5a3a4c596a95b6a9851a1c7b6539b0ea" category="inline-image-macro">Copie d'écran du portail Azure présentant un secret client pour la principale du service Azure AD.</block>
@@ -1717,13 +1666,11 @@
   <block id="31f7ed39632ba5f8fbafe2e78de61213" category="paragraph">Vous devriez voir l'écran suivant.</block>
   <block id="87c4a866519ae557380141f0da21e74f" category="inline-image-macro">Capture d'écran de la page d'accueil qui s'affiche après avoir saisi l'adresse IP du connecteur dans votre navigateur Web.</block>
   <block id="baae31039a43d31e57f9e5c0c7262afc" category="paragraph"><block ref="baae31039a43d31e57f9e5c0c7262afc" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="f681629287f9315842951d38d04b1eda" category="list-text">Cliquez sur *configurer New BlueXP* et suivez les invites pour configurer le système.</block>
   <block id="9f390f684f634b575bf8d3a2e73f760c" category="list-text">*Détails du système* : saisissez un nom pour le connecteur et le nom de votre société.</block>
   <block id="ed55d4951cd784cfacedc42b26d251dd" category="inline-image-macro">Capture d'écran de la page Détails du système qui vous invite à entrer le nom et le nom de BlueXP.</block>
   <block id="c630091323c70c3e08081e625ae63da9" category="paragraph"><block ref="c630091323c70c3e08081e625ae63da9" category="inline-image-macro-rx" type="image"></block></block>
   <block id="43601154a054554dd57207148a15b7b1" category="list-text">*Créer un utilisateur Admin* : créez l'utilisateur admin pour le système.</block>
   <block id="0e5308fba9cc92e9ff80d599c7e865ca" category="paragraph">Ce compte utilisateur s'exécute localement sur le système. Il n'y a pas de connexion au service auth0 disponible via BlueXP.</block>
-  <block id="b530111cab51b765877bc100b0a43e1f" category="list-text">*Revue* : consultez les détails, acceptez le contrat de licence, puis cliquez sur *configurer*.</block>
   <block id="d847fd38c43b77f685712342ed5f2a9a" category="list-text">Connectez-vous à BlueXP à l'aide de l'utilisateur admin que vous venez de créer.</block>
   <block id="2fdca5f14e2fdf34df61ef1c2e18eae5" category="paragraph">Le connecteur est maintenant installé et configuré.</block>
   <block id="c4d9d6c8e652595e9d46970f56499783" category="inline-link-macro">Apprenez à mettre à niveau le connecteur</block>
@@ -1737,11 +1684,8 @@
   <block id="0c8a608ccb6d8462e37f1062502116c5" category="open-title">Rôle d'Azure</block>
   <block id="493607fb28e81f13b01e27634c0e7e57" category="paragraph">Accédez au portail Azure et attribuez le rôle personnalisé Azure à la machine virtuelle Connector pour un ou plusieurs abonnements.</block>
   <block id="01022a7caafe0f95bc1085bb13d5f9ec" category="list-text">Sur le portail Azure, ouvrez le service *Subscriptions* et sélectionnez votre abonnement.</block>
-  <block id="1b8e19500b0a199435651fe8ade7df74" category="list-text">Cliquez sur *contrôle d'accès (IAM)* &gt; *Ajouter* &gt; *Ajouter affectation de rôle*.</block>
   <block id="6f27dbb1253286305377b6e14973a99a" category="admonition">BlueXP Operator est le nom par défaut fourni dans la stratégie BlueXP. Si vous avez choisi un autre nom pour le rôle, sélectionnez-le à la place.</block>
   <block id="490ec1422ed033ebd41a56ee1a3d7bca" category="list-text">Attribuez l'accès à une identité *gérée*.</block>
-  <block id="f3c300467d5973dfb4bb4ac50c1635b4" category="list-text">Cliquez sur *Sélectionner les membres*, sélectionnez l'abonnement dans lequel la machine virtuelle de connecteur a été créée, choisissez *machine virtuelle*, puis sélectionnez la machine virtuelle de connecteur.</block>
-  <block id="a2396693254d9ec35f0b6faa885e8f58" category="list-text">Cliquez sur *Sélectionner*.</block>
   <block id="8dca68d83a53837ae38b833a53560cb9" category="paragraph">BlueXP dispose désormais des autorisations dont il a besoin pour effectuer des actions dans Azure en votre nom.</block>
   <block id="201a0e8a9a7e1b007b99b4e4c24c017d" category="open-title">Principal de service Azure</block>
   <block id="e326875367720b38c29c8fa0afd491be" category="paragraph">Fournissez à BlueXP les informations d'identification du principal de service Azure que vous avez précédemment configuré.</block>
@@ -1770,7 +1714,6 @@
   <block id="49a11e441cb19dc0d43b1d3a3794d033" category="paragraph"><block ref="49a11e441cb19dc0d43b1d3a3794d033" category="inline-image-macro-rx" type="image"></block></block>
   <block id="48c7f5d184d27ef640370421d3317ba5" category="paragraph">Vous pouvez ensuite ajouter les informations d'identification du compte à BlueXP en spécifiant le nom de ressource Amazon (ARN) du rôle IAM ou les clés AWS de l'utilisateur IAM.</block>
   <block id="bc84b27c0d74f906857d6c1a83c368a0" category="paragraph">Après avoir ajouté un autre ensemble d'informations d'identification, vous pouvez les passer lors de la création d'un nouvel environnement de travail :</block>
-  <block id="2cc5711a45ceecaf1f22f2aac5f47fe0" category="paragraph"><block ref="9e05e85c54c3c5144a41ef38daf9be1d" category="inline-image-macro-rx" type="image"></block></block>
   <block id="a6856ad65a90d33bc83bd78362d9bfce" category="inline-link-macro">Découvrez comment ajouter des informations d'identification AWS à un connecteur existant.</block>
   <block id="affef63146feae005315127173a28aa9" category="paragraph"><block ref="affef63146feae005315127173a28aa9" category="inline-link-macro-rx"></block></block>
   <block id="a923d2e65283c489ad78d9cdfa9bad74" category="section-title">Ajoutez des informations d'identification AWS directement à BlueXP</block>
@@ -1959,7 +1902,6 @@
   <block id="98a589e7baa6e35fa2a8b5710c9f3908" category="paragraph"><block ref="98a589e7baa6e35fa2a8b5710c9f3908" category="inline-link-rx"></block></block>
   <block id="e1bc7b26155063f1ce71b76f655669ef" category="section-title">5 février 2023</block>
   <block id="d2ab99e3c8406089dca863337debb121" category="section-title">Connecteur 3.9.26</block>
-  <block id="330ddcd0a3779c8729cfb2c56aeb33f5" category="list-text">Sur la page *connexion*, vous êtes invité à saisir l'adresse e-mail associée à votre connexion. Après avoir cliqué sur *Suivant*, BlueXP vous invite à vous authentifier à l'aide de la méthode d'authentification associée à votre connexion :</block>
   <block id="1baec3621cd37cfb63c78d95c414ca61" category="list-text">Le mot de passe de vos identifiants cloud NetApp</block>
   <block id="1dca7678a1041ed05b6071c24454dfde" category="list-text">Vos identifiants d'identité fédérés</block>
   <block id="9ec04e5ecf7230969f472cb3ba28f9d5" category="list-text">Vos identifiants du site du support NetApp</block>
@@ -2199,8 +2141,6 @@
   <block id="89c19793fa4fd34426a128c4ebe03948" category="list-text">Créez un fichier YAML qui inclut le contenu du <block ref="16c885f571f66caafdba8f3cb6f880e3" category="inline-link-macro-rx"></block>.</block>
   <block id="60696c8c3376d314543ef1f6c5dd3364" category="paragraph">L'exemple suivant crée un rôle nommé « connecteur » au niveau du projet :</block>
   <block id="bd67573655874b669c5ced800e8181a2" category="list-text">Créez un compte de service dans Google Cloud :</block>
-  <block id="e81e4e7ef7043b471a5f895cfe2932ff" category="list-text">Dans le service IAM &amp; Admin, cliquez sur *comptes de service &gt; Créer un compte de service*.</block>
-  <block id="4335cd428e49ade89c004cb921b74ae5" category="list-text">Entrez les détails du compte de service et cliquez sur *Créer et continuer*.</block>
   <block id="2806d36a02ea6ae3c55b65ffb3f9138d" category="list-text">Sélectionnez le rôle que vous venez de créer.</block>
   <block id="18853fd6b8b6bc9f150dcd5bfc2d0d12" category="inline-link">Documents Google Cloud : création d'un compte de service</block>
   <block id="f4aac271a6b2fa84b18b0131c75d5efd" category="paragraph"><block ref="f4aac271a6b2fa84b18b0131c75d5efd" category="inline-link-rx"></block></block>
@@ -2211,7 +2151,6 @@
   <block id="e2b43bc6eddd7c5ec2c7104bd42e0e6e" category="list-text">Sur la page *IAM*, sélectionnez *accorder accès* et fournissez les détails nécessaires.</block>
   <block id="eacb1b3758ebd1aa03b4f1b86b49bd53" category="list-text">Saisissez l'e-mail du compte de service du connecteur.</block>
   <block id="8f3118254324aa503647a0f0a4cd34cc" category="list-text">Sélectionnez le rôle personnalisé du connecteur.</block>
-  <block id="4cc186df234138a57b2e8c5d8e5f7f8d" category="list-text">Cliquez sur *Enregistrer*.</block>
   <block id="b0cd7667098b2a3439c52ba1f9334faa" category="inline-link">Documentation Google Cloud</block>
   <block id="ece59c09a5f78f29903e8e1daac67577" category="paragraph">Pour plus de détails, reportez-vous à<block ref="eb023f41fbcdd6f661c855770356f2dc" category="inline-link-rx"></block></block>
   <block id="893b6747ffabae1d7bbd6d266f24c4ab" category="section-title">Configurez les autorisations VPC partagées</block>
@@ -2570,7 +2509,6 @@ ou</block>
   <block id="f911544c9d1c454bbad50b12be4649a1" category="paragraph"><block ref="f911544c9d1c454bbad50b12be4649a1" category="inline-link-macro-rx"></block></block>
   <block id="a2678c8f1e6c4ef6102f9e3e10a87ecc" category="paragraph"><block ref="a2678c8f1e6c4ef6102f9e3e10a87ecc" category="inline-link-macro-rx"></block></block>
   <block id="b16e9971e18d4e63cd90cc2dc398c39e" category="list-text">Une paire de clés pour l'instance EC2.</block>
-  <block id="7cddf1ab764729128f3c7130203d73a0" category="list-text">Choisissez *Amazon Web Services* comme fournisseur de cloud et cliquez sur *Continuer*.</block>
   <block id="af9010f3e11d7efceb7ba88d02e92d39" category="list-text">*Soyez prêt*: Passez en revue ce dont vous aurez besoin.</block>
   <block id="694fc44336d7d79e22d661cd3051861e" category="list-text">*Informations d'identification AWS* : spécifiez votre région AWS puis choisissez une méthode d'authentification, qui est soit un rôle IAM que BlueXP peut assumer, soit une clé d'accès AWS et une clé secrète.</block>
   <block id="8b8f36850755c4ac43a0df238add8748" category="inline-link-macro">Découvrez comment ajouter des identifiants supplémentaires</block>
@@ -2591,11 +2529,8 @@ ou</block>
   <block id="dfcbfa4ce7dbf520f2b737359dfbc591" category="list-text">Autorisations de vous abonner à AWS Marketplace et de vous désabonner pour votre utilisateur IAM.</block>
   <block id="7c9b14f6116e140202c359bff8bc86c2" category="inline-link">BlueXP, page sur AWS Marketplace</block>
   <block id="3a1757ca714434ada3988895ed0a0fab" category="list-text">Accédez au<block ref="aa1bf3a3349706e28315b07c47668a91" category="inline-link-rx"></block></block>
-  <block id="b748cb0f2ad325f27d30850a71d55e6d" category="list-text">Sur la page Marketplace, cliquez sur *Continuer pour s'abonner*, puis cliquez sur *Continuer la configuration*.</block>
   <block id="648fca9db3d7e8e554a59d3519d8b0f6" category="inline-image-macro">Une capture d'écran affiche les boutons Continuer à s'abonner et Continuer la configuration sur AWS Marketplace.</block>
   <block id="973e3a2a390bb57ce9d9e16ac0145023" category="paragraph"><block ref="973e3a2a390bb57ce9d9e16ac0145023" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="6901834c9ae604b653768895509f4303" category="list-text">Modifiez l'une des options par défaut et cliquez sur *Continuer pour lancer*.</block>
-  <block id="197769c5244e448b93746c973eb17b81" category="list-text">Sous *choisir action*, sélectionnez *lancer via EC2*, puis cliquez sur *lancer*.</block>
   <block id="7c36ac5a8d104c08bd1c9905b4e5d437" category="paragraph">Ces étapes décrivent comment lancer l'instance à partir de la console EC2, car la console vous permet d'associer un rôle IAM à l'instance de connecteur. Cela n'est pas possible en utilisant l'action *lancer à partir du site Web*.</block>
   <block id="b3472ff32fca13e95a664d2516fabc9d" category="list-text">Suivez les invites pour configurer et déployer l'instance :</block>
   <block id="d062afbb0dab008c992fc7630e6e5b1d" category="list-text">*Nom et balises* : saisissez un nom et des balises pour l'instance.</block>
@@ -2609,7 +2544,6 @@ ou</block>
   <block id="2cff93ab04445d2412fc49f1670cf749" category="paragraph">Quelques règles supplémentaires sont requises pour des configurations spécifiques.</block>
   <block id="79b8b9ad9bf89b0b494ac4c62694d70f" category="list-text">*Configurer le stockage* : conservez les options de stockage par défaut.</block>
   <block id="752330cdb2fab31ec29aaa286269a882" category="list-text">*Détails avancés* : sous *profil d'instance IAM*, choisissez le rôle IAM qui inclut les autorisations requises pour le connecteur.</block>
-  <block id="00e3e218776ebf2123cac5b55d575b53" category="list-text">*Résumé* : consultez le résumé et cliquez sur *lancer l'instance*.</block>
   <block id="10a3df02c55e733eca6fef076545645a" category="paragraph">AWS lance le logiciel avec les paramètres spécifiés. L'instance de connecteur et le logiciel doivent s'exécuter dans environ cinq minutes.</block>
   <block id="263bf141eee327cfdfe08fdc96fb32bc" category="paragraph"><block ref="53f6e9b699374851a8086ab8319c48f4" category="inline-link-macro-rx"></block>.</block>
   <block id="037ab8e28d036e5a218a1692a62fd8b5" category="summary">Créez un connecteur dans AWS en choisissant une option d'installation, en configurant la mise en réseau, en préparant les autorisations, etc.</block>
@@ -2746,7 +2680,6 @@ Notez que la page s'actualise entre le test de la connexion et l'activation de l
   <block id="bf4c731c0ee7f60c8018ad8f96828dda" category="section-title">Client existant avec un compte NSS</block>
   <block id="7e177185e7eddff33dd8f3aeb7551132" category="paragraph">Si vous êtes client NetApp avec un compte NSS, il vous suffit de vous inscrire pour obtenir du support dans BlueXP.</block>
   <block id="0c788a722f31f8f0cf36539ee04615cf" category="list-text">Sélectionnez *Ajouter des informations d'identification NSS* et suivez l'invite authentification du site de support NetApp (NSS).</block>
-  <block id="8c916e828e9e5a3592c8cac4e25928be" category="list-text">Pour confirmer que le processus d'enregistrement a réussi, cliquez sur l'icône aide et sélectionnez *support*.</block>
   <block id="8add4eb0d3f6ce61d374f3df3ee4eadf" category="paragraph">La page *Ressources* doit indiquer que votre compte est enregistré pour le support.</block>
   <block id="10c56875db7a47f791d653e5d5bff0e9" category="inline-image-macro">Capture d'écran affichant un numéro de série de compte, une case à cocher verte et le texte enregistré pour le support.</block>
   <block id="3d183819a15163ef2e2e7d9d764254a9" category="paragraph"><block ref="3d183819a15163ef2e2e7d9d764254a9" category="inline-image-macro-rx" type="image"></block></block>
@@ -2760,7 +2693,6 @@ Notez que la page s'actualise entre le test de la connexion et l'activation de l
   <block id="0499bba105f8a891a2c671f1ba99dd34" category="list-text">Associez votre nouveau compte NSS à votre connexion BlueXP en suivant les étapes décrites sous <block ref="2f3aba04ec49ee5f0573a6c80a1b9df2" category="inline-xref-macro-rx"></block>.</block>
   <block id="e9b1f53d6cabb3394833a4e102eb6a69" category="section-title">Découvrez la toute nouvelle gamme NetApp</block>
   <block id="c20c107d0d4eef6351660f3590324232" category="paragraph">Si vous êtes nouveau chez NetApp et que vous ne disposez pas d'un compte NSS, effectuez chacune des étapes ci-dessous.</block>
-  <block id="1afe19576f77bb0073c93359ed2cbb18" category="list-text">Dans le coin supérieur droit de la console BlueXP, cliquez sur l'icône aide et sélectionnez *support*.</block>
   <block id="2974170a8b1b5b4a2ac69aacd4c1c9c3" category="list-text">Recherchez le numéro de série de l'ID de compte sur la page d'inscription au support.</block>
   <block id="379f9cd57d97013f3f7fdd24f692a0b1" category="paragraph"><block ref="379f9cd57d97013f3f7fdd24f692a0b1" category="inline-image-macro-rx" type="image"></block></block>
   <block id="dd50e314c18933734174c1156dd9237f" category="inline-link">Site d'inscription au support NetApp</block>
@@ -2779,8 +2711,6 @@ Notez que la page s'actualise entre le test de la connexion et l'activation de l
   <block id="a0518a10626dc11fd00e2d20265ad240" category="list-text">Enregistrement des systèmes Cloud Volumes ONTAP avec paiement à l'utilisation pour bénéficier d'une assistance</block>
   <block id="39f382b97080640c75604b5890f3a5d3" category="paragraph">L'association des informations d'identification NSS à votre compte BlueXP est différente du compte NSS associé à une connexion utilisateur BlueXP.</block>
   <block id="e3bc6d35311568d55f1c8ea11984b964" category="paragraph">Ces informations d'identification NSS sont associées à votre ID de compte BlueXP spécifique. Les utilisateurs qui appartiennent au compte BlueXP peuvent accéder à ces informations d'identification depuis *support &gt; gestion NSS*.</block>
-  <block id="d17d6b5dafebab6b7659da8850737e70" category="list-text">Cliquez sur *NSS Management &gt; Ajouter un compte NSS*.</block>
-  <block id="8aaf101e623c543c7eef3c65f6233366" category="list-text">Lorsque vous y êtes invité, cliquez sur *Continuer* pour être redirigé vers une page de connexion Microsoft.</block>
   <block id="a046fbde0a8e04968445555624e37a69" category="summary">Si vos stratégies d'entreprise nécessitent l'utilisation d'un serveur proxy pour toutes les communications vers Internet, vous devez configurer vos connecteurs pour utiliser ce serveur proxy. Si vous n'avez pas configuré de connecteur pour utiliser un serveur proxy pendant l'installation, vous pouvez configurer le connecteur pour qu'il utilise ce serveur proxy à tout moment.</block>
   <block id="146adb7944757e88795676b780c31811" category="doc">Configurez un connecteur pour utiliser un serveur proxy</block>
   <block id="9d8704731bd068bd3be5ad98b7941cba" category="paragraph">BlueXP prend en charge HTTP et HTTPS. Le serveur proxy peut se trouver dans le cloud ou dans votre réseau.</block>
@@ -2871,7 +2801,6 @@ Notez que la page s'actualise entre le test de la connexion et l'activation de l
   <block id="a1af18fd60a9b7bf856838a0a7ada673" category="list-text">Sélectionnez *ID client*.</block>
   <block id="a59c428dfaf34cac48f2f98a39d73d8d" category="list-text">L'ID est copié dans le presse-papiers.</block>
   <block id="1ca3bf189dbc7ec926b42edad60ee61d" category="section-title">Recréez les clés</block>
-  <block id="f787b2b98aa352927c5b610979ee1e62" category="paragraph">La recréation de la clé supprimera la clé existante pour ce compte de service, puis créera une nouvelle clé. Vous ne pourrez pas utiliser la touche précédente.</block>
   <block id="a09d0aef708d0fd918ab67fd89c82210" category="list-text">Sélectionnez *recréer la clé*.</block>
   <block id="e2ce6c698f201abf2e0cc354c1f6d75f" category="list-text">Sélectionnez *recréer* pour confirmer.</block>
   <block id="30b299e9cb0ca616520dfdc739caa685" category="section-title">Supprimer un compte de service</block>
@@ -2963,7 +2892,6 @@ Vous devez également vous assurer que la stratégie est à jour lorsque de nouv
   <block id="e92861fef775acb8c5a64f8d282a8b80" category="cell">Aucune capacité de messagerie</block>
   <block id="d1e2d8530c09fe28c2a817289491bd01" category="section-title">Surveiller les activités à l'aide du Centre de notification</block>
   <block id="40da6f1400e45d080a97992a6a539894" category="inline-image-macro">signal sonore de notification</block>
-  <block id="5cf9ecbcae765efe1cb17d1c802e39cb" category="paragraph">Vous pouvez afficher les notifications en cliquant sur le signal sonore de notification (<block ref="df7c8a71ca3da4359e40e121f18f87b9" category="inline-image-macro-rx" type="image"></block>) dans la barre de menus. La couleur de la petite bulle dans la cloche indique la notification de gravité de niveau le plus élevé qui est active. Si vous voyez une bulle rouge, cela signifie qu'il y a une notification importante que vous devriez regarder.</block>
   <block id="d59387ab05a2cbd005866b74628417a0" category="inline-image-macro">Capture d'écran affichant la liste des notifications en cours dans le Centre de notification.</block>
   <block id="e24c5199eee665d8e879dc72dc56c667" category="paragraph"><block ref="e24c5199eee665d8e879dc72dc56c667" category="inline-image-macro-rx" type="image"></block></block>
   <block id="2a4be390687f80c7cdf976afca0fe778" category="section-title">Types de notification</block>
@@ -3120,7 +3048,6 @@ Vous devez également vous assurer que la stratégie est à jour lorsque de nouv
   <block id="19afccead98b1836658110442ef9c5e6" category="list-text">Recherchez BlueXP et sélectionnez l'offre.</block>
   <block id="a93a66fe6d6d648adde8457a60af5942" category="inline-image-macro">Capture d'écran montrant l'offre BlueXP après la recherche dans AWS Marketplace</block>
   <block id="8782d52b41ea9b735c120df8ccab4f47" category="paragraph"><block ref="8782d52b41ea9b735c120df8ccab4f47" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="26983a904e0717c520032a2178795368" category="list-text">Cliquez sur *Continuer*.</block>
   <block id="07910e9ec98e7a02ee5b24f85cc660d2" category="list-text">*Choisissez un type d'instance* : selon la disponibilité de la région, choisissez un des types d'instance pris en charge (t3.XLarge est recommandé).</block>
   <block id="7de969f5ec8b28cd7687e32ca5c245bc" category="list-text">*Configurer les détails de l'instance* : sélectionnez un VPC et un sous-réseau, choisissez le rôle IAM que vous avez créé à l'étape 1, activez la protection de terminaison (recommandée) et choisissez toutes les autres options de configuration qui répondent à vos exigences.</block>
   <block id="f1e012a5b5a981694252d85992469fd7" category="inline-image-macro">Capture d'écran affichant les champs de la page configurer l'instance dans AWS. Le rôle IAM que vous devriez avoir créé à l'étape 1 est sélectionné.</block>
@@ -3128,7 +3055,6 @@ Vous devez également vous assurer que la stratégie est à jour lorsque de nouv
   <block id="05c4d183e8bff44df2e6ac91133757fd" category="list-text">*Ajouter stockage* : conservez les options de stockage par défaut.</block>
   <block id="ff821e6be3aec0bf40cb1012dad2089f" category="list-text">*Ajouter des balises* : saisissez des balises pour l'instance, si vous le souhaitez.</block>
   <block id="704a96694410db036940a9b758b475ac" category="list-text">*Configurer le groupe de sécurité* : spécifiez les méthodes de connexion requises pour l'instance de connecteur : SSH, HTTP et HTTPS.</block>
-  <block id="3dcd3a438eecbdd8bc716a93dbc7adf7" category="list-text">*Revue*: Passez en revue vos sélections et cliquez sur *lancer*.</block>
   <block id="36f12b5d2f30503ac36305c4f494f280" category="list-text">Vnet et sous-réseau répondant aux exigences de mise en réseau.</block>
   <block id="e055afdf7d35580a49ddc59582adcf3b" category="list-text">Rôle personnalisé Azure qui inclut les autorisations requises pour le connecteur.</block>
   <block id="fd5738f5f42540888241b6b51480ad14" category="inline-link-macro">Découvrez comment configurer des autorisations Azure</block>
@@ -3541,20 +3467,8 @@ La découverte sans connecteur (découverte directe) n'est pas prise en charge.<
   <block id="f4abcc0682712b312b347ed2a4b32165" category="paragraph">Abonnez-vous à BlueXP sur le marché de votre fournisseur cloud pour payer les services BlueXP à un taux horaire (PAYGO) ou un contrat annuel. Si vous avez acheté une licence NetApp (BYOL), vous devez également souscrire à l'offre Marketplace. Votre licence est toujours facturée en premier, mais vous serez facturé au taux horaire si vous dépassez votre capacité sous licence ou si la période de validité de la licence expire.</block>
   <block id="56246b5433f690a35c74ed45a296e993" category="paragraph">Un abonnement Marketplace permet de facturer les services BlueXP suivants :</block>
   <block id="8219b1ea282823d830f661117796ac3d" category="paragraph">L'abonnement à BlueXP implique d'associer un abonnement Marketplace aux informations d'identification cloud associées à un connecteur. Si vous avez suivi le flux de travail « commencer avec le mode standard », vous devriez déjà avoir un connecteur. Pour en savoir plus, consultez le <block ref="ce6d43255d920acadadb7e3862aee0b0" category="inline-link-macro-rx"></block>.</block>
-  <block id="fe001b474268cb9300af19ba4c12edd8" category="list-text">Cliquez sur le menu d'action correspondant à un ensemble d'informations d'identification, puis sélectionnez *associer un abonnement*.</block>
   <block id="7561d35e392b638f4fb5bc5f72459710" category="paragraph">Vous devez sélectionner les informations d'identification associées à un connecteur. Vous ne pouvez pas associer un abonnement Marketplace aux informations d'identification associées à BlueXP.</block>
-  <block id="35189ab5714b42941b6c22320f395243" category="list-text">Pour associer les informations d'identification à un abonnement existant, sélectionnez-le dans la liste déroulante et cliquez sur *associer*.</block>
-  <block id="0da34741c0fedd26eb889170d87be2c7" category="list-text">Pour associer les informations d'identification à un nouvel abonnement, cliquez sur *Ajouter un abonnement &gt; Continuer* et suivez les étapes de AWS Marketplace :</block>
-  <block id="1c1c040e218e35ae634138db5c2055f4" category="list-text">Cliquez sur *Afficher les options d'achat*.</block>
-  <block id="85bb97cf1fc6a37ea1a5e97e0e2e1a8b" category="list-text">Cliquez sur *Subscribe*.</block>
-  <block id="c75b8cac68776a239e8da30928fbc723" category="list-text">Cliquez sur *configurer votre compte*.</block>
   <block id="20dc3df4cdf91b4bd876009a415c2cec" category="paragraph">La vidéo suivante décrit la procédure de souscription à partir d'AWS Marketplace :</block>
-  <block id="7f024bcfe9b965209454c94e48004d5d" category="list-text">Pour associer les informations d'identification à un nouvel abonnement, cliquez sur *Ajouter un abonnement &gt; Continuer* et suivez les étapes dans Azure Marketplace :</block>
-  <block id="078d62005d56b885b14c45dcfcd16082" category="list-text">Remplissez le formulaire et cliquez sur *Abonnez-vous*.</block>
-  <block id="ac66d82c89aefbe9c31ed8fe6308233a" category="list-text">Une fois le processus d'abonnement terminé, cliquez sur *configurer le compte maintenant*.</block>
-  <block id="978deed4db0f89cc0f25e6998d8c5ede" category="list-text">Pour associer les informations d'identification à un abonnement existant, sélectionnez un projet Google Cloud et un abonnement dans la liste déroulante, puis cliquez sur *associé*.</block>
-  <block id="b46cc5bd37bd52a5b31b40b8ff054c3d" category="list-text">Si vous n'avez pas encore d'abonnement, cliquez sur *Ajouter un abonnement &gt; Continuer* et suivez les étapes de Google Cloud Marketplace.</block>
-  <block id="8e43471beda7327a078697a498a253ca" category="list-text">Dans la boîte de dialogue contextuelle, cliquez sur *s'inscrire auprès de NetApp, Inc.*</block>
   <block id="53043f0a6d597ccfe179296cc8ded9c0" category="inline-link">Gérez les licences BYOL basées sur la capacité pour Cloud Volumes ONTAP</block>
   <block id="fe58f6b68f2391f47e7f19d45735226a" category="list-text"><block ref="fe58f6b68f2391f47e7f19d45735226a" category="inline-link-rx"></block></block>
   <block id="fe661ee4e3dd2d796b000bdbe116c002" category="inline-link">Gérez les licences BYOL pour les services de données BlueXP</block>
@@ -3598,11 +3512,7 @@ La découverte sans connecteur (découverte directe) n'est pas prise en charge.<
   <block id="f9ae909c9f8845215c3524f51ff1ed97" category="open-title">Compte utilisateur Azure</block>
   <block id="0c5e0cb46ed59511e60fcbc8e0e423c2" category="paragraph">Attribuez le rôle personnalisé à l'utilisateur qui va déployer le connecteur à partir de BlueXP.</block>
   <block id="69f03931f7dda53f08365d3254d0ce78" category="list-text">Dans le portail Azure, ouvrez le service *Subscriptions* et sélectionnez l'abonnement de l'utilisateur.</block>
-  <block id="6dc4f3e9aa2dada18f0a17189fa7d079" category="list-text">Cliquez sur *contrôle d'accès (IAM)*.</block>
-  <block id="761218505548d0e5a2977bd7c31de50a" category="list-text">Cliquez sur *Ajouter* &gt; *Ajouter une affectation de rôle*, puis ajoutez les autorisations suivantes :</block>
-  <block id="407df91196b1a54a89a9911a8ac6a332" category="list-text">Sélectionnez le rôle *Azure SetupAsService* et cliquez sur *Suivant*.</block>
   <block id="4cca684df8c889c784e30e6f0215cff5" category="admonition">Azure SetupAsService est le nom par défaut fourni dans la stratégie de déploiement du connecteur pour Azure. Si vous avez choisi un autre nom pour le rôle, sélectionnez-le à la place.</block>
-  <block id="42cffe053a918fe3b27cd3bef2758b91" category="list-text">Cliquez sur *Sélectionner les membres*, choisissez votre compte utilisateur et cliquez sur *Sélectionner*.</block>
   <block id="f6d4189bf00021bb75f4f2f5b11507bf" category="paragraph">L'utilisateur Azure dispose désormais des autorisations nécessaires pour déployer le connecteur depuis BlueXP.</block>
   <block id="d9a4ebb1284c84465eac2a20b8331523" category="paragraph">Au lieu de vous connecter à votre compte Azure, vous pouvez fournir à BlueXP les identifiants d'un principal de service Azure qui dispose des autorisations requises.</block>
   <block id="f7f4921534d4730228a1def336cce565" category="paragraph">Créez et configurez un principal de service dans Azure Active Directory et obtenez les identifiants Azure dont BlueXP a besoin.</block>
@@ -3817,4 +3727,95 @@ Ce terminal n'est requis que dans les régions Azure Government.</block>
   <block id="e671b39f5fdb18b38eb5c968b368b3aa" category="cell">Appels d'API vers Azure, vers ONTAP, vers la classification BlueXP, vers la protection BlueXP contre les ransomware et envoi de messages AutoSupport à NetApp</block>
   <block id="8150638aa57d2b5755445cf3ab8eac20" category="cell">Appels d'API vers Google Cloud, vers ONTAP, vers la classification BlueXP, vers la protection BlueXP contre les ransomware et envoi de messages AutoSupport à NetApp</block>
   <block id="6d349a0af72df500a21b7660d8e471b2" category="paragraph"><block ref="6d349a0af72df500a21b7660d8e471b2" category="inline-link-rx"></block></block>
+  <block id="f19ab635e6d5f884a22ee4ce067fdbfd" category="list-text">Sélectionnez *informations d'identification utilisateur*.</block>
+  <block id="cfc5506589d5a4d055e721267d5f0732" category="list-text">Pour confirmer que le processus d'enregistrement a réussi, sélectionnez l'icône aide et sélectionnez *support*.</block>
+  <block id="8281d32bb775e644bd52916734e16bef" category="paragraph">Lorsque vous utilisez la classification BlueXP pour analyser les données Azure NetApp Files, Connector effectue les requêtes API suivantes :</block>
+  <block id="b6903fcc348dc2286adda5751418a7f9" category="list-text">Dans le menu, sélectionnez *enregistrements d'applications*.</block>
+  <block id="6d730ff41d50e6c38331a70a20a46df3" category="list-text">Sélectionnez *nouvel enregistrement*.</block>
+  <block id="b5249314aff5fae6b6de54ce7f13f16b" category="list-text">Sélectionnez *Enregistrer*.</block>
+  <block id="4373f2885ec5493eabb4edec6b9422e4" category="list-text">Sélectionnez *contrôle d'accès (IAM) &gt; Ajouter &gt; Ajouter une affectation de rôle*.</block>
+  <block id="ac594ce6138d4938493333dec80544b8" category="list-text">Dans l'onglet *role*, sélectionnez le rôle *BlueXP Operator* et sélectionnez *Next*.</block>
+  <block id="049d14d05ca9e7adafff9e17ed48736e" category="list-text">Sélectionnez *Sélectionner membres*.</block>
+  <block id="ce2590ec8b406b42ba7a670543c8ab81" category="list-text">Sélectionnez l'application et sélectionnez *Sélectionner*.</block>
+  <block id="e6cd86d61f4639c8a27006c6c29b3e9f" category="list-text">Sélectionnez *Suivant*.</block>
+  <block id="85b8cec39bdb05ec73cd076b2359cfd1" category="list-text">Sélectionnez *consulter + affecter*.</block>
+  <block id="9993d6f6284200668a6f4c51df9812da" category="list-text">Dans le service *Azure Active Directory*, sélectionnez *App recalages* et sélectionnez l'application.</block>
+  <block id="69dc2d1327bf480b016b4aed7cd7d900" category="list-text">Sélectionnez *autorisations API &gt; Ajouter une autorisation*.</block>
+  <block id="4477be44a064848adbf1b5f50428e0cd" category="list-text">Sélectionnez *accéder à Azure Service Management en tant qu'utilisateurs de l'organisation*, puis sélectionnez *Ajouter des autorisations*.</block>
+  <block id="39ec83d3cc8c12b784bf30f64700b168" category="list-text">Sélectionnez *enregistrements d'applications* et sélectionnez votre application.</block>
+  <block id="05498c836fbd4349a752efbb54e8949c" category="list-text">Sélectionnez *certificats et secrets &gt; Nouveau secret client*.</block>
+  <block id="fa12509cfb8e8ccded16e2a254e988c4" category="list-text">Sélectionnez *Ajouter*.</block>
+  <block id="c6233dcd0500982eabc73e85f42efc41" category="list-text">Sélectionnez *Ajouter des informations d'identification* et suivez les étapes de l'assistant.</block>
+  <block id="6372aab032a410c40af497b1755aa8b2" category="list-text">Sélectionnez le menu d'action correspondant à un ensemble d'informations d'identification, puis sélectionnez *abonnement associé*.</block>
+  <block id="5aa5ca3c4ae1419b335323e6ee592b93" category="list-text">Pour associer les informations d'identification à un abonnement existant, sélectionnez l'abonnement dans la liste déroulante et sélectionnez *associer*.</block>
+  <block id="875d095c260fa8c96e0e69a41dd336b7" category="list-text">Pour associer les informations d'identification à un nouvel abonnement, sélectionnez *Ajouter un abonnement &gt; Continuer* et suivez les étapes dans Azure Marketplace :</block>
+  <block id="12975d5f412a47bef9db3c7a4d365814" category="list-text">Sélectionnez *s'abonner*.</block>
+  <block id="9dc9a5b2f23fe90a0fd71125f3034dfd" category="list-text">Remplissez le formulaire et sélectionnez *s'abonner*.</block>
+  <block id="3221538307211e131f96e1a83b1a5235" category="list-text">Une fois le processus d'abonnement terminé, sélectionnez *configurer le compte maintenant*.</block>
+  <block id="6887254b5f03610818b55891a5db48ef" category="list-text">Sélectionnez le rôle *Azure SetupAsService* et sélectionnez *Next*.</block>
+  <block id="53b4a11766155c5b179df42cfaced80f" category="list-text">Sélectionnez *Sélectionner des membres*, choisissez votre compte d'utilisateur et sélectionnez *Sélectionner*.</block>
+  <block id="497002c594b6f249087bf6b22381ee4d" category="list-text">Pour associer les informations d'identification à un abonnement existant, sélectionnez un projet Google Cloud et un abonnement dans la liste déroulante, puis sélectionnez *associer*.</block>
+  <block id="ba192d211ab8fe6aceb98f59e685d1bb" category="list-text">Si vous n'avez pas encore d'abonnement, sélectionnez *Ajouter un abonnement &gt; Continuer* et suivez les étapes indiquées dans Google Cloud Marketplace.</block>
+  <block id="375b5c037ddde62b74d4b30381271828" category="list-text">Dans la boîte de dialogue qui s'affiche, sélectionnez *s'inscrire auprès de NetApp, Inc.*</block>
+  <block id="dcb058618377cff08193ee6990096f07" category="list-text">Sélectionnez *contrôle d'accès (IAM)* &gt; *Ajouter* &gt; *Ajouter une affectation de rôle*.</block>
+  <block id="51c9db5527a197748c924f3777b04b5d" category="list-text">Sélectionnez *Sélectionner les membres*, sélectionnez l'abonnement dans lequel la machine virtuelle du connecteur a été créée, choisissez *machine virtuelle*, puis sélectionnez la machine virtuelle du connecteur.</block>
+  <block id="a907c3ee93defa4e7eb326edec72fa3d" category="list-text">Sélectionnez *Sélectionner*.</block>
+  <block id="6d2d5c49a26a8339a26911674ee69f80" category="list-text">Pour associer les informations d'identification à un nouvel abonnement, sélectionnez *Ajouter un abonnement &gt; Continuer* et suivez les étapes indiquées dans AWS Marketplace :</block>
+  <block id="cc5b03fa4f937c63363767c812feeb34" category="list-text">Sélectionnez *Afficher les options d'achat*.</block>
+  <block id="0b45e429b84384fa541446c3364409c9" category="list-text">Sélectionnez *configurer votre compte*.</block>
+  <block id="9d5f9909bec8cf71910a31c50878914c" category="section-title">30 juillet</block>
+  <block id="167693b239be0e2939d61376cd3a5487" category="section-title">Connecteur 3.9.32</block>
+  <block id="7af14628b780746da1b2b7396f10a07e" category="list-text">Vous pouvez désormais exporter les journaux d'audit à l'aide de l'API du service d'audit BlueXP.</block>
+  <block id="f7cc7ff5799b515f0c19fb83e0dd5098" category="paragraph">Le service d'audit enregistre les informations relatives aux opérations effectuées par les services BlueXP. Cela inclut les adresses IP d'origine, les espaces de travail, les connecteurs utilisés et d'autres données de télémétrie. Vous pouvez utiliser ces données pour déterminer quelles actions ont été effectuées, qui les a effectuées et quand elles ont eu lieu.</block>
+  <block id="5a97fe4fe664c9e98d8ad88cdbf44d98" category="inline-link">En savoir plus sur l'utilisation de l'API de service d'audit</block>
+  <block id="23822bdcf5039c31a637229d8ca51ffa" category="paragraph"><block ref="23822bdcf5039c31a637229d8ca51ffa" category="inline-link-rx"></block></block>
+  <block id="d00604985bd7a191952bde8a0cec39fd" category="paragraph">Notez que ce lien est également accessible depuis l'interface utilisateur BlueXP sur la page Chronologie.</block>
+  <block id="23c565330e0f5d82619b18108f5a32ca" category="list-text"><block ref="23c565330e0f5d82619b18108f5a32ca" category="inline-link-rx"></block></block>
+  <block id="405527e38d3c42926031f86b50d381d4" category="list-text"><block ref="405527e38d3c42926031f86b50d381d4" category="inline-link-rx"></block></block>
+  <block id="b5163cd43881e34d9478fc7e00e66e62" category="list-text">Sur la page *connexion*, vous êtes invité à saisir l'adresse e-mail associée à votre connexion. Après avoir sélectionné *Next*, BlueXP vous invite à vous authentifier à l'aide de la méthode d'authentification associée à votre connexion :</block>
+  <block id="3de985fb980dfcce5f5196709e3e62ce" category="list-text">Sélectionnez *stratégies &gt; Créer une stratégie*.</block>
+  <block id="d36ec2dc8acd5ade1fda1b4397ccc99a" category="list-text">Sélectionnez *JSON*.</block>
+  <block id="cedfddf2dfb74aa203be428f7657457c" category="list-text">Sélectionnez *Suivant* et ajoutez des balises, si nécessaire.</block>
+  <block id="01de2e1a7f136c3eeda419bfb07814da" category="list-text">Sélectionnez *Suivant* et entrez un nom et une description.</block>
+  <block id="db92c743d97601150bbdfa11bf3cf66b" category="list-text">Sélectionnez *Créer une stratégie*.</block>
+  <block id="ab9ad001a35a833243a30f3acf6417eb" category="list-text">Dans la console IAM AWS, sélectionnez *Users*, puis sélectionnez le nom d'utilisateur.</block>
+  <block id="93583a9b95fb527997b95ba8db57df14" category="list-text">Sélectionnez *Ajouter des autorisations &gt; joindre des stratégies existantes directement*.</block>
+  <block id="0a6bca3addac2684ad319713b9fb22ed" category="list-text">Sélectionnez *Suivant*, puis *Ajouter des autorisations*.</block>
+  <block id="2f1197d590dc982e571ad76ed9962122" category="list-text">Sélectionnez *rôles &gt; Créer un rôle*.</block>
+  <block id="cd22a7243285b0197650652e956f0870" category="list-text">*À partir de BlueXP* : sélectionnez la liste déroulante connecteur, sélectionnez *Ajouter un connecteur* et suivez les invites.</block>
+  <block id="a383b5c1d32b2c38a7dcfa44af208c71" category="list-text">Sélectionnez le rôle IAM et sélectionnez *mettre à jour le rôle IAM*.</block>
+  <block id="03c5d9363dbf1b3b05f46e5d41ec0266" category="list-text">Sélectionnez la liste déroulante *Connector* et sélectionnez *Ajouter un connecteur*.</block>
+  <block id="0447e5af15c21fbb6eee1972d30cef83" category="list-text">Choisissez *Amazon Web Services* comme fournisseur de cloud et sélectionnez *Continuer*.</block>
+  <block id="15de410cab5b286c0cff40620cbbc2f8" category="list-text">Sélectionnez *Continuer* pour préparer le déploiement à l'aide du guide produit. Chaque étape du guide du produit inclut les informations contenues sur cette page de la documentation.</block>
+  <block id="43c314e15e760781773285daf91c0ad5" category="list-text">Sélectionnez *passer au déploiement* si vous êtes déjà préparé en suivant les étapes de cette page.</block>
+  <block id="21d86ad4e09aa752397558f2a4a4d776" category="list-text">Sur la page Marketplace, sélectionnez *Continuer pour s'abonner*, puis sélectionnez *Continuer à la configuration*.</block>
+  <block id="62e122f28cedb83482c8d975a0ebbc6b" category="list-text">Modifiez l'une des options par défaut et sélectionnez *Continuer pour lancer*.</block>
+  <block id="b5db57dbb4b1fc339bfbf2e32844ab33" category="list-text">Sous *Choisissez action*, sélectionnez *lancer via EC2*, puis *lancer*.</block>
+  <block id="a77947bca5ad1214f93361073cfddb0a" category="list-text">*Résumé* : passez en revue le résumé et sélectionnez *lancer l'instance*.</block>
+  <block id="6cd4b1aeb7ee91ddbd1d37ee958a2b58" category="list-text">Sélectionnez *commençons*.</block>
+  <block id="74fea2a07b811e755565557990612058" category="list-text">Si vous créez votre premier environnement de travail, sélectionnez *Ajouter un environnement de travail* et suivez les invites. Sinon, sélectionnez la liste déroulante *Connector* et sélectionnez *Add Connector*.</block>
+  <block id="1ce857b02028095dcbdb6522daf11862" category="list-text">Sélectionnez *obtenir maintenant*, puis *Continuer*.</block>
+  <block id="36cfedae32501cb288f9aa908aadb288" category="list-text">Dans le portail Azure, sélectionnez *Create* et suivez les étapes pour configurer la machine virtuelle.</block>
+  <block id="6b18581fd807739e0d0c13a503a419de" category="list-text">Sur la page *consulter + créer*, vérifiez vos sélections et sélectionnez *Créer* pour démarrer le déploiement.</block>
+  <block id="cda446e0619e283b785d96b7c48bde3e" category="list-text">Dans le service IAM &amp; Admin, sélectionnez *comptes de service &gt; Créer un compte de service*.</block>
+  <block id="b401764de6903f86e7de99c18b91b1e9" category="list-text">Entrez les détails du compte de service et sélectionnez *Créer et continuer*.</block>
+  <block id="2a8d5c29022382dfb4cb321383f29d88" category="paragraph">Vous pouvez afficher les notifications en sélectionnant la sonnerie de notification (<block ref="df7c8a71ca3da4359e40e121f18f87b9" category="inline-image-macro-rx" type="image"></block>) dans la barre de menus. La couleur de la petite bulle dans la cloche indique la notification de gravité de niveau le plus élevé qui est active. Si vous voyez une bulle rouge, cela signifie qu'il y a une notification importante que vous devriez regarder.</block>
+  <block id="7fe6981833e8fe7fd89e0a99a55573da" category="list-text">Dans BlueXP, sélectionnez *aide &gt; support*.</block>
+  <block id="6a1b74969231967ed071d465206b15c7" category="list-text">Sélectionnez *appelez-nous* si vous souhaitez parler avec quelqu'un au téléphone. Vous serez dirigé vers une page netapp.com qui répertorie les numéros de téléphone que vous pouvez appeler.</block>
+  <block id="d65a2a6fc9caad1867728d4382eeb989" category="list-text">Sélectionnez *Créer un cas* pour ouvrir un ticket avec un spécialiste du support NetApp :</block>
+  <block id="0ff9b4b8684b9e03c9c1e1320935eae3" category="paragraph">Pour un historique de vos dossiers de support, vous pouvez sélectionner *Paramètres &gt; Chronologie* et rechercher les actions nommées "Créer un dossier de support". Un bouton situé à l'extrême droite vous permet de développer l'action pour afficher les détails.</block>
+  <block id="0a4050ac39772e9281a9aba225254bf8" category="list-text">Sélectionnez *case Management* et si vous y êtes invité, ajoutez votre compte NSS à BlueXP.</block>
+  <block id="1d39d3ab518e1e3f16cbafb2a56e1fd9" category="list-text">Sous *cas de l'organisation*, sélectionnez *Afficher* pour afficher tous les cas associés à votre société.</block>
+  <block id="cdf14d2156528231a5dbd12ad5c95d3f" category="list-text">Modifiez les colonnes qui apparaissent dans le tableau en sélectionnant <block ref="b574dd55d604ddb721d869a0fc302007" category="inline-image-macro-rx" type="image"></block> puis choisissez les colonnes que vous souhaitez afficher.</block>
+  <block id="348552521b849746260fe8d296d34c15" category="list-text">Gérer un dossier existant en sélectionnant <block ref="566c029d89e7d5421080767a37bf443e" category="inline-image-macro-rx" type="image"></block> et en sélectionnant l'une des options disponibles :</block>
+  <block id="bb6d5d351525342dd6b3cf4d15b6f298" category="list-text">*Fermer le cas* : fournissez des détails sur la raison pour laquelle vous fermez le cas et sélectionnez *Fermer le cas*.</block>
+  <block id="57ab38f0801cd04e83411dd83b30729f" category="inline-link-macro">Apprenez à gérer les espaces de travail d'un connecteur</block>
+  <block id="bb9f1b247d229038dd3e314bd90af7da" category="admonition">Vous devez également associer le connecteur à des espaces de travail pour que les administrateurs d'espace de travail puissent accéder à ces espaces de travail à partir de BlueXP. <block ref="1e9768478c545fd11a6bc38c853aa6cd" category="inline-link-macro-rx"></block>.</block>
+  <block id="aaa1dcd03bd1289bed9f95d54940df48" category="paragraph">La recréation de la clé supprimera la clé existante pour ce compte de service, puis créera une nouvelle clé. Vous ne pourrez pas utiliser la touche précédente.</block>
+  <block id="28d4bc1715fb315a1134ddb9ce9b69ef" category="paragraph">Si vous avez créé un nouvel espace de travail, vous devez également ajouter le connecteur à cet espace de travail. Si vous n'ajoutez pas le connecteur, les administrateurs de l'espace de travail ne peuvent pas accéder aux ressources de l'espace de travail. Reportez-vous à la section suivante pour plus de détails.</block>
+  <block id="136dc09835924029e4299fa28f17233d" category="list-text">Sélectionnez *Continuer*.</block>
+  <block id="b7d7e6e6aa05f7913906689b7f1e583a" category="list-text">*Revoir* : passez en revue vos sélections et sélectionnez *lancer*.</block>
+  <block id="ecbc764762d64c7a0728c929154e75f5" category="list-text">Sélectionnez *configurer Nouveau BlueXP* et suivez les invites pour configurer le système.</block>
+  <block id="22cb2add8f3bffef4e749ab0af395ded" category="list-text">*Révision* : consultez les détails, acceptez le contrat de licence, puis sélectionnez *configurer*.</block>
+  <block id="451c5548be4e9e7bdee0e30d3122050a" category="paragraph"><block ref="5df7abb03e9cd39c0665b677aaa45ef4" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>

@@ -56,7 +56,7 @@ Vous pouvez ensuite ajouter les informations d'identification du compte à BlueX
 
 Après avoir ajouté un autre ensemble d'informations d'identification, vous pouvez les passer lors de la création d'un nouvel environnement de travail :
 
-image:screenshot_accounts_switch_aws.png["Capture d'écran permettant de sélectionner un compte de fournisseur cloud après avoir cliqué sur changer de compte dans la page Détails  Credentials."]
+image:screenshot_accounts_switch_aws.png["Capture d'écran affichant la sélection d'un compte de fournisseur cloud à l'autre après avoir sélectionné changer de compte dans la page Détails  Credentials."]
 
 link:task-adding-aws-accounts.html#add-additional-credentials-to-a-connector["Découvrez comment ajouter des informations d'identification AWS à un connecteur existant."]
 

@@ -50,7 +50,7 @@ Vous le feriez alors link:task-adding-azure-accounts.html#add-additional-azure-c
 
 Par exemple, vous pouvez basculer entre les informations d'identification lors de la création d'un nouvel environnement de travail Cloud Volumes ONTAP :
 
-image:screenshot_accounts_switch_azure.gif["Capture d'écran permettant de sélectionner un compte de fournisseur cloud après avoir cliqué sur changer de compte dans la page Détails  Credentials."]
+image:screenshot_accounts_switch_azure.gif["Capture d'écran affichant la sélection d'un compte de fournisseur cloud à l'autre après avoir sélectionné changer de compte dans la page Détails  Credentials."]
 
 
 

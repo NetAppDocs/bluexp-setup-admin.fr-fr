@@ -219,14 +219,14 @@ Utilisez un rôle IAM pour fournir au connecteur des autorisations. Vous devrez 
 . Connectez-vous à la console AWS et accédez au service IAM.
 . Création d'une règle :
 +
-.. Cliquez sur *stratégies > Créer une stratégie*.
+.. Sélectionnez *stratégies > Créer une stratégie*.
 .. Sélectionnez *JSON* et copiez et collez le contenu du link:reference-permissions-aws.html["Politique IAM pour le connecteur"].
 .. Terminez les étapes restantes pour créer la stratégie.
 
 
 . Créer un rôle IAM :
 +
-.. Cliquez sur *rôles > Créer un rôle*.
+.. Sélectionnez *rôles > Créer un rôle*.
 .. Sélectionnez *AWS service > EC2*.
 .. Ajoutez des autorisations en joignant la stratégie que vous venez de créer.
 .. Terminez les étapes restantes pour créer le rôle.
@@ -246,7 +246,7 @@ Configurer les autorisations et une clé d'accès pour un utilisateur IAM. Une f
 . Connectez-vous à la console AWS et accédez au service IAM.
 . Création d'une règle :
 +
-.. Cliquez sur *stratégies > Créer une stratégie*.
+.. Sélectionnez *stratégies > Créer une stratégie*.
 .. Sélectionnez *JSON* et copiez et collez le contenu du link:reference-permissions-aws.html["Politique IAM pour le connecteur"].
 .. Terminez les étapes restantes pour créer la stratégie.
 +
@@ -334,8 +334,8 @@ Pour plus de détails, reportez-vous à https://docs.microsoft.com/en-us/azure/a
 +
 image:screenshot_azure_ad.gif["Affiche le service Active Directory dans Microsoft Azure."]
 
-. Dans le menu, cliquez sur *enregistrements d'applications*.
-. Cliquez sur *Nouvelle inscription*.
+. Dans le menu, sélectionnez *enregistrements d'applications*.
+. Sélectionnez *nouvel enregistrement*.
 . Spécifiez les détails de l'application :
 +
 ** *Nom* : saisissez un nom pour l'application.
@@ -343,7 +343,7 @@ image:screenshot_azure_ad.gif["Affiche le service Active Directory dans Microsof
 ** *URI de redirection*: Vous pouvez laisser ce champ vide.
 
 
-. Cliquez sur *Enregistrer*.
+. Sélectionnez *Enregistrer*.
 +
 Vous avez créé l'application AD et le principal de service.
 
@@ -398,12 +398,12 @@ Vous devez maintenant avoir un rôle personnalisé appelé opérateur BlueXP que
 +
 .. À partir du portail Azure, ouvrez le service *abonnements*.
 .. Sélectionnez l'abonnement.
-.. Cliquez sur *contrôle d'accès (IAM) > Ajouter > Ajouter une affectation de rôle*.
-.. Dans l'onglet *role*, sélectionnez le rôle *BlueXP Operator* et cliquez sur *Next*.
+.. Sélectionnez *contrôle d'accès (IAM) > Ajouter > Ajouter une affectation de rôle*.
+.. Dans l'onglet *role*, sélectionnez le rôle *BlueXP Operator* et sélectionnez *Next*.
 .. Dans l'onglet *membres*, procédez comme suit :
 +
 *** Conserver *utilisateur, groupe ou entité de service* sélectionnée.
-*** Cliquez sur *Sélectionner les membres*.
+*** Sélectionnez *Sélectionner membres*.
 +
 image:screenshot-azure-service-principal-role.png["Capture d'écran du portail Azure affichant l'onglet membres lors de l'ajout d'un rôle à une application."]
 
@@ -414,11 +414,11 @@ Voici un exemple :
 +
 image:screenshot_azure_service_principal_role.png["Une capture d'écran du portail Azure affichant le formulaire d'affectation de rôle Add dans le portail Azure."]
 
-*** Sélectionnez l'application et cliquez sur *Sélectionner*.
-*** Cliquez sur *Suivant*.
+*** Sélectionnez l'application et sélectionnez *Sélectionner*.
+*** Sélectionnez *Suivant*.
 
 
-.. Cliquez sur *Revue + affecter*.
+.. Sélectionnez *consulter + affecter*.
 +
 Le principal de service dispose désormais des autorisations Azure nécessaires pour déployer le connecteur.
 
@@ -430,20 +430,20 @@ Si vous souhaitez déployer Cloud Volumes ONTAP à partir de plusieurs abonnemen
 
 
 .Ajoutez des autorisations d'API de gestion de service Windows Azure
-. Dans le service *Azure Active Directory*, cliquez sur *App inscriptions* et sélectionnez l'application.
-. Cliquez sur *autorisations API > Ajouter une autorisation*.
+. Dans le service *Azure Active Directory*, sélectionnez *App recalages* et sélectionnez l'application.
+. Sélectionnez *autorisations API > Ajouter une autorisation*.
 . Sous *Microsoft API*, sélectionnez *Azure Service Management*.
 +
 image:screenshot_azure_service_mgmt_apis.gif["Capture d'écran du portail Azure affichant les autorisations de l'API de gestion de services Azure."]
 
-. Cliquez sur *Access Azure Service Management en tant qu'utilisateurs d'organisation*, puis sur *Add permissions*.
+. Sélectionnez *accéder à Azure Service Management en tant qu'utilisateurs de l'organisation*, puis sélectionnez *Ajouter des autorisations*.
 +
 image:screenshot_azure_service_mgmt_apis_add.gif["Une capture d'écran du portail Azure montrant l'ajout des API de gestion de services Azure."]
 
 
 
 .Obtenez l'ID d'application et l'ID de répertoire de l'application
-. Dans le service *Azure Active Directory*, cliquez sur *App inscriptions* et sélectionnez l'application.
+. Dans le service *Azure Active Directory*, sélectionnez *App recalages* et sélectionnez l'application.
 . Copiez l'ID *application (client)* et l'ID *Directory (tenant)*.
 +
 image:screenshot_azure_app_ids.gif["Capture d'écran affichant l'ID de l'application (client) et l'ID du répertoire (tenant) d'une application dans Azure Active Directory."]
@@ -455,10 +455,10 @@ Lorsque vous ajoutez le compte Azure à BlueXP, vous devez fournir l'ID d'applic
 
 .Créez un secret client
 . Ouvrez le service *Azure Active Directory*.
-. Cliquez sur *App Inregistrations* et sélectionnez votre application.
-. Cliquez sur *certificats et secrets > Nouveau secret client*.
+. Sélectionnez *enregistrements d'applications* et sélectionnez votre application.
+. Sélectionnez *certificats et secrets > Nouveau secret client*.
 . Fournissez une description du secret et une durée.
-. Cliquez sur *Ajouter*.
+. Sélectionnez *Ajouter*.
 . Copier la valeur du secret client.
 +
 image:screenshot_azure_client_secret.gif["Copie d'écran du portail Azure présentant un secret client pour la principale du service Azure AD."]
@@ -498,8 +498,8 @@ https://cloud.google.com/iam/docs/creating-custom-roles#iam-custom-roles-create-
 
 . Créez un compte de service dans Google Cloud :
 +
-.. Dans le service IAM & Admin, cliquez sur *comptes de service > Créer un compte de service*.
-.. Entrez les détails du compte de service et cliquez sur *Créer et continuer*.
+.. Dans le service IAM & Admin, sélectionnez *comptes de service > Créer un compte de service*.
+.. Entrez les détails du compte de service et sélectionnez *Créer et continuer*.
 .. Sélectionnez le rôle que vous venez de créer.
 .. Terminez les étapes restantes pour créer le rôle.
 +

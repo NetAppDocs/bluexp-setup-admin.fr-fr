@@ -181,7 +181,7 @@ Les sections suivantes décrivent comment les autorisations sont utilisées pour
 
 === Azure NetApp Files
 
-Il effectue les requêtes d'API suivantes pour gérer les environnements de travail Azure NetApp Files :
+Lorsque vous utilisez la classification BlueXP pour analyser les données Azure NetApp Files, Connector effectue les requêtes API suivantes :
 
 * Microsoft.NetApp/netAppAccounts/read
 * Microsoft.NetApp/netAppAccounts/capacityPools/read

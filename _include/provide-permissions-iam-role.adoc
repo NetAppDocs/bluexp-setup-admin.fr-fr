@@ -7,7 +7,7 @@
 . Sélectionnez *instances*.
 . Sélectionnez l'instance de connecteur.
 . Sélectionnez *actions > sécurité > Modifier le rôle IAM*.
-. Sélectionnez le rôle IAM et cliquez sur *mettre à jour le rôle IAM*.
+. Sélectionnez le rôle IAM et sélectionnez *mettre à jour le rôle IAM*.
 
 
 .Résultat

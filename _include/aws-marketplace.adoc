@@ -4,12 +4,12 @@
 
 .Étapes
 . Accédez au https://aws.amazon.com/marketplace/pp/B018REK8QG["BlueXP, page sur AWS Marketplace"^]
-. Sur la page Marketplace, cliquez sur *Continuer pour s'abonner*, puis cliquez sur *Continuer la configuration*.
+. Sur la page Marketplace, sélectionnez *Continuer pour s'abonner*, puis sélectionnez *Continuer à la configuration*.
 +
 image:screenshot-subscribe-aws.png["Une capture d'écran affiche les boutons Continuer à s'abonner et Continuer la configuration sur AWS Marketplace."]
 
-. Modifiez l'une des options par défaut et cliquez sur *Continuer pour lancer*.
-. Sous *choisir action*, sélectionnez *lancer via EC2*, puis cliquez sur *lancer*.
+. Modifiez l'une des options par défaut et sélectionnez *Continuer pour lancer*.
+. Sous *Choisissez action*, sélectionnez *lancer via EC2*, puis *lancer*.
 +
 Ces étapes décrivent comment lancer l'instance à partir de la console EC2, car la console vous permet d'associer un rôle IAM à l'instance de connecteur. Cela n'est pas possible en utilisant l'action *lancer à partir du site Web*.
 
@@ -34,7 +34,7 @@ link:reference-ports-aws.html["Afficher les règles des groupes de sécurité po
 
 ** *Configurer le stockage* : conservez les options de stockage par défaut.
 ** *Détails avancés* : sous *profil d'instance IAM*, choisissez le rôle IAM qui inclut les autorisations requises pour le connecteur.
-** *Résumé* : consultez le résumé et cliquez sur *lancer l'instance*.
+** *Résumé* : passez en revue le résumé et sélectionnez *lancer l'instance*.
 
 
 

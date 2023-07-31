@@ -87,7 +87,7 @@ Plusieurs API sont requises pour déployer le connecteur et Cloud Volumes ONTAP 
 Créez le connecteur à l'aide de l'une des options d'installation disponibles :
 
 [role="quick-margin-list"]
-* *À partir de BlueXP* : cliquez sur la liste déroulante connecteur, sélectionnez *Ajouter un connecteur* et suivez les invites.
+* *À partir de BlueXP* : sélectionnez la liste déroulante connecteur, sélectionnez *Ajouter un connecteur* et suivez les invites.
 * *Utilisation de gloud* : utilisez le `gcloud compute instances create` commande.
 * *Installation manuelle* : téléchargez le logiciel du connecteur à partir du https://mysupport.netapp.com/site/products/all/details/cloud-manager/downloads-tab["Site de support NetApp"] et exécutez le script d'installation.
 

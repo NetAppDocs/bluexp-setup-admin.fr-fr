@@ -154,8 +154,8 @@ https://cloud.google.com/iam/docs/creating-custom-roles#iam-custom-roles-create-
 
 . Créez un compte de service dans Google Cloud :
 +
-.. Dans le service IAM & Admin, cliquez sur *comptes de service > Créer un compte de service*.
-.. Entrez les détails du compte de service et cliquez sur *Créer et continuer*.
+.. Dans le service IAM & Admin, sélectionnez *comptes de service > Créer un compte de service*.
+.. Entrez les détails du compte de service et sélectionnez *Créer et continuer*.
 .. Sélectionnez le rôle que vous venez de créer.
 .. Terminez les étapes restantes pour créer le rôle.
 +
@@ -182,7 +182,7 @@ Disons, par exemple, que le connecteur est dans le projet 1 et que vous voulez c
 +
 ** Saisissez l'e-mail du compte de service du connecteur.
 ** Sélectionnez le rôle personnalisé du connecteur.
-** Cliquez sur *Enregistrer*.
+** Sélectionnez *Enregistrer*.
 
 
 

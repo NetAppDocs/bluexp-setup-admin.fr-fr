@@ -46,7 +46,7 @@ Le tableau suivant présente une comparaison entre le Centre de notification et 
 
 Les notifications suivent la progression des opérations que vous avez lancées dans BlueXP pour vous permettre de vérifier si l'opération a réussi ou non. Elles vous permettent d'afficher l'état de nombreuses actions BlueXP que vous avez lancées pendant votre session de connexion actuelle. Tous les services BlueXP ne rapportent pas d'informations dans le Centre de notification pour le moment.
 
-Vous pouvez afficher les notifications en cliquant sur le signal sonore de notification (image:icon_bell.png["signal sonore de notification"]) dans la barre de menus. La couleur de la petite bulle dans la cloche indique la notification de gravité de niveau le plus élevé qui est active. Si vous voyez une bulle rouge, cela signifie qu'il y a une notification importante que vous devriez regarder.
+Vous pouvez afficher les notifications en sélectionnant la sonnerie de notification (image:icon_bell.png["signal sonore de notification"]) dans la barre de menus. La couleur de la petite bulle dans la cloche indique la notification de gravité de niveau le plus élevé qui est active. Si vous voyez une bulle rouge, cela signifie qu'il y a une notification importante que vous devriez regarder.
 
 image:screenshot_notification_full.png["Capture d'écran affichant la liste des notifications en cours dans le Centre de notification."]
 

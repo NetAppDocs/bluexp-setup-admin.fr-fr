@@ -93,6 +93,9 @@ L'utilisateur ne peut plus accéder aux ressources de ce compte BlueXP.
 
 Vous pouvez associer et dissocier les administrateurs d'espace de travail avec des espaces de travail à tout moment. L'association de l'utilisateur lui permet de créer et d'afficher les environnements de travail dans cet espace de travail.
 
+
+NOTE: Vous devez également associer le connecteur à des espaces de travail pour que les administrateurs d'espace de travail puissent accéder à ces espaces de travail à partir de BlueXP. link:task-managing-netapp-accounts.html#manage-a-connectors-workspaces["Apprenez à gérer les espaces de travail d'un connecteur"].
+
 .Étapes
 . En haut de BlueXP, sélectionnez la liste déroulante *compte* et sélectionnez *gérer le compte*.
 +
@@ -217,6 +220,9 @@ Gérez vos espaces de travail en les créant, en les renommant et en les supprim
 ** Sélectionnez *Renommer* pour renommer l'espace de travail.
 ** Sélectionnez *Supprimer* pour supprimer l'espace de travail.
 
+
++
+Si vous avez créé un nouvel espace de travail, vous devez également ajouter le connecteur à cet espace de travail. Si vous n'ajoutez pas le connecteur, les administrateurs de l'espace de travail ne peuvent pas accéder aux ressources de l'espace de travail. Reportez-vous à la section suivante pour plus de détails.
 
 
 

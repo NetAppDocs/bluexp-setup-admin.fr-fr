@@ -35,15 +35,15 @@ link:task-set-up-networking-google.html["En savoir plus sur les exigences de mis
 
 
 .Étapes
-. Cliquez sur le menu déroulant *Connector* et sélectionnez *Ajouter un connecteur*.
+. Sélectionnez la liste déroulante *Connector* et sélectionnez *Ajouter un connecteur*.
 +
 image:screenshot_connector_add.gif["Capture d'écran affichant l'icône du connecteur dans l'en-tête et l'action Ajouter un connecteur."]
 
 . Choisissez *Google Cloud Platform* comme fournisseur de cloud.
 . Sur la page *déploiement d'un connecteur*, consultez les détails de ce dont vous aurez besoin. Vous avez deux options :
 +
-.. Cliquez sur *Continuer* pour préparer le déploiement à l'aide du guide d'utilisation du produit. Chaque étape du guide du produit inclut les informations contenues sur cette page de la documentation.
-.. Cliquez sur *passer au déploiement* si vous avez déjà préparé en suivant les étapes de cette page.
+.. Sélectionnez *Continuer* pour préparer le déploiement à l'aide du guide produit. Chaque étape du guide du produit inclut les informations contenues sur cette page de la documentation.
+.. Sélectionnez *passer au déploiement* si vous êtes déjà préparé en suivant les étapes de cette page.
 
 
 . Suivez les étapes de l'assistant pour créer le connecteur :
@@ -62,7 +62,7 @@ link:reference-ports-gcp.html["Règles de pare-feu dans Google Cloud"]
 ** *Review* : consultez vos sélections pour vérifier que votre configuration est correcte.
 
 
-. Cliquez sur *Ajouter*.
+. Sélectionnez *Ajouter*.
 +
 L'instance doit être prête dans environ 7 minutes. Vous devez rester sur la page jusqu'à ce que le processus soit terminé.
 
@@ -271,7 +271,7 @@ https://_ipaddress_[]
 +
 Vous devez désactiver le mode restreint, car ces étapes décrivent l'utilisation de BlueXP en mode standard. Vous devez activer le mode restreint uniquement si vous disposez d'un environnement sécurisé et souhaitez déconnecter ce compte des services back-end BlueXP. Si c'est le cas, link:task-quick-start-restricted-mode.html["Suivez les étapes pour démarrer avec BlueXP en mode restreint"].
 
-.. Cliquez sur *commençons*.
+.. Sélectionnez *commençons*.
 
 
 
