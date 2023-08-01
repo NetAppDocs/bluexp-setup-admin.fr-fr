@@ -276,6 +276,80 @@ video::video_subscribing_aws.mp4[width=848,height=480]
 
 
 
+== Associer un abonnement existant à votre compte
+
+Lorsque vous vous abonnez à BlueXP depuis AWS Marketplace, la dernière étape du processus consiste à associer l'abonnement à vos comptes BlueXP depuis le site web BlueXP. Si vous n'avez pas effectué cette étape, vous ne pouvez pas utiliser l'abonnement avec votre compte BlueXP.
+
+Suivez les étapes ci-dessous si vous avez souscrit à BlueXP depuis AWS Marketplace, mais que vous n'avez pas vu l'étape d'association de l'abonnement à votre compte.
+
+.Étapes
+. Accédez au portefeuille digital BlueXP pour vérifier que vous n'avez pas associé votre abonnement à votre compte BlueXP.
++
+.. Dans le menu de navigation BlueXP, sélectionnez *gouvernance > porte-monnaie numérique*.
+.. Sélectionnez *abonnements*.
+.. Vérifiez que votre abonnement BlueXP n'apparaît pas.
++
+Vous ne verrez que les abonnements associés au compte que vous consultez actuellement. Si vous ne voyez pas votre abonnement, procédez comme suit.
+
+
+
+. Connectez-vous à la console AWS et accédez à *abonnements AWS Marketplace*.
+. Découvrez l'abonnement NetApp BlueXP.
++
+image:screenshot-aws-marketplace-bluexp-subscription.png["Copie d'écran d'AWS Marketplace montrant un abonnement NetApp BlueXP."]
+
+. Sélectionnez *configurer le produit*.
++
+La page d'offre d'abonnement doit se charger dans un nouvel onglet ou une nouvelle fenêtre de navigateur.
+
+. Sélectionnez *configurer votre compte*.
++
+image:screenshot-aws-marketplace-set-up-account.png["Copie d'écran d'AWS Marketplace montrant un abonnement NetApp BlueXP et l'option de configuration de votre compte qui s'affiche en haut à droite de la page."]
+
++
+La page *affectation d'abonnement* sur netapp.com doit se charger dans un nouvel onglet ou une nouvelle fenêtre du navigateur.
+
++
+Notez que vous pouvez être invité à vous connecter à BlueXP en premier.
+
+. À partir de la page *attribution d'abonnement* :
++
+** Sélectionnez les comptes BlueXP avec lesquels vous souhaitez associer cet abonnement.
+** Dans le champ *remplacer l'abonnement existant*, choisissez si vous souhaitez remplacer automatiquement l'abonnement existant pour un compte par ce nouvel abonnement.
++
+BlueXP remplace l'abonnement existant pour toutes les informations d'identification du compte par ce nouvel abonnement. Si un ensemble d'informations d'identification n'a jamais été associé à un abonnement, ce nouvel abonnement ne sera pas associé à ces informations d'identification.
+
++
+Pour tous les autres comptes, vous devez associer manuellement l'abonnement en répétant ces étapes.
+
++
+image:screenshot-subscription-assignment.png["Capture d'écran de la page Subscription Assignment qui vous permet de choisir les comptes BlueXP exacts à associer à cet abonnement."]
+
+
+
+. Accédez au portefeuille digital BlueXP pour vérifier que l'abonnement est associé à votre compte BlueXP.
++
+.. Dans le menu de navigation BlueXP, sélectionnez *gouvernance > porte-monnaie numérique*.
+.. Sélectionnez *abonnements*.
+.. Vérifiez que votre abonnement BlueXP s'affiche.
+
+
+. Vérifiez que l'abonnement est associé à vos identifiants AWS.
++
+.. Dans le coin supérieur droit de la console BlueXP, sélectionnez l'icône Paramètres, puis sélectionnez *informations d'identification*.
+.. Sur la page *informations d'identification du compte*, vérifiez que l'abonnement est associé à vos informations d'identification AWS.
++
+Voici un exemple.
+
++
+image:screenshot-credentials-with-subscription.png["Capture d'écran de la page des informations d'identification du compte BlueXP qui affiche les informations d'identification AWS, incluant un champ d'abonnement, qui identifie le nom de l'abonnement associé aux informations d'identification."]
+
+
+
+
+
+
+
 == Modifier les informations d'identification
 
 Modifiez vos informations d'identification AWS dans BlueXP en modifiant le type de compte (clés AWS ou rôle supposons), en modifiant le nom ou en mettant à jour les informations d'identification elles-mêmes (clés ou rôle ARN).
