@@ -32,11 +32,10 @@ Pour tous les autres comptes, vous devez associer manuellement l'abonnement en r
 
 *** Sélectionnez *Enregistrer*.
 +
-La vidéo suivante montre comment associer les informations d'identification à un nouvel abonnement.
+La vidéo suivante décrit la procédure de souscription à partir d'AWS Marketplace :
 
 +
-.Abonnez-vous à BlueXP sur AWS Marketplace
-video::096e1740-d115-44cf-8c27-b051011611eb[panopto]
+video::video_subscribing_aws.mp4[width=848,height=480]
 
 
 

@@ -3876,8 +3876,7 @@ Ce terminal n'est requis que dans les régions Azure Government.</block>
   <block id="ff61d6606967c3f8b0dfa41b1fd7bfa0" category="paragraph">Voici un exemple.</block>
   <block id="91bff69789722fff2c4a5649d3493da5" category="inline-image-macro">Capture d'écran de la page des informations d'identification du compte BlueXP qui affiche les informations d'identification AWS, incluant un champ d'abonnement, qui identifie le nom de l'abonnement associé aux informations d'identification.</block>
   <block id="57ed1d98795cc2b599a80064fd2b2bbf" category="paragraph"><block ref="57ed1d98795cc2b599a80064fd2b2bbf" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="a19fbbab905f444316acc463c35da764" category="paragraph">La vidéo suivante montre comment associer les informations d'identification à un nouvel abonnement.</block>
-  <block id="040832c90148c5bba767901a4a55ebe4" category="video-title">Abonnez-vous à BlueXP depuis Azure Marketplace</block>
-  <block id="c6e17aa071476599f5e5fc5b8bc42431" category="video-title">Abonnez-vous à BlueXP depuis Google Cloud Marketplace</block>
-  <block id="8ddd07f4c199accad92d619cc396eaef" category="video-title">Abonnez-vous à BlueXP sur AWS Marketplace</block>
+  <block id="89d8b3b4c08395fc5dbef0d35cb50529" category="paragraph">La vidéo suivante explique comment vous abonner à Azure Marketplace :</block>
+  <block id="a6b7d96f53186edb463f8f8611f97cd9" category="paragraph">Dans cette vidéo, vous instructions pour vous abonner à Google Cloud Marketplace :</block>
+  <block id="20dc3df4cdf91b4bd876009a415c2cec" category="paragraph">La vidéo suivante décrit la procédure de souscription à partir d'AWS Marketplace :</block>
 </blocks>
