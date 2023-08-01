@@ -51,10 +51,11 @@ Pour tous les autres comptes, vous devez associer manuellement l'abonnement en r
 
 *** Sélectionnez *Enregistrer*.
 +
-Dans cette vidéo, vous instructions pour vous abonner à Google Cloud Marketplace :
+La vidéo suivante montre comment associer les informations d'identification à un nouvel abonnement.
 
 +
-video::video-subscribing-google-cloud.mp4[width=848,height=480]
+.Abonnez-vous à BlueXP depuis Google Cloud Marketplace
+video::373b96de-3691-4d84-b3f3-b05101161638[panopto]
 
 
 .. Une fois ce processus terminé, revenez à la page d'informations d'identification dans BlueXP et sélectionnez ce nouvel abonnement.

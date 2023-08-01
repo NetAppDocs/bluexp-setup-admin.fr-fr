@@ -1429,7 +1429,6 @@
   <block id="23d838dbd51becc56367e6d9358b446e" category="paragraph">BlueXP remplace l'abonnement existant pour toutes les informations d'identification du compte par ce nouvel abonnement. Si un ensemble d'informations d'identification n'a jamais été associé à un abonnement, ce nouvel abonnement ne sera pas associé à ces informations d'identification.</block>
   <block id="b4676b03cb1388f474b207b449af0dc2" category="paragraph">Pour tous les autres comptes, vous devez associer manuellement l'abonnement en répétant ces étapes.</block>
   <block id="10492389e94efdebbb66f7b0cd8a1324" category="list-text">Sélectionnez *Enregistrer*.</block>
-  <block id="a6b7d96f53186edb463f8f8611f97cd9" category="paragraph">Dans cette vidéo, vous instructions pour vous abonner à Google Cloud Marketplace :</block>
   <block id="5894b1931d65e9796cc25db1bb6fd566" category="list-text">Une fois ce processus terminé, revenez à la page d'informations d'identification dans BlueXP et sélectionnez ce nouvel abonnement.</block>
   <block id="467e5d6bbcd0ea531c8f7285b69e29ee" category="inline-image-macro">Capture d'écran de la page d'affectation d'abonnement.</block>
   <block id="60d2ed6f6e1774535b6e69274800381d" category="paragraph"><block ref="60d2ed6f6e1774535b6e69274800381d" category="inline-image-macro-rx" type="image"></block></block>
@@ -3011,7 +3010,6 @@ Vous devez également vous assurer que la stratégie est à jour lorsque de nouv
   <block id="7dffa6296286b12f66d638f53340316c" category="list-text">Si vous y êtes invité, connectez-vous à votre compte Azure.</block>
   <block id="344ece1ef43a9e3bbb281e15f3df6442" category="paragraph">Vous serez redirigé vers le site Web BlueXP.</block>
   <block id="cb735ebf950ed5c7902b507f70582bd3" category="list-text">À partir de la page *attribution d'abonnement* :</block>
-  <block id="89d8b3b4c08395fc5dbef0d35cb50529" category="paragraph">La vidéo suivante explique comment vous abonner à Azure Marketplace :</block>
   <block id="c98f8dfd7e317cb87d057d9e065d71d4" category="section-title">Modifier les informations d'identification</block>
   <block id="bf6a5b9863bb599dd7d76e43de882036" category="paragraph">Modifiez vos informations d'identification Azure dans BlueXP en modifiant les informations d'identification de votre service Azure. Par exemple, vous devrez peut-être mettre à jour le secret client si un nouveau secret a été créé pour l'application principale du service.</block>
   <block id="c042156941649b9112145dc552484165" category="list-text">Sur la page *informations d'identification du compte*, sélectionnez le menu d'action correspondant à un ensemble d'informations d'identification, puis sélectionnez *Modifier les informations d'identification*.</block>
@@ -3466,7 +3464,6 @@ La découverte sans connecteur (découverte directe) n'est pas prise en charge.<
   <block id="56246b5433f690a35c74ed45a296e993" category="paragraph">Un abonnement Marketplace permet de facturer les services BlueXP suivants :</block>
   <block id="8219b1ea282823d830f661117796ac3d" category="paragraph">L'abonnement à BlueXP implique d'associer un abonnement Marketplace aux informations d'identification cloud associées à un connecteur. Si vous avez suivi le flux de travail « commencer avec le mode standard », vous devriez déjà avoir un connecteur. Pour en savoir plus, consultez le <block ref="ce6d43255d920acadadb7e3862aee0b0" category="inline-link-macro-rx"></block>.</block>
   <block id="7561d35e392b638f4fb5bc5f72459710" category="paragraph">Vous devez sélectionner les informations d'identification associées à un connecteur. Vous ne pouvez pas associer un abonnement Marketplace aux informations d'identification associées à BlueXP.</block>
-  <block id="20dc3df4cdf91b4bd876009a415c2cec" category="paragraph">La vidéo suivante décrit la procédure de souscription à partir d'AWS Marketplace :</block>
   <block id="53043f0a6d597ccfe179296cc8ded9c0" category="inline-link">Gérez les licences BYOL basées sur la capacité pour Cloud Volumes ONTAP</block>
   <block id="fe58f6b68f2391f47e7f19d45735226a" category="list-text"><block ref="fe58f6b68f2391f47e7f19d45735226a" category="inline-link-rx"></block></block>
   <block id="fe661ee4e3dd2d796b000bdbe116c002" category="inline-link">Gérez les licences BYOL pour les services de données BlueXP</block>
@@ -3879,4 +3876,8 @@ Ce terminal n'est requis que dans les régions Azure Government.</block>
   <block id="ff61d6606967c3f8b0dfa41b1fd7bfa0" category="paragraph">Voici un exemple.</block>
   <block id="91bff69789722fff2c4a5649d3493da5" category="inline-image-macro">Capture d'écran de la page des informations d'identification du compte BlueXP qui affiche les informations d'identification AWS, incluant un champ d'abonnement, qui identifie le nom de l'abonnement associé aux informations d'identification.</block>
   <block id="57ed1d98795cc2b599a80064fd2b2bbf" category="paragraph"><block ref="57ed1d98795cc2b599a80064fd2b2bbf" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="a19fbbab905f444316acc463c35da764" category="paragraph">La vidéo suivante montre comment associer les informations d'identification à un nouvel abonnement.</block>
+  <block id="040832c90148c5bba767901a4a55ebe4" category="video-title">Abonnez-vous à BlueXP depuis Azure Marketplace</block>
+  <block id="c6e17aa071476599f5e5fc5b8bc42431" category="video-title">Abonnez-vous à BlueXP depuis Google Cloud Marketplace</block>
+  <block id="8ddd07f4c199accad92d619cc396eaef" category="video-title">Abonnez-vous à BlueXP sur AWS Marketplace</block>
 </blocks>

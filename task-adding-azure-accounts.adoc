@@ -364,10 +364,11 @@ Pour tous les autres comptes, vous devez associer manuellement l'abonnement en r
 
 *** Sélectionnez *Enregistrer*.
 +
-La vidéo suivante explique comment vous abonner à Azure Marketplace :
+La vidéo suivante montre comment associer les informations d'identification à un nouvel abonnement.
 
 +
-video::video_subscribing_azure.mp4[width=848,height=480]
+.Abonnez-vous à BlueXP depuis Azure Marketplace
+video::b7e97509-2ecf-4fa0-b39b-b0510109a318[panopto]
 
 
 
