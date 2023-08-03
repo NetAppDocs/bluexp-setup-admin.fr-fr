@@ -3879,4 +3879,9 @@ Ce terminal n'est requis que dans les régions Azure Government.</block>
   <block id="89d8b3b4c08395fc5dbef0d35cb50529" category="paragraph">La vidéo suivante explique comment vous abonner à Azure Marketplace :</block>
   <block id="a6b7d96f53186edb463f8f8611f97cd9" category="paragraph">Dans cette vidéo, vous instructions pour vous abonner à Google Cloud Marketplace :</block>
   <block id="20dc3df4cdf91b4bd876009a415c2cec" category="paragraph">La vidéo suivante décrit la procédure de souscription à partir d'AWS Marketplace :</block>
+  <block id="1250d880683e535bd4bbd8267aa3e5a1" category="summary">Ces vidéos montrent comment vous abonner à BlueXP depuis le Marketplace de votre fournisseur cloud.</block>
+  <block id="8ddd07f4c199accad92d619cc396eaef" category="video-title">Abonnez-vous à BlueXP sur AWS Marketplace</block>
+  <block id="040832c90148c5bba767901a4a55ebe4" category="video-title">Abonnez-vous à BlueXP depuis Azure Marketplace</block>
+  <block id="c6e17aa071476599f5e5fc5b8bc42431" category="video-title">Abonnez-vous à BlueXP depuis Google Cloud Marketplace</block>
+  <block id="4112588d5a54a8d1c620a772527cb267" category="section-title">Mon dossier</block>
 </blocks>
