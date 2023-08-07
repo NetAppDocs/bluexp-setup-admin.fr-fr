@@ -162,10 +162,6 @@ La deuxième politique fournit des autorisations pour les services suivants :
                 "kms:ReEncrypt*",
                 "kms:Describe*",
                 "kms:CreateGrant",
-                "ce:GetReservationUtilization",
-                "ce:GetDimensionValues",
-                "ce:GetCostAndUsage",
-                "ce:GetTags",
                 "fsx:Describe*",
                 "fsx:List*",
                 "kms:GenerateDataKeyWithoutPlaintext"
@@ -493,10 +489,6 @@ La deuxième politique fournit des autorisations pour les services suivants :
                 "ec2:DescribeIamInstanceProfileAssociations",
                 "ec2:DisassociateIamInstanceProfile",
                 "ec2:DescribeInstanceAttribute",
-                "ce:GetReservationUtilization",
-                "ce:GetDimensionValues",
-                "ce:GetCostAndUsage",
-                "ce:GetTags",
                 "ec2:CreatePlacementGroup",
                 "ec2:DeletePlacementGroup"
             ],
@@ -1126,18 +1118,6 @@ Il effectue les requêtes d'API suivantes pour déployer et gérer Cloud Volumes
 
 
 | Kms:GenerateDataKeyWithoutPlaintext | Oui. | Oui. | Non 
-
-
-.4+| Obtenez des données de coût AWS pour Cloud Volumes ONTAP | ce:GetReservationUtilization | Non | Oui. | Non 
-
-
-| ce:GetDimensionTM Values | Non | Oui. | Non 
-
-
-| ce : GetCostAndUtisage | Non | Oui. | Non 
-
-
-| ce:GetTags | Non | Oui. | Non 
 
 
 .2+| Créez et gérez un groupe de placement AWS réparti sur deux nœuds HA et le médiateur dans une seule zone de disponibilité AWS | ec2:CreatePlaceGroup | Oui. | Non | Non 
