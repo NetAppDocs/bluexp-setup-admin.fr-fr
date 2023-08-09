@@ -39,7 +39,7 @@ Notez que seuls les caractères anglais sont autorisés dans le formulaire d'ins
 . Lorsque vous y êtes invité, consultez le contrat de licence de l'utilisateur final et acceptez les conditions.
 . Sur la page *Bienvenue*, saisissez un nom pour votre compte.
 +
-Si votre entreprise dispose déjà d'un compte et que vous souhaitez le rejoindre, fermez BlueXP et demandez au propriétaire de vous associer au compte. Une fois que le propriétaire vous a ajouté, vous pouvez vous connecter et accéder au compte. link:task-managing-netapp-accounts.html#adding-users["Découvrez comment ajouter des membres à un compte existant"].
+Si votre entreprise dispose déjà d'un compte et que vous souhaitez le rejoindre, fermez BlueXP et demandez au propriétaire de vous associer au compte. Une fois que le propriétaire vous a ajouté, vous pouvez vous connecter et accéder au compte. link:task-managing-netapp-accounts.html#add-users["Découvrez comment ajouter des membres à un compte existant"].
 
 +
 Un compte est la partie supérieure de la plateforme d'identités de NetApp. Il vous permet d'ajouter et de gérer des utilisateurs, des rôles, des autorisations et des environnements de travail.

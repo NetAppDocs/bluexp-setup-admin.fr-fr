@@ -234,7 +234,7 @@ Vous devez associer le connecteur aux espaces de travail pour que les administra
 
 Si vous ne disposez que d'administrateurs de compte, il n'est pas nécessaire d'associer le connecteur aux espaces de travail. Les administrateurs de comptes peuvent accéder à tous les espaces de travail dans BlueXP par défaut.
 
-link:concept-netapp-accounts.html#users-workspaces-and-service-connectors["En savoir plus sur les utilisateurs, les espaces de travail et les connecteurs"].
+link:concept-netapp-accounts.html["En savoir plus sur les utilisateurs, les espaces de travail et les connecteurs"].
 
 .Étapes
 . En haut de BlueXP, sélectionnez la liste déroulante *compte* et sélectionnez *gérer le compte*.

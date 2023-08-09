@@ -24,7 +24,7 @@ Vous pouvez ajouter des informations d'identification AWS à un connecteur exist
 
 * Ajoutez des identifiants AWS supplémentaires à un connecteur existant
 +
-L'ajout d'identifiants AWS à un connecteur existant offre les autorisations nécessaires pour gérer les ressources et les processus au sein de votre environnement de cloud public. <<Add credentials to a Connector,Découvrez comment ajouter des identifiants AWS à un connecteur>>.
+L'ajout d'identifiants AWS à un connecteur existant offre les autorisations nécessaires pour gérer les ressources et les processus au sein de votre environnement de cloud public. <<Ajoutez des informations d'identification supplémentaires à un connecteur,Découvrez comment ajouter des identifiants AWS à un connecteur>>.
 
 * Ajoutez des informations d'identification AWS à BlueXP pour créer un connecteur
 +

@@ -141,7 +141,7 @@ image:screenshot-change-notifications.png["Capture d'écran montrant comment mod
 
 === Ajoutez des destinataires supplémentaires
 
-Les utilisateurs qui apparaissent dans l'onglet _Account Users_ sont automatiquement renseignés à partir des utilisateurs de votre compte BlueXP (à partir du link:task-managing-netapp-accounts.html#creating-and-managing-users["Gérer le compte"]). Vous pouvez ajouter des adresses e-mail dans l'onglet _destinataires supplémentaires_ pour d'autres personnes ou groupes qui n'ont pas accès à BlueXP, mais qui doivent être informés de certains types d'alertes et de notifications.
+Les utilisateurs qui apparaissent dans l'onglet _Account Users_ sont automatiquement renseignés à partir des utilisateurs de votre compte BlueXP (à partir du link:task-managing-netapp-accounts.html#create-and-manage-users["Gérer le compte"]). Vous pouvez ajouter des adresses e-mail dans l'onglet _destinataires supplémentaires_ pour d'autres personnes ou groupes qui n'ont pas accès à BlueXP, mais qui doivent être informés de certains types d'alertes et de notifications.
 
 .Étapes
 . Dans la page Paramètres des alertes et notifications, sélectionnez *Ajouter de nouveaux destinataires*.

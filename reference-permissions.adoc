@@ -58,7 +58,7 @@ Vous devez également vous assurer que la stratégie est à jour lorsque de nouv
 | Fonctionnement du connecteur  a| 
 Lorsque BlueXP déploie la machine virtuelle Connector dans Azure, il crée un rôle personnalisé qui fournit les autorisations requises pour gérer les ressources et les processus au sein de cet abonnement Azure.
 
-Vous devez configurer vous-même le rôle personnalisé si vous lancez un connecteur à partir du Marketplace, installez manuellement le connecteur ou si vous le souhaitez link:task-adding-azure-accounts.html#adding-additional-azure-credentials-to-cloud-manager["Ajoutez des identifiants Azure à un connecteur"].
+Vous devez configurer vous-même le rôle personnalisé si vous lancez un connecteur à partir du Marketplace, installez manuellement le connecteur ou si vous le souhaitez link:task-adding-azure-accounts.html#add-additional-azure-credentials-to-bluexp["Ajoutez des identifiants Azure à un connecteur"].
 
 Vous devez également vous assurer que la stratégie est à jour lorsque de nouvelles autorisations sont ajoutées dans les versions suivantes.
  a| 
