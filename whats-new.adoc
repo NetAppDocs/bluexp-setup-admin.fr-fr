@@ -26,7 +26,7 @@ Découvrez les nouveautés des fonctionnalités d'administration BlueXP : compte
 
 * Vous pouvez désormais exporter les journaux d'audit à l'aide de l'API du service d'audit BlueXP.
 +
-Le service d'audit enregistre les informations relatives aux opérations effectuées par les services BlueXP. Cela inclut les adresses IP d'origine, les espaces de travail, les connecteurs utilisés et d'autres données de télémétrie. Vous pouvez utiliser ces données pour déterminer quelles actions ont été effectuées, qui les a effectuées et quand elles ont eu lieu.
+Le service d'audit enregistre les informations relatives aux opérations effectuées par les services BlueXP. Cela inclut les espaces de travail, les connecteurs utilisés et d'autres données de télémétrie. Vous pouvez utiliser ces données pour déterminer quelles actions ont été effectuées, qui les a effectuées et quand elles ont eu lieu.
 
 +
 https://docs.netapp.com/us-en/bluexp-automation/audit/overview.html["En savoir plus sur l'utilisation de l'API de service d'audit"^]

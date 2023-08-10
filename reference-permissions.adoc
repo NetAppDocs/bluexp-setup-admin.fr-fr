@@ -20,25 +20,83 @@ Pour utiliser les fonctionnalités et les services BlueXP, vous devez fournir de
 
 == Autorisations AWS
 
-[cols="25,60,40"]
+BlueXP requiert des autorisations AWS pour le connecteur et pour des services individuels.
+
+
+
+=== Connecteurs
+
+[cols="20,60,20"]
 |===
 | Objectif | Description | Lien 
 
 
-| Déployez des connecteurs à partir de BlueXP | L'utilisateur qui crée un connecteur depuis BlueXP a besoin d'autorisations spécifiques pour déployer l'instance dans AWS. | link:task-set-up-permissions-aws.html["Configurez les autorisations AWS"] 
+| Déployez le connecteur de BlueXP | L'utilisateur qui crée un connecteur depuis BlueXP a besoin d'autorisations spécifiques pour déployer l'instance dans AWS. | link:task-set-up-permissions-aws.html["Configurez les autorisations AWS"] 
 
 
-| Fonctionnement du connecteur | Lorsque BlueXP lance le connecteur, il attache une stratégie à l'instance qui fournit les autorisations nécessaires pour gérer les ressources et les processus de votre compte AWS.
+| Fournir les autorisations pour le connecteur | Lorsque BlueXP lance le connecteur, il attache une stratégie à l'instance qui fournit les autorisations nécessaires pour gérer les ressources et les processus de votre compte AWS.
 
-Vous devez configurer la stratégie vous-même si vous lancez un connecteur à partir du Marketplace, installez manuellement le connecteur ou si vous le souhaitez link:task-adding-aws-accounts.html#add-additional-credentials-to-a-connector["Ajoutez des identifiants AWS à un connecteur"].
+Vous devez définir vous-même la règle si vous lancez un connecteur à partir d'AWS Marketplace, si vous installez manuellement le connecteur ou si vous le souhaitez link:task-adding-aws-accounts.html#add-additional-credentials-to-a-connector["Ajoutez des identifiants AWS à un connecteur"].
 
 Vous devez également vous assurer que la stratégie est à jour lorsque de nouvelles autorisations sont ajoutées dans les versions suivantes. | link:reference-permissions-aws.html["Autorisations AWS pour le connecteur"] 
+|===
 
 
-| Fonctionnement du Cloud Volumes ONTAP | Un rôle IAM doit être associé à chaque nœud Cloud Volumes ONTAP dans AWS. Il en va de même pour le médiateur HA. L'option par défaut est de permettre à BlueXP de créer les rôles IAM pour vous, mais vous pouvez utiliser votre propre. | https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-set-up-iam-roles.html["Découvrez comment configurer vous-même les rôles IAM"^] 
+=== Sauvegarde et restauration
+
+[cols="20,60,20"]
+|===
+| Objectif | Description | Lien 
 
 
 | Sauvegardez vos clusters ONTAP sur site dans Amazon S3 | Lors de l'activation des sauvegardes sur vos volumes ONTAP, la sauvegarde et la restauration BlueXP vous invite à saisir une clé d'accès et un secret pour un utilisateur IAM qui dispose d'autorisations spécifiques. | https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-onprem-to-aws.html#set-up-s3-permissions["Configurez les autorisations S3 pour les sauvegardes"^] 
+|===
+
+
+=== Cloud Volumes ONTAP
+
+[cols="20,60,20"]
+|===
+| Objectif | Description | Lien 
+
+
+| Fournissez les autorisations pour les nœuds Cloud Volumes ONTAP | Un rôle IAM doit être associé à chaque nœud Cloud Volumes ONTAP dans AWS. Il en va de même pour le médiateur HA. L'option par défaut est de laisser BlueXP créer les rôles IAM pour vous, mais vous pouvez les utiliser lors de la création de l'environnement de travail. | https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-set-up-iam-roles.html["Découvrez comment configurer vous-même les rôles IAM"^] 
+|===
+
+
+=== Copie et synchronisation
+
+[cols="20,60,20"]
+|===
+| Objectif | Description | Lien 
+
+
+| Déployez le courtier en données dans AWS | Le compte utilisateur AWS que vous utilisez pour déployer le courtier en données doit disposer d'autorisations spécifiques. | https://docs.netapp.com/us-en/bluexp-copy-sync/task-installing-aws.html#permissions-required-to-deploy-the-data-broker-in-aws["Autorisations requises pour déployer le courtier de données dans AWS"^] 
+
+
+| Fournir des autorisations au courtier de données | Lorsque la copie et la synchronisation BlueXP déploient le courtier de données, il crée un rôle IAM pour l'instance de courtier de données. Si vous le souhaitez, vous pouvez déployer le data broker à l'aide de votre propre rôle IAM. | https://docs.netapp.com/us-en/bluexp-copy-sync/task-installing-aws.html#requirements-to-use-your-own-iam-role-with-the-aws-data-broker["Exigences relatives à l'utilisation de votre propre rôle IAM avec le courtier de données AWS"^] 
+
+
+| Activez l'accès AWS pour un courtier de données installé manuellement | Si vous utilisez le courtier en données avec une relation de synchronisation incluant un compartiment S3, préparez l'hôte Linux pour l'accès à AWS. Lorsque vous installez le courtier en données, vous devez fournir des clés AWS à un utilisateur IAM qui dispose d'un accès par programme et d'autorisations spécifiques. | https://docs.netapp.com/us-en/bluexp-copy-sync/task-installing-linux.html#enabling-access-to-aws["Activation de l'accès à AWS"^] 
+|===
+
+
+=== FSX pour ONTAP
+
+[cols="20,60,20"]
+|===
+| Objectif | Description | Lien 
+
+
+| Créez et gérez FSX pour ONTAP | Pour créer ou gérer un environnement de travail Amazon FSX pour NetApp ONTAP, vous devez ajouter des informations d'identification AWS à BlueXP en fournissant l'ARN d'un rôle IAM qui donne à BlueXP les autorisations nécessaires pour créer l'environnement de travail. | https://docs.netapp.com/us-en/bluexp-fsx-ontap/requirements/task-setting-up-permissions-fsx.html["Découvrez comment configurer les identifiants AWS pour FSX"^] 
+|===
+
+
+=== Tiering
+
+[cols="20,60,20"]
+|===
+| Objectif | Description | Lien 
 
 
 | Tiering des clusters ONTAP sur site dans Amazon S3 | Lorsque vous activez le Tiering BlueXP vers AWS, l'assistant vous invite à saisir une clé d'accès et une clé secrète. Ces identifiants sont transmis au cluster ONTAP afin que ONTAP puisse hiérarchiser les données dans le compartiment S3. | https://docs.netapp.com/us-en/bluexp-tiering/task-tiering-onprem-aws.html#set-up-s3-permissions["Configurez les autorisations S3 pour le Tiering"^] 
@@ -47,18 +105,24 @@ Vous devez également vous assurer que la stratégie est à jour lorsque de nouv
 
 == Autorisations Azure
 
-[cols="25,60,40"]
+BlueXP nécessite des autorisations Azure pour le connecteur et pour les services individuels.
+
+
+
+=== Connecteur
+
+[cols="20,60,20"]
 |===
 | Objectif | Description | Lien 
 
 
-| Déployez des connecteurs à partir de BlueXP | Lorsque vous déployez un connecteur depuis BlueXP, vous devez utiliser un compte ou un service principal Azure disposant des autorisations pour déployer la machine virtuelle Connector dans Azure. | link:task-set-up-permissions-azure.html["Configurez les autorisations Azure"] 
+| Déployez le connecteur de BlueXP | Lorsque vous déployez un connecteur depuis BlueXP, vous devez utiliser un compte ou un service principal Azure disposant des autorisations pour déployer la machine virtuelle Connector dans Azure. | link:task-set-up-permissions-azure.html["Configurez les autorisations Azure"] 
 
 
-| Fonctionnement du connecteur  a| 
+| Fournir les autorisations pour le connecteur  a| 
 Lorsque BlueXP déploie la machine virtuelle Connector dans Azure, il crée un rôle personnalisé qui fournit les autorisations requises pour gérer les ressources et les processus au sein de cet abonnement Azure.
 
-Vous devez configurer vous-même le rôle personnalisé si vous lancez un connecteur à partir du Marketplace, installez manuellement le connecteur ou si vous le souhaitez link:task-adding-azure-accounts.html#add-additional-azure-credentials-to-bluexp["Ajoutez des identifiants Azure à un connecteur"].
+Vous devez configurer vous-même le rôle personnalisé si vous lancez un connecteur à partir du Marketplace, si vous installez manuellement le connecteur ou si vous le souhaitez link:task-adding-azure-accounts.html#add-additional-azure-credentials-to-bluexp["Ajoutez des identifiants Azure à un connecteur"].
 
 Vous devez également vous assurer que la stratégie est à jour lorsque de nouvelles autorisations sont ajoutées dans les versions suivantes.
  a| 
@@ -67,19 +131,44 @@ link:reference-permissions-azure.html["Autorisations Azure pour le connecteur"]
 |===
 
 
-== Autorisations Google Cloud
+=== Copie et synchronisation
 
-[cols="25,60,40"]
+[cols="20,60,20"]
 |===
 | Objectif | Description | Lien 
 
 
-| Déploiement de connecteurs | L'utilisateur Google Cloud qui déploie un connecteur depuis BlueXP a besoin d'autorisations spécifiques pour déployer le connecteur dans Google Cloud. | link:task-set-up-permissions-google.html#set-up-permissions-to-create-the-connector-from-bluexp-or-gcloud["Configurez les autorisations de déploiement du connecteur"] 
+| Déployez le courtier en données dans Azure | Le compte utilisateur Azure que vous utilisez pour déployer le courtier en données doit disposer des autorisations requises. | https://docs.netapp.com/us-en/bluexp-copy-sync/task-installing-azure.html#permissions-required-to-deploy-the-data-broker-in-azure["Autorisations requises pour déployer le courtier en données dans Azure"^] 
+|===
 
 
-| Fonctionnement du connecteur | Le compte de service de l'instance de VM Connector doit disposer d'autorisations spécifiques pour les opérations quotidiennes. Vous devez associer le compte de service au connecteur lorsque vous le déployez depuis BlueXP.
+== Autorisations Google Cloud
+
+BlueXP requiert des autorisations Google Cloud pour le connecteur et pour des services individuels.
+
+
+
+=== Connecteur
+
+[cols="20,60,20"]
+|===
+| Objectif | Description | Lien 
+
+
+| Déployez le connecteur de BlueXP | L'utilisateur Google Cloud qui déploie un connecteur depuis BlueXP a besoin d'autorisations spécifiques pour déployer le connecteur dans Google Cloud. | link:task-set-up-permissions-google.html#set-up-permissions-to-create-the-connector-from-bluexp-or-gcloud["Configurez les autorisations de déploiement du connecteur"] 
+
+
+| Fournir les autorisations pour le connecteur | Le compte de service de l'instance de VM Connector doit disposer d'autorisations spécifiques pour les opérations quotidiennes. Vous devez associer le compte de service au connecteur pendant le déploiement.
 
 Vous devez également vous assurer que la stratégie est à jour lorsque de nouvelles autorisations sont ajoutées dans les versions suivantes. | link:reference-permissions-gcp.html["Autorisations Google Cloud pour le connecteur"] 
+|===
+
+
+=== Sauvegarde et restauration
+
+[cols="20,60,20"]
+|===
+| Objectif | Description | Lien 
 
 
 | Sauvegarde de Cloud Volumes ONTAP dans Google Cloud  a| 
@@ -99,14 +188,53 @@ Lorsque vous utilisez la sauvegarde et la restauration BlueXP pour sauvegarder C
 |===
 
 
+=== Cloud Volumes Service pour Google Cloud
+
+[cols="20,60,20"]
+|===
+| Objectif | Description | Lien 
+
+
+| Découvrez Cloud Volumes Service pour Google Cloud | BlueXP a besoin d'un accès à l'API Cloud Volumes Service et de droits d'accès via un compte de service Google Cloud. | https://docs.netapp.com/us-en/bluexp-cloud-volumes-service-gcp/task-set-up-google-cloud.html["Configurez un compte de service"^] 
+|===
+
+
+=== Copie et synchronisation
+
+[cols="20,60,20"]
+|===
+| Objectif | Description | Lien 
+
+
+| Déployez le courtier en données dans Google Cloud | Assurez-vous que l'utilisateur Google Cloud qui déploie le courtier en données dispose des autorisations requises. | https://docs.netapp.com/us-en/bluexp-copy-sync/task-installing-gcp.html#permissions-required-to-deploy-the-data-broker-in-google-cloud["Autorisations requises pour déployer le courtier en données dans Google Cloud"^] 
+
+
+| Activez l'accès à Google Cloud pour un courtier de données installé manuellement | Si vous prévoyez d'utiliser le courtier de données avec une relation de synchronisation incluant un compartiment Google Cloud Storage, préparez l'hôte Linux pour l'accès Google Cloud. Lorsque vous installez le courtier de données, vous devez fournir une clé pour un compte de service disposant d'autorisations spécifiques. | https://docs.netapp.com/us-en/bluexp-copy-sync/task-installing-linux.html#enabling-access-to-google-cloud["Activation de l'accès à Google Cloud"^] 
+|===
+
+
 == Autorisations StorageGRID
 
-[cols="25,60,40"]
+BlueXP requiert des autorisations StorageGRID pour deux services.
+
+
+
+=== Sauvegarde et restauration
+
+[cols="20,60,20"]
 |===
 | Objectif | Description | Lien 
 
 
 | Sauvegardez vos clusters ONTAP sur site dans StorageGRID | Lorsque vous préparez StorageGRID en tant que cible de sauvegarde pour les clusters ONTAP, BlueXP Backup and Recovery vous invite à entrer une clé d'accès et un secret pour un utilisateur IAM qui possède des autorisations spécifiques. | https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-onprem-private-cloud.html#prepare-storagegrid-as-your-backup-target["Préparez StorageGRID en tant que cible de sauvegarde"^] 
+|===
+
+
+=== Tiering
+
+[cols="20,60,20"]
+|===
+| Objectif | Description | Lien 
 
 
 | Déplacez les clusters ONTAP sur site vers StorageGRID | Lorsque vous configurez le Tiering BlueXP vers StorageGRID, vous devez fournir le Tiering BlueXP avec une clé d'accès S3 et une clé secrète. Le Tiering BlueXP utilise les clés pour accéder à vos compartiments. | https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-onprem-private-cloud.html#prepare-storagegrid-as-your-backup-target["Préparez le Tiering vers StorageGRID"^] 
