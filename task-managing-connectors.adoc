@@ -77,13 +77,13 @@ image:screenshot-connector-autosupport.png["Capture d'écran du tableau de bord 
 
 Si vous devez vous connecter à la machine virtuelle Linux sur laquelle s'exécute le connecteur, vous pouvez utiliser les options de connectivité disponibles auprès de votre fournisseur de cloud.
 
-AWS:: Lorsque vous avez créé l'instance Connector dans AWS, vous avez fourni une clé d'accès AWS et une clé secrète. Vous pouvez utiliser cette paire de clés vers SSH à l'instance.
+AWS:: Lorsque vous avez créé l'instance Connector dans AWS, vous avez fourni une clé d'accès AWS et une clé secrète. Vous pouvez utiliser cette paire de clés vers SSH à l'instance. Le nom d'utilisateur de l'instance EC2 Linux est ubuntu (pour les connecteurs créés avant mai 2023, le nom d'utilisateur était ec2-user).
 +
 --
 https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AccessingInstances.html["AWS Docs : connectez-vous à votre instance Linux"^]
 
 --
-Azure:: Lorsque vous avez créé la machine virtuelle Connector dans Azure, vous avez choisi de vous authentifier avec un mot de passe ou une clé publique SSH. Utiliser la méthode d'authentification que vous avez choisie pour vous connecter à la machine virtuelle.
+Azure:: Lorsque vous avez créé la machine virtuelle du connecteur dans Azure, vous avez spécifié un nom d'utilisateur et choisi de vous authentifier à l'aide d'un mot de passe ou d'une clé publique SSH. Utiliser la méthode d'authentification que vous avez choisie pour vous connecter à la machine virtuelle.
 +
 --
 https://docs.microsoft.com/en-us/azure/virtual-machines/linux/mac-create-ssh-keys#ssh-into-your-vm["Azure Docs : connexion SSH à votre machine virtuelle"^]

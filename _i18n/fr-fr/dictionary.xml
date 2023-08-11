@@ -2231,7 +2231,6 @@
   <block id="6b3a1b41a32e70a38db42e8ec15a6fba" category="list-text">Le type d'instance EC2 est t3.XLarge.</block>
   <block id="eebb9a8111d1623667243e7e41ed0e71" category="list-text">Le système d'exploitation de l'image est Ubuntu 22.04.</block>
   <block id="953e61420be6157aa122dfd3475d4070" category="paragraph">Le système d'exploitation n'inclut pas d'interface graphique. Vous devez utiliser un terminal pour accéder au système.</block>
-  <block id="09572768e7bd2d34b2a051ebb8774173" category="list-text">Le nom d'utilisateur de l'instance Linux EC2 est utilisateur ec2.</block>
   <block id="efabd80ebdd217a47d9be936e5f0b8aa" category="list-text">Le disque système par défaut est un disque gp2 de 100 Gio.</block>
   <block id="b8c4a5bd8ed4eb470e80955a542dd4bf" category="section-title">Détails d'Azure</block>
   <block id="82e44dd5e94a855110f9dea154fed0ed" category="list-text">Le type de machine virtuelle est DS3 v2.</block>
@@ -2306,10 +2305,8 @@ ou</block>
   <block id="57b564b7cdbbd6b2996637851363ceb4" category="paragraph"><block ref="57b564b7cdbbd6b2996637851363ceb4" category="inline-image-macro-rx" type="image"></block></block>
   <block id="92ca244e2f6af5665f270d0017a9ee62" category="section-title">Connectez-vous à la machine virtuelle Linux</block>
   <block id="e55bb4f4a0a85c49aa386bbab887b86f" category="paragraph">Si vous devez vous connecter à la machine virtuelle Linux sur laquelle s'exécute le connecteur, vous pouvez utiliser les options de connectivité disponibles auprès de votre fournisseur de cloud.</block>
-  <block id="cf13d388949fc1d11bc6f3a402d09a9c" category="list-text">Lorsque vous avez créé l'instance Connector dans AWS, vous avez fourni une clé d'accès AWS et une clé secrète. Vous pouvez utiliser cette paire de clés vers SSH à l'instance.</block>
   <block id="7c3610671a51e36a9f66ca2d589e4dcc" category="inline-link">AWS Docs : connectez-vous à votre instance Linux</block>
   <block id="b896b04d3ed40d78b8156bd1e4d04d62" category="paragraph"><block ref="b896b04d3ed40d78b8156bd1e4d04d62" category="inline-link-rx"></block></block>
-  <block id="23e7db7d65e19a89dba9047655e6efd6" category="list-text">Lorsque vous avez créé la machine virtuelle Connector dans Azure, vous avez choisi de vous authentifier avec un mot de passe ou une clé publique SSH. Utiliser la méthode d'authentification que vous avez choisie pour vous connecter à la machine virtuelle.</block>
   <block id="3325909046e4a3d354f7ad1305df7390" category="inline-link">Azure Docs : connexion SSH à votre machine virtuelle</block>
   <block id="6021ceed2da20669f44ef94b5804186f" category="paragraph"><block ref="6021ceed2da20669f44ef94b5804186f" category="inline-link-rx"></block></block>
   <block id="fa25ff644bc82c03a613715d969f788d" category="list-text">Vous ne pouvez pas spécifier de méthode d'authentification lorsque vous créez un connecteur dans Google Cloud. Vous pouvez toutefois vous connecter à l'instance de machine virtuelle Linux à l'aide de Google Cloud Console ou de Google Cloud CLI (gCloud).</block>
@@ -3893,7 +3890,6 @@ Vous devez également vous assurer que la stratégie est à jour lorsque de nouv
   <block id="8d5c6b0c966cc9b5f51ab3ebb991e7ec" category="inline-link">Découvrez comment configurer les identifiants AWS pour FSX</block>
   <block id="c52aa019132bc05b5d90dee260d8fb6a" category="cell"><block ref="c52aa019132bc05b5d90dee260d8fb6a" category="inline-link-rx"></block></block>
   <block id="459077578e6bfda6360917f5762cecbd" category="paragraph">BlueXP nécessite des autorisations Azure pour le connecteur et pour les services individuels.</block>
-  <block id="edf21d7ecb364e8210ddd3dfaeca6fbf" category="section-title">Connecteur</block>
   <block id="19be7d05557bac8d8c8cdcd69e418046" category="paragraph">Vous devez configurer vous-même le rôle personnalisé si vous lancez un connecteur à partir du Marketplace, si vous installez manuellement le connecteur ou si vous le souhaitez <block ref="cc20e8be88e79fa30534d9044d86d641" category="inline-link-macro-rx"></block>.</block>
   <block id="c3cccd9ce135f450a9619b57dba5e5f1" category="cell">Déployez le courtier en données dans Azure</block>
   <block id="05f8fb1bf008e214609328fb34b7e532" category="cell">Le compte utilisateur Azure que vous utilisez pour déployer le courtier en données doit disposer des autorisations requises.</block>
@@ -3917,4 +3913,7 @@ Vous devez également vous assurer que la stratégie est à jour lorsque de nouv
   <block id="9b9b58eacf6390de371391672ac7e8ec" category="cell"><block ref="9b9b58eacf6390de371391672ac7e8ec" category="inline-link-rx"></block></block>
   <block id="8aa2111995c967fbe71b3943dcfa40e7" category="paragraph">BlueXP requiert des autorisations StorageGRID pour deux services.</block>
   <block id="857c228cf033cf46c4d3b643ed4db3a6" category="paragraph">Le service d'audit enregistre les informations relatives aux opérations effectuées par les services BlueXP. Cela inclut les espaces de travail, les connecteurs utilisés et d'autres données de télémétrie. Vous pouvez utiliser ces données pour déterminer quelles actions ont été effectuées, qui les a effectuées et quand elles ont eu lieu.</block>
+  <block id="60c6ee9a22a8a9d78e90e7b6417781b1" category="list-text">Le nom d'utilisateur de l'instance EC2 Linux est ubuntu (pour les connecteurs créés avant mai 2023, le nom d'utilisateur était ec2-user).</block>
+  <block id="2a3be610e29cddb2c56aa61b555b895a" category="list-text">Lorsque vous avez créé l'instance Connector dans AWS, vous avez fourni une clé d'accès AWS et une clé secrète. Vous pouvez utiliser cette paire de clés vers SSH à l'instance. Le nom d'utilisateur de l'instance EC2 Linux est ubuntu (pour les connecteurs créés avant mai 2023, le nom d'utilisateur était ec2-user).</block>
+  <block id="04e4cf5594e5bdae569d4fdcee8b46a6" category="list-text">Lorsque vous avez créé la machine virtuelle du connecteur dans Azure, vous avez spécifié un nom d'utilisateur et choisi de vous authentifier à l'aide d'un mot de passe ou d'une clé publique SSH. Utiliser la méthode d'authentification que vous avez choisie pour vous connecter à la machine virtuelle.</block>
 </blocks>

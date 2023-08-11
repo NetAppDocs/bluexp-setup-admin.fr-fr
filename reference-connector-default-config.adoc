@@ -33,7 +33,7 @@ Si vous avez déployé le connecteur depuis BlueXP ou depuis le marché du fourn
 +
 Le système d'exploitation n'inclut pas d'interface graphique. Vous devez utiliser un terminal pour accéder au système.
 
-* Le nom d'utilisateur de l'instance Linux EC2 est utilisateur ec2.
+* Le nom d'utilisateur de l'instance EC2 Linux est ubuntu (pour les connecteurs créés avant mai 2023, le nom d'utilisateur était ec2-user).
 * Le disque système par défaut est un disque gp2 de 100 Gio.
 
 
