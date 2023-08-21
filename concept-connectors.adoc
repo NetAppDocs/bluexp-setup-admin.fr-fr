@@ -65,6 +65,7 @@ Lorsque vous utilisez BlueXP en mode standard, un connecteur est requis pour les
 * Sauvegarde et restauration
 * Classement
 * Cloud Volumes ONTAP
+* Reprise après incident
 * Systèmes E-Series
 * Efficacité économique ^1^
 * La mise en cache en périphérie

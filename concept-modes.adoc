@@ -383,6 +383,9 @@ Notez que certains services peuvent être pris en charge avec des limitations. P
 | Portefeuille digital | Oui. | Oui. 
 
 
+| Reprise après incident | Non | Non 
+
+
 | Efficacité économique | Non | Non 
 
 
@@ -410,10 +413,10 @@ Notez que certains services peuvent être pris en charge avec des limitations. P
 | Tiering | Non | Non 
 
 
-| Mise en cache du volume | Non | Non 
+| Mise en cache du volume | Non | Non .5+| *Caractéristiques* 
 
 
-.5+| *Caractéristiques* | Informations d'identification | Oui. | Oui. 
+| Informations d'identification | Oui. | Oui. 
 
 
 | Comptes NSS | Oui. | Non 
@@ -423,7 +426,4 @@ Notez que certains services peuvent être pris en charge avec des limitations. P
 
 
 | Recherche | Oui. | Non 
-
-
-| De la chronologie | Oui. | Oui. 
 |===
