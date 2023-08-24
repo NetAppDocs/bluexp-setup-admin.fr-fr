@@ -365,7 +365,7 @@ Notez que certains services peuvent être pris en charge avec des limitations. P
 | StorageGRID | Non | Non 
 
 
-.16+| *Services* | Sauvegarde et restauration | Oui. | Oui. 
+.17+| *Services* | Sauvegarde et restauration | Oui. | Oui. 
 
 
 | Classement | Oui. | Oui. 
@@ -413,10 +413,10 @@ Notez que certains services peuvent être pris en charge avec des limitations. P
 | Tiering | Non | Non 
 
 
-| Mise en cache du volume | Non | Non .5+| *Caractéristiques* 
+| Mise en cache du volume | Non | Non 
 
 
-| Informations d'identification | Oui. | Oui. 
+.5+| *Caractéristiques* | Informations d'identification | Oui. | Oui. 
 
 
 | Comptes NSS | Oui. | Non 
@@ -426,4 +426,7 @@ Notez que certains services peuvent être pris en charge avec des limitations. P
 
 
 | Recherche | Oui. | Non 
+
+
+| De la chronologie | Oui. | Oui. 
 |===
