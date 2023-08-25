@@ -64,7 +64,8 @@ Pour tous les autres comptes, vous devez associer manuellement l'abonnement en r
 La vidéo suivante décrit la procédure de souscription à partir d'AWS Marketplace :
 
 +
-video::video_subscribing_aws.mp4[width=848,height=480]
+.Abonnez-vous à BlueXP sur AWS Marketplace
+video::096e1740-d115-44cf-8c27-b051011611eb[panopto]
 
 
 
@@ -108,7 +109,8 @@ Pour tous les autres comptes, vous devez associer manuellement l'abonnement en r
 La vidéo suivante explique comment vous abonner à Azure Marketplace :
 
 +
-video::video_subscribing_azure.mp4[width=848,height=480]
+.Abonnez-vous à BlueXP depuis Azure Marketplace
+video::b7e97509-2ecf-4fa0-b39b-b0510109a318[panopto]
 
 
 
@@ -170,7 +172,8 @@ Pour tous les autres comptes, vous devez associer manuellement l'abonnement en r
 Dans cette vidéo, vous instructions pour vous abonner à Google Cloud Marketplace :
 
 +
-video::video-subscribing-google-cloud.mp4[width=848,height=480]
+.Abonnez-vous à BlueXP depuis Google Cloud Marketplace
+video::373b96de-3691-4d84-b3f3-b05101161638[panopto]
 
 
 .. Une fois ce processus terminé, revenez à la page d'informations d'identification dans BlueXP et sélectionnez ce nouvel abonnement.

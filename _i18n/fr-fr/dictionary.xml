@@ -3915,4 +3915,7 @@ Vous devez également vous assurer que la stratégie est à jour lorsque de nouv
   <block id="04e4cf5594e5bdae569d4fdcee8b46a6" category="list-text">Lorsque vous avez créé la machine virtuelle du connecteur dans Azure, vous avez spécifié un nom d'utilisateur et choisi de vous authentifier à l'aide d'un mot de passe ou d'une clé publique SSH. Utiliser la méthode d'authentification que vous avez choisie pour vous connecter à la machine virtuelle.</block>
   <block id="300f031c227ed1b4448a8bb51abec2bb" category="paragraph">\https://netapp-cloud-account.auth0.com</block>
   <block id="80a43f3cb5826b8218d88da517c1e84b" category="list-text">Des notifications sont alors envoyées par e-mail pour les fonctionnalités et services BlueXP suivants : connecteur, portefeuille digital BlueXP, copie et synchronisation BlueXP, sauvegarde et restauration BlueXP, Tiering BlueXP, rapports de migration BlueXP et protection contre les ransomwares BlueXP. D'autres services seront ajoutés dans les prochaines versions.</block>
+  <block id="8ddd07f4c199accad92d619cc396eaef" category="video-title">Abonnez-vous à BlueXP sur AWS Marketplace</block>
+  <block id="040832c90148c5bba767901a4a55ebe4" category="video-title">Abonnez-vous à BlueXP depuis Azure Marketplace</block>
+  <block id="c6e17aa071476599f5e5fc5b8bc42431" category="video-title">Abonnez-vous à BlueXP depuis Google Cloud Marketplace</block>
 </blocks>
