@@ -1,0 +1,57 @@
+= 
+:allow-uri-read: 
+
+
+Un compte de service Google Cloud est requis pour fournir le connecteur avec les autorisations dont BlueXP a besoin pour gérer les ressources dans Google Cloud. Lorsque vous créez le connecteur, vous devez associer ce compte de service à la machine virtuelle Connector.
+
+.Étapes
+. Créez un rôle personnalisé dans Google Cloud :
++
+.. Créez un fichier YAML qui inclut le contenu du link:reference-permissions-gcp.html["Autorisations de compte de service pour le connecteur"].
+.. Dans Google Cloud, activez le shell cloud.
+.. Téléchargez le fichier YAML qui inclut les autorisations requises.
+.. Créez un rôle personnalisé à l'aide de `gcloud iam roles create` commande.
++
+L'exemple suivant crée un rôle nommé « connecteur » au niveau du projet :
+
++
+`gcloud iam roles create connector --project=myproject --file=connector.yaml`
+
++
+https://cloud.google.com/iam/docs/creating-custom-roles#iam-custom-roles-create-gcloud["Documents Google Cloud : création et gestion de rôles personnalisés"^]
+
+
+
+. Créer un compte de service dans Google Cloud et attribuer le rôle au compte de service :
++
+.. Dans le service IAM & Admin, sélectionnez *comptes de service > Créer un compte de service*.
+.. Entrez les détails du compte de service et sélectionnez *Créer et continuer*.
+.. Sélectionnez le rôle que vous venez de créer.
+.. Terminez les étapes restantes pour créer le rôle.
++
+https://cloud.google.com/iam/docs/creating-managing-service-accounts#creating_a_service_account["Documents Google Cloud : création d'un compte de service"^]
+
+
+
+. Si vous prévoyez de déployer des systèmes Cloud Volumes ONTAP dans différents projets que le projet sur lequel réside le connecteur, vous devrez fournir au compte de service du connecteur l'accès à ces projets.
++
+Disons, par exemple, que le connecteur est dans le projet 1 et que vous voulez créer des systèmes Cloud Volumes ONTAP dans le projet 2. Vous devrez accorder l'accès au compte de service dans le projet 2.
+
++
+.. Dans le service IAM & Admin, sélectionnez le projet Google Cloud où vous souhaitez créer les systèmes Cloud Volumes ONTAP.
+.. Sur la page *IAM*, sélectionnez *accorder accès* et fournissez les détails nécessaires.
++
+*** Saisissez l'e-mail du compte de service du connecteur.
+*** Sélectionnez le rôle personnalisé du connecteur.
+*** Sélectionnez *Enregistrer*.
+
+
+
+
++
+Pour plus de détails, reportez-vous à https://cloud.google.com/iam/docs/granting-changing-revoking-access#grant-single-role["Documentation Google Cloud"^]
+
+
+
+.Résultat
+Le compte de service de la machine virtuelle Connector est configuré.

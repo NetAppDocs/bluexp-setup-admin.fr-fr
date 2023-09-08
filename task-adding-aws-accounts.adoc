@@ -176,7 +176,7 @@ Assurez-vous de faire ce qui suit :
 ** Créez une stratégie qui inclut les autorisations requises pour créer un connecteur.
 +
 *** https://docs.netapp.com/us-en/bluexp-fsx-ontap/requirements/task-setting-up-permissions-fsx.html["Affichez les autorisations nécessaires pour FSX pour ONTAP"^]
-*** link:task-set-up-permissions-aws.html["Afficher la règle de déploiement des connecteurs"]
+*** link:task-install-connector-aws-bluexp.html#step-2-set-up-aws-permissions["Afficher la règle de déploiement des connecteurs"]
 
 
 

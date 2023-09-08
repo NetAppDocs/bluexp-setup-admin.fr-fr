@@ -24,9 +24,9 @@ Le rôle personnalisé illustré ci-dessous fournit les autorisations dont un co
 
 Vous devez appliquer ce rôle personnalisé à un compte de service rattaché à la machine virtuelle Connector.
 
-* link:task-set-up-permissions-google.html["Définissez les autorisations pour le mode standard"]
-* link:task-prepare-restricted-mode.html#prepare-cloud-permissions["Définissez les autorisations pour le mode restreint"]
-* link:task-prepare-private-mode.html#prepare-cloud-permissions["Configurez les autorisations pour le mode privé"]
+* link:task-install-connector-google-bluexp-gcloud.html#step-2-set-up-permissions-to-create-the-connector["Configurez les autorisations Google Cloud pour le mode standard"]
+* link:task-prepare-restricted-mode.html#step-5-prepare-cloud-permissions["Définissez les autorisations pour le mode restreint"]
+* link:task-prepare-private-mode.html#step-5-prepare-cloud-permissions["Configurez les autorisations pour le mode privé"]
 
 
 Vous devez également vous assurer que le rôle est à jour lorsque de nouvelles autorisations sont ajoutées dans les versions suivantes.

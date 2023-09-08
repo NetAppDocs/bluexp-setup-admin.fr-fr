@@ -141,18 +141,20 @@ Un administrateur de compte BlueXP peut créer un connecteur directement à part
 
 Des autorisations spécifiques sont nécessaires pour créer le connecteur directement à partir de BlueXP et un autre ensemble d'autorisations est nécessaire pour l'instance de connecteur elle-même. Si vous créez le connecteur dans AWS ou Azure directement à partir de BlueXP, BlueXP crée le connecteur avec les autorisations dont il a besoin.
 
-Pour savoir comment configurer les autorisations, reportez-vous aux pages suivantes :
+Lorsque vous utilisez BlueXP en mode standard, la façon dont vous fournissez les autorisations dépend de la façon dont vous prévoyez de créer le connecteur.
+
+Pour savoir comment configurer des autorisations, consultez les sections suivantes :
 
 * Mode standard
 +
-** link:task-set-up-permissions-aws.html["Configurez les autorisations AWS"]
-** link:task-set-up-permissions-azure.html["Configurez les autorisations Azure"]
-** link:task-set-up-permissions-google.html["Configurez les autorisations Google Cloud"]
-** link:task-set-up-permissions-on-prem.html["Configurez les autorisations cloud pour les déploiements sur site"]
+** link:concept-install-options-aws.html["Options d'installation des connecteurs dans AWS"]
+** link:concept-install-options-azure.html["Options d'installation des connecteurs dans Azure"]
+** link:concept-install-options-google.html["Options d'installation de Connector dans Google Cloud"]
+** link:task-install-connector-on-prem.html#step-3-set-up-cloud-permissions["Configurez les autorisations cloud pour les déploiements sur site"]
 
 
-* link:task-prepare-restricted-mode.html#prepare-cloud-permissions["Configurez les autorisations cloud pour le mode restreint"]
-* link:task-prepare-private-mode.html#prepare-cloud-permissions["Configurez les autorisations de cloud pour le mode privé"]
+* link:task-prepare-restricted-mode.html#step-5-prepare-cloud-permissions["Définissez les autorisations pour le mode restreint"]
+* link:task-prepare-private-mode.html#step-5-prepare-cloud-permissions["Configurez les autorisations pour le mode privé"]
 
 
 Pour afficher les autorisations exactes dont le connecteur a besoin, reportez-vous aux pages suivantes :

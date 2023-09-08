@@ -1,0 +1,239 @@
+---
+sidebar: sidebar 
+permalink: task-install-connector-aws-marketplace.html 
+keywords: install connector, aws connector installation, aws connector, install connector in aws, bluexp, aws marketplace, manual install, create connector 
+summary: 'Pour créer un connecteur à partir d"AWS Marketplace, vous devez configurer votre réseau, préparer les autorisations AWS, examiner les exigences d"instance, puis créer le connecteur.' 
+---
+= Créez un connecteur à partir d'AWS Marketplace
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Pour créer un connecteur à partir d'AWS Marketplace, vous devez configurer votre réseau, préparer les autorisations AWS, examiner les exigences d'instance, puis créer le connecteur.
+
+.Avant de commencer
+Vous devriez passer en revue link:reference-limitations.html["Limitations du connecteur"].
+
+
+
+== Étape 1 : configuration du réseau
+
+Assurez-vous que l'emplacement réseau où vous prévoyez d'installer le connecteur prend en charge les exigences suivantes. En répondant à ces exigences, il peut gérer les ressources et les processus dans votre environnement de cloud hybride.
+
+VPC et sous-réseau:: Lorsque vous créez le connecteur, vous devez spécifier le VPC et le sous-réseau sur lesquels le connecteur doit résider.
+
+
+Connexions aux réseaux cibles:: Un connecteur nécessite une connexion réseau à l'emplacement où vous prévoyez de créer et de gérer des environnements de travail. Par exemple, le réseau sur lequel vous prévoyez de créer des systèmes Cloud Volumes ONTAP ou un système de stockage dans votre environnement sur site.
+
+
+Accès Internet sortant:: L'emplacement réseau où vous déployez le connecteur doit disposer d'une connexion Internet sortante pour contacter des points finaux spécifiques.
+
+
+Points d'extrémité contactés depuis le connecteur:: Le connecteur nécessite un accès Internet sortant pour contacter les terminaux suivants afin de gérer les ressources et les processus au sein de votre environnement de cloud public pour les opérations quotidiennes.
++
+--
+[cols="2a,1a"]
+|===
+| Terminaux | Objectif 
+
+
+ a| 
+Services AWS (amazonaws.com):
+
+* CloudFormation
+* Cloud de calcul élastique (EC2)
+* Gestion des identités et des accès
+* Service de gestion des clés (KMS)
+* Service de jetons de sécurité (STS)
+* Service de stockage simple (S3)
+
+ a| 
+Pour gérer les ressources dans AWS. Le terminal exact dépend de la région AWS que vous utilisez. https://docs.aws.amazon.com/general/latest/gr/rande.html["Pour plus d'informations, consultez la documentation AWS"^]
+
+
+
+ a| 
+\https://support.netapp.com
+ a| 
+Pour obtenir des informations sur les licences et envoyer des messages AutoSupport au support NetApp.
+
+
+
+ a| 
+\https://*.api.bluexp.netapp.com
+
+\https://api.bluexp.netapp.com
+
+\https://*.cloudmanager.cloud.netapp.com
+
+\https://cloudmanager.cloud.netapp.com
+
+\https://netapp-cloud-account.auth0.com
+ a| 
+Pour fournir des fonctions et des services SaaS dans BlueXP.
+
+Notez que le connecteur est actuellement en contact avec « cloudmanager.cloud.netapp.com", mais il commencera à contacter « api.bluexp.netapp.com" dans une prochaine version.
+
+
+
+ a| 
+\https://*.blob.core.windows.net
+
+\https://cloudmanagerinfraprod.azurecr.io
+ a| 
+Pour mettre à niveau le connecteur et ses composants Docker.
+
+|===
+--
+
+
+Serveur proxy:: Si votre organisation nécessite le déploiement d'un serveur proxy pour tout le trafic Internet sortant, procurez-vous les informations suivantes sur votre proxy HTTP ou HTTPS. Vous devrez fournir ces informations pendant l'installation.
++
+--
+* Adresse IP
+* Informations d'identification
+* Certificat HTTPS
+
+
+--
+
+
+Ports:: Il n'y a pas de trafic entrant vers le connecteur, sauf si vous l'initiez ou si le connecteur est utilisé comme proxy pour envoyer des messages AutoSupport de Cloud Volumes ONTAP au support NetApp.
++
+--
+* HTTP (80) et HTTPS (443) permettent d'accéder à l'interface utilisateur locale que vous utiliserez dans de rares circonstances.
+* SSH (22) n'est nécessaire que si vous devez vous connecter à l'hôte pour le dépannage.
+* Les connexions entrantes via le port 3128 sont requises si vous déployez des systèmes Cloud Volumes ONTAP dans un sous-réseau où aucune connexion Internet sortante n'est disponible.
++
+Si les systèmes Cloud Volumes ONTAP ne disposent pas d'une connexion Internet sortante pour envoyer des messages AutoSupport, BlueXP les configure automatiquement pour qu'ils utilisent un serveur proxy inclus avec le connecteur. La seule condition est de s'assurer que le groupe de sécurité du connecteur autorise les connexions entrantes sur le port 3128. Vous devrez ouvrir ce port après le déploiement du connecteur.
+
+
+
+--
+
+
+
+
+== Étape 2 : configurez les autorisations AWS
+
+Pour préparer un déploiement Marketplace, créez des politiques IAM dans AWS et associez-les à un rôle IAM. Lorsque vous créez le connecteur à partir d'AWS Marketplace, vous êtes invité à sélectionner ce rôle IAM.
+
+.Étapes
+. Connectez-vous à la console AWS et accédez au service IAM.
+. Création d'une règle :
++
+.. Sélectionnez *stratégies > Créer une stratégie*.
+.. Sélectionnez *JSON* et copiez et collez le contenu du link:reference-permissions-aws.html["Politique IAM pour le connecteur"].
+.. Terminez les étapes restantes pour créer la stratégie.
++
+Selon les services BlueXP que vous prévoyez d'utiliser, il peut être nécessaire de créer une seconde règle. Pour les régions standard, les autorisations sont réparties entre deux règles. Deux règles sont requises en raison d'une taille maximale de caractères pour les stratégies gérées dans AWS. link:reference-permissions-aws.html["En savoir plus sur les règles IAM pour le connecteur"].
+
+
+
+. Créer un rôle IAM :
++
+.. Sélectionnez *rôles > Créer un rôle*.
+.. Sélectionnez *AWS service > EC2*.
+.. Ajoutez des autorisations en joignant la stratégie que vous venez de créer.
+.. Terminez les étapes restantes pour créer le rôle.
+
+
+
+
+.Résultat
+Vous pouvez désormais associer un rôle IAM à l'instance EC2 lors du déploiement depuis AWS Marketplace.
+
+
+
+== Étape 3 : passez en revue les exigences relatives aux instances
+
+Lorsque vous créez le connecteur, vous devez choisir un type d'instance EC2 qui répond aux exigences suivantes.
+
+CPU:: 4 cœurs ou 4 CPU virtuels
+RAM:: 14 GO
+Type d'instance AWS EC2:: Type d'instance qui répond aux exigences relatives au CPU et à la RAM indiquées ci-dessus. Nous recommandons une instance t3.XLarge.
+
+
+
+
+== Étape 4 : créer le connecteur
+
+Créez le connecteur directement à partir d'AWS Marketplace.
+
+.Description de la tâche
+La création du connecteur à partir d'AWS Marketplace déploie une instance EC2 dans AWS à l'aide d'une configuration par défaut. link:reference-connector-default-config.html["En savoir plus sur la configuration par défaut du connecteur"].
+
+.Avant de commencer
+Vous devez disposer des éléments suivants :
+
+* VPC et sous-réseau qui répondent aux exigences réseau.
+* Un rôle IAM avec une stratégie jointe qui inclut les autorisations requises pour le connecteur.
+* Autorisations de vous abonner à AWS Marketplace et de vous désabonner pour votre utilisateur IAM.
+* Compréhension des exigences en termes de CPU et de RAM pour l'instance.
+* Une paire de clés pour l'instance EC2.
+
+
+.Étapes
+. Accédez au https://aws.amazon.com/marketplace/pp/B018REK8QG["BlueXP, page sur AWS Marketplace"^]
+. Sur la page Marketplace, sélectionnez *Continuer pour s'abonner*, puis sélectionnez *Continuer à la configuration*.
++
+image:screenshot-subscribe-aws.png["Une capture d'écran affiche les boutons Continuer à s'abonner et Continuer la configuration sur AWS Marketplace."]
+
+. Modifiez l'une des options par défaut et sélectionnez *Continuer pour lancer*.
+. Sous *Choisissez action*, sélectionnez *lancer via EC2*, puis *lancer*.
++
+Ces étapes décrivent comment lancer l'instance à partir de la console EC2, car la console vous permet d'associer un rôle IAM à l'instance de connecteur. Cela n'est pas possible en utilisant l'action *lancer à partir du site Web*.
+
+. Suivez les invites pour configurer et déployer l'instance :
++
+** *Nom et balises* : saisissez un nom et des balises pour l'instance.
+** *Image de l'application et de l'OS* : passez cette section. Le connecteur ami est déjà sélectionné.
+** *Type d'instance* : en fonction de la disponibilité de la région, choisissez un type d'instance qui répond aux exigences de RAM et de CPU (t3.xlarge est recommandé).
+** *Paire de clés (login)* : sélectionnez la paire de clés que vous souhaitez utiliser pour vous connecter en toute sécurité à l'instance.
+** *Paramètres réseau* : modifiez les paramètres réseau selon vos besoins :
++
+*** Choisissez le VPC et le sous-réseau souhaités.
+*** Spécifiez si l'instance doit avoir une adresse IP publique.
+*** Spécifiez les paramètres de pare-feu qui activent les méthodes de connexion requises pour l'instance de connecteur : SSH, HTTP et HTTPS.
++
+Quelques règles supplémentaires sont requises pour des configurations spécifiques.
+
++
+link:reference-ports-aws.html["Afficher les règles des groupes de sécurité pour AWS"].
+
+
+
+** *Configurer le stockage* : conservez les options de stockage par défaut.
+** *Détails avancés* : sous *profil d'instance IAM*, choisissez le rôle IAM qui inclut les autorisations requises pour le connecteur.
+** *Résumé* : passez en revue le résumé et sélectionnez *lancer l'instance*.
+
+
++
+AWS lance le logiciel avec les paramètres spécifiés. L'instance de connecteur et le logiciel doivent s'exécuter dans environ cinq minutes.
+
+. Ouvrez un navigateur Web à partir d'un hôte connecté à la machine virtuelle Connector et entrez l'URL suivante :
++
+https://_ipaddress_[]
+
+. Une fois connecté, configurez le connecteur :
++
+.. Spécifiez le compte BlueXP à associer au connecteur.
+.. Entrez un nom pour le système.
+.. Sous *exécutez-vous dans un environnement sécurisé ?* maintenez le mode restreint désactivé.
++
+Vous devez désactiver le mode restreint, car ces étapes décrivent l'utilisation de BlueXP en mode standard. Vous devez activer le mode restreint uniquement si vous disposez d'un environnement sécurisé et souhaitez déconnecter ce compte des services back-end BlueXP. Si c'est le cas, link:task-quick-start-restricted-mode.html["Suivez les étapes pour démarrer avec BlueXP en mode restreint"].
+
+.. Sélectionnez *commençons*.
+
+
+
+
+.Résultat
+Le connecteur est maintenant installé et configuré avec votre compte BlueXP.
+
+Ouvrez un navigateur Web et accédez au https://console.bluexp.netapp.com["Console BlueXP"^] Pour commencer à utiliser le connecteur avec BlueXP.

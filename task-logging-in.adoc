@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: task-logging-in.html 
 keywords: logging in, log in, sign in, signing in, cloud central, netapp cloud central, user account, federated, federation, federated login, federation login, login with netapp, log in with netapp, sign up, create account 
-summary: Une fois que vous vous êtes inscrit à BlueXP, vous pouvez vous connecter à partir de la console web pour commencer à gérer vos données et votre infrastructure de stockage. 
+summary: La façon dont vous vous connectez à BlueXP dépend du mode de déploiement BlueXP que vous utilisez pour votre compte. 
 ---
-= Se connecter à BlueXP (mode standard)
+= Connectez-vous à BlueXP
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,9 +14,15 @@ summary: Une fois que vous vous êtes inscrit à BlueXP, vous pouvez vous connec
 
 
 [role="lead"]
+La façon dont vous vous connectez à BlueXP dépend du mode de déploiement BlueXP que vous utilisez pour votre compte.
+
+[role="tabbed-block"]
+====
+.Mode standard
+--
 Une fois que vous vous êtes inscrit à BlueXP, vous pouvez vous connecter à partir de la console web pour commencer à gérer vos données et votre infrastructure de stockage.
 
-.Options de connexion
+.Description de la tâche
 Vous pouvez vous connecter à la console Web BlueXP à l'aide de l'une des options suivantes :
 
 * Vos identifiants existants du site de support NetApp (NSS)
@@ -41,3 +47,57 @@ Vous pouvez utiliser l'authentification unique pour vous connecter à l'aide des
 
 .Résultat
 Vous êtes maintenant connecté et pouvez commencer à utiliser BlueXP pour gérer votre infrastructure multicloud hybride.
+
+--
+.Mode restreint
+--
+Lorsque vous utilisez BlueXP en mode restreint, vous devez vous connecter à la console BlueXP à partir de l'interface utilisateur qui s'exécute localement sur le connecteur.
+
+.Description de la tâche
+BlueXP prend en charge la connexion avec l'une des options suivantes lorsque votre compte est configuré en mode restreint :
+
+* Un identifiant NetApp Cloud avec votre adresse e-mail et un mot de passe
+* Une connexion fédérée
++
+Vous pouvez utiliser l'authentification unique pour vous connecter à l'aide des informations d'identification de votre annuaire d'entreprise (identité fédérée). link:concept-federation.html["Découvrez comment utiliser la fédération des identités avec BlueXP"].
+
+
+
+.Étapes
+. Ouvrez un navigateur Web et entrez l'URL suivante :
++
+https://_ipaddress_[]
+
++
+_Ipaddress_ peut être localhost, une adresse IP privée ou une adresse IP publique, selon la configuration de l'hôte où vous avez installé le connecteur. Par exemple, vous devrez peut-être entrer une adresse IP privée à partir d'un hôte qui a une connexion à l'hôte du connecteur.
+
+. Entrez votre nom d'utilisateur et votre mot de passe pour vous connecter.
+
+
+.Résultat
+Vous êtes maintenant connecté et pouvez commencer à utiliser BlueXP pour gérer votre infrastructure multicloud hybride.
+
+--
+.Mode privé
+--
+Lorsque vous utilisez BlueXP en mode privé, vous devez vous connecter à la console BlueXP à partir de l'interface utilisateur qui s'exécute localement sur le connecteur.
+
+.Description de la tâche
+Le mode privé prend en charge la gestion et l'accès des utilisateurs locaux. L'authentification n'est pas fournie via le service cloud de BlueXP.
+
+.Étapes
+. Ouvrez un navigateur Web et entrez l'URL suivante :
++
+https://_ipaddress_[]
+
++
+_Ipaddress_ peut être localhost, une adresse IP privée ou une adresse IP publique, selon la configuration de l'hôte où vous avez installé le connecteur. Par exemple, vous devrez peut-être entrer une adresse IP privée à partir d'un hôte qui a une connexion à l'hôte du connecteur.
+
+. Entrez votre nom d'utilisateur et votre mot de passe pour vous connecter.
+
+
+.Résultat
+Vous êtes maintenant connecté et pouvez commencer à utiliser BlueXP pour gérer votre infrastructure multicloud hybride.
+
+--
+====

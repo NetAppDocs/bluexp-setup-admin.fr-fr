@@ -1,5 +1,0 @@
-= 
-:allow-uri-read: 
-
-
-Il existe un conflit possible avec des adresses IP dans la plage 172. https://docs.netapp.com/us-en/bluexp-setup-admin/reference-limitations.html["En savoir plus sur cette limitation"].

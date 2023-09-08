@@ -14,21 +14,19 @@ summary: 'Il existe plusieurs façons de créer un connecteur dans Azure. La mé
 
 
 [role="lead"]
-Il existe plusieurs façons de créer un connecteur dans Azure. La méthode la plus courante est d'accéder directement à BlueXP. L'option d'installation que vous choisissez détermine la manière dont vous préparez le déploiement.
+Il existe plusieurs façons de créer un connecteur dans Azure. La méthode la plus courante est d'accéder directement à BlueXP.
 
 Les options d'installation suivantes sont disponibles :
 
-* Créez le connecteur directement à partir de BlueXP (il s'agit de l'option standard).
+* link:task-install-connector-azure-bluexp.html["Créez un connecteur directement à partir de BlueXP"] (il s'agit de l'option standard)
 +
 Cette action lance une machine virtuelle exécutant Linux et le logiciel Connector dans un réseau virtuel de votre choix.
 
-* Créez un connecteur à partir d'Azure Marketplace
+* link:task-install-connector-azure-marketplace.html["Créez un connecteur à partir d'Azure Marketplace"]
 +
-Cette action lance également une machine virtuelle exécutant Linux et le logiciel Connector.
+Cette action lance également une machine virtuelle qui exécute Linux et le logiciel Connector. Le déploiement est initié directement depuis Azure Marketplace plutôt que depuis BlueXP.
 
-* Téléchargez et installez manuellement le logiciel sur votre propre hôte Linux
+* link:task-install-connector-azure-manual.html["Téléchargez et installez manuellement le logiciel sur votre propre hôte Linux"]
 
 
 L'option d'installation que vous choisissez a une incidence sur la préparation de l'installation. Vous pouvez notamment fournir à BlueXP les autorisations requises pour authentifier et gérer les ressources dans Azure.
-
-link:task-install-connector-azure.html["Découvrez comment installer le connecteur dans Azure"].

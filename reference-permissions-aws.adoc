@@ -30,10 +30,10 @@ Notez ce qui suit :
 * Si nécessaire, vous pouvez restreindre les règles IAM à l'aide de l'IAM `Condition` elément. https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition.html["Documentation AWS : élément de condition"^]
 * Pour afficher des instructions détaillées sur l'utilisation de ces stratégies, reportez-vous aux pages suivantes :
 +
-** link:task-set-up-permissions-aws.html["Configuration des autorisations pour l'installation des connecteurs dans AWS (mode standard)"]
-** link:task-set-up-permissions-on-prem.html["Configurer les autorisations pour l'installation des connecteurs sur site (mode standard)"]
-** link:task-prepare-restricted-mode.html#prepare-cloud-permissions["Définissez les autorisations pour le mode restreint"]
-** link:task-prepare-private-mode.html#prepare-cloud-permissions["Configurez les autorisations pour le mode privé"]
+** link:task-install-connector-aws-marketplace.html#step-2-set-up-aws-permissions["Configurez les autorisations d'un déploiement AWS Marketplace"]
+** link:task-install-connector-on-prem.html#step-3-set-up-cloud-permissions["Configurez des autorisations pour les déploiements sur site"]
+** link:task-prepare-restricted-mode.html#step-5-prepare-cloud-permissions["Définissez les autorisations pour le mode restreint"]
+** link:task-prepare-private-mode.html#step-5-prepare-cloud-permissions["Configurez les autorisations pour le mode privé"]
 
 
 

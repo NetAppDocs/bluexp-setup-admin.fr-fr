@@ -2,13 +2,9 @@
 :allow-uri-read: 
 
 
-* Un hôte dédié exécutant Ubuntu 22.04, CentOS 7.6 à 7.9 ou RHEL 7.6 à 7.9
-* 4 processeurs
-* 14 Go de RAM
-* Docker Engine 19.3.1 ou version ultérieure
-
-
 Hôte dédié:: Le connecteur n'est pas pris en charge sur un hôte partagé avec d'autres applications. L'hôte doit être un hôte dédié.
+
+
 Systèmes d'exploitation pris en charge::
 +
 --
@@ -24,12 +20,16 @@ Le connecteur est pris en charge sur les versions en anglais de ces systèmes d'
 
 
 --
+
+
 Hyperviseur:: Un hyperviseur bare Metal ou hébergé certifié pour exécuter Ubuntu, CentOS ou Red Hat Enterprise Linux est requis.
 +
 --
 https://access.redhat.com/certified-hypervisors["Solution Red Hat : quels hyperviseurs sont certifiés pour l'exécution de Red Hat Enterprise Linux ?"^]
 
 --
+
+
 CPU:: 4 cœurs ou 4 CPU virtuels
 RAM:: 14 GO
 
@@ -37,7 +37,7 @@ RAM:: 14 GO
 Type d'instance AWS EC2:: Type d'instance qui répond aux exigences relatives au CPU et à la RAM indiquées ci-dessus. Nous recommandons une instance t3.XLarge.
 
 
-Paire de clés:: Lorsque vous créez le connecteur à partir de BlueXP ou d'AWS Marketplace, vous devez sélectionner une paire de clés EC2 à utiliser avec l'instance.
+Paire de clés:: Lorsque vous créez le connecteur, vous devez sélectionner une paire de clés EC2 à utiliser avec l'instance.
 
 
 Taille des machines virtuelles Azure:: Type d'instance qui répond aux exigences relatives au CPU et à la RAM indiquées ci-dessus. Nous recommandons DS3 v2.
@@ -53,5 +53,7 @@ Ce connecteur est pris en charge dans Google Cloud sur une instance de machine v
 
 Espace disque dans /opt:: 100 Gio d'espace doit être disponible
 Espace disque dans /var:: 20 Gio d'espace doit être disponible
+
+
 Moteur Docker:: Docker Engine version 19.3.1 ou ultérieure est requis sur l'hôte avant d'installer le connecteur. https://docs.docker.com/engine/install/["Voir les instructions d'installation"^]
 

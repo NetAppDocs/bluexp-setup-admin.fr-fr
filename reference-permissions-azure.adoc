@@ -26,10 +26,12 @@ Lorsque vous créez un connecteur directement à partir de BlueXP, BlueXP appliq
 
 Si vous déployez le connecteur à partir d'Azure Marketplace ou si vous installez manuellement le connecteur sur un hôte Linux, vous devrez définir vous-même le rôle personnalisé.
 
-* link:task-set-up-permissions-azure.html["Configuration des autorisations pour l'installation des connecteurs dans Azure (mode standard)"]
-* link:task-set-up-permissions-on-prem.html["Configurer les autorisations pour l'installation des connecteurs sur site (mode standard)"]
-* link:task-prepare-restricted-mode.html#prepare-cloud-permissions["Définissez les autorisations pour le mode restreint"]
-* link:task-prepare-private-mode.html#prepare-cloud-permissions["Configurez les autorisations pour le mode privé"]
+Pour afficher des instructions détaillées sur l'utilisation de ces stratégies, reportez-vous aux pages suivantes :
+
+* link:task-install-connector-azure-marketplace.html#step-3-set-up-permissions["Configurez les autorisations d'un déploiement Azure Marketplace"]
+* link:task-install-connector-on-prem.html#step-3-set-up-cloud-permissions["Configurez des autorisations pour les déploiements sur site"]
+* link:task-prepare-restricted-mode.html#step-5-prepare-cloud-permissions["Définissez les autorisations pour le mode restreint"]
+* link:task-prepare-private-mode.html#step-5-prepare-cloud-permissions["Configurez les autorisations pour le mode privé"]
 
 
 Vous devez également vous assurer que le rôle est à jour lorsque de nouvelles autorisations sont ajoutées dans les versions suivantes.

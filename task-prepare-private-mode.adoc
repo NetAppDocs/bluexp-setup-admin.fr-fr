@@ -21,7 +21,7 @@ NOTE: Si vous souhaitez utiliser BlueXP dans le https://aws.amazon.com/federal/u
 
 
 
-== Comprendre le fonctionnement du mode privé
+== Étape 1 : comprendre le fonctionnement du mode privé
 
 Avant de commencer, vous devez connaître le fonctionnement de BlueXP en mode privé.
 
@@ -33,7 +33,7 @@ link:concept-modes.html["En savoir plus sur le fonctionnement du mode privé"].
 
 
 
-== Vérifiez les options d'installation
+== Étape 2 : passez en revue les options d'installation
 
 En mode privé, vous pouvez installer le connecteur sur site ou dans le cloud en installant manuellement le connecteur sur votre propre hôte Linux.
 
@@ -41,7 +41,7 @@ Si vous souhaitez créer un système Cloud Volumes ONTAP dans Google Cloud, alor
 
 
 
-== Vérifiez la configuration requise pour l'hôte
+== Étape 3 : vérifiez la configuration requise pour l'hôte
 
 Le logiciel du connecteur doit être exécuté sur un hôte qui répond à des exigences spécifiques du système d'exploitation, de la RAM, des ports, etc.
 
@@ -84,22 +84,14 @@ Moteur Docker:: Docker Engine version 19.3.1 ou ultérieure est requis sur l'hô
 
 
 
-== Préparez la mise en réseau pour le connecteur
+== Étape 4 : préparer la mise en réseau pour le connecteur
 
 Configurez votre réseau de sorte que le connecteur puisse gérer les ressources et les processus au sein de votre environnement de cloud public. Outre le fait de disposer d'un réseau virtuel et d'un sous-réseau pour le connecteur, vous devez vous assurer que les exigences suivantes sont respectées.
 
-
-
-=== Connexions aux réseaux cibles
-
-Le connecteur doit disposer d'une connexion réseau à l'emplacement où vous prévoyez de gérer le stockage. Par exemple, le VPC ou le vnet sur lequel vous prévoyez de déployer Cloud Volumes ONTAP, ou le data Center dans lequel résident vos clusters ONTAP sur site.
-
-
-
-=== Terminaux des opérations quotidiennes
-
-Le connecteur contacte les terminaux suivants pour gérer les ressources et les processus au sein de votre environnement de cloud public.
-
+Connexions aux réseaux cibles:: Le connecteur doit disposer d'une connexion réseau à l'emplacement où vous prévoyez de gérer le stockage. Par exemple, le VPC ou le vnet sur lequel vous prévoyez de déployer Cloud Volumes ONTAP, ou le data Center dans lequel résident vos clusters ONTAP sur site.
+Terminaux des opérations quotidiennes:: Le connecteur contacte les terminaux suivants pour gérer les ressources et les processus au sein de votre environnement de cloud public.
++
+--
 [cols="2a,1a"]
 |===
 | Terminaux | Objectif 
@@ -116,7 +108,7 @@ Services AWS (amazonaws.com):
 * Service de stockage simple (S3)
 
  a| 
-Pour gérer les ressources dans AWS. Le point final exact dépend de la région dans laquelle vous déployez le connecteur. https://docs.aws.amazon.com/general/latest/gr/rande.html["Pour plus d'informations, consultez la documentation AWS"^]
+Pour gérer les ressources dans AWS. Le terminal exact dépend de la région AWS que vous utilisez. https://docs.aws.amazon.com/general/latest/gr/rande.html["Pour plus d'informations, consultez la documentation AWS"^]
 
 
 
@@ -164,42 +156,44 @@ De gérer les ressources dans les régions Azure China.
 De gérer des ressources dans Google Cloud.
 
 |===
+--
 
 
-=== Serveur proxy
-
-Si votre organisation nécessite le déploiement d'un serveur proxy pour tout le trafic Internet sortant, procurez-vous les informations suivantes sur votre proxy HTTP ou HTTPS. Vous devrez fournir ces informations pendant l'installation.
-
-* Adresse IP
-* Informations d'identification
-* Certificat HTTPS
-
-
-Avec le mode privé, la seule fois que BlueXP envoie le trafic sortant est à votre fournisseur cloud pour créer un système Cloud Volumes ONTAP.
-
-
-
-=== Adresse IP publique dans Azure
-
-Si vous souhaitez utiliser une adresse IP publique avec la machine virtuelle du connecteur dans Azure, l'adresse IP doit utiliser une référence de base pour garantir que BlueXP utilise cette adresse IP publique.
-
+Adresse IP publique dans Azure:: Si vous souhaitez utiliser une adresse IP publique avec la machine virtuelle du connecteur dans Azure, l'adresse IP doit utiliser une référence de base pour garantir que BlueXP utilise cette adresse IP publique.
++
+--
 image:screenshot-azure-sku.png["Capture d'écran de la création d'une nouvelle adresse IP dans Azure qui vous permet de choisir Basic sous dans le champ SKU."]
 
 Si vous utilisez une adresse IP de référence standard, BlueXP utilise l'adresse IP _private_ du connecteur, au lieu de l'adresse IP publique. Si la machine que vous utilisez pour accéder à la console BlueXP n'a pas accès à cette adresse IP privée, les actions de la console BlueXP échouent.
 
 https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/public-ip-addresses#sku["Documentation Azure : référence IP publique"^]
 
+--
 
 
-=== Ports
+Serveur proxy:: Si votre organisation nécessite le déploiement d'un serveur proxy pour tout le trafic Internet sortant, procurez-vous les informations suivantes sur votre proxy HTTP ou HTTPS. Vous devrez fournir ces informations pendant l'installation.
++
+--
+* Adresse IP
+* Informations d'identification
+* Certificat HTTPS
++
+Avec le mode privé, la seule fois que BlueXP envoie le trafic sortant est à votre fournisseur cloud pour créer un système Cloud Volumes ONTAP.
 
-Il n'y a pas de trafic entrant vers le connecteur, sauf si vous le lancez.
 
+
+--
+Ports:: Il n'y a pas de trafic entrant vers le connecteur, sauf si vous le lancez.
++
+--
 HTTP (80) et HTTPS (443) permettent d'accéder à la console BlueXP. SSH (22) n'est nécessaire que si vous devez vous connecter à l'hôte pour le dépannage.
 
+--
 
 
-== Préparez les autorisations cloud
+
+
+== Étape 5 : préparez les autorisations cloud
 
 Si vous prévoyez de créer des systèmes Cloud Volumes ONTAP, BlueXP requiert des autorisations de votre fournisseur cloud. Vous devez définir des autorisations dans votre fournisseur de cloud, puis les associer à l'instance Connector après l'avoir installée.
 
@@ -514,7 +508,7 @@ Vous disposez désormais d'un compte de service que vous pouvez attribuer à l'i
 ====
 
 
-== Activez les API Google Cloud
+== Étape 6 : activez les API Google Cloud
 
 Plusieurs API sont requises pour déployer Cloud Volumes ONTAP dans Google Cloud.
 

@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: concept-install-options-google.html 
 keywords: install connector google cloud, google cloud install connector, connector google cloud, google cloud connector, install connector gcp, gcp install connector, connector gcp, gcp connector, installation options, manual install 
-summary: 'Il existe plusieurs façons de créer un connecteur dans Google Cloud. La méthode la plus courante est d"accéder directement à BlueXP. L"option d"installation que vous choisissez détermine la manière dont vous préparez le déploiement.' 
+summary: 'Il existe plusieurs façons de créer un connecteur dans Google Cloud. La méthode la plus courante est d"accéder directement à BlueXP.' 
 ---
 = Options d'installation de Connector dans Google Cloud
 :hardbreaks:
@@ -14,21 +14,19 @@ summary: 'Il existe plusieurs façons de créer un connecteur dans Google Cloud.
 
 
 [role="lead"]
-Il existe plusieurs façons de créer un connecteur dans Google Cloud. La méthode la plus courante est d'accéder directement à BlueXP. L'option d'installation que vous choisissez détermine la manière dont vous préparez le déploiement.
+Il existe plusieurs façons de créer un connecteur dans Google Cloud. La méthode la plus courante est d'accéder directement à BlueXP.
 
 Les options d'installation suivantes sont disponibles :
 
-* Créez le connecteur directement à partir de BlueXP (il s'agit de l'option standard).
+* link:task-install-connector-google-bluexp-gcloud.html["Créez le connecteur directement à partir de BlueXP"] (il s'agit de l'option standard)
 +
 Cette action lance une instance de serveur virtuel exécutant Linux et le logiciel Connector dans un VPC de votre choix.
 
-* Créer le connecteur à l'aide de gcloud
+* link:task-install-connector-google-bluexp-gcloud.html["Créer le connecteur à l'aide de gcloud"]
 +
-Cette action lance également une instance VM exécutant Linux et le logiciel Connector.
+Cette action lance également une instance de VM exécutant Linux et le logiciel Connector, mais le déploiement est initié directement depuis Google Cloud plutôt que depuis BlueXP.
 
-* Téléchargez et installez manuellement le logiciel sur votre propre hôte Linux
+* link:task-install-connector-google-manual.html["Téléchargez et installez manuellement le logiciel sur votre propre hôte Linux"]
 
 
 L'option d'installation que vous choisissez a une incidence sur la préparation de l'installation. Vous pouvez notamment fournir à BlueXP les autorisations requises pour authentifier et gérer les ressources dans Google Cloud.
-
-link:task-install-connector-google.html["Découvrez comment installer le connecteur dans Google Cloud"].

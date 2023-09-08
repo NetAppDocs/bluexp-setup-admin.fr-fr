@@ -18,7 +18,7 @@ Déployez le connecteur en mode privé pour utiliser BlueXP sans connectivité s
 
 
 
-== Poser le connecteur
+== Étape 1 : installez le connecteur
 
 Téléchargez le programme d'installation du produit sur le site de support NetApp, puis installez manuellement le connecteur sur votre propre hôte Linux.
 
@@ -64,7 +64,7 @@ Le logiciel du connecteur est installé. Vous pouvez maintenant configurer BlueX
 
 
 
-== Configurez BlueXP
+== Étape 2 : configuration de BlueXP
 
 Lorsque vous accédez pour la première fois à la console BlueXP, vous êtes invité à configurer BlueXP.
 
@@ -102,11 +102,11 @@ Fournissez à BlueXP les autorisations que vous avez précédemment configurées
 
 
 
-== Fournissez des autorisations à BlueXP
+== Étape 3 : fournissez des autorisations à BlueXP
 
 Si vous souhaitez créer des environnements de travail Cloud Volumes ONTAP, vous devez fournir à BlueXP les autorisations cloud que vous avez précédemment configurées.
 
-link:task-prepare-private-mode.html#prepare-cloud-permissions["Découvrez comment préparer les autorisations cloud"].
+link:task-prepare-private-mode.html#step-5-prepare-cloud-permissions["Découvrez comment préparer les autorisations cloud"].
 
 [role="tabbed-block"]
 ====

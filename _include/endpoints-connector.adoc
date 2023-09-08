@@ -2,6 +2,9 @@
 :allow-uri-read: 
 
 
+Points d'extrémité contactés depuis le connecteur:: Le connecteur nécessite un accès Internet sortant pour contacter les terminaux suivants afin de gérer les ressources et les processus au sein de votre environnement de cloud public pour les opérations quotidiennes.
+
+
 | Services AWS (amazonaws.com):
 
 * CloudFormation
@@ -12,7 +15,7 @@
 * Service de stockage simple (S3)
 
 
-| pour gérer les ressources dans AWS. Le point final exact dépend de la région dans laquelle vous déployez le connecteur. https://docs.aws.amazon.com/general/latest/gr/rande.html["Pour plus d'informations, consultez la documentation AWS"^]
+| pour gérer les ressources dans AWS. Le terminal exact dépend de la région AWS que vous utilisez. https://docs.aws.amazon.com/general/latest/gr/rande.html["Pour plus d'informations, consultez la documentation AWS"^]
 
 | \https://management.azure.com
 \https://login.microsoftonline.com

@@ -1,0 +1,404 @@
+---
+sidebar: sidebar 
+permalink: task-install-connector-aws-manual.html 
+keywords: install connector, aws connector installation, aws connector, install connector in aws, bluexp, aws marketplace, manual install, create connector 
+summary: 'Pour installer manuellement le connecteur sur votre propre hôte Linux, vous devez vérifier la configuration requise pour l"hôte, configurer le réseau, préparer les autorisations AWS, installer le connecteur, puis fournir les autorisations que vous avez préparées.' 
+---
+= Installez manuellement le connecteur dans AWS
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Pour installer manuellement le connecteur sur votre propre hôte Linux, vous devez vérifier la configuration requise pour l'hôte, configurer le réseau, préparer les autorisations AWS, installer le connecteur, puis fournir les autorisations que vous avez préparées.
+
+.Avant de commencer
+Vous devriez passer en revue link:reference-limitations.html["Limitations du connecteur"].
+
+
+
+== Étape 1 : vérifiez la configuration requise pour l'hôte
+
+Le logiciel du connecteur doit être exécuté sur un hôte qui répond à des exigences spécifiques du système d'exploitation, de la RAM, des ports, etc.
+
+Hôte dédié:: Le connecteur n'est pas pris en charge sur un hôte partagé avec d'autres applications. L'hôte doit être un hôte dédié.
+Systèmes d'exploitation pris en charge::
++
+--
+* Ubuntu 22.04
+* CentOS 7.6, 7.7, 7.8 et 7.9
+* Red Hat Enterprise Linux 7.6, 7.7, 7.8 et 7.9
++
+L'hôte doit être enregistré auprès de Red Hat Subscription Management. S'il n'est pas enregistré, l'hôte ne peut pas accéder aux référentiels pour mettre à jour les logiciels tiers requis lors de l'installation du connecteur.
+
++
+Le connecteur est pris en charge sur les versions en anglais de ces systèmes d'exploitation.
+
+
+
+--
+Hyperviseur:: Un hyperviseur bare Metal ou hébergé certifié pour exécuter Ubuntu, CentOS ou Red Hat Enterprise Linux est requis.
++
+--
+https://access.redhat.com/certified-hypervisors["Solution Red Hat : quels hyperviseurs sont certifiés pour l'exécution de Red Hat Enterprise Linux ?"^]
+
+--
+CPU:: 4 cœurs ou 4 CPU virtuels
+RAM:: 14 GO
+Type d'instance AWS EC2:: Type d'instance qui répond aux exigences relatives au CPU et à la RAM indiquées ci-dessus. Nous recommandons une instance t3.XLarge.
+Paire de clés:: Lorsque vous créez le connecteur, vous devez sélectionner une paire de clés EC2 à utiliser avec l'instance.
+Espace disque dans /opt:: 100 Gio d'espace doit être disponible
+Espace disque dans /var:: 20 Gio d'espace doit être disponible
+Moteur Docker:: Docker Engine version 19.3.1 ou ultérieure est requis sur l'hôte avant d'installer le connecteur. https://docs.docker.com/engine/install/["Voir les instructions d'installation"^]
+
+
+
+
+== Étape 2 : configuration du réseau
+
+Assurez-vous que l'emplacement réseau où vous prévoyez d'installer le connecteur prend en charge les exigences suivantes. En répondant à ces exigences, il peut gérer les ressources et les processus dans votre environnement de cloud hybride.
+
+Connexions aux réseaux cibles:: Un connecteur nécessite une connexion réseau à l'emplacement où vous prévoyez de créer et de gérer des environnements de travail. Par exemple, le réseau sur lequel vous prévoyez de créer des systèmes Cloud Volumes ONTAP ou un système de stockage dans votre environnement sur site.
+
+
+Accès Internet sortant:: L'emplacement réseau où vous déployez le connecteur doit disposer d'une connexion Internet sortante pour contacter des points finaux spécifiques.
+
+
+Points finaux contactés lors de l'installation manuelle:: Lorsque vous installez manuellement le connecteur sur votre propre hôte Linux, le programme d'installation du connecteur nécessite l'accès aux URL suivantes pendant le processus d'installation :
++
+--
+* \https://support.netapp.com
+* \https://mysupport.netapp.com
+* \https://cloudmanager.cloud.netapp.com/tenancy
+* \https://stream.cloudmanager.cloud.netapp.com
+* \https://production-artifacts.cloudmanager.cloud.netapp.com
+* \https://*.blob.core.windows.net
+* \https://cloudmanagerinfraprod.azurecr.io
++
+L'hôte peut essayer de mettre à jour les packages du système d'exploitation lors de l'installation. L'hôte peut contacter différents sites de mise en miroir pour ces packages OS.
+
+
+
+--
+
+
+Points d'extrémité contactés depuis le connecteur:: Le connecteur nécessite un accès Internet sortant pour contacter les terminaux suivants afin de gérer les ressources et les processus au sein de votre environnement de cloud public pour les opérations quotidiennes.
++
+--
+[cols="2a,1a"]
+|===
+| Terminaux | Objectif 
+
+
+ a| 
+Services AWS (amazonaws.com):
+
+* CloudFormation
+* Cloud de calcul élastique (EC2)
+* Gestion des identités et des accès
+* Service de gestion des clés (KMS)
+* Service de jetons de sécurité (STS)
+* Service de stockage simple (S3)
+
+ a| 
+Pour gérer les ressources dans AWS. Le terminal exact dépend de la région AWS que vous utilisez. https://docs.aws.amazon.com/general/latest/gr/rande.html["Pour plus d'informations, consultez la documentation AWS"^]
+
+
+
+ a| 
+\https://support.netapp.com
+ a| 
+Pour obtenir des informations sur les licences et envoyer des messages AutoSupport au support NetApp.
+
+
+
+ a| 
+\https://*.api.bluexp.netapp.com
+
+\https://api.bluexp.netapp.com
+
+\https://*.cloudmanager.cloud.netapp.com
+
+\https://cloudmanager.cloud.netapp.com
+
+\https://netapp-cloud-account.auth0.com
+ a| 
+Pour fournir des fonctions et des services SaaS dans BlueXP.
+
+Notez que le connecteur est actuellement en contact avec « cloudmanager.cloud.netapp.com", mais il commencera à contacter « api.bluexp.netapp.com" dans une prochaine version.
+
+
+
+ a| 
+\https://*.blob.core.windows.net
+
+\https://cloudmanagerinfraprod.azurecr.io
+ a| 
+Pour mettre à niveau le connecteur et ses composants Docker.
+
+|===
+--
+
+
+Serveur proxy:: Si votre organisation nécessite le déploiement d'un serveur proxy pour tout le trafic Internet sortant, procurez-vous les informations suivantes sur votre proxy HTTP ou HTTPS. Vous devrez fournir ces informations pendant l'installation.
++
+--
+* Adresse IP
+* Informations d'identification
+* Certificat HTTPS
+
+
+--
+
+
+Ports:: Il n'y a pas de trafic entrant vers le connecteur, sauf si vous l'initiez ou si le connecteur est utilisé comme proxy pour envoyer des messages AutoSupport de Cloud Volumes ONTAP au support NetApp.
++
+--
+* HTTP (80) et HTTPS (443) permettent d'accéder à l'interface utilisateur locale que vous utiliserez dans de rares circonstances.
+* SSH (22) n'est nécessaire que si vous devez vous connecter à l'hôte pour le dépannage.
+* Les connexions entrantes via le port 3128 sont requises si vous déployez des systèmes Cloud Volumes ONTAP dans un sous-réseau où aucune connexion Internet sortante n'est disponible.
++
+Si les systèmes Cloud Volumes ONTAP ne disposent pas d'une connexion Internet sortante pour envoyer des messages AutoSupport, BlueXP les configure automatiquement pour qu'ils utilisent un serveur proxy inclus avec le connecteur. La seule condition est de s'assurer que le groupe de sécurité du connecteur autorise les connexions entrantes sur le port 3128. Vous devrez ouvrir ce port après le déploiement du connecteur.
+
+
+
+--
+
+
+
+
+== Étape 3 : configurer les autorisations
+
+Vous devez fournir des autorisations AWS à BlueXP via l'une des options suivantes :
+
+* Option 1 : créez des règles IAM et associez-les à un rôle IAM que vous pouvez associer à l'instance EC2.
+* Option 2 : fournissez à BlueXP la clé d'accès AWS pour un utilisateur IAM qui dispose des autorisations requises.
+
+
+Suivez les étapes pour préparer les autorisations pour BlueXP.
+
+[role="tabbed-block"]
+====
+.Rôle IAM
+--
+.Étapes
+. Connectez-vous à la console AWS et accédez au service IAM.
+. Création d'une règle :
++
+.. Sélectionnez *stratégies > Créer une stratégie*.
+.. Sélectionnez *JSON* et copiez et collez le contenu du link:reference-permissions-aws.html["Politique IAM pour le connecteur"].
+.. Terminez les étapes restantes pour créer la stratégie.
++
+Selon les services BlueXP que vous prévoyez d'utiliser, il peut être nécessaire de créer une seconde règle. Pour les régions standard, les autorisations sont réparties entre deux règles. Deux règles sont requises en raison d'une taille maximale de caractères pour les stratégies gérées dans AWS. link:reference-permissions-aws.html["En savoir plus sur les règles IAM pour le connecteur"].
+
+
+
+. Créer un rôle IAM :
++
+.. Sélectionnez *rôles > Créer un rôle*.
+.. Sélectionnez *AWS service > EC2*.
+.. Ajoutez des autorisations en joignant la stratégie que vous venez de créer.
+.. Terminez les étapes restantes pour créer le rôle.
+
+
+
+
+.Résultat
+Vous disposez désormais d'un rôle IAM que vous pouvez associer à l'instance EC2 après avoir installé le connecteur.
+
+--
+.Clé d'accès AWS
+--
+.Étapes
+. Connectez-vous à la console AWS et accédez au service IAM.
+. Création d'une règle :
++
+.. Sélectionnez *stratégies > Créer une stratégie*.
+.. Sélectionnez *JSON* et copiez et collez le contenu du link:reference-permissions-aws.html["Politique IAM pour le connecteur"].
+.. Terminez les étapes restantes pour créer la stratégie.
++
+Selon les services BlueXP que vous prévoyez d'utiliser, il peut être nécessaire de créer une seconde règle.
+
++
+Pour les régions standard, les autorisations sont réparties entre deux règles. Deux règles sont requises en raison d'une taille maximale de caractères pour les stratégies gérées dans AWS. link:reference-permissions-aws.html["En savoir plus sur les règles IAM pour le connecteur"].
+
+
+
+. Associer les règles à un utilisateur IAM.
++
+** https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create.html["Documentation AWS : création de rôles IAM"^]
+** https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_manage-attach-detach.html["Documentation AWS : ajout et suppression de règles IAM"^]
+
+
+. Assurez-vous que l'utilisateur dispose d'une clé d'accès que vous pouvez ajouter à BlueXP après l'installation du connecteur.
+
+
+.Résultat
+Vous disposez désormais d'un utilisateur IAM qui dispose des autorisations requises et d'une clé d'accès que vous pouvez fournir à BlueXP.
+
+--
+====
+
+
+== Étape 4 : installez le connecteur
+
+Une fois la configuration requise terminée, vous pouvez installer manuellement le logiciel sur votre propre hôte Linux.
+
+.Avant de commencer
+Vous devez disposer des éléments suivants :
+
+* Privilèges root pour installer le connecteur.
+* Détails sur un serveur proxy, si un proxy est requis pour accéder à Internet à partir du connecteur.
++
+Vous avez la possibilité de configurer un serveur proxy après l'installation, mais cela nécessite de redémarrer le connecteur.
+
+* Un certificat signé par une autorité de certification, si le serveur proxy utilise HTTPS ou si le proxy est un proxy interceptant.
+
+
+.Description de la tâche
+Le programme d'installation disponible sur le site du support NetApp peut être une version antérieure. Après l'installation, le connecteur se met automatiquement à jour si une nouvelle version est disponible.
+
+.Étapes
+. Vérifiez que docker est activé et exécuté.
++
+[source, cli]
+----
+sudo systemctl enable docker && sudo systemctl start docker
+----
+. Si les variables système _http_proxy_ ou _https_proxy_ sont définies sur l'hôte, supprimez-les :
++
+[source, cli]
+----
+unset http_proxy
+unset https_proxy
+----
++
+Si vous ne supprimez pas ces variables système, l'installation échouera.
+
+. Téléchargez le logiciel du connecteur à partir du https://mysupport.netapp.com/site/products/all/details/cloud-manager/downloads-tab["Site de support NetApp"^], Puis copiez-le sur l'hôte Linux.
++
+Vous devez télécharger le programme d'installation du connecteur « en ligne » destiné à être utilisé sur votre réseau ou dans le cloud. Un programme d'installation séparé « hors ligne » est disponible pour le connecteur, mais il n'est pris en charge que pour les déploiements en mode privé.
+
+. Attribuez des autorisations pour exécuter le script.
++
+[source, cli]
+----
+chmod +x OnCommandCloudManager-<version>
+----
++
+Où <version> est la version du connecteur que vous avez téléchargé.
+
+. Exécutez le script d'installation.
++
+[source, cli]
+----
+ ./OnCommandCloudManager-<version> --proxy <HTTP or HTTPS proxy server> --cacert <path and file name of a CA-signed certificate>
+----
++
+Les paramètres --proxy et --cacert sont facultatifs. Si vous disposez d'un serveur proxy, vous devez entrer le ou les paramètres comme indiqué. Le programme d'installation ne vous invite pas à fournir des informations sur un proxy.
+
++
+Voici un exemple de commande utilisant les deux paramètres facultatifs :
+
++
+[source, cli]
+----
+ ./OnCommandCloudManager-V3.9.26 --proxy https://user:password@10.0.0.30:8080/ --cacert /tmp/cacert/certificate.cer
+----
++
+--proxy configure le connecteur pour utiliser un serveur proxy HTTP ou HTTPS à l'aide de l'un des formats suivants :
+
++
+** \http://address:port
+** \http://username:password@address:port
+** \https://address:port
+** \https://username:password@address:port
++
+L'utilisateur doit être un utilisateur local. Les utilisateurs du domaine ne sont pas pris en charge.
+
+
+
++
+--cacert spécifie un certificat signé par une autorité de certification à utiliser pour l'accès HTTPS entre le connecteur et le serveur proxy. Ce paramètre est requis uniquement si vous spécifiez un serveur proxy HTTPS ou si le proxy est un proxy interceptant.
+
+. Attendez la fin de l'installation.
++
+À la fin de l'installation, le service connecteur (ocm) redémarre deux fois si vous avez spécifié un serveur proxy.
+
+. Ouvrez un navigateur Web à partir d'un hôte connecté à la machine virtuelle Connector et entrez l'URL suivante :
++
+https://_ipaddress_[]
+
+. Une fois connecté, configurez le connecteur :
++
+.. Spécifiez le compte BlueXP à associer au connecteur.
+.. Entrez un nom pour le système.
+.. Sous *exécutez-vous dans un environnement sécurisé ?* maintenez le mode restreint désactivé.
++
+Vous devez désactiver le mode restreint, car ces étapes décrivent l'utilisation de BlueXP en mode standard. Vous devez activer le mode restreint uniquement si vous disposez d'un environnement sécurisé et souhaitez déconnecter ce compte des services back-end BlueXP. Si c'est le cas, link:task-quick-start-restricted-mode.html["Suivez les étapes pour démarrer avec BlueXP en mode restreint"].
+
+.. Sélectionnez *commençons*.
+
+
+
+
+.Résultat
+Le connecteur est maintenant installé et configuré avec votre compte BlueXP.
+
+
+
+== Étape 5 : fournissez des autorisations à BlueXP
+
+Maintenant que vous avez installé le connecteur, vous devez fournir à BlueXP les autorisations AWS que vous avez précédemment configurées. Si vous disposez des autorisations requises, BlueXP peut gérer vos données et votre infrastructure de stockage dans AWS.
+
+[role="tabbed-block"]
+====
+.Rôle IAM
+--
+Reliez le rôle IAM que vous avez créé précédemment à l'instance Connector EC2.
+
+.Étapes
+. Accédez à la console Amazon EC2.
+. Sélectionnez *instances*.
+. Sélectionnez l'instance de connecteur.
+. Sélectionnez *actions > sécurité > Modifier le rôle IAM*.
+. Sélectionnez le rôle IAM et sélectionnez *mettre à jour le rôle IAM*.
+
+
+.Résultat
+BlueXP dispose désormais des autorisations dont il a besoin pour effectuer des actions dans AWS en votre nom.
+
+Accédez au https://console.bluexp.netapp.com["Console BlueXP"^] Pour commencer à utiliser le connecteur avec BlueXP.
+
+--
+.Clé d'accès AWS
+--
+Fournissez à BlueXP la clé d'accès AWS pour un utilisateur IAM qui dispose des autorisations requises.
+
+.Étapes
+. Assurez-vous que le bon connecteur est actuellement sélectionné dans BlueXP.
+. Dans le coin supérieur droit de la console BlueXP, sélectionnez l'icône Paramètres, puis sélectionnez *informations d'identification*.
++
+image:screenshot_settings_icon.gif["Capture d'écran affichant l'icône Paramètres dans le coin supérieur droit de la console BlueXP."]
+
+. Sélectionnez *Ajouter des informations d'identification* et suivez les étapes de l'assistant.
++
+.. *Emplacement des informations d'identification* : sélectionnez *Amazon Web Services > connecteur*.
+.. *Définir les informations d'identification* : saisissez une clé d'accès AWS et une clé secrète.
+.. *Abonnement Marketplace* : associez un abonnement Marketplace à ces identifiants en vous abonnant maintenant ou en sélectionnant un abonnement existant.
+.. *Révision* : confirmez les détails des nouvelles informations d'identification et sélectionnez *Ajouter*.
+
+
+
+
+.Résultat
+BlueXP dispose désormais des autorisations dont il a besoin pour effectuer des actions dans AWS en votre nom.
+
+Accédez au https://console.bluexp.netapp.com["Console BlueXP"^] Pour commencer à utiliser le connecteur avec BlueXP.
+
+--
+====

@@ -18,7 +18,7 @@ Déployez le connecteur en mode restreint pour utiliser BlueXP avec une connecti
 
 
 
-== Poser le connecteur
+== Étape 1 : installez le connecteur
 
 Installez le connecteur à partir du Marketplace de votre fournisseur de cloud ou en installant manuellement le logiciel sur votre propre hôte Linux.
 
@@ -35,12 +35,12 @@ link:task-prepare-restricted-mode.html["En savoir plus sur les exigences de mise
 
 * Un rôle IAM avec une stratégie jointe qui inclut les autorisations requises pour le connecteur.
 +
-link:task-prepare-restricted-mode.html#prepare-cloud-permissions["Découvrez comment configurer des autorisations AWS"]
+link:task-prepare-restricted-mode.html#step-5-prepare-cloud-permissions["Découvrez comment configurer des autorisations AWS"]
 
 * Autorisations de vous abonner à AWS Marketplace et de vous désabonner pour votre utilisateur IAM.
 * Compréhension des exigences en termes de CPU et de RAM pour l'instance.
 +
-link:task-prepare-restricted-mode.html#review-host-requirements["Passez en revue les exigences relatives aux instances"].
+link:task-prepare-restricted-mode.html#step-3-review-host-requirements["Passez en revue les exigences relatives aux instances"].
 
 * Une paire de clés pour l'instance EC2.
 
@@ -100,7 +100,7 @@ link:task-prepare-restricted-mode.html["En savoir plus sur les exigences de mise
 
 * Un rôle IAM avec une stratégie jointe qui inclut les autorisations requises pour le connecteur.
 +
-link:task-prepare-restricted-mode.html#prepare-cloud-permissions["Découvrez comment configurer des autorisations AWS"]
+link:task-prepare-restricted-mode.html#step-5-prepare-cloud-permissions["Découvrez comment configurer des autorisations AWS"]
 
 * Autorisations de vous abonner à AWS Marketplace et de vous désabonner pour votre utilisateur IAM.
 * Une paire de clés pour l'instance EC2.
@@ -154,7 +154,7 @@ link:task-prepare-restricted-mode.html["En savoir plus sur les exigences de mise
 
 * Rôle personnalisé Azure qui inclut les autorisations requises pour le connecteur.
 +
-link:task-prepare-restricted-mode.html#prepare-cloud-permissions["Découvrez comment configurer des autorisations Azure"]
+link:task-prepare-restricted-mode.html#step-5-prepare-cloud-permissions["Découvrez comment configurer des autorisations Azure"]
 
 
 
@@ -294,7 +294,7 @@ Configurez BlueXP.
 ====
 
 
-== Configurez BlueXP
+== Étape 2 : configuration de BlueXP
 
 Lorsque vous accédez pour la première fois à la console BlueXP, vous êtes invité à choisir un compte auquel associer le connecteur et vous devez activer le mode restreint.
 
@@ -338,13 +338,13 @@ Fournissez à BlueXP les autorisations que vous avez précédemment configurées
 
 
 
-== Fournissez des autorisations à BlueXP
+== Étape 3 : fournissez des autorisations à BlueXP
 
 Si vous avez déployé le connecteur à partir d'Azure Marketplace ou si vous avez installé manuellement le logiciel Connector, vous devez fournir les autorisations que vous avez précédemment configurées pour vous permettre d'utiliser les services BlueXP.
 
 Ces étapes ne s'appliquent pas si vous avez déployé Connector à partir d'AWS Marketplace, car vous avez choisi le rôle IAM requis pendant le déploiement.
 
-link:task-prepare-restricted-mode.html#prepare-cloud-permissions["Découvrez comment préparer les autorisations cloud"].
+link:task-prepare-restricted-mode.html#step-5-prepare-cloud-permissions["Découvrez comment préparer les autorisations cloud"].
 
 [role="tabbed-block"]
 ====

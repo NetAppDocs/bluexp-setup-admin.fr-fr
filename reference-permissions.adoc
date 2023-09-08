@@ -31,7 +31,7 @@ BlueXP requiert des autorisations AWS pour le connecteur et pour des services in
 | Objectif | Description | Lien 
 
 
-| Déployez le connecteur de BlueXP | L'utilisateur qui crée un connecteur depuis BlueXP a besoin d'autorisations spécifiques pour déployer l'instance dans AWS. | link:task-set-up-permissions-aws.html["Configurez les autorisations AWS"] 
+| Déployez le connecteur de BlueXP | L'utilisateur qui crée un connecteur depuis BlueXP a besoin d'autorisations spécifiques pour déployer l'instance dans AWS. | link:task-install-connector-aws-bluexp.html#step-2-set-up-aws-permissions["Configurez les autorisations AWS"] 
 
 
 | Fournir les autorisations pour le connecteur | Lorsque BlueXP lance le connecteur, il attache une stratégie à l'instance qui fournit les autorisations nécessaires pour gérer les ressources et les processus de votre compte AWS.
@@ -116,7 +116,7 @@ BlueXP nécessite des autorisations Azure pour le connecteur et pour les service
 | Objectif | Description | Lien 
 
 
-| Déployez le connecteur de BlueXP | Lorsque vous déployez un connecteur depuis BlueXP, vous devez utiliser un compte ou un service principal Azure disposant des autorisations pour déployer la machine virtuelle Connector dans Azure. | link:task-set-up-permissions-azure.html["Configurez les autorisations Azure"] 
+| Déployez le connecteur de BlueXP | Lorsque vous déployez un connecteur depuis BlueXP, vous devez utiliser un compte ou un service principal Azure disposant des autorisations pour déployer la machine virtuelle Connector dans Azure. | link:task-install-connector-azure-bluexp.html#step-2-create-a-custom-role["Configurez les autorisations Azure"] 
 
 
 | Fournir les autorisations pour le connecteur  a| 
@@ -155,12 +155,12 @@ BlueXP requiert des autorisations Google Cloud pour le connecteur et pour des se
 | Objectif | Description | Lien 
 
 
-| Déployez le connecteur de BlueXP | L'utilisateur Google Cloud qui déploie un connecteur depuis BlueXP a besoin d'autorisations spécifiques pour déployer le connecteur dans Google Cloud. | link:task-set-up-permissions-google.html#set-up-permissions-to-create-the-connector-from-bluexp-or-gcloud["Configurez les autorisations de déploiement du connecteur"] 
+| Déployez le connecteur de BlueXP | L'utilisateur Google Cloud qui déploie un connecteur depuis BlueXP a besoin d'autorisations spécifiques pour déployer le connecteur dans Google Cloud. | link:task-install-connector-google-bluexp-gcloud.html#step-2-set-up-permissions-to-create-the-connector["Définissez les autorisations nécessaires pour créer le connecteur"] 
 
 
 | Fournir les autorisations pour le connecteur | Le compte de service de l'instance de VM Connector doit disposer d'autorisations spécifiques pour les opérations quotidiennes. Vous devez associer le compte de service au connecteur pendant le déploiement.
 
-Vous devez également vous assurer que la stratégie est à jour lorsque de nouvelles autorisations sont ajoutées dans les versions suivantes. | link:reference-permissions-gcp.html["Autorisations Google Cloud pour le connecteur"] 
+Vous devez également vous assurer que la stratégie est à jour lorsque de nouvelles autorisations sont ajoutées dans les versions suivantes. | link:task-install-connector-google-bluexp-gcloud.html#step-3-set-up-permissions-for-the-connector["Définissez les autorisations pour le connecteur"] 
 |===
 
 

@@ -16,9 +16,392 @@ summary: 'Installez un connecteur sur site, puis connectez-vous et configurez-le
 [role="lead"]
 Installez un connecteur sur site, puis connectez-vous et configurez-le pour qu'il fonctionne avec votre compte BlueXP.
 
+.Avant de commencer
+Vous devriez passer en revue link:reference-limitations.html["Limitations du connecteur"].
 
 
-== Poser le connecteur
+
+== Étape 1 : vérifiez la configuration requise pour l'hôte
+
+Le logiciel du connecteur doit être exécuté sur un hôte qui répond à des exigences spécifiques du système d'exploitation, de la RAM, des ports, etc. Assurez-vous que votre hôte répond à ces exigences avant d'installer le connecteur.
+
+Hôte dédié:: Le connecteur n'est pas pris en charge sur un hôte partagé avec d'autres applications. L'hôte doit être un hôte dédié.
+Systèmes d'exploitation pris en charge::
++
+--
+* Ubuntu 22.04
+* CentOS 7.6, 7.7, 7.8 et 7.9
+* Red Hat Enterprise Linux 7.6, 7.7, 7.8 et 7.9
++
+L'hôte doit être enregistré auprès de Red Hat Subscription Management. S'il n'est pas enregistré, l'hôte ne peut pas accéder aux référentiels pour mettre à jour les logiciels tiers requis lors de l'installation du connecteur.
+
++
+Le connecteur est pris en charge sur les versions en anglais de ces systèmes d'exploitation.
+
+
+
+--
+Hyperviseur:: Un hyperviseur bare Metal ou hébergé certifié pour exécuter Ubuntu, CentOS ou Red Hat Enterprise Linux est requis.
++
+--
+https://access.redhat.com/certified-hypervisors["Solution Red Hat : quels hyperviseurs sont certifiés pour l'exécution de Red Hat Enterprise Linux ?"^]
+
+--
+CPU:: 4 cœurs ou 4 CPU virtuels
+RAM:: 14 GO
+Espace disque dans /opt:: 100 Gio d'espace doit être disponible
+Espace disque dans /var:: 20 Gio d'espace doit être disponible
+Moteur Docker:: Docker Engine version 19.3.1 ou ultérieure est requis sur l'hôte avant d'installer le connecteur. https://docs.docker.com/engine/install/["Voir les instructions d'installation"^]
+
+
+
+
+== Étape 2 : configuration du réseau
+
+Configurez votre réseau de manière à ce que Connector puisse gérer les ressources et les processus dans votre environnement de cloud hybride. Par exemple, vous devez vous assurer que les connexions sont disponibles pour les réseaux cibles et que l'accès Internet sortant est disponible.
+
+Connexions aux réseaux cibles:: Un connecteur nécessite une connexion réseau à l'emplacement où vous prévoyez de créer et de gérer des environnements de travail. Par exemple, le réseau sur lequel vous prévoyez de créer des systèmes Cloud Volumes ONTAP ou un système de stockage dans votre environnement sur site.
+
+
+Accès Internet sortant:: L'emplacement réseau où vous déployez le connecteur doit disposer d'une connexion Internet sortante pour contacter des points finaux spécifiques.
+
+
+Points finaux contactés lors de l'installation manuelle:: Lorsque vous installez manuellement le connecteur sur votre propre hôte Linux, le programme d'installation du connecteur nécessite l'accès aux URL suivantes pendant le processus d'installation :
++
+--
+* \https://support.netapp.com
+* \https://mysupport.netapp.com
+* \https://cloudmanager.cloud.netapp.com/tenancy
+* \https://stream.cloudmanager.cloud.netapp.com
+* \https://production-artifacts.cloudmanager.cloud.netapp.com
+* \https://*.blob.core.windows.net
+* \https://cloudmanagerinfraprod.azurecr.io
++
+L'hôte peut essayer de mettre à jour les packages du système d'exploitation lors de l'installation. L'hôte peut contacter différents sites de mise en miroir pour ces packages OS.
+
+
+
+--
+
+
+Points d'extrémité contactés depuis le connecteur:: Le connecteur nécessite un accès Internet sortant pour contacter les terminaux suivants afin de gérer les ressources et les processus au sein de votre environnement de cloud public pour les opérations quotidiennes.
++
+--
+[cols="2a,1a"]
+|===
+| Terminaux | Objectif 
+
+
+ a| 
+Services AWS (amazonaws.com):
+
+* CloudFormation
+* Cloud de calcul élastique (EC2)
+* Gestion des identités et des accès
+* Service de gestion des clés (KMS)
+* Service de jetons de sécurité (STS)
+* Service de stockage simple (S3)
+
+ a| 
+Pour gérer les ressources dans AWS. Le terminal exact dépend de la région AWS que vous utilisez. https://docs.aws.amazon.com/general/latest/gr/rande.html["Pour plus d'informations, consultez la documentation AWS"^]
+
+
+
+ a| 
+\https://management.azure.com
+\https://login.microsoftonline.com
+\https://blob.core.windows.net
+\https://core.windows.net
+ a| 
+Afin de gérer les ressources dans les régions publiques d'Azure.
+
+
+
+ a| 
+\https://management.chinacloudapi.cn
+\https://login.chinacloudapi.cn
+\https://blob.core.chinacloudapi.cn
+\https://core.chinacloudapi.cn
+ a| 
+De gérer les ressources dans les régions Azure China.
+
+
+
+ a| 
+\https://www.googleapis.com/compute/v1/
+\https://compute.googleapis.com/compute/v1
+\https://cloudresourcemanager.googleapis.com/v1/projects
+\https://www.googleapis.com/compute/beta
+\https://storage.googleapis.com/storage/v1
+\https://www.googleapis.com/storage/v1
+\https://iam.googleapis.com/v1
+\https://cloudkms.googleapis.com/v1
+\https://www.googleapis.com/deploymentmanager/v2/projects
+ a| 
+De gérer des ressources dans Google Cloud.
+
+
+
+ a| 
+\https://support.netapp.com
+ a| 
+Pour obtenir des informations sur les licences et envoyer des messages AutoSupport au support NetApp.
+
+
+
+ a| 
+\https://*.api.bluexp.netapp.com
+
+\https://api.bluexp.netapp.com
+
+\https://*.cloudmanager.cloud.netapp.com
+
+\https://cloudmanager.cloud.netapp.com
+
+\https://netapp-cloud-account.auth0.com
+ a| 
+Pour fournir des fonctions et des services SaaS dans BlueXP.
+
+Notez que le connecteur est actuellement en contact avec « cloudmanager.cloud.netapp.com", mais il commencera à contacter « api.bluexp.netapp.com" dans une prochaine version.
+
+
+
+ a| 
+\https://*.blob.core.windows.net
+
+\https://cloudmanagerinfraprod.azurecr.io
+ a| 
+Pour mettre à niveau le connecteur et ses composants Docker.
+
+|===
+--
+
+
+Serveur proxy:: Si votre organisation nécessite le déploiement d'un serveur proxy pour tout le trafic Internet sortant, procurez-vous les informations suivantes sur votre proxy HTTP ou HTTPS. Vous devrez fournir ces informations pendant l'installation.
++
+--
+* Adresse IP
+* Informations d'identification
+* Certificat HTTPS
+
+
+--
+
+
+Ports:: Il n'y a pas de trafic entrant vers le connecteur, sauf si vous l'initiez ou si le connecteur est utilisé comme proxy pour envoyer des messages AutoSupport de Cloud Volumes ONTAP au support NetApp.
++
+--
+* HTTP (80) et HTTPS (443) permettent d'accéder à l'interface utilisateur locale que vous utiliserez dans de rares circonstances.
+* SSH (22) n'est nécessaire que si vous devez vous connecter à l'hôte pour le dépannage.
+* Les connexions entrantes via le port 3128 sont requises si vous déployez des systèmes Cloud Volumes ONTAP dans un sous-réseau où aucune connexion Internet sortante n'est disponible.
++
+Si les systèmes Cloud Volumes ONTAP ne disposent pas d'une connexion Internet sortante pour envoyer des messages AutoSupport, BlueXP les configure automatiquement pour qu'ils utilisent un serveur proxy inclus avec le connecteur. La seule condition est de s'assurer que le groupe de sécurité du connecteur autorise les connexions entrantes sur le port 3128. Vous devrez ouvrir ce port après le déploiement du connecteur.
+
+
+
+--
+
+
+
+
+== Étape 3 : configurez les autorisations cloud
+
+Si vous souhaitez utiliser les services BlueXP dans AWS ou Azure avec un connecteur sur site, vous devez configurer des autorisations dans votre fournisseur cloud afin de pouvoir ajouter les informations d'identification au connecteur une fois que vous l'avez installé.
+
+
+TIP: Pourquoi ne pas Google Cloud ? Une fois le connecteur installé sur votre site, il ne peut pas gérer vos ressources dans Google Cloud. Le connecteur doit être installé dans Google Cloud pour gérer toutes les ressources qui y résident.
+
+[role="tabbed-block"]
+====
+.AWS
+--
+Lorsque le connecteur est installé sur site, vous devez fournir BlueXP avec des autorisations AWS en ajoutant des clés d'accès à un utilisateur IAM qui dispose des autorisations requises.
+
+Vous devez utiliser cette méthode d'authentification si le connecteur est installé sur site. Vous ne pouvez pas utiliser de rôle IAM.
+
+.Étapes
+. Connectez-vous à la console AWS et accédez au service IAM.
+. Création d'une règle :
++
+.. Sélectionnez *stratégies > Créer une stratégie*.
+.. Sélectionnez *JSON* et copiez et collez le contenu du link:reference-permissions-aws.html["Politique IAM pour le connecteur"].
+.. Terminez les étapes restantes pour créer la stratégie.
++
+Selon les services BlueXP que vous prévoyez d'utiliser, il peut être nécessaire de créer une seconde règle.
+
++
+Pour les régions standard, les autorisations sont réparties entre deux règles. Deux règles sont requises en raison d'une taille maximale de caractères pour les stratégies gérées dans AWS. link:reference-permissions-aws.html["En savoir plus sur les règles IAM pour le connecteur"].
+
+
+
+. Associer les règles à un utilisateur IAM.
++
+** https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create.html["Documentation AWS : création de rôles IAM"^]
+** https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_manage-attach-detach.html["Documentation AWS : ajout et suppression de règles IAM"^]
+
+
+. Assurez-vous que l'utilisateur dispose d'une clé d'accès que vous pouvez ajouter à BlueXP après l'installation du connecteur.
+
+
+.Résultat
+Vous devez maintenant disposer des clés d'accès pour un utilisateur IAM qui dispose des autorisations requises. Après avoir installé le connecteur, vous devez associer ces informations d'identification au connecteur de BlueXP.
+
+--
+.Azure
+--
+Une fois le connecteur installé sur site, vous devez fournir BlueXP avec des autorisations Azure en configurant un principal de service dans Azure Active Directory et en obtenant les identifiants Azure requis par BlueXP.
+
+.Créez une application Azure Active Directory pour le contrôle d'accès basé sur des rôles
+. Assurez-vous que vous disposez des autorisations dans Azure pour créer une application Active Directory et attribuer l'application à un rôle.
++
+Pour plus de détails, reportez-vous à https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-create-service-principal-portal#required-permissions/["Documentation Microsoft Azure : autorisations requises"^]
+
+. À partir du portail Azure, ouvrez le service *Azure Active Directory*.
++
+image:screenshot_azure_ad.gif["Affiche le service Active Directory dans Microsoft Azure."]
+
+. Dans le menu, sélectionnez *enregistrements d'applications*.
+. Sélectionnez *nouvel enregistrement*.
+. Spécifiez les détails de l'application :
++
+** *Nom* : saisissez un nom pour l'application.
+** *Type de compte* : sélectionnez un type de compte (tout fonctionne avec BlueXP).
+** *URI de redirection*: Vous pouvez laisser ce champ vide.
+
+
+. Sélectionnez *Enregistrer*.
++
+Vous avez créé l'application AD et le principal de service.
+
+
+
+.Attribuez l'application à un rôle
+. Création d'un rôle personnalisé :
++
+Notez que vous pouvez créer un rôle personnalisé Azure à l'aide du portail Azure, d'Azure PowerShell, de l'interface de ligne de commandes Azure ou de l'API REST. La procédure suivante explique comment créer le rôle à l'aide de l'interface de ligne de commandes Azure. Si vous préférez utiliser une autre méthode, reportez-vous à la section https://learn.microsoft.com/en-us/azure/role-based-access-control/custom-roles#steps-to-create-a-custom-role["Documentation Azure"^]
+
++
+.. Copier le contenu du link:reference-permissions-azure.html["Autorisations de rôle personnalisées pour le connecteur"] Et les enregistrer dans un fichier JSON.
+.. Modifiez le fichier JSON en ajoutant des identifiants d'abonnement Azure à l'étendue assignable.
++
+Vous devez ajouter l'ID de chaque abonnement Azure à partir duquel les utilisateurs créeront des systèmes Cloud Volumes ONTAP.
+
++
+*Exemple*
+
++
+[source, json]
+----
+"AssignableScopes": [
+"/subscriptions/d333af45-0d07-4154-943d-c25fbzzzzzzz",
+"/subscriptions/54b91999-b3e6-4599-908e-416e0zzzzzzz",
+"/subscriptions/398e471c-3b42-4ae7-9b59-ce5bbzzzzzzz"
+----
+.. Utilisez le fichier JSON pour créer un rôle personnalisé dans Azure.
++
+Les étapes suivantes expliquent comment créer le rôle à l'aide de Bash dans Azure Cloud Shell.
+
++
+*** Démarrer https://docs.microsoft.com/en-us/azure/cloud-shell/overview["Shell cloud Azure"^] Et choisissez l'environnement Bash.
+*** Téléchargez le fichier JSON.
++
+image:screenshot_azure_shell_upload.png["Capture d'écran d'Azure Cloud Shell sur laquelle vous pouvez choisir de charger un fichier."]
+
+*** Pour créer le rôle personnalisé, utilisez l'interface de ligne de commandes Azure :
++
+[source, azurecli]
+----
+az role definition create --role-definition Connector_Policy.json
+----
++
+Vous devez maintenant avoir un rôle personnalisé appelé opérateur BlueXP que vous pouvez affecter à la machine virtuelle connecteur.
+
+
+
+
+
+. Attribuez l'application au rôle :
++
+.. À partir du portail Azure, ouvrez le service *abonnements*.
+.. Sélectionnez l'abonnement.
+.. Sélectionnez *contrôle d'accès (IAM) > Ajouter > Ajouter une affectation de rôle*.
+.. Dans l'onglet *role*, sélectionnez le rôle *BlueXP Operator* et sélectionnez *Next*.
+.. Dans l'onglet *membres*, procédez comme suit :
++
+*** Conserver *utilisateur, groupe ou entité de service* sélectionnée.
+*** Sélectionnez *Sélectionner membres*.
++
+image:screenshot-azure-service-principal-role.png["Capture d'écran du portail Azure affichant l'onglet membres lors de l'ajout d'un rôle à une application."]
+
+*** Recherchez le nom de l'application.
++
+Voici un exemple :
+
++
+image:screenshot_azure_service_principal_role.png["Une capture d'écran du portail Azure affichant le formulaire d'affectation de rôle Add dans le portail Azure."]
+
+*** Sélectionnez l'application et sélectionnez *Sélectionner*.
+*** Sélectionnez *Suivant*.
+
+
+.. Sélectionnez *consulter + affecter*.
++
+Le principal de service dispose désormais des autorisations Azure nécessaires pour déployer le connecteur.
+
++
+Si vous souhaitez déployer Cloud Volumes ONTAP à partir de plusieurs abonnements Azure, vous devez lier le principal de service à chacun de ces abonnements. BlueXP vous permet de sélectionner l'abonnement que vous souhaitez utiliser lors du déploiement de Cloud Volumes ONTAP.
+
+
+
+
+
+.Ajoutez des autorisations d'API de gestion de service Windows Azure
+. Dans le service *Azure Active Directory*, sélectionnez *App recalages* et sélectionnez l'application.
+. Sélectionnez *autorisations API > Ajouter une autorisation*.
+. Sous *Microsoft API*, sélectionnez *Azure Service Management*.
++
+image:screenshot_azure_service_mgmt_apis.gif["Capture d'écran du portail Azure affichant les autorisations de l'API de gestion de services Azure."]
+
+. Sélectionnez *accéder à Azure Service Management en tant qu'utilisateurs de l'organisation*, puis sélectionnez *Ajouter des autorisations*.
++
+image:screenshot_azure_service_mgmt_apis_add.gif["Une capture d'écran du portail Azure montrant l'ajout des API de gestion de services Azure."]
+
+
+
+.Obtenez l'ID d'application et l'ID de répertoire de l'application
+. Dans le service *Azure Active Directory*, sélectionnez *App recalages* et sélectionnez l'application.
+. Copiez l'ID *application (client)* et l'ID *Directory (tenant)*.
++
+image:screenshot_azure_app_ids.gif["Capture d'écran affichant l'ID de l'application (client) et l'ID du répertoire (tenant) d'une application dans Azure Active Directory."]
+
++
+Lorsque vous ajoutez le compte Azure à BlueXP, vous devez fournir l'ID d'application (client) et l'ID de répertoire (tenant) de l'application. BlueXP utilise les ID pour se connecter par programmation.
+
+
+
+.Créez un secret client
+. Ouvrez le service *Azure Active Directory*.
+. Sélectionnez *enregistrements d'applications* et sélectionnez votre application.
+. Sélectionnez *certificats et secrets > Nouveau secret client*.
+. Fournissez une description du secret et une durée.
+. Sélectionnez *Ajouter*.
+. Copier la valeur du secret client.
++
+image:screenshot_azure_client_secret.gif["Copie d'écran du portail Azure présentant un secret client pour la principale du service Azure AD."]
+
++
+Vous disposez désormais d'un code client que BlueXP peut utiliser pour vous authentifier auprès d'Azure AD.
+
+
+
+.Résultat
+Votre principal de service est maintenant configuré et vous devez avoir copié l'ID de l'application (client), l'ID du répertoire (tenant) et la valeur du secret client. Après avoir installé le connecteur, vous devez associer ces informations d'identification au connecteur de BlueXP.
+
+--
+====
+
+
+== Étape 4 : installez le connecteur
 
 Téléchargez et installez le logiciel Connector sur un hôte Linux existant sur site.
 
@@ -106,9 +489,9 @@ Le connecteur est maintenant installé. À la fin de l'installation, le service 
 
 
 
-== Configurer le connecteur
+== Étape 5 : configurer le connecteur
 
-Inscrivez-vous ou connectez-vous, puis configurez le connecteur pour qu'il fonctionne avec votre compte.
+Inscrivez-vous ou connectez-vous, puis configurez le connecteur pour qu'il fonctionne avec votre compte BlueXP.
 
 .Étapes
 . Ouvrez un navigateur Web et entrez l'URL suivante :
@@ -135,5 +518,68 @@ Vous devez désactiver le mode restreint, car ces étapes décrivent l'utilisati
 .Résultat
 BlueXP est maintenant configuré avec le connecteur que vous venez d'installer.
 
-.Et la suite ?
-link:task-provide-permissions-on-prem.html["Fournissez à BlueXP les autorisations que vous avez précédemment configurées"].
+
+
+== Étape 6 : fournissez des autorisations à BlueXP
+
+Une fois que vous avez installé et configuré le connecteur, ajoutez vos identifiants cloud afin que BlueXP dispose des autorisations requises pour effectuer des actions dans AWS ou Azure.
+
+[role="tabbed-block"]
+====
+.AWS
+--
+.Avant de commencer
+Si vous venez de créer ces identifiants dans AWS, leur utilisation peut prendre quelques minutes. Attendez quelques minutes avant d'ajouter les informations d'identification à BlueXP.
+
+.Étapes
+. Dans le coin supérieur droit de la console BlueXP, sélectionnez l'icône Paramètres, puis sélectionnez *informations d'identification*.
++
+image:screenshot_settings_icon.gif["Capture d'écran affichant l'icône Paramètres dans le coin supérieur droit de la console BlueXP."]
+
+. Sélectionnez *Ajouter des informations d'identification* et suivez les étapes de l'assistant.
++
+.. *Emplacement des informations d'identification* : sélectionnez *Amazon Web Services > connecteur*.
+.. *Définir les informations d'identification* : saisissez une clé d'accès AWS et une clé secrète.
+.. *Abonnement Marketplace* : associez un abonnement Marketplace à ces identifiants en vous abonnant maintenant ou en sélectionnant un abonnement existant.
+.. *Révision* : confirmez les détails des nouvelles informations d'identification et sélectionnez *Ajouter*.
+
+
+
+
+.Résultat
+BlueXP dispose désormais des autorisations dont il a besoin pour effectuer des actions dans AWS en votre nom.
+
+Vous pouvez maintenant accéder au https://console.bluexp.netapp.com["Console BlueXP"^] Pour commencer à utiliser le connecteur avec BlueXP.
+
+--
+.Azure
+--
+.Avant de commencer
+Si vous venez de créer ces identifiants dans Azure, leur mise à disposition peut prendre quelques minutes. Attendez quelques minutes avant d'ajouter les informations d'identification à BlueXP.
+
+.Étapes
+. Dans le coin supérieur droit de la console BlueXP, sélectionnez l'icône Paramètres, puis sélectionnez *informations d'identification*.
++
+image:screenshot_settings_icon.gif["Capture d'écran affichant l'icône Paramètres dans le coin supérieur droit de la console BlueXP."]
+
+. Sélectionnez *Ajouter des informations d'identification* et suivez les étapes de l'assistant.
++
+.. *Emplacement des informations d'identification* : sélectionnez *Microsoft Azure > connecteur*.
+.. *Définir les informations d'identification* : saisissez des informations sur l'entité principale du service Azure Active Directory qui accorde les autorisations requises :
++
+*** ID de l'application (client)
+*** ID du répertoire (locataire)
+*** Secret client
+
+
+.. *Abonnement Marketplace* : associez un abonnement Marketplace à ces identifiants en vous abonnant maintenant ou en sélectionnant un abonnement existant.
+.. *Révision* : confirmez les détails des nouvelles informations d'identification et sélectionnez *Ajouter*.
+
+
+
+
+.Résultat
+BlueXP dispose désormais des autorisations dont il a besoin pour effectuer des actions dans Azure en votre nom. Vous pouvez maintenant accéder au https://console.bluexp.netapp.com["Console BlueXP"^] Pour commencer à utiliser le connecteur avec BlueXP.
+
+--
+====

@@ -1,0 +1,71 @@
+= 
+:allow-uri-read: 
+
+
+Hôte dédié:: Le connecteur n'est pas pris en charge sur un hôte partagé avec d'autres applications. L'hôte doit être un hôte dédié.
+
+
+VPC et sous-réseau:: Lorsque vous créez le connecteur, vous devez spécifier le VPC et le sous-réseau sur lesquels le connecteur doit résider.
+
+
+Vnet et sous-réseau:: Lorsque vous créez le connecteur, vous devez spécifier le réseau virtuel et le sous-réseau dans lesquels le connecteur doit résider.
+
+
+Connexions aux réseaux cibles:: Un connecteur nécessite une connexion réseau à l'emplacement où vous prévoyez de créer et de gérer des environnements de travail. Par exemple, le réseau sur lequel vous prévoyez de créer des systèmes Cloud Volumes ONTAP ou un système de stockage dans votre environnement sur site.
+
+
+Accès Internet sortant:: L'emplacement réseau où vous déployez le connecteur doit disposer d'une connexion Internet sortante pour contacter des points finaux spécifiques.
+
+
+Terminaux contactés depuis la console BlueXP:: Lorsque vous utilisez la console web BlueXP fournie via la couche SaaS, elle contacte plusieurs terminaux pour effectuer les tâches de gestion des données. Cela inclut les terminaux contactés pour déployer le connecteur à partir de la console BlueXP.
++
+--
+link:reference-networking-saas-console.html["Consultez la liste des terminaux contactés depuis la console BlueXP"].
+
+--
+
+
+Région Azure:: Si vous utilisez Cloud Volumes ONTAP, le connecteur doit être déployé dans la même région Azure que les systèmes Cloud Volumes ONTAP qu'il gère, ou dans le https://docs.microsoft.com/en-us/azure/availability-zones/cross-region-replication-azure#azure-cross-region-replication-pairings-for-all-geographies["Paire de régions Azure"^] Pour les systèmes Cloud Volumes ONTAP. Cette exigence garantit qu'une connexion Azure Private Link est utilisée entre Cloud Volumes ONTAP et les comptes de stockage associés.
++
+--
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-enabling-private-link.html["Découvrez comment Cloud Volumes ONTAP utilise une liaison privée Azure"^]
+
+--
+
+
+Ports:: Il n'y a pas de trafic entrant vers le connecteur, sauf si vous l'initiez ou si le connecteur est utilisé comme proxy pour envoyer des messages AutoSupport de Cloud Volumes ONTAP au support NetApp.
++
+--
+* HTTP (80) et HTTPS (443) permettent d'accéder à l'interface utilisateur locale que vous utiliserez dans de rares circonstances.
+* SSH (22) n'est nécessaire que si vous devez vous connecter à l'hôte pour le dépannage.
+* Les connexions entrantes via le port 3128 sont requises si vous déployez des systèmes Cloud Volumes ONTAP dans un sous-réseau où aucune connexion Internet sortante n'est disponible.
++
+Si les systèmes Cloud Volumes ONTAP ne disposent pas d'une connexion Internet sortante pour envoyer des messages AutoSupport, BlueXP les configure automatiquement pour qu'ils utilisent un serveur proxy inclus avec le connecteur. La seule condition est de s'assurer que le groupe de sécurité du connecteur autorise les connexions entrantes sur le port 3128. Vous devrez ouvrir ce port après le déploiement du connecteur.
+
+
+
+--
+
+
+Serveur proxy:: Si votre organisation nécessite le déploiement d'un serveur proxy pour tout le trafic Internet sortant, procurez-vous les informations suivantes sur votre proxy HTTP ou HTTPS. Vous devrez fournir ces informations pendant l'installation.
++
+--
+* Adresse IP
+* Informations d'identification
+* Certificat HTTPS
+
+
+--
+
+
+Adresse IP publique dans Azure:: Si vous souhaitez utiliser une adresse IP publique avec la machine virtuelle du connecteur dans Azure, l'adresse IP doit utiliser une référence de base pour garantir que BlueXP utilise cette adresse IP publique.
++
+--
+image:screenshot-azure-sku.png["Capture d'écran de la création d'une nouvelle adresse IP dans Azure qui vous permet de choisir Basic sous dans le champ SKU."]
+
+Si vous utilisez une adresse IP de référence standard, BlueXP utilise l'adresse IP _private_ du connecteur, au lieu de l'adresse IP publique. Si la machine que vous utilisez pour accéder à la console BlueXP n'a pas accès à cette adresse IP privée, les actions de la console BlueXP échouent.
+
+https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/public-ip-addresses#sku["Documentation Azure : référence IP publique"^]
+
+--
+
