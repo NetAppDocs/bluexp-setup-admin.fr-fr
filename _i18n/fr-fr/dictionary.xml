@@ -1295,7 +1295,6 @@
   <block id="995c7db8420cf7c1d22ec979a1f735ba" category="open-title">Politique no 1</block>
   <block id="897099bfef7e48dc4adcaa1be92bf1a8" category="open-title">Politique no 2</block>
   <block id="1411debdb32e6b128ca27ec92a708cbd" category="example-title">GovCloud (USA)</block>
-  <block id="a8416eae2db8c97eb943559351fab358" category="example-title">Environnement C2S</block>
   <block id="abc9b009fdeb5b04ca7bcd60cdae2434" category="section-title">Utilisation des autorisations AWS</block>
   <block id="06be37baefaab50eae9f413a227fd74c" category="paragraph">Connector effectue les requêtes API suivantes pour gérer Amazon FSX pour ONTAP :</block>
   <block id="c8e20ceabac2b519b4f4eb301166c9bd" category="list-text">ec2:descriptifs</block>
@@ -1473,9 +1472,6 @@
   <block id="b2cc56e18c7250863c6c74a223137e16" category="summary">Déployez le connecteur en mode privé pour utiliser BlueXP sans connectivité sortante à la couche SaaS BlueXP. Pour commencer, installez le connecteur, configurez BlueXP en accédant à l'interface utilisateur exécutée sur le connecteur, puis fournissez les autorisations cloud que vous avez précédemment configurées.</block>
   <block id="2f549fb867eb9c0be636782d32264aa6" category="doc">Déployez le connecteur en mode privé</block>
   <block id="377655366b79df746cc3d0c01596ba86" category="paragraph">Téléchargez le programme d'installation du produit sur le site de support NetApp, puis installez manuellement le connecteur sur votre propre hôte Linux.</block>
-  <block id="c9ce61bb8ba26b9e777140e6bd34ee95" category="inline-link">L'environnement AWS commercial Cloud Services (C2S)</block>
-  <block id="76dc45fc0f678a65bdd98f708893456c" category="inline-link">Découvrez comment vous lancer avec Cloud Volumes ONTAP dans l'environnement AWS C2S</block>
-  <block id="5091509329e4947abb15d886a22552f1" category="paragraph">Si vous souhaitez utiliser BlueXP dans le<block ref="1b4ed82e65ec10a29151660f200db39a" category="inline-link-rx"></block> vous devez ensuite suivre des instructions séparées pour vous lancer dans cet environnement.<block ref="dfa4c15285d83794371ed5577a9f85e7" category="inline-link-rx"></block></block>
   <block id="ffe7522d9ea3d134eb0a945275d454d7" category="paragraph-title">Privilèges requis</block>
   <block id="7bc3966adb932d8b546fbfa4ef7113d7" category="paragraph">Les privilèges root sont requis pour installer le connecteur.</block>
   <block id="2ba7eb945a77498b8342e4be53a3761e" category="list-text">Téléchargez le logiciel du connecteur à partir du<block ref="99637e01fa8caa34a544049093cac68c" category="inline-link-rx"></block></block>
@@ -1703,7 +1699,6 @@
   <block id="a48a6aaa99b4cf4a4e641c293de897fa" category="inline-link">Découvrez comment gérer vos dossiers de demande de support</block>
   <block id="84b67e035ee851e17fd4010870ec0a29" category="paragraph"><block ref="f0098b5aeef401e4baf694b939b219f4" category="inline-link-rx"></block>.</block>
   <block id="d2792d178cbdf6c41f2b8f2ae64424ed" category="list-text">Le connecteur est désormais pris en charge dans tout environnement cloud totalement isolé d'Internet. Vous pouvez ensuite utiliser la console BlueXP exécutée sur le connecteur pour déployer Cloud Volumes ONTAP au même emplacement et découvrir les clusters ONTAP sur site (si vous disposez d'une connexion entre votre environnement cloud et votre environnement sur site). Vous pouvez également utiliser BlueXP Backup and Recovery pour sauvegarder les volumes Cloud Volumes ONTAP dans les régions commerciales AWS et Azure. Aucun autre service BlueXP n'est pris en charge dans ce type de déploiement, à l'exception du portefeuille digital BlueXP.</block>
-  <block id="4965002502fb4ea58d2f984e3fe0a110" category="paragraph">La région cloud peut être une région pour des agences américaines sécurisées comme AWS C2S/SC2S, Azure IL6 ou n'importe quelle région commerciale.</block>
   <block id="75327cdc175eca204abf0a4aa66413b3" category="paragraph">Pour commencer, installez manuellement le logiciel Connector, connectez-vous à la console BlueXP exécutée sur le connecteur, ajoutez votre licence BYOL au portefeuille digital BlueXP, puis déployez Cloud Volumes ONTAP.</block>
   <block id="376a158ceb7d344fa563cce2aa16018f" category="inline-link">Installez le connecteur dans un emplacement sans accès à Internet</block>
   <block id="148472786b9015b5f19ac843e8bc0f31" category="list-text"><block ref="148472786b9015b5f19ac843e8bc0f31" category="inline-link-rx"></block></block>
@@ -2952,7 +2947,6 @@ Notez que la page s'actualise entre le test de la connexion et l'activation de l
   <block id="a53da898c0e5410eb934bcf693e8290e" category="admonition">Vous ne pouvez pas supprimer les informations d'identification d'un profil d'instance associé à une instance de connecteur.</block>
   <block id="9ba678561b5c8922fc9983fcb89e1752" category="summary">Préparez votre environnement avant de déployer BlueXP en mode privé. Par exemple, vous devez examiner les exigences relatives aux hôtes, préparer la mise en réseau, configurer les autorisations, etc.</block>
   <block id="5f1067df496bfafd5eb793369b955e41" category="doc">Préparez le déploiement en mode privé</block>
-  <block id="ffd6a883d5c5e0f954b2db441bf455a2" category="admonition">Si vous souhaitez utiliser BlueXP dans le<block ref="1b4ed82e65ec10a29151660f200db39a" category="inline-link-rx"></block> Vous devez ensuite suivre des instructions séparées qui décrivent la préparation, l'installation du connecteur et le lancement de Cloud Volumes ONTAP.<block ref="dfa4c15285d83794371ed5577a9f85e7" category="inline-link-rx"></block></block>
   <block id="cd9866f3dfe1445bb49e9984aef06565" category="paragraph">Avant de commencer, vous devez connaître le fonctionnement de BlueXP en mode privé.</block>
   <block id="b55621a1719dba9e40d841c865c267ac" category="inline-link-macro">En savoir plus sur le fonctionnement du mode privé</block>
   <block id="e7e043e1590b443c8520402279e7ac44" category="paragraph"><block ref="7d2115a84914cfa6792d7d3921dc8e33" category="inline-link-macro-rx"></block>.</block>
@@ -2980,9 +2974,7 @@ Notez que la page s'actualise entre le test de la connexion et l'activation de l
   <block id="5120a32615b91a5de80fd01e90d53677" category="inline-xref">En savoir plus sur la connectivité sortante à la couche SaaS</block>
   <block id="26791add2e44035ab424c178d3f4c61f" category="paragraph"><block ref="4a9f480c757559738dc0bf80da949e99" category="inline-xref-macro-rx"></block>.</block>
   <block id="9c39d5b8fd0bf20212456c9aceeaea5b" category="list-text">Un connecteur BlueXP est installé sur site ou dans le cloud (dans une région sécurisée, une région cloud souveraine ou une région commerciale) et ne dispose d'aucune connectivité à la couche SaaS de BlueXP. Les utilisateurs accèdent à BlueXP en local à partir de la console web disponible depuis le connecteur, et non depuis la couche SaaS.</block>
-  <block id="43ff95fff31da6098dc2104a2b9903cd" category="inline-link">AWS C2S ET SC2S</block>
   <block id="f7a5a85e5651d269f8be77a9a2e84792" category="inline-link">Azure IL6</block>
-  <block id="f4ffd6793bd6a15bb751635d36738fa2" category="paragraph">Une région sécurisée inclut<block ref="f61a6c487032eb3fbf14a041d1a80535" category="inline-link-rx"></block> et<block ref="360910fe60b5d1cf9b7056b9b6f46685" category="inline-link-rx"></block></block>
   <block id="55fbab9267d4e9aae7daef26b314226f" category="paragraph">Le tableau suivant fournit une comparaison de ces modes.</block>
   <block id="2113372caa2625fc2eac79b5c72bd737" category="cell">Connexion requise à la couche SaaS BlueXP ?</block>
   <block id="6a4fdae8165172d715565269b5d6eb0b" category="cell">Sortant uniquement</block>
@@ -3095,11 +3087,6 @@ La vue avancée (System Manager) n'est pas prise en charge lorsque vous découvr
   <block id="9ebc1b25e2041947b9103da47cd1c08a" category="list-text">L'authentification est assurée par la gestion et l'accès des utilisateurs locaux. L'authentification n'est pas fournie via le service cloud de BlueXP.</block>
   <block id="9155ed0ad2860f7dbb98e01dbb6fa42d" category="list-text">Services BlueXP pris en charge dans les déploiements cloud</block>
   <block id="8a4d4c53b0a8fbc638ca47e5e362f9e3" category="list-text">BlueXP prend en charge les services de stockage et de données suivants avec le mode privé lorsque le connecteur est installé dans le cloud :</block>
-  <block id="5cab93e720177e480ed8d2fe603b87b8" category="inline-link">AWS C2S/SC2S</block>
-  <block id="ed6f21c8b73c49053eac72fb867ecff6" category="cell">Pris en charge dans les régions commerciales AWS et Azure.
-
-Non pris en charge dans Google Cloud ou dans<block ref="5388026a167091fc23180597ac85e174" category="inline-link-rx"></block> ou<block ref="360910fe60b5d1cf9b7056b9b6f46685" category="inline-link-rx"></block></block>
-  <block id="2c4d2c4938d2e881355a7e09fe8b1993" category="cell">Comme il n'y a pas d'accès à Internet, les fonctionnalités suivantes ne sont pas disponibles : mises à niveau logicielles automatisées, informations sur les coûts d'AutoSupport et d'AWS.</block>
   <block id="5ddc4e154584048fc0f47939b47c7b63" category="cell">Vous pouvez utiliser le portefeuille numérique avec les options de licence prises en charge répertoriées ci-dessous pour le mode privé.</block>
   <block id="71fa0def55e8ba28f8cea8204dcaaf4f" category="cell">Requiert une connectivité du cloud (où le connecteur est installé) à l'environnement sur site.
 
@@ -3779,4 +3766,16 @@ Membre: Compte de service BlueXP à partir de serviceAccount.user</block>
   <block id="37570078060157a3624ff806701689b8" category="paragraph"><block ref="37570078060157a3624ff806701689b8" category="inline-image-macro-rx" type="image"></block></block>
   <block id="90641719c2018ef19f0a8140a88f5fee" category="list-text">Cette mise à jour inclut également des correctifs.</block>
   <block id="c94e28d852ce517312825c9ed339fc1d" category="section-title">30 juillet 2023</block>
+  <block id="e22252cf3c711c916163d727b6261500" category="paragraph">La région cloud peut être une région pour des agences américaines sécurisées comme AWS Top Secret Cloud, AWS Secret Cloud, Azure IL6 ou toute région commerciale.</block>
+  <block id="ff2c9914d275ee17c3f22e89e7ca1ef7" category="inline-link">Cloud secret AWS</block>
+  <block id="a864a931bf30f7ad758b78e4a2cb264c" category="inline-link">Le cloud le plus secret d'AWS</block>
+  <block id="958949b356b2f90081cbb745321e2bf3" category="inline-link">Découvrez comment vous lancer avec Cloud Volumes ONTAP dans le cloud secret AWS ou le cloud secret</block>
+  <block id="d6d8d91e7b96dd482dc74f45a4f14045" category="paragraph">Si vous souhaitez utiliser BlueXP dans le<block ref="da2732e6e9a1be4ab82a1194533aac59" category="inline-link-rx"></block> ou le<block ref="6f5217ea8a3f93cd9532863eb844647b" category="inline-link-rx"></block>, vous devez alors suivre des instructions séparées pour démarrer dans ces environnements.<block ref="4d25824b3e9e7473eac5e4c3e5c39cc3" category="inline-link-rx"></block></block>
+  <block id="026951b63281b53e88087e2423613cad" category="example-title">Régions secrètes</block>
+  <block id="76187385115cd00f6a1ec1ff426ad7b5" category="example-title">Régions les plus secrètes</block>
+  <block id="5327be2346849398acb42586361c3fa1" category="paragraph">Une région sécurisée inclut<block ref="da2732e6e9a1be4ab82a1194533aac59" category="inline-link-rx"></block>,<block ref="6f5217ea8a3f93cd9532863eb844647b" category="inline-link-rx"></block>, et<block ref="360910fe60b5d1cf9b7056b9b6f46685" category="inline-link-rx"></block></block>
+  <block id="1b46f73bf231e8eefaf1347b4383cc0a" category="cell">Pris en charge dans les régions commerciales AWS et Azure.
+
+Non pris en charge dans Google Cloud ou dans<block ref="da2732e6e9a1be4ab82a1194533aac59" category="inline-link-rx"></block>,<block ref="6f5217ea8a3f93cd9532863eb844647b" category="inline-link-rx"></block>, ou<block ref="360910fe60b5d1cf9b7056b9b6f46685" category="inline-link-rx"></block></block>
+  <block id="fcbe8b204f3332d68f1b0f5f05c998db" category="cell">Comme il n'y a pas d'accès à Internet, les fonctionnalités suivantes ne sont pas disponibles : mises à niveau logicielles automatisées et AutoSupport.</block>
 </blocks>
