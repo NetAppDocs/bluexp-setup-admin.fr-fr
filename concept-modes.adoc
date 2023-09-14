@@ -368,7 +368,7 @@ Notez que certains services peuvent être pris en charge avec des limitations. P
 | StorageGRID | Non | Non 
 
 
-.17+| *Services* | Sauvegarde et restauration | Oui. | Oui. 
+.16+| *Services* | Sauvegarde et restauration | Oui. | Oui. 
 
 
 | Classement | Oui. | Oui. 
@@ -399,9 +399,6 @@ Notez que certains services peuvent être pris en charge avec des limitations. P
 
 
 | Résilience opérationnelle | Non | Non 
-
-
-| Protection par ransomware | Non | Non 
 
 
 | Résolution | Non | Non 

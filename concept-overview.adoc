@@ -68,7 +68,6 @@ Analyse et contrôle:: Utilisez des outils pour surveiller, cartographier et opt
 * https://bluexp.netapp.com/digital-advisor["Conseiller digital"^]
 * https://bluexp.netapp.com/digital-advisor["Efficacité économique"^]
 * https://bluexp.netapp.com/digital-advisor["Résilience opérationnelle"^]
-* https://bluexp.netapp.com/ransomware-protection["Protection par ransomware"^]
 
 
 --

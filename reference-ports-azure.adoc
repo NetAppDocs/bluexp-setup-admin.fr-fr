@@ -75,7 +75,7 @@ NOTE: L'adresse IP source est l'hôte du connecteur.
 | Service | Protocole | Port | Destination | Objectif 
 
 
-| Appels API et AutoSupport | HTTPS | 443 | LIF de gestion de cluster ONTAP et Internet sortant | Appels d'API vers Azure, vers ONTAP, vers la classification BlueXP, vers la protection BlueXP contre les ransomware et envoi de messages AutoSupport à NetApp 
+| Appels API et AutoSupport | HTTPS | 443 | LIF de gestion de cluster ONTAP et Internet sortant | Appels d'API vers Azure, vers ONTAP, vers la classification BlueXP et envoi de messages AutoSupport à NetApp 
 
 
 | Appels API | TCP | 8080 | Classification BlueXP | Sonde à instance de classification BlueXP pendant le déploiement 
