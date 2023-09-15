@@ -32,7 +32,10 @@ link:reference-ports-aws.html["Afficher les règles des groupes de sécurité po
 
 
 
-** *Configurer le stockage* : conservez les options de stockage par défaut.
+** *Configurer le stockage* : conservez la taille et le type de disque par défaut pour le volume racine.
++
+Si vous souhaitez activer le chiffrement Amazon EBS sur le volume racine, sélectionnez *Avancé*, développez *Volume 1*, sélectionnez *crypté*, puis choisissez une clé KMS.
+
 ** *Détails avancés* : sous *profil d'instance IAM*, choisissez le rôle IAM qui inclut les autorisations requises pour le connecteur.
 ** *Résumé* : passez en revue le résumé et sélectionnez *lancer l'instance*.
 
