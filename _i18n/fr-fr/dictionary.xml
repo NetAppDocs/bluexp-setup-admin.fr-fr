@@ -1485,7 +1485,6 @@
   <block id="9f390f684f634b575bf8d3a2e73f760c" category="list-text">*Détails du système* : saisissez un nom pour le connecteur et le nom de votre société.</block>
   <block id="ed55d4951cd784cfacedc42b26d251dd" category="inline-image-macro">Capture d'écran de la page Détails du système qui vous invite à entrer le nom et le nom de BlueXP.</block>
   <block id="c630091323c70c3e08081e625ae63da9" category="paragraph"><block ref="c630091323c70c3e08081e625ae63da9" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="43601154a054554dd57207148a15b7b1" category="list-text">*Créer un utilisateur Admin* : créez l'utilisateur admin pour le système.</block>
   <block id="0e5308fba9cc92e9ff80d599c7e865ca" category="paragraph">Ce compte utilisateur s'exécute localement sur le système. Il n'y a pas de connexion au service auth0 disponible via BlueXP.</block>
   <block id="d847fd38c43b77f685712342ed5f2a9a" category="list-text">Connectez-vous à BlueXP à l'aide de l'utilisateur admin que vous venez de créer.</block>
   <block id="2fdca5f14e2fdf34df61ef1c2e18eae5" category="paragraph">Le connecteur est maintenant installé et configuré.</block>
@@ -3435,7 +3434,6 @@ Ce terminal n'est requis que dans les régions Azure Government.</block>
   <block id="28d4bc1715fb315a1134ddb9ce9b69ef" category="paragraph">Si vous avez créé un nouvel espace de travail, vous devez également ajouter le connecteur à cet espace de travail. Si vous n'ajoutez pas le connecteur, les administrateurs de l'espace de travail ne peuvent pas accéder aux ressources de l'espace de travail. Reportez-vous à la section suivante pour plus de détails.</block>
   <block id="136dc09835924029e4299fa28f17233d" category="list-text">Sélectionnez *Continuer*.</block>
   <block id="b7d7e6e6aa05f7913906689b7f1e583a" category="list-text">*Revoir* : passez en revue vos sélections et sélectionnez *lancer*.</block>
-  <block id="ecbc764762d64c7a0728c929154e75f5" category="list-text">Sélectionnez *configurer Nouveau BlueXP* et suivez les invites pour configurer le système.</block>
   <block id="22cb2add8f3bffef4e749ab0af395ded" category="list-text">*Révision* : consultez les détails, acceptez le contrat de licence, puis sélectionnez *configurer*.</block>
   <block id="451c5548be4e9e7bdee0e30d3122050a" category="paragraph"><block ref="5df7abb03e9cd39c0665b677aaa45ef4" category="inline-image-macro-rx" type="image"></block></block>
   <block id="6a60f29cdbb848f0645646b0cceee422" category="paragraph">Notez que le connecteur est actuellement en contact avec « cloudmanager.cloud.netapp.com", mais il commencera à contacter « api.bluexp.netapp.com" dans une prochaine version.</block>
@@ -3777,4 +3775,6 @@ Non pris en charge dans Google Cloud ou dans<block ref="da2732e6e9a1be4ab82a1194
   <block id="5f16447aef2a6c01e852292f98e5a67d" category="cell">Appels d'API vers Google Cloud, vers ONTAP, vers la classification BlueXP et envoi de messages AutoSupport à NetApp</block>
   <block id="3bb1e2709fa189f2a1cf46aadeab3b46" category="list-text">*Configurer le stockage* : conservez la taille et le type de disque par défaut pour le volume racine.</block>
   <block id="4aed728875c28373d48d9ac6dc115722" category="paragraph">Si vous souhaitez activer le chiffrement Amazon EBS sur le volume racine, sélectionnez *Avancé*, développez *Volume 1*, sélectionnez *crypté*, puis choisissez une clé KMS.</block>
+  <block id="cf5973f42a5c4e31665e41b2ec75f8a0" category="list-text">Sélectionnez *configurer Nouveau connecteur BlueXP* et suivez les invites pour configurer le système.</block>
+  <block id="1759129089da3c0c000cb4c2196a2fd0" category="list-text">*Créer un utilisateur Admin* : créez l'utilisateur admin du système.</block>
 </blocks>
