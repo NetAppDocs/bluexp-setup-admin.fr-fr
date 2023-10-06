@@ -18,6 +18,16 @@ Découvrez les nouveautés des fonctionnalités d'administration BlueXP : compte
 
 
 
+== 6 octobre 2023
+
+
+
+=== Connecteur 3.9.34
+
+Cette version contient des améliorations mineures et des corrections de bogues.
+
+
+
 == 10 septembre 2023
 
 
