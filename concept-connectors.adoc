@@ -81,6 +81,8 @@ Lorsque vous utilisez BlueXP en mode standard, un connecteur est requis pour les
 
 ^1^ bien que vous puissiez accéder à ces services sans connecteur, un connecteur est nécessaire pour lancer des actions à partir des services.
 
+Un connecteur est nécessaire pour utiliser BlueXP en mode restreint ou privé.
+
 
 
 == Les connecteurs doivent toujours être opérationnels
@@ -130,9 +132,9 @@ link:concept-modes.html["Découvrez les modes de déploiement BlueXP"].
 Un administrateur de compte BlueXP peut créer un connecteur directement à partir de BlueXP, du marché de votre fournisseur cloud ou en installant manuellement le logiciel sur votre propre hôte Linux. La manière de commencer dépend si vous utilisez BlueXP en mode standard, en mode restreint ou en mode privé.
 
 * link:concept-modes.html["Découvrez les modes de déploiement BlueXP"]
-* link:task-quick-start-standard-mode.html["Démarrage rapide de BlueXP en mode standard"]
-* link:task-quick-start-restricted-mode.html["Démarrage rapide de BlueXP en mode restreint"]
-* link:task-quick-start-private-mode.html["Démarrage rapide de BlueXP en mode privé"]
+* link:task-quick-start-standard-mode.html["Commencez à utiliser BlueXP en mode standard"]
+* link:task-quick-start-restricted-mode.html["Démarrez avec BlueXP en mode restreint"]
+* link:task-quick-start-private-mode.html["Commencez à utiliser BlueXP en mode privé"]
 
 
 
@@ -157,7 +159,7 @@ Pour savoir comment configurer des autorisations, consultez les sections suivant
 * link:task-prepare-private-mode.html#step-5-prepare-cloud-permissions["Configurez les autorisations pour le mode privé"]
 
 
-Pour afficher les autorisations exactes dont le connecteur a besoin, reportez-vous aux pages suivantes :
+Pour afficher les autorisations exactes dont le connecteur a besoin pour les opérations quotidiennes, reportez-vous aux pages suivantes :
 
 * link:reference-permissions-aws.html["Découvrez comment Connector utilise les autorisations AWS"]
 * link:reference-permissions-azure.html["Découvrez comment le connecteur utilise les autorisations Azure"]

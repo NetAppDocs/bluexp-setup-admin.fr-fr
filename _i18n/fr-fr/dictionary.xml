@@ -147,7 +147,6 @@
   <block id="9b73989307c1975dfa4d5e1581e4afe8" category="paragraph">Les fichiers de notification fournissent des informations sur les droits d'auteur et les licences de tiers utilisés dans le logiciel NetApp.</block>
   <block id="c95623cd0395d5a6bb6105b9d32f197b" category="inline-link-macro">Note pour BlueXP</block>
   <block id="98a041bbcf45b807a22068084127e26d" category="paragraph"><block ref="98a041bbcf45b807a22068084127e26d" category="inline-link-macro-rx"></block></block>
-  <block id="60f3c104288fca2aca24db064cb7c7c1" category="doc">Démarrage rapide de BlueXP en mode privé</block>
   <block id="077d70acc6fcd0e9c32a626a8ef8e416" category="paragraph">Commencez à utiliser BlueXP en mode privé en préparant votre environnement et en déployant Connector.</block>
   <block id="19b89452bb4e16dbfc6dc9d3fbbf8fc1" category="list-text">Préparez un hôte Linux dédié qui répond aux exigences en matière de processeur, de RAM, d'espace disque, de moteur Docker et bien plus encore.</block>
   <block id="8cb1247d6f1cd796c983b5b1cfbbd285" category="list-text">Configurez le réseau qui permet d'accéder aux réseaux cibles.</block>
@@ -524,7 +523,6 @@
   <block id="681992b8581f6d4247af5523a14d0ce4" category="list-text">Moteur Docker</block>
   <block id="117c0c98e2a5cb3503de68c655378d13" category="inline-link">Voir les instructions d'installation</block>
   <block id="762cb137e48e2922920955cfb157dea8" category="list-text">Docker Engine version 19.3.1 ou ultérieure est requis sur l'hôte avant d'installer le connecteur.<block ref="bbcf0e5e8b0c8687d84c2c22a5ad2ecf" category="inline-link-rx"></block></block>
-  <block id="c5b365377913424e6a59866f8ca70ef5" category="summary">NetApp BlueXP fournit à votre entreprise un plan de contrôle unique qui vous permet de créer, de protéger et de régir les données dans vos environnements sur site et cloud. La plateforme SaaS BlueXP inclut des services de stockage et de données qui assurent la gestion du stockage, la mobilité des données, la protection et l'analyse et le contrôle des données. Les fonctionnalités de gestion sont fournies via une console Web et des API.</block>
   <block id="9f0bb2acc3984bc2da2e5e566dd4bc0a" category="doc">En savoir plus sur BlueXP</block>
   <block id="98f770b0af18ca763421bac22b4b6805" category="section-title">Caractéristiques</block>
   <block id="e250797f3ba805eed2f7fad2419fdd05" category="paragraph">La plateforme BlueXP offre quatre piliers fondamentaux pour la gestion des données : stockage, mobilité, protection, analyse et contrôle.</block>
@@ -544,8 +542,6 @@
   <block id="6b068f0a943d421535c7d8d412ee3522" category="list-text">Systèmes E-Series</block>
   <block id="3404cce75db90acf6a9d52860721a139" category="list-text">Clusters ONTAP</block>
   <block id="7fcb7f97cbc710b693fef37b5e86770f" category="list-text">Systèmes StorageGRID</block>
-  <block id="7f346b4ef7825b27ccadbbf10f2d2cd0" category="inline-link">Données persistantes Kubernetes</block>
-  <block id="bf51187e0e630c8bb2fbde7d3c4a5f69" category="list-text">Orchestrez et protégez<block ref="17466ff7cb59071f2d4e860ff4e2c4e1" category="inline-link-rx"></block></block>
   <block id="340a76e3aef8e862f5fd79411261b297" category="list-text">Mobilité</block>
   <block id="55e7d878083c03ce4abbbc1175e10f41" category="list-text">Déplacez vos données là où vous en avez besoin grâce à la synchronisation, la copie, le Tiering et la mise en cache.</block>
   <block id="e216b7a924341f796bca310d1d812baf" category="inline-link">Copie et synchronisation</block>
@@ -561,7 +557,6 @@
   <block id="8c340dc334134096f68b880b42a8692c" category="inline-link">La réplication</block>
   <block id="e5335d776982e29d68ce5591f7857b38" category="list-text"><block ref="e5335d776982e29d68ce5591f7857b38" category="inline-link-rx"></block></block>
   <block id="27d62ce672b932b5110b78a6ca41f5d9" category="list-text">Analyse et contrôle</block>
-  <block id="166c994d4abe4a5b8c4f0a60491d6b92" category="list-text">Utilisez des outils pour surveiller, cartographier et optimiser votre infrastructure et votre stockage de données.</block>
   <block id="5c9335b28e6277ddbe0137f04e5e58a7" category="inline-link">Classement</block>
   <block id="3e347fe716ab17eefd02acef8c0347bf" category="list-text"><block ref="3e347fe716ab17eefd02acef8c0347bf" category="inline-link-rx"></block></block>
   <block id="3d2e7e90fac12bab6a0d0736a593b5b4" category="inline-link">Conseiller digital</block>
@@ -2813,12 +2808,8 @@ Notez que la page s'actualise entre le test de la connexion et l'activation de l
   <block id="31f2b2cbba0d986ad6ce5bec030a9de1" category="paragraph"><block ref="d8c1ee023ea7a4705048e3464cfcb854" category="inline-link-macro-rx"></block>.</block>
   <block id="fa1f9e92f4f0aa51cba859b2dbc37a02" category="section-title">Comment créer un connecteur</block>
   <block id="e4e0875eedbe591adccfba1b76d09729" category="paragraph">Un administrateur de compte BlueXP peut créer un connecteur directement à partir de BlueXP, du marché de votre fournisseur cloud ou en installant manuellement le logiciel sur votre propre hôte Linux. La manière de commencer dépend si vous utilisez BlueXP en mode standard, en mode restreint ou en mode privé.</block>
-  <block id="ce6d43255d920acadadb7e3862aee0b0" category="list-text"><block ref="ce6d43255d920acadadb7e3862aee0b0" category="inline-link-macro-rx"></block></block>
-  <block id="2d9421fac12c9ac9462f27b55d118c68" category="list-text"><block ref="2d9421fac12c9ac9462f27b55d118c68" category="inline-link-macro-rx"></block></block>
-  <block id="ba356dfc51631fb5a0371fea940de345" category="list-text"><block ref="ba356dfc51631fb5a0371fea940de345" category="inline-link-macro-rx"></block></block>
   <block id="d08ccf52b4cdd08e41cfb99ec42e0b29" category="section-title">Autorisations</block>
   <block id="11fde693c59aa81cdd27bb562b84f44b" category="paragraph">Des autorisations spécifiques sont nécessaires pour créer le connecteur directement à partir de BlueXP et un autre ensemble d'autorisations est nécessaire pour l'instance de connecteur elle-même. Si vous créez le connecteur dans AWS ou Azure directement à partir de BlueXP, BlueXP crée le connecteur avec les autorisations dont il a besoin.</block>
-  <block id="1e419112f48a13d6b30178e127d0a445" category="paragraph">Pour afficher les autorisations exactes dont le connecteur a besoin, reportez-vous aux pages suivantes :</block>
   <block id="338a6f193e9988b8f40b3128d5e4ffb7" category="inline-link-macro">Découvrez comment Connector utilise les autorisations AWS</block>
   <block id="0e4f7db7cba89c0c2240f4376d660bcd" category="list-text"><block ref="0e4f7db7cba89c0c2240f4376d660bcd" category="inline-link-macro-rx"></block></block>
   <block id="a039d4d02d5241a9510700b22c46787e" category="inline-link-macro">Découvrez comment le connecteur utilise les autorisations Azure</block>
@@ -3230,8 +3221,6 @@ La découverte sans connecteur (découverte directe) n'est pas prise en charge.<
   <block id="297a49f6150dc8dc8d45620c0f09f393" category="list-text">Si vous souhaitez gérer des ressources dans d'autres projets Google Cloud, autorisez l'accès en ajoutant le compte de service doté du rôle BlueXP à ce projet. Vous devrez répéter cette étape pour chaque projet.</block>
   <block id="1f7d098197ba2def0ffc66c388b2aa6c" category="paragraph">Si vous créez un nouvel environnement de travail pour Cloud Volumes ONTAP, BlueXP sélectionne les informations d'identification AWS suivantes par défaut :</block>
   <block id="1c16bd0b2377f4460ae56ecb40a419ae" category="paragraph">Notez que vous pouvez choisir les abonnements Azure associés à ce rôle. Chaque abonnement que vous choisissez fournit les autorisations de connecteur pour gérer les ressources de cet abonnement (par exemple, Cloud Volumes ONTAP).</block>
-  <block id="55a733edf0d6d526d9ebeda09e38bdd1" category="summary">Un compte BlueXP assure la colocation de votre entreprise, ce qui vous permet d'organiser les utilisateurs et les ressources dans des espaces de travail isolés. Par exemple, un groupe d'utilisateurs peut déployer et gérer des systèmes Cloud Volumes ONTAP dans un espace de travail qui n'est pas visible par les autres utilisateurs qui gèrent différents types d'environnements de travail dans un autre espace de travail.</block>
-  <block id="e96a7b63d6df3633f05aea7438dd616e" category="paragraph">Un compte _BlueXP_ fournit une colocation pour votre entreprise, qui vous permet d'organiser les utilisateurs et les ressources dans des _espaces de travail_ isolés. Par exemple, un groupe d'utilisateurs peut déployer et gérer des systèmes Cloud Volumes ONTAP dans un espace de travail qui n'est pas visible par les autres utilisateurs qui gèrent différents types d'environnements de travail dans un autre espace de travail.</block>
   <block id="d90aceadc99dce46d7d593ee18ab0d90" category="paragraph">Le connecteur contacte les terminaux suivants pour gérer les ressources et les processus au sein de votre environnement de cloud public.</block>
   <block id="91499b479a6f9fe14de575cded8e2ab6" category="paragraph">Si vous souhaitez gérer les ressources de plusieurs abonnements Azure, vous devez lier le principal de service à chacun de ces abonnements. Par exemple, BlueXP vous permet de sélectionner l'abonnement que vous souhaitez utiliser lors du déploiement de Cloud Volumes ONTAP.</block>
   <block id="6258a889f12d08d6da95cf4059f67498" category="paragraph">Vous devez ajouter l'identifiant de chaque abonnement Azure que vous souhaitez utiliser avec BlueXP.</block>
@@ -3781,4 +3770,18 @@ Non pris en charge dans Google Cloud ou dans<block ref="da2732e6e9a1be4ab82a1194
   <block id="69483d973a063c873a5a66f6edcc241c" category="section-title">6 octobre 2023</block>
   <block id="ce408175c3b7eaf6c3dfc910f3547833" category="section-title">Connecteur 3.9.34</block>
   <block id="0b440ac3de48c7d11ee5fad31e6b4f12" category="paragraph">Cette version contient des améliorations mineures et des corrections de bogues.</block>
+  <block id="fbfcc41262435943a07339aac43c3871" category="summary">NetApp BlueXP fournit à votre entreprise un plan de contrôle unique qui vous permet de créer, de protéger et de régir les données dans vos environnements sur site et cloud. La plateforme SaaS BlueXP inclut des services de gestion du stockage, de mobilité des données, de protection, d'analyse et de contrôle des données. Les fonctionnalités de gestion sont fournies via une console Web et des API.</block>
+  <block id="3c7cc2c5cfc598a6280bf919763758f3" category="inline-link">Protection des données pour les workloads Kubernetes</block>
+  <block id="3f0e4bbce5ac7b1b50e921687f2ef311" category="list-text"><block ref="3f0e4bbce5ac7b1b50e921687f2ef311" category="inline-link-rx"></block></block>
+  <block id="17b1e045b0e19ff6f254c01b1f9a9131" category="list-text">Utilisez des outils pour surveiller, cartographier et optimiser votre infrastructure et votre stockage de données. Bénéficiez d'informations exploitables pour optimiser l'état, la résilience et les coûts du stockage.</block>
+  <block id="ca61c00bb942882ff64e228d1e677f97" category="paragraph">Un connecteur est nécessaire pour utiliser BlueXP en mode restreint ou privé.</block>
+  <block id="25a9b1247ec1fd14b6ef367a6910af4a" category="inline-link-macro">Commencez à utiliser BlueXP en mode standard</block>
+  <block id="53307bf922b08c003dac0571547a263c" category="list-text"><block ref="53307bf922b08c003dac0571547a263c" category="inline-link-macro-rx"></block></block>
+  <block id="91f55c66e69b3b40e117fc5d123e8cd6" category="inline-link-macro">Démarrez avec BlueXP en mode restreint</block>
+  <block id="def77b30fc5552aeb374df8119e2c2c8" category="list-text"><block ref="def77b30fc5552aeb374df8119e2c2c8" category="inline-link-macro-rx"></block></block>
+  <block id="08e6464d98921d4b239eda70bb4b04b2" category="inline-link-macro">Commencez à utiliser BlueXP en mode privé</block>
+  <block id="484cc15e142fd16556c500975b95d031" category="list-text"><block ref="484cc15e142fd16556c500975b95d031" category="inline-link-macro-rx"></block></block>
+  <block id="a6500600136e87d0f971781229e9f9ab" category="paragraph">Pour afficher les autorisations exactes dont le connecteur a besoin pour les opérations quotidiennes, reportez-vous aux pages suivantes :</block>
+  <block id="b3686cfa126ecda3f385bc3c05a38641" category="summary">Un compte BlueXP assure la colocation de votre entreprise, ce qui vous permet d'organiser les utilisateurs et les ressources dans des espaces de travail isolés. Par exemple, un groupe d'utilisateurs peut déployer et gérer des environnements de travail Cloud Volumes ONTAP dans un espace de travail qui n'est pas visible pour les utilisateurs qui gèrent des environnements de travail dans un autre espace de travail.</block>
+  <block id="59a7c4ef8ec683b4486222e8f42e56e6" category="paragraph">Un compte _BlueXP_ fournit une colocation pour votre entreprise, qui vous permet d'organiser les utilisateurs et les ressources dans des _espaces de travail_ isolés. Par exemple, un groupe d'utilisateurs peut déployer et gérer des environnements de travail Cloud Volumes ONTAP dans un espace de travail qui n'est pas visible pour les utilisateurs qui gèrent des environnements de travail dans un autre espace de travail.</block>
 </blocks>
