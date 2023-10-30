@@ -124,14 +124,10 @@
   <block id="e9b5bbe1e4c19139761534abb688155a" category="list-text">Attribuez des autorisations pour exécuter le script.</block>
   <block id="643a877b7c306b1bcece42c8f03bebfb" category="paragraph">Où &lt;version&gt; est la version du connecteur que vous avez téléchargé.</block>
   <block id="325740f998865be7879e32048d406868" category="list-text">Exécutez le script d'installation.</block>
-  <block id="658dfe68751aa32c88df07e11961f9e4" category="paragraph">Les paramètres --proxy et --cacert sont facultatifs. Si vous disposez d'un serveur proxy, vous devez entrer le ou les paramètres comme indiqué. Le programme d'installation ne vous invite pas à fournir des informations sur un proxy.</block>
   <block id="b9fe00008273bec266b1b13a375c5496" category="paragraph">Voici un exemple de commande utilisant les deux paramètres facultatifs :</block>
   <block id="c4b4fca8bb676cd8922fa6d8e24c4b0b" category="paragraph">--proxy configure le connecteur pour utiliser un serveur proxy HTTP ou HTTPS à l'aide de l'un des formats suivants :</block>
   <block id="2ceb0e196c300f23618f8a9e66bf0553" category="list-text">\http://address:port</block>
-  <block id="56ea310ec955ce6bca75693a1ac8f92d" category="list-text">\http://username:password@address:port</block>
   <block id="ab0bd0c76dc86ad344963fb604cbdb9a" category="list-text">\https://address:port</block>
-  <block id="0e304d528ea3fafc4ceebb3dd322c283" category="list-text">\https://username:password@address:port</block>
-  <block id="b9a11b90960ff803269429887ab4cff3" category="paragraph">L'utilisateur doit être un utilisateur local. Les utilisateurs du domaine ne sont pas pris en charge.</block>
   <block id="1d012dd95bea10f05050cd3762e31e84" category="paragraph">--cacert spécifie un certificat signé par une autorité de certification à utiliser pour l'accès HTTPS entre le connecteur et le serveur proxy. Ce paramètre est requis uniquement si vous spécifiez un serveur proxy HTTPS ou si le proxy est un proxy interceptant.</block>
   <block id="f5f31bd671c0968ba09c8eb577f95629" category="list-text">Attendez la fin de l'installation.</block>
   <block id="d242483bab76006d2edbd9135be8effe" category="paragraph">À la fin de l'installation, le service connecteur (ocm) redémarre deux fois si vous avez spécifié un serveur proxy.</block>
@@ -1590,8 +1586,6 @@
   <block id="482723983a4f2af954e36ff41e567451" category="doc">Limites connues</block>
   <block id="6802f2d551252ff38d10cfab7b7735b3" category="paragraph">Ces limitations sont spécifiques à la configuration et à l'administration de BlueXP : le connecteur, la plate-forme SaaS, et plus encore.</block>
   <block id="83e566847d42782b3343e108150d7f57" category="section-title">Limitations du connecteur</block>
-  <block id="37c1762f10d4fe7f0bd3dd2820e543c3" category="section-title">Configuration du proxy avec les utilisateurs du domaine</block>
-  <block id="2ced7e677ffb2b0b579ea765f328f9d9" category="paragraph">BlueXP ne prend pas en charge les utilisateurs de domaine lors de la configuration d'un serveur proxy pour le connecteur. Lorsque vous entrez un nom d'utilisateur pour le serveur proxy, il doit s'agir d'un utilisateur local.</block>
   <block id="cf4525e15b866700f10e91573643ba54" category="section-title">Les paramètres par défaut de l'instance EC2 ne doivent pas être modifiés</block>
   <block id="505d2a7358228b26711e097c3ca6dc24" category="paragraph">Lorsque vous déployez le connecteur dans AWS, les paramètres d'instance EC2 suivants sont configurés par défaut :</block>
   <block id="b6c588d5cb8cbc221e66a15877aed30a" category="list-text">IMDSv2 est défini sur facultatif</block>
@@ -2426,7 +2420,6 @@ Notez que la page s'actualise entre le test de la connexion et l'activation de l
   <block id="2c451caa323474f558c4e4065578647d" category="list-text">Configurez le proxy :</block>
   <block id="dabc8d2c79f6529ca393b4b3d4f75805" category="list-text">Sélectionnez *Activer le proxy*.</block>
   <block id="25e8eb6a683e97e04e337e061a18205c" category="list-text">Spécifiez le serveur à l'aide de la syntaxe<block ref="f8f3e404ad5e32f60f55bb48e6395ae6" category="inline-link-rx"></block> ou<block ref="9ab29a9097f3907435367cc314192885" category="inline-link-rx"></block></block>
-  <block id="3d069ceba6ecf8b2c1c3def00d512e45" category="list-text">Spécifiez un nom d'utilisateur et un mot de passe si une authentification de base est requise pour le serveur</block>
   <block id="099fd4b1efe59a1ac46efb50c44be6fd" category="admonition">BlueXP ne prend pas en charge les mots de passe comprenant le caractère @.</block>
   <block id="54734e5bba3b83b2757e43d1ff24b2c4" category="section-title">Activation du trafic API direct</block>
   <block id="6282017b43dee5b3762b81c0124c425c" category="paragraph">Si vous avez configuré un connecteur pour utiliser un serveur proxy, vous pouvez activer le trafic API direct sur le connecteur afin d'envoyer des appels API directement aux services du fournisseur cloud sans passer par le proxy. Cette option est prise en charge avec des connecteurs s'exécutant dans AWS, dans Azure ou dans Google Cloud.</block>
@@ -3784,4 +3777,14 @@ Non pris en charge dans Google Cloud ou dans<block ref="da2732e6e9a1be4ab82a1194
   <block id="a6500600136e87d0f971781229e9f9ab" category="paragraph">Pour afficher les autorisations exactes dont le connecteur a besoin pour les opérations quotidiennes, reportez-vous aux pages suivantes :</block>
   <block id="b3686cfa126ecda3f385bc3c05a38641" category="summary">Un compte BlueXP assure la colocation de votre entreprise, ce qui vous permet d'organiser les utilisateurs et les ressources dans des espaces de travail isolés. Par exemple, un groupe d'utilisateurs peut déployer et gérer des environnements de travail Cloud Volumes ONTAP dans un espace de travail qui n'est pas visible pour les utilisateurs qui gèrent des environnements de travail dans un autre espace de travail.</block>
   <block id="59a7c4ef8ec683b4486222e8f42e56e6" category="paragraph">Un compte _BlueXP_ fournit une colocation pour votre entreprise, qui vous permet d'organiser les utilisateurs et les ressources dans des _espaces de travail_ isolés. Par exemple, un groupe d'utilisateurs peut déployer et gérer des environnements de travail Cloud Volumes ONTAP dans un espace de travail qui n'est pas visible pour les utilisateurs qui gèrent des environnements de travail dans un autre espace de travail.</block>
+  <block id="68d3d8808dd0c97d733b830adcc3ce04" category="paragraph">Les paramètres --proxy et --cacert sont facultatifs. Si vous disposez d'un serveur proxy, vous devez entrer les paramètres comme indiqué. Le programme d'installation ne vous invite pas à fournir des informations sur un proxy.</block>
+  <block id="5c19a40334d46880274be75a5173b4c4" category="list-text">\http://user-name:password@address:port</block>
+  <block id="33dbf59ca7c7ba76bec757cd7f795ed4" category="list-text">\http://domain-name%92user-name:password@address:port</block>
+  <block id="0c41c26ede4faf2f62d330df516b6e2c" category="list-text">\https://user-name:password@address:port</block>
+  <block id="84d3a6cbeb010ca14b892dcb244ad6c5" category="list-text">\https://domain-name%92user-name:password@address:port</block>
+  <block id="9c959780e1c60d211b8e7acdef1e4650" category="list-text">L'utilisateur peut être un utilisateur local ou un utilisateur de domaine.</block>
+  <block id="288412232e1a46f03f9c36a0d0f3b5c0" category="list-text">Pour un utilisateur de domaine, vous devez utiliser le code ASCII du \ comme indiqué ci-dessus.</block>
+  <block id="2fc62556a3d8d2f1a8b9dc5e4e4ba9ca" category="list-text">Spécifiez un nom d'utilisateur et un mot de passe si une authentification de base est requise pour le serveur.</block>
+  <block id="80bba58d673fb4fcbcf926f928bf80c7" category="list-text">Pour un utilisateur de domaine, vous devez entrer le code ASCII du \ comme suit : nom-domaine%92nom-utilisateur</block>
+  <block id="5596775e1e7017bff2ae389af56efd57" category="paragraph">Par exemple : proxy netapp%92proxy</block>
 </blocks>

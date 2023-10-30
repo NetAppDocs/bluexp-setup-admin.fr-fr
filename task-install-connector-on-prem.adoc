@@ -456,7 +456,7 @@ Où <version> est la version du connecteur que vous avez téléchargé.
  ./OnCommandCloudManager-<version> --proxy <HTTP or HTTPS proxy server> --cacert <path and file name of a CA-signed certificate>
 ----
 +
-Les paramètres --proxy et --cacert sont facultatifs. Si vous disposez d'un serveur proxy, vous devez entrer le ou les paramètres comme indiqué. Le programme d'installation ne vous invite pas à fournir des informations sur un proxy.
+Les paramètres --proxy et --cacert sont facultatifs. Si vous disposez d'un serveur proxy, vous devez entrer les paramètres comme indiqué. Le programme d'installation ne vous invite pas à fournir des informations sur un proxy.
 
 +
 Voici un exemple de commande utilisant les deux paramètres facultatifs :
@@ -464,18 +464,26 @@ Voici un exemple de commande utilisant les deux paramètres facultatifs :
 +
 [source, cli]
 ----
- ./OnCommandCloudManager-V3.9.26 --proxy https://user:password@10.0.0.30:8080/ --cacert /tmp/cacert/certificate.cer
+ ./OnCommandCloudManager-V3.9.32 --proxy https://user:password@10.0.0.30:8080/ --cacert /tmp/cacert/certificate.cer
 ----
 +
 --proxy configure le connecteur pour utiliser un serveur proxy HTTP ou HTTPS à l'aide de l'un des formats suivants :
 
 +
 ** \http://address:port
-** \http://username:password@address:port
+** \http://user-name:password@address:port
+** \http://domain-name%92user-name:password@address:port
 ** \https://address:port
-** \https://username:password@address:port
+** \https://user-name:password@address:port
+** \https://domain-name%92user-name:password@address:port
 +
-L'utilisateur doit être un utilisateur local. Les utilisateurs du domaine ne sont pas pris en charge.
+Notez ce qui suit :
+
++
+*** L'utilisateur peut être un utilisateur local ou un utilisateur de domaine.
+*** Pour un utilisateur de domaine, vous devez utiliser le code ASCII du \ comme indiqué ci-dessus.
+*** BlueXP ne prend pas en charge les mots de passe comprenant le caractère @.
+
 
 
 

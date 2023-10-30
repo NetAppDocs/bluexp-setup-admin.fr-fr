@@ -40,15 +40,20 @@ image:screenshot_settings_icon.gif["Capture d'écran affichant l'icône Paramèt
 +
 .. Sélectionnez *Activer le proxy*.
 .. Spécifiez le serveur à l'aide de la syntaxe http://_address:port_[] ou https://_address:port_[]
-.. Spécifiez un nom d'utilisateur et un mot de passe si une authentification de base est requise pour le serveur
+.. Spécifiez un nom d'utilisateur et un mot de passe si une authentification de base est requise pour le serveur.
 +
-L'utilisateur doit être un utilisateur local. Les utilisateurs du domaine ne sont pas pris en charge.
+Notez ce qui suit :
+
++
+*** L'utilisateur peut être un utilisateur local ou un utilisateur de domaine.
+*** Pour un utilisateur de domaine, vous devez entrer le code ASCII du \ comme suit : nom-domaine%92nom-utilisateur
++
+Par exemple : proxy netapp%92proxy
+
+*** BlueXP ne prend pas en charge les mots de passe comprenant le caractère @.
+
 
 .. Sélectionnez *Enregistrer*.
-+
-
-NOTE: BlueXP ne prend pas en charge les mots de passe comprenant le caractère @.
-
 
 
 
