@@ -111,6 +111,7 @@ Pour gérer les ressources dans AWS. Le terminal exact dépend de la région AWS
 
  a| 
 \https://support.netapp.com
+\https://mysupport.netapp.com
  a| 
 Pour obtenir des informations sur les licences et envoyer des messages AutoSupport au support NetApp.
 

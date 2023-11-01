@@ -123,6 +123,7 @@ De gérer les ressources dans les régions Azure China.
 
  a| 
 \https://support.netapp.com
+\https://mysupport.netapp.com
  a| 
 Pour obtenir des informations sur les licences et envoyer des messages AutoSupport au support NetApp.
 

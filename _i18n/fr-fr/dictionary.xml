@@ -3270,7 +3270,6 @@ La découverte sans connecteur (découverte directe) n'est pas prise en charge.<
 \https://cloudkms.googleapis.com/v1
 \https://www.googleapis.com/deploymentmanager/v2/projects</block>
   <block id="641d1f191c2b819061a8e9b6046fdbeb" category="paragraph">| pour gérer les ressources dans Google Cloud.</block>
-  <block id="a6587e3625a6fa744cab6741d34f5a2b" category="paragraph">| \https://support.netapp.com | pour obtenir des informations de licence et envoyer des messages AutoSupport au support NetApp.</block>
   <block id="cbb0e5cc736eaf87107f863bf695f576" category="paragraph">| \https://*.api.bluexp.netapp.com</block>
   <block id="6032f72586d36689e65d40f24d6a282a" category="paragraph">| fournir des fonctionnalités et des services SaaS dans BlueXP.</block>
   <block id="315cc875789c13a43c4e0c550413aeb3" category="paragraph">| \https://*.blob.core.windows.net</block>
@@ -3787,4 +3786,9 @@ Non pris en charge dans Google Cloud ou dans<block ref="da2732e6e9a1be4ab82a1194
   <block id="2fc62556a3d8d2f1a8b9dc5e4e4ba9ca" category="list-text">Spécifiez un nom d'utilisateur et un mot de passe si une authentification de base est requise pour le serveur.</block>
   <block id="80bba58d673fb4fcbcf926f928bf80c7" category="list-text">Pour un utilisateur de domaine, vous devez entrer le code ASCII du \ comme suit : nom-domaine%92nom-utilisateur</block>
   <block id="5596775e1e7017bff2ae389af56efd57" category="paragraph">Par exemple : proxy netapp%92proxy</block>
+  <block id="e4790a0da59cd51d8f46272b21b89870" category="paragraph">\https://support.netapp.com
+\https://mysupport.netapp.com</block>
+  <block id="e3f6d97d14c949f7b5db051894f11c57" category="paragraph">|
+\https://support.netapp.com
+\https://mysupport.netapp.com | pour obtenir des informations de licence et envoyer des messages AutoSupport au support NetApp.</block>
 </blocks>

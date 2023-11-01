@@ -58,7 +58,9 @@ Points d'extrémité contactés depuis le connecteur:: Le connecteur nécessite 
 
 | pour gérer les ressources dans Google Cloud.
 
-| \https://support.netapp.com | pour obtenir des informations de licence et envoyer des messages AutoSupport au support NetApp.
+|
+\https://support.netapp.com
+\https://mysupport.netapp.com | pour obtenir des informations de licence et envoyer des messages AutoSupport au support NetApp.
 
 | \https://*.api.bluexp.netapp.com
 
