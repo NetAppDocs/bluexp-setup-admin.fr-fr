@@ -37,13 +37,7 @@
   <block id="5e15e451ab1dcb5e3bfae55f8b58e524" category="list-text">*Emplacement des informations d'identification* : sélectionnez *Amazon Web Services &gt; connecteur*.</block>
   <block id="8117407a9689d4f991904d5739091c47" category="list-text">*Définir les informations d'identification* : saisissez une clé d'accès AWS et une clé secrète.</block>
   <block id="dc6e318a413899b5467eabc5f69ad366" category="list-text">*Abonnement Marketplace* : associez un abonnement Marketplace à ces identifiants en vous abonnant maintenant ou en sélectionnant un abonnement existant.</block>
-  <block id="3747d8dfb456f8cefbe5ea8eed8a4289" category="summary">Une fois que vous avez installé un connecteur dans Azure, BlueXP peut détecter automatiquement des informations sur les comptes de stockage Azure qui résident dans les abonnements Azure où le connecteur est installé. Un environnement de travail Azure Blob est ajouté à Canvas pour vous permettre d'afficher ces informations.</block>
   <block id="70c85793f0a33ef534a67f193287a992" category="doc">Gérez vos comptes Azure Blob</block>
-  <block id="2ed919302195764ff313fc8d75b59525" category="inline-image-macro">Copie d'écran d'un environnement de travail Azure Blob.</block>
-  <block id="33b5e081bfc2a4ff553d44178d68dda0" category="paragraph"><block ref="33b5e081bfc2a4ff553d44178d68dda0" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="df329246877a4bd1e46b66f9dd6845df" category="paragraph">Vous pouvez afficher des informations détaillées sur vos comptes de stockage Azure, notamment l'emplacement, le groupe de ressources, la capacité totale et utilisée, etc. Ces comptes peuvent être utilisés comme destinations pour la sauvegarde et la restauration BlueXP, le Tiering BlueXP ou les opérations de copie et de synchronisation BlueXP.</block>
-  <block id="bbea79834217efc10b46f4ce874042e0" category="inline-link">Accédez ici pour découvrir comment afficher, créer et gérer vos comptes de stockage Azure à l'aide de BlueXP</block>
-  <block id="925b4bfac5efe2fd0e529d00b71f77ab" category="paragraph">Une fonctionnalité récemment ajoutée vous permet désormais de créer et de modifier des comptes de stockage Azure.<block ref="3ed7f712e1a5045237f8df14106ff39a" category="inline-link-rx"></block>.</block>
   <block id="f9a2f8eef1df12108fd0c6b9b6b7fe6a" category="doc">Options d'installation de Connector dans Google Cloud</block>
   <block id="b5afc81c4f24b143224e304b939a3f6c" category="paragraph">Les options d'installation suivantes sont disponibles :</block>
   <block id="b584cbf8cb993e5b450384402639e3c4" category="paragraph">Cette action lance une instance de serveur virtuel exécutant Linux et le logiciel Connector dans un VPC de votre choix.</block>
@@ -394,7 +388,6 @@
   <block id="e7456e97941e04b31434ba6dcce10d88" category="list-text">cloudkms.keyRings.setIamPolicy</block>
   <block id="7c68c9240932ba8b284de266f9564faa" category="paragraph">Ces autorisations sont requises pour la sauvegarde et la restauration BlueXP.</block>
   <block id="1c498f9a6415c0ecd5728481eea5743b" category="summary">Découvrez comment BlueXP utilise les identifiants et les autorisations Google Cloud pour effectuer des actions en votre nom. Ces informations peuvent vous être utiles lorsque vous gérez les identifiants d'un ou plusieurs projets Google Cloud. Par exemple, vous pourriez vouloir en savoir plus sur le compte de service associé à la VM Connector.</block>
-  <block id="0384f4ba39f6a15ffd9b42bfb03b8d83" category="doc">Projets, autorisations et comptes Google Cloud</block>
   <block id="a8f8f08c9d91eeaecc31377113ddd27b" category="section-title">Projet et autorisations pour BlueXP</block>
   <block id="627c5def4348066ddd5e7a1664e1079b" category="paragraph">Avant de pouvoir utiliser BlueXP pour gérer les ressources de votre projet Google Cloud, vous devez d'abord déployer un connecteur. Il ne peut pas s'exécuter sur site ou dans un autre fournisseur cloud.</block>
   <block id="356334a26d74c400a5e0a69f237ba73e" category="paragraph">Deux ensembles d'autorisations doivent être en place avant de déployer un connecteur directement depuis BlueXP :</block>
@@ -1019,7 +1012,6 @@
   <block id="984ca77a9a51746d3dd5a855a71d3493" category="inline-link">Fonctionnalités MV blindées</block>
   <block id="5e59673ea4dc0650f587413c4848c02c" category="paragraph">Ce connecteur est pris en charge dans Google Cloud sur une instance de machine virtuelle avec un système d'exploitation pris en charge<block ref="bd10301ee2e8f0cb38112a71d2b6920c" category="inline-link-rx"></block></block>
   <block id="c01f728e9ef3359c6e9b452f47a9ca09" category="summary">Découvrez comment BlueXP utilise les identifiants et les autorisations Azure pour effectuer des actions en votre nom. Ces informations peuvent vous être utiles lorsque vous gérez les identifiants d'un ou plusieurs abonnements Azure. Par exemple, vous pouvez savoir quand ajouter des informations d'identification Azure supplémentaires à BlueXP.</block>
-  <block id="1ab5193f89cf79df51fd4138318923ac" category="doc">Identifiants et autorisations Azure</block>
   <block id="08a6159f6d9d986210470d2ab6dff166" category="section-title">Les identifiants initiaux d'Azure</block>
   <block id="25b6fc1a8ebb7aa3a82a611b3dc7cc8d" category="inline-link-macro">Stratégie de déploiement de Connector pour Azure</block>
   <block id="9cbe008fc71c240a16ab125b2873fe44" category="inline-link-macro">Consultez la manière dont BlueXP utilise les autorisations</block>
@@ -1097,7 +1089,6 @@
   <block id="7c04a15d03a827f3e932f6ea885fb875" category="list-text"><block ref="7c04a15d03a827f3e932f6ea885fb875" category="inline-link-rx"></block></block>
   <block id="59c8a7b2e005ee251a6301c0ca1f23b3" category="list-text">Assurez-vous que l'utilisateur dispose d'une clé d'accès que vous pouvez ajouter à BlueXP après l'installation du connecteur.</block>
   <block id="9370643895ad52c4da3ddf50c1e24a82" category="summary">Les rôles Administrateur de compte, Administrateur d'espace de travail, Visionneuse de conformité et Administrateur SnapCenter fournissent des autorisations spécifiques aux utilisateurs. Vous pouvez attribuer l'un de ces rôles lorsque vous associez un nouvel utilisateur à votre compte BlueXP.</block>
-  <block id="a5cd3ed116608dac017f14c046ea56bf" category="doc">Rôles</block>
   <block id="706c30f817a6d965f23bc2798759eb15" category="paragraph">Le rôle Compliance Viewer est destiné à l'accès à la classification BlueXP en lecture seule.</block>
   <block id="eaeb30f9f18e0c50b178676f3eaef45f" category="cell">Tâche</block>
   <block id="023bddc1580239bc605771883a09c8ff" category="cell">Administrateur du compte</block>
@@ -1198,12 +1189,6 @@
   <block id="41adb69bcb6f24f8432b590170f61d23" category="list-text">Une fois connecté, configurez BlueXP :</block>
   <block id="c0112364e46bcec7ed4460a6be7ead53" category="paragraph">Vous devez désactiver le mode restreint, car ces étapes décrivent l'utilisation de BlueXP en mode standard. (En outre, le mode restreint n'est pas pris en charge lorsque le connecteur est installé sur site.)</block>
   <block id="dcdd03125bee39fb6c8e9aa5e0bfcc7f" category="paragraph">BlueXP est maintenant configuré avec le connecteur que vous venez d'installer.</block>
-  <block id="773752fa8722d25b5cb88d771e3c6459" category="summary">Après avoir installé un connecteur dans Google Cloud, BlueXP peut automatiquement découvrir des informations sur les compartiments Google Cloud qui résident dans le compte Google où le connecteur est installé. Un environnement de travail Google Cloud Storage est ajouté à Canvas pour vous permettre de visualiser ces informations.</block>
-  <block id="82f74539a8232efa9fe9d44fbb820377" category="doc">Consultez vos compartiments de stockage Google Cloud</block>
-  <block id="e952b1c060b2dc1be5663131351e06a5" category="paragraph">Après avoir installé un connecteur dans Google Cloud, BlueXP peut automatiquement découvrir des informations sur les compartiments Google Cloud Storage qui résident dans le compte Google où le connecteur est installé. Un environnement de travail Google Cloud Storage est ajouté à Canvas pour vous permettre de visualiser ces informations.</block>
-  <block id="4a5a2cb37f05953f58468c7fed5af846" category="paragraph">Vous trouverez des informations détaillées sur vos compartiments Google Cloud Storage : l'emplacement, l'état d'accès, la classe de stockage, la capacité totale et utilisée, entre autres. Ces compartiments peuvent être utilisés comme destinations pour la sauvegarde et la restauration BlueXP, le Tiering BlueXP ou les opérations de copie et de synchronisation BlueXP.</block>
-  <block id="21b1bc909131728ad1b5d3d05c538f6b" category="inline-image-macro">Copie d'écran d'un environnement de travail Google Cloud Storage.</block>
-  <block id="94bd1056e53b5ba66af1269a83d9d853" category="paragraph"><block ref="94bd1056e53b5ba66af1269a83d9d853" category="inline-image-macro-rx" type="image"></block></block>
   <block id="c7c7fe81ff2afbb7f657e592f9871125" category="summary">Une fois que vous êtes opérationnel avec BlueXP en mode restreint, vous pouvez commencer à utiliser les services BlueXP pris en charge avec le mode restreint.</block>
   <block id="d279ef9d3fa427882e45e653bc7b1949" category="doc">Ce que vous pouvez faire ensuite (mode restreint)</block>
   <block id="9ed3d93e6149b9255047c4f345ace3ed" category="paragraph">Pour obtenir de l'aide, reportez-vous à la documentation de ces services :</block>
@@ -1461,7 +1446,6 @@
   <block id="b2cc56e18c7250863c6c74a223137e16" category="summary">Déployez le connecteur en mode privé pour utiliser BlueXP sans connectivité sortante à la couche SaaS BlueXP. Pour commencer, installez le connecteur, configurez BlueXP en accédant à l'interface utilisateur exécutée sur le connecteur, puis fournissez les autorisations cloud que vous avez précédemment configurées.</block>
   <block id="2f549fb867eb9c0be636782d32264aa6" category="doc">Déployez le connecteur en mode privé</block>
   <block id="377655366b79df746cc3d0c01596ba86" category="paragraph">Téléchargez le programme d'installation du produit sur le site de support NetApp, puis installez manuellement le connecteur sur votre propre hôte Linux.</block>
-  <block id="ffe7522d9ea3d134eb0a945275d454d7" category="paragraph-title">Privilèges requis</block>
   <block id="7bc3966adb932d8b546fbfa4ef7113d7" category="paragraph">Les privilèges root sont requis pour installer le connecteur.</block>
   <block id="2ba7eb945a77498b8342e4be53a3761e" category="list-text">Téléchargez le logiciel du connecteur à partir du<block ref="99637e01fa8caa34a544049093cac68c" category="inline-link-rx"></block></block>
   <block id="21ecc51e06ea55adef72442730b0d5cf" category="paragraph">Assurez-vous de télécharger le programme d'installation pour les réseaux restreints sans accès à Internet.</block>
@@ -1497,7 +1481,6 @@
   <block id="3612e0e7a44ec38da1e226c618526f91" category="open-title">Compte de service Google Cloud</block>
   <block id="4b6fbf3b382ce342b57bbdb4fe0d6baf" category="paragraph">Associez le compte de service à la VM Connector.</block>
   <block id="ea5bc95c9558a374461d71a1d2f029ca" category="summary">Découvrez comment BlueXP utilise les identifiants et les autorisations AWS pour effectuer des actions en votre nom. Ces informations peuvent vous être utiles lorsque vous gérez les identifiants d'un ou plusieurs comptes AWS dans BlueXP. Par exemple, vous pouvez savoir quand ajouter des informations d'identification AWS supplémentaires à BlueXP.</block>
-  <block id="97911b3c54a4e826b34c1f79026316c5" category="doc">Identifiants et autorisations AWS</block>
   <block id="9ef43b020d41cab5808d78fdf855c429" category="section-title">Identifiants AWS initiaux</block>
   <block id="09c2333ff15fa85698d91a366cce26dd" category="inline-link-macro">Politique de déploiement de connecteur pour AWS</block>
   <block id="858c852a1a4696d4e56295d4b4b0ea20" category="paragraph">Lorsque BlueXP lance l'instance Connector dans AWS, il crée un rôle IAM et un profil d'instance pour l'instance. Il attache également une règle qui fournit au connecteur les autorisations nécessaires pour gérer les ressources et les processus de ce compte AWS. <block ref="9d2ef148313eb953f656b8efd4016e8c" category="inline-link-macro-rx"></block>.</block>
@@ -1544,7 +1527,6 @@
   <block id="13f3cf8c531952d72e5847c4183e6910" category="cell">443</block>
   <block id="2f0c197eb73a7c6da10b03384f241025" category="cell">Fournit un accès HTTPS à l'interface utilisateur locale à partir des navigateurs Web clients</block>
   <block id="771e18f961335c5b2ae045b3fefc3e80" category="summary">Le groupe de sécurité AWS du connecteur nécessite à la fois des règles entrantes et sortantes. BlueXP crée automatiquement ce groupe de sécurité lorsque vous créez un connecteur à partir de BlueXP. Vous devez configurer ce groupe de sécurité pour toutes les autres options d'installation.</block>
-  <block id="60f0453bf0393ab630be6aa37dc20180" category="doc">Règles de groupe de sécurité dans AWS</block>
   <block id="1b3884b38c271fe13c8142e1355e4523" category="section-title">Règles entrantes</block>
   <block id="765553e6c7ac8592c389acb9878a050a" category="cell">SSH</block>
   <block id="b6d767d2f8ed5d21a44b0e5886680cb9" category="cell">22</block>
@@ -2081,7 +2063,6 @@ ou</block>
   <block id="c1c864c3ccb60090d311d4a9c4abf990" category="section-title">Mettez à niveau le connecteur lorsque vous utilisez le mode privé</block>
   <block id="bdfe8a8b0f5b6a0b4242be2e550dff4a" category="paragraph">Si vous utilisez BlueXP en mode privé, vous pouvez mettre à niveau le connecteur dès qu'une version plus récente est disponible sur le site du support NetApp.</block>
   <block id="84692ef80d23d7ba11b5ce40223e1af5" category="paragraph">Le connecteur doit redémarrer pendant le processus de mise à niveau afin que la console Web ne soit pas disponible pendant la mise à niveau.</block>
-  <block id="3d41aa2f47aa25529d8df924099f90c8" category="admonition">Sur les hôtes disposant d'un accès Internet, le connecteur met automatiquement à jour son logiciel vers la dernière version, tant qu'il dispose d'un accès Internet sortant pour obtenir la mise à jour du logiciel.</block>
   <block id="d651da37c0942c2e8d61b167e835ec80" category="list-text">Téléchargez le logiciel du connecteur à partir du<block ref="99637e01fa8caa34a544049093cac68c" category="inline-link-rx"></block>.</block>
   <block id="29796d02ce8782cd7e5fc7ab3be29617" category="list-text">Une fois la mise à niveau terminée, vous pouvez vérifier la version du connecteur en accédant à *aide &gt; support &gt; connecteur*.</block>
   <block id="5c6b09600cdfc594130f9f3c053efecb" category="section-title">Modifiez l'adresse IP d'un connecteur</block>
@@ -2692,12 +2673,7 @@ Notez que la page s'actualise entre le test de la connexion et l'activation de l
   <block id="7132b07cc411f1ad7091b34cfe32d739" category="section-title">Supprimer les informations d'identification</block>
   <block id="a16b0bbea9ed6a7a22d41efc21ec1cef" category="paragraph">Si vous n'avez plus besoin d'un ensemble d'informations d'identification, vous pouvez les supprimer de BlueXP. Vous ne pouvez supprimer que les informations d'identification qui ne sont pas associées à un environnement de travail.</block>
   <block id="79c33710e10337a79e50227860ebf59a" category="list-text">Sur la page *informations d'identification du compte*, sélectionnez le menu d'action correspondant à un ensemble d'informations d'identification, puis sélectionnez *Supprimer les informations d'identification*.</block>
-  <block id="efd9710de9c698fbbeb7b7b11597f70b" category="summary">Une fois que vous avez installé un connecteur dans AWS, BlueXP peut détecter automatiquement les informations relatives aux compartiments Amazon S3 qui résident dans le compte AWS où le connecteur est installé. Un environnement de travail Amazon S3 est ajouté à Canvas pour que vous puissiez visualiser ces informations.</block>
   <block id="a4f513306c1a0ead14679ffb7c282460" category="doc">Gestion de vos compartiments Amazon S3</block>
-  <block id="620734ddcf438083fa8f2f7a7550fbbf" category="inline-image-macro">Copie d'écran d'un environnement de travail Amazon S3.</block>
-  <block id="93850b8e1d97181700833dcae4c7e219" category="paragraph"><block ref="93850b8e1d97181700833dcae4c7e219" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="54301079e01fc865e928c6fe22deeeef" category="paragraph">Vous pouvez afficher des informations détaillées sur vos compartiments S3, notamment la région, la règle d'accès, le compte, la capacité totale et utilisée, et plus encore. Ces compartiments peuvent être utilisés comme destinations pour la sauvegarde et la restauration BlueXP, le Tiering BlueXP ou les opérations de copie et de synchronisation BlueXP. En outre, vous pouvez utiliser la classification BlueXP pour analyser ces compartiments.</block>
-  <block id="1f96aa045f6500e7c58cc5f50ea21ffd" category="inline-link">Accédez ici pour découvrir comment afficher, créer et gérer vos compartiments S3 à l'aide de BlueXP</block>
   <block id="08533087d95fb07c92ed0773080a65d4" category="doc">Configuration du réseau Azure</block>
   <block id="1387f52f9e1a700036780a5bf567fab3" category="section-title">Vnet et sous-réseau</block>
   <block id="b26bf0de9fb68038a5f4e2e2a13c5811" category="paragraph">Lorsque vous créez le connecteur, vous devez spécifier le réseau virtuel et le sous-réseau dans lesquels le connecteur doit résider.</block>
@@ -2811,7 +2787,6 @@ Notez que la page s'actualise entre le test de la connexion et l'activation de l
   <block id="e3ab4c013397e346e8f211ff03ac44b2" category="list-text"><block ref="e3ab4c013397e346e8f211ff03ac44b2" category="inline-link-macro-rx"></block></block>
   <block id="538fc0c04ce8a0ef5cf78a12dbe8f68a" category="section-title">Mises à niveau des connecteurs</block>
   <block id="c568c61bf8e9e5a305fc06655cdac862" category="paragraph">Nous mettons généralement à jour le logiciel de connecteur chaque mois pour introduire de nouvelles fonctions et améliorer la stabilité. Bien que la plupart des services et fonctionnalités de la plate-forme BlueXP soient proposés par le logiciel SaaS, quelques fonctionnalités dépendent de la version du connecteur. Qui inclut la gestion Cloud Volumes ONTAP, la gestion de clusters ONTAP sur site, la configuration et l'aide.</block>
-  <block id="8c03e33a988ffb4175368e0784ca1ff5" category="paragraph">Le connecteur met automatiquement à jour son logiciel avec la dernière version, tant qu'il dispose d'un accès Internet sortant pour obtenir la mise à jour du logiciel. Si vous utilisez BlueXP en mode privé, vous devez mettre à niveau manuellement le connecteur.</block>
   <block id="ed0b87049db36af81b1e2989ce889651" category="inline-link-macro">Apprenez à mettre à niveau manuellement le logiciel du connecteur</block>
   <block id="c6793bcdb1eae6a26c6e9cb42e6b2f31" category="paragraph"><block ref="079398d71b1e343d69f7a6ed5f005eb2" category="inline-link-macro-rx"></block>.</block>
   <block id="2162bc1fbb13d2539c146b3472921eb5" category="paragraph"><block ref="7270aabdb0c26b6b937d76a49fcda623" category="inline-xref-macro-rx"></block>.</block>
@@ -3110,7 +3085,6 @@ La découverte sans connecteur (découverte directe) n'est pas prise en charge.<
   <block id="a274f4d4670213a9045ce258c6c56b80" category="cell">Notifications</block>
   <block id="13348442cc6a27032d2b4aa28b75a5d3" category="cell">Recherche</block>
   <block id="285c4c5f9756d9707fc1afed457a8b43" category="summary">Le groupe de sécurité Azure pour le connecteur nécessite à la fois des règles entrantes et sortantes. BlueXP crée automatiquement ce groupe de sécurité lorsque vous créez un connecteur à partir de BlueXP. Vous devez configurer ce groupe de sécurité pour toutes les autres options d'installation.</block>
-  <block id="569fe31933e5918613ae1efa70e82d16" category="doc">Règles de groupe de sécurité dans Azure</block>
   <block id="60a24477cd4bc1d96c88b21629d8cd7c" category="summary">Abonnez-vous à BlueXP depuis le marché de votre fournisseur cloud pour payer les services BlueXP à un taux horaire ou via un contrat annuel. Si vous avez acheté une licence auprès de NetApp, vous devez également souscrire à l'offre Marketplace. Votre licence est toujours facturée en premier, mais vous serez facturé au taux horaire si vous dépassez votre capacité sous licence ou si la période de validité de la licence expire.</block>
   <block id="7280e590fc25414ce879506ed16e2a62" category="doc">Abonnement à BlueXP (mode standard)</block>
   <block id="f4abcc0682712b312b347ed2a4b32165" category="paragraph">Abonnez-vous à BlueXP sur le marché de votre fournisseur cloud pour payer les services BlueXP à un taux horaire (PAYGO) ou un contrat annuel. Si vous avez acheté une licence NetApp (BYOL), vous devez également souscrire à l'offre Marketplace. Votre licence est toujours facturée en premier, mais vous serez facturé au taux horaire si vous dépassez votre capacité sous licence ou si la période de validité de la licence expire.</block>
@@ -3155,15 +3129,12 @@ La découverte sans connecteur (découverte directe) n'est pas prise en charge.<
   <block id="f53835e0f369158c476f99fda577e700" category="sidebar">Documents de configuration et d'administration</block>
   <block id="7d0ee6fed10d3d4e5c9ee496729ab519" category="sidebar">Notes de mise à jour</block>
   <block id="33871b6190a8d5adbe8b15282054766c" category="sidebar">Quoi de neuf</block>
-  <block id="e646e16bee8b32e6ea29e30d01970a6c" category="sidebar">Limites</block>
   <block id="be11c74c1dd7f307bb80183a90dc2067" category="sidebar">Commencez</block>
   <block id="e4c53684ddd66ee4898db459d57514e8" category="sidebar">Découvrez les bases</block>
-  <block id="de2a909827c9bf0f62effae09a746963" category="sidebar">Présentation de BlueXP</block>
   <block id="9b945efebb006547a94415eadaa12921" category="sidebar">Comptes</block>
   <block id="7e99ea34b714387479c29a20b4a89752" category="sidebar">Commencez avec le mode standard</block>
   <block id="55553d1b65f45713caedcf9f0b1a6042" category="sidebar">Connectez-vous à BlueXP</block>
   <block id="94ee7072c2750da1997438a715efb7d4" category="sidebar">Créer un connecteur</block>
-  <block id="ea206a7167c7e693d778525a7c87c869" category="sidebar">Les options d'installation</block>
   <block id="4df40e141b0559f15db8f84f78aed013" category="sidebar">Sur site</block>
   <block id="f559abff8763b27adc86fdb8b373f2c7" category="sidebar">Abonnez-vous à BlueXP</block>
   <block id="d0a7edff5cd82c23f3d1c18e0779ccbc" category="sidebar">Que pouvez-vous faire ensuite</block>
@@ -3174,11 +3145,7 @@ La découverte sans connecteur (découverte directe) n'est pas prise en charge.<
   <block id="a222de5f9a1db461954d4160797dfa76" category="sidebar">Administration de BlueXP</block>
   <block id="eed7d7eea79968152bcb0157d198eeea" category="sidebar">fédération des identités</block>
   <block id="b02d6a4d5c11f6d94cd3e2e249d6dec1" category="sidebar">Comptes BlueXP</block>
-  <block id="f20e69549fc23f9df431f9511f177e5e" category="sidebar">Gérez votre compte</block>
-  <block id="cb7db6069dfbe23b6c36beb350a5ceaa" category="sidebar">Créez un autre compte</block>
   <block id="f4040f71a7d553f2519487070892b115" category="sidebar">Rôles utilisateur</block>
-  <block id="ca82fdd9a480fcc34a6b470f5ec8e908" category="sidebar">Configurer les paramètres proxy</block>
-  <block id="7c584a16cbf4210dc0a344179e274e09" category="sidebar">Configuration par défaut</block>
   <block id="6dc6b060b761d145366b9ed041137917" category="sidebar">Gérez les identifiants AWS</block>
   <block id="8d855a86408ade086a4d47d808971acd" category="sidebar">Gérez les identifiants et les abonnements</block>
   <block id="c135c603177e58023474a65f829c0fd3" category="sidebar">Gérez les identifiants Azure</block>
@@ -3229,9 +3196,6 @@ La découverte sans connecteur (découverte directe) n'est pas prise en charge.<
   <block id="b0689737e83154357ff9ef36053bda4f" category="paragraph">Par défaut, toutes les notifications actives s'affichent dans le Centre de notification. Vous pouvez filtrer les notifications que vous voyez pour n'afficher que les notifications importantes pour vous. Vous pouvez filtrer par BlueXP "Service" et par notification "Type".</block>
   <block id="2ad68125d72949aee5ac56974ac53849" category="paragraph">Les filtres définis dans le Centre de notification ne déterminent pas les types de notifications que vous recevrez par e-mail. Par défaut, les administrateurs de compte BlueXP recevront des e-mails pour toutes les notifications « critiques » et « recommandations ». Ces notifications concernent tous les services. Vous ne pouvez pas choisir de recevoir de notifications pour certains services uniquement, par exemple les connecteurs ou la sauvegarde et restauration BlueXP.</block>
   <block id="7fcffcce675dad706dbf53d68f1f86f2" category="paragraph">Tous les autres utilisateurs et destinataires sont configurés pour ne pas recevoir d'e-mails de notification. Vous devez donc configurer les paramètres de notification pour les utilisateurs supplémentaires.</block>
-  <block id="00fba3f8242dff426927884c6521757a" category="paragraph">Une nouvelle fonctionnalité vous permet désormais de créer et de modifier des compartiments S3.<block ref="c4481f66e0558788424eb34d61e736ff" category="inline-link-rx"></block>.</block>
-  <block id="238db521ba5110fd4f7c460de28dd0c8" category="inline-link">Accédez ici pour découvrir comment afficher, créer et gérer vos compartiments de stockage cloud à l'aide de BlueXP</block>
-  <block id="8bc5e348bcf49d1543e86fd28ce45f86" category="paragraph">Une nouvelle fonctionnalité vous permet désormais de créer et de modifier des compartiments Google Cloud Storage.<block ref="640cf64376886268ca971c71c762f644" category="inline-link-rx"></block>.</block>
   <block id="19b587cc77ce4b8566975983ec907303" category="sidebar">Gérez vos compartiments de stockage Google Cloud</block>
   <block id="161fbe930f63fa83671b46be2b2b3d58" category="paragraph">Vous devez disposer des éléments suivants :</block>
   <block id="7e0b6f72a006c5db4d352632364cae2a" category="paragraph">Pour plus de détails, reportez-vous à<block ref="f85f976c363ea77b8f2232a1ebbc4d2d" category="inline-link-rx"></block></block>
@@ -3723,10 +3687,6 @@ Membre: Compte de service BlueXP à partir de serviceAccount.user</block>
   <block id="9cc4c3a223d9b6def6feaec3c11d5585" category="paragraph">Créez le connecteur directement à partir d'AWS Marketplace.</block>
   <block id="0d8dcd0440293645b17304e6ec7f0b44" category="paragraph">La création du connecteur à partir d'AWS Marketplace déploie une instance EC2 dans AWS à l'aide d'une configuration par défaut. <block ref="2e3b01a9181b70ea3432226bf12e488f" category="inline-link-macro-rx"></block>.</block>
   <block id="65ce4dce26160be29539699c6623e379" category="sidebar">Mise en route du flux de travail</block>
-  <block id="4cb8580dcb7bdd5753758d2029cf5760" category="sidebar">Créez à partir de BlueXP</block>
-  <block id="490065fa675522d3a515cadb526d26f6" category="sidebar">Créer à partir du marché</block>
-  <block id="655a3c90b399118b5d073277c90e6b0f" category="sidebar">Installer manuellement</block>
-  <block id="054df94b323e23fce659cffe65ef10ef" category="sidebar">Créez à partir de BlueXP ou à l'aide de gcloud</block>
   <block id="200c9dcd65b566ab41bf3c1946647dce" category="section-title">10 septembre 2023</block>
   <block id="f2d77c003fbfd61002c06e73a629086c" category="section-title">Connecteur 3.9.33</block>
   <block id="d8465669650730f887acd3754f3dea9f" category="list-text">Lorsque vous créez un connecteur dans AWS à partir de BlueXP, vous pouvez désormais rechercher dans le champ paire de clés pour trouver plus facilement la paire de clés que vous souhaitez utiliser avec l'instance de connecteur.</block>
@@ -3791,4 +3751,28 @@ Non pris en charge dans Google Cloud ou dans<block ref="da2732e6e9a1be4ab82a1194
   <block id="e3f6d97d14c949f7b5db051894f11c57" category="paragraph">|
 \https://support.netapp.com
 \https://mysupport.netapp.com | pour obtenir des informations de licence et envoyer des messages AutoSupport au support NetApp.</block>
+  <block id="825f8f6e963c62263362be1e363454da" category="paragraph">Notez que les points finaux répertoriés ci-dessous sont tous des entrées CNAME.</block>
+  <block id="efd3103f59d6a221100ba6b86e61d13f" category="inline-link">Découvrez comment gérer des compartiments S3 à partir de BlueXP</block>
+  <block id="0686a4b69c0857da5761e2372d45472a" category="paragraph">Si vous avez des compartiments Amazon S3 dans le même compte AWS que vous avez créé le connecteur, un environnement de travail Amazon S3 s'affiche automatiquement sur le canevas BlueXP.<block ref="359ed6b0e0b11360def0521aafc36e93" category="inline-link-rx"></block></block>
+  <block id="00f6aa26fd2d156c4cb2ed8cdca2d096" category="inline-link">Découvrez comment gérer le stockage Azure Blob à partir de BlueXP</block>
+  <block id="4bb1f971cf168c4c2e4189001ae61261" category="paragraph">Si vous disposez d'un stockage Azure Blob dans le même abonnement Azure que celui sur lequel vous avez créé le connecteur, un environnement de travail du stockage Azure Blob apparaît automatiquement sur le canevas BlueXP.<block ref="ecbdb206e5a4043c75ba8711318e9969" category="inline-link-rx"></block></block>
+  <block id="517b4864a21021001d9ffbea31801854" category="doc">Règles du groupe de sécurité du connecteur dans AWS</block>
+  <block id="1fd4a2295cad602ba9d73683db88e799" category="doc">Découvrez les projets et les autorisations Google Cloud</block>
+  <block id="2182d12983be8c797d228ee21c2b02b0" category="inline-link">Console SaaS BlueXP</block>
+  <block id="17b675be82d235246bdf979500c94ab2" category="paragraph">Le connecteur comprend une interface utilisateur locale, accessible à partir de l'hôte du connecteur. Cette interface utilisateur est fournie pour les clients qui utilisent BlueXP en mode restreint ou privé. Lorsque vous utilisez BlueXP en mode standard, vous devez accéder à l'interface utilisateur à partir du<block ref="6548feb79c59958b036d822d57f02759" category="inline-link-rx"></block></block>
+  <block id="f04fb35532e1f63b23af3f141e062ccb" category="admonition">Lorsque vous utilisez BlueXP en mode standard ou restreint, le connecteur met automatiquement à jour ses logiciels vers la dernière version, tant qu'il dispose d'un accès Internet sortant pour obtenir la mise à jour logicielle.</block>
+  <block id="3268a52d584d54a973d1b4473e7ef96b" category="doc">Règles de pare-feu du connecteur dans Google Cloud</block>
+  <block id="2a503072b9710cfa223e43ffc3e2205d" category="inline-link">Découvrez comment gérer le stockage Google Cloud à partir de BlueXP</block>
+  <block id="bd41cc82cd5b7d398db648a7e5e5c451" category="paragraph">Si vous avez des compartiments Google Cloud Storage dans le même compte Google Cloud où vous avez créé le connecteur, un environnement de travail Google Cloud Storage s'affiche automatiquement sur le canevas BlueXP.<block ref="7f24473f521905a69e81b318fe43926f" category="inline-link-rx"></block></block>
+  <block id="ebbdb2eceb6d812854d7adfa9001d63f" category="paragraph">Lorsque vous utilisez BlueXP en mode standard ou restreint, le connecteur met automatiquement à jour ses logiciels vers la dernière version, tant qu'il dispose d'un accès Internet sortant pour obtenir la mise à jour logicielle. Si vous utilisez BlueXP en mode privé, vous devez mettre à niveau manuellement le connecteur.</block>
+  <block id="d53959ef476385f4ff37b13069a7450f" category="doc">Règles du groupe de sécurité du connecteur dans Azure</block>
+  <block id="af790df8534f0e00ebe9aac720a6201b" category="admonition">Si vous avez installé un connecteur dans AWS, Microsoft Azure ou Google Cloud, BlueXP découvre automatiquement des informations sur les compartiments Amazon S3, le stockage Azure Blob ou les compartiments Google Cloud Storage à l'emplacement où le connecteur est installé. Un environnement de travail est automatiquement ajouté au canevas BlueXP.</block>
+  <block id="dd746cfc77428bc895dc95237f5de7a8" category="sidebar">Options d'installation du connecteur</block>
+  <block id="a42616d3c3ebba497b57aee237328d50" category="sidebar">Créez un connecteur depuis BlueXP</block>
+  <block id="0f7c22f8ff1ddbe6e606a0a2925ab6b4" category="sidebar">Créez un connecteur à partir du Marketplace</block>
+  <block id="6abbc2938988f1a163c4450f171a3d41" category="sidebar">Installer manuellement le connecteur</block>
+  <block id="411ed7f7690ed51edcf19e7db36a24a5" category="sidebar">Créez un connecteur à partir de BlueXP ou de gcloud</block>
+  <block id="260bcd27c402b5ba9f5dcabbfc1e0ddd" category="sidebar">Informations d'identification et abonnements</block>
+  <block id="cbaee96b9499da2c5c6d3b23090382c6" category="sidebar">En savoir plus sur les informations d'identification et les autorisations</block>
+  <block id="9d812302dfdd0fdbf4faa0fe53b9ed24" category="sidebar">Apprenez-en plus sur les projets et les autorisations</block>
 </blocks>

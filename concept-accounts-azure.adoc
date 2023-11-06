@@ -4,7 +4,7 @@ permalink: concept-accounts-azure.html
 keywords: cloud provider accounts, azure, azure accounts, service principal, multiple accounts, permissions, policy, policies, subscriptions, credentials 
 summary: 'Découvrez comment BlueXP utilise les identifiants et les autorisations Azure pour effectuer des actions en votre nom. Ces informations peuvent vous être utiles lorsque vous gérez les identifiants d"un ou plusieurs abonnements Azure. Par exemple, vous pouvez savoir quand ajouter des informations d"identification Azure supplémentaires à BlueXP.' 
 ---
-= Identifiants et autorisations Azure
+= En savoir plus sur les identifiants et les autorisations Azure
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

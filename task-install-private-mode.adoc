@@ -24,7 +24,7 @@ Téléchargez le programme d'installation du produit sur le site de support NetA
 
 Si vous souhaitez utiliser BlueXP dans le https://aws.amazon.com/federal/secret-cloud/["Cloud secret AWS"^] ou le https://aws.amazon.com/federal/top-secret-cloud/["Le cloud le plus secret d'AWS"^], vous devez alors suivre des instructions séparées pour démarrer dans ces environnements. https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-getting-started-aws-c2s.html["Découvrez comment vous lancer avec Cloud Volumes ONTAP dans le cloud secret AWS ou le cloud secret"^]
 
-.Privilèges requis
+.Avant de commencer
 Les privilèges root sont requis pour installer le connecteur.
 
 .Étapes

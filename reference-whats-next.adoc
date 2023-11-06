@@ -16,6 +16,9 @@ summary: Maintenant que vous vous êtes connecté et que vous avez configuré Bl
 [role="lead"]
 Maintenant que vous vous êtes connecté et que vous avez configuré BlueXP en mode standard, les utilisateurs peuvent créer et découvrir des environnements de travail et utiliser les services de données BlueXP.
 
+
+TIP: Si vous avez installé un connecteur dans AWS, Microsoft Azure ou Google Cloud, BlueXP découvre automatiquement des informations sur les compartiments Amazon S3, le stockage Azure Blob ou les compartiments Google Cloud Storage à l'emplacement où le connecteur est installé. Un environnement de travail est automatiquement ajouté au canevas BlueXP.
+
 Pour obtenir de l'aide, consultez le https://docs.netapp.com/us-en/bluexp-family/["Page d'accueil de la documentation BlueXP"^] Pour afficher les documents relatifs à tous les services BlueXP.
 
 .Lien associé

@@ -93,6 +93,8 @@ L'hôte peut essayer de mettre à jour les packages du système d'exploitation l
 Points d'extrémité contactés depuis le connecteur:: Le connecteur nécessite un accès Internet sortant pour contacter les terminaux suivants afin de gérer les ressources et les processus au sein de votre environnement de cloud public pour les opérations quotidiennes.
 +
 --
+Notez que les points finaux répertoriés ci-dessous sont tous des entrées CNAME.
+
 [cols="2a,1a"]
 |===
 | Terminaux | Objectif 
@@ -426,6 +428,8 @@ Vous devez désactiver le mode restreint, car ces étapes décrivent l'utilisati
 
 .Résultat
 Le connecteur est maintenant installé et configuré avec votre compte BlueXP.
+
+Si vous avez des compartiments Google Cloud Storage dans le même compte Google Cloud où vous avez créé le connecteur, un environnement de travail Google Cloud Storage s'affiche automatiquement sur le canevas BlueXP. https://docs.netapp.com/us-en/bluexp-google-cloud-storage/index.html["Découvrez comment gérer le stockage Google Cloud à partir de BlueXP"^]
 
 
 

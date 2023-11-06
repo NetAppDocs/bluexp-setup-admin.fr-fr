@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task-managing-connectors.html 
-keywords: managing connectors, uninstall connector, switch connectors, switch between connectors, local interface, local connector, local cloud manager 
+keywords: managing connectors, uninstall connector, switch connectors, switch between connectors, local interface, local connector, local cloud manager, local ui, go to local ui 
 summary: Une fois que vous avez créé un connecteur, vous devrez peut-être le gérer de temps en temps. Par exemple, vous pouvez basculer entre les connecteurs si vous en avez plusieurs. Vous pouvez également avoir besoin de mettre à niveau manuellement le connecteur lorsque vous utilisez BlueXP en mode privé. 
 ---
 = Gérer les connecteurs existants
@@ -18,6 +18,13 @@ Une fois que vous avez créé un connecteur, vous devrez peut-être le gérer de
 
 link:concept-connectors.html["Découvrez le fonctionnement des connecteurs"].
 
+[NOTE]
+====
+Le connecteur comprend une interface utilisateur locale, accessible à partir de l'hôte du connecteur. Cette interface utilisateur est fournie pour les clients qui utilisent BlueXP en mode restreint ou privé. Lorsque vous utilisez BlueXP en mode standard, vous devez accéder à l'interface utilisateur à partir du https://console.bluexp.netapp.com/["Console SaaS BlueXP"^]
+
+link:concept-modes.html["Découvrez les modes de déploiement BlueXP"].
+
+====
 
 
 == Maintenance du système d'exploitation et des machines virtuelles
@@ -106,7 +113,7 @@ Si vous utilisez BlueXP en mode privé, vous pouvez mettre à niveau le connecte
 Le connecteur doit redémarrer pendant le processus de mise à niveau afin que la console Web ne soit pas disponible pendant la mise à niveau.
 
 
-NOTE: Sur les hôtes disposant d'un accès Internet, le connecteur met automatiquement à jour son logiciel vers la dernière version, tant qu'il dispose d'un accès Internet sortant pour obtenir la mise à jour du logiciel.
+NOTE: Lorsque vous utilisez BlueXP en mode standard ou restreint, le connecteur met automatiquement à jour ses logiciels vers la dernière version, tant qu'il dispose d'un accès Internet sortant pour obtenir la mise à jour logicielle.
 
 .Étapes
 . Téléchargez le logiciel du connecteur à partir du https://mysupport.netapp.com/site/products/all/details/cloud-manager/downloads-tab["Site de support NetApp"^].

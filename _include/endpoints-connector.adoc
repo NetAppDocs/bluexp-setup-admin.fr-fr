@@ -3,6 +3,11 @@
 
 
 Points d'extrémité contactés depuis le connecteur:: Le connecteur nécessite un accès Internet sortant pour contacter les terminaux suivants afin de gérer les ressources et les processus au sein de votre environnement de cloud public pour les opérations quotidiennes.
++
+--
+Notez que les points finaux répertoriés ci-dessous sont tous des entrées CNAME.
+
+--
 
 
 | Services AWS (amazonaws.com):

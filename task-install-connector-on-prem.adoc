@@ -87,6 +87,8 @@ L'hôte peut essayer de mettre à jour les packages du système d'exploitation l
 Points d'extrémité contactés depuis le connecteur:: Le connecteur nécessite un accès Internet sortant pour contacter les terminaux suivants afin de gérer les ressources et les processus au sein de votre environnement de cloud public pour les opérations quotidiennes.
 +
 --
+Notez que les points finaux répertoriés ci-dessous sont tous des entrées CNAME.
+
 [cols="2a,1a"]
 |===
 | Terminaux | Objectif 

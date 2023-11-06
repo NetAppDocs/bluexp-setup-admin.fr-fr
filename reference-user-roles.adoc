@@ -4,7 +4,7 @@ permalink: reference-user-roles.html
 keywords: user, users, roles, role, task, permission, permissions, tasks, admin, Account Admin, Workspace Admin, Cloud Compliance Viewer, Cloud Data Sense, SnapCenter Admin 
 summary: 'Les rôles Administrateur de compte, Administrateur d"espace de travail, Visionneuse de conformité et Administrateur SnapCenter fournissent des autorisations spécifiques aux utilisateurs. Vous pouvez attribuer l"un de ces rôles lorsque vous associez un nouvel utilisateur à votre compte BlueXP.' 
 ---
-= Rôles
+= Rôles utilisateur
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

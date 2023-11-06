@@ -4,7 +4,7 @@ permalink: reference-ports-gcp.html
 keywords: ports, firewall rules, http, https, inbound, outbound 
 summary: 'Les règles de pare-feu Google Cloud pour le connecteur exigent à la fois des règles entrantes et sortantes. BlueXP crée automatiquement ce groupe de sécurité lorsque vous créez un connecteur à partir de BlueXP. Vous devez configurer ce groupe de sécurité pour toutes les autres options d"installation.' 
 ---
-= Règles de pare-feu dans Google Cloud
+= Règles de pare-feu du connecteur dans Google Cloud
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
