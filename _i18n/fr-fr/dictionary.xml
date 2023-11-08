@@ -3775,4 +3775,7 @@ Non pris en charge dans Google Cloud ou dans<block ref="da2732e6e9a1be4ab82a1194
   <block id="260bcd27c402b5ba9f5dcabbfc1e0ddd" category="sidebar">Informations d'identification et abonnements</block>
   <block id="cbaee96b9499da2c5c6d3b23090382c6" category="sidebar">En savoir plus sur les informations d'identification et les autorisations</block>
   <block id="9d812302dfdd0fdbf4faa0fe53b9ed24" category="sidebar">Apprenez-en plus sur les projets et les autorisations</block>
+  <block id="d64cd771f2e77e7c0e4209d28afed019" category="section-title">8 novembre 2023</block>
+  <block id="82a9cd2bfcf44ef6090c93dcb2ee0451" category="section-title">Connecteur 3.9.35</block>
+  <block id="77fe99ef9ead4490d30142892f6b5fec" category="paragraph">Cette version contient des améliorations mineures de la sécurité et des corrections de bogues.</block>
 </blocks>
