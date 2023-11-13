@@ -16,7 +16,7 @@ summary: Commencez à utiliser BlueXP en mode standard en préparant la mise en 
 [role="lead"]
 Commencez à utiliser BlueXP en mode standard en préparant la mise en réseau de la console BlueXP, en vous inscrivant et en créant un compte, en option, un connecteur et en vous abonnant à BlueXP.
 
-Avant de commencer, vous devez avoir une compréhension de link:concept-netapp-accounts.html["Comptes BlueXP"], link:concept-connectors.html["Connecteurs"], et link:concept-modes.html["modes de déploiement"].
+En mode standard, BlueXP est accessible en tant que service cloud à partir de la console web. Avant de commencer, vous devez avoir une compréhension de link:concept-netapp-accounts.html["Comptes BlueXP"], link:concept-connectors.html["Connecteurs"], et link:concept-modes.html["modes de déploiement"].
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["Une seule"] link:reference-networking-saas-console.html["Préparez la mise en réseau à l'aide de la console BlueXP"]
 [role="quick-margin-para"]
