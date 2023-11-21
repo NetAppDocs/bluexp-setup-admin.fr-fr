@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: concept-accounts-azure.html 
-keywords: cloud provider accounts, azure, azure accounts, service principal, multiple accounts, permissions, policy, policies, subscriptions, credentials 
-summary: 'Découvrez comment BlueXP utilise les identifiants et les autorisations Azure pour effectuer des actions en votre nom. Ces informations peuvent vous être utiles lorsque vous gérez les identifiants d"un ou plusieurs abonnements Azure. Par exemple, vous pouvez savoir quand ajouter des informations d"identification Azure supplémentaires à BlueXP.' 
+keywords: cloud provider accounts, azure, azure accounts, service principal, multiple accounts, permissions, policy, policies, subscriptions, credentials, marketplace subscription, replace subscription, subscription 
+summary: 'Découvrez comment BlueXP utilise les identifiants Azure pour effectuer des actions en votre nom et comment ces identifiants sont associés aux abonnements Marketplace. Ces informations peuvent vous être utiles lorsque vous gérez les identifiants d"un ou plusieurs abonnements Azure. Par exemple, vous pouvez savoir quand ajouter des informations d"identification Azure supplémentaires à BlueXP.' 
 ---
 = En savoir plus sur les identifiants et les autorisations Azure
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: 'Découvrez comment BlueXP utilise les identifiants et les autorisation
 
 
 [role="lead"]
-Découvrez comment BlueXP utilise les identifiants et les autorisations Azure pour effectuer des actions en votre nom. Ces informations peuvent vous être utiles lorsque vous gérez les identifiants d'un ou plusieurs abonnements Azure. Par exemple, vous pouvez savoir quand ajouter des informations d'identification Azure supplémentaires à BlueXP.
+Découvrez comment BlueXP utilise les identifiants Azure pour effectuer des actions en votre nom et comment ces identifiants sont associés aux abonnements Marketplace. Ces informations peuvent vous être utiles lorsque vous gérez les identifiants d'un ou plusieurs abonnements Azure. Par exemple, vous pouvez savoir quand ajouter des informations d'identification Azure supplémentaires à BlueXP.
 
 
 
@@ -54,7 +54,49 @@ image:screenshot_accounts_switch_azure.gif["Capture d'écran affichant la sélec
 
 
 
-== Qu'en est-il des déploiements Marketplace et des déploiements sur site ?
+== Informations d'identification et abonnements Marketplace
+
+Les identifiants que vous ajoutez à un connecteur doivent être associés à un abonnement Azure Marketplace de sorte que vous puissiez payer Cloud Volumes ONTAP à un taux horaire (PAYGO) ou un contrat annuel, et utiliser d'autres services BlueXP.
+
+link:task-adding-azure-accounts.html#subscribe["Découvrez comment associer un abonnement Azure"].
+
+Notez ce qui suit à propos des identifiants Azure et des abonnements Marketplace :
+
+* Vous ne pouvez associer qu'un seul abonnement Azure Marketplace à un ensemble d'informations d'identification Azure
+* Vous pouvez remplacer un abonnement Marketplace existant par un nouvel abonnement
+
+
+
+
+== FAQ
+
+La question suivante concerne les informations d'identification et les abonnements.
+
+
+
+=== Est-il possible de modifier l'abonnement Azure Marketplace pour les environnements de travail Cloud Volumes ONTAP ?
+
+Oui, c'est possible. Lorsque vous modifiez l'abonnement Azure Marketplace associé à un ensemble d'identifiants Azure, tous les environnements de travail Cloud Volumes ONTAP existants et nouveaux sont facturés pour le nouvel abonnement.
+
+link:task-adding-azure-accounts.html#subscribe["Découvrez comment associer un abonnement Azure"].
+
+
+
+=== Puis-je ajouter plusieurs identifiants Azure, chacun avec des abonnements Marketplace différents ?
+
+Tous les identifiants Azure qui appartiennent au même abonnement Azure seront associés au même abonnement Azure Marketplace.
+
+Si plusieurs identifiants Azure appartiennent à différents abonnements Azure, ces identifiants peuvent être associés au même abonnement Azure Marketplace ou à d'autres abonnements Marketplace.
+
+
+
+=== Est-il possible de déplacer des environnements de travail Cloud Volumes ONTAP existants vers un autre abonnement Azure ?
+
+Non, il n'est pas possible de déplacer les ressources Azure associées à votre environnement de travail Cloud Volumes ONTAP vers un autre abonnement Azure.
+
+
+
+=== Comment fonctionnent les identifiants pour les déploiements sur site et sur le marché ?
 
 Les sections ci-dessus décrivent la méthode de déploiement recommandée pour le connecteur, qui provient de BlueXP. Vous pouvez également déployer un connecteur dans Azure à partir d'Azure Marketplace et installer le logiciel Connector sur votre propre hôte Linux.
 

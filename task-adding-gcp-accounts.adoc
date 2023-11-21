@@ -20,7 +20,9 @@ Vous pouvez gérer les informations d'identification Google Cloud associées à 
 
 == Associez un abonnement Marketplace avec des identifiants Google Cloud
 
-Lorsque vous déployez un connecteur dans Google Cloud, BlueXP crée un ensemble d'informations d'identification par défaut qui sont associées à l'instance de VM Connector. Vous pouvez à tout moment modifier l'abonnement Marketplace associé à ces informations d'identification. L'abonnement vous permet de créer un système Cloud Volumes ONTAP avec paiement à l'utilisation et d'utiliser d'autres services BlueXP.
+Lorsque vous déployez un connecteur dans Google Cloud, BlueXP crée un ensemble d'informations d'identification par défaut qui sont associées à l'instance de VM Connector. Vous pouvez à tout moment modifier l'abonnement Google Cloud Marketplace associé à ces informations d'identification. L'abonnement vous permet de créer un système Cloud Volumes ONTAP avec paiement à l'utilisation et d'utiliser d'autres services BlueXP.
+
+Le remplacement de l'abonnement Marketplace actuel par un nouvel abonnement modifie l'abonnement Marketplace pour tous les environnements de travail Cloud Volumes ONTAP existants et tous les nouveaux environnements de travail.
 
 .Étapes
 . Dans le coin supérieur droit de la console BlueXP, sélectionnez l'icône Paramètres, puis sélectionnez *informations d'identification*.

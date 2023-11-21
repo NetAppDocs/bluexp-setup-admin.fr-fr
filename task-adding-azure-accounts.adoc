@@ -4,7 +4,7 @@ permalink: task-adding-azure-accounts.html
 keywords: permissions, microsoft, azure, permissions, custom role, role, json, active directory, ad, service principal, key, tenant id, application key, application id, operator role, managed identity, iam, operator, role, virtual machine, create custom role, create azure custom role, azure custom role 
 summary: 'Ajoutez et gérez des identifiants Azure pour que BlueXP dispose des autorisations dont il a besoin pour déployer et gérer des ressources cloud dans vos abonnements Azure. Si vous gérez plusieurs abonnements Azure Marketplace, vous pouvez les attribuer à différentes informations d"identification Azure à partir de la page informations d"identification.' 
 ---
-= Gérez les informations d'identification et les abonnements Azure pour BlueXP
+= Gérez les identifiants Azure et les abonnements Marketplace pour BlueXP
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -327,7 +327,10 @@ Après avoir ajouté vos informations d'identification Azure à BlueXP, vous pou
 Deux scénarios peuvent vous être associés à un abonnement Azure Marketplace une fois que vous avez déjà ajouté les informations d'identification à BlueXP :
 
 * Vous n'avez pas associé d'abonnement lorsque vous avez initialement ajouté les informations d'identification à BlueXP.
-* Vous souhaitez remplacer un abonnement Azure Marketplace existant par un nouvel abonnement.
+* Vous souhaitez modifier l'abonnement Azure Marketplace associé aux informations d'identification Azure.
++
+Le remplacement de l'abonnement Marketplace actuel par un nouvel abonnement modifie l'abonnement Marketplace pour tous les environnements de travail Cloud Volumes ONTAP existants et tous les nouveaux environnements de travail.
+
 
 
 .Avant de commencer

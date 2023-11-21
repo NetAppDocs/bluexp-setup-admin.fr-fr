@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: concept-accounts-aws.html 
-keywords: cloud provider accounts, aws, aws accounts, keys, multiple accounts, permissions, aws permissions, policy, policies, credentials 
-summary: 'Découvrez comment BlueXP utilise les identifiants et les autorisations AWS pour effectuer des actions en votre nom. Ces informations peuvent vous être utiles lorsque vous gérez les identifiants d"un ou plusieurs comptes AWS dans BlueXP. Par exemple, vous pouvez savoir quand ajouter des informations d"identification AWS supplémentaires à BlueXP.' 
+keywords: cloud provider accounts, aws, aws accounts, keys, multiple accounts, permissions, aws permissions, policy, policies, credentials, marketplace subscription, replace subscription, subscription 
+summary: 'Découvrez comment BlueXP utilise les identifiants AWS pour effectuer des actions en votre nom et comment ces identifiants sont associés aux abonnements Marketplace. Ces informations peuvent vous être utiles lorsque vous gérez les identifiants d"un ou plusieurs comptes AWS dans BlueXP. Par exemple, vous pouvez savoir quand ajouter des informations d"identification AWS supplémentaires à BlueXP.' 
 ---
 = En savoir plus sur les identifiants et les autorisations AWS
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: 'Découvrez comment BlueXP utilise les identifiants et les autorisation
 
 
 [role="lead"]
-Découvrez comment BlueXP utilise les identifiants et les autorisations AWS pour effectuer des actions en votre nom. Ces informations peuvent vous être utiles lorsque vous gérez les identifiants d'un ou plusieurs comptes AWS dans BlueXP. Par exemple, vous pouvez savoir quand ajouter des informations d'identification AWS supplémentaires à BlueXP.
+Découvrez comment BlueXP utilise les identifiants AWS pour effectuer des actions en votre nom et comment ces identifiants sont associés aux abonnements Marketplace. Ces informations peuvent vous être utiles lorsque vous gérez les identifiants d'un ou plusieurs comptes AWS dans BlueXP. Par exemple, vous pouvez savoir quand ajouter des informations d'identification AWS supplémentaires à BlueXP.
 
 
 
@@ -48,13 +48,13 @@ Consultez les sections ci-dessous pour en savoir plus.
 
 === Ajoutez des identifiants AWS à un connecteur existant
 
-Si vous souhaitez lancer Cloud Volumes ONTAP sur différents comptes AWS, vous pouvez fournir des clés AWS pour un utilisateur IAM ou l'ARN d'un rôle dans un compte sécurisé. L'image suivante montre deux comptes supplémentaires, l'un avec des autorisations par le biais d'un rôle IAM dans un compte de confiance et l'autre avec les clés AWS d'un utilisateur IAM :
+Si vous souhaitez utiliser BlueXP avec d'autres comptes AWS, vous pouvez fournir des clés AWS pour un utilisateur IAM ou l'ARN d'un rôle dans un compte approuvé. L'image suivante montre deux comptes supplémentaires, l'un avec des autorisations par le biais d'un rôle IAM dans un compte de confiance et l'autre avec les clés AWS d'un utilisateur IAM :
 
 image:diagram_permissions_multiple_aws.png["Image conceptuelle qui affiche deux comptes supplémentaires. Chaque groupe dispose d'une politique IAM, l'un est rattaché à l'utilisateur IAM et l'autre est associé à un rôle IAM."]
 
 Vous pouvez ensuite ajouter les informations d'identification du compte à BlueXP en spécifiant le nom de ressource Amazon (ARN) du rôle IAM ou les clés AWS de l'utilisateur IAM.
 
-Après avoir ajouté un autre ensemble d'informations d'identification, vous pouvez les passer lors de la création d'un nouvel environnement de travail :
+Par exemple, vous pouvez basculer entre les informations d'identification lors de la création d'un nouvel environnement de travail Cloud Volumes ONTAP :
 
 image:screenshot_accounts_switch_aws.png["Capture d'écran affichant la sélection d'un compte de fournisseur cloud à l'autre après avoir sélectionné changer de compte dans la page Détails  Credentials."]
 
@@ -72,7 +72,59 @@ L'ajout de nouvelles informations d'identification AWS à BlueXP fournit les aut
 
 
 
-== Qu'en est-il des déploiements Marketplace et des déploiements sur site ?
+== Informations d'identification et abonnements Marketplace
+
+Les identifiants que vous ajoutez à un connecteur doivent être associés à un abonnement AWS Marketplace pour que vous puissiez payer Cloud Volumes ONTAP à un taux horaire (PAYGO) ou un contrat annuel, et pour utiliser d'autres services BlueXP.
+
+link:task-adding-aws-accounts.html#subscribe["Découvrez comment associer un abonnement AWS"].
+
+Notez les informations d'identification et les abonnements Marketplace d'AWS :
+
+* Vous ne pouvez associer qu'un seul abonnement AWS Marketplace à un ensemble d'informations d'identification AWS
+* Vous pouvez remplacer un abonnement Marketplace existant par un nouvel abonnement
+
+
+
+
+== FAQ
+
+Les questions suivantes concernent les informations d'identification et les abonnements.
+
+
+
+=== Comment faire tourner mes identifiants AWS en toute sécurité ?
+
+Comme décrit dans les sections ci-dessus, BlueXP vous permet de fournir des identifiants AWS de quelques manières : un rôle IAM associé à l'instance Connector, en supposant un rôle IAM dans un compte approuvé ou en fournissant des clés d'accès AWS.
+
+Avec les deux premières options, BlueXP utilise AWS Security Token Service pour obtenir des informations d'identification temporaires qui tournent en permanence. Ce processus est la meilleure pratique--il automatique et sécurisé.
+
+Si vous fournissez des clés d'accès AWS BlueXP, vous devez les mettre à jour régulièrement dans BlueXP. Il s'agit d'un processus entièrement manuel.
+
+
+
+=== Est-il possible de modifier l'abonnement AWS Marketplace pour les environnements de travail Cloud Volumes ONTAP ?
+
+Oui, c'est possible. Lorsque vous modifiez l'abonnement AWS Marketplace associé à un ensemble d'identifiants, tous les environnements de travail Cloud Volumes ONTAP existants et nouveaux seront facturés pour le nouvel abonnement.
+
+link:task-adding-aws-accounts.html#subscribe["Découvrez comment associer un abonnement AWS"].
+
+
+
+=== Puis-je ajouter plusieurs identifiants AWS, chacun avec des abonnements Marketplace différents ?
+
+Tous les identifiants AWS qui appartiennent au même compte AWS seront associés au même abonnement AWS Marketplace.
+
+Si plusieurs identifiants AWS appartiennent à différents comptes AWS, ils peuvent être associés au même abonnement AWS Marketplace ou à d'autres abonnements.
+
+
+
+=== Est-il possible de déplacer les environnements de travail Cloud Volumes ONTAP existants vers un autre compte AWS ?
+
+Non, il n'est pas possible de déplacer les ressources AWS associées à votre environnement de travail Cloud Volumes ONTAP vers un autre compte AWS.
+
+
+
+=== Comment fonctionnent les identifiants pour les déploiements sur site et sur le marché ?
 
 Les sections ci-dessus décrivent la méthode de déploiement recommandée pour le connecteur, qui provient de BlueXP. Vous pouvez également déployer un connecteur dans AWS à partir d'AWS Marketplace et installer manuellement le logiciel Connector sur votre propre hôte Linux.
 
@@ -91,13 +143,3 @@ Pour savoir comment configurer les autorisations, reportez-vous aux pages suivan
 * link:task-prepare-restricted-mode.html#step-5-prepare-cloud-permissions["Définissez les autorisations pour le mode restreint"]
 * link:task-prepare-private-mode.html#step-5-prepare-cloud-permissions["Configurez les autorisations pour le mode privé"]
 
-
-
-
-== Comment faire tourner mes identifiants AWS en toute sécurité ?
-
-Comme décrit ci-dessus, BlueXP vous permet de fournir des identifiants AWS de diverses manières : un rôle IAM associé à l'instance Connector, en assumant un rôle IAM dans un compte de confiance ou en fournissant des clés d'accès AWS.
-
-Avec les deux premières options, BlueXP utilise AWS Security Token Service pour obtenir des informations d'identification temporaires qui tournent en permanence. Ce processus est la meilleure pratique--il automatique et sécurisé.
-
-Si vous fournissez des clés d'accès AWS BlueXP, vous devez les mettre à jour régulièrement dans BlueXP. Il s'agit d'un processus entièrement manuel.

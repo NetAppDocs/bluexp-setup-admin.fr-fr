@@ -4,7 +4,7 @@ permalink: task-adding-aws-accounts.html
 keywords: permissions, aws, policy, iam, iam role, role, granting, policy, iam policy, iam user, access keys, arn, cloud provider accounts, aws, cloud provider profile, json, iam, credentials, adding credentials, add credentials 
 summary: 'Ajoutez et gérez des identifiants AWS de sorte que BlueXP dispose des autorisations nécessaires pour déployer et gérer des ressources cloud dans vos comptes AWS. Si vous gérez plusieurs abonnements AWS, vous pouvez les attribuer à différentes informations d"identification AWS à partir de la page informations d"identification.' 
 ---
-= Gérez les informations d'identification et les abonnements AWS pour BlueXP
+= Gérez les identifiants AWS et les abonnements Marketplace pour BlueXP
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -228,7 +228,10 @@ Après avoir ajouté vos identifiants AWS à BlueXP, vous pouvez associer un abo
 Deux scénarios peuvent vous être associés à un abonnement AWS Marketplace une fois que vous avez déjà ajouté les identifiants à BlueXP :
 
 * Vous n'avez pas associé d'abonnement lorsque vous avez initialement ajouté les informations d'identification à BlueXP.
-* Vous souhaitez remplacer un abonnement AWS Marketplace existant par un nouvel abonnement.
+* Vous souhaitez modifier l'abonnement AWS Marketplace associé aux identifiants AWS.
++
+Le remplacement de l'abonnement Marketplace actuel par un nouvel abonnement modifie l'abonnement Marketplace pour tous les environnements de travail Cloud Volumes ONTAP existants et tous les nouveaux environnements de travail.
+
 
 
 .Avant de commencer

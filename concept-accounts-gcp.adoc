@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: concept-accounts-gcp.html 
 keywords: cloud provider accounts, gcp, gcp accounts, google cloud platform, google accounts, google cloud platform accounts, permissions, project, google cloud project 
-summary: 'Découvrez comment BlueXP utilise les identifiants et les autorisations Google Cloud pour effectuer des actions en votre nom. Ces informations peuvent vous être utiles lorsque vous gérez les identifiants d"un ou plusieurs projets Google Cloud. Par exemple, vous pourriez vouloir en savoir plus sur le compte de service associé à la VM Connector.' 
+summary: 'Découvrez comment BlueXP utilise les identifiants Google Cloud pour effectuer des actions en votre nom et comment ces identifiants sont associés aux abonnements Marketplace. Ces informations peuvent vous être utiles lorsque vous gérez les identifiants d"un ou plusieurs projets Google Cloud. Par exemple, vous pourriez vouloir en savoir plus sur le compte de service associé à la VM Connector.' 
 ---
 = Découvrez les projets et les autorisations Google Cloud
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: 'Découvrez comment BlueXP utilise les identifiants et les autorisation
 
 
 [role="lead"]
-Découvrez comment BlueXP utilise les identifiants et les autorisations Google Cloud pour effectuer des actions en votre nom. Ces informations peuvent vous être utiles lorsque vous gérez les identifiants d'un ou plusieurs projets Google Cloud. Par exemple, vous pourriez vouloir en savoir plus sur le compte de service associé à la VM Connector.
+Découvrez comment BlueXP utilise les identifiants Google Cloud pour effectuer des actions en votre nom et comment ces identifiants sont associés aux abonnements Marketplace. Ces informations peuvent vous être utiles lorsque vous gérez les identifiants d'un ou plusieurs projets Google Cloud. Par exemple, vous pourriez vouloir en savoir plus sur le compte de service associé à la VM Connector.
 
 
 
@@ -37,6 +37,21 @@ Pour savoir comment configurer les autorisations, reportez-vous aux pages suivan
 * link:task-install-connector-google-bluexp-gcloud.html#step-2-set-up-permissions-to-create-the-connector["Configurez les autorisations Google Cloud pour le mode standard"]
 * link:task-prepare-restricted-mode.html#step-5-prepare-cloud-permissions["Définissez les autorisations pour le mode restreint"]
 * link:task-prepare-private-mode.html#step-5-prepare-cloud-permissions["Configurez les autorisations pour le mode privé"]
+
+
+
+
+== Informations d'identification et abonnements Marketplace
+
+Lorsque vous déployez un connecteur dans Google Cloud, BlueXP crée un ensemble d'informations d'identification par défaut pour le compte de service Google Cloud dans le projet où réside le connecteur. Ces identifiants doivent être associés à un abonnement à Google Cloud Marketplace afin que vous puissiez payer Cloud Volumes ONTAP à un taux horaire (PAYGO) et utiliser d'autres services BlueXP.
+
+link:task-adding-gcp-accounts.html["Découvrez comment associer un abonnement Google Cloud Marketplace"].
+
+Remarque : concernant les identifiants Google Cloud et les abonnements Marketplace, vous devez :
+
+* Un seul ensemble d'identifiants Google Cloud peut être associé à un connecteur
+* Vous ne pouvez associer qu'un seul abonnement Google Cloud Marketplace aux identifiants
+* Vous pouvez remplacer un abonnement Marketplace existant par un nouvel abonnement
 
 
 
