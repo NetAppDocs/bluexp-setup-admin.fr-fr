@@ -116,11 +116,13 @@ L'utilisateur peut désormais accéder à ces espaces de travail depuis BlueXP, 
 
 == Création et gestion de comptes de service
 
-Un compte de service agit comme un « utilisateur » qui peut effectuer des appels API autorisés vers BlueXP à des fins d'automatisation. Il est ainsi plus facile de gérer l'automatisation, car il n'est pas nécessaire de créer des scripts d'automatisation basés sur le compte d'utilisateur réel d'une personne qui quitte l'entreprise à tout moment. Et si vous utilisez la fédération, vous pouvez créer un jeton sans générer de jeton d'actualisation à partir du cloud.
+Un compte de service agit comme un « utilisateur » qui peut effectuer des appels API autorisés vers BlueXP à des fins d'automatisation. Il est ainsi plus facile de gérer l'automatisation, car il n'est pas nécessaire de créer des scripts d'automatisation basés sur le compte d'utilisateur réel d'une personne qui quitte l'entreprise à tout moment.
 
 Vous donnez des autorisations à un compte de service en lui attribuant un rôle, tout comme n'importe quel autre utilisateur BlueXP. Vous pouvez également associer le compte de service à des espaces de travail spécifiques afin de contrôler les environnements de travail (ressources) auxquels le service peut accéder.
 
 Lorsque vous créez le compte de service, BlueXP vous permet de copier ou de télécharger un ID client et un secret client pour le compte de service. Cette paire de clés est utilisée pour l'authentification avec BlueXP.
+
+Notez qu'un jeton d'actualisation n'est pas requis pour les opérations d'API lors de l'utilisation d'un compte de service. https://docs.netapp.com/us-en/bluexp-automation/platform/grant_types.html["En savoir plus sur les jetons d'actualisation"^]
 
 
 

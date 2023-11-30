@@ -27,6 +27,9 @@ Ces terminaux sont contactés depuis l'ordinateur d'un utilisateur lorsqu'ils ef
 \https://*.console.bluexp.netapp.com | Votre navigateur web contacte ces URL lorsque vous utilisez la console web BlueXP. 
 
 
+| \https://aiq.netapp.com | Requis pour accéder au conseiller digital BlueXP. 
+
+
  a| 
 Services AWS (amazonaws.com):
 
