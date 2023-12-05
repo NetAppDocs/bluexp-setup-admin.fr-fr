@@ -198,9 +198,6 @@ Lorsque vous utilisez la classification BlueXP pour analyser les données Azure 
 
 Il effectue les requêtes API suivantes pour la sauvegarde et la restauration BlueXP :
 
-* Microsoft.Compute/virtualMachines/read
-* Microsoft.Compute/virtualMachines/start/action
-* Microsoft.Compute/virtualMachines/deallocate/action
 * Microsoft.Storage/storageAccounts/listkeys/action
 * Microsoft.Storage/storageAccounts/read
 * Microsoft.Storage/storageAccounts/write
@@ -223,8 +220,6 @@ Il effectue les requêtes API suivantes pour la sauvegarde et la restauration Bl
 * Microsoft.Network/privateDnsZones/A/write
 * Microsoft.Network/privateDnsZones/read
 * Microsoft.Network/privateDnsZones/virtualNetworkLinks/read
-* Microsoft.Compute/virtualMachines/extensions/delete
-* Microsoft.Compute/virtualMachines/delete
 * Microsoft.Network/networkInterfaces/delete
 * Microsoft.Network/networkSecurityGroups/delete
 * Microsoft.Ressources/déploiements/suppression
@@ -772,6 +767,21 @@ Le connecteur effectue les demandes d'API suivantes pour les opérations quotidi
 == Journal des modifications
 
 Lorsque des autorisations sont ajoutées et supprimées, nous les noterons dans les sections ci-dessous.
+
+
+
+=== 5 décembre 2023
+
+Les autorisations suivantes ne sont plus nécessaires pour la sauvegarde et la restauration BlueXP lors de la sauvegarde des données de volume vers le stockage Azure Blob :
+
+* Microsoft.Compute/virtualMachines/read
+* Microsoft.Compute/virtualMachines/start/action
+* Microsoft.Compute/virtualMachines/deallocate/action
+* Microsoft.Compute/virtualMachines/extensions/delete
+* Microsoft.Compute/virtualMachines/delete
+
+
+Ces autorisations sont requises pour les autres services de stockage BlueXP. Elles resteront donc dans le rôle personnalisé du connecteur si vous utilisez ces autres services de stockage.
 
 
 

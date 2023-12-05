@@ -3839,4 +3839,7 @@ Non pris en charge dans Google Cloud ou dans<block ref="da2732e6e9a1be4ab82a1194
   <block id="74456640d8afbf406f720d7bd598b445" category="list-text">La sauvegarde et la restauration de volumes ONTAP sur site vers ONTAP S3 sont également prises en charge.</block>
   <block id="18bb302ce6a2bf46e1beed1133756fb6" category="inline-link">Découvrez comment sauvegarder vos données ONTAP sur site dans ONTAP S3</block>
   <block id="4befb86902877ee4e8c0bab35f4c9850" category="paragraph"><block ref="4befb86902877ee4e8c0bab35f4c9850" category="inline-link-rx"></block></block>
+  <block id="d22d5d645d5b80561936fd406bec2118" category="section-title">5 décembre 2023</block>
+  <block id="f729237ece11d2ac3f651452a87ead32" category="paragraph">Les autorisations suivantes ne sont plus nécessaires pour la sauvegarde et la restauration BlueXP lors de la sauvegarde des données de volume vers le stockage Azure Blob :</block>
+  <block id="fe3f6158e2c4c966c8642056658d69e0" category="paragraph">Ces autorisations sont requises pour les autres services de stockage BlueXP. Elles resteront donc dans le rôle personnalisé du connecteur si vous utilisez ces autres services de stockage.</block>
 </blocks>
