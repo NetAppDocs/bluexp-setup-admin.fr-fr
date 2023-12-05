@@ -276,9 +276,17 @@ Prise en charge des services BlueXP dans les déploiements sur site:: BlueXP pre
 | Services pris en charge | Remarques 
 
 
-| Sauvegarde et restauration | Seules les opérations de sauvegarde et de restauration de volumes ONTAP sur site sur des systèmes StorageGRID sont prises en charge.
+| Sauvegarde et restauration  a| 
+* La sauvegarde et la restauration de volumes ONTAP sur site sur des systèmes StorageGRID sont prises en charge.
++
+https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-onprem-private-cloud.html["Découvrez comment sauvegarder vos données ONTAP sur site dans StorageGRID"^]
 
-https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-onprem-private-cloud.html["Découvrez comment sauvegarder vos données ONTAP sur site dans StorageGRID"^] 
+* La sauvegarde et la restauration de volumes ONTAP sur site vers ONTAP S3 sont également prises en charge.
++
+https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-onprem-to-ontap-s3.html["Découvrez comment sauvegarder vos données ONTAP sur site dans ONTAP S3"^]
+
+
+
 
 
 | Classement  a| 
