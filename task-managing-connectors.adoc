@@ -39,6 +39,23 @@ link:concept-connectors.html#connectors-must-be-operational-at-all-times["Notez 
 
 
 
+== Afficher la version d'un connecteur
+
+Vous pouvez afficher la version de votre connecteur pour vérifier que le connecteur est automatiquement mis à niveau vers la dernière version ou parce que vous devez le partager avec votre représentant NetApp.
+
+.Étapes
+. Dans l'angle supérieur droit de la console BlueXP, sélectionnez l'icône aide.
+. Sélectionnez *support > BlueXP Connector*.
++
+La version s'affiche en haut de la page.
+
++
+image:screenshot-connector-version.png["Capture d'écran affichant la version du connecteur dans le tableau de bord de support."]
+
+
+
+
+
 == Basculer entre les connecteurs
 
 Si vous avez plusieurs connecteurs, vous pouvez passer de l'un à l'autre pour voir les environnements de travail associés à un connecteur spécifique.

@@ -18,6 +18,20 @@ Découvrez les nouveautés des fonctionnalités d'administration BlueXP : compte
 
 
 
+== 11 janvier 2024
+
+
+
+=== Connecteur 3.9.36
+
+Cette version inclut des améliorations mineures, des correctifs et la prise en charge de Connector dans les régions cloud suivantes :
+
+* La région d'Israël (tel Aviv) à AWS
+* La région de l'Arabie saoudite dans Google Cloud
+
+
+
+
 == 5 décembre 2023
 
 

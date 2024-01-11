@@ -12,11 +12,8 @@
   <block id="4d23d12ce4b0de2019310ec73c45d09b" category="doc">Recherchez l'ID système d'un connecteur</block>
   <block id="f3a29486bed19a90f2da6d007818b427" category="list-title">Étapes</block>
   <block id="beabea313ffb3a9482595dfdd092b6c6" category="list-text">Dans l'angle supérieur droit de la console BlueXP, sélectionnez l'icône aide.</block>
-  <block id="ee2045d2e396ef6520817ecf395d1155" category="list-text">Sélectionnez *support &gt; connecteur*.</block>
-  <block id="cd9ffc2440addbacdf692ee7105ad41f" category="paragraph">L'ID du système apparaît en haut.</block>
   <block id="938f1047c15f00fdd0cbfc8e4cfa15e1" category="paragraph">*Exemple*</block>
   <block id="2529cf627b3e8b4f850e5b8e7998dea3" category="inline-image-macro">Capture d'écran affichant l'ID système pour BlueXP qui apparaît dans le tableau de bord de support.</block>
-  <block id="dd452be96917f1c62ed3d40b11c4ebf2" category="paragraph"><block ref="dd452be96917f1c62ed3d40b11c4ebf2" category="inline-image-macro-rx" type="image"></block></block>
   <block id="a31342596e31d918d08c0417177a8f77" category="list-text">Accédez au portail Google Cloud et attribuez le compte de service à l'instance de la VM Connector.</block>
   <block id="81c722be01f6c1251ced26ff2ff9dd3f" category="inline-link">Documentation Google Cloud : modification du compte de service et des étendues d'accès pour une instance</block>
   <block id="c8b77e7a211a8e1bbb884962a105fc2f" category="paragraph"><block ref="c8b77e7a211a8e1bbb884962a105fc2f" category="inline-link-rx"></block></block>
@@ -952,8 +949,6 @@
   <block id="14526abd8bda5af347775025cd5342cf" category="inline-link">Communautés</block>
   <block id="410fdb9caa9c64da2ff3f88f4836960d" category="list-text"><block ref="410fdb9caa9c64da2ff3f88f4836960d" category="inline-link-rx"></block></block>
   <block id="00c5fef3bb9d593ae96bf5d2ee60354a" category="paragraph">Rejoignez la communauté BlueXP pour suivre des discussions en cours ou en créer de nouveaux.</block>
-  <block id="80b1b0d2b1ebf2b3cba2d25759801afd" category="list-text">Courrier électronique :ng-cloudmanager-feedback@netapp.com[E-mail de commentaires]</block>
-  <block id="6702efec14563f45f1ee2f8c613b8ad8" category="paragraph">Nous accordons une grande importance à vos commentaires. Envoyez vos commentaires pour nous aider à améliorer BlueXP.</block>
   <block id="d88bacf2a9fdcbbc844edcba97c34e30" category="section-title">Créez un dossier de demande de support auprès du support NetApp</block>
   <block id="82812db645b6ff5e9c2a24ddfb66c8d6" category="paragraph">Outre les options d'auto-support mentionnées ci-dessus, vous pouvez travailler avec un spécialiste du support NetApp pour résoudre tous les problèmes après avoir activé le service de support.</block>
   <block id="920fe1428c19533eda6222fe7e58efbe" category="inline-link">Découvrez comment gérer les identifiants associés à votre connexion BlueXP</block>
@@ -3842,4 +3837,17 @@ Non pris en charge dans Google Cloud ou dans<block ref="da2732e6e9a1be4ab82a1194
   <block id="d22d5d645d5b80561936fd406bec2118" category="section-title">5 décembre 2023</block>
   <block id="f729237ece11d2ac3f651452a87ead32" category="paragraph">Les autorisations suivantes ne sont plus nécessaires pour la sauvegarde et la restauration BlueXP lors de la sauvegarde des données de volume vers le stockage Azure Blob :</block>
   <block id="fe3f6158e2c4c966c8642056658d69e0" category="paragraph">Ces autorisations sont requises pour les autres services de stockage BlueXP. Elles resteront donc dans le rôle personnalisé du connecteur si vous utilisez ces autres services de stockage.</block>
+  <block id="17c3c89f25f7684516a883f30f10b747" category="section-title">11 janvier 2024</block>
+  <block id="dfbe132af57c8e3ca0aa9a94fc940839" category="section-title">Connecteur 3.9.36</block>
+  <block id="c86344b833d64024dcd801a79f3f366e" category="paragraph">Cette version inclut des améliorations mineures, des correctifs et la prise en charge de Connector dans les régions cloud suivantes :</block>
+  <block id="5c4c535d51f9fbfc21f1baf9f449004c" category="list-text">La région d'Israël (tel Aviv) à AWS</block>
+  <block id="c53c95f8243560e843dabb8877e4d787" category="list-text">La région de l'Arabie saoudite dans Google Cloud</block>
+  <block id="3244421fb40bc38e67d918370813ac13" category="list-text">Sélectionnez *support &gt; BlueXP Connector*.</block>
+  <block id="f3678f7b6e79e91c386c1443915f058a" category="paragraph">L'ID système apparaît en haut de la page.</block>
+  <block id="78b33f2334c7af84c813788a6be69874" category="paragraph"><block ref="78b33f2334c7af84c813788a6be69874" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="da0773230b01d6a89d37c6a470238b1c" category="section-title">Afficher la version d'un connecteur</block>
+  <block id="9135b5936981eca97dce83eb29069ca4" category="paragraph">Vous pouvez afficher la version de votre connecteur pour vérifier que le connecteur est automatiquement mis à niveau vers la dernière version ou parce que vous devez le partager avec votre représentant NetApp.</block>
+  <block id="eb59fa7ccae5cea6d510c55c15078ce1" category="paragraph">La version s'affiche en haut de la page.</block>
+  <block id="a2f380016f769a1938d51415013af95a" category="inline-image-macro">Capture d'écran affichant la version du connecteur dans le tableau de bord de support.</block>
+  <block id="da65ca9f7cc579e3fad52951fe45cdb6" category="paragraph"><block ref="da65ca9f7cc579e3fad52951fe45cdb6" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>
