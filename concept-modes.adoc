@@ -158,7 +158,9 @@ Services BlueXP pris en charge:: BlueXP prend en charge les services de données
 
 | Sauvegarde et restauration | Pris en charge dans les régions gouvernementales et commerciales avec mode restreint. Non pris en charge dans les régions souveraines avec mode restreint.
 
-Les fonctionnalités suivantes ne sont pas prises en charge : applications, machines virtuelles et Kubernetes. 
+En mode restreint, la sauvegarde et la restauration BlueXP prennent en charge la sauvegarde et la restauration des données de volume ONTAP uniquement. https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-protection-journey.html#support-when-using-restricted-mode["Affichez la liste des destinations de sauvegarde prises en charge pour les données ONTAP"^]
+
+La sauvegarde et la restauration des données applicatives, des données de machines virtuelles et des données Kubernetes ne sont pas prises en charge. 
 
 
 | Classement  a| 
@@ -254,7 +256,11 @@ Services BlueXP pris en charge dans les déploiements cloud:: BlueXP prend en ch
 
 | Sauvegarde et restauration | Pris en charge dans les régions commerciales AWS et Azure.
 
-Non pris en charge dans Google Cloud ou dans https://aws.amazon.com/federal/secret-cloud/["Cloud secret AWS"^], https://aws.amazon.com/federal/top-secret-cloud/["Le cloud le plus secret d'AWS"^], ou https://learn.microsoft.com/en-us/azure/compliance/offerings/offering-dod-il6["Azure IL6"^] 
+Non pris en charge dans Google Cloud ou dans https://aws.amazon.com/federal/secret-cloud/["Cloud secret AWS"^], https://aws.amazon.com/federal/top-secret-cloud/["Le cloud le plus secret d'AWS"^], ou https://learn.microsoft.com/en-us/azure/compliance/offerings/offering-dod-il6["Azure IL6"^]
+
+En mode privé, la sauvegarde et la restauration BlueXP prennent en charge la sauvegarde et la restauration des données de volume ONTAP uniquement. https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-protection-journey.html#support-when-using-private-mode["Affichez la liste des destinations de sauvegarde prises en charge pour les données ONTAP"^]
+
+La sauvegarde et la restauration des données applicatives, des données de machines virtuelles et des données Kubernetes ne sont pas prises en charge. 
 
 
 | Cloud Volumes ONTAP | Comme il n'y a pas d'accès à Internet, les fonctionnalités suivantes ne sont pas disponibles : mises à niveau logicielles automatisées et AutoSupport. 
@@ -277,15 +283,9 @@ Prise en charge des services BlueXP dans les déploiements sur site:: BlueXP pre
 
 
 | Sauvegarde et restauration  a| 
-* La sauvegarde et la restauration de volumes ONTAP sur site sur des systèmes StorageGRID sont prises en charge.
-+
-https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-onprem-private-cloud.html["Découvrez comment sauvegarder vos données ONTAP sur site dans StorageGRID"^]
+En mode privé, la sauvegarde et la restauration BlueXP prennent en charge la sauvegarde et la restauration des données de volume ONTAP uniquement. https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-protection-journey.html#support-when-using-private-mode["Affichez la liste des destinations de sauvegarde prises en charge pour les données de volume ONTAP"^]
 
-* La sauvegarde et la restauration de volumes ONTAP sur site vers ONTAP S3 sont également prises en charge.
-+
-https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-onprem-to-ontap-s3.html["Découvrez comment sauvegarder vos données ONTAP sur site dans ONTAP S3"^]
-
-
+La sauvegarde et la restauration des données applicatives, des données de machines virtuelles et des données Kubernetes ne sont pas prises en charge.
 
 
 
@@ -343,7 +343,9 @@ Notez que certains services peuvent être pris en charge avec des limitations. P
 | Zone du produit | Service ou fonctionnalité BlueXP | Mode restreint | Mode privé 
 
 
-.11+| *Environnements de travail* | Amazon FSX pour ONTAP | Oui. | Non 
+.11+| *Environnements de travail*
+
+Cette partie du tableau répertorie la prise en charge de la gestion de l'environnement de travail depuis le canevas BlueXP. Il n'indique pas les destinations de sauvegarde prises en charge pour la sauvegarde et la restauration BlueXP. | Amazon FSX pour ONTAP | Oui. | Non 
 
 
 | Amazon S3 | Non | Non 
@@ -376,7 +378,11 @@ Notez que certains services peuvent être pris en charge avec des limitations. P
 | StorageGRID | Non | Non 
 
 
-.16+| *Services* | Sauvegarde et restauration | Oui. | Oui. 
+.16+| *Services* | Sauvegarde et restauration | Oui.
+
+https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-protection-journey.html#support-when-using-restricted-mode["Affichez la liste des destinations de sauvegarde prises en charge pour les données de volume ONTAP"^] | Oui.
+
+https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-protection-journey.html#support-when-using-private-mode["Affichez la liste des destinations de sauvegarde prises en charge pour les données de volume ONTAP"^] 
 
 
 | Classement | Oui. | Oui. 
