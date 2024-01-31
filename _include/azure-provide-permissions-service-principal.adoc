@@ -9,7 +9,7 @@ image:screenshot_settings_icon.gif["Capture d'écran affichant l'icône Paramèt
 . Sélectionnez *Ajouter des informations d'identification* et suivez les étapes de l'assistant.
 +
 .. *Emplacement des informations d'identification* : sélectionnez *Microsoft Azure > connecteur*.
-.. *Définir les informations d'identification* : saisissez des informations sur l'entité principale du service Azure Active Directory qui accorde les autorisations requises :
+.. *Définir les informations d'identification* : saisissez les informations relatives à l'entité de service Microsoft Entra qui accorde les autorisations requises :
 +
 *** ID de l'application (client)
 *** ID du répertoire (locataire)

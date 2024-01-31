@@ -42,7 +42,7 @@ L'identité gérée attribuée par le système à la VM Connector est associée 
 
 == Autres identifiants Azure
 
-Si vous souhaitez utiliser d'autres identifiants Azure avec BlueXP, vous devez accorder les autorisations requises par link:task-adding-azure-accounts.html["Création et configuration d'une entité de service dans Azure Active Directory"] Pour chaque compte Azure. L'image suivante montre deux comptes supplémentaires, chacun étant doté d'un rôle principal de service et personnalisé qui fournit des autorisations :
+Si vous souhaitez utiliser d'autres identifiants Azure avec BlueXP, vous devez accorder les autorisations requises par link:task-adding-azure-accounts.html["Création et configuration d'une entité de service dans Microsoft Entra ID"] Pour chaque compte Azure. L'image suivante montre deux comptes supplémentaires, chacun étant doté d'un rôle principal de service et personnalisé qui fournit des autorisations :
 
 image:diagram_permissions_multiple_azure.png["Image conceptuelle qui affiche le compte Azure initial, qui reçoit des autorisations par le biais d'un rôle personnalisé et d'une identité gérée, et deux comptes supplémentaires qui reçoivent des autorisations par l'intermédiaire d'un rôle et d'un entité de service personnalisés."]
 
@@ -100,7 +100,7 @@ Non, il n'est pas possible de déplacer les ressources Azure associées à votre
 
 Les sections ci-dessus décrivent la méthode de déploiement recommandée pour le connecteur, qui provient de BlueXP. Vous pouvez également déployer un connecteur dans Azure à partir d'Azure Marketplace et installer le logiciel Connector sur votre propre hôte Linux.
 
-Si vous utilisez Marketplace, vous pouvez fournir des autorisations en attribuant un rôle personnalisé à la VM Connector et à une identité gérée attribuée par le système, ou vous pouvez utiliser l'entité de service Azure AD.
+Si vous utilisez Marketplace, vous pouvez fournir des autorisations en attribuant un rôle personnalisé à la machine virtuelle Connector et à une identité gérée attribuée par le système, ou vous pouvez utiliser une entité de service Microsoft Entra.
 
 Pour les déploiements sur site, vous ne pouvez pas configurer d'identité gérée pour le connecteur, mais vous pouvez fournir des autorisations en utilisant une entité de service.
 

@@ -120,6 +120,14 @@ Si les systèmes Cloud Volumes ONTAP ne disposent pas d'une connexion Internet s
 --
 
 
+Activez le protocole NTP:: Si vous prévoyez d'utiliser la classification BlueXP pour analyser vos sources de données d'entreprise, vous devez activer un service NTP (Network Time Protocol) sur le système de connecteur BlueXP et le système de classification BlueXP afin que l'heure soit synchronisée entre les systèmes. https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html["En savoir plus sur la classification BlueXP"^]
++
+--
+Vous devrez implémenter cette exigence de mise en réseau après avoir créé le connecteur.
+
+--
+
+
 
 
 == Étape 2 : configurez les autorisations AWS

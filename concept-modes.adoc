@@ -68,7 +68,7 @@ Le tableau suivant fournit une comparaison de ces modes.
 | Accès à l'interface utilisateur | De la couche SaaS BlueXP | Localement à partir de la VM connecteur | Localement à partir de la VM connecteur 
 
 
-| Terminal API | La couche SaaS de BlueXP | La couche SaaS de BlueXP | Le connecteur 
+| Terminal API | La couche SaaS de BlueXP | Le connecteur | Le connecteur 
 
 
 | Authentification | Via SaaS en utilisant auth0, la connexion NSS ou la fédération des identités | Via SaaS en utilisant auth0 ou la fédération d'identité | Authentification utilisateur locale 
@@ -138,9 +138,8 @@ Une connexion est également requise pour les ressources du fournisseur cloud pr
 Emplacement pris en charge pour le connecteur:: En mode restreint, le connecteur est pris en charge dans le cloud : dans une région gouvernementale, une région souveraine ou une région commerciale.
 Installation du connecteur:: L'installation du connecteur est possible depuis AWS Marketplace ou Azure Marketplace, ou une installation manuelle sur votre propre hôte Linux.
 Mises à niveau des connecteurs:: Les mises à niveau automatisées du logiciel du connecteur sont disponibles depuis BlueXP avec des mises à jour mensuelles.
-Accès à l'interface utilisateur:: L'interface utilisateur est accessible depuis le connecteur déployé dans votre région cloud.
-Terminal API:: Les appels d'API sont effectués vers le terminal suivant :
-\https://cloudmanager.cloud.netapp.com
+Accès à l'interface utilisateur:: L'interface utilisateur est accessible à partir de la machine virtuelle Connector déployée dans votre région cloud.
+Terminal API:: Les appels API sont effectués vers la machine virtuelle du connecteur.
 Authentification:: L'authentification est fournie via le service cloud de BlueXP via auth0. la fédération des identités est également disponible.
 Services BlueXP pris en charge:: BlueXP prend en charge les services de données et de stockage suivants avec un mode restreint :
 +
