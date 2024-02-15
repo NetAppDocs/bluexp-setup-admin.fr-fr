@@ -34,17 +34,17 @@ Cette version de BlueXP Connector inclut des améliorations mineures de la sécu
 
 Si vous utilisez les identifiants cloud NetApp pour vous connecter à BlueXP, vous pouvez maintenant modifier votre nom dans *Paramètres utilisateur*.
 
-image:screenshot-edit-name.png["Capture d'écran qui montre la possibilité de modifier votre nom sous Paramètres utilisateur."]
+image:https://raw.githubusercontent.com/NetAppDocs/bluexp-setup-admin/main/media/screenshot-edit-name.png["Capture d'écran qui montre la possibilité de modifier votre nom sous Paramètres utilisateur."]
 
 La modification de votre nom n'est pas prise en charge si vous vous connectez avec une connexion fédérée ou avec votre compte sur le site de support NetApp.
 
 
 
-=== Exigences du service de métadonnées de l'instance Amazon EC2
+=== Exigence IMDSv1 pour les instances EC2
 
-Vous devez savoir qu'IMDSv1 est requis sur les instances EC2 avant d'installer manuellement le logiciel Connector dans AWS.
+Notez que le service de métadonnées d'instance version 1 (IMDSv1) est requis sur les instances Amazon EC2 avant d'installer manuellement le logiciel Connector dans AWS.
 
-link:reference-limitations.html["En savoir plus sur l'exigence d'IMDSv1 dans AWS"].
+https://docs.netapp.com/us-en/bluexp-setup-admin/reference-limitations.html["En savoir plus sur l'exigence d'IMDSv1 dans AWS"].
 
 
 
@@ -107,7 +107,7 @@ Cette version contient des améliorations mineures et des corrections de bogues.
 
 * Lorsque vous créez un connecteur dans AWS à partir de BlueXP, vous pouvez désormais rechercher dans le champ paire de clés pour trouver plus facilement la paire de clés que vous souhaitez utiliser avec l'instance de connecteur.
 +
-image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-setup-admin/main/media/screenshot-connector-aws-key-pair.png["Capture d'écran de l'option de recherche dans le champ paire de clés qui s'affiche sur la page réseau lors de la création d'un connecteur dans AWS à partir de BlueXP."]
+image:https://raw.githubusercontent.com/NetAppDocs/bluexp-setup-admin/main/media/screenshot-connector-aws-key-pair.png["Capture d'écran de l'option de recherche dans le champ paire de clés qui s'affiche sur la page réseau lors de la création d'un connecteur dans AWS à partir de BlueXP."]
 
 * Cette mise à jour inclut également des correctifs.
 
