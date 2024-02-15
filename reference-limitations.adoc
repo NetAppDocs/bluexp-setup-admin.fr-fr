@@ -24,9 +24,19 @@ Ces limitations sont spécifiques à la configuration et à l'administration de 
 
 
 
+=== IMDSv1 est requis sur les instances EC2
+
+Avant d'installer manuellement le logiciel Connector sur une instance EC2 dans AWS lorsque vous utilisez le mode standard ou le mode restreint, vous devez vous assurer que l'instance EC2 utilise le service de métadonnées d'instance version 1 (IMDSv1). Le connecteur n'est pas pris en charge par IMDSv2.
+
+Comme IMDSv2 est maintenant la version par défaut d'une nouvelle instance EC2, vous devez modifier les options de métadonnées d'instance pour restaurer l'utilisation d'IMDSv1.
+
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/configuring-IMDS-existing-instances.html#modify-restore-IMDSv1["Documentation AWS : restaurez l'utilisation d'IMDSv1"^]
+
+
+
 === Les paramètres par défaut de l'instance EC2 ne doivent pas être modifiés
 
-Lorsque vous déployez le connecteur dans AWS, les paramètres d'instance EC2 suivants sont configurés par défaut :
+Lorsque vous déployez le connecteur dans AWS à partir de BlueXP ou d'AWS Marketplace, les paramètres d'instance EC2 suivants sont configurés par défaut :
 
 * IMDSv2 est défini sur facultatif
 * HttpTokens est défini sur facultatif

@@ -40,6 +40,14 @@ La modification de votre nom n'est pas prise en charge si vous vous connectez av
 
 
 
+=== Exigences du service de métadonnées de l'instance Amazon EC2
+
+Vous devez savoir qu'IMDSv1 est requis sur les instances EC2 avant d'installer manuellement le logiciel Connector dans AWS.
+
+link:reference-limitations.html["En savoir plus sur l'exigence d'IMDSv1 dans AWS"].
+
+
+
 == 11 janvier 2024
 
 

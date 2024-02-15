@@ -1525,7 +1525,6 @@
   <block id="6802f2d551252ff38d10cfab7b7735b3" category="paragraph">Ces limitations sont spécifiques à la configuration et à l'administration de BlueXP : le connecteur, la plate-forme SaaS, et plus encore.</block>
   <block id="83e566847d42782b3343e108150d7f57" category="section-title">Limitations du connecteur</block>
   <block id="cf4525e15b866700f10e91573643ba54" category="section-title">Les paramètres par défaut de l'instance EC2 ne doivent pas être modifiés</block>
-  <block id="505d2a7358228b26711e097c3ca6dc24" category="paragraph">Lorsque vous déployez le connecteur dans AWS, les paramètres d'instance EC2 suivants sont configurés par défaut :</block>
   <block id="b6c588d5cb8cbc221e66a15877aed30a" category="list-text">IMDSv2 est défini sur facultatif</block>
   <block id="b29d18da75a3c01939275500a8fc2e70" category="list-text">HttpTokens est défini sur facultatif</block>
   <block id="a91c1c121088ffbd72985e0bf2459f87" category="paragraph">Ces paramètres ne doivent pas être modifiés sur requis. La modification de ces paramètres sur requis a une incidence sur la disponibilité du connecteur et du Cloud Volumes ONTAP.</block>
@@ -3865,4 +3864,16 @@ Cette partie du tableau répertorie la prise en charge de la gestion de l'enviro
   <block id="bf032cb5bcb45fec81b7b5b993ebabe4" category="paragraph">Vous devez mettre à jour l'emplacement de sauvegarde de chaque système Cloud Volumes ONTAP.</block>
   <block id="2a066cad1fef063fff0ca56b5d416b10" category="list-text">Lancer la commande suivante depuis l'interface de ligne de commandes de Cloud Volumes ONTAP pour afficher la cible de sauvegarde actuelle :</block>
   <block id="78cae36205d703274f695ea4e85f6ffe" category="list-text">Exécutez la commande suivante pour mettre à jour l'adresse IP de la cible de sauvegarde :</block>
+  <block id="375a8301ce4caf38298dba148206d69c" category="section-title">IMDSv1 est requis sur les instances EC2</block>
+  <block id="997791080d6fcd216110fbfe145cef98" category="paragraph">Avant d'installer manuellement le logiciel Connector sur une instance EC2 dans AWS lorsque vous utilisez le mode standard ou le mode restreint, vous devez vous assurer que l'instance EC2 utilise le service de métadonnées d'instance version 1 (IMDSv1). Le connecteur n'est pas pris en charge par IMDSv2.</block>
+  <block id="95371958414dbd4f614d7ff8348b9b31" category="paragraph">Comme IMDSv2 est maintenant la version par défaut d'une nouvelle instance EC2, vous devez modifier les options de métadonnées d'instance pour restaurer l'utilisation d'IMDSv1.</block>
+  <block id="c637448044ff305c64a7c1cd8b77b196" category="inline-link">Documentation AWS : restaurez l'utilisation d'IMDSv1</block>
+  <block id="dd3ddc1f5982d8946100b097e7993378" category="paragraph"><block ref="dd3ddc1f5982d8946100b097e7993378" category="inline-link-rx"></block></block>
+  <block id="1dd4f77b0b91e0fcf80bc700a9a86fd6" category="paragraph">Lorsque vous déployez le connecteur dans AWS à partir de BlueXP ou d'AWS Marketplace, les paramètres d'instance EC2 suivants sont configurés par défaut :</block>
+  <block id="a781cb38c0c2c5288c02850fcd3cda7d" category="list-text">IMDSv1</block>
+  <block id="1b863f7993d117f5ab767043f7a0bcdb" category="list-text">Le Service de métadonnées d'instance version 1 (IMDSv1) est requis sur les instances EC2. Le connecteur n'est pas pris en charge par IMDSv2.</block>
+  <block id="7626696bd9f21a6589ce40ea53af6046" category="section-title">Exigences du service de métadonnées de l'instance Amazon EC2</block>
+  <block id="bce093b82ba18b11f0951a0e0b61a538" category="paragraph">Vous devez savoir qu'IMDSv1 est requis sur les instances EC2 avant d'installer manuellement le logiciel Connector dans AWS.</block>
+  <block id="f8197842b4e7ad7b7b15ef36dcb4ae78" category="inline-link-macro">En savoir plus sur l'exigence d'IMDSv1 dans AWS</block>
+  <block id="b305801a6c9c8eadb3e6439dc658aaa8" category="paragraph"><block ref="785f731db3565bf64fce6692ea6b4a4a" category="inline-link-macro-rx"></block>.</block>
 </blocks>
