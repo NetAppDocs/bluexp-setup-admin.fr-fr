@@ -170,15 +170,21 @@ Si votre entreprise l'exige, vous pouvez modifier l'adresse IP interne et l'adre
 . Si vous avez modifié l'adresse IP publique et que vous devez vous connecter à l'interface utilisateur locale s'exécutant sur le connecteur, redémarrez l'instance de connecteur pour enregistrer la nouvelle adresse IP avec BlueXP.
 . Si vous avez modifié l'adresse IP privée, mettez à jour l'emplacement de sauvegarde des fichiers de configuration Cloud Volumes ONTAP de manière à ce que les sauvegardes soient envoyées à la nouvelle adresse IP privée sur le connecteur.
 +
-.. Exécutez la commande suivante depuis l'interface de ligne de commande de Cloud Volumes ONTAP pour supprimer la cible de sauvegarde actuelle :
+Vous devez mettre à jour l'emplacement de sauvegarde de chaque système Cloud Volumes ONTAP.
+
++
+.. Lancer la commande suivante depuis l'interface de ligne de commandes de Cloud Volumes ONTAP pour afficher la cible de sauvegarde actuelle :
 +
 [source, cli]
 ----
-system configuration backup settings modify -destination ""
+system configuration backup show
 ----
-.. Allez à BlueXP et ouvrez l'environnement de travail.
-.. Sélectionnez le menu et sélectionnez *Avancé > sauvegardes de configuration*.
-.. Sélectionnez *définir la cible de sauvegarde*.
+.. Exécutez la commande suivante pour mettre à jour l'adresse IP de la cible de sauvegarde :
++
+[source, cli]
+----
+system configuration backup settings modify -destination <target-location>
+----
 
 
 

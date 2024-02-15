@@ -2021,10 +2021,6 @@ ou</block>
   <block id="bfe6d8b96fb30d923a8089019f265d6b" category="list-text">Suivez les instructions de votre fournisseur de cloud pour modifier l'adresse IP locale ou l'adresse IP publique (ou les deux) de l'instance de connecteur.</block>
   <block id="db56ea1b582b55a06a12a4267a2c8d20" category="list-text">Si vous avez modifié l'adresse IP publique et que vous devez vous connecter à l'interface utilisateur locale s'exécutant sur le connecteur, redémarrez l'instance de connecteur pour enregistrer la nouvelle adresse IP avec BlueXP.</block>
   <block id="c2b41de08c51bfb56dcd23e174ea8788" category="list-text">Si vous avez modifié l'adresse IP privée, mettez à jour l'emplacement de sauvegarde des fichiers de configuration Cloud Volumes ONTAP de manière à ce que les sauvegardes soient envoyées à la nouvelle adresse IP privée sur le connecteur.</block>
-  <block id="a6a2880e12afb78f4820f1aaf905127c" category="list-text">Exécutez la commande suivante depuis l'interface de ligne de commande de Cloud Volumes ONTAP pour supprimer la cible de sauvegarde actuelle :</block>
-  <block id="62d4c1187f5c26c9b533034e1decce4b" category="list-text">Allez à BlueXP et ouvrez l'environnement de travail.</block>
-  <block id="4ca9c62606d1c97138981cac6d8eff5f" category="list-text">Sélectionnez le menu et sélectionnez *Avancé &gt; sauvegardes de configuration*.</block>
-  <block id="eb65e51e9fa3b9b54ae0d3622c7f3d2c" category="list-text">Sélectionnez *définir la cible de sauvegarde*.</block>
   <block id="eb9bb09a006b6e7bcc7d0b9525344bcf" category="section-title">Modifier les URI d'un connecteur</block>
   <block id="c160cffd96a1bb98161a7add244e274f" category="paragraph">Ajoutez et supprimez l'URI (Uniform Resource identifier) d'un connecteur.</block>
   <block id="f98b44043815b68b5ba8272fb252dafd" category="list-text">Sélectionnez la liste déroulante *Connector* dans l'en-tête BlueXP.</block>
@@ -3857,4 +3853,16 @@ Cette partie du tableau répertorie la prise en charge de la gestion de l'enviro
   <block id="f3bb3ec21babd88d81e5f7aefe69cced" category="inline-link">En savoir plus sur l'intégration de Digital Advisor</block>
   <block id="fd93e0ac3cede5691afd22e4d95042e3" category="list-text"><block ref="fd93e0ac3cede5691afd22e4d95042e3" category="inline-link-rx"></block></block>
   <block id="ba1f7346b31e12566f94dd10dbca2587" category="section-title">Invite à mettre à jour les informations d'identification NSS</block>
+  <block id="5985540cd0cc5c0e58eaebe95659534e" category="section-title">15 février 2024</block>
+  <block id="875cabf7fcb6d8f631b842029efd2117" category="section-title">Connecteur 3.9.37</block>
+  <block id="33596391cf2ec8b74b76bf635ea4c6e2" category="paragraph">Cette version de BlueXP Connector inclut des améliorations mineures de la sécurité et des correctifs.</block>
+  <block id="937efe0b961bcb892e05e19e0c147973" category="paragraph">À ce stade, la version 3.9.37 est disponible pour le mode standard et le mode restreint.</block>
+  <block id="f1c2261d89d52febeed15edf1f34a5b7" category="section-title">Modifier le nom</block>
+  <block id="c42458c54134318669b685ee8730a478" category="paragraph">Si vous utilisez les identifiants cloud NetApp pour vous connecter à BlueXP, vous pouvez maintenant modifier votre nom dans *Paramètres utilisateur*.</block>
+  <block id="ab15c21485050b3b0c09a3b7b31d97d7" category="inline-image-macro">Capture d'écran qui montre la possibilité de modifier votre nom sous Paramètres utilisateur.</block>
+  <block id="19f8b99a1063fac466ee71dbd38b8447" category="paragraph"><block ref="19f8b99a1063fac466ee71dbd38b8447" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="4a784443543a41df794122c52fae1df7" category="paragraph">La modification de votre nom n'est pas prise en charge si vous vous connectez avec une connexion fédérée ou avec votre compte sur le site de support NetApp.</block>
+  <block id="bf032cb5bcb45fec81b7b5b993ebabe4" category="paragraph">Vous devez mettre à jour l'emplacement de sauvegarde de chaque système Cloud Volumes ONTAP.</block>
+  <block id="2a066cad1fef063fff0ca56b5d416b10" category="list-text">Lancer la commande suivante depuis l'interface de ligne de commandes de Cloud Volumes ONTAP pour afficher la cible de sauvegarde actuelle :</block>
+  <block id="78cae36205d703274f695ea4e85f6ffe" category="list-text">Exécutez la commande suivante pour mettre à jour l'adresse IP de la cible de sauvegarde :</block>
 </blocks>
