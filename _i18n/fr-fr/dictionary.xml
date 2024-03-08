@@ -3909,7 +3909,6 @@ Cette partie du tableau répertorie la prise en charge de la gestion de l'enviro
   <block id="1fac08ada9902743d92641fbbd32d13f" category="list-text">Pour les connecteurs existants, IMDSv1 est toujours pris en charge, mais vous pouvez configurer manuellement IMDSv2 sur l'instance EC2 si vous le souhaitez.</block>
   <block id="d0371cc329d08bb54c28e8881cc93db7" category="list-text">Pour Cloud Volumes ONTAP, IMDSv1 est activé par défaut sur les instances nouvelles et existantes. Si vous le souhaitez, vous pouvez configurer manuellement IMDSv2 sur les instances EC2.</block>
   <block id="e064a507c52bd5a195428edf98b8aecb" category="inline-link">Découvrez comment configurer IMDSv2 sur des instances existantes</block>
-  <block id="35caf9a212e382e214a82a5d75099530" category="paragraph"><block ref="2136f09eaf84594e894a08f345e725b8" category="inline-link-rx"></block>.</block>
   <block id="4cc078461f1763cdb13efec9da8a6a3f" category="section-title">Mise à jour des autorisations AWS</block>
   <block id="5b208d0b88475ec99f06a7e55104a566" category="paragraph">Nous avons mis à jour la stratégie de connecteur pour AWS afin d'y inclure l'autorisation « ec2:DescribeAvailabilityzones ». Cette autorisation est requise pour une version à venir. Nous allons mettre à jour les notes de version avec plus de détails lorsque cette version sera disponible.</block>
   <block id="7595af352964f2b06057ab6310fdff44" category="inline-link">Afficher les autorisations AWS pour le connecteur</block>
@@ -3937,4 +3936,5 @@ Cette partie du tableau répertorie la prise en charge de la gestion de l'enviro
   <block id="f5d22e387d3dd91dbc45f16de7949a06" category="list-text">Sélectionnez *support Direct API Traffic*.</block>
   <block id="0515ac140ab701cd78614b76c8296d4f" category="paragraph">La création du connecteur à partir de BlueXP déploie une instance EC2 dans AWS à l'aide d'une configuration par défaut. Après avoir créé le connecteur, vous ne devez pas passer à un type d'instance EC2 plus petit qui a moins de CPU ou de RAM. <block ref="2e3b01a9181b70ea3432226bf12e488f" category="inline-link-macro-rx"></block>.</block>
   <block id="b1f8391bb8c209468262aa239bef0d41" category="paragraph">La création du connecteur déploie une instance de machine virtuelle dans Google Cloud à l'aide d'une configuration par défaut. Après avoir créé le connecteur, vous ne devez pas passer à une instance de machine virtuelle plus petite qui a moins de CPU ou de RAM. <block ref="2e3b01a9181b70ea3432226bf12e488f" category="inline-link-macro-rx"></block>.</block>
+  <block id="7c3d026f5f0bf0d01848d386f69159eb" category="paragraph"><block ref="7295f02a3c546b103864aa8261ac9cab" category="inline-link-rx"></block>.</block>
 </blocks>
