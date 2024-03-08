@@ -73,6 +73,7 @@ La deuxième politique fournit des autorisations pour les services suivants :
     "Statement": [
         {
             "Action": [
+                "ec2:DescribeAvailabilityZones",
                 "ec2:DescribeInstances",
                 "ec2:DescribeInstanceStatus",
                 "ec2:RunInstances",
@@ -1301,6 +1302,16 @@ Connector effectue les requêtes d'API suivantes pour gérer les balises sur les
 == Journal des modifications
 
 Lorsque des autorisations sont ajoutées et supprimées, nous les noterons dans les sections ci-dessous.
+
+
+
+=== 8 mars 2024
+
+L'autorisation suivante est désormais incluse dans la stratégie de connecteur :
+
+ec2:DescribeAvailabilityzones
+
+Cette autorisation est requise pour une version à venir. Nous allons mettre à jour les notes de version avec plus de détails lorsque cette version sera disponible.
 
 
 

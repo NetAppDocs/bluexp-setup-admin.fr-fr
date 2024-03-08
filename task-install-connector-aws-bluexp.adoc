@@ -270,7 +270,7 @@ Vous devez maintenant disposer d'un rôle IAM qui possède les autorisations req
 Créez le connecteur directement à partir de la console web BlueXP.
 
 .Description de la tâche
-La création du connecteur à partir de BlueXP déploie une instance EC2 dans AWS à l'aide d'une configuration par défaut. link:reference-connector-default-config.html["En savoir plus sur la configuration par défaut du connecteur"].
+La création du connecteur à partir de BlueXP déploie une instance EC2 dans AWS à l'aide d'une configuration par défaut. Après avoir créé le connecteur, vous ne devez pas passer à un type d'instance EC2 plus petit qui a moins de CPU ou de RAM. link:reference-connector-default-config.html["En savoir plus sur la configuration par défaut du connecteur"].
 
 .Avant de commencer
 Vous devez disposer des éléments suivants :

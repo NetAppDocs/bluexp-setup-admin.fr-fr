@@ -378,7 +378,7 @@ https://cloud.google.com/apis/docs/getting-started#enabling_apis["Documentation 
 Créez un connecteur directement à partir de la console web BlueXP ou à l'aide de gcloud.
 
 .Description de la tâche
-La création du connecteur déploie une instance de machine virtuelle dans Google Cloud à l'aide d'une configuration par défaut. link:reference-connector-default-config.html["En savoir plus sur la configuration par défaut du connecteur"].
+La création du connecteur déploie une instance de machine virtuelle dans Google Cloud à l'aide d'une configuration par défaut. Après avoir créé le connecteur, vous ne devez pas passer à une instance de machine virtuelle plus petite qui a moins de CPU ou de RAM. link:reference-connector-default-config.html["En savoir plus sur la configuration par défaut du connecteur"].
 
 [role="tabbed-block"]
 ====

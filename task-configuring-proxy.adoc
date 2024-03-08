@@ -31,11 +31,39 @@ Lorsque vous configurez un connecteur pour utiliser un serveur proxy, ce connect
 Notez que cette opération redémarre le connecteur. Assurez-vous que le connecteur n'effectue aucune opération avant de continuer.
 
 .Étapes
-. Dans le coin supérieur droit de la console BlueXP, sélectionnez l'icône Paramètres, puis sélectionnez *Paramètres du connecteur*.
+. Accédez à la page *Edit BlueXP Connector*.
 +
-image:screenshot_settings_icon.gif["Capture d'écran affichant l'icône Paramètres dans le coin supérieur droit de la console BlueXP."]
+La navigation dépend de si vous utilisez BlueXP en mode standard (accès à l'interface BlueXP depuis le site web SaaS) ou BlueXP en mode restreint ou privé (accès à l'interface BlueXP en local depuis l'hôte Connector).
 
-. Sous *général*, sélectionnez *HTTP Proxy Configuration*.
++
+[role="tabbed-block"]
+====
+.Mode standard
+--
+.. Sélectionnez la liste déroulante *Connector* dans l'en-tête BlueXP.
+.. Sélectionnez *gérer les connecteurs*.
++
+image:screenshot-manage-connectors.png["Capture d'écran qui montre la page gérer les connecteurs disponible après la sélection du connecteur."]
+
+.. Sélectionnez le menu d'action d'un connecteur et sélectionnez *Modifier le connecteur*.
++
+image:screenshot-edit-connector-standard.png["Capture d'écran affichant l'option Editer les connecteurs disponible dans le menu d'action."]
+
+
+
+--
+.Mode restreint ou privé
+--
+.. Sélectionnez la liste déroulante *Connector* dans l'en-tête BlueXP.
+.. Sélectionnez *Modifier le connecteur*.
++
+image:screenshot-edit-connector.png["Capture d'écran qui montre l'option Editer le connecteur disponible après avoir étendu le menu connecteur."]
+
+
+
+--
+====
+. Sélectionnez *HTTP Proxy Configuration*.
 . Configurez le proxy :
 +
 .. Sélectionnez *Activer le proxy*.
@@ -69,10 +97,38 @@ Si vous avez désactivé l'utilisation des liens privés Azure avec Cloud Volume
 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-enabling-private-link.html["En savoir plus sur l'utilisation d'un lien privé Azure ou de terminaux de service avec Cloud Volumes ONTAP"^]
 
 .Étapes
-. Dans le coin supérieur droit de la console BlueXP, sélectionnez l'icône Paramètres, puis sélectionnez *Paramètres du connecteur*.
+. Accédez à la page *Edit BlueXP Connector* :
 +
-image:screenshot_settings_icon.gif["Capture d'écran affichant l'icône Paramètres dans le coin supérieur droit de la console BlueXP."]
+La navigation dépend de si vous utilisez BlueXP en mode standard (accès à l'interface BlueXP depuis le site web SaaS) ou BlueXP en mode restreint ou privé (accès à l'interface BlueXP en local depuis l'hôte Connector).
 
-. Sous *général*, sélectionnez *support Direct API Traffic*.
++
+[role="tabbed-block"]
+====
+.Mode standard
+--
+.. Sélectionnez la liste déroulante *Connector* dans l'en-tête BlueXP.
+.. Sélectionnez *gérer les connecteurs*.
++
+image:screenshot-manage-connectors.png["Capture d'écran qui montre la page gérer les connecteurs disponible après la sélection du connecteur."]
+
+.. Sélectionnez le menu d'action d'un connecteur et sélectionnez *Modifier le connecteur*.
++
+image:screenshot-edit-connector-standard.png["Capture d'écran affichant l'option Editer les connecteurs disponible dans le menu d'action."]
+
+
+
+--
+.Mode restreint ou privé
+--
+.. Sélectionnez la liste déroulante *Connector* dans l'en-tête BlueXP.
+.. Sélectionnez *Modifier le connecteur*.
++
+image:screenshot-edit-connector.png["Capture d'écran qui montre l'option Editer le connecteur disponible après avoir étendu le menu connecteur."]
+
+
+
+--
+====
+. Sélectionnez *support Direct API Traffic*.
 . Cochez la case pour activer l'option, puis sélectionnez *Enregistrer*.
 

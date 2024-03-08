@@ -420,7 +420,7 @@ Votre principal de service est maintenant configuré et vous devez avoir copié 
 Créez le connecteur directement à partir de la console web BlueXP.
 
 .Description de la tâche
-La création du connecteur à partir de BlueXP déploie une machine virtuelle dans Azure à l'aide d'une configuration par défaut. link:reference-connector-default-config.html["En savoir plus sur la configuration par défaut du connecteur"].
+La création du connecteur à partir de BlueXP déploie une machine virtuelle dans Azure à l'aide d'une configuration par défaut. Après avoir créé le connecteur, vous ne devez pas passer à un type de machine virtuelle plus petit qui a moins de CPU ou de RAM. link:reference-connector-default-config.html["En savoir plus sur la configuration par défaut du connecteur"].
 
 .Avant de commencer
 Vous devez disposer des éléments suivants :
