@@ -29,6 +29,12 @@ Le rôle Compliance Viewer est destiné à l'accès à la classification BlueXP 
 | Activer les services dans les environnements de travail | Oui. | Oui. | Non | Non 
 
 
+| Supprimer des environnements de travail d'un espace de travail | Oui. | Oui. | Non | Non 
+
+
+| Supprimer les environnements de travail | Oui. | Oui. | Non | Non 
+
+
 | Afficher l'état de la réplication des données | Oui. | Oui. | Non | Non 
 
 
@@ -39,12 +45,6 @@ Le rôle Compliance Viewer est destiné à l'accès à la classification BlueXP 
 
 
 | Afficher les résultats de l'analyse de classification BlueXP | Oui. | Oui. | Oui. | Non 
-
-
-| Supprimer les environnements de travail | Oui. | Non | Non | Non 
-
-
-| Connectez les clusters Kubernetes aux environnements de travail | Oui. | Non | Non | Non 
 
 
 | Recevoir le rapport Cloud Volumes ONTAP | Oui. | Non | Non | Non 
@@ -63,9 +63,6 @@ Le rôle Compliance Viewer est destiné à l'accès à la classification BlueXP 
 
 
 | Afficher et gérer le tableau de bord du support | Oui. | Non | Non | Non 
-
-
-| Supprimez les environnements de travail de BlueXP | Oui. | Non | Non | Non 
 
 
 | Installez un certificat HTTPS | Oui. | Non | Non | Non 
