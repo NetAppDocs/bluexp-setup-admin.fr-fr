@@ -3713,7 +3713,6 @@ Membre: Compte de service BlueXP à partir de serviceAccount.user</block>
   <block id="713b059ba47ab000812d3dd15273cee6" category="paragraph">Notez qu'un jeton d'actualisation n'est pas requis pour les opérations d'API lors de l'utilisation d'un compte de service.<block ref="cc919b62f11a25e2d8c9fb23b34ada32" category="inline-link-rx"></block></block>
   <block id="7c42c6e2f8295dada12f50f825327ddf" category="list-text">Le système d'exploitation de l'image est Ubuntu 22.04 LTS.</block>
   <block id="e8a0c291b754a75e0e91ecf69d567912" category="section-title">5 décembre 2023</block>
-  <block id="1771e2f4014c6ccd829b84cf9e8c7d27" category="section-title">Version en mode privé</block>
   <block id="5a78b457c661dc3d01c5125da794f0ed" category="paragraph">Une nouvelle version du mode privé est maintenant disponible pour BlueXP. Cette version inclut la version 3.9.35 du connecteur et des versions des services BlueXP prises en charge avec le mode privé depuis octobre 2023.</block>
   <block id="ec34e91164e39c9df1bfb906cff07162" category="paragraph">Cette nouvelle version est téléchargeable depuis le site du support NetApp.</block>
   <block id="2e57b160bcd31ccd527a6670d94879de" category="inline-link">Découvrez les services BlueXP inclus avec le mode privé</block>
@@ -3983,4 +3982,18 @@ Cette partie du tableau répertorie la prise en charge de la gestion de l'enviro
   <block id="86a6fd8c0323b87db34eb287a461c194" category="section-title">Améliorations de Azure NetApp Files</block>
   <block id="d63816bce1f68b3d99c6b101eb23f900" category="paragraph">Vous pouvez désormais modifier le niveau de services d'un volume de manière dynamique afin de répondre aux besoins des charges de travail et d'optimiser les coûts. Le volume est déplacé vers l'autre pool de capacité sans aucun impact sur le volume.<block ref="1c1fc3f10579c2dcdaafa6f121b73c03" category="inline-link-rx"></block></block>
   <block id="849f31cbd6498a40e853e0172989edd1" category="cell">Supprimer des environnements de travail d'un espace de travail</block>
+  <block id="fe8fcef9d0fdb328fbc812d42b4ca2e7" category="section-title">26 mars 2024</block>
+  <block id="3c16167b6c091087d9151aee3f52b379" category="section-title">Version en mode privé (3.9.38)</block>
+  <block id="b7070cb9b31e0d402b92f5c1d4efa401" category="paragraph">Une nouvelle version du mode privé est maintenant disponible pour BlueXP. Cette version inclut les versions suivantes des services BlueXP prises en charge avec le mode privé.</block>
+  <block id="b742a03d26cdd3a73daedbab8ce0898b" category="cell">Version incluse</block>
+  <block id="edf21d7ecb364e8210ddd3dfaeca6fbf" category="cell">Connecteur</block>
+  <block id="0eff5e73304fb938a09633bd1b0cec70" category="cell">3.9.38</block>
+  <block id="2d67cd05b64a3416bc8bae12b4ef5685" category="cell">12 mars 2024</block>
+  <block id="9ee51d75827fcf6a985ed40e7418fea6" category="cell">4 mars 2024</block>
+  <block id="20f71c84b5a0e44a35f3a8c4207c85a9" category="cell">Gestion Cloud Volumes ONTAP</block>
+  <block id="900dd8f50d2294930a102034524e26b7" category="cell">Gestion des clusters ONTAP sur site</block>
+  <block id="638be56d4cf930b576e6dc1300c7c33b" category="cell">18 septembre 2022</block>
+  <block id="a52b83d1b32a42f8a6aff3771048ba3c" category="inline-link">En savoir plus sur le mode privé</block>
+  <block id="cdeb608610a882c24cefcb7daa878a1d" category="list-text"><block ref="cdeb608610a882c24cefcb7daa878a1d" category="inline-link-rx"></block></block>
+  <block id="de945439c2ef8db914ae9a056d6763b1" category="section-title">Version en mode privé (3.9.35)</block>
 </blocks>
