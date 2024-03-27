@@ -82,14 +82,6 @@ Ce connecteur est pris en charge dans Google Cloud sur une instance de machine v
 Espace disque dans /opt:: 100 Gio d'espace doit être disponible
 Espace disque dans /var:: 20 Gio d'espace doit être disponible
 Moteur Docker:: Docker Engine version 19.3.1 ou ultérieure est requis sur l'hôte avant d'installer le connecteur. https://docs.docker.com/engine/install/["Voir les instructions d'installation"^]
-IMDSv1:: Le Service de métadonnées d'instance version 1 (IMDSv1) est requis sur les instances EC2. Le connecteur n'est pas pris en charge par IMDSv2.
-+
---
-Comme IMDSv2 est maintenant la version par défaut d'une nouvelle instance EC2, vous devez modifier les options de métadonnées d'instance pour restaurer l'utilisation d'IMDSv1.
-
-https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/configuring-IMDS-existing-instances.html#modify-restore-IMDSv1["Documentation AWS : restaurez l'utilisation d'IMDSv1"^]
-
---
 
 
 
@@ -271,6 +263,8 @@ Serveur proxy:: Si votre organisation nécessite le déploiement d'un serveur pr
 * Informations d'identification
 * Certificat HTTPS
 
+
+Notez que BlueXP ne prend pas en charge les serveurs proxy transparents.
 
 --
 

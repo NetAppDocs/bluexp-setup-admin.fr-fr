@@ -24,6 +24,14 @@ Ces limitations sont spécifiques à la configuration et à l'administration de 
 
 
 
+=== Les serveurs proxy transparents ne sont pas pris en charge
+
+BlueXP ne prend pas en charge les serveurs proxy transparents avec le connecteur.
+
+link:task-configuring-proxy.html["En savoir plus sur l'utilisation d'un serveur proxy avec le connecteur"].
+
+
+
 === Conflit possible avec les adresses IP dans la plage 172
 
 BlueXP déploie le connecteur avec deux interfaces qui ont des adresses IP dans les plages 172.17.0.0/16 et 172.18.0.0/16.

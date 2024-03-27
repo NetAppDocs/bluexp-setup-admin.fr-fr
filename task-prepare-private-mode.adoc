@@ -177,10 +177,12 @@ Serveur proxy:: Si votre organisation nécessite le déploiement d'un serveur pr
 * Adresse IP
 * Informations d'identification
 * Certificat HTTPS
+
+
+Notez que BlueXP ne prend pas en charge les serveurs proxy transparents.
+
 +
 Avec le mode privé, la seule fois que BlueXP envoie le trafic sortant est à votre fournisseur cloud pour créer un système Cloud Volumes ONTAP.
-
-
 
 --
 Ports:: Il n'y a pas de trafic entrant vers le connecteur, sauf si vous le lancez.

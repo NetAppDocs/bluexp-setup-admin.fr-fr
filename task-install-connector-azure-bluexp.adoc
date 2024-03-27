@@ -124,6 +124,8 @@ Serveur proxy:: Si votre organisation nécessite le déploiement d'un serveur pr
 * Certificat HTTPS
 
 
+Notez que BlueXP ne prend pas en charge les serveurs proxy transparents.
+
 --
 
 
