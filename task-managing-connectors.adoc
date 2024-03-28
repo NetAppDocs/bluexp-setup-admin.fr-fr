@@ -149,6 +149,13 @@ Si vos stratégies de sécurité l'exigent, vous pouvez configurer vos instances
 
 .Avant de commencer
 * La version du connecteur doit être 3.9.38 ou ultérieure.
+* Cloud Volumes ONTAP doit exécuter l'une des versions suivantes :
++
+** 9.12.1 P2 (ou tout correctif ultérieur)
+** 9.13.0 P4 (ou tout correctif ultérieur)
+** 9.13.1 ou toute version ultérieure à cette version
+
+
 * Cette modification nécessite le redémarrage des instances Cloud Volumes ONTAP.
 
 
