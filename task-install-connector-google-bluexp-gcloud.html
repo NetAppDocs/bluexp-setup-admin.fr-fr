@@ -1,0 +1,3155 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head class="at-element-marker">
+  <title>Créez un connecteur dans Google Cloud à partir de BlueXP ou gcloud | NetApp Documentation</title>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
+  <meta http-equiv="language" content="en">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:title" content="Créez un connecteur dans Google Cloud à partir de BlueXP ou gcloud | NetApp Documentation" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://docs.netapp.com/fr-fr/bluexp-setup-admin/task-install-connector-google-bluexp-gcloud.html" />
+	<meta property="og:description" content="Pour créer un connecteur dans Google Cloud à partir de BlueXP ou à l"aide de gcloud, vous devez configurer votre réseau, préparer les autorisations Google Cl..." />
+  <meta property="og:image" content="https://docs.netapp.com/fr-fr/bluexp-setup-admin/images/logo-tophat-social.png" />
+  <meta property="og:image:alt" content="NetApp Logo" />
+  <meta name="format-detection" content="telephone=no">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="encoding" content="utf-8">
+  <meta http-equiv="nss-type" content="Product Documentation"/>
+  <meta http-equiv="nss-subtype" content="User Guide"/><meta name="description" content="Pour créer un connecteur dans Google Cloud à partir de BlueXP ou à l"aide de gcloud, vous devez configurer votre réseau, préparer les autorisations Google Cl...">
+  <meta name="keywords" content=" install connector, google cloud connector installation, google cloud connector, install connector in google cloud, bluexp, gcloud, create connector, gcp installation, gcp connector"><!-- Icons -->
+  <link rel="icon" href="/fr-fr/bluexp-setup-admin/images/favicon.ico" type="image/x-icon">
+
+  <!-- RSS Feed --><link rel="alternate" type="application/rss+xml" title="NetApp Documentation" href="/fr-fr/bluexp-setup-admin/feed.xml"><!-- CSS Definitions: NetApp CSS should be defined after generic css -->
+
+
+  <!-- Combined CSS -->
+  <link rel="stylesheet" type="text/css" href="/fr-fr/bluexp-setup-admin/css/ie-netappdocs.css">
+
+  
+  <link rel="stylesheet" href="/fr-fr/bluexp-setup-admin/css/ie-landing-page.css" type="text/css">
+  <link rel="stylesheet" href="/fr-fr/bluexp-setup-admin/css/ie-tabbed-blocks.css" type="text/css">
+  <!-- Canonical url -->
+  <link rel="canonical" href="https://docs.netapp.com/fr-fr/bluexp-setup-admin/task-install-connector-google-bluexp-gcloud.html" />
+  <link rel="alternate" hreflang="x-default" href="https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-google-bluexp-gcloud.html" />
+  <link rel="alternate" hreflang="fr" href="https://docs.netapp.com/fr-fr/bluexp-setup-admin/task-install-connector-google-bluexp-gcloud.html" />
+  <link rel="alternate" hreflang="en" href="https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-google-bluexp-gcloud.html" />
+  <link rel="alternate" hreflang="ja" href="https://docs.netapp.com/ja-jp/bluexp-setup-admin/task-install-connector-google-bluexp-gcloud.html" />
+  <link rel="alternate" hreflang="ko" href="https://docs.netapp.com/ko-kr/bluexp-setup-admin/task-install-connector-google-bluexp-gcloud.html" />
+  <link rel="alternate" hreflang="zh-Hans" href="https://docs.netapp.com/zh-cn/bluexp-setup-admin/task-install-connector-google-bluexp-gcloud.html" />
+  <link rel="alternate" hreflang="zh-Hant" href="https://docs.netapp.com/zh-tw/bluexp-setup-admin/task-install-connector-google-bluexp-gcloud.html" />
+  <link rel="alternate" hreflang="de" href="https://docs.netapp.com/de-de/bluexp-setup-admin/task-install-connector-google-bluexp-gcloud.html" />
+  <link rel="alternate" hreflang="es" href="https://docs.netapp.com/es-es/bluexp-setup-admin/task-install-connector-google-bluexp-gcloud.html" />
+  <link rel="alternate" hreflang="it" href="https://docs.netapp.com/it-it/bluexp-setup-admin/task-install-connector-google-bluexp-gcloud.html" />
+  <!-- Top level site integrations -->
+<script type="text/javascript" src="https://cdn.cookielaw.org/consent/72570c5c-fe30-465f-b0e0-b77f7fb4ae34/OtAutoBlock.js"></script>
+    <script type="text/javascript" src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js" charset="UTF-8" data-document-language="true" data-domain-script="72570c5c-fe30-465f-b0e0-b77f7fb4ae34"></script>
+    <script type="text/javascript">function OptanonWrapper() { }</script>
+    <script type="text/plain" class="optanon-category-C0002" src="https://assets.adobedtm.com/60287eadf1ee/c284da483c83/launch-e9ff3acac59f.min.js"></script>
+    <script class="optanon-category-C0001">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.setAttributeNode(d.createAttribute('data-ot-ignore'));j.setAttribute('class','optanon-category-C0001');j.async=true;
+        j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl+'';f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-MD73T9M');</script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  
+  <script>
+    $(document).ready(function() {
+      const MASTHEAD_OFFSET = 65;
+      const SECTIONS = $("main h2, main h3");
+      // PAGE NAV - Init
+      if (SECTIONS.length == 0) {
+        // remove if there is no elements
+        /*
+        $("#ie-right-navbar").remove();
+        $("#ie-right-navbar-collapse").remove();
+        */
+      } else {
+        $(".page-nav-title").css('display', 'block');
+        for (var i = 0; i < SECTIONS.length; i++) {
+          var sectionId = $(SECTIONS[i]).attr('id');
+          var sectionName = $(SECTIONS[i]).text();
+          var subClass = $(SECTIONS[i]).is("h3") ? ' page-nav__sublink' : '';
+          $("#page-menu").append('<li class="page-nav-item"><a href="#' + sectionId + '" class="page-nav__link' + subClass + '">' + sectionName + '</a></li>');
+        }
+      }
+    });
+  </script>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+
+  <!-- Used for Product Family Page Sidebar Visibility --><!-- Used to import Promise for IE. Required for SearchKit -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.5/bluebird.min.js"></script><script src='/fr-fr/bluexp-setup-admin/js/na-search.js'></script><script src='/fr-fr/bluexp-setup-admin/js/ie-clouddocs.js'></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script><script>
+    /*
+      $(document).ready(function() {
+          $("#tg-sb-link").click(function() {
+              $("#tg-sb-sidebar").toggle();
+              $("#tg-sb-content").toggleClass('col-md-9');
+              $("#tg-sb-content").toggleClass('col-md-12');
+              $("#tg-sb-icon").toggleClass('fa-toggle-on');
+              $("#tg-sb-icon").toggleClass('fa-toggle-off');
+          });
+      });
+      */
+  </script>
+  <script src='/fr-fr/bluexp-setup-admin/js/custom-dropdown.js'></script>
+  <script src='/fr-fr/bluexp-setup-admin/js/FileSaver.min.js'></script>
+  <script src='/fr-fr/bluexp-setup-admin/js/jszip-utils.min.js'></script>
+  <script src='/fr-fr/bluexp-setup-admin/js/jszip.min.js'></script><script src='/fr-fr/bluexp-setup-admin/js/ie-pdf-ux.js'></script></head>
+
+
+  <body class role="document" data-flavor="">
+    <div class="skip-to-main">
+      <a href="#main" >Skip to main content</a>
+    </div><noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MD73T9M"
+      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript><div id="page" class="">
+      <div id="ie-phone-menu" class=""></div>
+      <div id="ie-content-wrap" class="">
+        <nav id="ie-new-header">
+    <ul>
+        <li id="ie-phone-menu-button">
+            <a href="#">
+                <image id="" src="/fr-fr/bluexp-setup-admin/images/hamburger.svg" alt="menu" />
+            </a>
+        </li>
+
+        <li>
+            <a href="https://www.netapp.com/fr">
+                <image id="ie-header-logo" src="/fr-fr/bluexp-setup-admin/images/netapp_logo.svg" alt="netapp" />
+            </a>
+        </li>
+        <li id="ie-header-docs">
+            <a href="https://www.netapp.com/fr/support-and-training/documentation/">Documents</a>
+        </li>
+
+        <!-- Empty container to push header left with or without lang selector -->
+        <li id="empty-container" style="margin-left: auto">
+        </li>
+        <!-- Start Language Selector --><li id="ie-language-dropdown">
+            <div id="language-dropdown" class="custom-dropdown custom-dropdown-lang">
+                <div class="custom-dropdown-select custom-dropdown-select-lang">
+                    <img src="/fr-fr/bluexp-setup-admin/images/language_white_24dp.svg" class="n-globe__icon" />
+                    <span class="lang-name">Français</span>
+                    <img src="/fr-fr/bluexp-setup-admin/images/dropdown-arrow.svg" alt="" class="custom-icon chevrondown header invisible" />
+                    <img src="/fr-fr/bluexp-setup-admin/images/dropdown-arrow.svg" alt="" class="custom-icon chevronup header" />
+                    </button>
+                </div>
+
+                <ul class="custom-dropdown-menu"><li>
+                        <a href="https://docs.netapp.com/fr-fr/bluexp-setup-admin/task-install-connector-google-bluexp-gcloud.html"
+                            target="_self"><span translate="no" class="notranslate">Français</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-google-bluexp-gcloud.html"
+                            target="_self"><span translate="no" class="notranslate">English</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/ja-jp/bluexp-setup-admin/task-install-connector-google-bluexp-gcloud.html"
+                            target="_self"><span translate="no" class="notranslate">日本語</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/ko-kr/bluexp-setup-admin/task-install-connector-google-bluexp-gcloud.html"
+                            target="_self"><span translate="no" class="notranslate">한국어</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/zh-cn/bluexp-setup-admin/task-install-connector-google-bluexp-gcloud.html"
+                            target="_self"><span translate="no" class="notranslate">简体中文</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/zh-tw/bluexp-setup-admin/task-install-connector-google-bluexp-gcloud.html"
+                            target="_self"><span translate="no" class="notranslate">繁體中文</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/de-de/bluexp-setup-admin/task-install-connector-google-bluexp-gcloud.html"
+                            target="_self"><span translate="no" class="notranslate">Deutsch</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/es-es/bluexp-setup-admin/task-install-connector-google-bluexp-gcloud.html"
+                            target="_self"><span translate="no" class="notranslate">Español</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/it-it/bluexp-setup-admin/task-install-connector-google-bluexp-gcloud.html"
+                            target="_self"><span translate="no" class="notranslate">Italiano</span></a>
+                    </li></ul>
+            </div>
+            </li>
+        <!-- End Language Selector -->
+
+
+        <li id="ie-allnetapp">
+            <div id="allnetapp-dropdown" class="custom-dropdown custom-dropdown-allnetapp">
+                <div class="custom-dropdown-select custom-dropdown-select-allnetapp">
+                    <img src="/fr-fr/bluexp-setup-admin/images/apps_white_24dp.svg" alt="" class="allnetapp-icon" />
+                    <span class="allnetapp-name">Tout NetApp</span>
+                    <img src="/fr-fr/bluexp-setup-admin/images/dropdown-arrow.svg" alt="" class="custom-icon chevrondown header invisible" />
+                    <img src="/fr-fr/bluexp-setup-admin/images/dropdown-arrow.svg" alt="" class="custom-icon chevronup header" />
+                    </button>
+                </div>
+
+                <ul class="custom-dropdown-menu allnetapp-dropdown">
+                    <li>
+                        <a href="https://bluexp.netapp.com/fr/"
+                            target="_self"><span translate="no" class="notranslate">BlueXP</span></a>
+                    </li>
+                    <li>
+                        <a href="https://mysupport.netapp.com/site/"
+                            target="_self"><span translate="no" class="notranslate">Support</span></a>
+                    </li>
+                    <li>
+                        <a href="https://kb.netapp.com/"
+                            target="_self"><span translate="no" class="notranslate">Base de connaissances</span></a>
+                    </li>
+                    <li>
+                        <a href="https://www.netapp.com/fr/support-and-training/netapp-learning-services/"
+                            target="_self"><span translate="no" class="notranslate">Formation</span></a>
+                    </li>
+                </ul>
+            </div>
+
+        </li>
+
+    </ul>
+</nav>
+
+        <main id="n-main-content" class="n-main-content">
+          <!-- Start Documentation Content -->
+<div class="ie-main">
+
+<div id="ie-new-sidebar-collapse" style="display: none">
+    <img id="sidebar-expand" class="ie-searchbox-icon" src="/fr-fr/bluexp-setup-admin/images/double_arrow.svg" alt="" />
+</div>
+<div id="ie-new-sidebar">
+    <div id="ie-product-identity-lockup">
+        <div id="sidebar-collapse" class="">
+            <img src="/fr-fr/bluexp-setup-admin/images/double_arrow.svg" alt="" />
+        </div>
+        <div id="ie-breadcrumb" class="">
+  <ul class="ie-breadcrumb">
+    <li class="">
+      <a href="https://docs.netapp.com">Tous les documents</a>
+    </li>
+    
+    
+    <li class="">
+      <a href="https://docs.netapp.com/us-en/cloud/">Documents sur le cloud</a>
+    </li>
+    
+
+    
+    <li class="">
+      <a href="https://docs.netapp.com/fr-fr/bluexp-family/">
+        BlueXP
+      </a>
+    </li>
+    
+  </ul>
+  
+  <div class="ie-product-name" >
+    <!--<a href="/fr-fr/bluexp-setup-admin/">-->
+      Setup and administration
+    <!--</a>-->
+  </div>
+</div>
+
+            
+
+        
+        
+
+<div id="ie-searchbox" class="ie-searchbox-sidebar ">
+    <img class="ie-searchbox-icon" src="/fr-fr/bluexp-setup-admin/images/loupe.svg" alt=""/>
+    <div id="react-search" 
+        data-search-html="/fr-fr/bluexp-setup-admin/search.html" 
+        data-type="widget"
+        data-placeholder="Rechercher dans la documentation"
+        data-no-results-found="Aucun résultat trouvé pour : {query}"
+        data-did-you-mean="Rechercher {suggestion}."
+        data-no-results-found-did-you-mean="Aucun résultat n'a été trouvé pour {query}. Voulez-vous dire {suggestion} ?"
+        data-results-found="{hitCount} résultats"
+        data-error-message="Une erreur s'est produite. Merci de réessayer."
+        data-error-reset="Réinitialiser la recherche"
+        data-sk-es-pf-indexes="" 
+        data-flavor="">
+    </div>
+</div>
+        
+    </div>
+    <div id="ie-new-toc"><script>
+  let sidebarAccordion = true;
+
+  /* specific css rules for Mac */
+  if(navigator.platform.match('Mac') !== null) {
+    document.body.setAttribute('class', 'OSX');
+  }
+
+</script>
+
+<div id="ie-sidebar-container">
+  <ul id="ie-sidebar-list" ><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Documents de configuration et d'administration"
+      data-li-level="1#" 
+      class="   "
+      dale-page-url="/task-install-connector-google-bluexp-gcloud.html" 
+      dale-entry-url="/index.html" 
+    ><a class="ie-sidebar-menuitem-1 " href="/fr-fr/bluexp-setup-admin/index.html">
+        Documents de configuration et d'administration
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Notes de mise à jour"
+      data-li-level="1" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-install-connector-google-bluexp-gcloud.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-1  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/fr-fr/bluexp-setup-admin/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/fr-fr/bluexp-setup-admin/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Notes de mise à jour</div>-->
+         Notes de mise à jour
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Quoi de neuf"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task-install-connector-google-bluexp-gcloud.html" 
+      dale-entry-url="/whats-new.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/fr-fr/bluexp-setup-admin/whats-new.html">
+        Quoi de neuf
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Limites connues"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task-install-connector-google-bluexp-gcloud.html" 
+      dale-entry-url="/reference-limitations.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/fr-fr/bluexp-setup-admin/reference-limitations.html">
+        Limites connues
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Commencez"
+      data-li-level="1" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-install-connector-google-bluexp-gcloud.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-1  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/fr-fr/bluexp-setup-admin/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/fr-fr/bluexp-setup-admin/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Commencez</div>-->
+         Commencez
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Découvrez les bases"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-install-connector-google-bluexp-gcloud.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-2  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/fr-fr/bluexp-setup-admin/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/fr-fr/bluexp-setup-admin/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Découvrez les bases</div>-->
+         Découvrez les bases
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="BlueXP"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-install-connector-google-bluexp-gcloud.html" 
+      dale-entry-url="/concept-overview.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/fr-fr/bluexp-setup-admin/concept-overview.html">
+        BlueXP
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Comptes"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-install-connector-google-bluexp-gcloud.html" 
+      dale-entry-url="/concept-netapp-accounts.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/fr-fr/bluexp-setup-admin/concept-netapp-accounts.html">
+        Comptes
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Connecteurs"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-install-connector-google-bluexp-gcloud.html" 
+      dale-entry-url="/concept-connectors.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/fr-fr/bluexp-setup-admin/concept-connectors.html">
+        Connecteurs
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Modes de déploiement"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-install-connector-google-bluexp-gcloud.html" 
+      dale-entry-url="/concept-modes.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/fr-fr/bluexp-setup-admin/concept-modes.html">
+        Modes de déploiement
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Commencez avec le mode standard"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-install-connector-google-bluexp-gcloud.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-2  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/fr-fr/bluexp-setup-admin/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/fr-fr/bluexp-setup-admin/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Commencez avec le mode standard</div>-->
+         Commencez avec le mode standard
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Mise en route du flux de travail"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-install-connector-google-bluexp-gcloud.html" 
+      dale-entry-url="/task-quick-start-standard-mode.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/fr-fr/bluexp-setup-admin/task-quick-start-standard-mode.html">
+        Mise en route du flux de travail
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Préparez la mise en réseau à l'aide de la console BlueXP"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-install-connector-google-bluexp-gcloud.html" 
+      dale-entry-url="/reference-networking-saas-console.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/fr-fr/bluexp-setup-admin/reference-networking-saas-console.html">
+        Préparez la mise en réseau à l'aide de la console BlueXP
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Inscrivez-vous à BlueXP"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-install-connector-google-bluexp-gcloud.html" 
+      dale-entry-url="/task-sign-up-saas.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/fr-fr/bluexp-setup-admin/task-sign-up-saas.html">
+        Inscrivez-vous à BlueXP
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Créer un connecteur"
+      data-li-level="3" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-install-connector-google-bluexp-gcloud.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-3  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/fr-fr/bluexp-setup-admin/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/fr-fr/bluexp-setup-admin/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Créer un connecteur</div>-->
+         Créer un connecteur
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="AWS"
+      data-li-level="4" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-install-connector-google-bluexp-gcloud.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-4  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/fr-fr/bluexp-setup-admin/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/fr-fr/bluexp-setup-admin/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> AWS</div>-->
+         AWS
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Options d'installation du connecteur"
+      data-li-level="5#" 
+      class="   "
+      dale-page-url="/task-install-connector-google-bluexp-gcloud.html" 
+      dale-entry-url="/concept-install-options-aws.html" 
+    ><a class="ie-sidebar-menuitem-5 " href="/fr-fr/bluexp-setup-admin/concept-install-options-aws.html">
+        Options d'installation du connecteur
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Créez un connecteur depuis BlueXP"
+      data-li-level="5#" 
+      class="   "
+      dale-page-url="/task-install-connector-google-bluexp-gcloud.html" 
+      dale-entry-url="/task-install-connector-aws-bluexp.html" 
+    ><a class="ie-sidebar-menuitem-5 " href="/fr-fr/bluexp-setup-admin/task-install-connector-aws-bluexp.html">
+        Créez un connecteur depuis BlueXP
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Créez un connecteur à partir du Marketplace"
+      data-li-level="5#" 
+      class="   "
+      dale-page-url="/task-install-connector-google-bluexp-gcloud.html" 
+      dale-entry-url="/task-install-connector-aws-marketplace.html" 
+    ><a class="ie-sidebar-menuitem-5 " href="/fr-fr/bluexp-setup-admin/task-install-connector-aws-marketplace.html">
+        Créez un connecteur à partir du Marketplace
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Installer manuellement le connecteur"
+      data-li-level="5#" 
+      class="   "
+      dale-page-url="/task-install-connector-google-bluexp-gcloud.html" 
+      dale-entry-url="/task-install-connector-aws-manual.html" 
+    ><a class="ie-sidebar-menuitem-5 " href="/fr-fr/bluexp-setup-admin/task-install-connector-aws-manual.html">
+        Installer manuellement le connecteur
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Azure"
+      data-li-level="4" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-install-connector-google-bluexp-gcloud.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-4  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/fr-fr/bluexp-setup-admin/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/fr-fr/bluexp-setup-admin/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Azure</div>-->
+         Azure
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Options d'installation du connecteur"
+      data-li-level="5#" 
+      class="   "
+      dale-page-url="/task-install-connector-google-bluexp-gcloud.html" 
+      dale-entry-url="/concept-install-options-azure.html" 
+    ><a class="ie-sidebar-menuitem-5 " href="/fr-fr/bluexp-setup-admin/concept-install-options-azure.html">
+        Options d'installation du connecteur
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Créez un connecteur depuis BlueXP"
+      data-li-level="5#" 
+      class="   "
+      dale-page-url="/task-install-connector-google-bluexp-gcloud.html" 
+      dale-entry-url="/task-install-connector-azure-bluexp.html" 
+    ><a class="ie-sidebar-menuitem-5 " href="/fr-fr/bluexp-setup-admin/task-install-connector-azure-bluexp.html">
+        Créez un connecteur depuis BlueXP
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Créez un connecteur à partir du Marketplace"
+      data-li-level="5#" 
+      class="   "
+      dale-page-url="/task-install-connector-google-bluexp-gcloud.html" 
+      dale-entry-url="/task-install-connector-azure-marketplace.html" 
+    ><a class="ie-sidebar-menuitem-5 " href="/fr-fr/bluexp-setup-admin/task-install-connector-azure-marketplace.html">
+        Créez un connecteur à partir du Marketplace
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Installer manuellement le connecteur"
+      data-li-level="5#" 
+      class="   "
+      dale-page-url="/task-install-connector-google-bluexp-gcloud.html" 
+      dale-entry-url="/task-install-connector-azure-manual.html" 
+    ><a class="ie-sidebar-menuitem-5 " href="/fr-fr/bluexp-setup-admin/task-install-connector-azure-manual.html">
+        Installer manuellement le connecteur
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Google Cloud"
+      data-li-level="4" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-install-connector-google-bluexp-gcloud.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-4  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/fr-fr/bluexp-setup-admin/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/fr-fr/bluexp-setup-admin/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Google Cloud</div>-->
+         Google Cloud
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Options d'installation du connecteur"
+      data-li-level="5#" 
+      class="   "
+      dale-page-url="/task-install-connector-google-bluexp-gcloud.html" 
+      dale-entry-url="/concept-install-options-google.html" 
+    ><a class="ie-sidebar-menuitem-5 " href="/fr-fr/bluexp-setup-admin/concept-install-options-google.html">
+        Options d'installation du connecteur
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Créez un connecteur à partir de BlueXP ou de gcloud"
+      data-li-level="5#" 
+      class="  ie-sidebar-selected    "
+      dale-page-url="/task-install-connector-google-bluexp-gcloud.html" 
+      dale-entry-url="/task-install-connector-google-bluexp-gcloud.html" 
+    ><a class="ie-sidebar-menuitem-5 " href="/fr-fr/bluexp-setup-admin/task-install-connector-google-bluexp-gcloud.html">
+        Créez un connecteur à partir de BlueXP ou de gcloud
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Installer manuellement le connecteur"
+      data-li-level="5#" 
+      class="   "
+      dale-page-url="/task-install-connector-google-bluexp-gcloud.html" 
+      dale-entry-url="/task-install-connector-google-manual.html" 
+    ><a class="ie-sidebar-menuitem-5 " href="/fr-fr/bluexp-setup-admin/task-install-connector-google-manual.html">
+        Installer manuellement le connecteur
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Sur site"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/task-install-connector-google-bluexp-gcloud.html" 
+      dale-entry-url="/task-install-connector-on-prem.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/fr-fr/bluexp-setup-admin/task-install-connector-on-prem.html">
+        Sur site
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Abonnez-vous à BlueXP"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-install-connector-google-bluexp-gcloud.html" 
+      dale-entry-url="/task-subscribe-standard-mode.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/fr-fr/bluexp-setup-admin/task-subscribe-standard-mode.html">
+        Abonnez-vous à BlueXP
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Que pouvez-vous faire ensuite"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-install-connector-google-bluexp-gcloud.html" 
+      dale-entry-url="/reference-whats-next.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/fr-fr/bluexp-setup-admin/reference-whats-next.html">
+        Que pouvez-vous faire ensuite
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Commencez avec le mode restreint"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-install-connector-google-bluexp-gcloud.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-2  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/fr-fr/bluexp-setup-admin/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/fr-fr/bluexp-setup-admin/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Commencez avec le mode restreint</div>-->
+         Commencez avec le mode restreint
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Mise en route du flux de travail"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-install-connector-google-bluexp-gcloud.html" 
+      dale-entry-url="/task-quick-start-restricted-mode.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/fr-fr/bluexp-setup-admin/task-quick-start-restricted-mode.html">
+        Mise en route du flux de travail
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Préparation du déploiement"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-install-connector-google-bluexp-gcloud.html" 
+      dale-entry-url="/task-prepare-restricted-mode.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/fr-fr/bluexp-setup-admin/task-prepare-restricted-mode.html">
+        Préparation du déploiement
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Déployez le connecteur"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-install-connector-google-bluexp-gcloud.html" 
+      dale-entry-url="/task-install-restricted-mode.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/fr-fr/bluexp-setup-admin/task-install-restricted-mode.html">
+        Déployez le connecteur
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Abonnez-vous à BlueXP"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-install-connector-google-bluexp-gcloud.html" 
+      dale-entry-url="/task-subscribe-restricted-mode.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/fr-fr/bluexp-setup-admin/task-subscribe-restricted-mode.html">
+        Abonnez-vous à BlueXP
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Que pouvez-vous faire ensuite"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-install-connector-google-bluexp-gcloud.html" 
+      dale-entry-url="/reference-whats-next-restricted-mode.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/fr-fr/bluexp-setup-admin/reference-whats-next-restricted-mode.html">
+        Que pouvez-vous faire ensuite
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Commencez en mode privé"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-install-connector-google-bluexp-gcloud.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-2  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/fr-fr/bluexp-setup-admin/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/fr-fr/bluexp-setup-admin/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Commencez en mode privé</div>-->
+         Commencez en mode privé
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Mise en route du flux de travail"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-install-connector-google-bluexp-gcloud.html" 
+      dale-entry-url="/task-quick-start-private-mode.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/fr-fr/bluexp-setup-admin/task-quick-start-private-mode.html">
+        Mise en route du flux de travail
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Préparation du déploiement"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-install-connector-google-bluexp-gcloud.html" 
+      dale-entry-url="/task-prepare-private-mode.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/fr-fr/bluexp-setup-admin/task-prepare-private-mode.html">
+        Préparation du déploiement
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Déployez le connecteur"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-install-connector-google-bluexp-gcloud.html" 
+      dale-entry-url="/task-install-private-mode.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/fr-fr/bluexp-setup-admin/task-install-private-mode.html">
+        Déployez le connecteur
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Que pouvez-vous faire ensuite"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-install-connector-google-bluexp-gcloud.html" 
+      dale-entry-url="/reference-whats-next-private-mode.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/fr-fr/bluexp-setup-admin/reference-whats-next-private-mode.html">
+        Que pouvez-vous faire ensuite
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Connectez-vous à BlueXP"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task-install-connector-google-bluexp-gcloud.html" 
+      dale-entry-url="/task-logging-in.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/fr-fr/bluexp-setup-admin/task-logging-in.html">
+        Connectez-vous à BlueXP
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Administration de BlueXP"
+      data-li-level="1" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-install-connector-google-bluexp-gcloud.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-1  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/fr-fr/bluexp-setup-admin/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/fr-fr/bluexp-setup-admin/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Administration de BlueXP</div>-->
+         Administration de BlueXP
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="fédération des identités"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task-install-connector-google-bluexp-gcloud.html" 
+      dale-entry-url="/concept-federation.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/fr-fr/bluexp-setup-admin/concept-federation.html">
+        fédération des identités
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Comptes BlueXP"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-install-connector-google-bluexp-gcloud.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-2  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/fr-fr/bluexp-setup-admin/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/fr-fr/bluexp-setup-admin/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Comptes BlueXP</div>-->
+         Comptes BlueXP
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Gestion de votre compte BlueXP"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-install-connector-google-bluexp-gcloud.html" 
+      dale-entry-url="/task-managing-netapp-accounts.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/fr-fr/bluexp-setup-admin/task-managing-netapp-accounts.html">
+        Gestion de votre compte BlueXP
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Contrôlez les opérations dans votre compte"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-install-connector-google-bluexp-gcloud.html" 
+      dale-entry-url="/task-monitor-cm-operations.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/fr-fr/bluexp-setup-admin/task-monitor-cm-operations.html">
+        Contrôlez les opérations dans votre compte
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Créez un autre compte BlueXP"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-install-connector-google-bluexp-gcloud.html" 
+      dale-entry-url="/task-create-account.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/fr-fr/bluexp-setup-admin/task-create-account.html">
+        Créez un autre compte BlueXP
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Rôles utilisateur"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-install-connector-google-bluexp-gcloud.html" 
+      dale-entry-url="/reference-user-roles.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/fr-fr/bluexp-setup-admin/reference-user-roles.html">
+        Rôles utilisateur
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Connecteurs"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-install-connector-google-bluexp-gcloud.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-2  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/fr-fr/bluexp-setup-admin/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/fr-fr/bluexp-setup-admin/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Connecteurs</div>-->
+         Connecteurs
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Recherchez l'ID système d'un connecteur"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-install-connector-google-bluexp-gcloud.html" 
+      dale-entry-url="/task-finding-system-id.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/fr-fr/bluexp-setup-admin/task-finding-system-id.html">
+        Recherchez l'ID système d'un connecteur
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Gérer les connecteurs existants"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-install-connector-google-bluexp-gcloud.html" 
+      dale-entry-url="/task-managing-connectors.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/fr-fr/bluexp-setup-admin/task-managing-connectors.html">
+        Gérer les connecteurs existants
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Installez un certificat HTTPS pour un accès sécurisé"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-install-connector-google-bluexp-gcloud.html" 
+      dale-entry-url="/task-installing-https-cert.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/fr-fr/bluexp-setup-admin/task-installing-https-cert.html">
+        Installez un certificat HTTPS pour un accès sécurisé
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Configurez un connecteur pour utiliser un serveur proxy"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-install-connector-google-bluexp-gcloud.html" 
+      dale-entry-url="/task-configuring-proxy.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/fr-fr/bluexp-setup-admin/task-configuring-proxy.html">
+        Configurez un connecteur pour utiliser un serveur proxy
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Configuration par défaut du connecteur"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-install-connector-google-bluexp-gcloud.html" 
+      dale-entry-url="/reference-connector-default-config.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/fr-fr/bluexp-setup-admin/reference-connector-default-config.html">
+        Configuration par défaut du connecteur
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Informations d'identification et abonnements"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-install-connector-google-bluexp-gcloud.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-2  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/fr-fr/bluexp-setup-admin/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/fr-fr/bluexp-setup-admin/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Informations d'identification et abonnements</div>-->
+         Informations d'identification et abonnements
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="AWS"
+      data-li-level="3" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-install-connector-google-bluexp-gcloud.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-3  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/fr-fr/bluexp-setup-admin/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/fr-fr/bluexp-setup-admin/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> AWS</div>-->
+         AWS
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="En savoir plus sur les informations d'identification et les autorisations"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/task-install-connector-google-bluexp-gcloud.html" 
+      dale-entry-url="/concept-accounts-aws.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/fr-fr/bluexp-setup-admin/concept-accounts-aws.html">
+        En savoir plus sur les informations d'identification et les autorisations
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Gérez les identifiants et les abonnements"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/task-install-connector-google-bluexp-gcloud.html" 
+      dale-entry-url="/task-adding-aws-accounts.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/fr-fr/bluexp-setup-admin/task-adding-aws-accounts.html">
+        Gérez les identifiants et les abonnements
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Azure"
+      data-li-level="3" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-install-connector-google-bluexp-gcloud.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-3  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/fr-fr/bluexp-setup-admin/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/fr-fr/bluexp-setup-admin/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Azure</div>-->
+         Azure
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="En savoir plus sur les informations d'identification et les autorisations"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/task-install-connector-google-bluexp-gcloud.html" 
+      dale-entry-url="/concept-accounts-azure.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/fr-fr/bluexp-setup-admin/concept-accounts-azure.html">
+        En savoir plus sur les informations d'identification et les autorisations
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Gérez les identifiants et les abonnements"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/task-install-connector-google-bluexp-gcloud.html" 
+      dale-entry-url="/task-adding-azure-accounts.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/fr-fr/bluexp-setup-admin/task-adding-azure-accounts.html">
+        Gérez les identifiants et les abonnements
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Google Cloud"
+      data-li-level="3" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-install-connector-google-bluexp-gcloud.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-3  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/fr-fr/bluexp-setup-admin/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/fr-fr/bluexp-setup-admin/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Google Cloud</div>-->
+         Google Cloud
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Apprenez-en plus sur les projets et les autorisations"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/task-install-connector-google-bluexp-gcloud.html" 
+      dale-entry-url="/concept-accounts-gcp.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/fr-fr/bluexp-setup-admin/concept-accounts-gcp.html">
+        Apprenez-en plus sur les projets et les autorisations
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Gérez les identifiants et les abonnements"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/task-install-connector-google-bluexp-gcloud.html" 
+      dale-entry-url="/task-adding-gcp-accounts.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/fr-fr/bluexp-setup-admin/task-adding-gcp-accounts.html">
+        Gérez les identifiants et les abonnements
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Gérez les identifiants NSS associés à un compte BlueXP"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-install-connector-google-bluexp-gcloud.html" 
+      dale-entry-url="/task-adding-nss-accounts.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/fr-fr/bluexp-setup-admin/task-adding-nss-accounts.html">
+        Gérez les identifiants NSS associés à un compte BlueXP
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Gestion des identifiants associés à votre connexion BlueXP"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-install-connector-google-bluexp-gcloud.html" 
+      dale-entry-url="/task-manage-user-credentials.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/fr-fr/bluexp-setup-admin/task-manage-user-credentials.html">
+        Gestion des identifiants associés à votre connexion BlueXP
+      </a></li></ul></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Référence"
+      data-li-level="1" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-install-connector-google-bluexp-gcloud.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-1  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/fr-fr/bluexp-setup-admin/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/fr-fr/bluexp-setup-admin/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Référence</div>-->
+         Référence
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Autorisations"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-install-connector-google-bluexp-gcloud.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-2  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/fr-fr/bluexp-setup-admin/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/fr-fr/bluexp-setup-admin/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Autorisations</div>-->
+         Autorisations
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Résumé des autorisations"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-install-connector-google-bluexp-gcloud.html" 
+      dale-entry-url="/reference-permissions.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/fr-fr/bluexp-setup-admin/reference-permissions.html">
+        Résumé des autorisations
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Autorisations AWS pour le connecteur"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-install-connector-google-bluexp-gcloud.html" 
+      dale-entry-url="/reference-permissions-aws.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/fr-fr/bluexp-setup-admin/reference-permissions-aws.html">
+        Autorisations AWS pour le connecteur
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Autorisations Azure pour le connecteur"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-install-connector-google-bluexp-gcloud.html" 
+      dale-entry-url="/reference-permissions-azure.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/fr-fr/bluexp-setup-admin/reference-permissions-azure.html">
+        Autorisations Azure pour le connecteur
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Autorisations Google Cloud pour le connecteur"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-install-connector-google-bluexp-gcloud.html" 
+      dale-entry-url="/reference-permissions-gcp.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/fr-fr/bluexp-setup-admin/reference-permissions-gcp.html">
+        Autorisations Google Cloud pour le connecteur
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Ports"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-install-connector-google-bluexp-gcloud.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-2  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/fr-fr/bluexp-setup-admin/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/fr-fr/bluexp-setup-admin/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Ports</div>-->
+         Ports
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Règles du groupe de sécurité du connecteur dans AWS"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-install-connector-google-bluexp-gcloud.html" 
+      dale-entry-url="/reference-ports-aws.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/fr-fr/bluexp-setup-admin/reference-ports-aws.html">
+        Règles du groupe de sécurité du connecteur dans AWS
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Règles du groupe de sécurité du connecteur dans Azure"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-install-connector-google-bluexp-gcloud.html" 
+      dale-entry-url="/reference-ports-azure.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/fr-fr/bluexp-setup-admin/reference-ports-azure.html">
+        Règles du groupe de sécurité du connecteur dans Azure
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Règles de pare-feu du connecteur dans Google Cloud"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-install-connector-google-bluexp-gcloud.html" 
+      dale-entry-url="/reference-ports-gcp.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/fr-fr/bluexp-setup-admin/reference-ports-gcp.html">
+        Règles de pare-feu du connecteur dans Google Cloud
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Ports pour le connecteur sur site"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-install-connector-google-bluexp-gcloud.html" 
+      dale-entry-url="/reference-ports-on-prem.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/fr-fr/bluexp-setup-admin/reference-ports-on-prem.html">
+        Ports pour le connecteur sur site
+      </a></li></ul></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Connaissances et support"
+      data-li-level="1" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-install-connector-google-bluexp-gcloud.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-1  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/fr-fr/bluexp-setup-admin/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/fr-fr/bluexp-setup-admin/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Connaissances et support</div>-->
+         Connaissances et support
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="S'inscrire pour obtenir de l'aide"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task-install-connector-google-bluexp-gcloud.html" 
+      dale-entry-url="/task-support-registration.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/fr-fr/bluexp-setup-admin/task-support-registration.html">
+        S'inscrire pour obtenir de l'aide
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Obtenez de l'aide"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task-install-connector-google-bluexp-gcloud.html" 
+      dale-entry-url="/task-get-help.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/fr-fr/bluexp-setup-admin/task-get-help.html">
+        Obtenez de l'aide
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Mentions légales"
+      data-li-level="1#" 
+      class="   "
+      dale-page-url="/task-install-connector-google-bluexp-gcloud.html" 
+      dale-entry-url="/legal-notices.html" 
+    ><a class="ie-sidebar-menuitem-1 " href="/fr-fr/bluexp-setup-admin/legal-notices.html">
+        Mentions légales
+      </a></li></ul>
+</div>
+<script>
+
+  $(".ie-sidebar-button").click(function (e) {
+    e.preventDefault();
+    e.stopPropagation();
+
+    expandedLI = $('li.ie-sidebar-expand')
+
+    const li = $(this).closest("li");
+
+    const parentsLI = $(li).parents('li');
+
+    expandedLI.map(element => {
+      if (sidebarAccordion && !li.hasClass('ie-sidebar-expand') && jQuery.inArray(expandedLI[element], parentsLI) == -1) {
+        $(expandedLI[element]).toggleClass('ie-sidebar-expand');
+        $(expandedLI[element]).children("ul").animate({ height: 'toggle' }, 400, function () {
+          $(li).children("ul").toggleClass('ie-sidebar-open');
+
+        })
+      }
+
+    })
+
+    $(li).toggleClass('ie-sidebar-expand');
+    $(li).children("ul").animate({ height: 'toggle' }, 400, function () {
+      $(li).children("ul").toggleClass('ie-sidebar-open');
+    })
+  });
+
+
+  
+    $("li.ie-sidebar-selected").parents('ul').toggleClass("ie-sidebar-open");
+    $("li.ie-sidebar-selected").toggleClass("ie-sidebar-expand")
+    $("ul.ie-sidebar-open").parent().toggleClass("ie-sidebar-expand");
+    $("li.ie-sidebar-selected").children('ul').toggleClass("ie-sidebar-open")
+  
+  
+</script>
+    </div>
+</div>
+<script>
+
+    
+    let sidebarScrollTopPosition = 0;
+    $("#ie-new-toc").on("scroll", function () {
+        if (sidebarScrollTopPosition == 0) {
+            $.cookie("sidebarScroll", $("#ie-new-toc").scrollTop(), {
+                path: "/fr-fr/bluexp-setup-admin"
+            });
+        }
+
+        if ($("#ie-new-toc").scrollTop() > 0) {
+            $('#ie-product-identity-lockup').addClass('ie-addShadow');
+        } else {
+            $('#ie-product-identity-lockup').removeClass('ie-addShadow');
+        }
+    });
+
+    $(function () {
+        if ($.cookie("sidebarScroll")) {
+            $("#ie-new-toc").scrollTop($.cookie("sidebarScroll"));
+        }
+    });
+
+    function setSidebarBottom() {
+        const footerGap = PXinViewport($(".n-footer"));
+        document.getElementById("ie-new-sidebar").style.bottom = Math.max(0, footerGap) + "px";
+    }
+
+    window.onscroll = () => {
+        setSidebarBottom();
+    };
+
+    $("#sidebar-collapse").click(function (e) {
+        const sidebarWidth = $("#ie-new-sidebar").width() - $("#ie-new-sidebar-collapse").width();
+        e.preventDefault();
+        const width = $(".ie-content-pane").width();
+        const marginLeft = parseInt($(".ie-content-pane").css('marginLeft'));
+
+        if ($.cookie("sidebarScroll")) {
+            sidebarScrollTopPosition = $.cookie("sidebarScroll");
+        }
+
+        $("#ie-new-sidebar").animate({ width: 'toggle' }, 350, function () {
+            $("#ie-new-sidebar-collapse").show();
+            $("#ie-new-sidebar").removeClass("open")
+            $("#ie-new-sidebar").addClass("close")
+            $("#ie-new-sidebar").removeAttr("style")
+        });
+        $(".ie-content-pane").animate({ width: (width + sidebarWidth), marginLeft: (marginLeft - sidebarWidth) }, 350, function () {
+            resizeContent()
+        })
+
+    });
+    $("#sidebar-expand").click(function (e) {
+        const sidebarWidth = $("#ie-new-sidebar").width() - $("#ie-new-sidebar-collapse").width();
+        e.preventDefault();
+        const width = $(".ie-content-pane").width();
+        const marginLeft = parseInt($(".ie-content-pane").css('marginLeft'));
+
+        $("#ie-new-sidebar").animate({ width: 'toggle' }, 250, function () {
+            $('#ie-new-sidebar').css('display', 'flex');
+            $("#ie-new-sidebar-collapse").hide();
+            $("#ie-new-sidebar").removeClass("close")
+            $("#ie-new-sidebar").addClass("open")
+            setSidebarBottom();
+
+            if (sidebarScrollTopPosition != 0) {
+                $.cookie("sidebarScroll", sidebarScrollTopPosition, {
+                    path: "/fr-fr/bluexp-setup-admin"
+                })
+                $("#ie-new-toc").scrollTop(sidebarScrollTopPosition);
+                sidebarScrollTopPosition = 0;
+            }
+        });
+        $(".ie-content-pane").animate({ width: (width - sidebarWidth), 'marginLeft': (marginLeft + sidebarWidth) }, 250, function () {
+            resizeContent()
+        })
+    });
+    function resizeContent() {
+        const sidebarWidth = $("#ie-new-sidebar").width() - $("#ie-new-sidebar-collapse").width();
+        const rightNavbarVisible =  $("#ie-right-navbar").css('display') && $("#ie-right-navbar").css('display') != 'none';
+        const sidebarVisible = $("#ie-new-sidebar").css('display') != 'none';
+        const rightNavbarWidth = $("#ie-right-navbar").width();
+        const rightNavbarCollapseWidth = $("#ie-right-navbar-collapse").width();
+        const rightNavbarCollapseVisible = $("#ie-right-navbar-collapse").css('display') && $("#ie-right-navbar-collapse").css('display') != 'none';
+        
+        if (rightNavbarVisible && sidebarVisible) {
+            $(".ie-content-pane").width(`calc(100% - ${sidebarWidth + rightNavbarWidth}px)`)
+            $(".ie-content-pane").css('marginLeft', `${sidebarWidth}px`)
+        } else if (sidebarVisible) {
+            $(".ie-content-pane").css('marginLeft', `${sidebarWidth}px`)
+            if (rightNavbarCollapseVisible) {
+                $(".ie-content-pane").width(`calc(100% - ${sidebarWidth + rightNavbarCollapseWidth}px)`)
+            } else {
+                $(".ie-content-pane").width(`calc(100% - ${$("#ie-new-sidebar").width()}px)`)
+            }
+
+        } else if (rightNavbarVisible) {
+            $(".ie-content-pane").css('marginLeft', `${$("#ie-new-sidebar-collapse").width()}px`)
+            $(".ie-content-pane").width(`calc(100% - ${rightNavbarWidth}px)`)
+        } else {
+            $(".ie-content-pane").css('marginLeft', `${$("#ie-new-sidebar-collapse").width()}px`)
+            if (rightNavbarCollapseVisible) {
+                $(".ie-content-pane").width(`calc(100% - ${rightNavbarCollapseWidth}px)`);
+            } else {
+                $(".ie-content-pane").width(`calc(100% - ${$("#ie-new-sidebar-collapse").width()}px) `);
+            }
+            
+        }
+    }
+    $(window).on("resize load", function () {
+        setSidebarBottom();
+        resizeContent()
+    });
+
+
+</script>
+
+<div class="ie-content-pane ie-component-detail-content ie-component-detail-content--show-code">
+    <!-- Begin of page container --><article class="page-content" id="main">
+      <!-- include utility.html -->
+      <div class="ie-info-disclaimer">
+    <span>
+      <div class="ie-info-disclaimer-container">
+        <div class="ie-info-disclaimer-icon">
+          <img src="/fr-fr/bluexp-setup-admin/images/notification-icons.svg" class="luci-icon" alt="" />
+        </div>
+        <div class="ie-info-disclaimer-content">
+          <span> La version française est une traduction automatique. La version anglaise prévaut sur la française en cas de divergence. </span>
+        </div>
+        <div style="clear:both;"></div>
+      </div>
+    </span>
+  </div><div class="ie-component-detail-heading-wrap">
+  <h1 class="ie-component-detail-heading">Créez un connecteur dans Google Cloud à partir de BlueXP ou gcloud</h1>
+</div>
+
+<div id="ie-byline">
+  
+<div class="page-details">
+    
+        
+            <time datetime="2024-03-27 18:27:41 +0000">03/27/2024</time>
+        
+    
+    
+        <span>Contributeurs
+        </span>
+    
+    
+</div>
+<div class="page-controls">
+    <div id="contribute-dropdown" class="custom-dropdown custom-dropdown-contrib" >
+        <div class="custom-dropdown-select custom-dropdown-select-contrib">
+        <span class="contrib-name"><img src="/fr-fr/bluexp-setup-admin/images/discuss-sm.svg" alt="" class="github-icon" />Suggérer des modifications</span>
+        <img src="/fr-fr/bluexp-setup-admin/images/dropdown-arrow.svg" alt="" class="custom-icon chevrondown invisible" />
+        <img src="/fr-fr/bluexp-setup-admin/images/dropdown-arrow.svg" alt="" class="custom-icon chevronup" />
+        </div>
+        <ul class="custom-dropdown-menu suggested-changes-dropdown"><li>
+                <a target="_blank" href="https://github.com/NetAppDocs/bluexp-setup-admin.fr-fr/issues/new?template=new-from-page.yml&page-url=https://docs.netapp.com/fr-fr/bluexp-setup-admin/task-install-connector-google-bluexp-gcloud.html&page-title=Créez un connecteur dans Google Cloud à partir de BlueXP ou gcloud" class="page-nav-contribute-link" role="button">Demander des modifications de la documentation</a>
+            </li><li> 
+                <a target="_blank" href="https://github.com/NetAppDocs/bluexp-setup-admin/blob/main/task-install-connector-google-bluexp-gcloud.adoc" class="page-nav-contribute-link" role="button">Modifier cette page</a>
+            </li><li><a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  >En savoir plus sur les contributions</a></li>
+        </ul>
+    </div>
+    <div id="pdf-control-container">
+        <div class="n-pdf-header">
+            <a id="toggleButtonPdf" class="n-pdf-button" type="button">
+                <img class="adobe-icon" src="/fr-fr/bluexp-setup-admin/images/pdf-icon.png" alt="" width="16" height="16"/>PDF<img src="/fr-fr/bluexp-setup-admin/images/dropdown-arrow.svg" class="custom-icon" alt="" />
+            </a>
+        </div>
+        <div class="n-pdf-body-container">
+            <ul id="toggleContainerPdf" class="n-pdf-body" style="display:none;"><li class="pdf-ux-container">
+                    
+                    
+                    
+                    <a target="_blank" class="pdf-download-link" href="/fr-fr/bluexp-setup-admin/pdfs/fullsite-sidebar/Documentation_sur_la_configuration_et_l_administration_BlueXP.pdf" >
+                    <img src="/fr-fr/bluexp-setup-admin/images/pdf-icon.png" alt="" width="16" height="16"/>Un fichier PDF de toute la documentation</a>
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/fr-fr/bluexp-setup-admin/pdfs/sidebar/Notes_de_mise_à_jour.pdf" 
+            
+          >
+            <img src="/fr-fr/bluexp-setup-admin/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Notes de mise à jour
+          </a>
+          
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/fr-fr/bluexp-setup-admin/pdfs/sidebar/Commencez.pdf" 
+            
+          >
+            <img src="/fr-fr/bluexp-setup-admin/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Commencez
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/fr-fr/bluexp-setup-admin/pdfs/sidebar/Découvrez_les_bases.pdf" 
+            
+          >
+            <img src="/fr-fr/bluexp-setup-admin/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Découvrez les bases
+          </a>
+          
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/fr-fr/bluexp-setup-admin/pdfs/sidebar/Commencez_avec_le_mode_standard.pdf" 
+            
+          >
+            <img src="/fr-fr/bluexp-setup-admin/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Commencez avec le mode standard
+          </a>
+          
+
+
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/fr-fr/bluexp-setup-admin/pdfs/sidebar/Créer_un_connecteur.pdf" 
+            
+          >
+            <img src="/fr-fr/bluexp-setup-admin/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Créer un connecteur
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/fr-fr/bluexp-setup-admin/pdfs/sidebar/AWS.pdf" 
+            
+          >
+            <img src="/fr-fr/bluexp-setup-admin/images/pdf-icon.png" alt="" width="16" height="16"/>
+            AWS
+          </a>
+          
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/fr-fr/bluexp-setup-admin/pdfs/sidebar/Azure.pdf" 
+            
+          >
+            <img src="/fr-fr/bluexp-setup-admin/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Azure
+          </a>
+          
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/fr-fr/bluexp-setup-admin/pdfs/sidebar/Google_Cloud.pdf" 
+            
+          >
+            <img src="/fr-fr/bluexp-setup-admin/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Google Cloud
+          </a>
+          
+
+
+    <ul class="subfolders" id="pdf-remove" style="display:none;"><li class="active"></li></ul>
+  
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/fr-fr/bluexp-setup-admin/pdfs/sidebar/Commencez_avec_le_mode_restreint.pdf" 
+            
+          >
+            <img src="/fr-fr/bluexp-setup-admin/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Commencez avec le mode restreint
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/fr-fr/bluexp-setup-admin/pdfs/sidebar/Commencez_en_mode_privé.pdf" 
+            
+          >
+            <img src="/fr-fr/bluexp-setup-admin/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Commencez en mode privé
+          </a>
+          
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/fr-fr/bluexp-setup-admin/pdfs/sidebar/Administration_de_BlueXP.pdf" 
+            
+          >
+            <img src="/fr-fr/bluexp-setup-admin/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Administration de BlueXP
+          </a>
+          
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/fr-fr/bluexp-setup-admin/pdfs/sidebar/Comptes_BlueXP.pdf" 
+            
+          >
+            <img src="/fr-fr/bluexp-setup-admin/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Comptes BlueXP
+          </a>
+          
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/fr-fr/bluexp-setup-admin/pdfs/sidebar/Connecteurs.pdf" 
+            
+          >
+            <img src="/fr-fr/bluexp-setup-admin/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Connecteurs
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/fr-fr/bluexp-setup-admin/pdfs/sidebar/Informations_d_identification_et_abonnements.pdf" 
+            
+          >
+            <img src="/fr-fr/bluexp-setup-admin/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Informations d'identification et abonnements
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/fr-fr/bluexp-setup-admin/pdfs/sidebar/AWS.pdf" 
+            
+          >
+            <img src="/fr-fr/bluexp-setup-admin/images/pdf-icon.png" alt="" width="16" height="16"/>
+            AWS
+          </a>
+          
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/fr-fr/bluexp-setup-admin/pdfs/sidebar/Azure.pdf" 
+            
+          >
+            <img src="/fr-fr/bluexp-setup-admin/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Azure
+          </a>
+          
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/fr-fr/bluexp-setup-admin/pdfs/sidebar/Google_Cloud.pdf" 
+            
+          >
+            <img src="/fr-fr/bluexp-setup-admin/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Google Cloud
+          </a>
+          
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/fr-fr/bluexp-setup-admin/pdfs/sidebar/Référence.pdf" 
+            
+          >
+            <img src="/fr-fr/bluexp-setup-admin/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Référence
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/fr-fr/bluexp-setup-admin/pdfs/sidebar/Autorisations.pdf" 
+            
+          >
+            <img src="/fr-fr/bluexp-setup-admin/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Autorisations
+          </a>
+          
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/fr-fr/bluexp-setup-admin/pdfs/sidebar/Ports.pdf" 
+            
+          >
+            <img src="/fr-fr/bluexp-setup-admin/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Ports
+          </a>
+          
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/fr-fr/bluexp-setup-admin/pdfs/sidebar/Connaissances_et_support.pdf" 
+            
+          >
+            <img src="/fr-fr/bluexp-setup-admin/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Connaissances et support
+          </a>
+          
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+</li></ul>
+            <div class="zip-pdf-link-container" style="display: none;">   
+                <a href="#" id="zipPdf">
+                <img src="/fr-fr/bluexp-setup-admin/images/pdf-zip.png" alt="" width="16" height="16"/>
+                <pre>Plusieurs fichiers PDF<span class="zip-size"></span></pre>
+                </a><div id="zip-link-popup" class="hide">
+    <div class="inner-modal">
+        <div class="downloading-progress">
+            <div class="spinner"></div>
+            <h1>Creating your file...</h1>
+            <div>This may take a few minutes. Thanks for your patience.</div>
+            <button class="cancel-download-btn" type="button">Cancel</button>
+        </div>
+        <div class="download-complete hide">
+            <div class="done-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"/></svg>
+            </div>
+            <div>Your file is ready</div>
+            <button class="cancel-download-btn" type="button">OK</button>
+        </div>
+    </div>
+</div>
+<script>
+    $(".cancel-download-btn").click(function(){
+        $("#zip-link-popup").addClass("hide");
+        $("#zip-link-popup .downloading-progress").removeClass("hide");
+        $("#zip-link-popup .download-complete").addClass("hide");
+    });
+</script></div>
+        </div>
+    </div>        
+<script>
+$("#toggleContainerPdf li.active:last-child").parents('ul.subfolders').toggle('display');
+$("#toggleButtonPdf").on('click', function(e){ 
+    e.stopPropagation();
+    $("#toggleContainerPdf").toggle('display');
+    $(".n-pdf-body-container .zip-pdf-link-container").toggle('display');
+});
+
+//hide is by clicking outside pdfcontainer
+$(document).on('click', function (e) {
+    if ($('#toggleContainerPdf').is(':visible') && !$('.n-pdf-body-container').is(e.target) && !$('.n-pdf-body-container').has(e.target).length)  {
+        
+        $("#toggleContainerPdf").toggle('display');
+        $(".n-pdf-body-container .zip-pdf-link-container").toggle('display');
+        $("#toggleButtonPdf").removeClass("active");
+    }
+});
+</script>
+<script>
+    function getPdfLocation() {
+        const pdfLocation = window.scrollX + document.querySelector('#pdf-control-container').getBoundingClientRect().left
+        if (pdfLocation < 450) {
+            $(".n-pdf-body-container").addClass("block")
+        } else {
+            $(".n-pdf-body-container").removeClass("block")
+        }
+    
+    }
+    $( window ).on( "resize", function() {
+        getPdfLocation()
+} );
+</script>
+<script>
+    const pdfButtonWidth =  $(".n-pdf-header").width();
+    const pdfMenuWidth = $(".n-pdf-body-container").width();
+    $(".n-pdf-body-container").css('margin-left', `calc(${pdfButtonWidth - pdfMenuWidth}px)`);
+</script>
+</div>
+
+    
+
+</div>
+
+
+
+
+<div class="content-to-index">
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph lead">
+<p>Pour créer un connecteur dans Google Cloud à partir de BlueXP ou à l'aide de gcloud, vous devez configurer votre réseau, préparer les autorisations Google Cloud, activer les API Google Cloud, puis créer le connecteur.</p>
+</div>
+<div class="paragraph">
+<div class="title">Avant de commencer</div>
+<p>Vous devriez passer en revue <a href="reference-limitations.html">"Limitations du connecteur"</a>.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="étape-1-configuration-du-réseau">Étape 1 : configuration du réseau</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Configurez votre réseau de manière à ce que Connector puisse gérer les ressources et les processus dans votre environnement de cloud hybride. Par exemple, vous devez vous assurer que les connexions sont disponibles pour les réseaux cibles et que l'accès Internet sortant est disponible.</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">VPC et sous-réseau</dt>
+<dd>
+<p>Lorsque vous créez le connecteur, vous devez spécifier le VPC et le sous-réseau sur lesquels le connecteur doit résider.</p>
+</dd>
+<dt class="hdlist1">Connexions aux réseaux cibles</dt>
+<dd>
+<p>Un connecteur nécessite une connexion réseau à l'emplacement où vous prévoyez de créer et de gérer des environnements de travail. Par exemple, le réseau sur lequel vous prévoyez de créer des systèmes Cloud Volumes ONTAP ou un système de stockage dans votre environnement sur site.</p>
+</dd>
+<dt class="hdlist1">Accès Internet sortant</dt>
+<dd>
+<p>L'emplacement réseau où vous déployez le connecteur doit disposer d'une connexion Internet sortante pour contacter des points finaux spécifiques.</p>
+</dd>
+<dt class="hdlist1">Points d'extrémité contactés depuis le connecteur</dt>
+<dd>
+<p>Le connecteur nécessite un accès Internet sortant pour contacter les terminaux suivants afin de gérer les ressources et les processus au sein de votre environnement de cloud public pour les opérations quotidiennes.</p>
+<div class="openblock">
+<div class="content">
+<div class="paragraph">
+<p>Notez que les points finaux répertoriés ci-dessous sont tous des entrées CNAME.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 66.6666%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Terminaux</th>
+<th class="tableblock halign-left valign-top">Objectif</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>https://www.googleapis.com/compute/v1/<br>
+https://compute.googleapis.com/compute/v1<br>
+https://cloudresourcemanager.googleapis.com/v1/projects<br>
+https://www.googleapis.com/compute/beta<br>
+https://storage.googleapis.com/storage/v1<br>
+https://www.googleapis.com/storage/v1<br>
+https://iam.googleapis.com/v1<br>
+https://cloudkms.googleapis.com/v1<br>
+https://www.googleapis.com/deploymentmanager/v2/projects</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>De gérer des ressources dans Google Cloud.</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>https://support.netapp.com<br>
+https://mysupport.netapp.com</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Pour obtenir des informations sur les licences et envoyer des messages AutoSupport au support NetApp.</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>https://*.api.bluexp.netapp.com</p>
+</div>
+<div class="paragraph">
+<p>https://api.bluexp.netapp.com</p>
+</div>
+<div class="paragraph">
+<p>https://*.cloudmanager.cloud.netapp.com</p>
+</div>
+<div class="paragraph">
+<p>https://cloudmanager.cloud.netapp.com</p>
+</div>
+<div class="paragraph">
+<p>https://netapp-cloud-account.auth0.com</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Pour fournir des fonctions et des services SaaS dans BlueXP.</p>
+</div>
+<div class="paragraph">
+<p>Notez que le connecteur est actuellement en contact avec « cloudmanager.cloud.netapp.com", mais il commencera à contacter « api.bluexp.netapp.com" dans une prochaine version.</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>https://*.blob.core.windows.net</p>
+</div>
+<div class="paragraph">
+<p>https://cloudmanagerinfraprod.azurecr.io</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Pour mettre à niveau le connecteur et ses composants Docker.</p>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</dd>
+<dt class="hdlist1">Terminaux contactés depuis la console BlueXP</dt>
+<dd>
+<p>Lorsque vous utilisez la console web BlueXP fournie via la couche SaaS, elle contacte plusieurs terminaux pour effectuer les tâches de gestion des données. Cela inclut les terminaux contactés pour déployer le connecteur à partir de la console BlueXP.</p>
+<div class="openblock">
+<div class="content">
+<div class="paragraph">
+<p><a href="reference-networking-saas-console.html">"Consultez la liste des terminaux contactés depuis la console BlueXP"</a>.</p>
+</div>
+</div>
+</div>
+</dd>
+<dt class="hdlist1">Serveur proxy</dt>
+<dd>
+<p>Si votre organisation nécessite le déploiement d'un serveur proxy pour tout le trafic Internet sortant, procurez-vous les informations suivantes sur votre proxy HTTP ou HTTPS. Vous devrez fournir ces informations pendant l'installation.</p>
+<div class="openblock">
+<div class="content">
+<div class="ulist">
+<ul>
+<li>
+<p>Adresse IP</p>
+</li>
+<li>
+<p>Informations d'identification</p>
+</li>
+<li>
+<p>Certificat HTTPS</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Notez que BlueXP ne prend pas en charge les serveurs proxy transparents.</p>
+</div>
+</div>
+</div>
+</dd>
+<dt class="hdlist1">Ports</dt>
+<dd>
+<p>Il n'y a pas de trafic entrant vers le connecteur, sauf si vous l'initiez ou si le connecteur est utilisé comme proxy pour envoyer des messages AutoSupport de Cloud Volumes ONTAP au support NetApp.</p>
+<div class="openblock">
+<div class="content">
+<div class="ulist">
+<ul>
+<li>
+<p>HTTP (80) et HTTPS (443) permettent d'accéder à l'interface utilisateur locale que vous utiliserez dans de rares circonstances.</p>
+</li>
+<li>
+<p>SSH (22) n'est nécessaire que si vous devez vous connecter à l'hôte pour le dépannage.</p>
+</li>
+<li>
+<p>Les connexions entrantes via le port 3128 sont requises si vous déployez des systèmes Cloud Volumes ONTAP dans un sous-réseau où aucune connexion Internet sortante n'est disponible.</p>
+<div class="paragraph">
+<p>Si les systèmes Cloud Volumes ONTAP ne disposent pas d'une connexion Internet sortante pour envoyer des messages AutoSupport, BlueXP les configure automatiquement pour qu'ils utilisent un serveur proxy inclus avec le connecteur. La seule condition est de s'assurer que le groupe de sécurité du connecteur autorise les connexions entrantes sur le port 3128. Vous devrez ouvrir ce port après le déploiement du connecteur.</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</dd>
+<dt class="hdlist1">Activez le protocole NTP</dt>
+<dd>
+<p>Si vous prévoyez d'utiliser la classification BlueXP pour analyser vos sources de données d'entreprise, vous devez activer un service NTP (Network Time Protocol) sur le système de connecteur BlueXP et le système de classification BlueXP afin que l'heure soit synchronisée entre les systèmes. <a href="https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html" target="_blank" rel="noopener">"En savoir plus sur la classification BlueXP"</a></p>
+<div class="openblock">
+<div class="content">
+<div class="paragraph">
+<p>Vous devrez implémenter cette exigence de mise en réseau après avoir créé le connecteur.</p>
+</div>
+</div>
+</div>
+</dd>
+</dl>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="étape-2-définissez-les-autorisations-nécessaires-pour-créer-le-connecteur">Étape 2 : définissez les autorisations nécessaires pour créer le connecteur</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Avant de déployer un connecteur à partir de BlueXP ou à l'aide de gcloud, vous devez définir des autorisations pour l'utilisateur Google Cloud qui va déployer la VM Connector.</p>
+</div>
+<div class="olist arabic">
+<div class="title">Étapes</div>
+<ol class="arabic">
+<li>
+<p>Créez un rôle personnalisé dans Google Cloud :</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>Créez un fichier YAML qui inclut les autorisations suivantes :</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-yaml" data-lang="yaml">title: Connector deployment policy
+description: Permissions for the user who deploys the Connector from BlueXP
+stage: GA
+includedPermissions:
+- compute.disks.create
+- compute.disks.get
+- compute.disks.list
+- compute.disks.setLabels
+- compute.disks.use
+- compute.firewalls.create
+- compute.firewalls.delete
+- compute.firewalls.get
+- compute.firewalls.list
+- compute.globalOperations.get
+- compute.images.get
+- compute.images.getFromFamily
+- compute.images.list
+- compute.images.useReadOnly
+- compute.instances.attachDisk
+- compute.instances.create
+- compute.instances.get
+- compute.instances.list
+- compute.instances.setDeletionProtection
+- compute.instances.setLabels
+- compute.instances.setMachineType
+- compute.instances.setMetadata
+- compute.instances.setTags
+- compute.instances.start
+- compute.instances.updateDisplayDevice
+- compute.machineTypes.get
+- compute.networks.get
+- compute.networks.list
+- compute.networks.updatePolicy
+- compute.projects.get
+- compute.regions.get
+- compute.regions.list
+- compute.subnetworks.get
+- compute.subnetworks.list
+- compute.zoneOperations.get
+- compute.zones.get
+- compute.zones.list
+- deploymentmanager.compositeTypes.get
+- deploymentmanager.compositeTypes.list
+- deploymentmanager.deployments.create
+- deploymentmanager.deployments.delete
+- deploymentmanager.deployments.get
+- deploymentmanager.deployments.list
+- deploymentmanager.manifests.get
+- deploymentmanager.manifests.list
+- deploymentmanager.operations.get
+- deploymentmanager.operations.list
+- deploymentmanager.resources.get
+- deploymentmanager.resources.list
+- deploymentmanager.typeProviders.get
+- deploymentmanager.typeProviders.list
+- deploymentmanager.types.get
+- deploymentmanager.types.list
+- resourcemanager.projects.get
+- compute.instances.setServiceAccount
+- iam.serviceAccounts.list</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>Dans Google Cloud, activez le shell cloud.</p>
+</li>
+<li>
+<p>Téléchargez le fichier YAML qui inclut les autorisations requises.</p>
+</li>
+<li>
+<p>Créez un rôle personnalisé à l'aide de <code>gcloud iam roles create</code> commande.</p>
+<div class="paragraph">
+<p>L'exemple suivant crée un rôle nommé « connectorDeployment » au niveau du projet :</p>
+</div>
+<div class="paragraph">
+<p>Les rôles iam gcloud créent connectDeployment --project=myproject --file=Connector-deployment.yaml</p>
+</div>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p><a href="https://cloud.google.com/iam/docs/creating-custom-roles#iam-custom-roles-create-gcloud" target="_blank" rel="noopener">"Documents Google Cloud : création et gestion de rôles personnalisés"</a></p>
+</div>
+</li>
+<li>
+<p>Attribuez ce rôle personnalisé à l'utilisateur qui va déployer le connecteur à partir de BlueXP ou à l'aide de gcloud.</p>
+<div class="paragraph">
+<p><a href="https://cloud.google.com/iam/docs/granting-changing-revoking-access#grant-single-role" target="_blank" rel="noopener">"Documents Google Cloud : attribuez un rôle unique"</a></p>
+</div>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<div class="title">Résultat</div>
+<p>L'utilisateur Google Cloud dispose désormais des autorisations nécessaires pour créer le connecteur.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="étape-3-définissez-les-autorisations-pour-le-connecteur">Étape 3 : définissez les autorisations pour le connecteur</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Un compte de service Google Cloud est requis pour fournir le connecteur avec les autorisations dont BlueXP a besoin pour gérer les ressources dans Google Cloud. Lorsque vous créez le connecteur, vous devez associer ce compte de service à la machine virtuelle Connector.</p>
+</div>
+<div class="olist arabic">
+<div class="title">Étapes</div>
+<ol class="arabic">
+<li>
+<p>Créez un rôle personnalisé dans Google Cloud :</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>Créez un fichier YAML qui inclut le contenu du <a href="reference-permissions-gcp.html">"Autorisations de compte de service pour le connecteur"</a>.</p>
+</li>
+<li>
+<p>Dans Google Cloud, activez le shell cloud.</p>
+</li>
+<li>
+<p>Téléchargez le fichier YAML qui inclut les autorisations requises.</p>
+</li>
+<li>
+<p>Créez un rôle personnalisé à l'aide de <code>gcloud iam roles create</code> commande.</p>
+<div class="paragraph">
+<p>L'exemple suivant crée un rôle nommé « connecteur » au niveau du projet :</p>
+</div>
+<div class="paragraph">
+<p><code>gcloud iam roles create connector --project=myproject --file=connector.yaml</code></p>
+</div>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p><a href="https://cloud.google.com/iam/docs/creating-custom-roles#iam-custom-roles-create-gcloud" target="_blank" rel="noopener">"Documents Google Cloud : création et gestion de rôles personnalisés"</a></p>
+</div>
+</li>
+<li>
+<p>Créer un compte de service dans Google Cloud et attribuer le rôle au compte de service :</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>Dans le service IAM &amp; Admin, sélectionnez <strong>comptes de service &gt; Créer un compte de service</strong>.</p>
+</li>
+<li>
+<p>Entrez les détails du compte de service et sélectionnez <strong>Créer et continuer</strong>.</p>
+</li>
+<li>
+<p>Sélectionnez le rôle que vous venez de créer.</p>
+</li>
+<li>
+<p>Terminez les étapes restantes pour créer le rôle.</p>
+<div class="paragraph">
+<p><a href="https://cloud.google.com/iam/docs/creating-managing-service-accounts#creating_a_service_account" target="_blank" rel="noopener">"Documents Google Cloud : création d'un compte de service"</a></p>
+</div>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>Si vous prévoyez de déployer des systèmes Cloud Volumes ONTAP dans différents projets que le projet sur lequel réside le connecteur, vous devrez fournir au compte de service du connecteur l'accès à ces projets.</p>
+<div class="paragraph">
+<p>Disons, par exemple, que le connecteur est dans le projet 1 et que vous voulez créer des systèmes Cloud Volumes ONTAP dans le projet 2. Vous devrez accorder l'accès au compte de service dans le projet 2.</p>
+</div>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>Dans le service IAM &amp; Admin, sélectionnez le projet Google Cloud où vous souhaitez créer les systèmes Cloud Volumes ONTAP.</p>
+</li>
+<li>
+<p>Sur la page <strong>IAM</strong>, sélectionnez <strong>accorder accès</strong> et fournissez les détails nécessaires.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Saisissez l'e-mail du compte de service du connecteur.</p>
+</li>
+<li>
+<p>Sélectionnez le rôle personnalisé du connecteur.</p>
+</li>
+<li>
+<p>Sélectionnez <strong>Enregistrer</strong>.</p>
+</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>Pour plus de détails, reportez-vous à <a href="https://cloud.google.com/iam/docs/granting-changing-revoking-access#grant-single-role" target="_blank" rel="noopener">"Documentation Google Cloud"</a></p>
+</div>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<div class="title">Résultat</div>
+<p>Le compte de service de la machine virtuelle Connector est configuré.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="étape-4-configuration-des-autorisations-vpc-partagées">Étape 4 : configuration des autorisations VPC partagées</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Si vous utilisez un VPC partagé pour déployer des ressources dans un projet de service, vous devrez préparer vos autorisations.</p>
+</div>
+<div class="paragraph">
+<p>Ce tableau est fourni à titre de référence et votre environnement doit refléter la table des autorisations lorsque la configuration IAM est terminée.</p>
+</div>
+<details>
+<summary class="title">Afficher les autorisations VPC partagées</summary>
+<div class="content">
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 10%;">
+<col style="width: 10%;">
+<col style="width: 10%;">
+<col style="width: 18%;">
+<col style="width: 18%;">
+<col style="width: 34%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Identité</th>
+<th class="tableblock halign-left valign-top">Créateur</th>
+<th class="tableblock halign-left valign-top">Hébergé dans</th>
+<th class="tableblock halign-left valign-top">Autorisations de projet de service</th>
+<th class="tableblock halign-left valign-top">Autorisations de projet hôte</th>
+<th class="tableblock halign-left valign-top">Objectif</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Compte Google pour déployer le connecteur</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Personnalisées</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Projet de service</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><a href="task-install-connector-google-bluexp-gcloud.html#step-2-set-up-permissions-to-create-the-connector">"Stratégie de déploiement de connecteur"</a></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>compute.networkUser</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Déploiement du connecteur dans le projet de service</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Connecteur de compte de service</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Personnalisées</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Projet de service</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><a href="reference-permissions-gcp.html">"Stratégie de compte de service de connecteur"</a></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">compute.networkUser<br>
+<br>
+deploymentmanager.editor</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Déploiement et maintenance de Cloud Volumes ONTAP et des services dans le projet de service</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Compte de service Cloud Volumes ONTAP</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Personnalisées</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Projet de service</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">storage.admin<br>
+<br>
+Membre: Compte de service BlueXP à partir de serviceAccount.user</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">S/O</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">(Facultatif) pour le Tiering des données et la sauvegarde et la restauration BlueXP</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Agent de service Google API</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Google Cloud</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Projet de service</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Editeur (par défaut)</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>compute.networkUser</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Interagit avec les API Google Cloud pour le compte du déploiement. Permet à BlueXP d'utiliser le réseau partagé.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Compte de service par défaut Google Compute Engine</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Google Cloud</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Projet de service</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Editeur (par défaut)</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>compute.networkUser</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Déploie les instances Google Cloud et l'infrastructure de calcul pour le compte du déploiement. Permet à BlueXP d'utiliser le réseau partagé.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Remarques :</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>deploymentmanager.Editor est uniquement requis au niveau du projet hôte si vous ne passez pas de règles de pare-feu au déploiement et que vous choisissez de laisser BlueXP les créer pour vous. BlueXP créera un déploiement dans le projet hôte qui contient la règle de pare-feu VPC0 si aucune règle n'est spécifiée.</p>
+</li>
+<li>
+<p>Firewall.create et firewall.delete ne sont nécessaires que si vous ne passez pas de règles de pare-feu au déploiement et que vous choisissez de laisser BlueXP les créer pour vous. Ces autorisations résident dans le fichier .yaml du compte BlueXP. Si vous déployez une paire HA à l'aide d'un VPC partagé, ces autorisations seront utilisées pour créer les règles de pare-feu pour VPC1, 2 et 3. Pour tous les autres déploiements, ces autorisations seront également utilisées pour créer des règles pour VPC0.</p>
+</li>
+<li>
+<p>Pour le Tiering des données, le compte de service de Tiering doit avoir le rôle serviceAccount.user sur le compte de service, et pas seulement au niveau du projet. Actuellement, si vous attribuez serviceAccount.user au niveau du projet, les autorisations ne s'affichent pas lorsque vous interrogez le compte de service avec getIAMPolicy.</p>
+</li>
+</ol>
+</div>
+</div>
+</details>
+</div>
+</div>
+<div class="sect1">
+<h2 id="étape-5-activez-les-api-google-cloud">Étape 5 : activez les API Google Cloud</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Vous devez activer plusieurs API Google Cloud avant de pouvoir déployer le connecteur et Cloud Volumes ONTAP dans Google Cloud.</p>
+</div>
+<div class="olist arabic">
+<div class="title">Étape</div>
+<ol class="arabic">
+<li>
+<p>Activez les API Google Cloud suivantes dans votre projet :</p>
+<div class="ulist">
+<ul>
+<li>
+<p>API Cloud Deployment Manager V2</p>
+</li>
+<li>
+<p>API de journalisation cloud</p>
+</li>
+<li>
+<p>API Cloud Resource Manager</p>
+</li>
+<li>
+<p>API du moteur de calcul</p>
+</li>
+<li>
+<p>API de gestion des identités et des accès</p>
+</li>
+<li>
+<p>API KMS (Cloud Key Management Service</p>
+<div class="paragraph">
+<p>(Requis uniquement si vous prévoyez d'utiliser la sauvegarde et la restauration BlueXP avec des clés de chiffrement gérées par le client (CMEK))</p>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p><a href="https://cloud.google.com/apis/docs/getting-started#enabling_apis" target="_blank" rel="noopener">"Documentation Google Cloud : activation des API"</a></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="étape-6-créer-le-connecteur">Étape 6 : créer le connecteur</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Créez un connecteur directement à partir de la console web BlueXP ou à l'aide de gcloud.</p>
+</div>
+<div class="paragraph">
+<div class="title">Description de la tâche</div>
+<p>La création du connecteur déploie une instance de machine virtuelle dans Google Cloud à l'aide d'une configuration par défaut. Après avoir créé le connecteur, vous ne devez pas passer à une instance de machine virtuelle plus petite qui a moins de CPU ou de RAM. <a href="reference-connector-default-config.html">"En savoir plus sur la configuration par défaut du connecteur"</a>.</p>
+</div>
+<div class="exampleblock tabbed-block">
+<div class="content">
+<div class="openblock">
+<div class="title">BlueXP</div>
+<div class="content">
+<div class="paragraph">
+<div class="title">Avant de commencer</div>
+<p>Vous devez disposer des éléments suivants :</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Les autorisations Google Cloud requises pour créer le connecteur et un compte de service pour la VM Connector.</p>
+</li>
+<li>
+<p>VPC et sous-réseau qui répondent aux exigences réseau.</p>
+</li>
+<li>
+<p>Détails sur un serveur proxy, si un proxy est requis pour accéder à Internet à partir du connecteur.</p>
+</li>
+</ul>
+</div>
+<div class="olist arabic">
+<div class="title">Étapes</div>
+<ol class="arabic">
+<li>
+<p>Sélectionnez la liste déroulante <strong>Connector</strong> et sélectionnez <strong>Ajouter un connecteur</strong>.</p>
+<div class="paragraph">
+<p><span class="image"><img src="./media/screenshot_connector_add.gif" alt="Capture d'écran affichant l'icône du connecteur dans l'en-tête et l'action Ajouter un connecteur."></span></p>
+</div>
+</li>
+<li>
+<p>Choisissez <strong>Google Cloud Platform</strong> comme fournisseur de cloud.</p>
+</li>
+<li>
+<p>Sur la page <strong>déploiement d'un connecteur</strong>, consultez les détails de ce dont vous aurez besoin. Vous avez deux options :</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>Sélectionnez <strong>Continuer</strong> pour préparer le déploiement à l'aide du guide produit. Chaque étape du guide du produit inclut les informations contenues sur cette page de la documentation.</p>
+</li>
+<li>
+<p>Sélectionnez <strong>passer au déploiement</strong> si vous êtes déjà préparé en suivant les étapes de cette page.</p>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>Suivez les étapes de l'assistant pour créer le connecteur :</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Si vous y êtes invité, connectez-vous à votre compte Google, qui devrait disposer des autorisations requises pour créer l'instance de machine virtuelle.</p>
+<div class="paragraph">
+<p>Le formulaire est détenu et hébergé par Google. Vos identifiants ne sont pas fournis à NetApp.</p>
+</div>
+</li>
+<li>
+<p><strong>Détails</strong> : saisissez un nom pour l'instance de machine virtuelle, spécifiez des balises, sélectionnez un projet, puis sélectionnez le compte de service qui dispose des autorisations requises (reportez-vous à la section ci-dessus pour plus de détails).</p>
+</li>
+<li>
+<p><strong>Location</strong> : spécifiez une région, une zone, un VPC et un sous-réseau pour l'instance.</p>
+</li>
+<li>
+<p><strong>Réseau</strong> : permet d'activer ou non une adresse IP publique et de spécifier éventuellement une configuration proxy.</p>
+</li>
+<li>
+<p><strong>Stratégie de pare-feu</strong> : choisissez de créer une nouvelle politique de pare-feu ou de sélectionner une politique de pare-feu existante qui autorise les règles entrantes et sortantes requises.</p>
+<div class="paragraph">
+<p><a href="reference-ports-gcp.html">"Règles de pare-feu dans Google Cloud"</a></p>
+</div>
+</li>
+<li>
+<p><strong>Review</strong> : consultez vos sélections pour vérifier que votre configuration est correcte.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Sélectionnez <strong>Ajouter</strong>.</p>
+<div class="paragraph">
+<p>L'instance doit être prête dans environ 7 minutes. Vous devez rester sur la page jusqu'à ce que le processus soit terminé.</p>
+</div>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<div class="title">Résultat</div>
+<p>Une fois le processus terminé, le connecteur est disponible pour être utilisé depuis BlueXP.</p>
+</div>
+<div class="paragraph">
+<p>Si vous avez des compartiments Google Cloud Storage dans le même compte Google Cloud où vous avez créé le connecteur, un environnement de travail Google Cloud Storage s'affiche automatiquement sur le canevas BlueXP. <a href="https://docs.netapp.com/us-en/bluexp-google-cloud-storage/index.html" target="_blank" rel="noopener">"Découvrez comment gérer le stockage Google Cloud à partir de BlueXP"</a></p>
+</div>
+</div>
+</div>
+<div class="openblock">
+<div class="title">gcloud</div>
+<div class="content">
+<div class="paragraph">
+<div class="title">Avant de commencer</div>
+<p>Vous devez disposer des éléments suivants :</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Les autorisations Google Cloud requises pour créer le connecteur et un compte de service pour la VM Connector.</p>
+</li>
+<li>
+<p>VPC et sous-réseau qui répondent aux exigences réseau.</p>
+</li>
+<li>
+<p>Compréhension des exigences des instances VM.</p>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>CPU</strong> : 4 cœurs ou 4 vCPU</p>
+</li>
+<li>
+<p><strong>RAM</strong>: 14 GO</p>
+</li>
+<li>
+<p><strong>Type de machine</strong>: Nous recommandons n2-standard-4.</p>
+<div class="paragraph">
+<p>Le connecteur est pris en charge dans Google Cloud sur une instance de machine virtuelle avec un système d'exploitation qui prend en charge les fonctionnalités de machine virtuelle blindée.</p>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="olist arabic">
+<div class="title">Étapes</div>
+<ol class="arabic">
+<li>
+<p>Connectez-vous au SDK gcloud à l'aide de la méthodologie que vous préférez.</p>
+<div class="paragraph">
+<p>Dans nos exemples, nous allons utiliser un shell local avec le SDK gcloud installé, mais vous pouvez utiliser le Google Cloud Shell natif dans la console Google Cloud.</p>
+</div>
+<div class="paragraph">
+<p>Pour plus d'informations sur le kit de développement logiciel Google Cloud, rendez-vous sur le <a href="https://cloud.google.com/sdk" target="_blank" rel="noopener">"Page de documentation du SDK Google Cloud"</a>.</p>
+</div>
+</li>
+<li>
+<p>Vérifiez que vous êtes connecté en tant qu'utilisateur disposant des autorisations requises définies dans la section ci-dessus :</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-bash" data-lang="bash">gcloud auth list</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Le résultat doit indiquer les éléments suivants où le compte d'utilisateur * est le compte d'utilisateur souhaité pour être connecté en tant que :</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>Credentialed Accounts
+ACTIVE  ACCOUNT
+     some_user_account@domain.com
+*    desired_user_account@domain.com
+To set the active account, run:
+ $ gcloud config set account `ACCOUNT`
+Updates are available for some Cloud SDK components. To install them,
+please run:
+$ gcloud components update</pre>
+</div>
+</div>
+</li>
+<li>
+<p>Exécutez le <code>gcloud compute instances create</code> commande :</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-bash" data-lang="bash">gcloud compute instances create &lt;instance-name&gt;
+  --machine-type=n2-standard-4
+  --image-project=netapp-cloudmanager
+  --image-family=cloudmanager
+  --scopes=cloud-platform
+  --project=&lt;project&gt;
+  --service-account=&lt;service-account&gt;
+  --zone=&lt;zone&gt;
+  --no-address
+  --tags &lt;network-tag&gt;
+  --network &lt;network-path&gt;
+  --subnet &lt;subnet-path&gt;
+  --boot-disk-kms-key &lt;kms-key-path&gt;</code></pre>
+</div>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">nom de l'instance</dt>
+<dd>
+<p>Nom d'instance souhaité pour l'instance de VM.</p>
+</dd>
+<dt class="hdlist1">projet</dt>
+<dd>
+<p>(Facultatif) le projet où vous souhaitez déployer la machine virtuelle.</p>
+</dd>
+<dt class="hdlist1">compte de service</dt>
+<dd>
+<p>Compte de service spécifié dans la sortie de l'étape 2.</p>
+</dd>
+<dt class="hdlist1">zone</dt>
+<dd>
+<p>La zone où vous souhaitez déployer la machine virtuelle</p>
+</dd>
+<dt class="hdlist1">pas d'adresse</dt>
+<dd>
+<p>(Facultatif) aucune adresse IP externe n'est utilisée (vous avez besoin d'un NAT ou d'un proxy cloud pour acheminer le trafic vers l'Internet public)</p>
+</dd>
+<dt class="hdlist1">balise réseau</dt>
+<dd>
+<p>(Facultatif) Ajouter un marquage réseau pour lier une règle de pare-feu à l'aide de balises à l'instance de connecteur</p>
+</dd>
+<dt class="hdlist1">chemin du réseau</dt>
+<dd>
+<p>(Facultatif) Ajoutez le nom du réseau dans lequel déployer le connecteur (pour un VPC partagé, vous avez besoin du chemin complet)</p>
+</dd>
+<dt class="hdlist1">chemin-sous-réseau</dt>
+<dd>
+<p>(Facultatif) Ajouter le nom du sous-réseau dans lequel déployer le connecteur (pour un VPC partagé, vous devez disposer du chemin complet)</p>
+</dd>
+<dt class="hdlist1">km-key-path</dt>
+<dd>
+<p>(Facultatif) Ajouter une clé KMS pour chiffrer les disques du connecteur (les autorisations IAM doivent également être appliquées)</p>
+</dd>
+</dl>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="paragraph">
+<p>Pour plus d'informations sur ces indicateurs, visitez le <a href="https://cloud.google.com/sdk/gcloud/reference/compute/instances/create" target="_blank" rel="noopener">"Documentation du kit de développement logiciel de calcul Google Cloud"</a>.</p>
+</div>
+<div class="openblock">
+<div class="content">
+<div class="paragraph">
+<p>+<br>
+L'exécution de la commande déploie le connecteur à l'aide de l'image de référence NetApp. L'instance de connecteur et le logiciel doivent s'exécuter dans environ cinq minutes.</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Ouvrez un navigateur Web à partir d'un hôte connecté à l'instance Connector et saisissez l'URL suivante :</p>
+<div class="paragraph">
+<p><a href="https://<em>ipaddress</em>" class="bare">https://<em>ipaddress</em></a></p>
+</div>
+</li>
+<li>
+<p>Une fois connecté, configurez le connecteur :</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>Spécifiez le compte BlueXP à associer au connecteur.</p>
+<div class="paragraph">
+<p><a href="concept-netapp-accounts.html">"Découvrez les comptes BlueXP"</a>.</p>
+</div>
+</li>
+<li>
+<p>Entrez un nom pour le système.</p>
+</li>
+</ol>
+</div>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<div class="title">Résultat</div>
+<p>Le connecteur est maintenant installé et configuré avec votre compte BlueXP.</p>
+</div>
+<div class="paragraph">
+<p>Ouvrez un navigateur Web et accédez au <a href="https://console.bluexp.netapp.com" target="_blank" rel="noopener">"Console BlueXP"</a> Pour commencer à utiliser le connecteur avec BlueXP.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+    </article>
+    <!-- Page Container -->
+  </div>
+
+  
+  <!-- Start Page Toolbar -->
+<div id="ie-right-navbar-collapse" class="close">
+  <img id="navbar-expand" class="ie-searchbox-icon" src="/fr-fr/bluexp-setup-admin/images/double_arrow.svg" alt="" />
+</div>
+<div id="ie-right-navbar" class="open">
+  <div id="right-navbar-collapse">
+    <img src="/fr-fr/bluexp-setup-admin/images/double_arrow.svg" alt="" />
+  </div>
+  <div class="page-nav-container">
+    <nav class="page-nav-fixed">
+      <div class="page-nav-title">Sur cette page</div>
+      <div class="page-nav-links">
+        <ul class="page-nav-inner" id="page-menu"></ul>
+      </div>
+    </nav>
+  </div>
+</div>
+
+
+<script>
+  resizeContent();
+  function setRightBarHeight() {
+    var h = 0;
+
+    // header 1
+    h += PXinViewport($('.n-footer'));
+    h += PXinViewport($('#ie-new-header'));
+
+    if ($('#ie-right-navbar').length) {
+      $('#ie-right-navbar').css({ height: `calc(100vh - ${h}px)` });
+    }
+    if ($('.page-nav-links').length) {
+      h += 98;
+      $('.page-nav-links').css({ height: `calc(100vh - ${h}px)` });
+    }
+  }
+
+  $(document).ready(function () {
+    // PAGE NAV - Click
+    const MASTHEAD_OFFSET = 65;
+    const SECTIONS = $("main h2, main h3");
+    let calculateActiveSection = false;
+    setTimeout(() => {
+      calculateActiveSection = true;
+    }, 100)
+
+    $(".page-nav__link").click(function (event) {
+      calculateActiveSection = false;
+      $(".page-nav__link").removeClass('page-nav__link--active');
+      var target = $(event.target);
+      target.addClass('page-nav__link--active');
+      location.hash = event.target.hash;
+      setTimeout(() => {
+        calculateActiveSection = true;
+      }, 100)
+
+    });
+
+    // PAGE NAV - Scroll
+    $(window).on('resize scroll', function () {
+      if (calculateActiveSection) {
+        var activeSection = getActiveSection(SECTIONS, MASTHEAD_OFFSET);
+        if (activeSection) {
+          var activeHref = $(activeSection).attr('id');
+          $(".page-nav__link").removeClass('page-nav__link--active');
+          $("#page-menu a[href=#" + activeHref + "]").addClass('page-nav__link--active');
+          if (location.hash != "#" + activeHref) {
+            if (history.replaceState) {
+              history.replaceState(null, null, "#" + activeHref);
+            }
+          }
+        }
+      }
+    });
+
+    $(".n-pdf-button").click(function () {
+      $(this).toggleClass("active");
+    });
+
+    $.fn.isVisibleAndInViewport = function () {
+      var elementTop = $(this).offset().top;
+      var elementBottom = elementTop + $(this).outerHeight();
+
+      var viewportTop = $(window).scrollTop();
+      var viewportBottom = viewportTop + $(window).height();
+
+      return elementBottom > viewportTop && elementTop < viewportBottom && $(this).is(":visible");
+    };
+
+
+    $(window).on('resize scroll', function () {
+      setRightBarHeight();
+    });
+
+    $(window).trigger('resize');
+
+
+  });
+
+  $("#right-navbar-collapse").click(function (e) {
+    const rightNavbarWidth = $("#ie-right-navbar").width() - $("#ie-right-navbar-collapse").width();
+    e.preventDefault();
+    const width = $(".ie-content-pane").width();
+
+    $("#ie-right-navbar").animate({ width: 'toggle' }, 350, function () {
+      $("#ie-right-navbar-collapse").removeClass("close")
+      $("#ie-right-navbar-collapse").addClass("open")
+      $("#ie-right-navbar").removeClass("open")
+      $("#ie-right-navbar").addClass("close")
+    });
+    $(".ie-content-pane").animate({ width: (width + rightNavbarWidth) }, 350, function () {
+      resizeContent()
+      setSidebarBottom();
+    })
+
+  });
+  $("#navbar-expand").click(function (e) {
+    const rightNavbarWidth = $("#ie-right-navbar").width() - $("#ie-right-navbar-collapse").width();
+    e.preventDefault();
+    const width = $(".ie-content-pane").width();
+    $("#ie-right-navbar").animate({ width: 'toggle' }, 250, function () {
+      $("#ie-right-navbar-collapse").removeClass("open")
+      $("#ie-right-navbar-collapse").addClass("close")
+      $("#ie-right-navbar").removeClass("close")
+      $("#ie-right-navbar").addClass("open")
+      setRightBarHeight();
+      setSidebarBottom();
+    });
+    $(".ie-content-pane").animate({ width: (width - rightNavbarWidth) }, 250, function () {
+      resizeContent()
+    })
+  });
+
+  function navbarResize() {
+    const rightNavbarResized = $("#ie-right-navbar-collapse").hasClass('resized');
+    if (window.innerWidth < 1024) {
+      $("#ie-right-navbar").removeClass("open")
+      $("#ie-right-navbar").addClass("close")
+      $("#ie-right-navbar").removeAttr("style")
+      $("#ie-right-navbar-collapse").removeClass("close")
+      $("#ie-right-navbar-collapse").addClass("open")
+      $("#ie-right-navbar-collapse").addClass("resized")
+    } else {
+      if (rightNavbarResized) {
+        $('#ie-right-navbar').removeClass('close');
+        $('#ie-right-navbar').addClass('open');
+        $("#ie-right-navbar-collapse").removeClass("resized")
+        $("#ie-right-navbar-collapse").removeClass("open")
+        $("#ie-right-navbar-collapse").addClass("close")
+      }
+    }
+    resizeContent()
+  }
+  navbarResize();
+  $(window).on('resize load', function () {
+    navbarResize()
+  });
+
+  function getActiveSection(sections, offset) {
+    var scrollPosition = $(window).scrollTop() + offset + 5;
+    var activeSection;
+    for (var i = 0; i < sections.length; i++) {
+      var el = $(sections[i]);
+      var activePosition = el.offset().top;
+      if (activePosition > scrollPosition) {
+        break;
+      }
+
+      activeSection = sections[i];
+    }
+
+    return activeSection;
+  }
+
+  $("a[href*=#]:not([href=#])").click(function () {
+    setTimeout(() => {
+      $(window).trigger('scroll');
+    }, 105)
+  })
+
+  const hashOnLoad = location.href.split("#")[1];
+  setTimeout(function () {
+    if (hashOnLoad) {
+      $(".page-nav__link").removeClass('page-nav__link--active');
+      $("#page-menu a[href=#" + hashOnLoad + "]").addClass('page-nav__link--active');
+    }
+  }, 100)
+
+</script>
+
+
+  <div style="clear: both"></div><!-- Main needs to have height --></div>
+
+        </main>
+
+        <footer class="n-footer">
+  <div class="n-footer__bottom">
+    <div class="n-container">
+        <div class="n-footer__left">
+          <li class="n-footer__copyright-link">
+                    <a href="https://www.netapp.com/company/legal/copyright/">© 2024 NetApp, Inc.</a>
+          </li>
+        </div>
+        <div class="n-footer__center">
+          <ul class="n-footer__copyright-list">
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/terms-of-use/">Conditions d'utilisation</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/privacy-policy/">Déclaration de confidentialité</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/cookie-policy/">Déclaration sur les cookies</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a class="ot-sdk-show-settings">Paramètres des cookies</a>
+            </li>
+          </ul>
+       </div>
+        <div class="n-footer__right">
+              <li class="n-footer__copyright-link">
+                <a target="_self" href="javascript:netapp_mailto()">Envoyer des commentaires à propos de cette page</a>
+              </li>
+        </div>
+     </div>
+  </div>
+</footer>
+
+      </div><!-- Elasticsearch JS -->
+      <script type="text/javascript" src='/fr-fr/bluexp-setup-admin/js/bundle.js'></script>
+
+      <!-- Syntax Highlighting -->
+      <script type="text/javascript" src='/fr-fr/bluexp-setup-admin/js/prism.js'></script>
+      <script type="text/javascript" src='/fr-fr/bluexp-setup-admin/js/prism-curl.js'></script>
+    </div>
+    <script>
+      document.body.offsetWidth=1903;
+      cookieLaw = {}
+      cookieLaw.euCountry = "US";
+      cookieLaw.invoke = function(){return false;}
+    </script>
+    <script src='/fr-fr/bluexp-setup-admin/js/ie-tabbed-blocks.js'></script>
+    <script src='/fr-fr/bluexp-setup-admin/js/ie-sidebar.js'></script>
+  </body>
+
+</html>
