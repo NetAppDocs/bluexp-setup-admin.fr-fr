@@ -23,7 +23,11 @@ Ces règles entrantes s'appliquent à tous les modèles de déploiement BlueXP.
 | Protocole | Port | Objectif 
 
 
-| HTTP | 80 | Fournit un accès HTTP à partir des navigateurs Web du client vers l'interface utilisateur locale 
+| HTTP | 80  a| 
+* Fournit un accès HTTP à partir des navigateurs Web du client vers l'interface utilisateur locale
+* Utilisé pendant le processus de mise à niveau de Cloud Volumes ONTAP
+
+
 
 
 | HTTPS | 443 | Fournit un accès HTTPS à l'interface utilisateur locale à partir des navigateurs Web clients 

@@ -28,7 +28,11 @@ Les règles de pare-feu Google Cloud pour le connecteur exigent à la fois des r
 | SSH | 22 | Fournit un accès SSH à l'hôte du connecteur 
 
 
-| HTTP | 80 | Fournit un accès HTTP à partir des navigateurs Web du client vers l'interface utilisateur locale 
+| HTTP | 80  a| 
+* Fournit un accès HTTP à partir des navigateurs Web du client vers l'interface utilisateur locale
+* Utilisé pendant le processus de mise à niveau de Cloud Volumes ONTAP
+
+
 
 
 | HTTPS | 443 | Fournit un accès HTTPS à l'interface utilisateur locale à partir des navigateurs Web clients 
