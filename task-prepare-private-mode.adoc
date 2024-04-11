@@ -79,7 +79,17 @@ Ce connecteur est pris en charge dans Google Cloud sur une instance de machine v
 --
 Espace disque dans /opt:: 100 Gio d'espace doit être disponible
 Espace disque dans /var:: 20 Gio d'espace doit être disponible
-Moteur Docker:: Docker Engine version 19.3.1 ou ultérieure est requis sur l'hôte avant d'installer le connecteur. https://docs.docker.com/engine/install/["Voir les instructions d'installation"^]
+Moteur Docker:: Docker Engine est requis sur l'hôte avant d'installer le connecteur.
++
+--
+* La version minimale prise en charge est 19.3.1.
+* La version maximale prise en charge est 25.0.5.
++
+https://docs.docker.com/engine/install/["Voir les instructions d'installation"^]
+
+
+
+--
 
 
 
