@@ -59,7 +59,6 @@ La deuxième politique fournit des autorisations pour les services suivants :
 
 * La mise en cache en périphérie
 * Kubernetes
-* Résolution
 
 
 [role="tabbed-block"]
@@ -1279,22 +1278,6 @@ Le connecteur effectue les requêtes API suivantes pour détecter et gérer les 
 * eks:Listclusters
 * eks:DescribeCluster
 * iam:GetInstanceProfile
-
-
-
-
-=== Résolution
-
-Connector effectue les requêtes d'API suivantes pour gérer les balises sur les ressources AWS lorsque vous utilisez la correction BlueXP :
-
-* ec2:CreateTags
-* ec2:DeleteTags
-* ec2:Etiquettes descriptives
-* Tag:getResources
-* Tag:getTagKeys
-* Tag:getTagValues
-* Tag:TagResources
-* Tag:UntagResources
 
 
 

@@ -377,7 +377,7 @@ Cette partie du tableau répertorie la prise en charge de la gestion de l'enviro
 | StorageGRID | Non | Non 
 
 
-.17+| *Services* | Sauvegarde et restauration | Oui.
+.16+| *Services* | Sauvegarde et restauration | Oui.
 
 https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-protection-journey.html#support-when-using-restricted-mode["Affichez la liste des destinations de sauvegarde prises en charge pour les données de volume ONTAP"^] | Oui.
 
@@ -415,9 +415,6 @@ https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-protection-journey.
 
 
 | Protection par ransomware | Non | Non 
-
-
-| Résolution | Non | Non 
 
 
 | La réplication | Oui. | Oui. 

@@ -731,20 +731,6 @@ Ce connecteur effectue les requêtes d'API suivantes pour détecter et gérer le
 
 
 
-=== Résolution
-
-Connector effectue les requêtes d'API suivantes pour gérer les balises sur les ressources Azure lorsque vous utilisez la correction BlueXP :
-
-* Microsoft.Ressources/ressources/lecture
-* Microsoft.Ressources/abonnements/résultats d'opération/lecture
-* Microsoft.Ressources/abonnements/resourceGroups/read
-* Microsoft.Ressources/abonnements/groupes de ressources/ressources/lecture
-* Microsoft.Ressources/balises/lecture
-* Microsoft.Ressources/balises/écrire
-
-
-
-
 === Tiering
 
 Lorsque vous configurez le Tiering BlueXP, Connector effectue les requêtes d'API suivantes.
