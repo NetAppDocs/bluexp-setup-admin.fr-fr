@@ -155,6 +155,12 @@ Accédez au portail Azure et attribuez le rôle personnalisé Azure à la machin
 
 .Étapes
 . Sur le portail Azure, ouvrez le service *Subscriptions* et sélectionnez votre abonnement.
++
+Il est important d'attribuer le rôle à partir du service *Subscriptions* car cela spécifie la portée de l'affectation de rôle au niveau de l'abonnement. Le _scope_ définit l'ensemble des ressources auxquelles l'accès s'applique. Si vous spécifiez une étendue à un niveau différent (par exemple, au niveau des machines virtuelles), votre capacité à effectuer des actions depuis BlueXP sera affectée.
+
++
+https://learn.microsoft.com/en-us/azure/role-based-access-control/scope-overview["Documentation Microsoft Azure : étendue du contrôle d'accès basé sur des rôles Azure"^]
+
 . Sélectionnez *contrôle d'accès (IAM)* > *Ajouter* > *Ajouter une affectation de rôle*.
 . Dans l'onglet *role*, sélectionnez le rôle *BlueXP Operator* et sélectionnez *Next*.
 +
@@ -164,7 +170,7 @@ NOTE: BlueXP Operator est le nom par défaut fourni dans la stratégie BlueXP. S
 . Dans l'onglet *membres*, procédez comme suit :
 +
 .. Attribuez l'accès à une identité *gérée*.
-.. Sélectionnez *Sélectionner les membres*, sélectionnez l'abonnement dans lequel la machine virtuelle du connecteur a été créée, choisissez *machine virtuelle*, puis sélectionnez la machine virtuelle du connecteur.
+.. Sélectionnez *Sélectionner les membres*, sélectionnez l'abonnement dans lequel la machine virtuelle du connecteur a été créée, sous *identité gérée*, choisissez *machine virtuelle*, puis sélectionnez la machine virtuelle du connecteur.
 .. Sélectionnez *Sélectionner*.
 .. Sélectionnez *Suivant*.
 .. Sélectionnez *consulter + affecter*.
