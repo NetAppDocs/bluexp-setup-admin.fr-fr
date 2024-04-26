@@ -2800,15 +2800,12 @@ Notez que la page s'actualise entre le test de la connexion et l'activation de l
   <block id="b55621a1719dba9e40d841c865c267ac" category="inline-link-macro">En savoir plus sur le fonctionnement du mode privé</block>
   <block id="e7e043e1590b443c8520402279e7ac44" category="paragraph"><block ref="7d2115a84914cfa6792d7d3921dc8e33" category="inline-link-macro-rx"></block>.</block>
   <block id="ba7c13ef3e78a348949ddfd6f17e4f18" category="paragraph">En mode privé, vous pouvez installer le connecteur sur site ou dans le cloud en installant manuellement le connecteur sur votre propre hôte Linux.</block>
-  <block id="fb04864667c4668b6288df7ac7f6f40b" category="paragraph">Si vous souhaitez créer un système Cloud Volumes ONTAP dans Google Cloud, alors le connecteur doit être exécuté dans Google Cloud, car il ne peut pas s'exécuter sur site.</block>
   <block id="c3d3f783d267d1bd41b2e7f8639a5865" category="section-title">Terminaux des opérations quotidiennes</block>
   <block id="b2723147717f1c60a42e0b1cbdb0ad6c" category="cell">\https://management.azure.microsoft.scloud
 \https://login.microsoftonline.microsoft.scloud
 \https://blob.core.microsoft.scloud
 \https://core.microsoft.scloud</block>
   <block id="8ec83edee8d0c8a3dd001c3d7e558479" category="cell">Pour gérer les ressources dans la région d'Azure IL6.</block>
-  <block id="41d07a4a0a908721d3dbbf8c6e1a98a4" category="paragraph">Si vous prévoyez de créer des systèmes Cloud Volumes ONTAP, BlueXP requiert des autorisations de votre fournisseur cloud. Vous devez définir des autorisations dans votre fournisseur de cloud, puis les associer à l'instance Connector après l'avoir installée.</block>
-  <block id="3d715e57805c2356f84c41d139ed45c5" category="paragraph">Si vous devez installer Connector sur site, vous devez fournir des autorisations à l'aide de clés d'accès AWS ou d'un principal de service Azure. Les autres options ne sont pas prises en charge.</block>
   <block id="68f824a5014b20fc98aea0beb5945581" category="paragraph">Utilisez un rôle IAM pour fournir au connecteur des autorisations. Vous devrez associer manuellement le rôle à l'instance EC2 du connecteur.</block>
   <block id="862b0c0ff0da2b02588d845f4c6d6d34" category="list-text">Activez une identité gérée attribuée par le système sur la machine virtuelle où vous prévoyez d'installer le connecteur afin de fournir les autorisations Azure requises via un rôle personnalisé.</block>
   <block id="81b303f46dd1d85b6f031bc99d8e87a6" category="summary">BlueXP propose plusieurs modes de déploiement qui vous permettent d'utiliser BlueXP en fonction de vos exigences métier et de sécurité. Le mode standard exploite la couche SaaS BlueXP pour offrir des fonctionnalités complètes, tandis que le mode restreint et le mode privé sont disponibles pour les entreprises ayant des restrictions de connectivité.</block>
@@ -4017,4 +4014,7 @@ Avec le mode privé, la seule fois que BlueXP envoie le trafic sortant est à vo
   <block id="0fde3f77d505a0a1192041da57a5754b" category="inline-link">Documentation Microsoft Azure : étendue du contrôle d'accès basé sur des rôles Azure</block>
   <block id="7ec9f2759e8cd477327da5c994d69fd0" category="paragraph"><block ref="7ec9f2759e8cd477327da5c994d69fd0" category="inline-link-rx"></block></block>
   <block id="fae4c7bdd396cfb82d86677f8bc6f763" category="list-text">Sélectionnez *Sélectionner les membres*, sélectionnez l'abonnement dans lequel la machine virtuelle du connecteur a été créée, sous *identité gérée*, choisissez *machine virtuelle*, puis sélectionnez la machine virtuelle du connecteur.</block>
+  <block id="437c802c34c0b8670d61901c4e05641e" category="inline-link-macro">En savoir plus sur le mode privé</block>
+  <block id="d05ac7ff6398ff4f2b0bd26105dd1697" category="paragraph">L'emplacement d'installation du connecteur détermine les services et fonctionnalités BlueXP disponibles lorsque vous utilisez le mode privé. Par exemple, le connecteur doit être installé dans le cloud si vous souhaitez déployer et gérer Cloud Volumes ONTAP. <block ref="11a7253f43076934a5664eb6b2874efc" category="inline-link-macro-rx"></block>.</block>
+  <block id="60a1a3ba0b214492b5ab5c5bd4a52eb0" category="paragraph">Si le connecteur est installé dans le cloud et que vous prévoyez de créer des systèmes Cloud Volumes ONTAP, BlueXP requiert les autorisations de votre fournisseur cloud. Vous devez définir des autorisations dans votre fournisseur de cloud, puis les associer à l'instance Connector après l'avoir installée.</block>
 </blocks>
