@@ -109,9 +109,9 @@ Pour savoir comment configurer les autorisations, reportez-vous aux pages suivan
 * Mode standard
 +
 ** link:task-install-connector-azure-marketplace.html#step-3-set-up-permissions["Configurez les autorisations d'un déploiement Azure Marketplace"]
-** link:task-install-connector-on-prem.html#step-3-set-up-cloud-permissions["Configurez des autorisations pour les déploiements sur site"]
+** link:task-install-connector-on-prem.html#step-4-set-up-cloud-permissions["Configurez des autorisations pour les déploiements sur site"]
 
 
-* link:task-prepare-restricted-mode.html#step-5-prepare-cloud-permissions["Définissez les autorisations pour le mode restreint"]
+* link:task-prepare-restricted-mode.html#step-6-prepare-cloud-permissions["Définissez les autorisations pour le mode restreint"]
 * link:task-prepare-private-mode.html#step-5-prepare-cloud-permissions["Configurez les autorisations pour le mode privé"]
 

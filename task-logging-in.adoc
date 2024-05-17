@@ -16,6 +16,10 @@ summary: La façon dont vous vous connectez à BlueXP dépend du mode de déploi
 [role="lead"]
 La façon dont vous vous connectez à BlueXP dépend du mode de déploiement BlueXP que vous utilisez pour votre compte.
 
+Le connecteur comprend une interface utilisateur locale, accessible à partir de l'hôte du connecteur. Cette interface utilisateur est fournie pour les clients qui utilisent BlueXP en mode restreint ou privé. Lorsque vous utilisez BlueXP en mode standard, vous devez accéder à l'interface utilisateur à partir du https://console.bluexp.netapp.com/["Console SaaS BlueXP"^]
+
+link:concept-modes.html["Découvrez les modes de déploiement BlueXP"].
+
 [role="tabbed-block"]
 ====
 .Mode standard

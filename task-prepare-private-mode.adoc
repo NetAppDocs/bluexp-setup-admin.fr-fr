@@ -51,7 +51,13 @@ Systèmes d'exploitation pris en charge::
 --
 * Ubuntu 22.04 LTS
 * CentOS 7.6, 7.7, 7.8 et 7.9
++
+NetApp continuera à prendre en charge le connecteur avec CentOS 7 jusqu'au 30 juin 2024.
+
 * Red Hat Enterprise Linux 7.6, 7.7, 7.8 et 7.9
++
+NetApp continuera à prendre en charge le connecteur avec RHEL 7 jusqu'au 30 juin 2024.
+
 +
 L'hôte doit être enregistré auprès de Red Hat Subscription Management. S'il n'est pas enregistré, l'hôte ne peut pas accéder aux référentiels pour mettre à jour les logiciels tiers requis lors de l'installation du connecteur.
 
@@ -64,7 +70,7 @@ Le connecteur est pris en charge sur les versions en anglais de ces systèmes d'
 Hyperviseur:: Un hyperviseur bare Metal ou hébergé certifié pour exécuter Ubuntu, CentOS ou Red Hat Enterprise Linux est requis.
 +
 --
-https://access.redhat.com/certified-hypervisors["Solution Red Hat : quels hyperviseurs sont certifiés pour l'exécution de Red Hat Enterprise Linux ?"^]
+https://access.redhat.com/articles/973163["Solution Red Hat : quels hyperviseurs sont certifiés pour l'exécution de Red Hat Enterprise Linux ?"^]
 
 --
 CPU:: 4 cœurs ou 4 CPU virtuels
@@ -99,7 +105,7 @@ https://docs.docker.com/engine/install/["Voir les instructions d'installation"^]
 Configurez votre réseau de sorte que le connecteur puisse gérer les ressources et les processus au sein de votre environnement de cloud public. Outre le fait de disposer d'un réseau virtuel et d'un sous-réseau pour le connecteur, vous devez vous assurer que les exigences suivantes sont respectées.
 
 Connexions aux réseaux cibles:: Le connecteur doit disposer d'une connexion réseau à l'emplacement où vous prévoyez de gérer le stockage. Par exemple, le VPC ou le vnet sur lequel vous prévoyez de déployer Cloud Volumes ONTAP, ou le data Center dans lequel résident vos clusters ONTAP sur site.
-Terminaux des opérations quotidiennes:: Le connecteur contacte les terminaux suivants pour gérer les ressources et les processus au sein de votre environnement de cloud public.
+Terminaux des opérations quotidiennes:: Si vous prévoyez de créer des systèmes Cloud Volumes ONTAP, le connecteur doit se connecter aux terminaux des ressources accessibles au public de votre fournisseur cloud.
 +
 --
 [cols="2a,1a"]
@@ -181,18 +187,16 @@ https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/public-ip-ad
 --
 
 
-Serveur proxy:: Si votre organisation nécessite le déploiement d'un serveur proxy pour tout le trafic Internet sortant, procurez-vous les informations suivantes sur votre proxy HTTP ou HTTPS. Vous devrez fournir ces informations pendant l'installation.
+Serveur proxy:: Si votre organisation nécessite le déploiement d'un serveur proxy pour tout le trafic Internet sortant, procurez-vous les informations suivantes sur votre proxy HTTP ou HTTPS. Vous devrez fournir ces informations pendant l'installation. Notez que BlueXP ne prend pas en charge les serveurs proxy transparents.
 +
 --
 * Adresse IP
 * Informations d'identification
 * Certificat HTTPS
-
-
-Notez que BlueXP ne prend pas en charge les serveurs proxy transparents.
-
 +
 Avec le mode privé, la seule fois que BlueXP envoie le trafic sortant est à votre fournisseur cloud pour créer un système Cloud Volumes ONTAP.
+
+
 
 --
 Ports:: Il n'y a pas de trafic entrant vers le connecteur, sauf si vous le lancez.

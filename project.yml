@@ -19,6 +19,8 @@ sidebar:
       url: "/whats-new.html"
     - title: Limites connues
       url: "/reference-limitations.html"
+    - title: Modifications apportées aux systèmes d'exploitation Linux pris en charge
+      url: "/reference-connector-operating-system-changes.html"
   - title: Commencez
     entries:
     - title: Découvrez les bases
@@ -115,15 +117,23 @@ sidebar:
         url: "/reference-user-roles.html"
     - title: Connecteurs
       entries:
-      - title: Recherchez l'ID système d'un connecteur
-        url: "/task-finding-system-id.html"
-      - title: Gérer les connecteurs existants
-        url: "/task-managing-connectors.html"
+      - title: Maintenance de la machine virtuelle et du système d'exploitation
+        url: "/task-maintain-connectors.html"
       - title: Installez un certificat HTTPS pour un accès sécurisé
         url: "/task-installing-https-cert.html"
       - title: Configurez un connecteur pour utiliser un serveur proxy
         url: "/task-configuring-proxy.html"
-      - title: Configuration par défaut du connecteur
+      - title: Requièrent l'utilisation d'IMDSv2 sur les instances EC2
+        url: "/task-require-imdsv2.html"
+      - title: Mettre à niveau un connecteur en mode privé
+        url: "/task-upgrade-connector.html"
+      - title: Utilisation de plusieurs connecteurs
+        url: "/task-manage-multiple-connectors.html"
+      - title: Dépanner le connecteur
+        url: "/task-troubleshoot-connector.html"
+      - title: Désinstallez et retirez le connecteur
+        url: "/task-uninstall-connector.html"
+      - title: Configuration par défaut
         url: "/reference-connector-default-config.html"
     - title: Informations d'identification et abonnements
       entries:

@@ -18,6 +18,52 @@ Découvrez les nouveautés des fonctionnalités d'administration BlueXP : compte
 
 
 
+== 17 mai 2024
+
+
+
+=== Connecteur 3.9.40
+
+Cette version de BlueXP Connector inclut la prise en charge de systèmes d'exploitation supplémentaires, des améliorations de sécurité mineures et des correctifs.
+
+À ce stade, la version 3.9.40 est disponible pour le mode standard et le mode restreint.
+
+
+
+==== Prise en charge de RHEL 8 et 9
+
+Le connecteur est désormais pris en charge sur les hôtes exécutant les versions suivantes de Red Hat Enterprise Linux avec des installations _New_ Connector :
+
+* 8.6 à 8.9
+* 9.1 à 9.3
+
+
+Podman est requis comme outil d'orchestration de conteneurs pour ces systèmes d'exploitation.
+
+Vous devez connaître les exigences de Podman, les limitations connues, un résumé de la prise en charge du système d'exploitation, ce qu'il faut faire si vous disposez d'un hôte RHEL 7, comment démarrer, et bien plus encore.
+
+https://docs.netapp.com/us-en/bluexp-setup-admin/reference-connector-operating-system-changes.html["Découvrez la prise en charge de RHEL 8 et 9 avec le connecteur"].
+
+
+
+==== Fin de la prise en charge de RHEL 7 et CentOS 7
+
+Le 30 juin 2024, RHEL 7 atteindra la fin de la maintenance (EOM), tandis que CentOS 7 atteindra la fin de vie (EOL). NetApp continuera à prendre en charge le connecteur sur ces distributions Linux jusqu'au 30 juin 2024.
+
+https://docs.netapp.com/us-en/bluexp-setup-admin/reference-connector-operating-system-changes.html["Découvrez ce que vous devez faire si vous disposez déjà d'un connecteur exécutant RHEL 7 ou CentOS 7"].
+
+
+
+==== Mise à jour des autorisations AWS
+
+Dans la version 3.9.38, nous avons mis à jour la stratégie de connecteur pour AWS afin d'y inclure l'autorisation « ec2:DescribeAvailabilityzones ». Cette autorisation est désormais requise pour la prise en charge des zones locales AWS avec Cloud Volumes ONTAP.
+
+* https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-aws.html["Afficher les autorisations AWS pour le connecteur"].
+* https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html["En savoir plus sur la prise en charge des zones locales AWS"^]
+
+
+
+
 == 22 avril 2024
 
 
@@ -99,7 +145,7 @@ Cette nouvelle version est téléchargeable depuis le site du support NetApp.
 
 * https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html["En savoir plus sur le mode privé"]
 * https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-private-mode.html["Découvrez comment démarrer avec BlueXP en mode privé"]
-* https://docs.netapp.com/us-en/bluexp-setup-admin/task-managing-connectors.html#upgrade-the-connector-when-using-private-mode["Apprenez à mettre à niveau le connecteur lorsque vous utilisez le mode privé"]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-upgrade-connector.html["Apprenez à mettre à niveau le connecteur lorsque vous utilisez le mode privé"]
 
 
 
@@ -129,7 +175,7 @@ Le service IMDS (instance Metadata Service) est activé comme suit sur les insta
 * Pour Cloud Volumes ONTAP, IMDSv1 est activé par défaut sur les instances nouvelles et existantes. Si vous le souhaitez, vous pouvez configurer manuellement IMDSv2 sur les instances EC2.
 
 
-https://docs.netapp.com/us-en/bluexp-setup-admin/task-managing-connectors.html#require-the-use-of-imdsv2-on-amazon-ec2-instances["Découvrez comment configurer IMDSv2 sur des instances existantes"].
+https://docs.netapp.com/us-en/bluexp-setup-admin/task-require-imdsv2.html["Découvrez comment configurer IMDSv2 sur des instances existantes"].
 
 
 
@@ -201,7 +247,7 @@ Cette nouvelle version est téléchargeable depuis le site du support NetApp.
 
 * https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html#private-mode["Découvrez les services BlueXP inclus avec le mode privé"]
 * https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-private-mode.html["Découvrez comment démarrer avec BlueXP en mode privé"]
-* https://docs.netapp.com/us-en/bluexp-setup-admin/task-managing-connectors.html#upgrade-the-connector-when-using-private-mode["Apprenez à mettre à niveau le connecteur lorsque vous utilisez le mode privé"]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-upgrade-connector.html["Apprenez à mettre à niveau le connecteur lorsque vous utilisez le mode privé"]
 
 
 
@@ -464,7 +510,6 @@ Pour commencer, installez manuellement le logiciel Connector, connectez-vous à 
 
 +
 ** https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-onprem-no-internet.html["Installez le connecteur dans un emplacement sans accès à Internet"^]
-** https://docs.netapp.com/us-en/bluexp-setup-admin/task-managing-connectors.html#access-the-local-ui["Accéder à la console BlueXP sur le connecteur"^]
 ** https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-manage-node-licenses.html#manage-byol-licenses["Ajouter une licence non attribuée"^]
 ** https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-overview-cvo.html["Lancez-vous avec Cloud Volumes ONTAP"^]
 

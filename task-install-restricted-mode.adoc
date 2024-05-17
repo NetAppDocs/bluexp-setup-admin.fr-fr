@@ -35,7 +35,7 @@ link:task-prepare-restricted-mode.html["En savoir plus sur les exigences de mise
 
 * Un rôle IAM avec une stratégie jointe qui inclut les autorisations requises pour le connecteur.
 +
-link:task-prepare-restricted-mode.html#step-5-prepare-cloud-permissions["Découvrez comment configurer des autorisations AWS"]
+link:task-prepare-restricted-mode.html#step-6-prepare-cloud-permissions["Découvrez comment configurer des autorisations AWS"]
 
 * Autorisations de vous abonner à AWS Marketplace et de vous désabonner pour votre utilisateur IAM.
 * Compréhension des exigences en termes de CPU et de RAM pour l'instance.
@@ -103,7 +103,7 @@ link:task-prepare-restricted-mode.html["En savoir plus sur les exigences de mise
 
 * Un rôle IAM avec une stratégie jointe qui inclut les autorisations requises pour le connecteur.
 +
-link:task-prepare-restricted-mode.html#step-5-prepare-cloud-permissions["Découvrez comment configurer des autorisations AWS"]
+link:task-prepare-restricted-mode.html#step-6-prepare-cloud-permissions["Découvrez comment configurer des autorisations AWS"]
 
 * Autorisations de vous abonner à AWS Marketplace et de vous désabonner pour votre utilisateur IAM.
 * Une paire de clés pour l'instance EC2.
@@ -157,7 +157,7 @@ link:task-prepare-restricted-mode.html["En savoir plus sur les exigences de mise
 
 * Rôle personnalisé Azure qui inclut les autorisations requises pour le connecteur.
 +
-link:task-prepare-restricted-mode.html#step-5-prepare-cloud-permissions["Découvrez comment configurer des autorisations Azure"]
+link:task-prepare-restricted-mode.html#step-6-prepare-cloud-permissions["Découvrez comment configurer des autorisations Azure"]
 
 
 
@@ -220,18 +220,13 @@ Vous avez la possibilité de configurer un serveur proxy après l'installation, 
 Notez que BlueXP ne prend pas en charge les serveurs proxy transparents.
 
 * Un certificat signé par une autorité de certification, si le serveur proxy utilise HTTPS ou si le proxy est un proxy interceptant.
+* Selon votre système d'exploitation, Podman ou Docker Engine est requis avant d'installer le connecteur.
 
 
 .Description de la tâche
 Le programme d'installation disponible sur le site du support NetApp peut être une version antérieure. Après l'installation, le connecteur se met automatiquement à jour si une nouvelle version est disponible.
 
 .Étapes
-. Vérifiez que docker est activé et exécuté.
-+
-[source, cli]
-----
-sudo systemctl enable docker && sudo systemctl start docker
-----
 . Si les variables système _http_proxy_ ou _https_proxy_ sont définies sur l'hôte, supprimez-les :
 +
 [source, cli]
@@ -270,7 +265,7 @@ Voici un exemple de commande utilisant les deux paramètres facultatifs :
 +
 [source, cli]
 ----
- ./BlueXP-Connector-Cloud-v3.9.38 --proxy https://user:password@10.0.0.30:8080/ --cacert /tmp/cacert/certificate.cer
+ ./BlueXP-Connector-Cloud-v3.9.40--proxy https://user:password@10.0.0.30:8080/ --cacert /tmp/cacert/certificate.cer
 ----
 +
 --proxy configure le connecteur pour utiliser un serveur proxy HTTP ou HTTPS à l'aide de l'un des formats suivants :
@@ -287,8 +282,15 @@ Notez ce qui suit :
 
 +
 *** L'utilisateur peut être un utilisateur local ou un utilisateur de domaine.
-*** Pour un utilisateur de domaine, vous devez utiliser le code ASCII du \ comme indiqué ci-dessus.
-*** BlueXP ne prend pas en charge les mots de passe comprenant le caractère @.
+*** Pour un utilisateur de domaine, vous devez utiliser le code ASCII pour un \ comme indiqué ci-dessus.
+*** BlueXP ne prend pas en charge les noms d'utilisateur ou les mots de passe qui incluent le caractère @.
+*** Si le mot de passe inclut l'un des caractères spéciaux suivants, vous devez échapper à ce caractère spécial en le préajoutant avec une barre oblique inverse : & ou !
++
+Par exemple :
+
++
+\http://bxpproxyuser:netapp1\!@address:3128
+
 
 
 
@@ -358,7 +360,7 @@ Si vous avez déployé le connecteur à partir d'Azure Marketplace ou si vous av
 
 Ces étapes ne s'appliquent pas si vous avez déployé Connector à partir d'AWS Marketplace, car vous avez choisi le rôle IAM requis pendant le déploiement.
 
-link:task-prepare-restricted-mode.html#step-5-prepare-cloud-permissions["Découvrez comment préparer les autorisations cloud"].
+link:task-prepare-restricted-mode.html#step-6-prepare-cloud-permissions["Découvrez comment préparer les autorisations cloud"].
 
 [role="tabbed-block"]
 ====

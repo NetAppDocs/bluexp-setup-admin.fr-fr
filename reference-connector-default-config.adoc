@@ -33,6 +33,7 @@ Si vous avez déployé le connecteur depuis BlueXP ou depuis le marché du fourn
 +
 Le système d'exploitation n'inclut pas d'interface graphique. Vous devez utiliser un terminal pour accéder au système.
 
+* L'installation inclut Docker Engine, l'outil d'orchestration de conteneurs requis.
 * Le nom d'utilisateur de l'instance EC2 Linux est ubuntu (pour les connecteurs créés avant mai 2023, le nom d'utilisateur était ec2-user).
 * Le disque système par défaut est un disque gp2 de 100 Gio.
 
@@ -48,6 +49,7 @@ Si vous avez déployé le connecteur depuis BlueXP ou depuis le marché du fourn
 +
 Le système d'exploitation n'inclut pas d'interface graphique. Vous devez utiliser un terminal pour accéder au système.
 
+* L'installation inclut Docker Engine, l'outil d'orchestration de conteneurs requis.
 * Le disque système par défaut est un disque SSD premium de 100 Gio.
 
 
@@ -62,6 +64,7 @@ Si vous avez déployé le connecteur à partir de BlueXP, notez les points suiva
 +
 Le système d'exploitation n'inclut pas d'interface graphique. Vous devez utiliser un terminal pour accéder au système.
 
+* L'installation inclut Docker Engine, l'outil d'orchestration de conteneurs requis.
 * Le disque système par défaut est un disque persistant SSD de 100 Gio.
 
 
@@ -83,7 +86,7 @@ Les fichiers journaux sont contenus dans les dossiers suivants :
 ou
 * /opt/application/netapp/service-manager-2/logs (à partir de 3.9.23 nouvelles installations)
 +
-Les journaux de ces dossiers fournissent des détails sur le connecteur et les images de docker.
+Les journaux de ces dossiers fournissent des détails sur le connecteur.
 
 * /opt/application/netapp/cloudmanager/docker_ocm/data/log
 +

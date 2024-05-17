@@ -1,0 +1,96 @@
+---
+indexpage:
+  title: Documentation sur la configuration et l'administration BlueXP
+  summary: Commencez à utiliser NetApp BlueXP pour commencer à créer, protéger et
+    régir les données dans vos environnements sur site et cloud. Une fois la configuration
+    terminée, vous pouvez gérer vos comptes BlueXP, vos connecteurs, vos comptes de
+    fournisseur cloud, etc.
+  keywords: bluexp, connector, accounts, get started, setup, administration, sign
+    up, log in, login, permissions
+  lead: Commencez à utiliser NetApp BlueXP pour commencer à créer, protéger et régir
+    les données dans vos environnements sur site et cloud. Une fois la configuration
+    terminée, vous pouvez gérer vos comptes BlueXP, vos connecteurs, vos comptes de
+    fournisseur cloud, etc.
+  tiles:
+  - title: Commencez
+    links:
+    - title: En savoir plus sur BlueXP
+      url: concept-overview.html
+    - title: Découvrez les modes de déploiement
+      url: concept-modes.html
+    - title: Commencez avec le mode standard
+      url: "/task-quick-start-standard-mode.html"
+    - title: Commencez avec le mode restreint
+      url: "/task-quick-start-restricted-mode.html"
+    - title: Commencez en mode privé
+      url: "/task-quick-start-private-mode.html"
+  - title: Comptes BlueXP
+    links:
+    - title: Découvrez les comptes BlueXP
+      url: concept-netapp-accounts.html
+    - title: Gestion de votre compte BlueXP
+      url: task-managing-netapp-accounts.html
+    - title: Contrôlez les opérations dans votre compte
+      url: task-monitor-cm-operations.html
+  - title: Connecteurs
+    links:
+    - title: En savoir plus sur les connecteurs
+      url: concept-connectors.html
+    - title: Afficher les autorisations AWS
+      url: reference-permissions-aws.html
+    - title: Afficher les autorisations Azure
+      url: reference-permissions-azure.html
+    - title: Afficher les autorisations Google Cloud
+      url: reference-permissions-gcp.html
+  - title: AWS
+    links:
+    - title: Commencez dans une région AWS standard
+      url: task-quick-start-standard-mode.html
+    - title: Commencez dans une région AWS GovCloud
+      url: task-quick-start-restricted-mode.html
+    - title: Commencez avec AWS Secret ou Top Secret Cloud
+      url: https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-getting-started-aws-c2s.html
+    - title: Afficher les politiques IAM du connecteur
+      url: reference-permissions-aws.html
+    - title: Gérez les identifiants et les abonnements
+      url: task-adding-aws-accounts.html
+  - title: Azure
+    links:
+    - title: Commencez dans une région Azure standard
+      url: task-quick-start-standard-mode.html
+    - title: Commencez dans une région Azure Government
+      url: task-quick-start-restricted-mode.html
+    - title: Lancez-vous dans Azure IL6
+      url: task-quick-start-private-mode.html
+    - title: Afficher le rôle personnalisé du connecteur
+      url: reference-permissions-azure.html
+    - title: Gérez les identifiants et les abonnements
+      url: task-adding-azure-accounts.html
+  - title: Google Cloud
+    links:
+    - title: Commencez dans une région Google Cloud standard
+      url: task-quick-start-standard-mode.html
+    - title: Afficher le compte de service pour le connecteur
+      url: reference-permissions-gcp.html
+    - title: Gérez les identifiants et les abonnements
+      url: task-adding-gcp-accounts.html
+  - title: Sur site
+    links:
+    - title: Installer et configurer un connecteur en mode standard
+      url: task-install-connector-on-prem.html
+    - title: Installer et configurer un connecteur en mode privé
+      url: task-quick-start-private-mode.html
+  - title: Connexion
+    links:
+    - title: Connectez-vous à BlueXP
+      url: task-logging-in.html
+    - title: Utilisation de la fédération des identités avec BlueXP
+      url: concept-federation.html
+  - title: Blogs et communauté
+    links:
+    - title: Communauté NetApp
+      url: https://community.netapp.com/t5/Cloud-Data-Services/ct-p/CDS
+    - title: Blog BlueXP
+      url: https://bluexp.netapp.com/blog
+    - title: Webinaires sur le cloud
+      url: https://bluexp.netapp.com/events

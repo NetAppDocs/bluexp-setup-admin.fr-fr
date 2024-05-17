@@ -35,7 +35,7 @@ image:diagram_permissions_gcp.png["Image conceptuelle décrivant les conditions 
 Pour savoir comment configurer les autorisations, reportez-vous aux pages suivantes :
 
 * link:task-install-connector-google-bluexp-gcloud.html#step-2-set-up-permissions-to-create-the-connector["Configurez les autorisations Google Cloud pour le mode standard"]
-* link:task-prepare-restricted-mode.html#step-5-prepare-cloud-permissions["Définissez les autorisations pour le mode restreint"]
+* link:task-prepare-restricted-mode.html#step-6-prepare-cloud-permissions["Définissez les autorisations pour le mode restreint"]
 * link:task-prepare-private-mode.html#step-5-prepare-cloud-permissions["Configurez les autorisations pour le mode privé"]
 
 

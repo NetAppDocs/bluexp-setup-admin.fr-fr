@@ -1,0 +1,58 @@
+---
+sidebar: sidebar 
+permalink: task-manage-multiple-connectors.html 
+keywords: switch connectors, multiple connectors, disaster recovery, dr, two connectors 
+summary: Si vous utilisez plusieurs connecteurs, BlueXP vous permet de basculer entre ces connecteurs directement depuis la console. Vous pouvez également gérer un seul environnement de travail avec plusieurs connecteurs. 
+---
+= Utilisation de plusieurs connecteurs
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Si vous utilisez plusieurs connecteurs, BlueXP vous permet de basculer entre ces connecteurs directement depuis la console. Vous pouvez également gérer un seul environnement de travail avec plusieurs connecteurs.
+
+
+
+== Basculer entre les connecteurs
+
+Si vous avez plusieurs connecteurs, vous pouvez passer de l'un à l'autre pour voir les environnements de travail associés à un connecteur spécifique.
+
+Imaginons par exemple que vous travaillez dans un environnement multicloud. Vous avez peut-être un connecteur dans AWS et un autre dans Google Cloud. Il faudrait basculer entre ces connecteurs pour gérer les systèmes Cloud Volumes ONTAP présents dans ces clouds.
+
+.Étape
+. Sélectionnez la liste déroulante *Connector*, sélectionnez un autre connecteur, puis sélectionnez *Switch*.
++
+image:screenshot_connector_switch.gif["Capture d'écran affichant l'icône du connecteur dans l'en-tête et l'action basculer."]
+
+
+
+.Résultat
+BlueXP actualise et affiche les environnements de travail associés au connecteur sélectionné.
+
+
+
+== Configurez une configuration de reprise après incident
+
+Vous pouvez gérer un environnement de travail à l'aide de plusieurs connecteurs en même temps pour la reprise après sinistre. Si un connecteur tombe en panne, vous pouvez passer à l'autre connecteur pour gérer immédiatement l'environnement de travail.
+
+.Étapes
+. Passez à l'autre connecteur que vous souhaitez gérer avec l'environnement de travail.
+. Découvrir l'environnement de travail existant
++
+** https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-adding-systems.html["Ajout de systèmes Cloud Volumes ONTAP existants à BlueXP"^]
+** https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.html["Découvrir les clusters ONTAP"^]
+
+
+. Si vous gérez un environnement de travail Cloud Volumes ONTAP, sélectionnez *Paramètres > Paramètres du connecteur* et définissez le mode de gestion de la capacité sur *mode manuel*.
++
+Pour éviter les problèmes de conflit, seul le connecteur principal doit être réglé sur *mode automatique*.
+
++
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-storage-management.html#capacity-management["En savoir plus sur le mode de gestion de la capacité"^]
+
+

@@ -31,8 +31,8 @@ Notez ce qui suit :
 * Pour afficher des instructions détaillées sur l'utilisation de ces stratégies, reportez-vous aux pages suivantes :
 +
 ** link:task-install-connector-aws-marketplace.html#step-2-set-up-aws-permissions["Configurez les autorisations d'un déploiement AWS Marketplace"]
-** link:task-install-connector-on-prem.html#step-3-set-up-cloud-permissions["Configurez des autorisations pour les déploiements sur site"]
-** link:task-prepare-restricted-mode.html#step-5-prepare-cloud-permissions["Définissez les autorisations pour le mode restreint"]
+** link:task-install-connector-on-prem.html#step-4-set-up-cloud-permissions["Configurez des autorisations pour les déploiements sur site"]
+** link:task-prepare-restricted-mode.html#step-6-prepare-cloud-permissions["Définissez les autorisations pour le mode restreint"]
 ** link:task-prepare-private-mode.html#step-5-prepare-cloud-permissions["Configurez les autorisations pour le mode privé"]
 
 
@@ -1256,6 +1256,9 @@ Il effectue les requêtes d'API suivantes pour déployer et gérer Cloud Volumes
 
 
 | ec2 : Modifier le volume | Non | Oui. | Non 
+
+
+| Vérifiez si la zone de disponibilité est une zone locale AWS et vérifiez que tous les paramètres de déploiement sont compatibles | ec2:DescribeAvailabilityzones | Oui. | Non | Oui. 
 |===
 
 
@@ -1288,13 +1291,11 @@ Lorsque des autorisations sont ajoutées et supprimées, nous les noterons dans 
 
 
 
-=== 8 mars 2024
+=== 9 mai 2024
 
-L'autorisation suivante est désormais incluse dans la stratégie de connecteur :
+Les autorisations suivantes sont désormais requises pour Cloud Volumes ONTAP :
 
 ec2:DescribeAvailabilityzones
-
-Cette autorisation est requise pour une version à venir. Nous allons mettre à jour les notes de version avec plus de détails lorsque cette version sera disponible.
 
 
 

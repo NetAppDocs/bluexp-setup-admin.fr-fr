@@ -52,8 +52,18 @@ Systèmes d'exploitation pris en charge::
 +
 --
 * Ubuntu 22.04 LTS
-* CentOS 7.6, 7.7, 7.8 et 7.9
-* Red Hat Enterprise Linux 7.6, 7.7, 7.8 et 7.9
+* CentOS 7.6 à 7.9
++
+NetApp continuera à prendre en charge le connecteur avec CentOS 7 jusqu'au 30 juin 2024.
+
+* Red Hat Enterprise Linux
++
+** 7.6 à 7.9
++
+NetApp continuera à prendre en charge le connecteur avec RHEL 7 jusqu'au 30 juin 2024.
+
+** 8.6 à 8.9
+** 9.1 à 9.3
 +
 L'hôte doit être enregistré auprès de Red Hat Subscription Management. S'il n'est pas enregistré, l'hôte ne peut pas accéder aux référentiels pour mettre à jour les logiciels tiers requis lors de l'installation du connecteur.
 
@@ -62,11 +72,13 @@ Le connecteur est pris en charge sur les versions en anglais de ces systèmes d'
 
 
 
+
+
 --
 Hyperviseur:: Un hyperviseur bare Metal ou hébergé certifié pour exécuter Ubuntu, CentOS ou Red Hat Enterprise Linux est requis.
 +
 --
-https://access.redhat.com/certified-hypervisors["Solution Red Hat : quels hyperviseurs sont certifiés pour l'exécution de Red Hat Enterprise Linux ?"^]
+https://access.redhat.com/articles/973163["Solution Red Hat : quels hyperviseurs sont certifiés pour l'exécution de Red Hat Enterprise Linux ?"^]
 
 --
 CPU:: 4 cœurs ou 4 CPU virtuels
@@ -81,13 +93,25 @@ Ce connecteur est pris en charge dans Google Cloud sur une instance de machine v
 --
 Espace disque dans /opt:: 100 Gio d'espace doit être disponible
 Espace disque dans /var:: 20 Gio d'espace doit être disponible
-Moteur Docker:: Docker Engine est requis sur l'hôte avant d'installer le connecteur.
+Outil d'orchestration de conteneurs:: Selon votre système d'exploitation, Podman ou Docker Engine est requis avant d'installer le connecteur.
 +
 --
-* La version minimale prise en charge est 19.3.1.
-* La version maximale prise en charge est 25.0.5.
+* Podman version 4.6.1 est requis pour Red Hat Enterprise Linux 8 et 9.
 +
-https://docs.docker.com/engine/install/["Voir les instructions d'installation"^]
+Les conditions préalables suivantes doivent être remplies pour Podman :
+
++
+** Le service podman.socket doit être activé et démarré
+** python3 doit être installé
+** Le package podman-compose version 1.0.6 doit être installé
+** Podman-compose doit être ajouté à la variable d'environnement PATH
+
+
+* Docker Engine est requis pour Ubuntu, CentOS et Red Hat Enterprise Linux 7.
++
+** La version minimale prise en charge est 19.3.1.
+** La version maximale prise en charge est 25.0.5.
+
 
 
 
@@ -96,7 +120,110 @@ https://docs.docker.com/engine/install/["Voir les instructions d'installation"^]
 
 
 
-== Étape 4 : préparer le réseau
+== Étape 4 : installer Podman ou Docker Engine
+
+Si vous prévoyez d'installer manuellement le logiciel Connector, vous devez préparer l'hôte en installant Podman ou Docker Engine.
+
+Selon votre système d'exploitation, Podman ou Docker Engine est requis avant d'installer le connecteur.
+
+* Podman est requis pour Red Hat Enterprise Linux 8 et 9.
+* Docker Engine est requis pour Ubuntu, CentOS et Red Hat Enterprise Linux 7.
+
+
+.Étapes
+[role="tabbed-block"]
+====
+.Podman
+--
+Installez Podman 4.6.1.
+
+.Étapes
+. Retirez le package podman-docker s'il est installé sur l'hôte.
++
+[source, cli]
+----
+dnf remove podman-docker
+rm /var/run/docker.sock
+----
+. Installez Podman.
++
+Podman est disponible dans les référentiels Red Hat Enterprise Linux officiels.
+
++
+[source, cli]
+----
+sudo dnf install podman-2:4.6.1
+----
+. Activez et démarrez le service podman.socket.
++
+[source, cli]
+----
+sudo systemctl enable --now podman.socket
+----
+. Monter python3.
++
+[source, cli]
+----
+sudo dnf install python3
+----
+. Installez le package de référentiel EPEL s'il n'est pas déjà disponible sur votre système.
++
+Cette étape est nécessaire car podman-compose est disponible à partir du référentiel Extra Packages for Enterprise Linux (EPEL).
+
++
+Pour Red Hat Enterprise Linux 9 :
+
++
+[source, cli]
+----
+sudo dnf install https://dl.fedoraproject.org/pub/epel/epel-release-latest-9.noarch.rpm
+----
++
+Pour Red Hat Enterprise Linux 8 :
+
++
+[source, cli]
+----
+sudo dnf install https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm
+----
+. Installez le paquet podman-compose 1.0.6.
++
+[source, cli]
+----
+sudo dnf install podman-compose-1.0.6
+----
++
+
+NOTE: À l'aide du `dnf install` La commande répond à l'exigence d'ajout de podman-compose à la variable d'environnement PATH. La commande d'installation ajoute podman-compose à /usr/bin, qui est déjà inclus dans le `secure_path` sur l'hôte.
+
+
+
+--
+.Moteur Docker
+--
+Installer une version de Docker Engine comprise entre 19.3.1 et 25.0.5.
+
+.Étapes
+. Installer Docker Engine.
++
+https://docs.docker.com/engine/install/["Voir les instructions d'installation de Docker"^]
+
++
+Veillez à suivre les étapes d'installation d'une version spécifique de Docker Engine. L'installation de la dernière version installe une version de Docker que BlueXP ne prend pas en charge.
+
+. Vérifiez que Docker est activé et exécuté.
++
+[source, cli]
+----
+sudo systemctl enable docker && sudo systemctl start docker
+----
+
+
+--
+====
+
+
+== Étape 5 : préparer le réseau
 
 Configurez votre réseau de sorte que le connecteur puisse gérer les ressources et les processus au sein de votre environnement de cloud public. Outre le fait de disposer d'un réseau virtuel et d'un sous-réseau pour le connecteur, vous devez vous assurer que les exigences suivantes sont respectées.
 
@@ -266,15 +393,13 @@ https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/public-ip-ad
 --
 
 
-Serveur proxy:: Si votre organisation nécessite le déploiement d'un serveur proxy pour tout le trafic Internet sortant, procurez-vous les informations suivantes sur votre proxy HTTP ou HTTPS. Vous devrez fournir ces informations pendant l'installation.
+Serveur proxy:: Si votre organisation nécessite le déploiement d'un serveur proxy pour tout le trafic Internet sortant, procurez-vous les informations suivantes sur votre proxy HTTP ou HTTPS. Vous devrez fournir ces informations pendant l'installation. Notez que BlueXP ne prend pas en charge les serveurs proxy transparents.
 +
 --
 * Adresse IP
 * Informations d'identification
 * Certificat HTTPS
 
-
-Notez que BlueXP ne prend pas en charge les serveurs proxy transparents.
 
 --
 
@@ -303,7 +428,7 @@ Si vous prévoyez de créer le connecteur à partir du marché de votre fourniss
 
 
 
-== Étape : 5 Préparez les autorisations cloud
+== Étape 6 : préparez les autorisations cloud
 
 BlueXP requiert l'autorisation de votre fournisseur cloud pour déployer Cloud Volumes ONTAP dans un réseau virtuel et utiliser les services de données BlueXP. Vous devez définir des autorisations dans votre fournisseur de cloud, puis les associer au connecteur.
 
@@ -620,7 +745,7 @@ Vous disposez désormais d'un compte de service que vous pouvez attribuer à l'i
 ====
 
 
-== Étape 6 : activez les API Google Cloud
+== Étape 7 : activez les API Google Cloud
 
 Plusieurs API sont requises pour déployer Cloud Volumes ONTAP dans Google Cloud.
 

@@ -20,12 +20,6 @@ Notez que BlueXP ne prend pas en charge les serveurs proxy transparents.
 Le programme d'installation disponible sur le site du support NetApp peut être une version antérieure. Après l'installation, le connecteur se met automatiquement à jour si une nouvelle version est disponible.
 
 .Étapes
-. Vérifiez que docker est activé et exécuté.
-+
-[source, cli]
-----
-sudo systemctl enable docker && sudo systemctl start docker
-----
 . Si les variables système _http_proxy_ ou _https_proxy_ sont définies sur l'hôte, supprimez-les :
 +
 [source, cli]
@@ -64,7 +58,7 @@ Voici un exemple de commande utilisant les deux paramètres facultatifs :
 +
 [source, cli]
 ----
- ./BlueXP-Connector-Cloud-v3.9.38 --proxy https://user:password@10.0.0.30:8080/ --cacert /tmp/cacert/certificate.cer
+ ./BlueXP-Connector-Cloud-v3.9.40--proxy https://user:password@10.0.0.30:8080/ --cacert /tmp/cacert/certificate.cer
 ----
 +
 --proxy configure le connecteur pour utiliser un serveur proxy HTTP ou HTTPS à l'aide de l'un des formats suivants :
@@ -81,8 +75,15 @@ Notez ce qui suit :
 
 +
 *** L'utilisateur peut être un utilisateur local ou un utilisateur de domaine.
-*** Pour un utilisateur de domaine, vous devez utiliser le code ASCII du \ comme indiqué ci-dessus.
-*** BlueXP ne prend pas en charge les mots de passe comprenant le caractère @.
+*** Pour un utilisateur de domaine, vous devez utiliser le code ASCII pour un \ comme indiqué ci-dessus.
+*** BlueXP ne prend pas en charge les noms d'utilisateur ou les mots de passe qui incluent le caractère @.
+*** Si le mot de passe inclut l'un des caractères spéciaux suivants, vous devez échapper à ce caractère spécial en le préajoutant avec une barre oblique inverse : & ou !
++
+Par exemple :
+
++
+\http://bxpproxyuser:netapp1\!@address:3128
+
 
 
 

@@ -20,7 +20,7 @@ Le mode restreint est généralement utilisé par les administrations publiques 
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["Une seule"] link:task-prepare-restricted-mode.html["Préparation du déploiement"]
 [role="quick-margin-list"]
-. Préparez un hôte Linux dédié qui répond aux exigences en matière de processeur, de RAM, d'espace disque, de moteur Docker et bien plus encore.
+. Préparez un hôte Linux dédié qui répond aux exigences en matière de CPU, de RAM, d'espace disque, d'outil d'orchestration de conteneurs, etc.
 . Configurez le réseau qui fournit un accès aux réseaux cibles, un accès Internet sortant pour les installations manuelles et un accès Internet sortant pour un accès quotidien.
 . Configurez des autorisations dans votre fournisseur de cloud afin que vous puissiez les associer à l'instance Connector après le déploiement.
 

@@ -30,8 +30,18 @@ Systèmes d'exploitation pris en charge::
 +
 --
 * Ubuntu 22.04 LTS
-* CentOS 7.6, 7.7, 7.8 et 7.9
-* Red Hat Enterprise Linux 7.6, 7.7, 7.8 et 7.9
+* CentOS 7.6 à 7.9
++
+NetApp continuera à prendre en charge le connecteur avec CentOS 7 jusqu'au 30 juin 2024.
+
+* Red Hat Enterprise Linux
++
+** 7.6 à 7.9
++
+NetApp continuera à prendre en charge le connecteur avec RHEL 7 jusqu'au 30 juin 2024.
+
+** 8.6 à 8.9
+** 9.1 à 9.3
 +
 L'hôte doit être enregistré auprès de Red Hat Subscription Management. S'il n'est pas enregistré, l'hôte ne peut pas accéder aux référentiels pour mettre à jour les logiciels tiers requis lors de l'installation du connecteur.
 
@@ -40,24 +50,38 @@ Le connecteur est pris en charge sur les versions en anglais de ces systèmes d'
 
 
 
+
+
 --
 Hyperviseur:: Un hyperviseur bare Metal ou hébergé certifié pour exécuter Ubuntu, CentOS ou Red Hat Enterprise Linux est requis.
 +
 --
-https://access.redhat.com/certified-hypervisors["Solution Red Hat : quels hyperviseurs sont certifiés pour l'exécution de Red Hat Enterprise Linux ?"^]
+https://access.redhat.com/articles/973163["Solution Red Hat : quels hyperviseurs sont certifiés pour l'exécution de Red Hat Enterprise Linux ?"^]
 
 --
 CPU:: 4 cœurs ou 4 CPU virtuels
 RAM:: 14 GO
 Espace disque dans /opt:: 100 Gio d'espace doit être disponible
 Espace disque dans /var:: 20 Gio d'espace doit être disponible
-Moteur Docker:: Docker Engine est requis sur l'hôte avant d'installer le connecteur.
+Outil d'orchestration de conteneurs:: Selon votre système d'exploitation, Podman ou Docker Engine est requis avant d'installer le connecteur.
 +
 --
-* La version minimale prise en charge est 19.3.1.
-* La version maximale prise en charge est 25.0.5.
+* Podman version 4.6.1 est requis pour Red Hat Enterprise Linux 8 et 9.
 +
-https://docs.docker.com/engine/install/["Voir les instructions d'installation"^]
+Les conditions préalables suivantes doivent être remplies pour Podman :
+
++
+** Le service podman.socket doit être activé et démarré
+** python3 doit être installé
+** Le package podman-compose version 1.0.6 doit être installé
+** Podman-compose doit être ajouté à la variable d'environnement PATH
+
+
+* Docker Engine est requis pour Ubuntu, CentOS et Red Hat Enterprise Linux 7.
++
+** La version minimale prise en charge est 19.3.1.
+** La version maximale prise en charge est 25.0.5.
+
 
 
 
@@ -66,7 +90,108 @@ https://docs.docker.com/engine/install/["Voir les instructions d'installation"^]
 
 
 
-== Étape 2 : configuration du réseau
+== Étape 2 : installez Podman ou Docker Engine
+
+Selon votre système d'exploitation, Podman ou Docker Engine est requis avant d'installer le connecteur.
+
+* Podman est requis pour Red Hat Enterprise Linux 8 et 9.
+* Docker Engine est requis pour Ubuntu, CentOS et Red Hat Enterprise Linux 7.
+
+
+.Étapes
+[role="tabbed-block"]
+====
+.Podman
+--
+Installez Podman 4.6.1.
+
+.Étapes
+. Retirez le package podman-docker s'il est installé sur l'hôte.
++
+[source, cli]
+----
+dnf remove podman-docker
+rm /var/run/docker.sock
+----
+. Installez Podman.
++
+Podman est disponible dans les référentiels Red Hat Enterprise Linux officiels.
+
++
+[source, cli]
+----
+sudo dnf install podman-2:4.6.1
+----
+. Activez et démarrez le service podman.socket.
++
+[source, cli]
+----
+sudo systemctl enable --now podman.socket
+----
+. Monter python3.
++
+[source, cli]
+----
+sudo dnf install python3
+----
+. Installez le package de référentiel EPEL s'il n'est pas déjà disponible sur votre système.
++
+Cette étape est nécessaire car podman-compose est disponible à partir du référentiel Extra Packages for Enterprise Linux (EPEL).
+
++
+Pour Red Hat Enterprise Linux 9 :
+
++
+[source, cli]
+----
+sudo dnf install https://dl.fedoraproject.org/pub/epel/epel-release-latest-9.noarch.rpm
+----
++
+Pour Red Hat Enterprise Linux 8 :
+
++
+[source, cli]
+----
+sudo dnf install https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm
+----
+. Installez le paquet podman-compose 1.0.6.
++
+[source, cli]
+----
+sudo dnf install podman-compose-1.0.6
+----
++
+
+NOTE: À l'aide du `dnf install` La commande répond à l'exigence d'ajout de podman-compose à la variable d'environnement PATH. La commande d'installation ajoute podman-compose à /usr/bin, qui est déjà inclus dans le `secure_path` sur l'hôte.
+
+
+
+--
+.Moteur Docker
+--
+Installer une version de Docker Engine comprise entre 19.3.1 et 25.0.5.
+
+.Étapes
+. Installer Docker Engine.
++
+https://docs.docker.com/engine/install/["Voir les instructions d'installation de Docker"^]
+
++
+Veillez à suivre les étapes d'installation d'une version spécifique de Docker Engine. L'installation de la dernière version installe une version de Docker que BlueXP ne prend pas en charge.
+
+. Vérifiez que Docker est activé et exécuté.
++
+[source, cli]
+----
+sudo systemctl enable docker && sudo systemctl start docker
+----
+
+
+--
+====
+
+
+== Étape 3 : configuration du réseau
 
 Configurez votre réseau de manière à ce que Connector puisse gérer les ressources et les processus dans votre environnement de cloud hybride. Par exemple, vous devez vous assurer que les connexions sont disponibles pour les réseaux cibles et que l'accès Internet sortant est disponible.
 
@@ -190,15 +315,13 @@ Pour mettre à niveau le connecteur et ses composants Docker.
 --
 
 
-Serveur proxy:: Si votre organisation nécessite le déploiement d'un serveur proxy pour tout le trafic Internet sortant, procurez-vous les informations suivantes sur votre proxy HTTP ou HTTPS. Vous devrez fournir ces informations pendant l'installation.
+Serveur proxy:: Si votre organisation nécessite le déploiement d'un serveur proxy pour tout le trafic Internet sortant, procurez-vous les informations suivantes sur votre proxy HTTP ou HTTPS. Vous devrez fournir ces informations pendant l'installation. Notez que BlueXP ne prend pas en charge les serveurs proxy transparents.
 +
 --
 * Adresse IP
 * Informations d'identification
 * Certificat HTTPS
 
-
-Notez que BlueXP ne prend pas en charge les serveurs proxy transparents.
 
 --
 
@@ -222,7 +345,7 @@ Activez le protocole NTP:: Si vous prévoyez d'utiliser la classification BlueXP
 
 
 
-== Étape 3 : configurez les autorisations cloud
+== Étape 4 : configurez les autorisations cloud
 
 Si vous souhaitez utiliser les services BlueXP dans AWS ou Azure avec un connecteur sur site, vous devez configurer des autorisations dans votre fournisseur cloud afin de pouvoir ajouter les informations d'identification au connecteur une fois que vous l'avez installé.
 
@@ -419,7 +542,7 @@ Votre principal de service est maintenant configuré et vous devez avoir copié 
 ====
 
 
-== Étape 4 : installez le connecteur
+== Étape 5 : installez le connecteur
 
 Téléchargez et installez le logiciel Connector sur un hôte Linux existant sur site.
 
@@ -441,12 +564,6 @@ Notez que BlueXP ne prend pas en charge les serveurs proxy transparents.
 Le programme d'installation disponible sur le site du support NetApp peut être une version antérieure. Après l'installation, le connecteur se met automatiquement à jour si une nouvelle version est disponible.
 
 .Étapes
-. Vérifiez que docker est activé et exécuté.
-+
-[source, cli]
-----
-sudo systemctl enable docker && sudo systemctl start docker
-----
 . Si les variables système _http_proxy_ ou _https_proxy_ sont définies sur l'hôte, supprimez-les :
 +
 [source, cli]
@@ -485,7 +602,7 @@ Voici un exemple de commande utilisant les deux paramètres facultatifs :
 +
 [source, cli]
 ----
- ./BlueXP-Connector-Cloud-v3.9.38 --proxy https://user:password@10.0.0.30:8080/ --cacert /tmp/cacert/certificate.cer
+ ./BlueXP-Connector-Cloud-v3.9.40--proxy https://user:password@10.0.0.30:8080/ --cacert /tmp/cacert/certificate.cer
 ----
 +
 --proxy configure le connecteur pour utiliser un serveur proxy HTTP ou HTTPS à l'aide de l'un des formats suivants :
@@ -502,8 +619,15 @@ Notez ce qui suit :
 
 +
 *** L'utilisateur peut être un utilisateur local ou un utilisateur de domaine.
-*** Pour un utilisateur de domaine, vous devez utiliser le code ASCII du \ comme indiqué ci-dessus.
-*** BlueXP ne prend pas en charge les mots de passe comprenant le caractère @.
+*** Pour un utilisateur de domaine, vous devez utiliser le code ASCII pour un \ comme indiqué ci-dessus.
+*** BlueXP ne prend pas en charge les noms d'utilisateur ou les mots de passe qui incluent le caractère @.
+*** Si le mot de passe inclut l'un des caractères spéciaux suivants, vous devez échapper à ce caractère spécial en le préajoutant avec une barre oblique inverse : & ou !
++
+Par exemple :
+
++
+\http://bxpproxyuser:netapp1\!@address:3128
+
 
 
 
@@ -518,7 +642,7 @@ Le connecteur est maintenant installé. À la fin de l'installation, le service 
 
 
 
-== Étape 5 : configurer le connecteur
+== Étape 6 : configurer le connecteur
 
 Inscrivez-vous ou connectez-vous, puis configurez le connecteur pour qu'il fonctionne avec votre compte BlueXP.
 
@@ -549,7 +673,7 @@ BlueXP est maintenant configuré avec le connecteur que vous venez d'installer.
 
 
 
-== Étape 6 : fournissez des autorisations à BlueXP
+== Étape 7 : fournissez des autorisations à BlueXP
 
 Une fois que vous avez installé et configuré le connecteur, ajoutez vos identifiants cloud afin que BlueXP dispose des autorisations requises pour effectuer des actions dans AWS ou Azure.
 
