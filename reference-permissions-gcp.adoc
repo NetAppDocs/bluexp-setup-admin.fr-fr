@@ -29,7 +29,7 @@ Vous devez appliquer ce rôle personnalisé à un compte de service rattaché à
 * link:task-prepare-private-mode.html#step-5-prepare-cloud-permissions["Configurez les autorisations pour le mode privé"]
 
 
-Vous devez également vous assurer que le rôle est à jour lorsque de nouvelles autorisations sont ajoutées dans les versions suivantes.
+Vous devez également vous assurer que le rôle est à jour lorsque de nouvelles autorisations sont ajoutées dans les versions suivantes. Si de nouvelles autorisations sont requises, elles seront répertoriées dans les notes de version.
 
 [source, yaml]
 ----

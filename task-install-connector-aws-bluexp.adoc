@@ -150,16 +150,13 @@ Quelle que soit l'option choisie, la première étape consiste à créer une pol
 
 Si nécessaire, vous pouvez restreindre la politique IAM à l'aide de l'IAM `Condition` elément. https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition.html["Documentation AWS : élément de condition"^]
 
-
-TIP: Lorsque BlueXP crée le connecteur, il applique un nouvel ensemble d'autorisations à l'instance Connector qui permet au connecteur de gérer les ressources AWS.
-
 .Étapes
 . Accédez à la console IAM AWS.
 . Sélectionnez *stratégies > Créer une stratégie*.
 . Sélectionnez *JSON*.
 . Copiez et collez la stratégie suivante :
 +
-Pour rappel, cette règle contient uniquement les autorisations nécessaires pour lancer l'instance Connector dans AWS à partir de BlueXP. link:reference-permissions-aws.html["Droits d'accès requis pour l'instance de connecteur elle-même"].
+Cette politique contient uniquement les autorisations nécessaires pour lancer l'instance Connector dans AWS à partir de BlueXP. Lorsque BlueXP crée le connecteur, il applique un nouvel ensemble d'autorisations à l'instance Connector qui permet au connecteur de gérer les ressources AWS. link:reference-permissions-aws.html["Droits d'accès requis pour l'instance de connecteur elle-même"].
 
 +
 [source, json]
@@ -275,7 +272,9 @@ Vous devez maintenant disposer d'un rôle IAM qui possède les autorisations req
 Créez le connecteur directement à partir de la console web BlueXP.
 
 .Description de la tâche
-La création du connecteur à partir de BlueXP déploie une instance EC2 dans AWS à l'aide d'une configuration par défaut. Après avoir créé le connecteur, vous ne devez pas passer à un type d'instance EC2 plus petit qui a moins de CPU ou de RAM. link:reference-connector-default-config.html["En savoir plus sur la configuration par défaut du connecteur"].
+* La création du connecteur à partir de BlueXP déploie une instance EC2 dans AWS à l'aide d'une configuration par défaut. Après avoir créé le connecteur, vous ne devez pas passer à un type d'instance EC2 plus petit qui a moins de CPU ou de RAM. link:reference-connector-default-config.html["En savoir plus sur la configuration par défaut du connecteur"].
+* Lorsque BlueXP crée le connecteur, il crée un rôle IAM et un profil d'instance pour l'instance. Ce rôle inclut des autorisations qui permettent à Connector de gérer les ressources AWS. Vous devez vous assurer que le rôle est mis à jour lorsque de nouvelles autorisations sont ajoutées dans les versions ultérieures. link:reference-permissions-aws.html["En savoir plus sur la politique IAM pour le connecteur"].
+
 
 .Avant de commencer
 Vous devez disposer des éléments suivants :

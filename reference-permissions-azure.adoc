@@ -22,19 +22,20 @@ Lorsque BlueXP lance la machine virtuelle Connector dans Azure, il attache un r�
 
 Le rôle personnalisé illustré ci-dessous fournit les autorisations dont un connecteur a besoin pour gérer les ressources et les processus de votre réseau Azure.
 
-Lorsque vous créez un connecteur directement à partir de BlueXP, BlueXP applique automatiquement ce rôle personnalisé au connecteur.
+Notez ce qui suit :
 
-Si vous déployez le connecteur à partir d'Azure Marketplace ou si vous installez manuellement le connecteur sur un hôte Linux, vous devrez définir vous-même le rôle personnalisé.
+* Lorsque vous créez un connecteur directement à partir de BlueXP, BlueXP applique automatiquement ce rôle personnalisé au connecteur.
+* Si vous déployez le connecteur à partir d'Azure Marketplace ou si vous installez manuellement le connecteur sur un hôte Linux, vous devrez définir vous-même le rôle personnalisé.
+* Dans les deux cas, vous devez vous assurer que le rôle est à jour lorsque de nouvelles autorisations sont ajoutées dans les versions ultérieures. Si de nouvelles autorisations sont requises, elles seront répertoriées dans les notes de version.
+* Pour afficher des instructions détaillées sur l'utilisation de ces stratégies, reportez-vous aux pages suivantes :
++
+** link:task-install-connector-azure-marketplace.html#step-3-set-up-permissions["Configurez les autorisations d'un déploiement Azure Marketplace"]
+** link:task-install-connector-on-prem.html#step-4-set-up-cloud-permissions["Configurez des autorisations pour les déploiements sur site"]
+** link:task-prepare-restricted-mode.html#step-6-prepare-cloud-permissions["Définissez les autorisations pour le mode restreint"]
+** link:task-prepare-private-mode.html#step-5-prepare-cloud-permissions["Configurez les autorisations pour le mode privé"]
 
-Pour afficher des instructions détaillées sur l'utilisation de ces stratégies, reportez-vous aux pages suivantes :
-
-* link:task-install-connector-azure-marketplace.html#step-3-set-up-permissions["Configurez les autorisations d'un déploiement Azure Marketplace"]
-* link:task-install-connector-on-prem.html#step-4-set-up-cloud-permissions["Configurez des autorisations pour les déploiements sur site"]
-* link:task-prepare-restricted-mode.html#step-6-prepare-cloud-permissions["Définissez les autorisations pour le mode restreint"]
-* link:task-prepare-private-mode.html#step-5-prepare-cloud-permissions["Configurez les autorisations pour le mode privé"]
 
 
-Vous devez également vous assurer que le rôle est à jour lorsque de nouvelles autorisations sont ajoutées dans les versions suivantes.
 
 [source, json]
 ----

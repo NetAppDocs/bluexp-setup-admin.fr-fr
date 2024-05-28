@@ -167,6 +167,8 @@ Pour afficher les autorisations exactes dont le connecteur a besoin pour les op�
 * link:reference-permissions-gcp.html["Découvrez comment Connector utilise les autorisations Google Cloud"]
 
 
+Il est de votre responsabilité de mettre à jour les stratégies de connecteur lorsque de nouvelles autorisations sont ajoutées dans les versions ultérieures. Si de nouvelles autorisations sont requises, elles seront répertoriées dans les notes de version.
+
 
 
 == Mises à niveau des connecteurs

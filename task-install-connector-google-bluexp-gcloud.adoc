@@ -239,6 +239,8 @@ L'utilisateur Google Cloud dispose désormais des autorisations nécessaires pou
 
 Un compte de service Google Cloud est requis pour fournir le connecteur avec les autorisations dont BlueXP a besoin pour gérer les ressources dans Google Cloud. Lorsque vous créez le connecteur, vous devez associer ce compte de service à la machine virtuelle Connector.
 
+Il est de votre responsabilité de mettre à jour le rôle personnalisé lorsque de nouvelles autorisations sont ajoutées dans les versions ultérieures. Si de nouvelles autorisations sont requises, elles seront répertoriées dans les notes de version.
+
 .Étapes
 . Créez un rôle personnalisé dans Google Cloud :
 +

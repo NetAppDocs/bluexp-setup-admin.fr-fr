@@ -161,7 +161,7 @@ Notez que vous pouvez créer un rôle personnalisé Azure à l'aide du portail A
 . Copiez les autorisations requises pour un nouveau rôle personnalisé dans Azure et enregistrez-les dans un fichier JSON.
 +
 
-NOTE: Ce rôle personnalisé contient uniquement les autorisations nécessaires pour lancer la machine virtuelle Connector dans Azure à partir de BlueXP. N'utilisez pas cette politique dans d'autres situations. Lorsque BlueXP crée le connecteur, il applique un nouvel ensemble d'autorisations à la VM Connector qui permet au connecteur de gérer les ressources de votre environnement de cloud public.
+NOTE: Ce rôle personnalisé contient uniquement les autorisations nécessaires pour lancer la machine virtuelle Connector dans Azure à partir de BlueXP. N'utilisez pas cette politique dans d'autres situations. Lorsque BlueXP crée le connecteur, il applique un nouvel ensemble d'autorisations à la machine virtuelle Connector qui permet au connecteur de gérer les ressources Azure.
 
 +
 [source, json]
@@ -420,7 +420,9 @@ Votre principal de service est maintenant configuré et vous devez avoir copié 
 Créez le connecteur directement à partir de la console web BlueXP.
 
 .Description de la tâche
-La création du connecteur à partir de BlueXP déploie une machine virtuelle dans Azure à l'aide d'une configuration par défaut. Après avoir créé le connecteur, vous ne devez pas passer à un type de machine virtuelle plus petit qui a moins de CPU ou de RAM. link:reference-connector-default-config.html["En savoir plus sur la configuration par défaut du connecteur"].
+* La création du connecteur à partir de BlueXP déploie une machine virtuelle dans Azure à l'aide d'une configuration par défaut. Après avoir créé le connecteur, vous ne devez pas passer à un type de machine virtuelle plus petit qui a moins de CPU ou de RAM. link:reference-connector-default-config.html["En savoir plus sur la configuration par défaut du connecteur"].
+* Lorsque BlueXP déploie le connecteur, il crée un rôle personnalisé et l'affecte à la machine virtuelle du connecteur. Ce rôle inclut des autorisations qui permettent à Connector de gérer les ressources Azure. Vous devez vous assurer que le rôle est mis à jour lorsque de nouvelles autorisations sont ajoutées dans les versions ultérieures. link:reference-permissions-azure.html["En savoir plus sur le rôle personnalisé du connecteur"].
+
 
 .Avant de commencer
 Vous devez disposer des éléments suivants :

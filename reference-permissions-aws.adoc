@@ -24,9 +24,9 @@ Les règles IAM disponibles ci-dessous fournissent les autorisations nécessaire
 
 Notez ce qui suit :
 
-* Si vous créez un connecteur dans une région AWS standard directement depuis BlueXP, BlueXP applique automatiquement des stratégies au connecteur. Vous n'avez rien à faire dans ce cas.
+* Si vous créez un connecteur dans une région AWS standard directement depuis BlueXP, BlueXP applique automatiquement des stratégies au connecteur.
 * Vous devez définir vous-même les règles si vous déployez le connecteur à partir d'AWS Marketplace, si vous installez manuellement le connecteur sur un hôte Linux ou si vous souhaitez ajouter des informations d'identification AWS supplémentaires à BlueXP.
-* Vous devez également vous assurer que les règles sont à jour lorsque de nouvelles autorisations sont ajoutées dans les versions suivantes.
+* Dans les deux cas, vous devez vous assurer que les stratégies sont à jour lorsque de nouvelles autorisations sont ajoutées dans les versions ultérieures. Si de nouvelles autorisations sont requises, elles seront répertoriées dans les notes de version.
 * Si nécessaire, vous pouvez restreindre les règles IAM à l'aide de l'IAM `Condition` elément. https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition.html["Documentation AWS : élément de condition"^]
 * Pour afficher des instructions détaillées sur l'utilisation de ces stratégies, reportez-vous aux pages suivantes :
 +
