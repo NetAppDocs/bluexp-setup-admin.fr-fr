@@ -165,12 +165,6 @@ La sauvegarde et la restauration des données applicatives, des données de mach
 | Classement  a| 
 Pris en charge dans les régions gouvernementales avec mode restreint. Non pris en charge dans les régions commerciales ou les régions souveraines en mode restreint.
 
-Les limitations suivantes s'appliquent :
-
-* Les comptes OneDrive, les comptes SharePoint et Google Drive ne peuvent pas être analysés.
-* Impossible d'intégrer la fonctionnalité de label Microsoft Azure information protection (AIP).
-
-
 
 
 | Cloud Volumes ONTAP | Support complet 
