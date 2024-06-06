@@ -2861,9 +2861,6 @@ Notez que la page s'actualise entre le test de la connexion et l'activation de l
   <block id="f4c6f851b00d5518bf888815de279aba" category="cell">Remarques</block>
   <block id="34678ee868eeabce720fc4a0fd60c17a" category="cell">Support complet</block>
   <block id="0a44fe605745a017fde35750e5fae36a" category="paragraph">Pris en charge dans les régions gouvernementales avec mode restreint. Non pris en charge dans les régions commerciales ou les régions souveraines en mode restreint.</block>
-  <block id="9bff93d1123789b473f27a881c3e00c6" category="paragraph">Les limitations suivantes s'appliquent :</block>
-  <block id="b3478a494adde25715314b14559dd6a4" category="list-text">Les comptes OneDrive, les comptes SharePoint et Google Drive ne peuvent pas être analysés.</block>
-  <block id="d1f03114b8fef49b0f0cb0a28049ecdf" category="list-text">Impossible d'intégrer la fonctionnalité de label Microsoft Azure information protection (AIP).</block>
   <block id="8adfa152daa2970174717fd5e24151b2" category="cell">Vous pouvez utiliser le portefeuille numérique avec les options de licence prises en charge répertoriées ci-dessous pour le mode restreint.</block>
   <block id="6c253a8aff5dfa835a77545b3006abc8" category="cell">Clusters ONTAP sur site</block>
   <block id="2bd6e3220a2a60e7217c63bc76d9f73c" category="cell">La découverte avec un connecteur et la découverte sans connecteur (découverte directe) sont toutes deux prises en charge.
@@ -4109,7 +4106,6 @@ Cette partie du tableau répertorie la prise en charge de la gestion de l'enviro
   <block id="81f58b484d838909a5fedb3486f3a8e2" category="section-title">Connecteur 3.9.40</block>
   <block id="32d1e3d3ebe78d37dbdfcf9933b0cf90" category="paragraph">Cette version de BlueXP Connector inclut la prise en charge de systèmes d'exploitation supplémentaires, des améliorations de sécurité mineures et des correctifs.</block>
   <block id="94f95548313e6f5528b5011a7d10e19f" category="paragraph">À ce stade, la version 3.9.40 est disponible pour le mode standard et le mode restreint.</block>
-  <block id="9788cee19c4b5d5971c7a99e340846e8" category="paragraph">Le connecteur est désormais pris en charge sur les hôtes exécutant les versions suivantes de Red Hat Enterprise Linux avec des installations _New_ Connector :</block>
   <block id="00ed051332ed28fe5b1ab0a4ae7aa4f6" category="paragraph">Podman est requis comme outil d'orchestration de conteneurs pour ces systèmes d'exploitation.</block>
   <block id="3d007e1710eb9efcb8c51296efc8eb4f" category="paragraph">Vous devez connaître les exigences de Podman, les limitations connues, un résumé de la prise en charge du système d'exploitation, ce qu'il faut faire si vous disposez d'un hôte RHEL 7, comment démarrer, et bien plus encore.</block>
   <block id="4d3035dcb7b114e2c87c82e5ae7e626c" category="inline-link">Découvrez la prise en charge de RHEL 8 et 9 avec le connecteur</block>
@@ -4198,4 +4194,5 @@ Cette partie du tableau répertorie la prise en charge de la gestion de l'enviro
   <block id="0dcda936d538d36f9e02f54b88ffefca" category="list-text"><block ref="0dcda936d538d36f9e02f54b88ffefca" category="inline-link-rx"></block></block>
   <block id="d06e6f96135d8cd2fa9fea9a4d9de16b" category="inline-link">Découvrez les nouveautés de la gestion Cloud Volumes ONTAP dans BlueXP</block>
   <block id="29e66847d781138b54aa8aa55b70fb20" category="list-text"><block ref="29e66847d781138b54aa8aa55b70fb20" category="inline-link-rx"></block></block>
+  <block id="3eb0b1a8f5c259c6baffd4acbc27dc9b" category="paragraph">Le connecteur est désormais pris en charge sur les hôtes exécutant les versions suivantes de Red Hat Enterprise Linux avec des installations _New_ Connector lors de l'utilisation de BlueXP en mode standard ou en mode restreint :</block>
 </blocks>
