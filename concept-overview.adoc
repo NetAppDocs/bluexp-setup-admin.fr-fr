@@ -47,7 +47,6 @@ Mobilité:: Déplacez vos données là où vous en avez besoin grâce à la sync
 +
 --
 * https://bluexp.netapp.com/cloud-sync-service["Copie et synchronisation"^]
-* https://bluexp.netapp.com/global-file-cache["La mise en cache en périphérie"^]
 * https://bluexp.netapp.com/cloud-tiering["Tiering"^]
 
 
