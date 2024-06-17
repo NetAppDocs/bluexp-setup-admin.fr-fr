@@ -64,7 +64,17 @@ RAM:: 14 GO
 Type d'instance AWS EC2:: Type d'instance qui répond aux exigences relatives au CPU et à la RAM indiquées ci-dessus. Nous recommandons une instance t3.XLarge.
 Paire de clés:: Lorsque vous créez le connecteur, vous devez sélectionner une paire de clés EC2 à utiliser avec l'instance.
 Espace disque dans /opt:: 100 Gio d'espace doit être disponible
++
+--
+Utilisations de BlueXP `/opt` pour installer le `/opt/application/netapp` et son contenu.
+
+--
 Espace disque dans /var:: 20 Gio d'espace doit être disponible
++
+--
+BlueXP requiert cet espace dans `/var` Car l'architecture de Docker ou Podman est conçue pour créer les conteneurs dans ce répertoire. Plus précisément, ils créeront des conteneurs dans le `/var/lib/containers/storage` répertoire. Les montages externes ou les liens symboliques ne fonctionnent pas pour cet espace.
+
+--
 Outil d'orchestration de conteneurs:: Selon votre système d'exploitation, Podman ou Docker Engine est requis avant d'installer le connecteur.
 +
 --

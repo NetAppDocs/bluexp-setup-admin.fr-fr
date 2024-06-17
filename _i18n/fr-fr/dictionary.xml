@@ -4197,4 +4197,6 @@ Cette partie du tableau répertorie la prise en charge de la gestion de l'enviro
   <block id="bbe4d8abcc3519b138a73b8e46ee2119" category="section-title">12 juin 2024</block>
   <block id="e7a68d45477c484e2ef45d11f3cea8f8" category="section-title">Connecteur 3.9.41</block>
   <block id="deb2d604498906b6056e668d8a921bc6" category="paragraph">La version 3.9.41 est disponible pour le mode standard et le mode restreint.</block>
+  <block id="4fe47b0a38e9cc2f08e1ebd6f66fc340" category="paragraph">Utilisations de BlueXP<block ref="68ab1268abb7e5f5688810968df97d6b" prefix=" " category="inline-code"></block> pour installer le<block ref="a23365e1ae67810a7446b65d3be9a5d0" prefix=" " category="inline-code"></block> et son contenu.</block>
+  <block id="6625b96831c913865dcc04d700d00a02" category="paragraph">BlueXP requiert cet espace dans<block ref="ca905eb4a00d34150573153a09e2e79b" prefix=" " category="inline-code"></block> Car l'architecture de Docker ou Podman est conçue pour créer les conteneurs dans ce répertoire. Plus précisément, ils créeront des conteneurs dans le<block ref="af5045a6e72956f67984a97cd3e8b9da" prefix=" " category="inline-code"></block> répertoire. Les montages externes ou les liens symboliques ne fonctionnent pas pour cet espace.</block>
 </blocks>
