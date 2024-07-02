@@ -9,16 +9,8 @@ Systèmes d'exploitation pris en charge::
 +
 --
 * Ubuntu 22.04 LTS
-* CentOS 7.6 à 7.9
-+
-NetApp continuera à prendre en charge le connecteur avec CentOS 7 jusqu'au 30 juin 2024.
-
 * Red Hat Enterprise Linux
 +
-** 7.6 à 7.9
-+
-NetApp continuera à prendre en charge le connecteur avec RHEL 7 jusqu'au 30 juin 2024.
-
 ** 8.6 à 8.9
 ** 9.1 à 9.3
 +
@@ -34,35 +26,15 @@ Le connecteur est pris en charge sur les versions en anglais de ces systèmes d'
 --
 
 
-Systèmes d'exploitation pris en charge::
+Système d'exploitation pris en charge:: Ubuntu 22.04 LTS
 +
 --
-* Ubuntu 22.04 LTS
-* CentOS 7.6, 7.7, 7.8 et 7.9
-+
-NetApp continuera à prendre en charge le connecteur avec CentOS 7 jusqu'au 30 juin 2024.
-
-* Red Hat Enterprise Linux 7.6, 7.7, 7.8 et 7.9
-+
-NetApp continuera à prendre en charge le connecteur avec RHEL 7 jusqu'au 30 juin 2024.
-
-+
-L'hôte doit être enregistré auprès de Red Hat Subscription Management. S'il n'est pas enregistré, l'hôte ne peut pas accéder aux référentiels pour mettre à jour les logiciels tiers requis lors de l'installation du connecteur.
-
-+
-Le connecteur est pris en charge sur les versions en anglais de ces systèmes d'exploitation.
-
-
+Le connecteur est pris en charge sur les versions en anglais de ce système d'exploitation.
 
 --
 
 
-Hyperviseur:: Un hyperviseur bare Metal ou hébergé certifié pour exécuter Ubuntu, CentOS ou Red Hat Enterprise Linux est requis.
-+
---
-https://access.redhat.com/articles/973163["Solution Red Hat : quels hyperviseurs sont certifiés pour l'exécution de Red Hat Enterprise Linux ?"^]
-
---
+Hyperviseur:: Un hyperviseur bare Metal ou hébergé certifié pour exécuter un système d'exploitation pris en charge est requis.
 
 
 CPU:: 4 cœurs ou 4 CPU virtuels
@@ -127,7 +99,7 @@ Les conditions préalables suivantes doivent être remplies pour Podman :
 ** Podman-compose doit être ajouté à la variable d'environnement PATH
 
 
-* Docker Engine est requis pour Ubuntu, CentOS et Red Hat Enterprise Linux 7.
+* Docker Engine est requis pour Ubuntu.
 +
 ** La version minimale prise en charge est 19.3.1.
 ** La version maximale prise en charge est 25.0.5.

@@ -481,13 +481,9 @@
   <block id="9cf68904e16d6d689d242f4868ec6c3f" category="list-text">Hôte dédié</block>
   <block id="3e54bf758f50b15d709edd166d8bf82b" category="list-text">Le connecteur n'est pas pris en charge sur un hôte partagé avec d'autres applications. L'hôte doit être un hôte dédié.</block>
   <block id="bbf3330385f894cd7bd34b34e4c36d6c" category="list-text">Systèmes d'exploitation pris en charge</block>
-  <block id="ee7f5aec4e9ac5fecb93d224c17fcd43" category="list-text">CentOS 7.6, 7.7, 7.8 et 7.9</block>
-  <block id="eaf5618d0182a88179ac8580cc418219" category="list-text">Red Hat Enterprise Linux 7.6, 7.7, 7.8 et 7.9</block>
   <block id="24dfedb0d4bd46f0cd823d4e245f7642" category="paragraph">L'hôte doit être enregistré auprès de Red Hat Subscription Management. S'il n'est pas enregistré, l'hôte ne peut pas accéder aux référentiels pour mettre à jour les logiciels tiers requis lors de l'installation du connecteur.</block>
   <block id="1aa77ca522dde8d598ae9c2372a7494b" category="paragraph">Le connecteur est pris en charge sur les versions en anglais de ces systèmes d'exploitation.</block>
   <block id="1b21b0d71706897b69f108572c444d40" category="list-text">Hyperviseur</block>
-  <block id="0791add814d036f56d1303750c34ee31" category="list-text">Un hyperviseur bare Metal ou hébergé certifié pour exécuter Ubuntu, CentOS ou Red Hat Enterprise Linux est requis.</block>
-  <block id="fb2321bb5267696f60c7247224e6d35f" category="inline-link">Solution Red Hat : quels hyperviseurs sont certifiés pour l'exécution de Red Hat Enterprise Linux ?</block>
   <block id="2b55387dd066c5bac646ac61543d152d" category="list-text">CPU</block>
   <block id="379f39ccee41ac65b6cdfb0734a7098c" category="list-text">4 cœurs ou 4 CPU virtuels</block>
   <block id="e53619c1fe611a51eeeb8d148ba6e532" category="list-text">RAM</block>
@@ -3963,14 +3959,9 @@ Cette partie du tableau répertorie la prise en charge de la gestion de l'enviro
   <block id="4a789989adf3b86e195463499e01cf12" category="paragraph">Pour éviter les problèmes de conflit, seul le connecteur principal doit être réglé sur *mode automatique*.</block>
   <block id="f05a0e154340f7c017b3a9bfa5a8bf05" category="inline-link">En savoir plus sur le mode de gestion de la capacité</block>
   <block id="e9ec7fb1196fea38d01bfb38780ff401" category="paragraph"><block ref="e9ec7fb1196fea38d01bfb38780ff401" category="inline-link-rx"></block></block>
-  <block id="14d1cdb0a2bd276d491de013f748f36f" category="list-text">CentOS 7.6 à 7.9</block>
-  <block id="039ad6159af7a5795d5ea8a67ed01be0" category="paragraph">NetApp continuera à prendre en charge le connecteur avec CentOS 7 jusqu'au 30 juin 2024.</block>
   <block id="c73bbd3786350b0a8d3577d82afdf489" category="list-text">Red Hat Enterprise Linux</block>
-  <block id="02fd8714cfc51e3b6db51cd61dd286c9" category="list-text">7.6 à 7.9</block>
-  <block id="733cf095adf4ff17305fe7425a0a7856" category="paragraph">NetApp continuera à prendre en charge le connecteur avec RHEL 7 jusqu'au 30 juin 2024.</block>
   <block id="f335f00e1188cffe57c3d9416ce23c84" category="list-text">8.6 à 8.9</block>
   <block id="d80ef147e70626ef64e723b33860d715" category="list-text">9.1 à 9.3</block>
-  <block id="820947c99e79ec5219502b83f9727a99" category="paragraph"><block ref="820947c99e79ec5219502b83f9727a99" category="inline-link-rx"></block></block>
   <block id="bd3df16097ce93a7398107a82c38c714" category="list-text">Outil d'orchestration de conteneurs</block>
   <block id="58ee14553c5227edc98c5edc7c7652e1" category="list-text">Selon votre système d'exploitation, Podman ou Docker Engine est requis avant d'installer le connecteur.</block>
   <block id="d6b3d211666107f9448c07f59d0ea45a" category="list-text">Podman version 4.6.1 est requis pour Red Hat Enterprise Linux 8 et 9.</block>
@@ -3979,7 +3970,6 @@ Cette partie du tableau répertorie la prise en charge de la gestion de l'enviro
   <block id="a9beaf3f1f76b7989733494d5f0683c6" category="list-text">python3 doit être installé</block>
   <block id="43868fbb689a64ee607e9c7e12ad974b" category="list-text">Le package podman-compose version 1.0.6 doit être installé</block>
   <block id="52b91e466535d0b3aeeecf2ff692015c" category="list-text">Podman-compose doit être ajouté à la variable d'environnement PATH</block>
-  <block id="d5edf3bedcb983d3a4430b0315f6ddfc" category="list-text">Docker Engine est requis pour Ubuntu, CentOS et Red Hat Enterprise Linux 7.</block>
   <block id="105ab5fc478f234922108aa9df08a4ee" category="section-title">Étape 4 : installer Podman ou Docker Engine</block>
   <block id="539f3f37fd39a23eafb39c20263238f1" category="paragraph">Si vous prévoyez d'installer manuellement le logiciel Connector, vous devez préparer l'hôte en installant Podman ou Docker Engine.</block>
   <block id="c124e878249e7549657a0f175026b2f9" category="list-text">Podman est requis pour Red Hat Enterprise Linux 8 et 9.</block>
@@ -4038,12 +4028,10 @@ Cette partie du tableau répertorie la prise en charge de la gestion de l'enviro
   <block id="cadd936a18695c0f75406a35d18725ee" category="paragraph">Docker Engine est requis pour ce système d'exploitation. Podman n'est pas pris en charge.</block>
   <block id="42d12ee6ea3719c1f52fd78afdba631f" category="section-title">Résumé des systèmes d'exploitation pris en charge</block>
   <block id="4dd65f46069a455736b8e8c7d3fed71f" category="paragraph">Voici un résumé de la prise en charge du système d'exploitation décrite dans les sections précédentes.</block>
-  <block id="4fd86dfd467b8b3461b84edce26c3f3f" category="admonition">NetApp continuera à prendre en charge le connecteur sur RHEL 7 et CentOS 7 jusqu'au 30 juin 2024.</block>
   <block id="d20756c02f9913587a3e83e30f0e10d3" category="list-text">Installation manuelle</block>
   <block id="0809934ab73994b74ff0369462a31319" category="list-text">Déploiement à partir de BlueXP</block>
   <block id="12a87db5b86462e9bd05a612793965de" category="list-text">Déploiement à partir d'AWS Marketplace</block>
   <block id="21b3bbb098ff9926f5de185468b47efd" category="list-text">Déploiement à partir d'Azure Marketplace</block>
-  <block id="9e9b2b37314c458b11ce81a5a7428ce9" category="list-text">Red Hat Enterprise Linux 7.6 à 7.9</block>
   <block id="fd976d7410ccbb05f33da778aade918e" category="section-title">Comment démarrer avec RHEL 8 et 9</block>
   <block id="19fbd5208079427f7255588fa19e6216" category="paragraph">Reportez-vous aux pages suivantes pour plus de détails sur la configuration requise pour l'hôte, la configuration requise pour Podman et les étapes d'installation de Podman et du connecteur :</block>
   <block id="c7ebd4cc461f15f97b0c6bb4d8aa138a" category="list-text"><block ref="f3e58ec45f13e79fe493e5ac40efdaef" category="inline-link-rx"></block> (mode standard)</block>
@@ -4199,4 +4187,9 @@ Cette partie du tableau répertorie la prise en charge de la gestion de l'enviro
   <block id="deb2d604498906b6056e668d8a921bc6" category="paragraph">La version 3.9.41 est disponible pour le mode standard et le mode restreint.</block>
   <block id="4fe47b0a38e9cc2f08e1ebd6f66fc340" category="paragraph">Utilisations de BlueXP<block ref="68ab1268abb7e5f5688810968df97d6b" prefix=" " category="inline-code"></block> pour installer le<block ref="a23365e1ae67810a7446b65d3be9a5d0" prefix=" " category="inline-code"></block> et son contenu.</block>
   <block id="6625b96831c913865dcc04d700d00a02" category="paragraph">BlueXP requiert cet espace dans<block ref="ca905eb4a00d34150573153a09e2e79b" prefix=" " category="inline-code"></block> Car l'architecture de Docker ou Podman est conçue pour créer les conteneurs dans ce répertoire. Plus précisément, ils créeront des conteneurs dans le<block ref="af5045a6e72956f67984a97cd3e8b9da" prefix=" " category="inline-code"></block> répertoire. Les montages externes ou les liens symboliques ne fonctionnent pas pour cet espace.</block>
+  <block id="2e71b3fb71d89f18906d4807a6011e20" category="list-text">Système d'exploitation pris en charge</block>
+  <block id="16affed9b9386a1e06dfd59de9b05f10" category="paragraph">Le connecteur est pris en charge sur les versions en anglais de ce système d'exploitation.</block>
+  <block id="06cfdcafd69514150ade31a714fa78db" category="list-text">Un hyperviseur bare Metal ou hébergé certifié pour exécuter un système d'exploitation pris en charge est requis.</block>
+  <block id="1c0a2f304cb94000fe79271bae1284df" category="list-text">Docker Engine est requis pour Ubuntu.</block>
+  <block id="eb79e7adcda869f967a810da89679252" category="paragraph">Le 30 juin 2024, RHEL 7 a atteint la fin de maintenance (EOM), tandis que CentOS 7 a atteint la fin de vie (EOL). NetApp a cessé de prendre en charge le connecteur sur ces distributions Linux le 30 juin 2024.</block>
 </blocks>

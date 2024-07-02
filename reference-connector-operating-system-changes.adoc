@@ -51,7 +51,7 @@ Mises à niveau de RHEL:: Si vous disposez d'un connecteur existant sur un hôte
 
 == Fin de la prise en charge de RHEL 7 et CentOS 7
 
-Le 30 juin 2024, RHEL 7 atteindra la fin de la maintenance (EOM), tandis que CentOS 7 atteindra la fin de vie (EOL). NetApp continuera à prendre en charge le connecteur sur ces distributions Linux jusqu'au 30 juin 2024.
+Le 30 juin 2024, RHEL 7 a atteint la fin de maintenance (EOM), tandis que CentOS 7 a atteint la fin de vie (EOL). NetApp a cessé de prendre en charge le connecteur sur ces distributions Linux le 30 juin 2024.
 
 https://www.redhat.com/en/technologies/linux-platforms/enterprise-linux/rhel-7-end-of-maintenance["Red Hat : que savoir sur la fin de la maintenance de Red Hat Enterprise Linux 7"^]
 
@@ -81,9 +81,6 @@ Docker Engine est requis pour ce système d'exploitation. Podman n'est pas pris 
 
 Voici un résumé de la prise en charge du système d'exploitation décrite dans les sections précédentes.
 
-
-NOTE: NetApp continuera à prendre en charge le connecteur sur RHEL 7 et CentOS 7 jusqu'au 30 juin 2024.
-
 [role="tabbed-block"]
 ====
 .Mode standard
@@ -92,10 +89,8 @@ Installation manuelle::
 +
 --
 * Ubuntu 22.04 LTS
-* CentOS 7.6 à 7.9
 * Red Hat Enterprise Linux
 +
-** 7.6 à 7.9
 ** 8.6 à 8.9
 ** 9.1 à 9.3
 
@@ -115,10 +110,8 @@ Installation manuelle::
 +
 --
 * Ubuntu 22.04 LTS
-* CentOS 7.6 à 7.9
 * Red Hat Enterprise Linux
 +
-** 7.6 à 7.9
 ** 8.6 à 8.9
 ** 9.1 à 9.3
 
@@ -133,15 +126,7 @@ Déploiement à partir d'Azure Marketplace:: Ubuntu 22.04 LTS
 --
 .Mode privé
 --
-Installation manuelle::
-+
---
-* Ubuntu 22.04 LTS
-* CentOS 7.6 à 7.9
-* Red Hat Enterprise Linux 7.6 à 7.9
-
-
---
+Installation manuelle:: Ubuntu 22.04 LTS
 
 
 --

@@ -30,16 +30,8 @@ Systèmes d'exploitation pris en charge::
 +
 --
 * Ubuntu 22.04 LTS
-* CentOS 7.6 à 7.9
-+
-NetApp continuera à prendre en charge le connecteur avec CentOS 7 jusqu'au 30 juin 2024.
-
 * Red Hat Enterprise Linux
 +
-** 7.6 à 7.9
-+
-NetApp continuera à prendre en charge le connecteur avec RHEL 7 jusqu'au 30 juin 2024.
-
 ** 8.6 à 8.9
 ** 9.1 à 9.3
 +
@@ -53,12 +45,7 @@ Le connecteur est pris en charge sur les versions en anglais de ces systèmes d'
 
 
 --
-Hyperviseur:: Un hyperviseur bare Metal ou hébergé certifié pour exécuter Ubuntu, CentOS ou Red Hat Enterprise Linux est requis.
-+
---
-https://access.redhat.com/articles/973163["Solution Red Hat : quels hyperviseurs sont certifiés pour l'exécution de Red Hat Enterprise Linux ?"^]
-
---
+Hyperviseur:: Un hyperviseur bare Metal ou hébergé certifié pour exécuter un système d'exploitation pris en charge est requis.
 CPU:: 4 cœurs ou 4 CPU virtuels
 RAM:: 14 GO
 Taille des machines virtuelles Azure:: Type d'instance qui répond aux exigences relatives au CPU et à la RAM indiquées ci-dessus. Nous recommandons DS3 v2.
@@ -88,7 +75,7 @@ Les conditions préalables suivantes doivent être remplies pour Podman :
 ** Podman-compose doit être ajouté à la variable d'environnement PATH
 
 
-* Docker Engine est requis pour Ubuntu, CentOS et Red Hat Enterprise Linux 7.
+* Docker Engine est requis pour Ubuntu.
 +
 ** La version minimale prise en charge est 19.3.1.
 ** La version maximale prise en charge est 25.0.5.
@@ -106,7 +93,7 @@ Les conditions préalables suivantes doivent être remplies pour Podman :
 Selon votre système d'exploitation, Podman ou Docker Engine est requis avant d'installer le connecteur.
 
 * Podman est requis pour Red Hat Enterprise Linux 8 et 9.
-* Docker Engine est requis pour Ubuntu, CentOS et Red Hat Enterprise Linux 7.
+* Docker Engine est requis pour Ubuntu.
 
 
 .Étapes
