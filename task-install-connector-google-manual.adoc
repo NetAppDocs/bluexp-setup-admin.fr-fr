@@ -82,7 +82,7 @@ Les conditions préalables suivantes doivent être remplies pour Podman :
 
 * Docker Engine est requis pour Ubuntu.
 +
-** La version minimale prise en charge est 19.3.1.
+** La version minimale prise en charge est 23.0.6.
 ** La version maximale prise en charge est 25.0.5.
 
 
@@ -183,7 +183,7 @@ NOTE: À l'aide du `dnf install` La commande répond à l'exigence d'ajout de po
 --
 .Moteur Docker
 --
-Installer une version de Docker Engine comprise entre 19.3.1 et 25.0.5.
+Installer une version de Docker Engine comprise entre 23.0.6 et 25.0.5.
 
 .Étapes
 . Installer Docker Engine.

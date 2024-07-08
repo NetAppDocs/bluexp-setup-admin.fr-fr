@@ -18,6 +18,32 @@ Découvrez les nouveautés des fonctionnalités d'administration BlueXP : compte
 
 
 
+== 8 juillet 2024
+
+
+
+=== Connecteur 3.9.42
+
+Cette version comprend des améliorations mineures, des correctifs et la prise en charge du connecteur dans la région d'AWS Canada-Ouest (Calgary).
+
+
+
+=== Configuration requise pour Docker Engine mise à jour
+
+Lorsque le connecteur est installé sur un hôte Ubuntu, la version minimale prise en charge de Docker Engine est maintenant 23.0.6. Il était auparavant 19.3.1.
+
+La version maximale prise en charge est toujours 25.0.5.
+
+https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-on-prem.html#step-1-review-host-requirements["Afficher la configuration requise pour l'hôte du connecteur"].
+
+
+
+=== Vérification des e-mails maintenant requise
+
+Les nouveaux utilisateurs qui s'connectent à BlueXP doivent vérifier leur adresse e-mail avant de se connecter.
+
+
+
 == 12 juin 2024
 
 
