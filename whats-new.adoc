@@ -26,6 +26,8 @@ Découvrez les nouveautés des fonctionnalités d'administration BlueXP : compte
 
 Cette version comprend des améliorations mineures, des correctifs et la prise en charge du connecteur dans la région d'AWS Canada-Ouest (Calgary).
 
+La version 3.9.42 est disponible pour le mode standard et le mode restreint.
+
 
 
 === Configuration requise pour Docker Engine mise à jour
