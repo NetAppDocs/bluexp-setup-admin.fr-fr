@@ -4204,4 +4204,5 @@ Cette partie du tableau répertorie la prise en charge de la gestion de l'enviro
   <block id="5bde46ec5f2d435355447c38b00c1d9c" category="section-title">15 juillet 2024</block>
   <block id="415b27bc5d78b639dc8c74a6e8f93e19" category="section-title">Prise en charge de RHEL 8.10</block>
   <block id="562442342bba071ba7f2e5fa834d4464" category="paragraph">BlueXP prend désormais en charge l'installation du connecteur sur un hôte Red Hat Enterprise Linux 8.10 en mode standard ou en mode restreint.</block>
+  <block id="01a9b44907bcb1139b6868b9fe7073d0" category="paragraph">La prise en charge de RHEL 8.10 commence avec la version 3.9.40 du connecteur.</block>
 </blocks>
