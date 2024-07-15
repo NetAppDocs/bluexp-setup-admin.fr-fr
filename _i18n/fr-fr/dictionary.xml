@@ -3989,8 +3989,6 @@ Cette partie du tableau répertorie la prise en charge de la gestion de l'enviro
   <block id="895e31e93bd7a23981cc0cbeb5581840" category="summary">Au fur et à mesure que nous ajoutons et supprimons la prise en charge du connecteur sur des systèmes d'exploitation Linux spécifiques, vous pourriez avoir des questions sur la façon dont cette prise en charge affecte vos déploiements de connecteurs existants.</block>
   <block id="06e657c37e762cbeb9edc676ff32181d" category="doc">Modifications apportées aux systèmes d'exploitation Linux pris en charge</block>
   <block id="a5dacfcdb1adb3167b081f091b368732" category="section-title">Prise en charge de RHEL 8 et 9</block>
-  <block id="931c37d7beb414a58946263b8614e645" category="paragraph">À partir de la version 3.9.40, BlueXP prend en charge le connecteur avec les versions suivantes de Red Hat Enterprise Linux (RHEL) :</block>
-  <block id="6472d01a592db1ad2bf4a2c914623f1e" category="paragraph">Notez les points suivants concernant la prise en charge de ces versions de RHEL :</block>
   <block id="e646e16bee8b32e6ea29e30d01970a6c" category="list-text">Limites</block>
   <block id="12cde487ed6dcd882cede6dc73a2a96f" category="inline-link">Limitations connues pour la sauvegarde et la restauration BlueXP</block>
   <block id="7dffd01ec33485e74fcb637e0b8fe15a" category="list-text">Lorsque le connecteur est installé sur un hôte RHEL 8 ou 9, les limites de sauvegarde et de restauration BlueXP liées à la restauration de fichiers uniques et à l'analyse contre les ransomwares sont limitées. Pour plus de détails, reportez-vous à<block ref="a84971be17ca73ce2bed9722547a4b2a" category="inline-link-rx"></block></block>
@@ -4017,8 +4015,6 @@ Cette partie du tableau répertorie la prise en charge de la gestion de l'enviro
   <block id="6fdeb52b60ec4b9c7e60078047c5ce34" category="section-title">Prise en charge continue d'Ubuntu 22.04 LTS</block>
   <block id="a9aa1d1b3ffccec7f032ad3fee0e91b8" category="paragraph">Le connecteur est toujours pris en charge sur Ubuntu 22.04 LTS et est le système d'exploitation par défaut pour les déploiements à partir de BlueXP et sur le marché.</block>
   <block id="cadd936a18695c0f75406a35d18725ee" category="paragraph">Docker Engine est requis pour ce système d'exploitation. Podman n'est pas pris en charge.</block>
-  <block id="42d12ee6ea3719c1f52fd78afdba631f" category="section-title">Résumé des systèmes d'exploitation pris en charge</block>
-  <block id="4dd65f46069a455736b8e8c7d3fed71f" category="paragraph">Voici un résumé de la prise en charge du système d'exploitation décrite dans les sections précédentes.</block>
   <block id="d20756c02f9913587a3e83e30f0e10d3" category="list-text">Installation manuelle</block>
   <block id="0809934ab73994b74ff0369462a31319" category="list-text">Déploiement à partir de BlueXP</block>
   <block id="12a87db5b86462e9bd05a612793965de" category="list-text">Déploiement à partir d'AWS Marketplace</block>
@@ -4041,14 +4037,6 @@ Cette partie du tableau répertorie la prise en charge de la gestion de l'enviro
   <block id="90a582acc370affa7fa401384859e582" category="list-text"><block ref="90a582acc370affa7fa401384859e582" category="inline-link-rx"></block></block>
   <block id="d85b01f001ee16ebd8eb1917c739d824" category="inline-link">Découvrir les systèmes StorageGRID</block>
   <block id="49193f8c0c9f916e42ecd0ff6595ef39" category="list-text"><block ref="49193f8c0c9f916e42ecd0ff6595ef39" category="inline-link-rx"></block></block>
-  <block id="29eef78ab52bc074b0642baafaa44a77" category="inline-link">Ajoutez un cluster Amazon Kubernetes</block>
-  <block id="2afa5bfababb7240c7ecb360518a2cea" category="list-text"><block ref="2afa5bfababb7240c7ecb360518a2cea" category="inline-link-rx"></block></block>
-  <block id="8cae45546ea6e7035e9b798f709fc911" category="inline-link">Ajoutez un cluster Azure Kubernetes</block>
-  <block id="a8c7ee49512f707b31b6b959a438f7ad" category="list-text"><block ref="a8c7ee49512f707b31b6b959a438f7ad" category="inline-link-rx"></block></block>
-  <block id="2872769900c1ca485d1628b4eefde308" category="inline-link">Ajoutez un cluster Google Cloud Kubernetes</block>
-  <block id="aa7a37aa9bcd687f934565cd13aefe20" category="list-text"><block ref="aa7a37aa9bcd687f934565cd13aefe20" category="inline-link-rx"></block></block>
-  <block id="24e61fea41861d29656588dd6c8ad263" category="inline-link">Importez un cluster OpenShift</block>
-  <block id="4fc44e3aff437ef0c290689bf2e88325" category="list-text"><block ref="4fc44e3aff437ef0c290689bf2e88325" category="inline-link-rx"></block></block>
   <block id="7a0d21aaa1ef78351243ec252286827a" category="summary">BlueXP prend en charge IMDSv2 avec le connecteur et avec Cloud Volumes ONTAP. Dans la plupart des cas, IMDSv2 est automatiquement configuré sur les nouvelles instances EC2. IMDSv1 a été activé avant mars 2024. Si vos stratégies de sécurité l'exigent, vous devrez peut-être configurer manuellement IMDSv2 sur vos instances EC2.</block>
   <block id="7ff8d7153d4eb208dbc1a561fd9985a9" category="paragraph">BlueXP prend en charge le service de métadonnées d'instance Amazon EC2 version 2 (IMDSv2) avec le connecteur et avec Cloud Volumes ONTAP (y compris le médiateur pour les déploiements HA). Dans la plupart des cas, IMDSv2 est automatiquement configuré sur les nouvelles instances EC2. IMDSv1 a été activé avant mars 2024. Si vos stratégies de sécurité l'exigent, vous devrez peut-être configurer manuellement IMDSv2 sur vos instances EC2.</block>
   <block id="ed2660e5566ea9acdabcea9d70f95553" category="section-title">Étape 2 : installez Podman ou Docker Engine</block>
@@ -4210,4 +4198,10 @@ Cette partie du tableau répertorie la prise en charge de la gestion de l'enviro
   <block id="0d04c8a15444402f3438c6a0e19e7890" category="section-title">Vérification des e-mails maintenant requise</block>
   <block id="d2fc5d70b0b08157a615d70d77cb96c2" category="paragraph">Les nouveaux utilisateurs qui s'connectent à BlueXP doivent vérifier leur adresse e-mail avant de se connecter.</block>
   <block id="096051910b67309e40aa0d0e1d279007" category="paragraph">La version 3.9.42 est disponible pour le mode standard et le mode restreint.</block>
+  <block id="597f1630cd21d22c527f63002e42f059" category="list-text">8.6 à 8.10</block>
+  <block id="231007fefc880f5d22c9c9bd81be28b3" category="paragraph">Le connecteur BlueXP est pris en charge par les systèmes d'exploitation Linux suivants.</block>
+  <block id="3cf44b158a4bb7a8c4ca007889bedc1a" category="paragraph">Notez les points suivants concernant la prise en charge de RHEL 8 et 9 :</block>
+  <block id="5bde46ec5f2d435355447c38b00c1d9c" category="section-title">15 juillet 2024</block>
+  <block id="415b27bc5d78b639dc8c74a6e8f93e19" category="section-title">Prise en charge de RHEL 8.10</block>
+  <block id="562442342bba071ba7f2e5fa834d4464" category="paragraph">BlueXP prend désormais en charge l'installation du connecteur sur un hôte Red Hat Enterprise Linux 8.10 en mode standard ou en mode restreint.</block>
 </blocks>

@@ -18,15 +18,65 @@ Au fur et à mesure que nous ajoutons et supprimons la prise en charge du connec
 
 
 
+== Systèmes d'exploitation pris en charge
+
+Le connecteur BlueXP est pris en charge par les systèmes d'exploitation Linux suivants.
+
+[role="tabbed-block"]
+====
+.Mode standard
+--
+Installation manuelle::
++
+--
+* Ubuntu 22.04 LTS
+* Red Hat Enterprise Linux
++
+** 8.6 à 8.10
+** 9.1 à 9.3
+
+
+
+
+--
+Déploiement à partir de BlueXP:: Ubuntu 22.04 LTS
+Déploiement à partir d'AWS Marketplace:: Ubuntu 22.04 LTS
+Déploiement à partir d'Azure Marketplace:: Ubuntu 22.04 LTS
+
+
+--
+.Mode restreint
+--
+Installation manuelle::
++
+--
+* Ubuntu 22.04 LTS
+* Red Hat Enterprise Linux
++
+** 8.6 à 8.10
+** 9.1 à 9.3
+
+
+
+
+--
+Déploiement à partir d'AWS Marketplace:: Ubuntu 22.04 LTS
+Déploiement à partir d'Azure Marketplace:: Ubuntu 22.04 LTS
+
+
+--
+.Mode privé
+--
+Installation manuelle:: Ubuntu 22.04 LTS
+
+
+--
+====
+
+
 == Prise en charge de RHEL 8 et 9
 
-À partir de la version 3.9.40, BlueXP prend en charge le connecteur avec les versions suivantes de Red Hat Enterprise Linux (RHEL) :
-
-* 8.6 à 8.9
-* 9.1 à 9.3
-
-
-Notez les points suivants concernant la prise en charge de ces versions de RHEL :
+Notez les points suivants concernant la prise en charge de RHEL 8 et 9 :
 
 Limites::
 +
@@ -77,62 +127,6 @@ Docker Engine est requis pour ce système d'exploitation. Podman n'est pas pris 
 
 
 
-== Résumé des systèmes d'exploitation pris en charge
-
-Voici un résumé de la prise en charge du système d'exploitation décrite dans les sections précédentes.
-
-[role="tabbed-block"]
-====
-.Mode standard
---
-Installation manuelle::
-+
---
-* Ubuntu 22.04 LTS
-* Red Hat Enterprise Linux
-+
-** 8.6 à 8.9
-** 9.1 à 9.3
-
-
-
-
---
-Déploiement à partir de BlueXP:: Ubuntu 22.04 LTS
-Déploiement à partir d'AWS Marketplace:: Ubuntu 22.04 LTS
-Déploiement à partir d'Azure Marketplace:: Ubuntu 22.04 LTS
-
-
---
-.Mode restreint
---
-Installation manuelle::
-+
---
-* Ubuntu 22.04 LTS
-* Red Hat Enterprise Linux
-+
-** 8.6 à 8.9
-** 9.1 à 9.3
-
-
-
-
---
-Déploiement à partir d'AWS Marketplace:: Ubuntu 22.04 LTS
-Déploiement à partir d'Azure Marketplace:: Ubuntu 22.04 LTS
-
-
---
-.Mode privé
---
-Installation manuelle:: Ubuntu 22.04 LTS
-
-
---
-====
-
-
 == Liens connexes
 
 
@@ -160,8 +154,4 @@ Reportez-vous aux pages suivantes pour redécouvrir vos environnements de travai
 * https://docs.netapp.com/us-en/bluexp-azure-netapp-files/task-create-working-env.html["Créer un environnement de travail Azure NetApp Files"^]
 * https://docs.netapp.com/us-en/bluexp-e-series/task-discover-e-series.html["Découvrez les systèmes E-Series"^]
 * https://docs.netapp.com/us-en/bluexp-storagegrid/task-discover-storagegrid.html["Découvrir les systèmes StorageGRID"^]
-* https://docs.netapp.com/us-en/bluexp-kubernetes/task/task-kubernetes-discover-aws.html["Ajoutez un cluster Amazon Kubernetes"^]
-* https://docs.netapp.com/us-en/bluexp-kubernetes/task/task-kubernetes-discover-azure.html["Ajoutez un cluster Azure Kubernetes"^]
-* https://docs.netapp.com/us-en/bluexp-kubernetes/task/task-kubernetes-discover-gke.html["Ajoutez un cluster Google Cloud Kubernetes"^]
-* https://docs.netapp.com/us-en/bluexp-kubernetes/task/task-kubernetes-discover-openshift.html["Importez un cluster OpenShift"^]
 
