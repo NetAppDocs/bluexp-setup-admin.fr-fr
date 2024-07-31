@@ -157,7 +157,7 @@ Pour savoir comment configurer des autorisations, consultez les sections suivant
 
 
 * link:task-prepare-restricted-mode.html#step-6-prepare-cloud-permissions["Définissez les autorisations pour le mode restreint"]
-* link:task-prepare-private-mode.html#step-5-prepare-cloud-permissions["Configurez les autorisations pour le mode privé"]
+* link:task-prepare-private-mode.html#step-6-prepare-cloud-permissions["Configurez les autorisations pour le mode privé"]
 
 
 Pour afficher les autorisations exactes dont le connecteur a besoin pour les opérations quotidiennes, reportez-vous aux pages suivantes :

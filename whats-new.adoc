@@ -18,6 +18,73 @@ Découvrez les nouveautés des fonctionnalités d'administration BlueXP : compte
 
 
 
+== 31 juillet 2024
+
+
+
+=== Version en mode privé (3.9.42)
+
+Une nouvelle version en mode privé est désormais disponible au téléchargement sur le site du support NetApp.
+
+
+
+==== Prise en charge de RHEL 8 et 9
+
+Cette version inclut la prise en charge de l'installation de Connector sur un hôte Red Hat Enterprise Linux 8 ou 9 lors de l'utilisation de BlueXP en mode privé. Les versions suivantes de RHEL sont prises en charge :
+
+* 8.6 à 8.10
+* 9.1 à 9.3
+
+
+Podman est requis comme outil d'orchestration de conteneurs pour ces systèmes d'exploitation.
+
+Vous devez connaître les exigences de Podman, les limitations connues, un résumé de la prise en charge du système d'exploitation, ce qu'il faut faire si vous disposez d'un hôte RHEL 7, comment démarrer, et bien plus encore.
+
+https://docs.netapp.com/us-en/bluexp-setup-admin/reference-connector-operating-system-changes.html["Découvrez la prise en charge de RHEL 8 et 9 avec le connecteur"].
+
+
+
+==== Versions incluses dans cette version
+
+Cette version inclut les versions suivantes des services BlueXP prises en charge avec le mode privé.
+
+[cols="2*"]
+|===
+| Service | Version incluse 
+
+
+| Connecteur | 3.9.42 
+
+
+| Sauvegarde et restauration | 18 juillet 2024 
+
+
+| Classement | 1er juillet 2024 (version 1.33) 
+
+
+| Gestion Cloud Volumes ONTAP | 10 juin 2024 
+
+
+| Portefeuille digital | 30 juillet 2023 
+
+
+| Gestion des clusters ONTAP sur site | 30 juillet 2023 
+
+
+| La réplication | 18 septembre 2022 
+|===
+Pour en savoir plus sur le contenu des versions de ces services BlueXP, consultez les notes de version de chaque service BlueXP.
+
+* https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html["En savoir plus sur le mode privé"]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-private-mode.html["Découvrez comment démarrer avec BlueXP en mode privé"]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-upgrade-connector.html["Apprenez à mettre à niveau le connecteur lorsque vous utilisez le mode privé"]
+* https://docs.netapp.com/us-en/bluexp-backup-recovery/whats-new.html["Découvrez les nouveautés de la sauvegarde et de la restauration BlueXP"^]
+* https://docs.netapp.com/us-en/bluexp-classification/whats-new.html["Découvrez les nouveautés de la classification BlueXP"^]
+* https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html["Découvrez les nouveautés de la gestion Cloud Volumes ONTAP dans BlueXP"^]
+
+
+
+
 == 15 juillet 2024
 
 

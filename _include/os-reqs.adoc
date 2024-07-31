@@ -26,10 +26,23 @@ Le connecteur est pris en charge sur les versions en anglais de ces systèmes d'
 --
 
 
-Système d'exploitation pris en charge:: Ubuntu 22.04 LTS
+Système d'exploitation pris en charge::
 +
 --
-Le connecteur est pris en charge sur les versions en anglais de ce système d'exploitation.
+* Ubuntu 22.04 LTS
+* Red Hat Enterprise Linux
++
+** 8.6 à 8.10
+** 9.1 à 9.3
++
+L'hôte doit être enregistré auprès de Red Hat Subscription Management. S'il n'est pas enregistré, l'hôte ne peut pas accéder aux référentiels pour mettre à jour les logiciels tiers requis lors de l'installation du connecteur.
+
++
+Le connecteur est pris en charge sur les versions en anglais de ces systèmes d'exploitation.
+
+
+
+
 
 --
 

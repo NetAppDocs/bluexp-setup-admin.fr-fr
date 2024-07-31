@@ -132,7 +132,6 @@
   <block id="c95623cd0395d5a6bb6105b9d32f197b" category="inline-link-macro">Note pour BlueXP</block>
   <block id="98a041bbcf45b807a22068084127e26d" category="paragraph"><block ref="98a041bbcf45b807a22068084127e26d" category="inline-link-macro-rx"></block></block>
   <block id="077d70acc6fcd0e9c32a626a8ef8e416" category="paragraph">Commencez à utiliser BlueXP en mode privé en préparant votre environnement et en déployant Connector.</block>
-  <block id="19b89452bb4e16dbfc6dc9d3fbbf8fc1" category="list-text">Préparez un hôte Linux dédié qui répond aux exigences en matière de processeur, de RAM, d'espace disque, de moteur Docker et bien plus encore.</block>
   <block id="8cb1247d6f1cd796c983b5b1cfbbd285" category="list-text">Configurez le réseau qui permet d'accéder aux réseaux cibles.</block>
   <block id="31b22ac218f817003d8419ad3518a02a" category="list-text">Pour les déploiements cloud, configurez des autorisations dans votre fournisseur de cloud afin que vous puissiez les associer au connecteur après avoir installé le logiciel.</block>
   <block id="817e58b984e5e3e7eeaf7dcb9b540fed" category="list-text">Installez le logiciel Connector sur votre propre hôte Linux.</block>
@@ -3317,10 +3316,8 @@ Vous devez également vous assurer que la stratégie est à jour lorsque de nouv
   <block id="9f1bd247464191c700cb44116139a226" category="section-title">Étape 1 : installez le connecteur</block>
   <block id="0c636bde157e77551496ec8461e40dcc" category="section-title">Étape 2 : configuration de BlueXP</block>
   <block id="60a2819d83a7d683770230c16623234f" category="section-title">Étape 3 : fournissez des autorisations à BlueXP</block>
-  <block id="33df6c8bf79bb883818929fadd08fde2" category="paragraph"><block ref="c830bbf16033728edff10270fb2e90fe" category="inline-link-macro-rx"></block>.</block>
   <block id="895abbd8e532d17f2ca587c540bce83a" category="list-text"><block ref="895abbd8e532d17f2ca587c540bce83a" category="inline-link-macro-rx"></block></block>
   <block id="72323525d86fb9af6692c45c5d227ba4" category="list-text"><block ref="72323525d86fb9af6692c45c5d227ba4" category="inline-link-macro-rx"></block></block>
-  <block id="9a1ba924530ef064e3af892730568dd2" category="list-text"><block ref="9a1ba924530ef064e3af892730568dd2" category="inline-link-macro-rx"></block></block>
   <block id="dcaf9d9995c1cce5dfb4399e2434754e" category="summary">Pour installer manuellement le connecteur sur votre propre hôte Linux, vous devez vérifier la configuration requise pour l'hôte, configurer votre réseau, préparer les autorisations Azure, installer le connecteur, puis fournir les autorisations que vous avez préparées.</block>
   <block id="4a121ca6348602c8e2772e9488d338a9" category="doc">Installez manuellement le connecteur dans Azure</block>
   <block id="38c977ce808382575da9f341bee1d199" category="paragraph">Vous devriez passer en revue <block ref="a2e83c328c5fe53a1b055bac582f41f6" category="inline-link-macro-rx"></block>.</block>
@@ -3395,8 +3392,6 @@ Membre: Compte de service BlueXP à partir de serviceAccount.user</block>
   <block id="7670b3e7fd0d9b5404a8ab86daf87444" category="section-title">Étape 1 : comprendre le fonctionnement du mode privé</block>
   <block id="6a0acc770010231bcc42930780e10a7e" category="section-title">Étape 2 : passez en revue les options d'installation</block>
   <block id="50c4903873872ea1d14776db2fb74652" category="section-title">Étape 3 : vérifiez la configuration requise pour l'hôte</block>
-  <block id="ba9523b755dd436b9804d56f2425702a" category="section-title">Étape 4 : préparer la mise en réseau pour le connecteur</block>
-  <block id="4a34940e5f45b6eb76dabb3e23de10f0" category="section-title">Étape 5 : préparez les autorisations cloud</block>
   <block id="ed699bb1e56dba725718c6f093e80619" category="section-title">Étape 6 : activez les API Google Cloud</block>
   <block id="755bdc98f2ba455bba23e5d86a671294" category="section-title">Étape 1 : comprendre le fonctionnement du mode restreint</block>
   <block id="62e5d1121361ae6a6b8f2f35c9e1b534" category="list-text">En mode restreint, l'interface utilisateur BlueXP est accessible depuis le connecteur. Lorsque vous utilisez l'interface utilisateur BlueXP, le service est en contact avec quelques terminaux pour effectuer les tâches de gestion des données. Ces terminaux sont contactés depuis l'ordinateur d'un utilisateur lorsqu'ils effectuent des actions spécifiques à partir de la console BlueXP.</block>
@@ -3992,10 +3987,7 @@ Cette partie du tableau répertorie la prise en charge de la gestion de l'enviro
   <block id="7dffd01ec33485e74fcb637e0b8fe15a" category="list-text">Lorsque le connecteur est installé sur un hôte RHEL 8 ou 9, les limites de sauvegarde et de restauration BlueXP liées à la restauration de fichiers uniques et à l'analyse contre les ransomwares sont limitées. Pour plus de détails, reportez-vous à<block ref="a84971be17ca73ce2bed9722547a4b2a" category="inline-link-rx"></block></block>
   <block id="b6417b62aacc6d16c1ae7a79d851d413" category="list-text">La classification BlueXP est prise en charge si vous installez le connecteur sur un hôte RHEL 8 ou 9 résidant sur site. Elle n'est pas prise en charge si l'hôte RHEL 8 ou 9 réside dans AWS, Azure ou Google Cloud.</block>
   <block id="b71010c70a84a098ff97c54119ce9797" category="list-text">Podman est requis en tant qu'outil d'orchestration de conteneurs lorsque vous installez le connecteur sur un hôte RHEL 8 ou 9. Docker Engine n'est pas pris en charge par RHEL 8 et 9.</block>
-  <block id="b20f6232e01f99983ab6adfc3cb4648e" category="inline-link-macro">Afficher les exigences pour Podman</block>
-  <block id="5965bb30c82006f547e51cea08649d28" category="paragraph"><block ref="b6742b68d5770c57e621fe89da84d99c" category="inline-link-macro-rx"></block>.</block>
   <block id="6949300ff5b5cf6bb192114a06c923bb" category="list-text">Mode de déploiement</block>
-  <block id="f6b985bf429f605650402152a53dd500" category="list-text">RHEL 8 et 9 sont pris en charge lorsque BlueXP est utilisé en mode standard ou en mode restreint.</block>
   <block id="62ee52388b4c1539a4b357c9c16e57c6" category="list-text">Nouvelles installations manuelles uniquement</block>
   <block id="362134ff254c022479b85d3cb9afd90c" category="list-text">RHEL 8 et 9 sont pris en charge avec les installations _New_ Connector lors de l'installation manuelle du connecteur sur des hôtes exécutés sur votre site ou dans le cloud.</block>
   <block id="ba657bf59cdaa129ee6a10872f7d63cf" category="list-text">Mises à niveau de RHEL</block>
@@ -4019,10 +4011,6 @@ Cette partie du tableau répertorie la prise en charge de la gestion de l'enviro
   <block id="21b3bbb098ff9926f5de185468b47efd" category="list-text">Déploiement à partir d'Azure Marketplace</block>
   <block id="fd976d7410ccbb05f33da778aade918e" category="section-title">Comment démarrer avec RHEL 8 et 9</block>
   <block id="19fbd5208079427f7255588fa19e6216" category="paragraph">Reportez-vous aux pages suivantes pour plus de détails sur la configuration requise pour l'hôte, la configuration requise pour Podman et les étapes d'installation de Podman et du connecteur :</block>
-  <block id="c7ebd4cc461f15f97b0c6bb4d8aa138a" category="list-text"><block ref="f3e58ec45f13e79fe493e5ac40efdaef" category="inline-link-rx"></block> (mode standard)</block>
-  <block id="0a33569de64145f5ddb030c5c68f0e2f" category="list-text"><block ref="ce02a119fe20803f37d74f2f696ae608" category="inline-link-rx"></block> (mode standard)</block>
-  <block id="b9ab4eedcc76eaef5111c38dd7cf6955" category="list-text"><block ref="adf5c1237bee96f4b87ff5eb3fd3c25b" category="inline-link-rx"></block> (mode standard)</block>
-  <block id="1d054abd9ef4fcc0992047bc974a0ca7" category="list-text"><block ref="5f47d3df7f8a6f7d2b2dc0a0630af052" category="inline-link-rx"></block> (mode standard)</block>
   <block id="9f1e71ff4946538e6e8d4160102056bb" category="list-text"><block ref="9f1e71ff4946538e6e8d4160102056bb" category="inline-link-rx"></block></block>
   <block id="cd4dc0cbdf60f743093e390cb5077d8b" category="section-title">Comment redécouvrir vos environnements de travail</block>
   <block id="8c3d753bf73570be606a9b0e412a89ca" category="paragraph">Reportez-vous aux pages suivantes pour redécouvrir vos environnements de travail après le déploiement d'un nouveau connecteur.</block>
@@ -4165,7 +4153,6 @@ Cette partie du tableau répertorie la prise en charge de la gestion de l'enviro
   <block id="4fe47b0a38e9cc2f08e1ebd6f66fc340" category="paragraph">Utilisations de BlueXP<block ref="68ab1268abb7e5f5688810968df97d6b" prefix=" " category="inline-code"></block> pour installer le<block ref="a23365e1ae67810a7446b65d3be9a5d0" prefix=" " category="inline-code"></block> et son contenu.</block>
   <block id="6625b96831c913865dcc04d700d00a02" category="paragraph">BlueXP requiert cet espace dans<block ref="ca905eb4a00d34150573153a09e2e79b" prefix=" " category="inline-code"></block> Car l'architecture de Docker ou Podman est conçue pour créer les conteneurs dans ce répertoire. Plus précisément, ils créeront des conteneurs dans le<block ref="af5045a6e72956f67984a97cd3e8b9da" prefix=" " category="inline-code"></block> répertoire. Les montages externes ou les liens symboliques ne fonctionnent pas pour cet espace.</block>
   <block id="2e71b3fb71d89f18906d4807a6011e20" category="list-text">Système d'exploitation pris en charge</block>
-  <block id="16affed9b9386a1e06dfd59de9b05f10" category="paragraph">Le connecteur est pris en charge sur les versions en anglais de ce système d'exploitation.</block>
   <block id="06cfdcafd69514150ade31a714fa78db" category="list-text">Un hyperviseur bare Metal ou hébergé certifié pour exécuter un système d'exploitation pris en charge est requis.</block>
   <block id="1c0a2f304cb94000fe79271bae1284df" category="list-text">Docker Engine est requis pour Ubuntu.</block>
   <block id="eb79e7adcda869f967a810da89679252" category="paragraph">Le 30 juin 2024, RHEL 7 a atteint la fin de maintenance (EOM), tandis que CentOS 7 a atteint la fin de vie (EOL). NetApp a cessé de prendre en charge le connecteur sur ces distributions Linux le 30 juin 2024.</block>
@@ -4205,4 +4192,23 @@ Cette partie du tableau répertorie la prise en charge de la gestion de l'enviro
   <block id="01a9b44907bcb1139b6868b9fe7073d0" category="paragraph">La prise en charge de RHEL 8.10 commence avec la version 3.9.40 du connecteur.</block>
   <block id="95dfe7c62c6772d34f6255b3027f736d" category="inline-link">BlueXP Connector listing on the AWS Marketplace</block>
   <block id="0017322d56b9d155b01ac8380335c15b" category="list-text">Go to the<block ref="00e748787e3cd0352ad19292d67af7aa" category="inline-link-rx"></block></block>
+  <block id="6c3a57872e006099844f13049e7b1891" category="list-text"><block ref="6c3a57872e006099844f13049e7b1891" category="inline-link-macro-rx"></block></block>
+  <block id="00e6604adbc44c85a390ab929076d0bb" category="list-text">RHEL 8 et 9 sont pris en charge lorsque BlueXP est utilisé en mode standard, en mode restreint et en mode privé.</block>
+  <block id="f3e58ec45f13e79fe493e5ac40efdaef" category="list-text"><block ref="f3e58ec45f13e79fe493e5ac40efdaef" category="inline-link-rx"></block></block>
+  <block id="ce02a119fe20803f37d74f2f696ae608" category="list-text"><block ref="ce02a119fe20803f37d74f2f696ae608" category="inline-link-rx"></block></block>
+  <block id="adf5c1237bee96f4b87ff5eb3fd3c25b" category="list-text"><block ref="adf5c1237bee96f4b87ff5eb3fd3c25b" category="inline-link-rx"></block></block>
+  <block id="5f47d3df7f8a6f7d2b2dc0a0630af052" category="list-text"><block ref="5f47d3df7f8a6f7d2b2dc0a0630af052" category="inline-link-rx"></block></block>
+  <block id="f19b5217f0e887d7e5547d736ab648ff" category="paragraph"><block ref="f19b5217f0e887d7e5547d736ab648ff" category="inline-link-rx"></block></block>
+  <block id="bce5cf056b28239df2bdb7b2083217ac" category="paragraph"><block ref="242e7f2f46e42a12308aa354a9159aef" category="inline-link-macro-rx"></block>.</block>
+  <block id="b25308e5b7cefc33ec331b935d12e84d" category="paragraph">Vous devez préparer l'hôte pour le connecteur en installant Podman ou Docker Engine.</block>
+  <block id="4f11400d5bfc49418f8fe9e78ffbc58c" category="section-title">31 juillet 2024</block>
+  <block id="b9cf377931ad2ee7b1d42618c6c12fa5" category="section-title">Version en mode privé (3.9.42)</block>
+  <block id="5d515ef1c3774ed67ad6115621a1ca59" category="paragraph">Une nouvelle version en mode privé est désormais disponible au téléchargement sur le site du support NetApp.</block>
+  <block id="de4d4b8489d091cd028889fa8739a4a3" category="paragraph">Cette version inclut la prise en charge de l'installation de Connector sur un hôte Red Hat Enterprise Linux 8 ou 9 lors de l'utilisation de BlueXP en mode privé. Les versions suivantes de RHEL sont prises en charge :</block>
+  <block id="2791ae5af0f1b2a708aaa92b1fddb49e" category="section-title">Versions incluses dans cette version</block>
+  <block id="ee91704d04c9c24001ba7aa413122767" category="paragraph">Cette version inclut les versions suivantes des services BlueXP prises en charge avec le mode privé.</block>
+  <block id="58660abbd738b63f91f751c0fcd3787d" category="cell">3.9.42</block>
+  <block id="09fcc3c3a46a63684b907c89bb2e4b7b" category="cell">18 juillet 2024</block>
+  <block id="4736cb006ef02fa673f618379e2106bd" category="cell">1er juillet 2024 (version 1.33)</block>
+  <block id="8009eebf05fd33b87750f8b4048986f7" category="cell">10 juin 2024</block>
 </blocks>
