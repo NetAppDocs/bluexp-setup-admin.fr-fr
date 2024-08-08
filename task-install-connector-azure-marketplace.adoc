@@ -147,9 +147,9 @@ Vous devrez implémenter cette exigence de mise en réseau après avoir créé l
 
 Lorsque vous créez le connecteur, vous devez choisir un type de machine virtuelle répondant aux exigences suivantes.
 
-CPU:: 4 cœurs ou 4 CPU virtuels
-RAM:: 14 GO
-Taille des machines virtuelles Azure:: Type d'instance qui répond aux exigences relatives au CPU et à la RAM indiquées ci-dessus. Nous recommandons DS3 v2.
+CPU:: 8 cœurs ou 8 CPU virtuels
+RAM:: 32 GO
+Taille des machines virtuelles Azure:: Type d'instance qui répond aux exigences relatives au CPU et à la RAM indiquées ci-dessus. Nous recommandons Standard_D8s_v3.
 
 
 
@@ -409,7 +409,7 @@ https://azuremarketplace.microsoft.com/en-us/marketplace/apps/netapp.netapp-onco
 Noter les éléments suivants lors de la configuration de la machine virtuelle :
 
 +
-** *Taille de la VM* : choisissez une taille de VM qui répond aux exigences de CPU et de RAM. Nous recommandons DS3 v2.
+** *Taille de la VM* : choisissez une taille de VM qui répond aux exigences de CPU et de RAM. Nous recommandons Standard_D8s_v3.
 ** *Disques* : le connecteur peut fonctionner de manière optimale avec des disques durs ou SSD.
 ** *Groupe de sécurité réseau* : le connecteur nécessite des connexions entrantes utilisant SSH, HTTP et HTTPS.
 +

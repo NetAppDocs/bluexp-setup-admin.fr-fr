@@ -46,8 +46,8 @@ Le connecteur est pris en charge sur les versions en anglais de ces systèmes d'
 
 --
 Hyperviseur:: Un hyperviseur bare Metal ou hébergé certifié pour exécuter un système d'exploitation pris en charge est requis.
-CPU:: 4 cœurs ou 4 CPU virtuels
-RAM:: 14 GO
+CPU:: 8 cœurs ou 8 CPU virtuels
+RAM:: 32 GO
 Espace disque dans /opt:: 100 Gio d'espace doit être disponible
 +
 --
@@ -60,10 +60,39 @@ Espace disque dans /var:: 20 Gio d'espace doit être disponible
 BlueXP requiert cet espace dans `/var` Car l'architecture de Docker ou Podman est conçue pour créer les conteneurs dans ce répertoire. Plus précisément, ils créeront des conteneurs dans le `/var/lib/containers/storage` répertoire. Les montages externes ou les liens symboliques ne fonctionnent pas pour cet espace.
 
 --
+
+
+[[podman-versions]]
 Outil d'orchestration de conteneurs:: Selon votre système d'exploitation, Podman ou Docker Engine est requis avant d'installer le connecteur.
 +
 --
-* Podman version 4.6.1 est requis pour Red Hat Enterprise Linux 8 et 9.
+* Podman est requis pour Red Hat Enterprise Linux 8 et 9.
++
+[cols="50a,50a"]
+|===
+| Version RHEL | Version Podman prise en charge 
+
+
+ a| 
+RHEL 8.6 à 8.9
+ a| 
+Podman 4.6.1
+
+
+
+ a| 
+RHEL 8.10
+ a| 
+Podman 4.6.1 et 4.9.4
+
+
+
+ a| 
+RHEL 9.1 à 9.3
+ a| 
+Podman 4.6.1
+
+|===
 +
 Les conditions préalables suivantes doivent être remplies pour Podman :
 
@@ -100,7 +129,7 @@ Selon votre système d'exploitation, Podman ou Docker Engine est requis avant d'
 ====
 .Podman
 --
-Installez Podman 4.6.1.
+Installez une version prise en charge de Podman. <<podman-versions,Affichez les versions de Podman prises en charge par BlueXP >>.
 
 .Étapes
 . Retirez le package podman-docker s'il est installé sur l'hôte.
@@ -120,16 +149,22 @@ Pour Red Hat Enterprise Linux 9 :
 +
 [source, cli]
 ----
-sudo dnf install podman-2:4.6.1
+sudo dnf install podman-2:<version>
 ----
++
+Où <version> est la version prise en charge de Podman que vous installez. <<podman-versions,Affichez les versions de Podman prises en charge par BlueXP >>.
+
 +
 Pour Red Hat Enterprise Linux 8 :
 
 +
 [source, cli]
 ----
-sudo dnf install podman-3:4.6.1
+sudo dnf install podman-3:<version>
 ----
++
+Où <version> est la version prise en charge de Podman que vous installez. <<podman-versions,Affichez les versions de Podman prises en charge par BlueXP >>.
+
 . Activez et démarrez le service podman.socket.
 +
 [source, cli]

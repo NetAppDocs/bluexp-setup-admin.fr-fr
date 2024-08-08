@@ -45,22 +45,6 @@ Sélectionnez votre région pour afficher les stratégies requises :
 ====
 Pour les régions standard, les autorisations sont réparties entre deux règles. Deux règles sont requises en raison d'une taille maximale de caractères pour les stratégies gérées dans AWS.
 
-La première politique fournit des autorisations pour les services suivants :
-
-* Découverte des compartiments Amazon S3
-* Sauvegarde et restauration
-* Classement
-* Cloud Volumes ONTAP
-* FSX pour ONTAP
-* Tiering
-
-
-La deuxième politique fournit des autorisations pour les services suivants :
-
-* La mise en cache en périphérie
-* Kubernetes
-
-
 [role="tabbed-block"]
 =====
 .Politique no 1
@@ -1260,29 +1244,6 @@ Il effectue les requêtes d'API suivantes pour déployer et gérer Cloud Volumes
 
 | Vérifiez si la zone de disponibilité est une zone locale AWS et vérifiez que tous les paramètres de déploiement sont compatibles | ec2:DescribeAvailabilityzones | Oui. | Non | Oui. 
 |===
-
-
-=== La mise en cache en périphérie
-
-Le connecteur fait les requêtes d'API suivantes pour déployer les instances de mise en cache BlueXP Edge pendant le déploiement :
-
-* Cloudformation:DescribeSacks
-* cloudwatch:GetMetricStatistics
-* Cloudformation:ListSacks
-
-
-
-
-=== Kubernetes
-
-Le connecteur effectue les requêtes API suivantes pour détecter et gérer les clusters Amazon EKS :
-
-* ec2:régions descriptives
-* eks:Listclusters
-* eks:DescribeCluster
-* iam:GetInstanceProfile
-
-
 
 
 == Journal des modifications

@@ -28,7 +28,7 @@ Les informations de configuration suivantes s'appliquent si vous avez déployé 
 
 Si vous avez déployé le connecteur depuis BlueXP ou depuis le marché du fournisseur cloud, remarque :
 
-* Le type d'instance EC2 est t3.XLarge.
+* Le type d'instance EC2 est t3.2xlarge.
 * Le système d'exploitation de l'image est Ubuntu 22.04 LTS.
 +
 Le système d'exploitation n'inclut pas d'interface graphique. Vous devez utiliser un terminal pour accéder au système.
@@ -44,7 +44,7 @@ Le système d'exploitation n'inclut pas d'interface graphique. Vous devez utilis
 
 Si vous avez déployé le connecteur depuis BlueXP ou depuis le marché du fournisseur cloud, remarque :
 
-* Le type de machine virtuelle est DS3 v2.
+* Le type de VM est Standard_D8s_v3.
 * Le système d'exploitation de l'image est Ubuntu 22.04 LTS.
 +
 Le système d'exploitation n'inclut pas d'interface graphique. Vous devez utiliser un terminal pour accéder au système.
@@ -59,7 +59,7 @@ Le système d'exploitation n'inclut pas d'interface graphique. Vous devez utilis
 
 Si vous avez déployé le connecteur à partir de BlueXP, notez les points suivants :
 
-* L'instance de machine virtuelle est n2-standard-4.
+* L'instance de machine virtuelle est n2-standard-8.
 * Le système d'exploitation de l'image est Ubuntu 22.04 LTS.
 +
 Le système d'exploitation n'inclut pas d'interface graphique. Vous devez utiliser un terminal pour accéder au système.

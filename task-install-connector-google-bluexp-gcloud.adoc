@@ -443,9 +443,9 @@ Vous devez disposer des éléments suivants :
 * VPC et sous-réseau qui répondent aux exigences réseau.
 * Compréhension des exigences des instances VM.
 +
-** *CPU* : 4 cœurs ou 4 vCPU
-** *RAM*: 14 GO
-** *Type de machine*: Nous recommandons n2-standard-4.
+** *CPU* : 8 cœurs ou 8 vCPU
+** *RAM*: 32 GO
+** *Type de machine*: Nous recommandons n2-standard-8.
 +
 Le connecteur est pris en charge dans Google Cloud sur une instance de machine virtuelle avec un système d'exploitation qui prend en charge les fonctionnalités de machine virtuelle blindée.
 
@@ -488,7 +488,7 @@ $ gcloud components update
 [source, bash]
 ----
 gcloud compute instances create <instance-name>
-  --machine-type=n2-standard-4
+  --machine-type=n2-standard-8
   --image-project=netapp-cloudmanager
   --image-family=cloudmanager
   --scopes=cloud-platform

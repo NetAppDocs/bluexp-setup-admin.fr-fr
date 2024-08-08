@@ -50,20 +50,20 @@ Le connecteur est pris en charge sur les versions en anglais de ces systèmes d'
 Hyperviseur:: Un hyperviseur bare Metal ou hébergé certifié pour exécuter un système d'exploitation pris en charge est requis.
 
 
-CPU:: 4 cœurs ou 4 CPU virtuels
-RAM:: 14 GO
+CPU:: 8 cœurs ou 8 CPU virtuels
+RAM:: 32 GO
 
 
-Type d'instance AWS EC2:: Type d'instance qui répond aux exigences relatives au CPU et à la RAM indiquées ci-dessus. Nous recommandons une instance t3.XLarge.
+Type d'instance AWS EC2:: Type d'instance qui répond aux exigences relatives au CPU et à la RAM indiquées ci-dessus. Nous recommandons t3.2xlarge.
 
 
 Paire de clés:: Lorsque vous créez le connecteur, vous devez sélectionner une paire de clés EC2 à utiliser avec l'instance.
 
 
-Taille des machines virtuelles Azure:: Type d'instance qui répond aux exigences relatives au CPU et à la RAM indiquées ci-dessus. Nous recommandons DS3 v2.
+Taille des machines virtuelles Azure:: Type d'instance qui répond aux exigences relatives au CPU et à la RAM indiquées ci-dessus. Nous recommandons Standard_D8s_v3.
 
 
-Type de machine Google Cloud:: Type d'instance qui répond aux exigences relatives au CPU et à la RAM indiquées ci-dessus. Nous recommandons n2-standard-4.
+Type de machine Google Cloud:: Type d'instance qui répond aux exigences relatives au CPU et à la RAM indiquées ci-dessus. Nous recommandons n2-standard-8.
 +
 --
 Ce connecteur est pris en charge dans Google Cloud sur une instance de machine virtuelle avec un système d'exploitation pris en charge https://cloud.google.com/compute/shielded-vm/docs/shielded-vm["Fonctionnalités MV blindées"^]
@@ -98,10 +98,37 @@ https://docs.docker.com/engine/install/["Voir les instructions d'installation"^]
 --
 
 
+[[podman-versions]]
 Outil d'orchestration de conteneurs:: Selon votre système d'exploitation, Podman ou Docker Engine est requis avant d'installer le connecteur.
 +
 --
-* Podman version 4.6.1 est requis pour Red Hat Enterprise Linux 8 et 9.
+* Podman est requis pour Red Hat Enterprise Linux 8 et 9.
++
+[cols="50a,50a"]
+|===
+| Version RHEL | Version Podman prise en charge 
+
+
+ a| 
+RHEL 8.6 à 8.9
+ a| 
+Podman 4.6.1
+
+
+
+ a| 
+RHEL 8.10
+ a| 
+Podman 4.6.1 et 4.9.4
+
+
+
+ a| 
+RHEL 9.1 à 9.3
+ a| 
+Podman 4.6.1
+
+|===
 +
 Les conditions préalables suivantes doivent être remplies pour Podman :
 

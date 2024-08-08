@@ -166,7 +166,10 @@ Notez ce qui suit :
                     "Microsoft.Synapse/workspaces/privateEndpointConnectionsApproval/action",
                     "Microsoft.ManagedIdentity/userAssignedIdentities/assign/action",
                     "Microsoft.Compute/images/write",
-                    "Microsoft.Network/loadBalancers/frontendIPConfigurations/read"
+                    "Microsoft.Network/loadBalancers/frontendIPConfigurations/read",
+                    "Microsoft.Compute/virtualMachineScaleSets/write",
+                    "Microsoft.Compute/virtualMachineScaleSets/read",
+                    "Microsoft.Compute/virtualMachineScaleSets/delete"
     ],
     "NotActions": [],
     "AssignableScopes": [],
@@ -698,38 +701,16 @@ Il effectue les requêtes d'API suivantes pour déployer et gérer Cloud Volumes
 
 
 | Crypter les comptes de stockage pendant leur création | Microsoft.ManagedIdentity/userAssignedIdentities/attributable/action | Oui. | Oui. | Non 
+
+
+.3+| Utilisez les ensembles d'échelles des machines virtuelles en mode d'orchestration flexible pour spécifier des zones spécifiques pour Cloud Volumes ONTAP | Microsoft Calcul/virtualMachineScaleSets/écriture | Oui. | Non | Non 
+
+
+| Microsoft Calcul/virtualMachineScaleSets/lecture | Oui. | Non | Non 
+
+
+| Microsoft Calculer/virtualMachineScaleSets/supprimer | Non | Non | Oui. 
 |===
-
-
-=== La mise en cache en périphérie
-
-Lorsque vous utilisez la mise en cache BlueXP Edge, Connector effectue les requêtes API suivantes :
-
-* Microsoft.Insights/Metrics/Read
-* Microsoft.Compute/virtualMachines/extensions/write
-* Microsoft.Compute/virtualMachines/extensions/read
-* Microsoft.Compute/virtualMachines/extensions/delete
-* Microsoft.Compute/virtualMachines/delete
-* Microsoft.Network/networkInterfaces/delete
-* Microsoft.Network/networkSecurityGroups/delete
-* Microsoft.Ressources/déploiements/suppression
-
-
-
-
-=== Kubernetes
-
-Ce connecteur effectue les requêtes d'API suivantes pour détecter et gérer les clusters exécutés dans Azure Kubernetes Service (AKS) :
-
-* Microsoft.Compute/virtualMachines/read
-* Microsoft.Ressources/abonnements/emplacements/lecture
-* Microsoft.Ressources/abonnements/résultats d'opération/lecture
-* Microsoft.Ressources/abonnements/resourceGroups/read
-* Microsoft.Ressources/abonnements/groupes de ressources/ressources/lecture
-* Microsoft.ContainerService/manageClusters/lecture
-* Microsoft.ContainerService/manageClusters/listClusterUserCredential/action
-
-
 
 
 === Tiering
@@ -754,6 +735,17 @@ Le connecteur effectue les demandes d'API suivantes pour les opérations quotidi
 == Journal des modifications
 
 Lorsque des autorisations sont ajoutées et supprimées, nous les noterons dans les sections ci-dessous.
+
+
+
+=== 7 août 2024
+
+Les autorisations suivantes ont été ajoutées à la règle JSON car elles sont requises pour la prise en charge de Cloud Volumes ONTAP des jeux d'échelle de machine virtuelle :
+
+* Microsoft Calcul/virtualMachineScaleSets/écriture
+* Microsoft Calcul/virtualMachineScaleSets/lecture
+* Microsoft Calculer/virtualMachineScaleSets/supprimer
+
 
 
 

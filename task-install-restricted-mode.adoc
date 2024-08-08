@@ -60,7 +60,7 @@ Ces étapes décrivent comment lancer l'instance à partir de la console EC2, ca
 +
 ** *Nom et balises* : saisissez un nom et des balises pour l'instance.
 ** *Image de l'application et de l'OS* : passez cette section. Le connecteur ami est déjà sélectionné.
-** *Type d'instance* : en fonction de la disponibilité de la région, choisissez un type d'instance qui répond aux exigences de RAM et de CPU (t3.xlarge est recommandé).
+** *Type d'instance* : en fonction de la disponibilité de la région, choisissez un type d'instance qui répond aux exigences de RAM et de CPU (t3.2xlarge est recommandé).
 ** *Paire de clés (login)* : sélectionnez la paire de clés que vous souhaitez utiliser pour vous connecter en toute sécurité à l'instance.
 ** *Paramètres réseau* : modifiez les paramètres réseau selon vos besoins :
 +
@@ -123,7 +123,7 @@ image:screenshot-gov-cloud-mktp.png["Capture d'écran montrant l'offre BlueXP ap
 
 . Suivez les invites pour configurer et déployer l'instance :
 +
-** *Choisissez un type d'instance* : selon la disponibilité de la région, choisissez un des types d'instance pris en charge (t3.XLarge est recommandé).
+** *Choisissez un type d'instance* : en fonction de la disponibilité de la région, choisissez l'un des types d'instance pris en charge (t3.2xlarge est recommandé).
 +
 link:task-prepare-restricted-mode.html["Vérifiez les conditions requises pour l'instance"].
 
@@ -174,7 +174,7 @@ link:task-prepare-restricted-mode.html#step-6-prepare-cloud-permissions["Découv
 Noter les éléments suivants lors de la configuration de la machine virtuelle :
 
 +
-** *Taille de la VM* : choisissez une taille de VM qui répond aux exigences de CPU et de RAM. Nous recommandons DS3 v2.
+** *Taille de la VM* : choisissez une taille de VM qui répond aux exigences de CPU et de RAM. Nous recommandons Standard_D8s_v3.
 ** *Disques* : le connecteur peut fonctionner de manière optimale avec des disques durs ou SSD.
 ** *Public IP* : si vous souhaitez utiliser une adresse IP publique avec la machine virtuelle du connecteur, l'adresse IP doit utiliser une référence SKU de base pour garantir que BlueXP utilise cette adresse IP publique.
 +

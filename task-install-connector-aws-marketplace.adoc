@@ -165,9 +165,9 @@ Vous pouvez désormais associer un rôle IAM à l'instance EC2 lors du déploiem
 
 Lorsque vous créez le connecteur, vous devez choisir un type d'instance EC2 qui répond aux exigences suivantes.
 
-CPU:: 4 cœurs ou 4 CPU virtuels
-RAM:: 14 GO
-Type d'instance AWS EC2:: Type d'instance qui répond aux exigences relatives au CPU et à la RAM indiquées ci-dessus. Nous recommandons une instance t3.XLarge.
+CPU:: 8 cœurs ou 8 CPU virtuels
+RAM:: 32 GO
+Type d'instance AWS EC2:: Type d'instance qui répond aux exigences relatives au CPU et à la RAM indiquées ci-dessus. Nous recommandons t3.2xlarge.
 
 
 
@@ -204,7 +204,7 @@ Ces étapes décrivent comment lancer l'instance à partir de la console EC2, ca
 +
 ** *Nom et balises* : saisissez un nom et des balises pour l'instance.
 ** *Image de l'application et de l'OS* : passez cette section. Le connecteur ami est déjà sélectionné.
-** *Type d'instance* : en fonction de la disponibilité de la région, choisissez un type d'instance qui répond aux exigences de RAM et de CPU (t3.xlarge est recommandé).
+** *Type d'instance* : en fonction de la disponibilité de la région, choisissez un type d'instance qui répond aux exigences de RAM et de CPU (t3.2xlarge est recommandé).
 ** *Paire de clés (login)* : sélectionnez la paire de clés que vous souhaitez utiliser pour vous connecter en toute sécurité à l'instance.
 ** *Paramètres réseau* : modifiez les paramètres réseau selon vos besoins :
 +

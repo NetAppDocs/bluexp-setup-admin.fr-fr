@@ -59,7 +59,7 @@ Un environnement de travail représente un système de stockage. Par exemple :
 
 * Un système Cloud Volumes ONTAP
 * Un cluster ONTAP sur site
-* Un cluster Kubernetes
+* Un système StorageGRID
 
 
 link:task-setting-up-netapp-accounts.html["Découvrez comment ajouter un espace de travail"].
