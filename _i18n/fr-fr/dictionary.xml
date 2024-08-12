@@ -4199,4 +4199,5 @@ Cette partie du tableau répertorie la prise en charge de la gestion de l'enviro
   <block id="094be1dbadd11ed5e81a249dfb9a643a" category="section-title">Améliorations du tableau de bord du support</block>
   <block id="a0b762f6b2d72a69263357ecbb8decbc" category="paragraph">Lorsque vous accédez à<block ref="7967ef3136667db18d7f95e4158dddb2" category="inline-link-rx"></block>, BlueXP  utilise un certificat auto-signé pour l'accès HTTPS. Si votre entreprise l'exige, vous pouvez installer un certificat signé par une autorité de certification, ce qui offre une meilleure protection de sécurité qu'un certificat auto-signé. Après avoir installé le certificat, BlueXP  utilise le certificat signé par l'autorité de certification lorsque les utilisateurs accèdent à la console Web.</block>
   <block id="9cc3df8e0a65f95d62b0d0dc557d0fa9" category="section-title">8 août 2024</block>
+  <block id="5009e1070e5138d1308165bc75e5706b" category="list-text">Mises à jour de logiciels</block>
 </blocks>

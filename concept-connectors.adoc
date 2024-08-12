@@ -50,6 +50,7 @@ Même si aucun connecteur n'est nécessaire pour la découverte directe d'un clu
 +
 https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html["En savoir plus sur les options de découverte et de gestion des clusters ONTAP sur site"^]
 
+* Mises à jour de logiciels
 * Durabilité
 
 
