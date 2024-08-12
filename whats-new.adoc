@@ -30,24 +30,6 @@ La version 3.9.43 est disponible pour le mode standard et le mode restreint.
 
 
 
-==== Mise à jour des autorisations Azure
-
-Nous avons mis à jour la règle de connecteur pour Azure afin d'inclure les autorisations suivantes :
-
-[source, json]
-----
-"Microsoft.Compute/virtualMachineScaleSets/write",
-"Microsoft.Compute/virtualMachineScaleSets/read",
-"Microsoft.Compute/virtualMachineScaleSets/delete"
-----
-Ces autorisations sont requises pour la prise en charge par Cloud Volumes ONTAP des ensembles d'échelles des machines virtuelles. Si vous disposez de connecteurs et que vous souhaitez utiliser cette nouvelle fonctionnalité, vous devez ajouter ces autorisations aux rôles personnalisés associés à vos informations d'identification Azure.
-
-* https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html["En savoir plus sur la prise en charge de Cloud Volumes ONTAP pour les jeux d'échelle de machines virtuelles"^]
-* https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-azure.html["Afficher les autorisations Azure pour le connecteur"].
-
-
-
-
 === Mise à jour des exigences en termes de CPU et de RAM
 
 Pour offrir une plus grande fiabilité et améliorer les performances de BlueXP  et du connecteur, nous avons besoin de processeurs et de RAM supplémentaires pour la machine virtuelle du connecteur :
