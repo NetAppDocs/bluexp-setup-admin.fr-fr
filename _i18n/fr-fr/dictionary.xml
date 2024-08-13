@@ -4197,7 +4197,13 @@ Cette partie du tableau répertorie la prise en charge de la gestion de l'enviro
   <block id="86a6fd8c0323b87db34eb287a461c194" category="section-title">Améliorations de Azure NetApp Files</block>
   <block id="d42fa6c698bffd937b50724aa035c2cb" category="section-title">9 février 2021</block>
   <block id="094be1dbadd11ed5e81a249dfb9a643a" category="section-title">Améliorations du tableau de bord du support</block>
-  <block id="a0b762f6b2d72a69263357ecbb8decbc" category="paragraph">Lorsque vous accédez à<block ref="7967ef3136667db18d7f95e4158dddb2" category="inline-link-rx"></block>, BlueXP  utilise un certificat auto-signé pour l'accès HTTPS. Si votre entreprise l'exige, vous pouvez installer un certificat signé par une autorité de certification, ce qui offre une meilleure protection de sécurité qu'un certificat auto-signé. Après avoir installé le certificat, BlueXP  utilise le certificat signé par l'autorité de certification lorsque les utilisateurs accèdent à la console Web.</block>
   <block id="9cc3df8e0a65f95d62b0d0dc557d0fa9" category="section-title">8 août 2024</block>
   <block id="5009e1070e5138d1308165bc75e5706b" category="list-text">Mises à jour de logiciels</block>
+  <block id="66c9d0cfd45dc71069845154fb72a8b8" category="list-text">Versions de connecteur prises en charge</block>
+  <block id="4dc9e2f6078fbeb26bbafe7461aa7ecf" category="list-text">RHEL 8 et 9 sont pris en charge à partir des versions suivantes du connecteur :</block>
+  <block id="1316cb3dbdfa1d8facde6d30372df833" category="list-text">3.9.40 lors de l'utilisation de BlueXP  en mode standard ou en mode restreint</block>
+  <block id="c8fff1f28296d1ce9e5b594252b146c8" category="list-text">3.9.42 lors de l'utilisation de BlueXP  en mode privé</block>
+  <block id="70328d3965555bdfe7c71386e9e25887" category="doc">Installez un certificat signé par une autorité de certification pour l'accès à la console Web</block>
+  <block id="2f23236775b31842c7a88b27c4b2fd2d" category="paragraph">Par défaut, BlueXP  utilise un certificat SSL auto-signé pour fournir un accès sécurisé au à<block ref="7967ef3136667db18d7f95e4158dddb2" category="inline-link-rx"></block> l'aide d'une connexion HTTPS. Si votre entreprise l'exige, vous pouvez installer un certificat signé par une autorité de certification, ce qui offre une meilleure protection de sécurité qu'un certificat auto-signé. Après avoir installé le certificat, BlueXP  utilise le certificat signé par l'autorité de certification lorsque les utilisateurs accèdent à la console Web.</block>
+  <block id="dee6ffcadeee95a4920b20e3dff92f16" category="paragraph">Notez que le mot de passe par défaut est un mot de passe à usage unique associé à l'adresse e-mail enregistrée. Un nouvel OTP est généré à chaque tentative de connexion.</block>
 </blocks>

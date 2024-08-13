@@ -21,6 +21,11 @@ Lorsque vous accédez à BlueXP pour la première fois, BlueXP vous permet de vo
 
 Connexion BlueXP:: Vous pouvez vous inscrire en créant une connexion BlueXP. Cette méthode d'authentification nécessite que vous spécifiiez votre adresse e-mail et un mot de passe. Après avoir vérifié votre adresse e-mail, vous pouvez vous connecter, puis créer un compte BlueXP si vous n'en avez pas déjà un.
 Informations d'identification du site de support NetApp (NSS):: Si vous disposez de identifiants du site du support NetApp, vous n'avez pas besoin de vous inscrire à BlueXP. Vous vous connectez à l'aide de vos informations d'identification NSS, puis BlueXP vous invite à créer un compte BlueXP si vous n'en avez pas déjà un.
++
+--
+Notez que le mot de passe par défaut est un mot de passe à usage unique associé à l'adresse e-mail enregistrée. Un nouvel OTP est généré à chaque tentative de connexion.
+
+--
 Connexion fédérée:: Vous pouvez utiliser l'authentification unique pour vous connecter à l'aide des informations d'identification de votre annuaire d'entreprise (identité fédérée). Le premier utilisateur du compte de votre entreprise doit s'inscrire à BlueXP ou se connecter à l'aide d'identifiants NSS, puis configurer la fédération des identités. Ensuite, chaque utilisateur suivant peut simplement se connecter à l'aide de ses informations d'identification SSO.
 +
 --

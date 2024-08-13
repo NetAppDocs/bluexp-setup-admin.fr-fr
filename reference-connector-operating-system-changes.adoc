@@ -100,6 +100,14 @@ Limites::
 --
 Outil d'orchestration de conteneurs:: Podman est requis en tant qu'outil d'orchestration de conteneurs lorsque vous installez le connecteur sur un hôte RHEL 8 ou 9. Docker Engine n'est pas pris en charge par RHEL 8 et 9.
 Mode de déploiement:: RHEL 8 et 9 sont pris en charge lorsque BlueXP est utilisé en mode standard, en mode restreint et en mode privé.
+Versions de connecteur prises en charge:: RHEL 8 et 9 sont pris en charge à partir des versions suivantes du connecteur :
++
+--
+* 3.9.40 lors de l'utilisation de BlueXP  en mode standard ou en mode restreint
+* 3.9.42 lors de l'utilisation de BlueXP  en mode privé
+
+
+--
 Nouvelles installations manuelles uniquement:: RHEL 8 et 9 sont pris en charge avec les installations _New_ Connector lors de l'installation manuelle du connecteur sur des hôtes exécutés sur votre site ou dans le cloud.
 Mises à niveau de RHEL:: Si vous disposez d'un connecteur existant sur un hôte RHEL 7, nous ne prenons pas en charge la mise à niveau du système d'exploitation RHEL 7 vers RHEL 8 ou 9. <<Connecteurs existants sur RHEL 7 ou CentOS 7,En savoir plus sur les connecteurs existants sur RHEL 7 ou CentOS 7>>.
 
