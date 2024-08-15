@@ -87,11 +87,17 @@ Si votre entreprise l'exige, vous pouvez modifier l'adresse IP interne et l'adre
 Vous devez mettre à jour l'emplacement de sauvegarde de chaque système Cloud Volumes ONTAP.
 
 +
-.. Lancer la commande suivante depuis l'interface de ligne de commandes de Cloud Volumes ONTAP pour afficher la cible de sauvegarde actuelle :
+.. Depuis l'interface de ligne de commandes de Cloud Volumes ONTAP, définir le niveau de privilège sur Advanced :
 +
 [source, cli]
 ----
-system configuration backup show
+set -privilege advanced
+----
+.. Lancer la commande suivante pour afficher la cible de sauvegarde actuelle :
++
+[source, cli]
+----
+system configuration backup settings show
 ----
 .. Exécutez la commande suivante pour mettre à jour l'adresse IP de la cible de sauvegarde :
 +
