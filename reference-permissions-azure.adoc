@@ -701,6 +701,15 @@ Il effectue les requêtes d'API suivantes pour déployer et gérer Cloud Volumes
 
 
 | Crypter les comptes de stockage pendant leur création | Microsoft.ManagedIdentity/userAssignedIdentities/attributable/action | Oui. | Oui. | Non 
+
+
+.3+| Utilisez les ensembles d'échelles des machines virtuelles en mode d'orchestration flexible pour spécifier des zones spécifiques pour Cloud Volumes ONTAP | Microsoft Calcul/virtualMachineScaleSets/écriture | Oui. | Non | Non 
+
+
+| Microsoft Calcul/virtualMachineScaleSets/lecture | Oui. | Non | Non 
+
+
+| Microsoft Calculer/virtualMachineScaleSets/supprimer | Non | Non | Oui. 
 |===
 
 
@@ -726,6 +735,17 @@ Le connecteur effectue les demandes d'API suivantes pour les opérations quotidi
 == Journal des modifications
 
 Lorsque des autorisations sont ajoutées et supprimées, nous les noterons dans les sections ci-dessous.
+
+
+
+=== 22 août 2024
+
+Les autorisations suivantes ont été ajoutées à la règle JSON car elles sont requises pour la prise en charge de Cloud Volumes ONTAP des jeux d'échelle de machine virtuelle :
+
+* Microsoft Calcul/virtualMachineScaleSets/écriture
+* Microsoft Calcul/virtualMachineScaleSets/lecture
+* Microsoft Calculer/virtualMachineScaleSets/supprimer
+
 
 
 
