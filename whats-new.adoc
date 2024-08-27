@@ -36,7 +36,7 @@ La prise en charge de cette version inclut une mise à jour de la règle de conn
 ----
 Ces autorisations sont requises pour la prise en charge par Cloud Volumes ONTAP des ensembles d'échelles des machines virtuelles. Si vous disposez de connecteurs et que vous souhaitez utiliser cette nouvelle fonctionnalité, vous devez ajouter ces autorisations aux rôles personnalisés associés à vos informations d'identification Azure.
 
-* https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes["En savoir plus sur la prise en charge de Cloud Volumes ONTAP pour les jeux d'échelle de machines virtuelles"^]
+* https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes["En savoir plus sur la version Cloud Volumes ONTAP 9.15.1"^]
 * https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-azure.html["Afficher les autorisations Azure pour le connecteur"].
 
 
