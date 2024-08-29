@@ -69,7 +69,7 @@ Suite à cette modification, le type d'instance de VM par défaut lors du déplo
 * Google Cloud : n2-standard-8
 
 
-Cette exigence s'applique aux connecteurs nouveaux et existants.
+Les exigences mises à jour en matière de CPU et de RAM s'appliquent à tous les nouveaux connecteurs. Pour les connecteurs existants, il est recommandé d'augmenter le processeur et la RAM pour améliorer les performances et la fiabilité.
 
 
 
