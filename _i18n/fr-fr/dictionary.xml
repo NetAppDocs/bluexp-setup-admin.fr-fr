@@ -2015,7 +2015,6 @@ ou</block>
   <block id="b5599f9f352b1fa4cb2153ba99bdb13c" category="list-text">Un rôle IAM avec une stratégie jointe qui inclut les autorisations requises pour le connecteur.</block>
   <block id="dfcbfa4ce7dbf520f2b737359dfbc591" category="list-text">Autorisations de vous abonner à AWS Marketplace et de vous désabonner pour votre utilisateur IAM.</block>
   <block id="648fca9db3d7e8e554a59d3519d8b0f6" category="inline-image-macro">Une capture d'écran affiche les boutons Continuer à s'abonner et Continuer la configuration sur AWS Marketplace.</block>
-  <block id="973e3a2a390bb57ce9d9e16ac0145023" category="paragraph"><block ref="973e3a2a390bb57ce9d9e16ac0145023" category="inline-image-macro-rx" type="image"></block></block>
   <block id="7c36ac5a8d104c08bd1c9905b4e5d437" category="paragraph">Ces étapes décrivent comment lancer l'instance à partir de la console EC2, car la console vous permet d'associer un rôle IAM à l'instance de connecteur. Cela n'est pas possible en utilisant l'action *lancer à partir du site Web*.</block>
   <block id="b3472ff32fca13e95a664d2516fabc9d" category="list-text">Suivez les invites pour configurer et déployer l'instance :</block>
   <block id="d062afbb0dab008c992fc7630e6e5b1d" category="list-text">*Nom et balises* : saisissez un nom et des balises pour l'instance.</block>
@@ -4224,4 +4223,5 @@ Cette partie du tableau répertorie la prise en charge de la gestion de l'enviro
   <block id="e5df21e6d1c0f91eabeef6ab2202379e" category="list-text">*Application et images OS* : ignorez cette section. Le connecteur ami est déjà sélectionné.</block>
   <block id="60297aa5897806a96d1aabe6d5990c43" category="list-text">*Type d'instance* : en fonction de la disponibilité de la région, choisissez un type d'instance qui répond aux exigences de RAM et de CPU (t3.2xlarge est présélectionné et recommandé).</block>
   <block id="2ff5664491ece284c069195a204d44c0" category="list-text">Spécifiez les paramètres du groupe de sécurité qui activent les méthodes de connexion requises pour l'instance de connecteur : SSH, HTTP et HTTPS.</block>
+  <block id="f04e7bde7d47a749e6ba7643ae027953" category="paragraph"><block ref="f04e7bde7d47a749e6ba7643ae027953" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>

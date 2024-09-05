@@ -193,7 +193,7 @@ Vous devez disposer des éléments suivants :
 . Go to the https://aws.amazon.com/marketplace/pp/prodview-jbay5iyfmu6ui["BlueXP Connector listing on the AWS Marketplace"^]
 . Sur la page Marketplace, sélectionnez *Continuer pour s'abonner*.
 +
-image:screenshot-subscribe-aws.png["Une capture d'écran affiche les boutons Continuer à s'abonner et Continuer la configuration sur AWS Marketplace."]
+image:screenshot-subscribe-aws-continue.png["Une capture d'écran affiche les boutons Continuer à s'abonner et Continuer la configuration sur AWS Marketplace."]
 
 . Pour vous abonner au logiciel, sélectionnez *accepter les conditions*.
 +
