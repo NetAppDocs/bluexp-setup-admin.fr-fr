@@ -2019,14 +2019,11 @@ ou</block>
   <block id="7c36ac5a8d104c08bd1c9905b4e5d437" category="paragraph">Ces étapes décrivent comment lancer l'instance à partir de la console EC2, car la console vous permet d'associer un rôle IAM à l'instance de connecteur. Cela n'est pas possible en utilisant l'action *lancer à partir du site Web*.</block>
   <block id="b3472ff32fca13e95a664d2516fabc9d" category="list-text">Suivez les invites pour configurer et déployer l'instance :</block>
   <block id="d062afbb0dab008c992fc7630e6e5b1d" category="list-text">*Nom et balises* : saisissez un nom et des balises pour l'instance.</block>
-  <block id="5fa511356078e407d467aeb21afa8311" category="list-text">*Image de l'application et de l'OS* : passez cette section. Le connecteur ami est déjà sélectionné.</block>
   <block id="3346e4a27b0ab9e94d29515e25908ed6" category="inline-link-macro">Vérifiez les conditions requises pour l'instance</block>
   <block id="a2edeeec0c237aa79e3b1f0eb87b07e4" category="list-text">*Paire de clés (login)* : sélectionnez la paire de clés que vous souhaitez utiliser pour vous connecter en toute sécurité à l'instance.</block>
   <block id="db8b616682d262766c36f81013b4f840" category="list-text">*Paramètres réseau* : modifiez les paramètres réseau selon vos besoins :</block>
   <block id="c04d267ebc445e8f04c29787ecab6547" category="list-text">Choisissez le VPC et le sous-réseau souhaités.</block>
   <block id="f851630c999713801d4adbdaeecfc902" category="list-text">Spécifiez si l'instance doit avoir une adresse IP publique.</block>
-  <block id="d0bf1fb8b3ea2c1aed553c11fcfc2431" category="list-text">Spécifiez les paramètres de pare-feu qui activent les méthodes de connexion requises pour l'instance de connecteur : SSH, HTTP et HTTPS.</block>
-  <block id="2cff93ab04445d2412fc49f1670cf749" category="paragraph">Quelques règles supplémentaires sont requises pour des configurations spécifiques.</block>
   <block id="752330cdb2fab31ec29aaa286269a882" category="list-text">*Détails avancés* : sous *profil d'instance IAM*, choisissez le rôle IAM qui inclut les autorisations requises pour le connecteur.</block>
   <block id="10a3df02c55e733eca6fef076545645a" category="paragraph">AWS lance le logiciel avec les paramètres spécifiés. L'instance de connecteur et le logiciel doivent s'exécuter dans environ cinq minutes.</block>
   <block id="a187fbf78abfcf26b0ccf604029629e6" category="summary">la fédération des identités permet l'authentification unique avec BlueXP afin que les utilisateurs puissent se connecter à l'aide d'identifiants à partir de votre identité d'entreprise. Pour commencer, découvrez le fonctionnement de la fédération des identités avec BlueXP, puis passez en revue un aperçu du processus de configuration.</block>
@@ -3049,9 +3046,6 @@ Ce terminal n'est requis que dans les régions Azure Government.</block>
   <block id="0447e5af15c21fbb6eee1972d30cef83" category="list-text">Choisissez *Amazon Web Services* comme fournisseur de cloud et sélectionnez *Continuer*.</block>
   <block id="15de410cab5b286c0cff40620cbbc2f8" category="list-text">Sélectionnez *Continuer* pour préparer le déploiement à l'aide du guide produit. Chaque étape du guide du produit inclut les informations contenues sur cette page de la documentation.</block>
   <block id="43c314e15e760781773285daf91c0ad5" category="list-text">Sélectionnez *passer au déploiement* si vous êtes déjà préparé en suivant les étapes de cette page.</block>
-  <block id="21d86ad4e09aa752397558f2a4a4d776" category="list-text">Sur la page Marketplace, sélectionnez *Continuer pour s'abonner*, puis sélectionnez *Continuer à la configuration*.</block>
-  <block id="62e122f28cedb83482c8d975a0ebbc6b" category="list-text">Modifiez l'une des options par défaut et sélectionnez *Continuer pour lancer*.</block>
-  <block id="b5db57dbb4b1fc339bfbf2e32844ab33" category="list-text">Sous *Choisissez action*, sélectionnez *lancer via EC2*, puis *lancer*.</block>
   <block id="a77947bca5ad1214f93361073cfddb0a" category="list-text">*Résumé* : passez en revue le résumé et sélectionnez *lancer l'instance*.</block>
   <block id="6cd4b1aeb7ee91ddbd1d37ee958a2b58" category="list-text">Sélectionnez *commençons*.</block>
   <block id="1ce857b02028095dcbdb6522daf11862" category="list-text">Sélectionnez *obtenir maintenant*, puis *Continuer*.</block>
@@ -4023,7 +4017,6 @@ Cette partie du tableau répertorie la prise en charge de la gestion de l'enviro
   <block id="09fcc3c3a46a63684b907c89bb2e4b7b" category="cell">18 juillet 2024</block>
   <block id="4736cb006ef02fa673f618379e2106bd" category="cell">1er juillet 2024 (version 1.33)</block>
   <block id="8009eebf05fd33b87750f8b4048986f7" category="cell">10 juin 2024</block>
-  <block id="d2c0dfc6934302fa99dba597124c94a2" category="list-text">*Type d'instance* : en fonction de la disponibilité de la région, choisissez un type d'instance qui répond aux exigences de RAM et de CPU (t3.2xlarge est recommandé).</block>
   <block id="eefc3c2b6ca2400b2ae57e8da8247c03" category="list-text">8 cœurs ou 8 CPU virtuels</block>
   <block id="911ede8df5585598c294830dafe276fa" category="list-text">32 GO</block>
   <block id="3cb4677fb343d8a6f3ab8d904462fda9" category="list-text">Type d'instance qui répond aux exigences relatives au CPU et à la RAM indiquées ci-dessus. Nous recommandons t3.2xlarge.</block>
@@ -4221,4 +4214,14 @@ Cette partie du tableau répertorie la prise en charge de la gestion de l'enviro
   <block id="1b41af4e937fd3b48c53451988ba06b5" category="inline-link">En savoir plus sur la version Cloud Volumes ONTAP 9.15.1</block>
   <block id="dcc26903c10160517882b9dad3e9f26f" category="list-text"><block ref="dcc26903c10160517882b9dad3e9f26f" category="inline-link-rx"></block></block>
   <block id="9d97f1d57b6500707266656cdf2bf526" category="paragraph">Les exigences mises à jour en matière de CPU et de RAM s'appliquent à tous les nouveaux connecteurs. Pour les connecteurs existants, il est recommandé d'augmenter le processeur et la RAM pour améliorer les performances et la fiabilité.</block>
+  <block id="f24abcf11233503db09edba21b8e5cdb" category="list-text">Sur la page Marketplace, sélectionnez *Continuer pour s'abonner*.</block>
+  <block id="b57313d1cbeb83e2be3f889cd8fc5526" category="list-text">Pour vous abonner au logiciel, sélectionnez *accepter les conditions*.</block>
+  <block id="b33dcc2933561e1bbdc43d2b68e8ab24" category="paragraph">Le processus d'abonnement peut prendre quelques minutes.</block>
+  <block id="11c2c43373c3fc2b79b1a6f46f2372bf" category="list-text">Une fois le processus d'abonnement terminé, sélectionnez *Continuer à la configuration*.</block>
+  <block id="84bdd294c5ae866bbc0419f7bba9f368" category="paragraph"><block ref="84bdd294c5ae866bbc0419f7bba9f368" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="2630dda750b0b4c54559adbe4e5daa21" category="list-text">Sur la page *configurer ce logiciel*, assurez-vous que vous avez sélectionné la bonne région, puis sélectionnez *Continuer pour lancer*.</block>
+  <block id="4a3fda2105dbdf853aa237113073a9f0" category="list-text">Sur la page *lancer ce logiciel*, sous *choisir l'action*, sélectionnez *lancer via EC2*, puis sélectionnez *lancer*.</block>
+  <block id="e5df21e6d1c0f91eabeef6ab2202379e" category="list-text">*Application et images OS* : ignorez cette section. Le connecteur ami est déjà sélectionné.</block>
+  <block id="60297aa5897806a96d1aabe6d5990c43" category="list-text">*Type d'instance* : en fonction de la disponibilité de la région, choisissez un type d'instance qui répond aux exigences de RAM et de CPU (t3.2xlarge est présélectionné et recommandé).</block>
+  <block id="2ff5664491ece284c069195a204d44c0" category="list-text">Spécifiez les paramètres du groupe de sécurité qui activent les méthodes de connexion requises pour l'instance de connecteur : SSH, HTTP et HTTPS.</block>
 </blocks>

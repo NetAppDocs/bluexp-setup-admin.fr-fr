@@ -191,29 +191,34 @@ Vous devez disposer des éléments suivants :
 
 .Étapes
 . Go to the https://aws.amazon.com/marketplace/pp/prodview-jbay5iyfmu6ui["BlueXP Connector listing on the AWS Marketplace"^]
-. Sur la page Marketplace, sélectionnez *Continuer pour s'abonner*, puis sélectionnez *Continuer à la configuration*.
+. Sur la page Marketplace, sélectionnez *Continuer pour s'abonner*.
 +
 image:screenshot-subscribe-aws.png["Une capture d'écran affiche les boutons Continuer à s'abonner et Continuer la configuration sur AWS Marketplace."]
 
-. Modifiez l'une des options par défaut et sélectionnez *Continuer pour lancer*.
-. Sous *Choisissez action*, sélectionnez *lancer via EC2*, puis *lancer*.
+. Pour vous abonner au logiciel, sélectionnez *accepter les conditions*.
++
+Le processus d'abonnement peut prendre quelques minutes.
+
+. Une fois le processus d'abonnement terminé, sélectionnez *Continuer à la configuration*.
++
+image:screenshot-subscribe-aws-configuration.png["Une capture d'écran affiche les boutons Continuer à s'abonner et Continuer la configuration sur AWS Marketplace."]
+
+. Sur la page *configurer ce logiciel*, assurez-vous que vous avez sélectionné la bonne région, puis sélectionnez *Continuer pour lancer*.
+. Sur la page *lancer ce logiciel*, sous *choisir l'action*, sélectionnez *lancer via EC2*, puis sélectionnez *lancer*.
 +
 Ces étapes décrivent comment lancer l'instance à partir de la console EC2, car la console vous permet d'associer un rôle IAM à l'instance de connecteur. Cela n'est pas possible en utilisant l'action *lancer à partir du site Web*.
 
 . Suivez les invites pour configurer et déployer l'instance :
 +
 ** *Nom et balises* : saisissez un nom et des balises pour l'instance.
-** *Image de l'application et de l'OS* : passez cette section. Le connecteur ami est déjà sélectionné.
-** *Type d'instance* : en fonction de la disponibilité de la région, choisissez un type d'instance qui répond aux exigences de RAM et de CPU (t3.2xlarge est recommandé).
+** *Application et images OS* : ignorez cette section. Le connecteur ami est déjà sélectionné.
+** *Type d'instance* : en fonction de la disponibilité de la région, choisissez un type d'instance qui répond aux exigences de RAM et de CPU (t3.2xlarge est présélectionné et recommandé).
 ** *Paire de clés (login)* : sélectionnez la paire de clés que vous souhaitez utiliser pour vous connecter en toute sécurité à l'instance.
 ** *Paramètres réseau* : modifiez les paramètres réseau selon vos besoins :
 +
 *** Choisissez le VPC et le sous-réseau souhaités.
 *** Spécifiez si l'instance doit avoir une adresse IP publique.
-*** Spécifiez les paramètres de pare-feu qui activent les méthodes de connexion requises pour l'instance de connecteur : SSH, HTTP et HTTPS.
-+
-Quelques règles supplémentaires sont requises pour des configurations spécifiques.
-
+*** Spécifiez les paramètres du groupe de sécurité qui activent les méthodes de connexion requises pour l'instance de connecteur : SSH, HTTP et HTTPS.
 +
 link:reference-ports-aws.html["Afficher les règles des groupes de sécurité pour AWS"].
 
