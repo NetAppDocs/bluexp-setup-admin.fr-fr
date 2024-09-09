@@ -16,7 +16,7 @@ summary: 'BlueXP propose plusieurs modes de déploiement qui vous permettent d"u
 [role="lead"]
 BlueXP propose plusieurs _modes de déploiement_ qui vous permettent d'utiliser BlueXP en fonction de vos exigences métier et de sécurité. _Standard mode_ exploite la couche SaaS de BlueXP pour fournir des fonctionnalités complètes, tandis que _restricted mode_ et _private mode_ sont disponibles pour les entreprises ayant des restrictions de connectivité.
 
-BlueXP inhibe le flux du trafic, de la communication et des données lorsqu'il est en mode restreint ou en mode privé. Il est de votre responsabilité de veiller au respect des réglementations requises par votre environnement (sur site et dans le cloud).
+Si BlueXP  inhibe le flux du trafic, de la communication et des données lorsqu'il est en mode restreint ou en mode privé, il est de votre responsabilité de veiller au respect des réglementations applicables à votre environnement (sur site et dans le cloud).
 
 
 
@@ -38,7 +38,7 @@ Ce mode est généralement utilisé par les gouvernements d'état et locaux et l
 <<Mode restreint,En savoir plus sur la connectivité sortante à la couche SaaS>>.
 
 --
-Mode privé:: Un connecteur BlueXP est installé sur site ou dans le cloud (dans une région sécurisée, une région cloud souveraine ou une région commerciale) et ne dispose d'aucune connectivité à la couche SaaS de BlueXP. Les utilisateurs accèdent à BlueXP en local à partir de la console web disponible depuis le connecteur, et non depuis la couche SaaS.
+Mode privé:: Un connecteur BlueXP  est installé sur site ou dans le cloud (dans une région sécurisée, une région cloud souveraine ou une région commerciale) et ne dispose d'aucune connectivité à la couche SaaS BlueXP . Les utilisateurs accèdent à BlueXP en local à partir de la console web disponible depuis le connecteur, et non depuis la couche SaaS.
 +
 --
 Une région sécurisée inclut https://aws.amazon.com/federal/secret-cloud/["Cloud secret AWS"^], https://aws.amazon.com/federal/top-secret-cloud/["Le cloud le plus secret d'AWS"^], et https://learn.microsoft.com/en-us/azure/compliance/offerings/offering-dod-il6["Azure IL6"^]
@@ -216,13 +216,13 @@ Notez que vous ne pouvez pas modifier le paramètre du mode restreint après la 
 
 == Mode privé
 
-En mode privé, vous pouvez installer un connecteur sur site ou dans le cloud, puis utiliser BlueXP pour gérer les données dans votre cloud hybride. La couche SaaS BlueXP n'est pas connectée.
+En mode privé, vous pouvez installer un connecteur sur site ou dans le cloud, puis utiliser BlueXP  pour gérer les données dans votre cloud hybride. La couche SaaS BlueXP n'est pas connectée.
 
 L'image suivante montre un exemple de déploiement en mode privé où le connecteur est installé dans le cloud et gère à la fois Cloud Volumes ONTAP et un cluster ONTAP sur site.
 
 image:diagram-private-mode-cloud.png["Image conceptuelle qui montre un réseau virtuel dans le cloud où un connecteur s'exécute et donne accès à la console Web. Elle gère Cloud Volumes ONTAP et un cluster AFF dans un data Center sur site."]
 
-Pendant ce temps, la deuxième image présente un exemple de déploiement en mode privé où le connecteur est installé sur site, gère un cluster ONTAP sur site et permet d'accéder aux services de données BlueXP pris en charge.
+Pendant ce temps, la deuxième image présente un exemple de déploiement en mode privé où le connecteur est installé sur site, gère un cluster ONTAP sur site et permet d'accéder aux services de données BlueXP  pris en charge.
 
 image:diagram-private-mode-onprem.png["Image conceptuelle qui montre un data Center sur site dans lequel un connecteur s'exécute et permet d'accéder à la console Web et aux services de données BlueXP. Il gère également un cluster AFF dans un data Center sur site."]
 

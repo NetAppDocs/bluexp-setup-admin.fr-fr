@@ -33,7 +33,7 @@ Installation manuelle::
 * Red Hat Enterprise Linux
 +
 ** 8.6 à 8.10
-** 9.1 à 9.3
+** 9.1 à 9.4
 
 
 
@@ -54,7 +54,7 @@ Installation manuelle::
 * Red Hat Enterprise Linux
 +
 ** 8.6 à 8.10
-** 9.1 à 9.3
+** 9.1 à 9.4
 
 
 
@@ -154,7 +154,7 @@ Reportez-vous aux pages suivantes pour plus de détails sur la configuration req
 ====
 .Mode standard
 --
-* https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-on-prem.html["Installez et configurez un connecteur sur site"]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-on-prem.html["Installer et configurer un connecteur sur site"]
 * https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-aws-manual.html["Installez manuellement le connecteur dans AWS"]
 * https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-azure-manual.html["Installez manuellement le connecteur dans Azure"]
 * https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-google-manual.html["Installez manuellement le connecteur dans Google Cloud"]

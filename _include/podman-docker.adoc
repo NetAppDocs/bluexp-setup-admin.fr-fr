@@ -96,7 +96,7 @@ NOTE: À l'aide du `dnf install` La commande répond à l'exigence d'ajout de po
 --
 .Moteur Docker
 --
-Installer une version de Docker Engine comprise entre 23.0.6 et 25.0.5.
+Installez une version prise en charge de Docker Engine. <<podman-versions,Afficher les versions de Docker Engine prises en charge par BlueXP >>.
 
 .Étapes
 . Installer Docker Engine.
