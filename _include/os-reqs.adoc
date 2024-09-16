@@ -85,26 +85,10 @@ BlueXP requiert cet espace dans `/var` Car l'architecture de Docker ou Podman es
 --
 
 
-Moteur Docker:: Docker Engine est requis sur l'hôte avant d'installer le connecteur.
-+
---
-* La version minimale prise en charge est 23.0.6.
-* La version maximale prise en charge est 26.0.0.
-+
-Notez que Docker Engine 26 est pris en charge avec les installations _New_ Connector à partir de la version 3.9.44 du connecteur.
-
-+
-https://docs.docker.com/engine/install/["Voir les instructions d'installation"^]
-
-
-
---
+Outil d'orchestration de conteneurs:: Selon votre système d'exploitation, Podman ou Docker Engine est requis avant d'installer le connecteur.
 
 
 [[podman-versions]]
-Outil d'orchestration de conteneurs:: Selon votre système d'exploitation, Podman ou Docker Engine est requis avant d'installer le connecteur.
-+
---
 * Podman est requis pour Red Hat Enterprise Linux.
 +
 Les conditions préalables suivantes doivent être remplies pour Podman :
@@ -117,16 +101,32 @@ Les conditions préalables suivantes doivent être remplies pour Podman :
 ** Podman-compose doit être ajouté à la variable d'environnement PATH
 
 
+
+
+* Docker Engine est requis pour Ubuntu.
++
+[cols="3*"]
+|===
+| Version du connecteur | Version minimale de Docker Engine | Version maximale de Docker Engine 
+
+
+| _Installation du nouveau_ connecteur à partir de 3.9.44 | 23.0.6 | 26.0.0 
+
+
+| Connecteurs créés avant la version 3.9.44 | 23.0.6 | 25.0.5 
+|===
++
+https://docs.docker.com/engine/install/["Voir les instructions d'installation"^]
+
+
+
 * Docker Engine est requis pour Ubuntu.
 +
 ** La version minimale prise en charge est 23.0.6.
-** La version maximale prise en charge est 26.0.0.
+** La version maximale prise en charge est 25.0.5.
 +
-Notez que Docker Engine 26 est pris en charge avec les installations _New_ Connector à partir de la version 3.9.44 du connecteur.
+https://docs.docker.com/engine/install/["Voir les instructions d'installation"^]
 
 
 
-
-
---
 
