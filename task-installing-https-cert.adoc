@@ -26,7 +26,20 @@ Vous devez créer un connecteur avant de pouvoir modifier les paramètres BlueXP
 
 == Installez un certificat HTTPS
 
-Installez un certificat signé par une autorité de certification pour un accès sécurisé.
+Installez un certificat signé par une autorité de certification pour un accès sécurisé à la console Web s'exécutant sur le connecteur.
+
+.Description de la tâche
+Vous pouvez installer le certificat à l'aide de l'une des options suivantes :
+
+* Générez une demande de signature de certificat (CSR) à partir de BlueXP , soumettez la demande de certificat à une autorité de certification, puis installez le certificat signé par l'autorité de certification sur le connecteur.
++
+La paire de clés utilisée par BlueXP  pour générer la RSC est stockée en interne sur le connecteur. BlueXP  récupère automatiquement la même paire de clés (clé privée) lorsque vous installez le certificat sur le connecteur.
+
+* Installez un certificat signé par une autorité de certification dont vous disposez déjà.
++
+Avec cette option, la RSC n'est pas générée via BlueXP . Vous générez la RSC séparément et stockez la clé privée en externe. Vous fournissez à BlueXP  la clé privée lorsque vous installez le certificat.
+
+
 
 .Étapes
 . Dans le coin supérieur droit de la console BlueXP, sélectionnez l'icône Paramètres, puis sélectionnez *HTTPS Setup*.

@@ -93,7 +93,7 @@ Les conditions préalables suivantes doivent être remplies pour Podman :
 | Connecteurs créés avant la version 3.9.44 | 23.0.6 | 25.0.5 
 |===
 +
-https://docs.docker.com/engine/install/["Voir les instructions d'installation"^]
+https://docs.docker.com/engine/install/["Voir les instructions d'installation de Docker"^]
 
 
 
@@ -235,6 +235,7 @@ Points finaux contactés lors de l'installation manuelle:: Lorsque vous installe
 --
 * \https://support.netapp.com
 * \https://mysupport.netapp.com
+* \https://signin.b2c.NetApp.com (ce noeud final est l'URL CNAME pour \https://mysupport.NetApp.com)
 * \https://cloudmanager.cloud.netapp.com/tenancy
 * \https://stream.cloudmanager.cloud.netapp.com
 * \https://production-artifacts.cloudmanager.cloud.netapp.com

@@ -33,7 +33,7 @@ Système d'exploitation pris en charge::
 * Red Hat Enterprise Linux
 +
 ** 8.6 à 8.10
-** 9.1 à 9.3
+** 9.1 à 9.4
 +
 L'hôte doit être enregistré auprès de Red Hat Subscription Management. S'il n'est pas enregistré, l'hôte ne peut pas accéder aux référentiels pour mettre à jour les logiciels tiers requis lors de l'installation du connecteur.
 
@@ -116,17 +116,23 @@ Les conditions préalables suivantes doivent être remplies pour Podman :
 | Connecteurs créés avant la version 3.9.44 | 23.0.6 | 25.0.5 
 |===
 +
-https://docs.docker.com/engine/install/["Voir les instructions d'installation"^]
+https://docs.docker.com/engine/install/["Voir les instructions d'installation de Docker"^]
 
 
 
 * Docker Engine est requis pour Ubuntu.
 +
-** La version minimale prise en charge est 23.0.6.
-** La version maximale prise en charge est 25.0.5.
+[cols="3*"]
+|===
+| Version du connecteur | Version minimale de Docker Engine | Version maximale de Docker Engine 
+
+
+| _Installation du nouveau_ connecteur à partir de 3.9.44 | 23.0.6 | 26.0.0 
+
+
+| Connecteurs créés avant la version 3.9.44 | 23.0.6 | 25.0.5 
+|===
 +
-https://docs.docker.com/engine/install/["Voir les instructions d'installation"^]
-
-
+https://docs.docker.com/engine/install/["Voir les instructions d'installation de Docker"^]
 
 
