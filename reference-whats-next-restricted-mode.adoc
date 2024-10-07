@@ -23,6 +23,7 @@ Pour obtenir de l'aide, reportez-vous à la documentation de ces services :
 * https://docs.netapp.com/us-en/bluexp-backup-recovery/index.html["Documents de sauvegarde et de restauration"^]
 * https://docs.netapp.com/us-en/bluexp-classification/index.html["Documents de classification"^]
 * https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/index.html["Documentation Cloud Volumes ONTAP"^]
+* https://docs.netapp.com/us-en/bluexp-digital-wallet/index.html["Documents sur les portefeuilles digitaux"^]
 * https://docs.netapp.com/us-en/bluexp-ontap-onprem/index.html["Documentation sur le cluster ONTAP sur site"^]
 * https://docs.netapp.com/us-en/bluexp-replication/index.html["Documents de réplication"^]
 

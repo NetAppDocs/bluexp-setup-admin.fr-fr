@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-create-account.html 
 keywords: create account, account, create, create another account, tenancy account, tenancy, tenancy account creation 
-summary: 'Lorsque vous vous inscrivez à BlueXP, vous êtes invité à créer un compte pour votre entreprise. Ce compte peut être tout ce dont vous avez besoin, mais si votre entreprise a besoin de plusieurs comptes, vous devrez créer des comptes supplémentaires à l"aide de l"API de location.' 
+summary: 'Lorsque vous configurez BlueXP  en mode restreint ou privé, vous êtes invité à créer un compte. Si vous avez besoin de plusieurs comptes, vous devez les créer à l"aide de l"API de location.' 
 ---
 = Créez un autre compte BlueXP
 :hardbreaks:
@@ -14,14 +14,19 @@ summary: 'Lorsque vous vous inscrivez à BlueXP, vous êtes invité à créer un
 
 
 [role="lead"]
-Lorsque vous vous inscrivez à BlueXP, vous êtes invité à créer un compte pour votre entreprise. Ce compte peut être tout ce dont vous avez besoin, mais si votre entreprise a besoin de plusieurs comptes, vous devrez créer des comptes supplémentaires à l'aide de l'API de location.
+Lorsque vous configurez BlueXP  en mode restreint ou privé, vous êtes invité à créer un _compte BlueXP _, qui vous permet de gérer les utilisateurs et d'organiser les ressources. Ce compte peut être tout ce dont vous avez besoin, mais si votre entreprise a besoin de plusieurs comptes, vous devrez créer des comptes supplémentaires à l'aide de l'API de location.
 
-Utilisez l'appel d'API suivant pour créer un compte BlueXP supplémentaire :
+Si vous utilisez BlueXP  en mode standard, vous n'aurez pas de compte BlueXP . Vous allez gérer une entreprise à l'aide de la gestion des identités et des accès BlueXP . link:concept-identity-and-access-management.html["En savoir plus sur BlueXP  IAM"].
 
+.Étapes
+. Utilisez l'appel d'API suivant pour créer un compte BlueXP supplémentaire :
++
 POST `/tenancy/account/{accountName}`
 
++
 Si vous souhaitez activer le mode restreint, vous devez inclure les éléments suivants dans le corps de la demande :
 
++
 [source, JSON]
 ----
 {
@@ -29,11 +34,13 @@ Si vous souhaitez activer le mode restreint, vous devez inclure les éléments s
 }
 ----
 
+
+
 NOTE: Vous ne pouvez pas modifier le paramètre de mode restreint une fois le compte créé par BlueXP. Vous ne pouvez pas activer le mode restreint ultérieurement et vous ne pouvez pas le désactiver ultérieurement. Elle doit être définie au moment de la création du compte.
 
 https://docs.netapp.com/us-en/bluexp-automation/tenancy/post-tenancy-account-id.html["Découvrez comment utiliser cet appel d'API"^]
 
-.Liens connexes
+.Informations associées
 * link:concept-netapp-accounts.html["Découvrez les comptes BlueXP"]
 * link:concept-modes.html["Découvrez les modes de déploiement BlueXP"]
 

@@ -27,8 +27,6 @@ sidebar:
       entries:
       - title: BlueXP
         url: "/concept-overview.html"
-      - title: Comptes
-        url: "/concept-netapp-accounts.html"
       - title: Connecteurs
         url: "/concept-connectors.html"
       - title: Modes de déploiement
@@ -37,7 +35,7 @@ sidebar:
       entries:
       - title: Mise en route du flux de travail
         url: "/task-quick-start-standard-mode.html"
-      - title: Préparez la mise en réseau à l'aide de la console BlueXP
+      - title: Préparez la mise en réseau pour la console BlueXP 
         url: "/reference-networking-saas-console.html"
       - title: Inscrivez-vous à BlueXP
         url: "/task-sign-up-saas.html"
@@ -103,18 +101,40 @@ sidebar:
       url: "/task-logging-in.html"
   - title: Administration de BlueXP
     entries:
-    - title: fédération des identités
-      url: "/concept-federation.html"
+    - title: Gestion des identités et des accès
+      entries:
+      - title: En savoir plus sur BlueXP  IAM
+        url: "/concept-identity-and-access-management.html"
+      - title: Lancez-vous avec BlueXP  IAM
+        url: "/task-iam-get-started.html"
+      - title: Organisez vos ressources avec des dossiers et des projets
+        url: "/task-iam-manage-folders-projects.html"
+      - title: Ajoutez des membres et gérez leurs autorisations
+        url: "/task-iam-manage-members-permissions.html"
+      - title: Gérez votre hiérarchie de ressources
+        url: "/task-iam-manage-resources.html"
+      - title: Associer un connecteur à d'autres dossiers et projets
+        url: "/task-iam-associate-connectors.html"
+      - title: Basculer entre les organisations, les projets et les connecteurs
+        url: "/task-iam-switch-organizations-projects.html"
+      - title: Renommez votre organisation
+        url: "/task-iam-rename-organization.html"
+      - title: Surveiller ou auditer l'activité IAM
+        url: "/task-iam-audit-actions-timeline.html"
+      - title: Rôles IAM prédéfinis
+        url: "/reference-iam-predefined-roles.html"
     - title: Comptes BlueXP
       entries:
+      - title: En savoir plus sur les comptes
+        url: "/concept-netapp-accounts.html"
       - title: Gestion de votre compte BlueXP
         url: "/task-managing-netapp-accounts.html"
-      - title: Contrôlez les opérations dans votre compte
-        url: "/task-monitor-cm-operations.html"
       - title: Créez un autre compte BlueXP
         url: "/task-create-account.html"
       - title: Rôles utilisateur
         url: "/reference-user-roles.html"
+    - title: fédération des identités
+      url: "/concept-federation.html"
     - title: Connecteurs
       entries:
       - title: Maintenance de la machine virtuelle et du système d'exploitation
@@ -156,10 +176,13 @@ sidebar:
           url: "/concept-accounts-gcp.html"
         - title: Gérez les identifiants et les abonnements
           url: "/task-adding-gcp-accounts.html"
-      - title: Gérez les identifiants NSS associés à un compte BlueXP
+      - title: Gérez les informations d'identification NSS associées à une organisation
+          ou un compte BlueXP 
         url: "/task-adding-nss-accounts.html"
       - title: Gestion des identifiants associés à votre connexion BlueXP
         url: "/task-manage-user-credentials.html"
+    - title: Surveillez les opérations BlueXP 
+      url: "/task-monitor-cm-operations.html"
   - title: Référence
     entries:
     - title: Autorisations

@@ -1,0 +1,307 @@
+---
+sidebar: sidebar 
+permalink: task-iam-manage-members-permissions.html 
+keywords: user, service account, member, role, permissions, organization, project, folder, iam, identity and access management 
+summary: Gérez les membres de votre organisation pour fournir des autorisations à différents niveaux de la hiérarchie des ressources de votre organisation. 
+---
+= Ajouter des membres BlueXP  IAM et gérer leurs autorisations
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+La gestion des identités et des accès (IAM) BlueXP  vous permet d'ajouter des membres à votre organisation et de leur attribuer un ou plusieurs rôles dans votre hiérarchie de ressources. Un _rôle_ contient un ensemble d'autorisations qui permet à un membre d'effectuer des actions spécifiques à un niveau spécifique de la hiérarchie des ressources. Vous pouvez associer de nouveaux comptes utilisateur et comptes de service, gérer les rôles des membres, etc.
+
+
+TIP: Pour ne pas perdre l'accès à votre organisation BlueXP , il est recommandé d'avoir deux membres avec le rôle d'administrateur d'organisation.
+
+.Description de la tâche
+Lorsqu'un _dossier ou un administrateur de projet affiche la page *membres*, la page affiche tous les membres de l'organisation. Cependant, un membre doté de ce rôle ne peut afficher et gérer que les autorisations des membres pour les dossiers et les projets pour lesquels ils ont des autorisations. link:reference-iam-predefined-roles.html["En savoir plus sur les actions qu'un _dossier ou un administrateur de projet_ peut effectuer"].
+
+
+
+== Ajoutez des membres à votre organisation
+
+Vous pouvez ajouter deux types de membres à votre organisation : un compte d'utilisateur et un compte de service. Un compte de service est généralement utilisé par une application pour effectuer des tâches spécifiques sans intervention humaine.
+
+[role="tabbed-block"]
+====
+.Compte utilisateur
+--
+.Étapes
+. Si l'utilisateur ne l'a pas déjà fait, demandez-lui d'aller à https://bluexp.netapp.com/["Site Web NetApp BlueXP"^] et de s'inscrire.
++
+Lorsque l'utilisateur s'inscrit, il doit remplir la page *s'inscrire*, vérifier son adresse e-mail, puis se connecter. Lorsque l'utilisateur est invité à créer une organisation, il doit fermer BlueXP  et vous informer qu'il a créé son compte utilisateur. Vous pouvez ensuite ajouter l'utilisateur à votre organisation BlueXP  existante.
+
++
+link:task-sign-up-saas.html["Découvrez comment vous inscrire à BlueXP "].
+
+. Dans le coin supérieur droit de la console BlueXP , sélectionnez image:icon-settings-option.png["L'icône des paramètres qui s'affiche en haut à droite de la console Web BlueXP ."] > *gestion des identités et des accès*.
+. Sélectionnez *membres*.
+. Sélectionnez *Ajouter un membre*.
+. Pour ajouter le membre, procédez comme suit dans la boîte de dialogue :
++
+** *Type d'entité* : conserver *utilisateur* sélectionné.
+** *E-mail de l'utilisateur* : saisissez l'adresse e-mail de l'utilisateur associée à la connexion BlueXP  qu'ils ont créée.
+** *Sélectionnez une organisation, un dossier ou un projet* : choisissez le niveau de votre hiérarchie de ressources pour lequel le membre doit disposer des autorisations.
++
+Notez ce qui suit :
+
++
+*** Vous ne pouvez sélectionner que les dossiers et les projets pour lesquels vous disposez des autorisations d'administration.
+*** Si vous sélectionnez l'organisation ou un dossier, le membre aura des autorisations sur tout ce qui réside dans l'organisation ou le dossier.
+
+
+** *Sélectionnez un rôle* : choisissez un rôle qui fournit au membre des autorisations pour les ressources associées à l'organisation, au dossier ou au projet que vous avez sélectionné.
++
+*** Si vous avez sélectionné l'organisation, vous pouvez choisir un rôle autre que *Folder ou Project admin*.
+*** Si vous avez sélectionné un dossier ou un projet, vous pouvez choisir un rôle autre que *Organization admin*.
++
+link:reference-iam-predefined-roles.html["En savoir plus sur les rôles IAM prédéfinis"].
+
+
+
+** *Ajouter un rôle* : si vous souhaitez donner accès à des dossiers ou projets supplémentaires au sein de votre organisation, sélectionnez *Ajouter un rôle*, spécifiez un autre dossier ou projet, puis choisissez un rôle.
+
+
+. Sélectionnez *Ajouter*.
+
+
+.Résultat
+BlueXP  ajoute l'utilisateur à l'organisation.
+
+.Et la suite ?
+L'utilisateur doit recevoir un e-mail de NetApp BlueXP . L'e-mail contient des informations que le membre peut utiliser pour accéder à BlueXP .
+
+--
+.Compte de service
+--
+.Étapes
+. Dans le coin supérieur droit de la console BlueXP , sélectionnez image:icon-settings-option.png["L'icône des paramètres qui s'affiche en haut à droite de la console Web BlueXP ."] > *gestion des identités et des accès*.
+. Sélectionnez *membres*.
+. Sélectionnez *Ajouter un membre*.
+. Pour ajouter le membre, procédez comme suit dans la boîte de dialogue :
++
+** *Type d'entité* : sélectionnez *compte de service*.
+** *Nom du compte de service* : saisissez un nom pour le compte de service.
+** *Sélectionnez une organisation, un dossier ou un projet* : choisissez le niveau de votre hiérarchie de ressources pour lequel le membre doit disposer des autorisations.
++
+Notez ce qui suit :
+
++
+*** Vous ne pouvez sélectionner que les dossiers et les projets pour lesquels vous disposez des autorisations d'administration.
+*** Si vous sélectionnez l'organisation ou un dossier, le membre aura des autorisations sur tout ce qui réside dans l'organisation ou le dossier.
+
+
+** *Sélectionnez un rôle* : choisissez un rôle qui fournit au membre des autorisations pour les ressources associées à l'organisation, au dossier ou au projet que vous avez sélectionné.
++
+*** Si vous avez sélectionné l'organisation, vous pouvez choisir un rôle autre que *Folder ou Project admin*.
+*** Si vous avez sélectionné un dossier ou un projet, vous pouvez choisir un rôle autre que *Organization admin*.
++
+link:reference-iam-predefined-roles.html["En savoir plus sur les rôles IAM prédéfinis"].
+
+
+
+** *Ajouter un rôle* : si vous souhaitez donner accès à des dossiers ou projets supplémentaires au sein de votre organisation, sélectionnez *Ajouter un rôle*, spécifiez un autre dossier ou projet, puis choisissez un rôle.
+
+
+. Sélectionnez *Ajouter*.
+. Téléchargez ou copiez l'ID client et le secret client.
++
+Le secret client n'est visible qu'une seule fois et n'est pas stocké n'importe où par BlueXP. Copiez ou téléchargez le secret et rangez-le en toute sécurité. Notez que vous pouvez recréer l'ID client et le secret client ultérieurement, si nécessaire.
+
+. Sélectionnez *Fermer*.
+
+
+.Résultat
+BlueXP  ajoute le compte de service à votre organisation.
+
+--
+====
+
+
+== Afficher les membres de l'organisation
+
+Vous pouvez afficher la liste de tous les membres de votre organisation BlueXP . Pour comprendre quelles ressources et autorisations sont disponibles pour un membre, vous pouvez afficher les rôles attribués au membre à différents niveaux de la hiérarchie des ressources de votre organisation.
+
+.Description de la tâche
+La page *membres* affiche des détails sur deux types de membres : les comptes d'utilisateur et les comptes de service.
+
+.Étapes
+. Dans le coin supérieur droit de la console BlueXP , sélectionnez image:icon-settings-option.png["L'icône des paramètres qui s'affiche en haut à droite de la console Web BlueXP ."] > *gestion des identités et des accès*.
+. Sélectionnez *membres*.
++
+Les membres de votre organisation apparaissent dans le tableau *membres*.
+
+. Sur la page *membres*, naviguez jusqu'à un membre dans la table, sélectionnezimage:icon-action.png["Icône représentant trois points côte à côte"], puis cliquez sur *Afficher les détails*.
+
+
+.Résultat
+BlueXP  affiche des détails sur le membre, ce qui inclut les dossiers et les projets pour lesquels le membre a des autorisations sur l'ensemble de la hiérarchie de ressources de votre organisation.
+
+Voici un exemple d'un membre qui a le rôle _dossier ou projet admin_ pour un dossier, qui fournit des autorisations pour les trois projets du dossier.
+
+image:screenshot-iam-member-details.png["Capture d'écran de la page de détails d'un membre qui a des autorisations sur un projet et un dossier."]
+
+Voici un autre exemple qui montre un membre qui a le rôle d'administrateur d'organisation, qui donne à l'utilisateur l'accès à toutes les ressources de l'organisation.
+
+image:screenshot-iam-member-details-org-admin.png["Capture d'écran de la page de détails d'un membre disposant des autorisations d'administration Organisation."]
+
+.Informations associées
+link:task-iam-manage-folders-projects.html#view-associated-resources-members["Afficher tous les membres associés à un dossier ou à un projet spécifique"].
+
+
+
+== Gérer les autorisations d'un membre
+
+Un rôle définit les autorisations attribuées à un membre au niveau de l'organisation, du dossier ou du projet. Chaque membre de l'organisation peut avoir un rôle attribué à différents niveaux de la hiérarchie de l'organisation. Il peut s'agir du même rôle ou d'un rôle différent. Par exemple, vous pouvez affecter un rôle de membre A pour le projet 1 et le rôle B pour le projet 2.
+
+
+TIP: Aucun rôle supplémentaire ne peut être attribué à un membre affecté au rôle d'administrateur de l'organisation. Ils ont déjà des autorisations dans toute l'entreprise.
+
+
+
+=== Ajouter un rôle à un membre
+
+Fournissez à un membre des autorisations supplémentaires dans votre organisation en ajoutant des rôles qui s'appliquent au niveau de l'organisation, du dossier ou du projet.
+
+.Étapes
+. Sur la page *membres*, naviguez jusqu'à un membre dans la table, sélectionnezimage:icon-action.png["Icône représentant trois points côte à côte"], puis sélectionnez *Ajouter un rôle*.
+. Pour ajouter un rôle, procédez comme suit dans la boîte de dialogue :
++
+** *Sélectionnez une organisation, un dossier ou un projet* : choisissez le niveau de votre hiérarchie de ressources pour lequel le membre doit disposer des autorisations.
++
+Si vous sélectionnez l'organisation ou un dossier, le membre aura des autorisations sur tout ce qui réside dans l'organisation ou le dossier.
+
+** *Sélectionnez un rôle* : choisissez un rôle qui fournit au membre des autorisations pour les ressources associées à l'organisation, au dossier ou au projet que vous avez sélectionné.
++
+*** Si vous avez sélectionné l'organisation, vous pouvez choisir un rôle autre que *Folder ou Project admin*.
+*** Si vous avez sélectionné un dossier ou un projet, vous pouvez choisir un rôle autre que *Organization admin*.
++
+link:reference-iam-predefined-roles.html["En savoir plus sur les rôles IAM prédéfinis"].
+
+
+
+** *Ajouter un rôle* : si vous souhaitez donner accès à des dossiers ou projets supplémentaires au sein de votre organisation, sélectionnez *Ajouter un rôle*, spécifiez un autre dossier ou projet, puis choisissez un rôle.
+
+
+. Sélectionnez *Ajouter de nouveaux rôles*.
+
+
+.Résultat
+BlueXP  ajoute les rôles. Le membre dispose maintenant des autorisations pour les ressources de l'organisation, du dossier ou du projet que vous avez sélectionné.
+
+
+
+=== Passer d'un rôle à un autre
+
+Si vous devez modifier les autorisations d'un membre, vous pouvez modifier le rôle qui lui est associé au niveau de l'organisation, du dossier ou du projet.
+
+Si vous devez modifier les rôles de plusieurs membres de votre organisation, vous pouvez utiliser une action groupée pour effectuer toutes les modifications en même temps.
+
+[role="tabbed-block"]
+====
+.Un membre
+--
+.Étapes
+. Sur la page *membres*, naviguez jusqu'à un membre dans la table, sélectionnezimage:icon-action.png["Icône représentant trois points côte à côte"], puis cliquez sur *Afficher les détails*.
+. Dans le tableau, accédez à l'organisation, au dossier ou au projet, puis sélectionnez un nouveau rôle.
+
+
+.Résultat
+BlueXP  met à jour les rôles associés à ce membre au niveau de l'organisation, du dossier et du projet.
+
+--
+.Plusieurs membres
+--
+.Étapes
+. Dans la page *Organisation*, naviguez jusqu'à un projet ou dossier de la table, sélectionnezimage:icon-action.png["Icône représentant trois points côte à côte"], puis sélectionnez *Modifier l'organisation*, *Modifier le dossier* ou *Modifier le projet*.
+. Sur la page *Modifier*, sélectionnez *accès*.
+. Sélectionnez tous les membres ou sélectionnez individuellement deux membres ou plus.
+. Sélectionnez *définir le rôle*.
++
+image:screenshot-iam-define-role.png["Capture d'écran de la partie accès de la boîte de dialogue d'édition qui vous permet de choisir l'action définir un rôle après avoir sélectionné deux membres ou plus."]
+
+. Sélectionnez le rôle que vous souhaitez attribuer aux membres, puis sélectionnez *définir*.
+
+
+.Résultat
+BlueXP  met à jour les rôles de tous les membres que vous avez sélectionnés.
+
+--
+====
+
+
+=== Supprimer les autorisations d'un dossier ou d'un projet
+
+Vous pouvez supprimer les autorisations d'un membre pour un dossier ou un projet spécifique en supprimant son rôle.
+
+.Description de la tâche
+Si un membre a des autorisations dans votre organisation pour _un seul dossier ou projet, vous ne pouvez pas supprimer ce rôle. Vous avez deux choix :
+
+* Si vous souhaitez que le membre ait des autorisations sur une autre partie de la hiérarchie de ressources, vous devez d'abord ajouter ce rôle, puis supprimer le rôle existant.
+* Si vous ne souhaitez pas que le membre ait des autorisations sur quoi que ce soit, vous pouvez simplement supprimer le membre de votre organisation.
+
+
+.Étapes
+. Sur la page *membres*, naviguez jusqu'à un membre dans la table, sélectionnezimage:icon-action.png["Icône représentant trois points côte à côte"], puis cliquez sur *Afficher les détails*.
+. Dans le tableau, naviguez jusqu'au niveau du dossier ou du projet, puis sélectionnez image:icon-delete.png["Icône d'une poubelle"]
+
+
+.Résultat
+BlueXP  supprime les autorisations pour ce membre au niveau du dossier ou du projet.
+
+
+
+== Recréez les informations d'identification d'un compte de service
+
+Vous pouvez recréer à tout moment les informations d'identification (ID client et secret client) d'un compte de service. Vous pouvez recréer les informations d'identification si vous les avez perdues ou si votre entreprise exige que vous permutiez les informations d'identification de sécurité après un certain temps.
+
+.Description de la tâche
+La recréation des informations d'identification supprime les informations d'identification existantes pour le compte de service, puis crée de nouvelles informations d'identification. Vous ne pourrez pas utiliser les informations d'identification précédentes.
+
+.Étapes
+. Dans le coin supérieur droit de la console BlueXP , sélectionnez image:icon-settings-option.png["L'icône des paramètres qui s'affiche en haut à droite de la console Web BlueXP ."] > *gestion des identités et des accès*.
+. Sélectionnez *membres*.
+. Dans le tableau *Members*, naviguez jusqu'à un compte de service, sélectionnezimage:icon-action.png["Icône représentant trois points côte à côte"], puis cliquez sur *recréer les secrets*.
+. Sélectionnez *recréer*.
+. Téléchargez ou copiez l'ID client et le secret client.
++
+Le secret client n'est visible qu'une seule fois et n'est pas stocké n'importe où par BlueXP. Copiez ou téléchargez le secret et rangez-le en toute sécurité.
+
+. Sélectionnez *Fermer*.
+
+
+.Résultat
+Un nouvel ID client et un nouveau secret client sont désormais associés au compte de service.
+
+
+
+== Supprimer un membre de votre organisation
+
+Vous devrez peut-être supprimer un membre de votre organisation, par exemple s'il a quitté votre entreprise.
+
+.Description de la tâche
+Cette tâche ne supprime pas le compte BlueXP  ou le compte sur le site de support NetApp du membre. Il supprime simplement le membre et les autorisations qui lui sont associées de votre organisation.
+
+.Étapes
+. Sur la page *membres*, naviguez jusqu'à un membre de la table, sélectionnezimage:icon-action.png["Icône représentant trois points côte à côte"], puis sélectionnez *Supprimer utilisateur*.
+. Confirmez que vous souhaitez supprimer le membre de votre organisation.
+
+
+.Résultat
+BlueXP  supprime le membre. Si ce membre se connecte à nouveau à BlueXP , il n'a plus accès à votre organisation BlueXP .
+
+
+
+== Informations associées
+
+* link:concept-identity-and-access-management.html["En savoir plus sur la gestion des identités et des accès BlueXP "]
+* link:task-iam-get-started.html["Lancez-vous avec BlueXP  IAM"]
+* link:reference-iam-predefined-roles.html["Rôles IAM BlueXP  prédéfinis"]
+* https://docs.netapp.com/us-en/bluexp-automation/tenancyv4/overview.html["En savoir plus sur l'API pour BlueXP  IAM"^]
+

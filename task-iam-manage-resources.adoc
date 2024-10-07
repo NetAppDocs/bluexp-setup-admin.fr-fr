@@ -1,0 +1,144 @@
+---
+sidebar: sidebar 
+permalink: task-iam-manage-resources.html 
+keywords: resource, hierarchy, association, access, resource permissions, resource hierarchy, iam, identity and access management 
+summary: Gérez la hiérarchie des ressources de votre organisation en associant des ressources à des projets et dossiers spécifiques. 
+---
+= Gérez la hiérarchie des ressources dans votre organisation BlueXP 
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Lorsque vous utilisez la gestion des identités et des accès BlueXP  pour associer un membre à votre entreprise, vous fournissez des autorisations au niveau de l'organisation, du dossier ou du projet. Pour vous assurer que ces membres disposent des autorisations nécessaires pour accéder aux ressources appropriées, vous devez gérer la hiérarchie des ressources de votre organisation en associant des ressources à des projets et dossiers spécifiques. Une _ressource_ est un environnement de travail que BlueXP  gère déjà.
+
+
+
+== Afficher les ressources de votre organisation
+
+Pour commencer à gérer votre hiérarchie de ressources, vous devez connaître les ressources associées à votre organisation.
+
+.Étapes
+. Dans le coin supérieur droit de la console BlueXP , sélectionnez image:icon-settings-option.png["L'icône des paramètres qui s'affiche en haut à droite de la console Web BlueXP ."] > *gestion des identités et des accès*.
+. Sélectionnez *Ressources*.
+
+
+.Résultat
+Les ressources associées à votre organisation s'affichent dans le tableau *Ressources*.
+
+.Et la suite ?
+Pour trouver une ressource spécifique, vous pouvez <<find-resources,rechercher et filtrer le contenu de la table>>.
+
+Une fois que vous avez trouvé la ressource que vous recherchez, vous pouvez effectuer l'une des actions suivantes :
+
+* <<view-folders-and-projects,Affichez les dossiers et les projets associés à la ressource>>
+* <<associate-resource,Associer la ressource à des dossiers et projets supplémentaires>>
+* <<remove-resource,Supprimez la ressource d'un dossier ou d'un projet>>
+
+
+
+
+== Trouvez des ressources spécifiques dans votre organisation
+
+Si votre organisation dispose d'un grand nombre de ressources, vous pouvez utiliser les options de recherche et de filtre pour trouver une ressource spécifique.
+
+.Étapes
+. Sur la page *Ressources*, sélectionnez *recherche avancée et filtrage*.
+. Utilisez l'une des options disponibles pour trouver la ressource que vous recherchez :
++
+** *Recherche par nom de ressource* : saisissez une chaîne de texte et sélectionnez *Ajouter*.
+** *Plate-forme* : sélectionnez une ou plusieurs plates-formes, telles qu'Amazon Web Services.
+** *Ressources* : sélectionnez une ou plusieurs ressources, telles que Cloud Volumes ONTAP.
+** *Organisation, dossier ou projet* : sélectionnez l'ensemble de l'organisation, un dossier spécifique ou un projet spécifique.
+
+
+. Sélectionnez *Rechercher*.
+
+
+.Résultat
+Le contenu du tableau Ressources est actualisé pour afficher les ressources correspondant à vos sélections de recherche et de filtre.
+
+
+
+== Associer une ressource à des dossiers et des projets
+
+Si vous souhaitez rendre une ressource disponible à un autre dossier ou projet de votre organisation, vous devez créer une association entre le dossier ou le projet et la ressource.
+
+.Avant de commencer
+Vous devez comprendre le fonctionnement de l'association de ressources. link:concept-identity-and-access-management.html#resources["Découvrez les ressources, notamment quand associer une ressource à un dossier"].
+
+.Étapes
+. Dans la page *Ressources*, naviguez jusqu'à une ressource dans la table, sélectionnezimage:icon-action.png["Icône représentant trois points côte à côte"], puis sélectionnez *associer aux dossiers ou projets*.
+. Sélectionnez un dossier ou un projet, puis sélectionnez *accepter*.
+. Pour associer un dossier ou un projet supplémentaire, sélectionnez *Ajouter un dossier ou un projet*, puis sélectionnez le dossier ou le projet.
++
+Notez que vous ne pouvez sélectionner que les dossiers et les projets pour lesquels vous disposez des autorisations d'administration.
+
+. Sélectionnez *associer des ressources*.
+
+
+.Résultat
+BlueXP  associe la ressource aux dossiers et projets sélectionnés.
+
+* Si vous avez associé la ressource à des projets, les membres qui ont des autorisations pour ces projets ont désormais la possibilité d'accéder à la ressource dans BlueXP .
+* Si vous avez associé la ressource à un dossier, un _dossier ou un administrateur de projet_ peut maintenant accéder à la ressource depuis BlueXP  IAM. link:concept-identity-and-access-management.html#resources["En savoir plus sur l'association d'une ressource à un dossier"].
+
+
+.Une fois que vous avez terminé
+Si la ressource que vous avez associée est découverte à l'aide d'un connecteur BlueXP  et que vous avez d'autres membres dans votre organisation, vous devez également associer le connecteur au projet auquel la ressource est maintenant associée. Sinon, le connecteur et sa ressource associée ne sont pas accessibles à partir du canevas BlueXP  par les membres qui n'ont pas le rôle _Admin_Organisation.
+
+link:task-iam-associate-connectors.html["Découvrez comment associer un connecteur à un dossier ou à un projet"].
+
+
+
+== Afficher les dossiers et les projets associés à une ressource
+
+Pour identifier où une ressource est disponible dans la hiérarchie de votre organisation, vous pouvez afficher les dossiers et les projets associés à cette ressource.
+
+.Étapes
+. Dans la page *Ressources*, naviguez jusqu'à une ressource dans la table, sélectionnezimage:icon-action.png["Icône représentant trois points côte à côte"], puis cliquez sur *Afficher les détails*.
+
+
+.Résultat
+BlueXP  affiche les dossiers et les projets associés à la ressource.
+
+L'exemple suivant montre une ressource associée à un projet.
+
+image:screenshot-iam-resource-details.png["Capture d'écran de la page de détails de la ressource qui montre une ressource associée à un projet qui se trouve directement sous l'organisation."]
+
+.Et la suite ?
+* Vous pouvez <<associate-resource,associer la ressource à un projet ou dossier supplémentaire>>.
+* Vous pouvez <<remove-resource,supprimez la ressource d'un dossier ou d'un projet spécifique>>.
+* Si vous devez déterminer quels membres de l'organisation ont accès à la ressource, vous pouvez link:task-iam-manage-folders-projects.html#view-associated-resources-members["affichez les membres qui ont accès aux dossiers et projets associés à la ressource"].
+
+
+
+
+== Supprimer une ressource d'un dossier ou d'un projet
+
+Pour supprimer une ressource d'un dossier ou d'un projet, vous devez supprimer l'association entre le dossier ou le projet et la ressource. Une fois l'association supprimée, les membres de l'organisation ne peuvent plus gérer la ressource à partir du dossier ou du projet.
+
+.Description de la tâche
+Si vous souhaitez supprimer une ressource découverte de toute l'organisation, vous devez supprimer l'environnement de travail du canevas BlueXP .
+
+.Étapes
+. Dans la page *Ressources*, naviguez jusqu'à une ressource dans la table, sélectionnezimage:icon-action.png["Icône représentant trois points côte à côte"], puis cliquez sur *Afficher les détails*.
+. Pour le dossier ou le projet pour lequel vous souhaitez supprimer la ressource, sélectionnez image:icon-delete.png["Icône d'une poubelle"]
+. Confirmez que vous souhaitez supprimer l'association en sélectionnant *Supprimer*.
+
+
+.Résultat
+BlueXP  supprime l'association. Les membres ne peuvent plus accéder à la ressource à partir de ce dossier ou de ce projet.
+
+
+
+== Informations associées
+
+* link:concept-identity-and-access-management.html["En savoir plus sur la gestion des identités et des accès BlueXP "]
+* link:task-iam-get-started.html["Lancez-vous avec BlueXP  IAM"]
+* https://docs.netapp.com/us-en/bluexp-automation/tenancyv4/overview.html["En savoir plus sur l'API pour BlueXP  IAM"^]
+

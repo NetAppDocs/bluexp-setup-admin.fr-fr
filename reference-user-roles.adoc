@@ -14,19 +14,29 @@ summary: 'Les rôles Administrateur de compte, Administrateur d"espace de travai
 
 
 [role="lead"]
-Les rôles Administrateur de compte, Administrateur d'espace de travail, Visionneuse de conformité et Administrateur SnapCenter fournissent des autorisations spécifiques aux utilisateurs. Vous pouvez attribuer l'un de ces rôles lorsque vous associez un nouvel utilisateur à votre compte BlueXP.
+Lorsque vous utilisez BlueXP  en mode restreint ou privé, vous utiliserez un _compte BlueXP _ pour gérer les utilisateurs. Vous pouvez fournir des autorisations spécifiques aux utilisateurs de votre compte en sélectionnant l'un des rôles suivants : Administrateur de compte, Administrateur d'espace de travail, afficheur de conformité et Admin SnapCenter
 
-Le rôle Compliance Viewer est destiné à l'accès à la classification BlueXP en lecture seule.
+Si vous utilisez BlueXP  en mode standard, vous n'aurez pas de compte BlueXP . Au lieu de cela, vous aurez une organisation _BlueXP _ que vous gérez à l'aide de la gestion des identités et des accès (IAM) BlueXP .
+
+* link:concept-identity-and-access-management.html["En savoir plus sur BlueXP  IAM"]
+* link:concept-modes.html["Découvrez les modes de déploiement BlueXP"]
+
 
 [cols="24,19,19,19,19"]
 |===
 | Tâche | Administrateur du compte | Administrateur de l'espace de travail | Visionneuse de conformité | Admin SnapCenter 
 
 
-| Gérer les environnements de travail | Oui. | Oui. | Non | Non 
+| Créer des connecteurs | Oui. | Non | Non | Non 
 
 
-| Activer les services dans les environnements de travail | Oui. | Oui. | Non | Non 
+| Gérer les environnements de travail | Oui. | Oui. | Non | Oui. 
+
+
+| Activer les services dans les environnements de travail | Oui. | Oui. | Non | Oui. 
+
+
+| Utilisez les services BlueXP  | Oui. | Oui. | Non | Oui. 
 
 
 | Supprimer des environnements de travail d'un espace de travail | Oui. | Oui. | Non | Non 
@@ -41,7 +51,7 @@ Le rôle Compliance Viewer est destiné à l'accès à la classification BlueXP 
 | Afficher la chronologie | Oui. | Oui. | Non | Non 
 
 
-| Basculer entre les espaces de travail | Oui. | Oui. | Oui. | Non 
+| Basculer entre les espaces de travail | Oui. | Oui. | Oui. | Oui. 
 
 
 | Afficher les résultats de l'analyse de classification BlueXP | Oui. | Oui. | Oui. | Non 
@@ -50,24 +60,16 @@ Le rôle Compliance Viewer est destiné à l'accès à la classification BlueXP 
 | Recevoir le rapport Cloud Volumes ONTAP | Oui. | Non | Non | Non 
 
 
-| Créer des connecteurs | Oui. | Non | Non | Non 
-
-
 | Gestion des comptes BlueXP | Oui. | Non | Non | Non 
 
 
-| Gérer les identifiants | Oui. | Non | Non | Non 
+| Gérer les identifiants | Oui. | Oui. | Non | Non 
 
 
-| Modifiez les paramètres BlueXP | Oui. | Non | Non | Non 
+| Modifiez les paramètres BlueXP | Oui. | Oui. | Non | Non 
 
 
-| Afficher et gérer le tableau de bord du support | Oui. | Non | Non | Non 
-
-
-| Installez un certificat HTTPS | Oui. | Non | Non | Non 
+| Afficher et gérer le tableau de bord du support | Oui. | Oui. | Non | Non 
 |===
-.Liens connexes
-* link:task-setting-up-netapp-accounts.html["Configuration d'espaces de travail et d'utilisateurs dans le compte BlueXP"]
-* link:task-managing-netapp-accounts.html["Gestion des espaces de travail et des utilisateurs dans le compte BlueXP"]
-
+.Lien associé
+link:task-managing-netapp-accounts.html["Gestion de votre compte BlueXP"]

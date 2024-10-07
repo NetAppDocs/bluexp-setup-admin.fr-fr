@@ -50,13 +50,13 @@ Vous serez redirigé vers le site Web BlueXP.
 
 .. À partir de la page *attribution d'abonnement* :
 +
-*** Sélectionnez les comptes BlueXP avec lesquels vous souhaitez associer cet abonnement.
-*** Dans le champ *remplacer l'abonnement existant*, choisissez si vous souhaitez remplacer automatiquement l'abonnement existant pour un compte par ce nouvel abonnement.
+*** Sélectionnez les organisations ou les comptes BlueXP  auxquels vous souhaitez associer cet abonnement.
+*** Dans le champ *remplacer l'abonnement existant*, choisissez si vous souhaitez remplacer automatiquement l'abonnement existant pour une organisation ou un compte par ce nouvel abonnement.
 +
-BlueXP remplace l'abonnement existant pour toutes les informations d'identification du compte par ce nouvel abonnement. Si un ensemble d'informations d'identification n'a jamais été associé à un abonnement, ce nouvel abonnement ne sera pas associé à ces informations d'identification.
+BlueXP  remplace l'abonnement existant pour tous les identifiants de l'entreprise ou du compte par ce nouvel abonnement. Si un ensemble d'informations d'identification n'a jamais été associé à un abonnement, ce nouvel abonnement ne sera pas associé à ces informations d'identification.
 
 +
-Pour tous les autres comptes, vous devez associer manuellement l'abonnement en répétant ces étapes.
+Pour tous les autres comptes ou organisations, vous devez associer manuellement l'abonnement en répétant ces étapes.
 
 *** Sélectionnez *Enregistrer*.
 +
@@ -95,13 +95,13 @@ Vous serez redirigé vers le site Web BlueXP.
 
 .. À partir de la page *attribution d'abonnement* :
 +
-*** Sélectionnez les comptes BlueXP avec lesquels vous souhaitez associer cet abonnement.
-*** Dans le champ *remplacer l'abonnement existant*, choisissez si vous souhaitez remplacer automatiquement l'abonnement existant pour un compte par ce nouvel abonnement.
+*** Sélectionnez les organisations ou les comptes BlueXP  auxquels vous souhaitez associer cet abonnement.
+*** Dans le champ *remplacer l'abonnement existant*, choisissez si vous souhaitez remplacer automatiquement l'abonnement existant pour une organisation ou un compte par ce nouvel abonnement.
 +
-BlueXP remplace l'abonnement existant pour toutes les informations d'identification du compte par ce nouvel abonnement. Si un ensemble d'informations d'identification n'a jamais été associé à un abonnement, ce nouvel abonnement ne sera pas associé à ces informations d'identification.
+BlueXP  remplace l'abonnement existant pour tous les identifiants de l'entreprise ou du compte par ce nouvel abonnement. Si un ensemble d'informations d'identification n'a jamais été associé à un abonnement, ce nouvel abonnement ne sera pas associé à ces informations d'identification.
 
 +
-Pour tous les autres comptes, vous devez associer manuellement l'abonnement en répétant ces étapes.
+Pour tous les autres comptes ou organisations, vous devez associer manuellement l'abonnement en répétant ces étapes.
 
 *** Sélectionnez *Enregistrer*.
 +
@@ -147,7 +147,7 @@ Cette étape envoie votre demande de transfert à NetApp.
 
 .. Dans la boîte de dialogue qui s'affiche, sélectionnez *s'inscrire auprès de NetApp, Inc.*
 +
-Cette étape doit être effectuée pour lier l'abonnement Google Cloud à votre compte BlueXP. Le processus de liaison d'un abonnement n'est pas terminé tant que vous n'êtes pas redirigé à partir de cette page, puis vous connecter à BlueXP.
+Cette étape doit être effectuée pour lier l'abonnement Google Cloud à votre entreprise ou compte BlueXP . Le processus de liaison d'un abonnement n'est pas terminé tant que vous n'êtes pas redirigé à partir de cette page, puis vous connecter à BlueXP.
 
 +
 image:screenshot_gcp_marketplace_register.png["Capture d'écran d'une fenêtre contextuelle d'enregistrement."]
@@ -158,13 +158,13 @@ image:screenshot_gcp_marketplace_register.png["Capture d'écran d'une fenêtre c
 NOTE: Si un membre de votre entreprise a déjà souscrit à l'abonnement NetApp BlueXP à partir de votre compte de facturation, vous serez redirigé vers https://bluexp.netapp.com/ontap-cloud?x-gcp-marketplace-token=["La page Cloud Volumes ONTAP sur le site web de BlueXP"^] à la place. Si cela est inattendu, contactez votre équipe commerciale NetApp. Google n'autorise qu'un seul abonnement par compte de facturation Google.
 
 +
-*** Sélectionnez les comptes BlueXP avec lesquels vous souhaitez associer cet abonnement.
-*** Dans le champ *remplacer l'abonnement existant*, choisissez si vous souhaitez remplacer automatiquement l'abonnement existant pour un compte par ce nouvel abonnement.
+*** Sélectionnez les organisations ou les comptes BlueXP  auxquels vous souhaitez associer cet abonnement.
+*** Dans le champ *remplacer l'abonnement existant*, choisissez si vous souhaitez remplacer automatiquement l'abonnement existant pour une organisation ou un compte par ce nouvel abonnement.
 +
-BlueXP remplace l'abonnement existant pour toutes les informations d'identification du compte par ce nouvel abonnement. Si un ensemble d'informations d'identification n'a jamais été associé à un abonnement, ce nouvel abonnement ne sera pas associé à ces informations d'identification.
+BlueXP  remplace l'abonnement existant pour tous les identifiants de l'entreprise ou du compte par ce nouvel abonnement. Si un ensemble d'informations d'identification n'a jamais été associé à un abonnement, ce nouvel abonnement ne sera pas associé à ces informations d'identification.
 
 +
-Pour tous les autres comptes, vous devez associer manuellement l'abonnement en répétant ces étapes.
+Pour tous les autres comptes ou organisations, vous devez associer manuellement l'abonnement en répétant ces étapes.
 
 *** Sélectionnez *Enregistrer*.
 +
@@ -185,7 +185,7 @@ image:screenshot_gcp_associate.gif["Capture d'écran de la page d'affectation d'
 
 --
 ====
-.Liens connexes
+.Informations associées
 * https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-capacity-licenses.html["Gérez les licences BYOL basées sur la capacité pour Cloud Volumes ONTAP"^]
 * https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-data-services-licenses.html["Gérez les licences BYOL pour les services de données BlueXP"^]
 * https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-aws-accounts.html["Gérez les informations d'identification et les abonnements AWS pour BlueXP"]

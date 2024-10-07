@@ -4,7 +4,7 @@
 
 . Dans le coin supérieur droit de la console BlueXP, sélectionnez l'icône Paramètres, puis sélectionnez *informations d'identification*.
 +
-image:screenshot_settings_icon.gif["Capture d'écran affichant l'icône Paramètres dans le coin supérieur droit de la console BlueXP."]
+image:screenshot-settings-icon-organization.png["Capture d'écran affichant l'icône Paramètres dans le coin supérieur droit de la console BlueXP."]
 
 . Sélectionnez *Ajouter des informations d'identification* et suivez les étapes de l'assistant.
 +

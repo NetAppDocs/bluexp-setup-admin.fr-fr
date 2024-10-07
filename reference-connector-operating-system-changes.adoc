@@ -29,6 +29,7 @@ Le connecteur BlueXP est pris en charge par les systèmes d'exploitation Linux s
 Installation manuelle::
 +
 --
+* Ubuntu 24.04 LTS
 * Ubuntu 22.04 LTS
 * Red Hat Enterprise Linux
 +
@@ -50,6 +51,7 @@ Déploiement à partir d'Azure Marketplace:: Ubuntu 22.04 LTS
 Installation manuelle::
 +
 --
+* Ubuntu 24.04 LTS
 * Ubuntu 22.04 LTS
 * Red Hat Enterprise Linux
 +
@@ -74,7 +76,7 @@ Installation manuelle::
 * Red Hat Enterprise Linux
 +
 ** 8.6 à 8.10
-** 9.1 à 9.3
+** 9.1 à 9.4
 
 
 
@@ -131,14 +133,6 @@ Si vous disposez d'un connecteur existant fonctionnant sur RHEL 7 ou CentOS 7, n
 . Installer un connecteur _neuf_.
 . Configurez le connecteur pour découvrir les environnements de travail gérés par l'ancien connecteur.
 
-
-
-
-== Prise en charge continue d'Ubuntu 22.04 LTS
-
-Le connecteur est toujours pris en charge sur Ubuntu 22.04 LTS et est le système d'exploitation par défaut pour les déploiements à partir de BlueXP et sur le marché.
-
-Docker Engine est requis pour ce système d'exploitation. Podman n'est pas pris en charge.
 
 
 

@@ -28,26 +28,64 @@ Un connecteur est un logiciel NetApp exécuté sur votre réseau cloud ou sur si
 Le logiciel du connecteur doit être exécuté sur un hôte qui répond à des exigences spécifiques du système d'exploitation, de la RAM, des ports, etc.
 
 Hôte dédié:: Le connecteur n'est pas pris en charge sur un hôte partagé avec d'autres applications. L'hôte doit être un hôte dédié.
-Systèmes d'exploitation pris en charge::
-+
---
-* Ubuntu 22.04 LTS
-* Red Hat Enterprise Linux
-+
-** 8.6 à 8.10
-** 9.1 à 9.4
-+
-L'hôte doit être enregistré auprès de Red Hat Subscription Management. S'il n'est pas enregistré, l'hôte ne peut pas accéder aux référentiels pour mettre à jour les logiciels tiers requis lors de l'installation du connecteur.
-
-+
-Le connecteur est pris en charge sur les versions en anglais de ces systèmes d'exploitation.
-
-
-
-
-
---
 Hyperviseur:: Un hyperviseur bare Metal ou hébergé certifié pour exécuter un système d'exploitation pris en charge est requis.
+[[podman-versions]]exigences relatives au système d'exploitation et aux conteneurs:: BlueXP  prend en charge le connecteur avec les systèmes d'exploitation suivants lors de l'utilisation de BlueXP  en mode standard ou en mode restreint. Un outil d'orchestration de conteneurs est nécessaire avant d'installer le connecteur.
++
+--
+[cols="2a,2a,2a,2a,2a"]
+|===
+| Système d'exploitation | Versions de OS prises en charge | Versions de connecteur prises en charge | Outil de conteneur requis | SELinux 
+
+
+ a| 
+Red Hat Enterprise Linux
+ a| 
+9.1 à 9.4
+
+8.6 à 8.10
+ a| 
+3.9.40 ou ultérieure avec BlueXP  en mode standard ou restreint
+ a| 
+Podman version 4.6.1 ou 4.9.4
+
+<<podman-configuration,Afficher les exigences de configuration de Podman>>.
+ a| 
+Pris en charge en mode d'application ou en mode d'autorisation
+
+
+
+ a| 
+Ubuntu
+ a| 
+24,04 LTS
+ a| 
+3.9.45 ou ultérieure avec BlueXP  en mode standard ou restreint
+ a| 
+Moteur Docker 26.0.0
+ a| 
+Non pris en charge
+
+
+
+ a| 
+22,04 LTS
+ a| 
+3.9.29 ou ultérieure
+ a| 
+Docker Engine 23.0.6 à 26.0.0
+
+26.0.0 est pris en charge avec les installations _New_ Connector 3.9.44 ou ultérieures
+ a| 
+Non pris en charge
+
+|===
+Remarques :
+
+* Le connecteur est pris en charge sur les versions en anglais de ces systèmes d'exploitation.
+* Pour RHEL, l'hôte doit être enregistré auprès de Red Hat Subscription Management. S'il n'est pas enregistré, l'hôte ne peut pas accéder aux référentiels pour mettre à jour les logiciels tiers requis lors de l'installation du connecteur.
+
+
+--
 CPU:: 8 cœurs ou 8 CPU virtuels
 RAM:: 32 GO
 Type de machine Google Cloud:: Type d'instance qui répond aux exigences relatives au CPU et à la RAM indiquées ci-dessus. Nous recommandons n2-standard-8.
@@ -68,40 +106,6 @@ Espace disque dans /var:: 20 Gio d'espace doit être disponible
 BlueXP requiert cet espace dans `/var` Car l'architecture de Docker ou Podman est conçue pour créer les conteneurs dans ce répertoire. Plus précisément, ils créeront des conteneurs dans le `/var/lib/containers/storage` répertoire. Les montages externes ou les liens symboliques ne fonctionnent pas pour cet espace.
 
 --
-Outil d'orchestration de conteneurs:: Selon votre système d'exploitation, Podman ou Docker Engine est requis avant d'installer le connecteur.
-+
---
-[[podman-versions]]
-* Podman est requis pour Red Hat Enterprise Linux.
-+
-Les conditions préalables suivantes doivent être remplies pour Podman :
-
-+
-** Podman version 4.6.1 ou 4.9.4 est requis
-** Le service podman.socket doit être activé et démarré
-** python3 doit être installé
-** Le package podman-compose version 1.0.6 doit être installé
-** Podman-compose doit être ajouté à la variable d'environnement PATH
-
-
-* Docker Engine est requis pour Ubuntu.
-+
-[cols="3*"]
-|===
-| Version du connecteur | Version minimale de Docker Engine | Version maximale de Docker Engine 
-
-
-| _Installation du nouveau_ connecteur à partir de 3.9.44 | 23.0.6 | 26.0.0 
-
-
-| Connecteurs créés avant la version 3.9.44 | 23.0.6 | 25.0.5 
-|===
-+
-https://docs.docker.com/engine/install/["Voir les instructions d'installation de Docker"^]
-
-
-
---
 
 
 
@@ -111,7 +115,13 @@ https://docs.docker.com/engine/install/["Voir les instructions d'installation de
 Selon votre système d'exploitation, Podman ou Docker Engine est requis avant d'installer le connecteur.
 
 * Podman est requis pour Red Hat Enterprise Linux 8 et 9.
++
+<<podman-versions,Affichez les versions de Podman prises en charge par BlueXP >>.
+
 * Docker Engine est requis pour Ubuntu.
++
+<<podman-versions,Afficher les versions de Docker Engine prises en charge par BlueXP >>.
+
 
 
 .Étapes
@@ -119,7 +129,13 @@ Selon votre système d'exploitation, Podman ou Docker Engine est requis avant d'
 ====
 .Podman
 --
-Installez une version prise en charge de Podman. <<podman-versions,Affichez les versions de Podman prises en charge par BlueXP >>.
+Procédez comme suit pour installer Podman et le configurer pour répondre aux exigences suivantes :
+
+* Le service podman.socket doit être activé et démarré
+* python3 doit être installé
+* Le package podman-compose version 1.0.6 doit être installé
+* Podman-compose doit être ajouté à la variable d'environnement PATH
+
 
 .Étapes
 . Retirez le package podman-docker s'il est installé sur l'hôte.
@@ -202,13 +218,10 @@ NOTE: À l'aide du `dnf install` La commande répond à l'exigence d'ajout de po
 --
 .Moteur Docker
 --
-Installez une version prise en charge de Docker Engine. <<podman-versions,Afficher les versions de Docker Engine prises en charge par BlueXP >>.
+Suivez la documentation de Docker pour installer Docker Engine.
 
 .Étapes
-. Installer Docker Engine.
-+
-https://docs.docker.com/engine/install/["Voir les instructions d'installation de Docker"^]
-
+. https://docs.docker.com/engine/install/["Voir les instructions d'installation de Docker"^]
 +
 Veillez à suivre les étapes d'installation d'une version spécifique de Docker Engine. L'installation de la dernière version installe une version de Docker que BlueXP ne prend pas en charge.
 
@@ -314,7 +327,7 @@ Pour mettre à niveau le connecteur et ses composants Docker.
 --
 
 
-Serveur proxy:: Si votre organisation nécessite le déploiement d'un serveur proxy pour tout le trafic Internet sortant, procurez-vous les informations suivantes sur votre proxy HTTP ou HTTPS. Vous devrez fournir ces informations pendant l'installation. Notez que BlueXP ne prend pas en charge les serveurs proxy transparents.
+Serveur proxy:: Si votre entreprise nécessite le déploiement d'un serveur proxy pour tout le trafic Internet sortant, procurez-vous les informations suivantes sur votre proxy HTTP ou HTTPS. Vous devrez fournir ces informations pendant l'installation. Notez que BlueXP ne prend pas en charge les serveurs proxy transparents.
 +
 --
 * Adresse IP
@@ -587,7 +600,7 @@ https://_ipaddress_[]
 
 . Une fois connecté, configurez le connecteur :
 +
-.. Spécifiez le compte BlueXP à associer au connecteur.
+.. Spécifiez l'organisation BlueXP  à associer au connecteur.
 .. Entrez un nom pour le système.
 .. Sous *exécutez-vous dans un environnement sécurisé ?* maintenez le mode restreint désactivé.
 +
@@ -599,7 +612,7 @@ Vous devez désactiver le mode restreint, car ces étapes décrivent l'utilisati
 
 
 .Résultat
-Le connecteur est maintenant installé et configuré avec votre compte BlueXP.
+Le connecteur est maintenant installé et configuré avec votre organisation BlueXP .
 
 Si vous avez des compartiments Google Cloud Storage dans le même compte Google Cloud où vous avez créé le connecteur, un environnement de travail Google Cloud Storage s'affiche automatiquement sur le canevas BlueXP. https://docs.netapp.com/us-en/bluexp-google-cloud-storage/index.html["Découvrez comment gérer le stockage Google Cloud à partir de BlueXP"^]
 

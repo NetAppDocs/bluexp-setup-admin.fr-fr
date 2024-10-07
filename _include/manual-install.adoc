@@ -103,7 +103,7 @@ https://_ipaddress_[]
 
 . Une fois connecté, configurez le connecteur :
 +
-.. Spécifiez le compte BlueXP à associer au connecteur.
+.. Spécifiez l'organisation BlueXP  à associer au connecteur.
 .. Entrez un nom pour le système.
 .. Sous *exécutez-vous dans un environnement sécurisé ?* maintenez le mode restreint désactivé.
 +
@@ -115,4 +115,4 @@ Vous devez désactiver le mode restreint, car ces étapes décrivent l'utilisati
 
 
 .Résultat
-Le connecteur est maintenant installé et configuré avec votre compte BlueXP.
+Le connecteur est maintenant installé et configuré avec votre organisation BlueXP .

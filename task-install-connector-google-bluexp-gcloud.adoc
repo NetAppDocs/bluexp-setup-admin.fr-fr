@@ -105,7 +105,7 @@ link:reference-networking-saas-console.html["Consultez la liste des terminaux co
 --
 
 
-Serveur proxy:: Si votre organisation nécessite le déploiement d'un serveur proxy pour tout le trafic Internet sortant, procurez-vous les informations suivantes sur votre proxy HTTP ou HTTPS. Vous devrez fournir ces informations pendant l'installation. Notez que BlueXP ne prend pas en charge les serveurs proxy transparents.
+Serveur proxy:: Si votre entreprise nécessite le déploiement d'un serveur proxy pour tout le trafic Internet sortant, procurez-vous les informations suivantes sur votre proxy HTTP ou HTTPS. Vous devrez fournir ces informations pendant l'installation. Notez que BlueXP ne prend pas en charge les serveurs proxy transparents.
 +
 --
 * Adresse IP
@@ -529,9 +529,9 @@ https://_ipaddress_[]
 
 . Une fois connecté, configurez le connecteur :
 +
-.. Spécifiez le compte BlueXP à associer au connecteur.
+.. Spécifiez l'organisation BlueXP  à associer au connecteur.
 +
-link:concept-netapp-accounts.html["Découvrez les comptes BlueXP"].
+link:concept-identity-and-access-management.html["En savoir plus sur la gestion des identités et des accès BlueXP "].
 
 .. Entrez un nom pour le système.
 
@@ -539,7 +539,7 @@ link:concept-netapp-accounts.html["Découvrez les comptes BlueXP"].
 
 
 .Résultat
-Le connecteur est maintenant installé et configuré avec votre compte BlueXP.
+Le connecteur est maintenant installé et configuré avec votre organisation BlueXP .
 
 Ouvrez un navigateur Web et accédez au https://console.bluexp.netapp.com["Console BlueXP"^] Pour commencer à utiliser le connecteur avec BlueXP.
 

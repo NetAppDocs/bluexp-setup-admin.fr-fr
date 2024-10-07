@@ -27,7 +27,7 @@ Imaginons par exemple que vous travaillez dans un environnement multicloud. Vous
 .Étape
 . Sélectionnez la liste déroulante *Connector*, sélectionnez un autre connecteur, puis sélectionnez *Switch*.
 +
-image:screenshot_connector_switch.gif["Capture d'écran affichant l'icône du connecteur dans l'en-tête et l'action basculer."]
+image:screenshot-connector-switch.png["Capture d'écran affichant l'icône du connecteur dans l'en-tête et l'action basculer."]
 
 
 

@@ -47,7 +47,7 @@ Si les systèmes Cloud Volumes ONTAP ne disposent pas d'une connexion Internet s
 --
 
 
-Serveur proxy:: Si votre organisation nécessite le déploiement d'un serveur proxy pour tout le trafic Internet sortant, procurez-vous les informations suivantes sur votre proxy HTTP ou HTTPS. Vous devrez fournir ces informations pendant l'installation. Notez que BlueXP ne prend pas en charge les serveurs proxy transparents.
+Serveur proxy:: Si votre entreprise nécessite le déploiement d'un serveur proxy pour tout le trafic Internet sortant, procurez-vous les informations suivantes sur votre proxy HTTP ou HTTPS. Vous devrez fournir ces informations pendant l'installation. Notez que BlueXP ne prend pas en charge les serveurs proxy transparents.
 +
 --
 * Adresse IP

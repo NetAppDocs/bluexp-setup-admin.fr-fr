@@ -22,7 +22,7 @@ Si BlueXP  inhibe le flux du trafic, de la communication et des données lorsqu
 
 == Présentation
 
-BlueXP propose les modes de déploiement suivants pour votre compte. Chaque mode varie en fonction des exigences de connectivité sortante, de l'emplacement de déploiement, du processus d'installation, de la méthode d'authentification, des services de données et de stockage disponibles et des méthodes de facturation.
+BlueXP  propose trois modes de déploiement. Chaque mode varie en fonction des exigences de connectivité sortante, de l'emplacement de déploiement, du processus d'installation, de la méthode d'authentification, des services de données et de stockage disponibles et des méthodes de facturation.
 
 Mode standard:: BlueXP est accessible en tant que service cloud à partir de la console web. Selon les services BlueXP que vous prévoyez d'utiliser, un administrateur BlueXP crée un ou plusieurs connecteurs pour gérer les données au sein de votre environnement de cloud hybride.
 +
@@ -407,7 +407,13 @@ https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-protection-journey.
 | Mise en cache du volume | Non | Non 
 
 
-.5+| *Caractéristiques* | Informations d'identification | Oui. | Oui. 
+.7+| *Caractéristiques* | Gestion des identités et des accès BlueXP  | Non | Non 
+
+
+| Comptes BlueXP | Oui. | Oui. 
+
+
+| Informations d'identification | Oui. | Oui. 
 
 
 | Comptes NSS | Oui. | Non 

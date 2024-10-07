@@ -4,7 +4,7 @@ permalink: concept-federation.html
 keywords: identity federation, federation, federated identity, set up identity federation, set up federated connection, federated connection 
 summary: 'la fédération des identités permet l"authentification unique avec BlueXP afin que les utilisateurs puissent se connecter à l"aide d"identifiants à partir de votre identité d"entreprise. Pour commencer, découvrez le fonctionnement de la fédération des identités avec BlueXP, puis passez en revue un aperçu du processus de configuration.' 
 ---
-= Utilisation de la fédération des identités avec BlueXP
+= Activez l'authentification unique en utilisant la fédération des identités avec BlueXP 
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

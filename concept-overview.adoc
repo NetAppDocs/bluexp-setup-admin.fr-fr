@@ -25,14 +25,14 @@ La plateforme BlueXP offre quatre piliers fondamentaux pour la gestion des donn�
 Stockage:: Découvrez, déployez et gérez le stockage, que ce soit dans AWS, Azure, Google Cloud ou sur site.
 +
 --
-* Configuration et utilisation https://bluexp.netapp.com/ontap-cloud["Cloud Volumes ONTAP"^] pour une gestion efficace des données multiprotocole sur l'ensemble des clouds.
 * Configurez et utilisez les services cloud de stockage de fichiers :
 +
 ** https://bluexp.netapp.com/azure-netapp-files["Azure NetApp Files"^]
-** https://bluexp.netapp.com/fsx-for-ontap["Amazon FSX pour ONTAP"^]
+** https://bluexp.netapp.com/fsx-for-ontap["Amazon FSX pour NetApp ONTAP"^]
 ** https://bluexp.netapp.com/cloud-volumes-service-for-gcp["Cloud Volumes Service pour Google Cloud"^]
 
 
+* Configuration et utilisation https://bluexp.netapp.com/ontap-cloud["Cloud Volumes ONTAP"^] pour une gestion efficace des données multiprotocole sur l'ensemble des clouds.
 * Détection et gestion https://bluexp.netapp.com/netapp-on-premises["le stockage sur site"^]:
 +
 ** Systèmes E-Series
@@ -43,7 +43,7 @@ Stockage:: Découvrez, déployez et gérez le stockage, que ce soit dans AWS, Az
 
 
 --
-Mobilité:: Déplacez vos données là où vous en avez besoin grâce à la synchronisation, la copie, le Tiering et la mise en cache.
+Mobilité:: Déplacez vos données là où vous en avez besoin grâce à la synchronisation, la copie et le Tiering.
 +
 --
 * https://bluexp.netapp.com/cloud-sync-service["Copie et synchronisation"^]
@@ -55,7 +55,9 @@ La protection:: Utilisez des mécanismes de protection automatisés pour protég
 +
 --
 * https://bluexp.netapp.com/cloud-backup["Sauvegarde et restauration"^]
+* https://bluexp.netapp.com/disaster-recovery["Reprise après incident"^]
 * https://bluexp.netapp.com/replication["La réplication"^]
+* https://bluexp.netapp.com/ransomware-protection["Protection par ransomware"^]
 
 
 --
@@ -71,7 +73,7 @@ Analyse et contrôle:: Utilisez des outils pour surveiller, cartographier et opt
 --
 
 
-https://bluexp.netapp.com/["Découvrez comment utiliser BlueXP pour aider votre entreprise"^]
+https://bluexp.netapp.com/["Découvrez comment utiliser BlueXP  pour gérer les données dans l'ensemble de votre environnement multicloud hybride"^]
 
 
 
@@ -89,35 +91,45 @@ Le prix de BlueXP dépend des services que vous prévoyez d'utiliser. https://bl
 
 == Fonctionnement de BlueXP
 
-BlueXP inclut une console web fournie via la couche SaaS, des comptes fournissant une colocation, et des connecteurs qui gèrent les environnements de travail et permettent les services cloud BlueXP.
+BlueXP  comprend une console Web fournie via la couche SaaS, un système de gestion des ressources et des accès, ainsi que des connecteurs qui gèrent les environnements de travail et activent les services clouds BlueXP .
 
 
 
 === Services à la demande
 
-BlueXP est accessible via un https://console.bluexp.netapp.com["console web"^] Et les API. Cette expérience SaaS vous permet d'accéder automatiquement aux dernières fonctionnalités dès leur sortie et de basculer facilement entre vos comptes BlueXP et les connecteurs.
+BlueXP  est accessible via https://console.bluexp.netapp.com["console web"^] les API et. Cette expérience SaaS vous permet d'accéder automatiquement aux dernières fonctionnalités dès leur sortie et de basculer facilement entre vos organisations, projets et connecteurs BlueXP .
 
 
 
-=== Compte BlueXP
+=== Gestion des identités et des accès BlueXP 
 
-Lorsque vous vous connectez à BlueXP pour la première fois, vous êtes invité à créer un compte _BlueXP_. Ce compte fournit la colocation et vous permet d'organiser les utilisateurs et les ressources dans des _espaces de travail_ isolés.
+Le modèle de gestion des accès et des identités BlueXP  offre une gestion granulaire des ressources et des autorisations :
 
-link:concept-netapp-accounts.html["En savoir plus sur les comptes"].
+* Une _organisation_ de haut niveau vous permet de gérer l'accès à vos différents _projets_
+* _Dossiers_ vous permet de regrouper des projets associés
+* La gestion des ressources vous permet d'associer une ressource à un ou plusieurs dossiers ou projets
+* La gestion des accès vous permet d'attribuer un rôle aux membres à différents niveaux de la hiérarchie de l'organisation
+
+
+BlueXP  IAM est pris en charge lorsque BlueXP  est utilisé en mode standard. Si vous utilisez BlueXP  en mode restreint ou privé, vous utiliserez un _compte_ BlueXP  pour gérer les espaces de travail, les utilisateurs et les ressources.
+
+* link:concept-identity-and-access-management.html["En savoir plus sur BlueXP  IAM"]
+* link:concept-netapp-accounts.html["Découvrez les comptes BlueXP"]
+
 
 
 
 === Connecteurs
 
-Vous n'avez pas besoin d'un connecteur pour démarrer avec BlueXP, mais vous devez créer un connecteur pour déverrouiller toutes les fonctionnalités et tous les services BlueXP. Un connecteur vous permet de gérer les ressources et les processus dans vos environnements sur site et cloud. Il est nécessaire de gérer les environnements de travail (par exemple, les clusters ONTAP Cloud Volumes ONTAP et sur site) et d'utiliser de nombreux services de données BlueXP.
+Vous n'avez pas besoin d'un connecteur pour démarrer avec BlueXP, mais vous devez créer un connecteur pour déverrouiller toutes les fonctionnalités et tous les services BlueXP. Un connecteur vous permet de gérer les ressources et les processus dans vos environnements sur site et cloud. Il est nécessaire de gérer les environnements de travail (par exemple, Cloud Volumes ONTAP) et d'utiliser de nombreux services BlueXP .
 
 link:concept-connectors.html["En savoir plus sur les connecteurs"].
 
 
 
-=== Mode restreint et mode privé
+=== Modes de déploiement
 
-BlueXP est également pris en charge dans les environnements soumis à des restrictions de sécurité et de connectivité. Vous pouvez utiliser _restricted mode_ ou _private mode_ pour limiter la connectivité sortante à la couche SaaS de BlueXP.
+BlueXP  est pris en charge dans les environnements soumis à des restrictions de sécurité et de connectivité. Vous pouvez utiliser _restricted mode_ ou _private mode_ pour limiter la connectivité sortante à la couche SaaS de BlueXP.
 
 link:concept-modes.html["En savoir plus sur les modes de déploiement BlueXP"].
 

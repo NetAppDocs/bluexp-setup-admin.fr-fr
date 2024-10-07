@@ -22,13 +22,13 @@ Vous serez redirigé vers le site Web BlueXP.
 
 .. À partir de la page *attribution d'abonnement* :
 +
-*** Sélectionnez les comptes BlueXP avec lesquels vous souhaitez associer cet abonnement.
-*** Dans le champ *remplacer l'abonnement existant*, choisissez si vous souhaitez remplacer automatiquement l'abonnement existant pour un compte par ce nouvel abonnement.
+*** Sélectionnez les organisations ou les comptes BlueXP  auxquels vous souhaitez associer cet abonnement.
+*** Dans le champ *remplacer l'abonnement existant*, choisissez si vous souhaitez remplacer automatiquement l'abonnement existant pour une organisation ou un compte par ce nouvel abonnement.
 +
-BlueXP remplace l'abonnement existant pour toutes les informations d'identification du compte par ce nouvel abonnement. Si un ensemble d'informations d'identification n'a jamais été associé à un abonnement, ce nouvel abonnement ne sera pas associé à ces informations d'identification.
+BlueXP  remplace l'abonnement existant pour tous les identifiants de l'entreprise ou du compte par ce nouvel abonnement. Si un ensemble d'informations d'identification n'a jamais été associé à un abonnement, ce nouvel abonnement ne sera pas associé à ces informations d'identification.
 
 +
-Pour tous les autres comptes, vous devez associer manuellement l'abonnement en répétant ces étapes.
+Pour tous les autres comptes ou organisations, vous devez associer manuellement l'abonnement en répétant ces étapes.
 
 *** Sélectionnez *Enregistrer*.
 +

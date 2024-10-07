@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: task-adding-nss-accounts.html 
 keywords: adding, creating, netapp support site account, nss, update account, update nss account, update nss credentials, delete nss account, remove nss account, change working environment, working environment nss 
-summary: 'Associez un compte du site de support NetApp à votre compte BlueXP pour activer les workflows clés pour Cloud Volumes ONTAP. Ces informations d"identification NSS sont associées à l"ensemble du compte BlueXP.' 
+summary: 'Associez un compte du site de support NetApp à votre organisation ou à votre compte BlueXP  pour activer les workflows clés pour Cloud Volumes ONTAP. Ces informations d"identification NSS sont associées à l"ensemble de l"organisation ou du compte BlueXP .' 
 ---
-= Gérez les identifiants NSS associés à un compte BlueXP
+= Gérez les informations d'identification NSS associées à une organisation ou un compte BlueXP 
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,16 +14,23 @@ summary: 'Associez un compte du site de support NetApp à votre compte BlueXP po
 
 
 [role="lead"]
-Associez un compte du site de support NetApp à votre compte BlueXP pour activer les workflows clés pour Cloud Volumes ONTAP. Ces informations d'identification NSS sont associées à l'ensemble du compte BlueXP.
+Associez un compte du site de support NetApp à votre organisation ou à votre compte BlueXP  pour activer les workflows clés pour Cloud Volumes ONTAP. Ces informations d'identification NSS sont associées à l'ensemble de l'organisation ou du compte BlueXP .
+
+BlueXP  prend également en charge l'association d'un compte NSS par compte d'utilisateur BlueXP . link:task-manage-user-credentials.html["Découvrez comment gérer les identifiants de niveau utilisateur"].
 
 
-NOTE: BlueXP prend également en charge l'association d'un compte NSS par utilisateur BlueXP. link:task-manage-user-credentials.html["Découvrez comment gérer les identifiants de niveau utilisateur"].
+TIP: Si vous utilisez BlueXP  en mode standard, vous disposez d'une organisation _BlueXP _ que vous gérez à l'aide de la gestion des identités et des accès BlueXP  (IAM). Mais si vous utilisez BlueXP  en mode restreint ou privé, vous aurez un compte _BlueXP _.
+
+* link:concept-modes.html["Découvrez les modes de déploiement BlueXP"]
+* link:concept-identity-and-access-management.html["En savoir plus sur la gestion des identités et des accès BlueXP "]
+* link:concept-netapp-accounts.html["Découvrez les comptes BlueXP"]
+
 
 
 
 == Présentation
 
-Pour activer les tâches suivantes dans BlueXP, vous devez associer les informations d'identification du site de support NetApp à votre ID de compte BlueXP :
+Vous devez associer les informations d'identification du site de support NetApp à votre numéro de série de compte BlueXP  spécifique pour activer les tâches suivantes dans BlueXP  :
 
 * Déploiement d'Cloud Volumes ONTAP avec modèle BYOL (Bring Your Own License)
 +
@@ -36,13 +43,13 @@ Vous devez fournir votre compte NSS afin d'activer le support pour votre systèm
 * Mise à niveau du logiciel Cloud Volumes ONTAP vers la dernière version
 
 
-Ces identifiants sont associés à votre ID de compte BlueXP. Les utilisateurs qui appartiennent au compte BlueXP peuvent accéder à ces informations d'identification depuis *support > gestion NSS*.
+Ces informations d'identification sont associées à votre numéro de série de compte BlueXP  spécifique. Les utilisateurs qui appartiennent à l'organisation ou au compte BlueXP  peuvent accéder à ces informations d'identification depuis *support > gestion NSS*.
 
 
 
 == Ajouter un compte NSS
 
-Le tableau de bord de support vous permet d'ajouter et de gérer vos comptes du site de support NetApp pour les utiliser avec BlueXP au niveau de votre compte BlueXP.
+Le tableau de bord de support vous permet d'ajouter et de gérer vos comptes du site de support NetApp à utiliser avec BlueXP  au niveau de l'organisation ou du compte BlueXP .
 
 * Si vous avez un compte au niveau du client, vous pouvez ajouter un ou plusieurs comptes NSS.
 * Si vous avez un compte partenaire ou revendeur, vous pouvez ajouter un ou plusieurs comptes NSS, mais ils ne peuvent pas être ajoutés en même temps que les comptes au niveau du client.

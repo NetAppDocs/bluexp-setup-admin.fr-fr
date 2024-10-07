@@ -5,7 +5,13 @@
 Selon votre système d'exploitation, Podman ou Docker Engine est requis avant d'installer le connecteur.
 
 * Podman est requis pour Red Hat Enterprise Linux 8 et 9.
++
+<<podman-versions,Affichez les versions de Podman prises en charge par BlueXP >>.
+
 * Docker Engine est requis pour Ubuntu.
++
+<<podman-versions,Afficher les versions de Docker Engine prises en charge par BlueXP >>.
+
 
 
 .Étapes
@@ -13,7 +19,13 @@ Selon votre système d'exploitation, Podman ou Docker Engine est requis avant d'
 ====
 .Podman
 --
-Installez une version prise en charge de Podman. <<podman-versions,Affichez les versions de Podman prises en charge par BlueXP >>.
+Procédez comme suit pour installer Podman et le configurer pour répondre aux exigences suivantes :
+
+* Le service podman.socket doit être activé et démarré
+* python3 doit être installé
+* Le package podman-compose version 1.0.6 doit être installé
+* Podman-compose doit être ajouté à la variable d'environnement PATH
+
 
 .Étapes
 . Retirez le package podman-docker s'il est installé sur l'hôte.
@@ -96,13 +108,10 @@ NOTE: À l'aide du `dnf install` La commande répond à l'exigence d'ajout de po
 --
 .Moteur Docker
 --
-Installez une version prise en charge de Docker Engine. <<podman-versions,Afficher les versions de Docker Engine prises en charge par BlueXP >>.
+Suivez la documentation de Docker pour installer Docker Engine.
 
 .Étapes
-. Installer Docker Engine.
-+
-https://docs.docker.com/engine/install/["Voir les instructions d'installation de Docker"^]
-
+. https://docs.docker.com/engine/install/["Voir les instructions d'installation de Docker"^]
 +
 Veillez à suivre les étapes d'installation d'une version spécifique de Docker Engine. L'installation de la dernière version installe une version de Docker que BlueXP ne prend pas en charge.
 

@@ -110,7 +110,7 @@ Pour mettre à niveau le connecteur et ses composants Docker.
 --
 
 
-Serveur proxy:: Si votre organisation nécessite le déploiement d'un serveur proxy pour tout le trafic Internet sortant, procurez-vous les informations suivantes sur votre proxy HTTP ou HTTPS. Vous devrez fournir ces informations pendant l'installation. Notez que BlueXP ne prend pas en charge les serveurs proxy transparents.
+Serveur proxy:: Si votre entreprise nécessite le déploiement d'un serveur proxy pour tout le trafic Internet sortant, procurez-vous les informations suivantes sur votre proxy HTTP ou HTTPS. Vous devrez fournir ces informations pendant l'installation. Notez que BlueXP ne prend pas en charge les serveurs proxy transparents.
 +
 --
 * Adresse IP
@@ -433,7 +433,7 @@ https://_ipaddress_[]
 
 . Une fois connecté, configurez le connecteur :
 +
-.. Spécifiez le compte BlueXP à associer au connecteur.
+.. Spécifiez l'organisation BlueXP  à associer au connecteur.
 .. Entrez un nom pour le système.
 .. Sous *exécutez-vous dans un environnement sécurisé ?* maintenez le mode restreint désactivé.
 +
@@ -445,7 +445,7 @@ Vous devez désactiver le mode restreint, car ces étapes décrivent l'utilisati
 
 
 .Résultat
-Le connecteur est maintenant installé et configuré avec votre compte BlueXP.
+Le connecteur est maintenant installé et configuré avec votre organisation BlueXP .
 
 Si vous disposez d'un stockage Azure Blob dans le même abonnement Azure que celui sur lequel vous avez créé le connecteur, un environnement de travail du stockage Azure Blob apparaît automatiquement sur le canevas BlueXP. https://docs.netapp.com/us-en/bluexp-blob-storage/index.html["Découvrez comment gérer le stockage Azure Blob à partir de BlueXP"^]
 
@@ -499,7 +499,7 @@ Accédez au https://console.bluexp.netapp.com["Console BlueXP"^] Pour commencer 
 .Étapes
 . Dans le coin supérieur droit de la console BlueXP, sélectionnez l'icône Paramètres, puis sélectionnez *informations d'identification*.
 +
-image:screenshot_settings_icon.gif["Capture d'écran affichant l'icône Paramètres dans le coin supérieur droit de la console BlueXP."]
+image:screenshot-settings-icon-organization.png["Capture d'écran affichant l'icône Paramètres dans le coin supérieur droit de la console BlueXP."]
 
 . Sélectionnez *Ajouter des informations d'identification* et suivez les étapes de l'assistant.
 +
