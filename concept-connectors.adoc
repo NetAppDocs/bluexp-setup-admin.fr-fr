@@ -60,6 +60,7 @@ https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html["E
 
 Lorsque vous utilisez BlueXP en mode standard, un connecteur est requis pour les fonctionnalités et les services suivants dans BlueXP :
 
+* Alertes
 * Fonctions de gestion d'Amazon FSX pour ONTAP
 * Le stockage Amazon S3
 * Stockage Azure Blob
