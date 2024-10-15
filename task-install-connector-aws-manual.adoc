@@ -101,7 +101,7 @@ Limite de sauts de réponse lors de l'utilisation d'IMDSv2:: Si IMDSv2 est activ
 Espace disque dans /opt:: 100 Gio d'espace doit être disponible
 +
 --
-Utilisations de BlueXP `/opt` pour installer le `/opt/application/netapp` et son contenu.
+BlueXP  utilise `/opt` pour installer le `/opt/application/netapp` répertoire et son contenu.
 
 --
 Espace disque dans /var:: 20 Gio d'espace doit être disponible

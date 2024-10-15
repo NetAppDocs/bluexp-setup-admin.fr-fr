@@ -3826,7 +3826,6 @@ Cette partie du tableau répertorie la prise en charge de la gestion de l'enviro
   <block id="29e66847d781138b54aa8aa55b70fb20" category="list-text"><block ref="29e66847d781138b54aa8aa55b70fb20" category="inline-link-rx"></block></block>
   <block id="3eb0b1a8f5c259c6baffd4acbc27dc9b" category="paragraph">Le connecteur est désormais pris en charge sur les hôtes exécutant les versions suivantes de Red Hat Enterprise Linux avec des installations _New_ Connector lors de l'utilisation de BlueXP en mode standard ou en mode restreint :</block>
   <block id="deb2d604498906b6056e668d8a921bc6" category="paragraph">La version 3.9.41 est disponible pour le mode standard et le mode restreint.</block>
-  <block id="4fe47b0a38e9cc2f08e1ebd6f66fc340" category="paragraph">Utilisations de BlueXP<block ref="68ab1268abb7e5f5688810968df97d6b" prefix=" " category="inline-code"></block> pour installer le<block ref="a23365e1ae67810a7446b65d3be9a5d0" prefix=" " category="inline-code"></block> et son contenu.</block>
   <block id="6625b96831c913865dcc04d700d00a02" category="paragraph">BlueXP requiert cet espace dans<block ref="ca905eb4a00d34150573153a09e2e79b" prefix=" " category="inline-code"></block> Car l'architecture de Docker ou Podman est conçue pour créer les conteneurs dans ce répertoire. Plus précisément, ils créeront des conteneurs dans le<block ref="af5045a6e72956f67984a97cd3e8b9da" prefix=" " category="inline-code"></block> répertoire. Les montages externes ou les liens symboliques ne fonctionnent pas pour cet espace.</block>
   <block id="06cfdcafd69514150ade31a714fa78db" category="list-text">Un hyperviseur bare Metal ou hébergé certifié pour exécuter un système d'exploitation pris en charge est requis.</block>
   <block id="1c0a2f304cb94000fe79271bae1284df" category="list-text">Docker Engine est requis pour Ubuntu.</block>
@@ -4272,8 +4271,6 @@ Cette partie du tableau répertorie la prise en charge de la gestion de l'enviro
   <block id="befeea17a6d7eca164cf128f9bffe000" category="paragraph">BlueXP  prend en charge plusieurs rôles prédéfinis que vous pouvez attribuer aux membres de votre organisation.</block>
   <block id="2b01a456faf456f22f55be4aabe17b53" category="inline-link-macro">En savoir plus sur les rôles prédéfinis IAM</block>
   <block id="5939586d23777de38b1394aad3c31735" category="paragraph"><block ref="1d6a3b55f851d6a1155ab766483f6eac" category="inline-link-macro-rx"></block>.</block>
-  <block id="96798f05426bc55e0ae4e4719f68dc28" category="section-title">Rôles personnalisés</block>
-  <block id="a38d248b1e1740da2f4eccb2dc9492be" category="paragraph">Les rôles personnalisés ne sont pas pris en charge pour le moment.</block>
   <block id="1f2652079b5030c3e1f5c5b95701a71c" category="paragraph">Lorsqu'un _administrateur d'organisation_ crée un connecteur, BlueXP  associe automatiquement ce connecteur à l'organisation et au projet actuellement sélectionné. L'administrateur _Organisation_ a automatiquement accès à ce connecteur depuis n'importe quel endroit de l'organisation. Mais si d'autres membres de votre organisation ont des rôles différents, ces membres peuvent uniquement accéder à ce connecteur à partir du projet dans lequel il a été créé, sauf si vous associez ce connecteur à d'autres projets.</block>
   <block id="a84eaa1aafc5282e553ddc52e74d77b9" category="paragraph">Vous pouvez rendre un connecteur disponible pour une utilisation avec un autre projet dans les cas suivants :</block>
   <block id="9ce6bd5f8ae0c74108c66519e8a1d5dd" category="list-text">Vous souhaitez autoriser les membres de votre organisation à utiliser un connecteur existant pour créer ou découvrir des environnements de travail supplémentaires dans un autre projet</block>
@@ -4857,4 +4854,8 @@ Cette partie du tableau répertorie la prise en charge de la gestion de l'enviro
   <block id="f08676e8a1e41f582ac0537747703230" category="paragraph"><block ref="f08676e8a1e41f582ac0537747703230" category="inline-image-macro-rx" type="image"></block></block>
   <block id="4d3e366c7ef57f5c2037203fa77c103c" category="list-text"><block ref="4d3e366c7ef57f5c2037203fa77c103c" category="inline-link-rx"></block></block>
   <block id="6b7b64b4bdd6080baf05e2c37372258a" category="list-text"><block ref="6b7b64b4bdd6080baf05e2c37372258a" category="inline-link-rx"></block></block>
+  <block id="f7d8f0ba412660e43ffeb2e82b61e167" category="paragraph">BlueXP  utilise<block ref="68ab1268abb7e5f5688810968df97d6b" prefix=" " category="inline-code"></block> pour installer le<block ref="a23365e1ae67810a7446b65d3be9a5d0" prefix=" " category="inline-code"></block> répertoire et son contenu.</block>
+  <block id="a1fe52ea216874a5214f41ae7e5bbd63" category="section-title">10 octobre 2024</block>
+  <block id="9071c576479353103106b574601bd920" category="section-title">Connecteur 3.9.45 patch</block>
+  <block id="d8497d3046f15c93d3e5c40856129331" category="paragraph">Ce correctif inclut des correctifs.</block>
 </blocks>

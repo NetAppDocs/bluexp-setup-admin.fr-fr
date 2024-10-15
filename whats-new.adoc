@@ -18,6 +18,16 @@ Découvrez les nouveautés des fonctionnalités d'administration BlueXP  : gest
 
 
 
+== 10 octobre 2024
+
+
+
+=== Connecteur 3.9.45 patch
+
+Ce correctif inclut des correctifs.
+
+
+
 == 7 octobre 2024
 
 

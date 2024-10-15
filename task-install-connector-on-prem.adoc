@@ -91,7 +91,7 @@ RAM:: 32 GO
 Espace disque dans /opt:: 100 Gio d'espace doit être disponible
 +
 --
-Utilisations de BlueXP `/opt` pour installer le `/opt/application/netapp` et son contenu.
+BlueXP  utilise `/opt` pour installer le `/opt/application/netapp` répertoire et son contenu.
 
 --
 Espace disque dans /var:: 20 Gio d'espace doit être disponible

@@ -170,12 +170,6 @@ link:reference-iam-predefined-roles.html["En savoir plus sur les rôles prédéf
 
 
 
-==== Rôles personnalisés
-
-Les rôles personnalisés ne sont pas pris en charge pour le moment.
-
-
-
 === Connecteurs
 
 Lorsqu'un _administrateur d'organisation_ crée un connecteur, BlueXP  associe automatiquement ce connecteur à l'organisation et au projet actuellement sélectionné. L'administrateur _Organisation_ a automatiquement accès à ce connecteur depuis n'importe quel endroit de l'organisation. Mais si d'autres membres de votre organisation ont des rôles différents, ces membres peuvent uniquement accéder à ce connecteur à partir du projet dans lequel il a été créé, sauf si vous associez ce connecteur à d'autres projets.
