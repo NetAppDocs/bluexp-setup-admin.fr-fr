@@ -3889,7 +3889,6 @@ Cette partie du tableau répertorie la prise en charge de la gestion de l'enviro
   <block id="3baace5508f5436415356f7f1c718d50" category="list-text">*RAM*: 32 GO</block>
   <block id="e5ee5282a10eef25059e919331c8ea5e" category="list-text">*Type de machine*: Nous recommandons n2-standard-8.</block>
   <block id="4ea5b82f34f27448cadea5ae611c81ba" category="list-text">*Choisissez un type d'instance* : en fonction de la disponibilité de la région, choisissez l'un des types d'instance pris en charge (t3.2xlarge est recommandé).</block>
-  <block id="d44724be897a214586cbd2c8b32fb39d" category="list-text">Pour l'instant, des notifications sont envoyées par e-mail pour les fonctionnalités et services BlueXP  suivants : connecteur, portefeuille digital BlueXP , copie et synchronisation BlueXP , sauvegarde et restauration BlueXP  et Tiering BlueXP . D'autres services seront ajoutés dans les prochaines versions.</block>
   <block id="34c56ac41d4e5a004cc5b7c87b0e2d87" category="section-title">Connecteur 3.9.43</block>
   <block id="05797637e0cfec59d8a5478eba1acfdf" category="paragraph">La version 3.9.43 est disponible pour le mode standard et le mode restreint.</block>
   <block id="45c4fb485dfa6a5d0af975aa668648a9" category="section-title">Mise à jour des exigences en termes de CPU et de RAM</block>
@@ -4858,4 +4857,5 @@ Cette partie du tableau répertorie la prise en charge de la gestion de l'enviro
   <block id="a1fe52ea216874a5214f41ae7e5bbd63" category="section-title">10 octobre 2024</block>
   <block id="9071c576479353103106b574601bd920" category="section-title">Connecteur 3.9.45 patch</block>
   <block id="d8497d3046f15c93d3e5c40856129331" category="paragraph">Ce correctif inclut des correctifs.</block>
+  <block id="ab99e6e0b893c9db1dce5c6dc26245bc" category="list-text">Les notifications sont envoyées par e-mail pour les fonctionnalités et services BlueXP  suivants : le connecteur, le portefeuille digital BlueXP , la copie et la synchronisation BlueXP , ainsi que la sauvegarde et la restauration BlueXP .</block>
 </blocks>

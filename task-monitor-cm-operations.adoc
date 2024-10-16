@@ -137,7 +137,7 @@ Vous pouvez envoyer par e-mail des types de notifications spécifiques afin de v
 
 [NOTE]
 ====
-* Pour l'instant, des notifications sont envoyées par e-mail pour les fonctionnalités et services BlueXP  suivants : connecteur, portefeuille digital BlueXP , copie et synchronisation BlueXP , sauvegarde et restauration BlueXP  et Tiering BlueXP . D'autres services seront ajoutés dans les prochaines versions.
+* Les notifications sont envoyées par e-mail pour les fonctionnalités et services BlueXP  suivants : le connecteur, le portefeuille digital BlueXP , la copie et la synchronisation BlueXP , ainsi que la sauvegarde et la restauration BlueXP .
 * L'envoi de notifications par e-mail n'est pas pris en charge lorsque le connecteur est installé sur un site sans accès à Internet.
 
 
