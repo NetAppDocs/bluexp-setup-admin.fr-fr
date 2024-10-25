@@ -121,7 +121,11 @@ BlueXP  prend désormais en charge le connecteur avec les hôtes Red Hat Enterp
 
 La prise en charge de SELinux commence avec la version 3.9.40 pour le mode standard et le mode restreint et avec la version 3.9.42 pour le mode privé.
 
-BlueXP  ne prend pas en charge SELinux avec les hôtes Ubuntu.
+Notez les limites suivantes :
+
+* BlueXP  ne prend pas en charge SELinux avec les hôtes Ubuntu.
+* Gestion des systèmes Cloud Volumes ONTAP elle n'est pas prise en charge par les connecteurs sur lesquels SELinux est activé sur le système d'exploitation.
+
 
 https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/8/html/using_selinux/getting-started-with-selinux_using-selinux["En savoir plus sur SELinux"^]
 

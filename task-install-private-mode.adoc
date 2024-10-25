@@ -14,7 +14,7 @@ summary: 'Déployez le connecteur en mode privé pour utiliser BlueXP sans conne
 
 
 [role="lead"]
-Déployez le connecteur en mode privé pour utiliser BlueXP sans connectivité sortante à la couche SaaS BlueXP. Pour commencer, installez le connecteur, configurez BlueXP en accédant à l'interface utilisateur exécutée sur le connecteur, puis fournissez les autorisations cloud que vous avez précédemment configurées.
+Déployez le connecteur en mode privé afin de pouvoir utiliser BlueXP  sans connexion sortante à la couche SaaS (logiciel en tant que service) BlueXP . Pour commencer, installez le connecteur, configurez BlueXP en accédant à l'interface utilisateur exécutée sur le connecteur, puis fournissez les autorisations cloud que vous avez précédemment configurées.
 
 
 

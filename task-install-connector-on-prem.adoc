@@ -50,7 +50,7 @@ Podman version 4.6.1 ou 4.9.4
 
 <<podman-configuration,Afficher les exigences de configuration de Podman>>.
  a| 
-Pris en charge en mode d'application ou en mode d'autorisation
+Pris en charge en mode d'application ou en mode d'autorisation ^1^
 
 
 
@@ -81,8 +81,9 @@ Non pris en charge
 |===
 Remarques :
 
-* Le connecteur est pris en charge sur les versions en anglais de ces systèmes d'exploitation.
-* Pour RHEL, l'hôte doit être enregistré auprès de Red Hat Subscription Management. S'il n'est pas enregistré, l'hôte ne peut pas accéder aux référentiels pour mettre à jour les logiciels tiers requis lors de l'installation du connecteur.
+. La gestion des systèmes Cloud Volumes ONTAP n'est pas prise en charge par les connecteurs sur lesquels SELinux est activé sur le système d'exploitation.
+. Le connecteur est pris en charge sur les versions en anglais de ces systèmes d'exploitation.
+. Pour RHEL, l'hôte doit être enregistré auprès de Red Hat Subscription Management. S'il n'est pas enregistré, l'hôte ne peut pas accéder aux référentiels pour mettre à jour les logiciels tiers requis lors de l'installation du connecteur.
 
 
 --
@@ -239,6 +240,14 @@ Connexions aux réseaux cibles:: Un connecteur nécessite une connexion réseau 
 
 
 Accès Internet sortant:: L'emplacement réseau où vous déployez le connecteur doit disposer d'une connexion Internet sortante pour contacter des points finaux spécifiques.
+
+
+Noeuds finaux contactés depuis les ordinateurs lors de l'utilisation de la console Web BlueXP :: Les ordinateurs qui accèdent à la console BlueXP  à partir d'un navigateur Web doivent avoir la possibilité de contacter plusieurs noeuds finaux. Vous devez utiliser la console BlueXP  pour configurer le connecteur et pour l'utilisation quotidienne de BlueXP .
++
+--
+link:reference-networking-saas-console.html["Préparez la mise en réseau pour la console BlueXP "].
+
+--
 
 
 Points finaux contactés lors de l'installation manuelle:: Lorsque vous installez manuellement le connecteur sur votre propre hôte Linux, le programme d'installation du connecteur nécessite l'accès aux URL suivantes pendant le processus d'installation :

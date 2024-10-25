@@ -162,7 +162,7 @@ Ajoutez des informations d'identification AWS à BlueXP en fournissant l'ARN d'u
 
 === Configurer le rôle IAM
 
-Configurez un rôle IAM qui permet à la couche SaaS BlueXP de jouer ce rôle.
+Configurez un rôle IAM qui permet à la couche BlueXP  Software as a Service (SaaS) de jouer ce rôle.
 
 .Étapes
 . Accédez à la console IAM dans le compte cible.

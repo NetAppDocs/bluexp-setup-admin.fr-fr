@@ -1,0 +1,11 @@
+= 
+:allow-uri-read: 
+
+
+Noeuds finaux contactés depuis les ordinateurs lors de l'utilisation de la console Web BlueXP :: Les ordinateurs qui accèdent à la console BlueXP  à partir d'un navigateur Web doivent avoir la possibilité de contacter plusieurs noeuds finaux. Vous devez utiliser la console BlueXP  pour configurer le connecteur et pour l'utilisation quotidienne de BlueXP .
++
+--
+link:reference-networking-saas-console.html["Préparez la mise en réseau pour la console BlueXP "].
+
+--
+

@@ -16,7 +16,7 @@ summary: Les limitations connues identifient les plateformes, les périphérique
 [role="lead"]
 Les limitations connues identifient les plateformes, les périphériques ou les fonctions qui ne sont pas pris en charge par cette version du produit, ou qui ne fonctionnent pas correctement avec elle. Examinez attentivement ces limites.
 
-Ces limitations sont spécifiques à la configuration et à l'administration de BlueXP : le connecteur, la plate-forme SaaS, et plus encore.
+Ces limitations sont spécifiques à la configuration et à l'administration de BlueXP  : le connecteur, la plateforme SaaS, etc.
 
 
 
