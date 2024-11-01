@@ -275,6 +275,9 @@ Préparez la mise en réseau pour l'accès utilisateur à la console BlueXP:: En
 | Terminaux | Objectif 
 
 
+| \https://api.bluexp.netapp.com | La console Web BlueXP  contacte ce terminal pour interagir avec l'API BlueXP  afin d'effectuer des actions liées aux autorisations, aux licences, aux abonnements, aux informations d'identification, aux notifications, etc. 
+
+
 | \https://signin.b2c.netapp.com | Requis pour mettre à jour les identifiants du site de support NetApp (NSS) ou pour ajouter de nouvelles informations d'identification NSS à BlueXP. 
 
 
