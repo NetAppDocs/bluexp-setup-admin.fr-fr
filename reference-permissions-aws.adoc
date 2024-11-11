@@ -764,7 +764,7 @@ Les sections suivantes décrivent comment les autorisations sont utilisées pour
 
 === Amazon FSX pour ONTAP
 
-Connector effectue les requêtes API suivantes pour gérer Amazon FSX pour ONTAP :
+Le connecteur effectue les requêtes API suivantes pour gérer un système de fichiers Amazon FSX pour ONTAP :
 
 * ec2:descriptifs
 * ec2:DécriesInstanceStatus
