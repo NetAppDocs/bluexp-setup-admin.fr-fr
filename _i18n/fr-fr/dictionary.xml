@@ -4878,7 +4878,6 @@ Cette partie du tableau répertorie la prise en charge de la gestion de l'enviro
   <block id="37e5831d4c68f17f87dd40b6ea95f2bc" category="section-title">ID pour les projets IAM</block>
   <block id="102aeb225438210afe20dc2776fb6870" category="paragraph">Vous pouvez maintenant afficher l'ID d'un projet à partir de la gestion des identités et des accès BlueXP . Vous devrez peut-être utiliser l'ID lors d'un appel d'API.</block>
   <block id="5c8ebe245f66e84eaef1ca801f274ee3" category="inline-link-macro">Découvrez comment obtenir l'ID d'un projet</block>
-  <block id="89d67911b68ccc5d2e1c1ba76f5d85d2" category="paragraph"><block ref="05b01cf8b541aa707e135b6ea0dd3477" category="inline-link-macro-rx"></block>.</block>
   <block id="9c0c9fdc01dbde3e19b2b95d0ed36308" category="section-title">Obtenir l'ID d'un projet</block>
   <block id="b653cd33888ca8dc048a0fd0c8ce7280" category="paragraph">Si vous utilisez l'API BlueXP , vous devrez peut-être obtenir l'ID d'un projet. Par exemple, lors de la création d'un environnement de travail Cloud Volumes ONTAP.</block>
   <block id="798eb88714cdc2034c3335c3a6c21193" category="list-text">Dans la page *Organisation*, naviguez jusqu'à un projet dans le tableau et sélectionnez <block ref="c9c50c6d591d91ccce1ee232fa490fb4" category="inline-image-macro-rx" type="image"></block></block>
@@ -4887,4 +4886,5 @@ Cette partie du tableau répertorie la prise en charge de la gestion de l'enviro
   <block id="c5f7a94f7e361ce9dc993775dd14b3c1" category="inline-image-macro">Capture d'écran de la table dossiers et projets qui montre l'ID du projet en sélectionnant le menu d'action d'un projet.</block>
   <block id="c4c78a982626adb55fd316627b7b9909" category="paragraph"><block ref="c4c78a982626adb55fd316627b7b9909" category="inline-image-macro-rx" type="image"></block></block>
   <block id="ecbeaffbfe15c72e3bf702b0d0bf9694" category="section-title">11 novembre 2024</block>
+  <block id="db31ae4dc32d9d514625710dfb24ee0a" category="paragraph"><block ref="52c305e9fd97fc371c1991c1470ed96b" category="inline-link-rx"></block>.</block>
 </blocks>
