@@ -2367,12 +2367,9 @@ Notez que la page s'actualise entre le test de la connexion et l'activation de l
   <block id="92fa0fc1299e55c066d0a19cd22b4e7b" category="list-text">*Identité* : sous *gestion*, sélectionnez *Activer l'identité gérée attribuée par le système*.</block>
   <block id="2d3bb174766a8cbc78a4d5d0a2739c56" category="paragraph">Lorsque vous accédez pour la première fois à la console BlueXP, vous êtes invité à choisir un compte auquel associer le connecteur et vous devez activer le mode restreint.</block>
   <block id="b22816a3d20c18e89e4ef89984ca5df6" category="inline-link-macro">Découvrez comment créer un compte BlueXP supplémentaire</block>
-  <block id="432f719258fc9e575a2982302eac9cdc" category="admonition">Si vous avez déjà un compte et que vous souhaitez en créer un autre, vous devez utiliser l'API de location. <block ref="987610e2980e99ab837daf2502634d0e" category="inline-link-macro-rx"></block>.</block>
   <block id="d0afc367dac05a517daede09c87a1703" category="list-text">Inscrivez-vous ou connectez-vous à BlueXP.</block>
   <block id="31925d7c2cb5897bb831e016bf096aeb" category="list-text">Une fois connecté, configurez BlueXP :</block>
   <block id="511a9fce084315d00b23c33c017b6f00" category="list-text">Entrez un nom pour le connecteur.</block>
-  <block id="b62bf1f79ab961793aac4650ff63f80e" category="list-text">Entrez le nom d'un nouveau compte BlueXP ou sélectionnez un compte existant.</block>
-  <block id="60bcc9cfb61752f7c83242e23b71c36a" category="paragraph">Vous pouvez sélectionner un compte existant si votre connexion est déjà associée à un compte BlueXP.</block>
   <block id="19219dd3059a0601db6b584237e0fa1f" category="list-text">Sélectionnez *exécutez-vous dans un environnement sécurisé ?*</block>
   <block id="fee876de3937b43909f6c74baf1cadb3" category="list-text">Sélectionnez *Activer le mode restreint sur ce compte*.</block>
   <block id="6c1ad8d8a00d0b91aa909ccb6da52806" category="paragraph">Notez que vous ne pouvez pas modifier ce paramètre après la création du compte par BlueXP. Vous ne pouvez pas activer le mode restreint ultérieurement et vous ne pouvez pas le désactiver ultérieurement.</block>
@@ -4908,4 +4905,7 @@ Cette partie du tableau répertorie la prise en charge de la gestion de l'enviro
   <block id="bad4efa38c7fe2023ac7a25606d5f186" category="cell">Accédez au et consultez les modifications incluses dans la<block ref="bb047968fd3a98ed3e45ad4e39500b8b" category="inline-link-rx"></block> version de novembre 2024</block>
   <block id="93c9916354f3f5fa45f4019fd081f12a" category="paragraph">Le portefeuille digital BlueXP  et la réplication BlueXP  sont également inclus en mode privé, mais aucune modification n'a été apportée par rapport à la précédente version en mode privé.</block>
   <block id="cd33b497651f0d35a9b546fed113bac9" category="list-text"><block ref="e5d325f390c70091b07096d63ab8f353" category="inline-link-rx"></block>s</block>
+  <block id="d9e0b5302621c1c23c370143ae83f9e2" category="paragraph">La personne qui configure BlueXP  Connector doit se connecter à BlueXP  à l'aide d'une connexion qui n'appartient pas à une organisation BlueXP  qui fonctionne en mode standard.</block>
+  <block id="958a2cecb2c46938c95b34d62fe1951c" category="paragraph">Si vos identifiants BlueXP  sont associés à une entreprise en mode standard, vous devez vous inscrire avec un nouvel identifiant BlueXP  ou avec des informations d'identification du site du support NetApp qui n'appartiennent pas à une entreprise. Sinon, vous ne verrez pas l'option d'activation du mode restreint sur l'écran de configuration.</block>
+  <block id="fbb40b7689fb13eea9ed1fa8b7206a3b" category="list-text">Entrez le nom d'un nouveau compte BlueXP .</block>
 </blocks>
