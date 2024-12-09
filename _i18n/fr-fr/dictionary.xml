@@ -151,7 +151,6 @@
   <block id="de3d7dbdd97c240a233066ad7479c6c2" category="inline-link-macro">Consultez la liste des terminaux contactés depuis la console BlueXP</block>
   <block id="638887c7fa101cc437e1eb7f6041b91e" category="paragraph"><block ref="7d376f679e4be0527c6e11d1cf760c68" category="inline-link-macro-rx"></block>.</block>
   <block id="9d1c31fa96e155af1c5f2d21f024ae6b" category="section-title">Points finaux contactés lors de l'installation manuelle</block>
-  <block id="8963387394e2ee3e2a5a9ba160566a58" category="list-text">\https://support.netapp.com</block>
   <block id="d03b3625d28d43168905850da108e917" category="list-text">\https://mysupport.netapp.com</block>
   <block id="648b7f3d6699305c92d33129e6ea00fe" category="list-text">\https://cloudmanager.cloud.netapp.com/tenancy</block>
   <block id="aeed9abd051a5ff37a94ee8ea302bdd8" category="list-text">\https://stream.cloudmanager.cloud.netapp.com</block>
@@ -1614,7 +1613,6 @@
   <block id="0f0fe41ab5bd818721db20f8d7a2404a" category="paragraph">Les comptes du site de support NetApp sont désormais gérés depuis le tableau de bord du support plutôt que depuis le menu Paramètres. Grâce à ce changement, vous trouverez et gérez plus facilement toutes les informations relatives au support à partir d'un emplacement unique.</block>
   <block id="432f05a278abb2c3428b70a3a4f99dbd" category="paragraph"><block ref="c61e9c0c9cae1a8c2affa1de687f1e0d" category="inline-link-macro-rx"></block>.</block>
   <block id="2a41aea826ac3cd59f94685c0507de72" category="inline-image-macro">Capture d'écran de l'onglet gestion NSS dans le tableau de bord du support, dans lequel vous pouvez ajouter des comptes NSS.</block>
-  <block id="9d9b49d49775c38009f93068f15c59cd" category="paragraph"><block ref="9d9b49d49775c38009f93068f15c59cd" category="inline-image-macro-rx" type="image"></block></block>
   <block id="9b67e1ec262493b1df3ec41cc4fbd4a0" category="paragraph">La chronologie dans Cloud Manager affiche désormais les actions et les événements liés à la gestion de compte. Ces actions incluent notamment l'association d'utilisateurs, la création d'espaces de travail et la création de connecteurs. La vérification de la chronologie peut être utile si vous devez identifier qui a effectué une action spécifique ou si vous devez identifier le statut d'une action.</block>
   <block id="2355c6490a09de53516a5be37a0fe654" category="inline-link-macro">Découvrez comment filtrer la chronologie vers le service Tenancy</block>
   <block id="c22052aa83aad03ab1340970700a2c27" category="paragraph">Si vous avez configuré un serveur proxy, vous pouvez désormais activer une option pour envoyer des appels API directement à Cloud Manager sans passer par le proxy. Cette option est prise en charge avec les connecteurs qui s'exécutent dans AWS ou dans Google Cloud.</block>
@@ -3426,7 +3424,6 @@ Cette partie du tableau répertorie la prise en charge de la gestion de l'enviro
   <block id="31f0834695d820dc381e57397e466d12" category="list-text">Nouveau menu de navigation</block>
   <block id="e6481c5ec5346aeaf59c7bacad0a735a" category="list-text">Dans le menu de navigation de BlueXP, les services sont désormais organisés par catégories et nommés en fonction de leur fonctionnalité. Par exemple, vous pouvez accéder à la sauvegarde et à la restauration BlueXP depuis la catégorie *protection*.</block>
   <block id="7cb04a79785e33be744a126127319a35" category="inline-image-macro">Capture d'écran du menu de navigation de BlueXP qui affiche des catégories telles que le stockage et l'intégrité.</block>
-  <block id="e3a2069a256a46b571b57fe46324f5c0" category="paragraph"><block ref="e3a2069a256a46b571b57fe46324f5c0" category="inline-image-macro-rx" type="image"></block></block>
   <block id="68d4f3d7366b4ea59a65f0c44540e368" category="list-text">Intégrations de nouveaux produits</block>
   <block id="cf6a3994dac804af910024cf740e14ac" category="list-text">Vous pouvez désormais gérer les compartiments Amazon S3 dans les comptes AWS où le connecteur est installé.</block>
   <block id="054332983ba253fe4573945dcdbc8109" category="list-text">Vous pouvez désormais gérer davantage de systèmes de stockage sur site, comme les baies E-Series et StorageGRID.</block>
@@ -4330,33 +4327,9 @@ Cette partie du tableau répertorie la prise en charge de la gestion de l'enviro
   <block id="9a4737feea9b9d5b10fea0c8478ac45b" category="doc">Rôles et autorisations BlueXP  IAM prédéfinis</block>
   <block id="58f6c76de5e396f2cb8175b3a9628439" category="paragraph">La gestion des identités et des accès BlueXP  inclut plusieurs rôles prédéfinis que vous pouvez attribuer aux membres de votre entreprise à différents niveaux de votre hiérarchie de ressources. Avant d'attribuer ces rôles, vous devez comprendre les autorisations incluses par chaque rôle.</block>
   <block id="6a476d78ce3a8169d99c99c3285fa106" category="section-title">Administrateur d'entreprise</block>
-  <block id="5ffa38d8daf12ac10d48a131c7cf1faa" category="list-text">Contrôle total de l'ensemble de l'organisation BlueXP .</block>
-  <block id="43e2aff42f40dd4820c2190845f92a29" category="list-text">Un membre qui a ce rôle peut effectuer toutes les actions dans BlueXP .</block>
-  <block id="08fe1197004da98b5b31b7f36eb2ecd2" category="section-title">Administrateur de dossiers ou de projets</block>
-  <block id="f50c53d21cc12324f60732dc0bc33452" category="list-text">Permet un contrôle total d'un ou de plusieurs projets et dossiers.</block>
-  <block id="36ebb13cae90d210a33c907ce95b5dab" category="paragraph">Notez que si vous attribuez ce rôle au niveau du dossier, le membre dispose d'autorisations sur tous les projets associés à ce dossier.</block>
   <block id="b35f7cd4ff8cf3b50f8a254ff8eaab4d" category="list-text">Un membre qui a ce rôle peut effectuer les actions suivantes dans BlueXP  :</block>
   <block id="b7468effacd77ea7140c661bd2dce11a" category="list-text">Gérez tous les environnements de travail dans les projets et dossiers pour lesquels ils ont des autorisations</block>
   <block id="b510afc7b0f705daf7ba3b0e6a9509ab" category="list-text">Utilisation de tous les services BlueXP </block>
-  <block id="19c38739f5aec88cec4d5ddfe95e4da5" category="list-text">Depuis BlueXP  IAM, l'administrateur d'un dossier peut gérer les dossiers, les projets et les ressources enfants de ce dossier :</block>
-  <block id="28283751df9965c22c056b9918a77bf8" category="list-text">Ajoutez des dossiers ou des projets dans le dossier</block>
-  <block id="e51470b514d7e8944c546a41c7f08927" category="list-text">Modifier les dossiers et les projets : leurs noms, les ressources associées et l'accès aux membres</block>
-  <block id="7c45875dc8931622255e645bf97ee885" category="list-text">Supprimer des dossiers et des projets</block>
-  <block id="f9d9cf5a121b8d1ad96ee13010dde815" category="list-text">Ajoutez un compte utilisateur et associez un rôle au niveau du dossier ou du projet</block>
-  <block id="25955130d336f909d9a5c924bed6c39c" category="list-text">Associer un connecteur à un dossier ou un projet</block>
-  <block id="cf49f8905b1420831f6afdb9343ab19f" category="list-text">Ajoutez un rôle à un membre au niveau du dossier ou du projet</block>
-  <block id="010425dbecf395ac4e4dfe5c2d068de4" category="list-text">Afficher les ressources associées aux dossiers et aux projets</block>
-  <block id="5313ba4411cbe52945aadd516908bc49" category="list-text">Associer des ressources visibles à des dossiers ou projets supplémentaires</block>
-  <block id="8e832b96727752de00c9220cff5b65d7" category="list-text">Dissocier une ressource d'un dossier ou d'un projet</block>
-  <block id="1c675b61b8cdd67aee5e55f21e480a43" category="list-text">Depuis BlueXP  IAM, l'administrateur d'un projet peut gérer ce projet et ses ressources associées comme suit :</block>
-  <block id="764cb47403e778ea4e27ed7882b78c78" category="list-text">Modifiez le projet : son nom, les ressources associées et l'accès aux membres</block>
-  <block id="9eceb2ab0004faaee5b590af60ce69af" category="list-text">Ajoutez un compte utilisateur et associez un rôle au niveau du projet</block>
-  <block id="bb7c6e636a38d6790d21106ca4e22741" category="list-text">Associez un connecteur à un projet, si le membre a des autorisations d'administration sur d'autres projets qui ont d'autres connecteurs associés</block>
-  <block id="5e7c7a8ded45512d3c1312126add0472" category="list-text">Ajoutez un rôle à un membre au niveau du projet</block>
-  <block id="8474cb230440aa90ac5d23b91c19cf06" category="list-text">Afficher les ressources associées au projet</block>
-  <block id="d18353fc23c06d0e557aed7f817ce4a9" category="list-text">Associez des ressources au projet, si le membre dispose d'autorisations d'administration sur d'autres projets qui ont d'autres ressources associées</block>
-  <block id="9fd806de6c0f64675237b801a3b8765f" category="list-text">Dissocier une ressource du projet</block>
-  <block id="8987cc0290d182f0256f6f0026257ea0" category="list-text">Supprimez le projet</block>
   <block id="379e8cc7b99cd4d7696788fde49a89de" category="list-text">Gérez les informations d'identification dans Paramètres &gt; informations d'identification</block>
   <block id="5c2549b200adb54fcf4ab1fa173b79b7" category="list-text">Afficher la chronologie BlueXP </block>
   <block id="ea6f3818343083288cee520c382ca65a" category="list-text">Enregistrez BlueXP  pour obtenir de l'aide et envoyez vos dossiers de demande de support</block>
@@ -4402,7 +4375,6 @@ Cette partie du tableau répertorie la prise en charge de la gestion de l'enviro
   <block id="fa0b2ee8e271330f8acc8d4a5d3356ce" category="paragraph">Vous devez comprendre le fonctionnement de l'association de connecteurs. <block ref="0e59e07e63f66ad6442c68a3b1946546" category="inline-link-macro-rx"></block>.</block>
   <block id="6955c430a5d86c9667f05d296c1693d4" category="inline-link-macro">En savoir plus sur les actions qu'un _dossier ou un administrateur de projet_ peut effectuer</block>
   <block id="8723b90b2839ad516c180ca7ded07e0e" category="list-text">Lorsqu'un_dossier ou un_administrateur_de_projet affiche la page *connecteurs*, la page affiche tous les connecteurs de l'organisation. Cependant, un membre avec ce rôle ne peut afficher et associer des connecteurs qu'aux dossiers et projets pour lesquels ils ont des autorisations. <block ref="c691e2b9b4224ed90bb4f1f11059b372" category="inline-link-macro-rx"></block>.</block>
-  <block id="c8681ca380c36d5cecfb5edf90afb264" category="list-text">En raison d'un problème connu, la page connecteurs de BlueXP  IAM affiche tous les anciens connecteurs que vous avez précédemment retirés de BlueXP .</block>
   <block id="e0e8a7d90375792efecad34c0c923e32" category="inline-image-macro">L'icône des paramètres qui s'affiche en haut à droite de la console Web BlueXP .</block>
   <block id="cd42e1c1af0a908f68d68ae6103b5c30" category="list-text">Dans le coin supérieur droit de la console BlueXP , sélectionnez <block ref="32173ab85f1c68a28384d1a40cf387db" category="inline-image-macro-rx" type="image"></block> &gt; *gestion des identités et des accès*.</block>
   <block id="898a5f7650c6f7bf6a01efe09c881973" category="list-text">Sélectionnez *connecteurs*.</block>
@@ -4904,8 +4876,32 @@ Cette partie du tableau répertorie la prise en charge de la gestion de l'enviro
   <block id="4f2f9aa2e4b010fbcd8cded5bf523370" category="inline-link">Nouveautés de la page de gestion de clusters ONTAP sur site</block>
   <block id="bad4efa38c7fe2023ac7a25606d5f186" category="cell">Accédez au et consultez les modifications incluses dans la<block ref="bb047968fd3a98ed3e45ad4e39500b8b" category="inline-link-rx"></block> version de novembre 2024</block>
   <block id="93c9916354f3f5fa45f4019fd081f12a" category="paragraph">Le portefeuille digital BlueXP  et la réplication BlueXP  sont également inclus en mode privé, mais aucune modification n'a été apportée par rapport à la précédente version en mode privé.</block>
-  <block id="cd33b497651f0d35a9b546fed113bac9" category="list-text"><block ref="e5d325f390c70091b07096d63ab8f353" category="inline-link-rx"></block>s</block>
   <block id="fbb40b7689fb13eea9ed1fa8b7206a3b" category="list-text">Entrez le nom d'un nouveau compte BlueXP .</block>
   <block id="57d3121acc1a5ab1d49ad8c9d1074921" category="paragraph">La personne qui configure BlueXP  Connector doit se connecter à BlueXP  à l'aide d'une connexion qui n'appartient pas à un compte ou une organisation BlueXP .</block>
   <block id="b1308196c2d004e3aef97cd9d7807956" category="paragraph">Si votre identifiant BlueXP  est associé à un autre compte ou organisation, vous devez vous inscrire avec un nouveau identifiant BlueXP . Sinon, vous ne verrez pas l'option d'activation du mode restreint sur l'écran de configuration.</block>
+  <block id="7e0cee63c771cb3be42ccae3ca1f4360" category="doc">Connecteur 3.9.47</block>
+  <block id="ea3677612bfa26ac44a6df6f71a061c7" category="paragraph">Cette version de BlueXP  Connector inclut des correctifs et une modification des points de terminaison contactés lors de l'installation du connecteur.</block>
+  <block id="ab5ae75402aef055e2d366aca1b4d6b9" category="paragraph">À ce stade, la version 3.9.47 est disponible pour le mode standard et le mode restreint.</block>
+  <block id="e075de7d507df6ab190b10bc690c9148" category="paragraph-title">Terminal pour contacter le support NetApp pendant l'installation</block>
+  <block id="1aba7245086f9fd7cc09aa3efc3bf6c3" category="paragraph">Lorsque vous installez manuellement le connecteur, le programme d'installation n'contacte plus \https://support.NetApp.com.</block>
+  <block id="2b595e935d43f3d843783e855ec947b7" category="paragraph">Le programme d'installation contacte toujours \https://mysupport.NetApp.com.</block>
+  <block id="624278dc2f533755332cf0c1ebe752d5" category="paragraph">La page connecteurs répertorie uniquement les connecteurs actuellement disponibles. Il n'affiche plus les connecteurs que vous avez retirés.</block>
+  <block id="cb9e27422b343274f9974efbc9c3dbc1" category="section-title">Rôles de plateforme</block>
+  <block id="eda0520752c1c966551048d00dbbcc59" category="paragraph">L'IAM BlueXP  comprend deux rôles de plateforme : administrateur d'organisation et administrateur de dossiers ou de projets. La principale différence entre les deux rôles de plateforme BlueXP  IAM est le périmètre. Le rôle d'administrateur d'organisation a des autorisations dans tous les dossiers et projets, tandis que l'administrateur de dossier ou de projet n'a que des autorisations dans le dossier ou le projet auquel ils ont été affectés.</block>
+  <block id="6573eb5e7a9033869897566e8b1b5f6a" category="paragraph">Le rôle d'administrateur dossier ou projet ne peut pas créer de connecteurs.</block>
+  <block id="36dc01ca540c36d8a66ee2b32bacb1b6" category="cell">Administrateur de dossier ou de projet</block>
+  <block id="10c51a836e78385fbf6ad623ad658ee0" category="cell">Créer des connecteurs</block>
+  <block id="1feb614364d6d0a180fddcd6e40a0223" category="cell">Créer, modifier ou supprimer des environnements de travail (ajouter ou découvrir de nouvelles ressources à l'aide du canevas BlueXP )</block>
+  <block id="d76dfeebf19d1a2fc8c868ca8643d76d" category="cell">Créer des projets/dossiers, notamment renommer, supprimer et modifier</block>
+  <block id="15a95a870efdd28ed28ff5a317681ee4" category="cell">Attribuez des rôles et ajoutez des utilisateurs</block>
+  <block id="8af970b54258caf527bed05d8f62f054" category="cell">Associer des ressources et des connecteurs aux dossiers et projets</block>
+  <block id="bc76903dd69fe38bc3b58cc4ef4a02c8" category="list-text">Exemple de rôles d'organisation au BlueXP  pour une grande organisation multinationale</block>
+  <block id="c89eaf90b9f27cb0ed6b4d2e288716ba" category="list-text">XYZ Corporation, une multinationale, a pour objectif de séparer l'accès aux ressources de stockage des données en fonction de régions géographiques : Amérique du Nord, Europe et Asie-Pacifique. Ils veulent que chaque région dispose d'un contrôle exclusif sur leurs ressources tout en maintenant une surveillance centralisée.</block>
+  <block id="38e4f28b5f78613457381816eb4a925e" category="paragraph">Pour ce faire, une personne affectée au rôle d'administrateur d'organisation dans BlueXP  de la société XYZ crée un environnement de travail initial, puis crée des dossiers distincts dans BlueXP  pour chaque région. Le dossier de chaque région contient des projets (avec des ressources associées) liés à cette région. L'administrateur de l'organisation attribue à un utilisateur BlueXP  dans chaque région respective le rôle d'administrateur dossier/projet.</block>
+  <block id="b232bda0fe68f193c9d3c56d75b4bb04" category="paragraph">Une fois la configuration initiale terminée, les administrateurs régionaux dotés du rôle d'administrateur de dossier ou de projet peuvent créer de nouveaux environnements de travail et ajouter des utilisateurs au sein de leur région. Ces administrateurs régionaux peuvent également ajouter/supprimer/renommer des dossiers et des projets auxquels ils sont affectés. L'administrateur de l'entreprise hérite des autorisations de tous les nouveaux environnements de travail ou ressources, ce qui permet de maintenir une visibilité sur l'utilisation du stockage dans toute l'entreprise.</block>
+  <block id="35cbd88f43ce85ef7ed6866daa2c6066" category="section-title">Rôles liés aux services de données</block>
+  <block id="cc3c87c04d3731bf67b97240bf975b52" category="paragraph">Les rôles de services de données peuvent effectuer leurs tâches dans n'importe quel projet ou dossier.</block>
+  <block id="1f86b1e4048d088ce153a6f451fb30d6" category="section-title">9 décembre 2024</block>
+  <block id="6dbd17d362d540a01bdcf61fb73192e3" category="paragraph"><block ref="6dbd17d362d540a01bdcf61fb73192e3" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="8aed33df97a7e5d16736c205973e6239" category="paragraph"><block ref="8aed33df97a7e5d16736c205973e6239" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>

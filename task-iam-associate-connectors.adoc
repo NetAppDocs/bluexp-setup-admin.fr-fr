@@ -21,7 +21,6 @@ Vous devez comprendre le fonctionnement de l'association de connecteurs. link:co
 
 .Description de la tâche
 * Lorsqu'un_dossier ou un_administrateur_de_projet affiche la page *connecteurs*, la page affiche tous les connecteurs de l'organisation. Cependant, un membre avec ce rôle ne peut afficher et associer des connecteurs qu'aux dossiers et projets pour lesquels ils ont des autorisations. link:reference-iam-predefined-roles.html["En savoir plus sur les actions qu'un _dossier ou un administrateur de projet_ peut effectuer"].
-* En raison d'un problème connu, la page connecteurs de BlueXP  IAM affiche tous les anciens connecteurs que vous avez précédemment retirés de BlueXP .
 
 
 .Étapes

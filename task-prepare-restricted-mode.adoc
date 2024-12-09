@@ -296,7 +296,6 @@ Préparez la mise en réseau pour l'accès utilisateur à la console BlueXP:: En
 Points finaux contactés lors de l'installation manuelle:: Lorsque vous installez manuellement le connecteur sur votre propre hôte Linux, le programme d'installation du connecteur nécessite l'accès aux URL suivantes pendant le processus d'installation :
 +
 --
-* \https://support.netapp.com
 * \https://mysupport.netapp.com
 * \https://signin.b2c.NetApp.com (ce noeud final est l'URL CNAME pour \https://mysupport.NetApp.com)
 * \https://cloudmanager.cloud.netapp.com/tenancy

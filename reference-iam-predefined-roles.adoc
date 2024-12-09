@@ -18,63 +18,65 @@ La gestion des identités et des accès BlueXP  inclut plusieurs rôles prédé
 
 
 
-== Administrateur d'entreprise
+== Rôles de plateforme
 
-Description:: Contrôle total de l'ensemble de l'organisation BlueXP .
-Autorisations:: Un membre qui a ce rôle peut effectuer toutes les actions dans BlueXP .
+L'IAM BlueXP  comprend deux rôles de plateforme : administrateur d'organisation et administrateur de dossiers ou de projets. La principale différence entre les deux rôles de plateforme BlueXP  IAM est le périmètre. Le rôle d'administrateur d'organisation a des autorisations dans tous les dossiers et projets, tandis que l'administrateur de dossier ou de projet n'a que des autorisations dans le dossier ou le projet auquel ils ont été affectés.
+
+Le rôle d'administrateur dossier ou projet ne peut pas créer de connecteurs.
+
+Autorisations::
 
 
+[cols="24,19,19"]
+|===
+| Tâche | Administrateur d'entreprise | Administrateur de dossier ou de projet 
 
 
-== Administrateur de dossiers ou de projets
+| Créer des connecteurs | Oui. | Non 
 
-Description:: Permet un contrôle total d'un ou de plusieurs projets et dossiers.
+
+| Créer, modifier ou supprimer des environnements de travail (ajouter ou découvrir de nouvelles ressources à l'aide du canevas BlueXP ) | Oui. | Oui. 
+
+
+| Créer des projets/dossiers, notamment renommer, supprimer et modifier | Oui. | Oui. 
+
+
+| Attribuez des rôles et ajoutez des utilisateurs | Oui. | Oui. 
+
+
+| Associer des ressources et des connecteurs aux dossiers et projets | Oui. | Oui. 
+
+
+| Gérez les informations d'identification dans Paramètres > informations d'identification | Oui. | Oui. 
+
+
+| Afficher la chronologie BlueXP  | Oui. | Oui. 
+
+
+| Utilisez les services BlueXP  | Oui. | Oui. 
+
+
+| Enregistrez BlueXP  pour obtenir de l'aide et envoyez vos dossiers de demande de support | Oui. | Oui. 
+|===
+Exemple de rôles d'organisation au BlueXP  pour une grande organisation multinationale:: XYZ Corporation, une multinationale, a pour objectif de séparer l'accès aux ressources de stockage des données en fonction de régions géographiques : Amérique du Nord, Europe et Asie-Pacifique. Ils veulent que chaque région dispose d'un contrôle exclusif sur leurs ressources tout en maintenant une surveillance centralisée.
 +
 --
-Notez que si vous attribuez ce rôle au niveau du dossier, le membre dispose d'autorisations sur tous les projets associés à ce dossier.
+Pour ce faire, une personne affectée au rôle d'administrateur d'organisation dans BlueXP  de la société XYZ crée un environnement de travail initial, puis crée des dossiers distincts dans BlueXP  pour chaque région. Le dossier de chaque région contient des projets (avec des ressources associées) liés à cette région. L'administrateur de l'organisation attribue à un utilisateur BlueXP  dans chaque région respective le rôle d'administrateur dossier/projet.
 
---
-Autorisations:: Un membre qui a ce rôle peut effectuer les actions suivantes dans BlueXP  :
-+
---
-* Gérez tous les environnements de travail dans les projets et dossiers pour lesquels ils ont des autorisations
-* Utilisation de tous les services BlueXP 
-* Depuis BlueXP  IAM, l'administrateur d'un dossier peut gérer les dossiers, les projets et les ressources enfants de ce dossier :
-+
-** Ajoutez des dossiers ou des projets dans le dossier
-** Modifier les dossiers et les projets : leurs noms, les ressources associées et l'accès aux membres
-** Supprimer des dossiers et des projets
-** Ajoutez un compte utilisateur et associez un rôle au niveau du dossier ou du projet
-** Associer un connecteur à un dossier ou un projet
-** Ajoutez un rôle à un membre au niveau du dossier ou du projet
-** Afficher les ressources associées aux dossiers et aux projets
-** Associer des ressources visibles à des dossiers ou projets supplémentaires
-** Dissocier une ressource d'un dossier ou d'un projet
-
-
-* Depuis BlueXP  IAM, l'administrateur d'un projet peut gérer ce projet et ses ressources associées comme suit :
-+
-** Modifiez le projet : son nom, les ressources associées et l'accès aux membres
-** Ajoutez un compte utilisateur et associez un rôle au niveau du projet
-** Associez un connecteur à un projet, si le membre a des autorisations d'administration sur d'autres projets qui ont d'autres connecteurs associés
-** Ajoutez un rôle à un membre au niveau du projet
-** Afficher les ressources associées au projet
-** Associez des ressources au projet, si le membre dispose d'autorisations d'administration sur d'autres projets qui ont d'autres ressources associées
-** Dissocier une ressource du projet
-** Supprimez le projet
-
-
-* Gérez les informations d'identification dans Paramètres > informations d'identification
-* Afficher la chronologie BlueXP 
-* Enregistrez BlueXP  pour obtenir de l'aide et envoyez vos dossiers de demande de support
-
+Une fois la configuration initiale terminée, les administrateurs régionaux dotés du rôle d'administrateur de dossier ou de projet peuvent créer de nouveaux environnements de travail et ajouter des utilisateurs au sein de leur région. Ces administrateurs régionaux peuvent également ajouter/supprimer/renommer des dossiers et des projets auxquels ils sont affectés. L'administrateur de l'entreprise hérite des autorisations de tous les nouveaux environnements de travail ou ressources, ce qui permet de maintenir une visibilité sur l'utilisation du stockage dans toute l'entreprise.
 
 --
 
 
 
 
-== Administrateur SnapCenter
+== Rôles liés aux services de données
+
+Les rôles de services de données peuvent effectuer leurs tâches dans n'importe quel projet ou dossier.
+
+
+
+=== Administrateur SnapCenter
 
 Description:: Permet de sauvegarder des copies Snapshot à partir de clusters ONTAP sur site à l'aide de la sauvegarde et de la restauration BlueXP  pour les applications.
 Autorisations:: Un membre qui a ce rôle peut effectuer les actions suivantes dans BlueXP  :
@@ -90,7 +92,7 @@ Autorisations:: Un membre qui a ce rôle peut effectuer les actions suivantes da
 
 
 
-== Visualiseur de classification
+=== Visualiseur de classification
 
 Description:: Fournit la possibilité d'afficher les résultats de l'acquisition de classification BlueXP .
 Autorisations:: Affichez les informations de conformité et générez des rapports pour les ressources auxquelles ils ont accès. Ces utilisateurs ne peuvent ni activer ni désactiver l'analyse de volumes, de compartiments ou de schémas de base de données.
