@@ -18,6 +18,47 @@ Découvrez les nouveautés des fonctionnalités d'administration BlueXP  : gest
 
 
 
+== 16 décembre 2024
+
+
+
+=== Nouveaux points d'extrémité sécurisés pour obtenir des images de connecteur
+
+Lorsque vous installez le connecteur ou lors d'une mise à niveau automatique, le connecteur contacte les référentiels pour télécharger des images pour l'installation ou la mise à niveau. Par défaut, le connecteur a toujours contacté les points finaux suivants :
+
+* \https://*.blob.core.windows.net
+* \https://cloudmanagerinfraprod.azurecr.io
+
+
+Le premier point final inclut un caractère générique car nous ne pouvons pas fournir un emplacement définitif. L'équilibrage de charge du référentiel est géré par le fournisseur de services, ce qui signifie que les téléchargements peuvent se faire à partir de différents terminaux.
+
+Pour une sécurité accrue, le connecteur peut désormais télécharger des images d'installation et de mise à niveau à partir de terminaux dédiés :
+
+* \https://bluexpinfraprod.eastus2.data.azurecr.io
+* \https://bluexpinfraprod.azurecr.io
+
+
+Nous vous recommandons de commencer à utiliser ces nouveaux points de terminaison en supprimant les points de terminaison existants de vos règles de pare-feu et en autorisant les nouveaux points de terminaison.
+
+Ces nouveaux points finaux sont pris en charge à partir de la version 3.9.47 du connecteur. Il n'y a pas de rétrocompatibilité avec les versions précédentes du connecteur.
+
+Notez ce qui suit :
+
+* Les noeuds finaux existants sont toujours pris en charge. Si vous ne souhaitez pas utiliser les nouveaux noeuds finaux, aucune modification n'est requise.
+* Le connecteur entre d'abord en contact avec les extrémités existantes. Si ces points finaux ne sont pas accessibles, le connecteur entre automatiquement en contact avec les nouveaux points finaux.
+* Les nouveaux points finaux ne sont pas pris en charge dans les scénarios suivants :
++
+** Si le connecteur est installé dans une région gouvernementale.
+** Si vous utilisez le connecteur avec la sauvegarde et la restauration BlueXP  ou la protection contre les ransomwares BlueXP .
+
+
++
+Pour ces deux scénarios, vous pouvez continuer à utiliser les noeuds finaux existants.
+
+
+
+
+
 == 9 décembre 2024
 
 

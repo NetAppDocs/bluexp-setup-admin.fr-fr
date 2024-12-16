@@ -293,22 +293,54 @@ Préparez la mise en réseau pour l'accès utilisateur à la console BlueXP:: En
 --
 
 
-Points finaux contactés lors de l'installation manuelle:: Lorsque vous installez manuellement le connecteur sur votre propre hôte Linux, le programme d'installation du connecteur nécessite l'accès aux URL suivantes pendant le processus d'installation :
+Points finaux contactés lors de l'installation manuelle:: Lorsque vous installez manuellement le connecteur sur votre propre hôte Linux, le programme d'installation du connecteur nécessite l'accès à plusieurs URL pendant le processus d'installation.
 +
 --
-* \https://mysupport.netapp.com
-* \https://signin.b2c.NetApp.com (ce noeud final est l'URL CNAME pour \https://mysupport.NetApp.com)
-* \https://cloudmanager.cloud.netapp.com/tenancy
-* \https://stream.cloudmanager.cloud.netapp.com
-* \https://production-artifacts.cloudmanager.cloud.netapp.com
-* \https://*.blob.core.windows.net
-* \https://cloudmanagerinfraprod.azurecr.io
+* Les points d'extrémité suivants sont toujours contactés quel que soit l'endroit où vous installez le connecteur :
 +
-Ce terminal n'est pas requis dans les régions Azure Government.
+** \https://mysupport.netapp.com
+** \https://signin.b2c.NetApp.com (ce noeud final est l'URL CNAME pour \https://mysupport.NetApp.com)
+** \https://cloudmanager.cloud.netapp.com/tenancy
+** \https://stream.cloudmanager.cloud.netapp.com
+** \https://production-artifacts.cloudmanager.cloud.netapp.com
 
-* \https://occmclientinfragov.azurecr.us
+
+* Si vous installez le connecteur dans une région du gouvernement AWS, le programme d'installation doit également accéder aux points de terminaison suivants :
 +
-Ce terminal n'est requis que dans les régions Azure Government.
+** \https://*.blob.core.windows.net
+** \https://cloudmanagerinfraprod.azurecr.io
+
+
+* Si vous installez le connecteur dans une région du gouvernement Azure, le programme d'installation doit également accéder à ces noeuds finaux :
++
+** \https://*.blob.core.windows.net
+** \https://occmclientinfragov.azurecr.us
+
+
+* Si vous installez le connecteur dans une région commerciale ou souveraine, vous pouvez choisir entre deux ensembles de points d'extrémité :
++
+** Option 1 (recommandée) :
++
+*** \https://bluexpinfraprod.eastus2.data.azurecr.io
+*** \https://bluexpinfraprod.azurecr.io
+
+
+** Option 2 :
++
+*** \https://*.blob.core.windows.net
+*** \https://cloudmanagerinfraprod.azurecr.io
+
+
+
+
++
+Les points d'extrémité répertoriés dans l'option 1 sont recommandés car ils sont plus sécurisés. Nous vous recommandons de configurer votre pare-feu pour autoriser les points de terminaison répertoriés dans l'option 1, tout en désautorisant les points de terminaison répertoriés dans l'option 2. Notez ce qui suit à propos de ces noeuds finaux :
+
++
+** Les points finaux répertoriés dans l'option 1 sont pris en charge à partir de la version 3.9.47 du connecteur. Il n'y a pas de rétrocompatibilité avec les versions précédentes du connecteur.
+** Le connecteur entre d'abord en contact avec les extrémités répertoriées dans l'option 2. Si ces points finaux ne sont pas accessibles, le connecteur entre automatiquement en contact avec les points finaux répertoriés dans l'option 1.
+** Les terminaux de l'option 1 ne sont pas pris en charge si vous utilisez le connecteur avec la sauvegarde et la restauration BlueXP  ou la protection contre les ransomwares BlueXP . Dans ce cas, vous pouvez interdire les noeuds finaux répertoriés dans l'option 1, tout en autorisant les noeuds finaux répertoriés dans l'option 2.
+
 
 
 
@@ -392,15 +424,7 @@ Pour obtenir des informations sur les licences et envoyer des messages AutoSuppo
 
 
  a| 
-\https://*.api.bluexp.netapp.com
-
-\https://api.bluexp.netapp.com
-
-\https://*.cloudmanager.cloud.netapp.com
-
-\https://cloudmanager.cloud.netapp.com
-
-\https://netapp-cloud-account.auth0.com
+\https://\*.api.BlueXP .NetApp.com \https://api.BlueXP .NetApp.com \https://*.cloudmanager.cloud.NetApp.com \https://cloudmanager.cloud.NetApp.com \https://NetApp-cloud-account.auth0.com
  a| 
 Pour fournir des fonctions et des services SaaS dans BlueXP.
 
@@ -409,17 +433,42 @@ Notez que le connecteur est actuellement en contact avec « cloudmanager.cloud.n
 
 
  a| 
-\https://*.blob.core.windows.net
-
-\https://cloudmanagerinfraprod.azurecr.io
-Ce terminal n'est pas requis dans les régions Azure Government.
-
-\https://occmclientinfragov.azurecr.us
-Ce terminal n'est requis que dans les régions Azure Government.
+Si le connecteur se trouve dans une région du gouvernement AWS : \https://*.blob.core.windows.net \https://cloudmanagerinfraprod.azurecr.io
  a| 
-Pour mettre à niveau le connecteur et ses composants Docker.
+Pour obtenir des images pour les mises à niveau des connecteurs lorsque le connecteur est installé dans une région du gouvernement AWS.
+
+
+
+ a| 
+Si le connecteur se trouve dans une région du gouvernement Azure : \https://*.blob.core.windows.net \https://occmclientinfragov.azurecr.us
+ a| 
+Pour obtenir des images pour les mises à niveau des connecteurs lorsque le connecteur est installé dans une région Azure Government.
+
+
+
+ a| 
+Si le connecteur se trouve dans une région commerciale ou souveraine, vous pouvez choisir entre deux ensembles de points d'extrémité :
+
+* Option 1 (recommandée) ^1^
++
+\https://bluexpinfraprod.eastus2.data.azurecr.io \https://bluexpinfraprod.azurecr.io
+
+* Option 2
++
+\https://*.blob.core.windows.net \https://cloudmanagerinfraprod.azurecr.io
+
+
+ a| 
+Pour obtenir des images pour les mises à niveau de connecteur lorsque le connecteur est installé dans une région commerciale ou une région souveraine.
 
 |===
+^1^ les noeuds finaux répertoriés dans l'option 1 sont recommandés car ils sont plus sécurisés. Nous vous recommandons de configurer votre pare-feu pour autoriser les points de terminaison répertoriés dans l'option 1, tout en désautorisant les points de terminaison répertoriés dans l'option 2. Notez ce qui suit à propos de ces noeuds finaux :
+
+* Les points finaux répertoriés dans l'option 1 sont pris en charge à partir de la version 3.9.47 du connecteur. Il n'y a pas de rétrocompatibilité avec les versions précédentes du connecteur.
+* Le connecteur entre d'abord en contact avec les extrémités répertoriées dans l'option 2. Si ces points finaux ne sont pas accessibles, le connecteur entre automatiquement en contact avec les points finaux répertoriés dans l'option 1.
+* Les terminaux de l'option 1 ne sont pas pris en charge si vous utilisez le connecteur avec la sauvegarde et la restauration BlueXP  ou la protection contre les ransomwares BlueXP . Dans ce cas, vous pouvez interdire les noeuds finaux répertoriés dans l'option 1, tout en autorisant les noeuds finaux répertoriés dans l'option 2.
+
+
 --
 
 

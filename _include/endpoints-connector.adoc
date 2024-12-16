@@ -67,32 +67,48 @@ Notez que les points finaux répertoriés ci-dessous sont tous des entrées CNAM
 \https://support.netapp.com
 \https://mysupport.netapp.com | pour obtenir des informations de licence et envoyer des messages AutoSupport au support NetApp.
 
-| \https://*.api.bluexp.netapp.com
-
-\https://api.bluexp.netapp.com
-
-\https://*.cloudmanager.cloud.netapp.com
-
-\https://cloudmanager.cloud.netapp.com
-
-\https://netapp-cloud-account.auth0.com
+| \https://\*.api.BlueXP .NetApp.com \https://api.BlueXP .NetApp.com \https://*.cloudmanager.cloud.NetApp.com \https://cloudmanager.cloud.NetApp.com \https://NetApp-cloud-account.auth0.com
 
 | fournir des fonctionnalités et des services SaaS dans BlueXP.
 
 Notez que le connecteur est actuellement en contact avec « cloudmanager.cloud.netapp.com", mais il commencera à contacter « api.bluexp.netapp.com" dans une prochaine version.
 
-| \https://*.blob.core.windows.net
+A| vous avez le choix entre deux ensembles de points d'extrémité :
 
-\https://cloudmanagerinfraprod.azurecr.io
+* Option 1 (recommandée) ^1^
++
+\https://bluexpinfraprod.eastus2.data.azurecr.io \https://bluexpinfraprod.azurecr.io
 
-| pour mettre à niveau le connecteur et ses composants Docker.
+* Option 2
++
+\https://*.blob.core.windows.net \https://cloudmanagerinfraprod.azurecr.io
 
-| \https://*.blob.core.windows.net
 
-\https://cloudmanagerinfraprod.azurecr.io
-Ce terminal n'est pas requis dans les régions Azure Government.
 
-\https://occmclientinfragov.azurecr.us
-Ce terminal n'est requis que dans les régions Azure Government.
+| pour obtenir des images pour les mises à niveau des connecteurs.
 
-| pour mettre à niveau le connecteur et ses composants Docker.
+^1^ les noeuds finaux répertoriés dans l'option 1 sont recommandés car ils sont plus sécurisés. Nous vous recommandons de configurer votre pare-feu pour autoriser les points de terminaison répertoriés dans l'option 1, tout en désautorisant les points de terminaison répertoriés dans l'option 2. Notez ce qui suit à propos de ces noeuds finaux :
+
++ * les noeuds finaux répertoriés dans l'option 1 sont pris en charge à partir de la version 3.9.47 du connecteur. Il n'y a pas de rétrocompatibilité avec les versions précédentes du connecteur. * Le connecteur entre d'abord en contact avec les points d'extrémité répertoriés dans l'option 2. Si ces points finaux ne sont pas accessibles, le connecteur entre automatiquement en contact avec les points finaux répertoriés dans l'option 1. * Les terminaux de l'option 1 ne sont pas pris en charge si vous utilisez le connecteur avec la sauvegarde et la restauration BlueXP  ou la protection contre les ransomwares BlueXP . Dans ce cas, vous pouvez interdire les noeuds finaux répertoriés dans l'option 1, tout en autorisant les noeuds finaux répertoriés dans l'option 2.
+
+| si le connecteur se trouve dans une région du gouvernement AWS : \https://*.blob.core.windows.net \https://cloudmanagerinfraprod.azurecr.io
+
+| pour obtenir des images pour les mises à niveau des connecteurs lorsque le connecteur est installé dans une région du gouvernement AWS.
+
+| si le connecteur se trouve dans une région Azure Government : \https://*.blob.core.windows.net \https://occmclientinfragov.azurecr.us
+
+| pour obtenir des images pour les mises à niveau des connecteurs lorsque le connecteur est installé dans une région Azure Government.
+
+A| si le connecteur se trouve dans une région commerciale ou souveraine, vous pouvez choisir entre deux ensembles de points d'extrémité :
+
+* Option 1 (recommandée) ^1^
++
+\https://bluexpinfraprod.eastus2.data.azurecr.io \https://bluexpinfraprod.azurecr.io
+
+* Option 2
++
+\https://*.blob.core.windows.net \https://cloudmanagerinfraprod.azurecr.io
+
+
+
+| pour obtenir des images pour les mises à niveau de connecteur lorsque le connecteur est installé dans une région commerciale ou une région souveraine.
