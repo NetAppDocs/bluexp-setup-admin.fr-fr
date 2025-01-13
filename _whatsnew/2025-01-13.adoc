@@ -1,0 +1,33 @@
+= Connecteur 3.9.48
+:allow-uri-read: 
+
+
+
+
+=== Connecteur 3.9.48
+
+Cette version de BlueXP Connector inclut des améliorations mineures de la sécurité et des correctifs.
+
+À ce stade, la version 3.9.48 est disponible pour le mode standard et le mode restreint.
+
+
+
+=== Gestion des identités et des accès BlueXP 
+
+* La page Ressources affiche désormais les ressources non découvertes. Les ressources non découvertes sont des ressources de stockage dont BlueXP  dispose, mais pour lesquelles vous n'avez pas créé d'environnement de travail. Par exemple, les ressources qui s'affichent dans Digital Advisor et qui n'ont pas encore d'environnement de travail s'affichent sur la page Ressources en tant que ressources non découvertes.
+* Les ressources Amazon FSX pour NetApp ONTAP ne s'affichent pas sur la page des ressources IAM car vous ne pouvez pas les associer à un rôle IAM. Vous pouvez afficher ces ressources sur leur canevas respectif ou à partir de workloads.
+
+
+
+
+=== Créez un dossier de demande de support pour d'autres services BlueXP 
+
+Une fois que vous avez enregistré BlueXP  pour le support, vous pouvez créer un dossier de demande de support directement à partir de la console Web BlueXP . Lorsque vous créez le cas, vous devez sélectionner le service auquel le problème est associé.
+
+Depuis cette version, vous pouvez désormais créer un dossier de demande de support et l'associer à des services BlueXP  supplémentaires :
+
+* Reprise d'activité BlueXP
+* Protection BlueXP contre les ransomware
+
+
+https://docs.netapp.com/us-en/bluexp-setup-admin/task-get-help.html["En savoir plus sur la création d'un dossier de demande de support"].
