@@ -1044,7 +1044,6 @@
   <block id="3c2636f752222ce604af87906e481f03" category="list-text"><block ref="3c2636f752222ce604af87906e481f03" category="inline-link-rx"></block></block>
   <block id="7596270426e8c5f92be308ff330e0e64" category="inline-link">Documents de réplication</block>
   <block id="17ba1853097c1b83e5a82753f8133c2e" category="list-text"><block ref="17ba1853097c1b83e5a82753f8133c2e" category="inline-link-rx"></block></block>
-  <block id="06afa66cf6eca938a45be835a47030e1" category="paragraph-title">Lien associé</block>
   <block id="2579d10862aa7770a64b058fb84ce858" category="inline-link-macro">Modes de déploiement BlueXP</block>
   <block id="672184337bf12286628179253519271e" category="paragraph"><block ref="672184337bf12286628179253519271e" category="inline-link-macro-rx"></block></block>
   <block id="01da112af45ab74fbf33e58033fbd785" category="summary">Vous pouvez gérer les informations d'identification Google Cloud associées à l'instance de VM Connector en associant un abonnement Marketplace et en dépannant le processus d'abonnement. Ces deux tâches vous permettent d'utiliser votre abonnement Marketplace pour payer les services BlueXP.</block>
@@ -2487,9 +2486,6 @@ Notez que la page s'actualise entre le test de la connexion et l'activation de l
   <block id="3fa57b54a57f48366778b5343dad7a48" category="section-title">Ajoutez des identifiants à BlueXP pour Amazon FSX pour ONTAP</block>
   <block id="0919fa8ef252f518174a76feefbed72b" category="inline-link">Documentation BlueXP pour Amazon FSX pour ONTAP</block>
   <block id="4f75e9590de3cece316768ef4b82f1ed" category="paragraph">Pour plus de détails, reportez-vous à la<block ref="c186ea5d7dffe196818c2e5a7f99ad62" category="inline-link-rx"></block></block>
-  <block id="94935dba78b982df4dbaaf55737f4d0b" category="section-title">Associez un abonnement AWS</block>
-  <block id="490ff557e203933a15d8fe5bc6dad106" category="paragraph">Après avoir ajouté vos identifiants AWS à BlueXP, vous pouvez associer un abonnement AWS Marketplace à ces identifiants. L'abonnement vous permet de payer Cloud Volumes ONTAP à un taux horaire (PAYGO) ou à l'aide d'un contrat annuel, et d'utiliser d'autres services BlueXP.</block>
-  <block id="5eae6608f40144c94d96a8f0a1602c97" category="paragraph">Deux scénarios peuvent vous être associés à un abonnement AWS Marketplace une fois que vous avez déjà ajouté les identifiants à BlueXP :</block>
   <block id="7061e8aac5780f13c42d7f3d3010b5c2" category="inline-link-macro">Apprenez à créer un connecteur</block>
   <block id="4affaad75ff37743ed549d6641de07e8" category="paragraph">Vous devez créer un connecteur avant de pouvoir modifier les paramètres BlueXP. <block ref="ffb61fe647da5972e7e78ecadafdfb45" category="inline-link-macro-rx"></block>.</block>
   <block id="583059f51a0b347f747db9f8d2421392" category="paragraph"><block ref="583059f51a0b347f747db9f8d2421392" category="inline-image-macro-rx" type="image"></block></block>
@@ -2943,7 +2939,6 @@ La découverte sans connecteur (découverte directe) n'est pas prise en charge.<
   <block id="57ed1d98795cc2b599a80064fd2b2bbf" category="paragraph"><block ref="57ed1d98795cc2b599a80064fd2b2bbf" category="inline-image-macro-rx" type="image"></block></block>
   <block id="89d8b3b4c08395fc5dbef0d35cb50529" category="paragraph">La vidéo suivante explique comment vous abonner à Azure Marketplace :</block>
   <block id="a6b7d96f53186edb463f8f8611f97cd9" category="paragraph">Dans cette vidéo, vous instructions pour vous abonner à Google Cloud Marketplace :</block>
-  <block id="20dc3df4cdf91b4bd876009a415c2cec" category="paragraph">La vidéo suivante décrit la procédure de souscription à partir d'AWS Marketplace :</block>
   <block id="52009bb7ee17227f566cd26a02caee56" category="inline-link-macro"><block ref="52009bb7ee17227f566cd26a02caee56" category="inline-link-rx"></block></block>
   <block id="a1a9afcf552a769c282769271829889a" category="paragraph"><block ref="a1a9afcf552a769c282769271829889a" category="inline-link-macro-rx"></block></block>
   <block id="f99aa604031e5049799e73b5c3748a98" category="inline-link-macro"><block ref="f99aa604031e5049799e73b5c3748a98" category="inline-link-rx"></block></block>
@@ -3286,7 +3281,6 @@ Membre: Compte de service BlueXP à partir de serviceAccount.user</block>
   <block id="240d9c0eecb88b98c7fc253d7a1ea3e9" category="section-title">Est-il possible de déplacer les environnements de travail Cloud Volumes ONTAP existants vers un autre compte AWS ?</block>
   <block id="48fee81c8905ac5f4a12516fa379b0f7" category="paragraph">Non, il n'est pas possible de déplacer les ressources AWS associées à votre environnement de travail Cloud Volumes ONTAP vers un autre compte AWS.</block>
   <block id="a0b5de080d56bb71b1a6a7c72fd88757" category="doc">Gérez les identifiants AWS et les abonnements Marketplace pour BlueXP</block>
-  <block id="8fda5ebe3faa8194a970ad5e0645d8c7" category="list-text">Vous souhaitez modifier l'abonnement AWS Marketplace associé aux identifiants AWS.</block>
   <block id="0b3b411ceb545e69a73eeeea9e0f4812" category="doc">Gérez les identifiants Azure et les abonnements Marketplace pour BlueXP</block>
   <block id="f2427bd8db58aeac7d862aab97ae63df" category="list-text">Vous souhaitez modifier l'abonnement Azure Marketplace associé aux informations d'identification Azure.</block>
   <block id="183f3a1e578d0dce86eeb393edf40a5d" category="list-text">Ubuntu 22.04 LTS</block>
@@ -4387,8 +4381,6 @@ Cette partie du tableau répertorie la prise en charge de la gestion de l'enviro
   <block id="888af4d1c4f4f8cf5928fe9cc5ae80c1" category="paragraph">La gestion des identités et des accès BlueXP  vous permet d'organiser vos ressources NetApp à l'aide de projets et de dossiers. Un _projet_ représente un espace de travail dans BlueXP  auquel les membres de l'organisation ont accès pour gérer les _ressources_ (par exemple, un système Cloud Volumes ONTAP). Un _dossier_ regroupe les projets associés. Une fois que vous avez organisé vos ressources en dossiers et projets, vous pouvez accorder un accès granulaire aux ressources en fournissant aux membres de l'organisation des autorisations pour des dossiers et des projets spécifiques.</block>
   <block id="c08b7d4448e95633b73e2495389e853c" category="section-title">Ajouter un dossier ou un projet</block>
   <block id="9b72b5a70aa482b566f3aded23197da9" category="paragraph">Lorsque vous créez votre organisation BlueXP , elle inclut un seul projet. Vous pouvez créer des projets supplémentaires pour gérer les ressources de votre organisation. Vous pouvez éventuellement créer des dossiers pour regrouper les projets associés.</block>
-  <block id="b9b4d0d7c739aa9127b9919f23478743" category="paragraph">La profondeur de la hiérarchie de votre organisation peut descendre à 7 niveaux. Par conséquent, vous pouvez créer des dossiers imbriqués jusqu'à 6 niveaux. Le dernier dossier imbriqué peut alors inclure des projets au septième niveau de la hiérarchie.</block>
-  <block id="5ed844477243e17219a5a1bb8244cb94" category="paragraph">L'image suivante illustre la profondeur maximale de la hiérarchie de votre organisation :</block>
   <block id="de599df9f91a76585a5d0e5049f80230" category="inline-image-macro">Capture d'écran montrant une organisation, six dossiers imbriqués et un projet dans le dernier dossier imbriqué.</block>
   <block id="140320cb76bc5580566bd6ef83ee9d69" category="paragraph"><block ref="140320cb76bc5580566bd6ef83ee9d69" category="inline-image-macro-rx" type="image"></block></block>
   <block id="54f6cd3aa5e387ea27f8d46fcd265b0f" category="list-text">Dans la page *Organisation*, sélectionnez *Ajouter un dossier ou un projet*.</block>
@@ -4403,24 +4395,17 @@ Cette partie du tableau répertorie la prise en charge de la gestion de l'enviro
   <block id="5924e866f66794971195c3e6a6aa8e84" category="paragraph">Si nécessaire, sélectionnez *Ajouter un membre* pour spécifier d'autres membres de l'organisation qui doivent avoir accès au dossier ou au projet, puis sélectionnez un rôle. Un rôle définit les autorisations dont disposent les membres pour le dossier ou le projet.</block>
   <block id="23b701226cc247c8895ac46e9cd633ab" category="inline-link-macro">En savoir plus sur les rôles IAM prédéfinis</block>
   <block id="8d9ad9660b2859a6d51b88d7e31b54d2" category="paragraph"><block ref="ac90d6f587d2b5ff3fb7bb93da707f89" category="inline-link-macro-rx"></block>.</block>
-  <block id="13ea0232702fea363d7f4aaffe9ba8f1" category="paragraph">BlueXP  crée le dossier ou le projet et associe les ressources et les membres spécifiés.</block>
-  <block id="698adc884d432ec429a17995e5d34320" category="section-title">Afficher les ressources et les membres associés à un dossier ou à un projet</block>
   <block id="903a5130798fef050adcb933e11d9330" category="paragraph">Pour vérifier que vos ressources sont organisées de manière appropriée et accessibles aux membres appropriés de votre organisation, vous pouvez afficher les ressources et les membres associés à un dossier ou à un projet.</block>
   <block id="5d051468e96f24341fd4c6192e28f6e2" category="list-text">Dans la page *Organisation*, naviguez jusqu'à un projet ou dossier de la table, sélectionnez<block ref="c9c50c6d591d91ccce1ee232fa490fb4" category="inline-image-macro-rx" type="image"></block>, puis *Modifier le dossier* ou *Modifier le projet*.</block>
   <block id="3f6ecf327501ffc3f265d065c39f55b6" category="inline-image-macro">Capture d'écran de la page Organisation qui affiche l'option Modifier le projet lors de la sélection du menu d'action d'un projet dans la table.</block>
   <block id="f8731f9389f28c059bc2471d56363fcd" category="paragraph"><block ref="f8731f9389f28c059bc2471d56363fcd" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="71aa242e147c147797dbd6f9f41b801c" category="list-text">Sur la page *Modifier*, afficher les détails sur les ressources associées et l'accès aux membres :</block>
   <block id="a470fed0aa4603c3c8d460c4028252f1" category="list-text">Sélectionnez *Ressources* pour afficher les ressources associées. Dans le tableau, la colonne *Status* identifie les ressources associées au dossier ou au projet.</block>
   <block id="c2fdbd86cd719dffbb80161af27b0ec9" category="inline-image-macro">Capture d'écran de la page Modifier le projet qui montre les ressources disponibles que vous pouvez associer ou dissocier avec le projet.</block>
   <block id="65381685a85e45e94ee53dbceff322ff" category="paragraph"><block ref="65381685a85e45e94ee53dbceff322ff" category="inline-image-macro-rx" type="image"></block></block>
   <block id="6b1db5558a176057dbfc6d02d715d5ee" category="list-text">Sélectionnez *accès* pour afficher les membres ayant accès au dossier ou au projet.</block>
   <block id="68f9e92246f3af16e2706083b8012f92" category="inline-image-macro">Capture d'écran de la page Modifier le projet qui montre les membres ayant accès au projet.</block>
   <block id="e537768f43901c1791172250c6c08115" category="paragraph"><block ref="e537768f43901c1791172250c6c08115" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="9e17333b6af28e20b12b88031ec846a2" category="inline-xref">modifier les ressources associées</block>
-  <block id="d6b7bb304d4f265bbfd145a745c68eed" category="inline-xref">modifier l'accès des membres</block>
-  <block id="ba165dec55dcb067d55d8a2bbb32e738" category="paragraph">Si nécessaire, vous pouvez <block ref="fa5515ea77ce1b6a8dbcd79e2fc3ca20" category="inline-xref-macro-rx"></block> ou <block ref="50dc3585d06eec07143d3dfe141dd3c9" category="inline-xref-macro-rx"></block>.</block>
   <block id="df3e2bd0fe2ced6b1bd1a55dad748146" category="section-title">Modifiez les ressources associées à un dossier ou à un projet</block>
-  <block id="a6393b52680d3f8c4ed45e505093ff28" category="paragraph">Vous pouvez modifier les ressources associées à un dossier ou à un projet en associant ou en dissociant une ressource. Par exemple, vous pouvez associer une ressource à un autre projet car cette ressource a la capacité qu'une autre équipe peut utiliser.</block>
   <block id="0727cfa5c59f7b7114ac7246e406611c" category="list-text">Sur la page *Modifier*, sélectionnez *Ressources*.</block>
   <block id="d66e1bd376f74d0703fc72b368b92cd7" category="paragraph">Dans le tableau, la colonne *Status* identifie les ressources associées au dossier ou au projet.</block>
   <block id="95e3e0534ba1d2354c42f80be5302007" category="list-text">Sélectionnez les ressources que vous souhaitez associer ou dissocier.</block>
@@ -4428,26 +4413,20 @@ Cette partie du tableau répertorie la prise en charge de la gestion de l'enviro
   <block id="152ff89b1af4f8995e50a4b8f158db52" category="inline-image-macro">Capture d'écran de la page Modifier le projet qui affiche l'option associer les ressources disponible après la sélection des ressources qui ne sont pas associées actuellement.</block>
   <block id="883f9a97670aa2ea1a29d0163ef97be1" category="paragraph"><block ref="883f9a97670aa2ea1a29d0163ef97be1" category="inline-image-macro-rx" type="image"></block></block>
   <block id="c16f1c2a54634bdad6dee177f8131ef5" category="list-text">Sélectionnez *appliquer*</block>
-  <block id="2020ca2154e03d2358d7a18c7bd4e4ee" category="paragraph">BlueXP  associe les ressources au dossier ou au projet. Les membres de l'organisation qui ont des autorisations pour ce dossier ou ce projet peuvent désormais accéder aux ressources associées.</block>
   <block id="19df46354fac1ffd06065f8388377f84" category="section-title">Modifier l'accès des membres à un dossier ou à un projet</block>
   <block id="710dfcb474fc8ee49343c58686c8aded" category="paragraph">Modifiez l'accès des membres à un dossier ou à un projet pour vous assurer que les membres autorisés ont accès aux ressources associées au dossier ou au projet.</block>
   <block id="91686a8345015e73c2baa91ffbe5ecd6" category="list-text">Sur la page *Modifier*, sélectionnez *accès*.</block>
-  <block id="a8781f46e241d03a4d2657a4d6f9a9b2" category="paragraph">BlueXP  affiche la liste des membres ayant accès au dossier ou au projet.</block>
   <block id="904a2691210bbfe6dfc1b17db516d71c" category="list-text">Modifier l'accès des membres :</block>
   <block id="b49630790a232696bd0f62fa51014e55" category="list-text">*Ajouter un membre* : sélectionnez le membre que vous souhaitez ajouter au dossier ou au projet et attribuez-lui un rôle.</block>
   <block id="a4f439c667db8a94e9e3159df300905d" category="list-text">*Modifier le rôle d'un membre* : pour tous les membres ayant un rôle autre que l'administrateur d'organisation, sélectionnez leur rôle existant, puis choisissez un nouveau rôle.</block>
-  <block id="ec947f15d50d5e45f56ce8c956d581f0" category="paragraph">Si un rôle a été fourni à un niveau supérieur de la hiérarchie (au niveau du dossier ou de l'organisation), vous devez déterminer si vous souhaitez modifier le rôle au niveau inférieur ou supérieur. Par exemple, si vous avez attribué le rôle _Folder ou Project admin_ au niveau du dossier, le fait de modifier le rôle au niveau du projet en autorisations de niveau inférieur ne modifiera pas les autorisations du membre. Comme les rôles sont hérités dans la hiérarchie de l'organisation, le membre possède toujours des autorisations d'administration au niveau du projet.</block>
   <block id="6774afc9942c8dcab2e06828e8f199cb" category="inline-link-macro">En savoir plus sur l'héritage des rôles</block>
   <block id="8945f05b50a19ebe83ee85e629a09120" category="paragraph"><block ref="e2e11ae218588663759cb10a40da4876" category="inline-link-macro-rx"></block>.</block>
   <block id="961a7d705cef5925f92fdc2102dfe17d" category="list-text">*Supprimer l'accès des membres* : pour les membres qui ont un rôle défini dans le dossier ou le projet pour lequel vous consultez, vous pouvez supprimer leur accès.</block>
   <block id="f676fbba085923546a37baf94ce6784b" category="inline-link-macro">Gérez les autorisations à partir de la page membres</block>
-  <block id="e8600e476151636aa41417322bf8eecb" category="paragraph">Si l'accès des membres a été fourni à un niveau supérieur de la hiérarchie (au niveau du dossier ou de l'organisation), vous ne pouvez pas supprimer l'accès des membres lors de l'affichage de ce dossier ou de ce projet. Vous devez passer à cette partie de la hiérarchie. Vous pouvez également <block ref="101f940efcb2d2a02ec2f0fe1cb20220" category="inline-link-macro-rx"></block>.</block>
   <block id="24347b3ddf5a25cc9c27e54ae285ade1" category="list-text">Sélectionnez *appliquer*.</block>
-  <block id="d93816509ec30392c51369fac191445e" category="paragraph">BlueXP  met à jour les membres qui ont accès au dossier ou au projet.</block>
   <block id="7f394af8afb3598061eec3ed6197180d" category="section-title">Renommer un dossier ou un projet</block>
   <block id="f8ca84129dded5d2d753c0d0cc1ddea1" category="paragraph">Si nécessaire, vous pouvez modifier le nom de vos dossiers et projets.</block>
   <block id="ec4b36b02d2682a0624b6df463ee2789" category="list-text">Sur la page *Modifier*, entrez un nouveau nom et sélectionnez *appliquer*.</block>
-  <block id="d8f0fb037537a867a046608fffa33518" category="paragraph">BlueXP  met à jour le nom du dossier ou du projet.</block>
   <block id="03b976867f3d4bd64ebf2dde3b296e4d" category="section-title">Supprimer un dossier ou un projet</block>
   <block id="0a868630764e886d94bedbbfd727e6f4" category="paragraph">Vous pouvez supprimer les dossiers et les projets dont vous n'avez plus besoin.</block>
   <block id="11c35e27e51a047151d75fb0ede09570" category="inline-xref">Découvrez comment dissocier des ressources</block>
@@ -4455,7 +4434,6 @@ Cette partie du tableau répertorie la prise en charge de la gestion de l'enviro
   <block id="aa028ced940586c19c0a4e4d80b01fd3" category="list-text">Un dossier ne doit pas contenir de sous-dossiers ou de projets. Vous devez d'abord supprimer ces dossiers et projets.</block>
   <block id="fe7e8f43628806d12162357cbc6c575a" category="list-text">Dans la page *Organisation*, naviguez jusqu'à un projet ou dossier dans la table, sélectionnez<block ref="c9c50c6d591d91ccce1ee232fa490fb4" category="inline-image-macro-rx" type="image"></block>, puis sélectionnez *Supprimer*.</block>
   <block id="48a726f3d57687547ef8fb70fab0c713" category="list-text">Confirmez que vous souhaitez supprimer le dossier ou le projet.</block>
-  <block id="d8fe55db78c51b6f4ff410e959687f9f" category="paragraph">BlueXP  supprime le dossier ou le projet. Ce dossier ou ce projet n'est plus disponible pour les membres de l'organisation.</block>
   <block id="0574e6792e501b2d7f486dd56c08812e" category="summary">Gérez les membres de votre organisation pour fournir des autorisations à différents niveaux de la hiérarchie des ressources de votre organisation.</block>
   <block id="f9c68f2e2a54251bd4aa39562ccd5a0a" category="doc">Ajouter des membres BlueXP  IAM et gérer leurs autorisations</block>
   <block id="4e1b8aff40899e4c95a3c48a1d8be909" category="paragraph">La gestion des identités et des accès (IAM) BlueXP  vous permet d'ajouter des membres à votre organisation et de leur attribuer un ou plusieurs rôles dans votre hiérarchie de ressources. Un _rôle_ contient un ensemble d'autorisations qui permet à un membre d'effectuer des actions spécifiques à un niveau spécifique de la hiérarchie des ressources. Vous pouvez associer de nouveaux comptes utilisateur et comptes de service, gérer les rôles des membres, etc.</block>
@@ -4546,13 +4524,7 @@ Cette partie du tableau répertorie la prise en charge de la gestion de l'enviro
   <block id="6e49938f1c5b86ad879eeaf086442b08" category="list-text">Confirmez que vous souhaitez supprimer le membre de votre organisation.</block>
   <block id="75e73ef4d25f9f9ea49c38a3bcb941e4" category="paragraph">BlueXP  supprime le membre. Si ce membre se connecte à nouveau à BlueXP , il n'a plus accès à votre organisation BlueXP .</block>
   <block id="2fe6c9d572351b2d4e0b387a62bdf1e2" category="summary">Gérez la hiérarchie des ressources de votre organisation en associant des ressources à des projets et dossiers spécifiques.</block>
-  <block id="dacc6cf59d7e0f66f697ef48b807951c" category="paragraph">Lorsque vous utilisez la gestion des identités et des accès BlueXP  pour associer un membre à votre entreprise, vous fournissez des autorisations au niveau de l'organisation, du dossier ou du projet. Pour vous assurer que ces membres disposent des autorisations nécessaires pour accéder aux ressources appropriées, vous devez gérer la hiérarchie des ressources de votre organisation en associant des ressources à des projets et dossiers spécifiques. Une _ressource_ est un environnement de travail que BlueXP  gère déjà.</block>
   <block id="98ca801aa8933a24531043c30c475e2e" category="section-title">Afficher les ressources de votre organisation</block>
-  <block id="8271e2759587670b87881a1e083e0a52" category="paragraph">Pour commencer à gérer votre hiérarchie de ressources, vous devez connaître les ressources associées à votre organisation.</block>
-  <block id="95c9ea5440ca8b54a3d3dae8e1d1f492" category="list-text">Sélectionnez *Ressources*.</block>
-  <block id="90eb4a50a957d74015adf452111a7dd5" category="paragraph">Les ressources associées à votre organisation s'affichent dans le tableau *Ressources*.</block>
-  <block id="573f6fc7f3c18fb7721ddccfe2520412" category="inline-xref">rechercher et filtrer le contenu de la table</block>
-  <block id="74a216516ae6f979fa921c96dd5057a8" category="paragraph">Pour trouver une ressource spécifique, vous pouvez <block ref="2fd3d11c7689796e93f3888013589416" category="inline-xref-macro-rx"></block>.</block>
   <block id="7e2927a58abcc62c9eb5c28962dc9573" category="paragraph">Une fois que vous avez trouvé la ressource que vous recherchez, vous pouvez effectuer l'une des actions suivantes :</block>
   <block id="d488db7f816284f6712caf2d76eb5169" category="inline-xref">Affichez les dossiers et les projets associés à la ressource</block>
   <block id="ea450edd18061a7cc42c1dc5a73807e9" category="list-text"><block ref="725a161a6f11aca02e0e25e2ae9628c0" category="inline-xref-macro-rx"></block></block>
@@ -4560,25 +4532,19 @@ Cette partie du tableau répertorie la prise en charge de la gestion de l'enviro
   <block id="e43736ff73ca6844bfafd7ef8dc58bad" category="list-text"><block ref="7d9c5683f2b3adedfbcf34a695515c4d" category="inline-xref-macro-rx"></block></block>
   <block id="b6af3f20458abefb8743e926f21c0677" category="inline-xref">Supprimez la ressource d'un dossier ou d'un projet</block>
   <block id="1797f1c38c97687b6136c8e69786e0a2" category="list-text"><block ref="bb02d809bee1364f03f71b60d989a04d" category="inline-xref-macro-rx"></block></block>
-  <block id="a29510a9013088f354480f508c907c2e" category="section-title">Trouvez des ressources spécifiques dans votre organisation</block>
-  <block id="1acca7d7f6a7f4515e946bae053cbc27" category="paragraph">Si votre organisation dispose d'un grand nombre de ressources, vous pouvez utiliser les options de recherche et de filtre pour trouver une ressource spécifique.</block>
-  <block id="a89524edc025c255e3e415e871e88e5d" category="list-text">Sur la page *Ressources*, sélectionnez *recherche avancée et filtrage*.</block>
   <block id="3d1bc41342a56d581edf9d1765f01a0b" category="list-text">Utilisez l'une des options disponibles pour trouver la ressource que vous recherchez :</block>
   <block id="48ca2619b5dca392dc3969df94469cf3" category="list-text">*Recherche par nom de ressource* : saisissez une chaîne de texte et sélectionnez *Ajouter*.</block>
   <block id="b2efca9e0863336ee0d7aa6af1771c24" category="list-text">*Plate-forme* : sélectionnez une ou plusieurs plates-formes, telles qu'Amazon Web Services.</block>
   <block id="e6d1209910233e075e359b7fdb3892a8" category="list-text">*Ressources* : sélectionnez une ou plusieurs ressources, telles que Cloud Volumes ONTAP.</block>
   <block id="4a42d7a28e04f8a9b2270b8906ae904c" category="list-text">*Organisation, dossier ou projet* : sélectionnez l'ensemble de l'organisation, un dossier spécifique ou un projet spécifique.</block>
   <block id="fb3b214ed2681d71df95f0a2e1ad7ee8" category="list-text">Sélectionnez *Rechercher*.</block>
-  <block id="de1dcc903e0def1031803a58221b8303" category="paragraph">Le contenu du tableau Ressources est actualisé pour afficher les ressources correspondant à vos sélections de recherche et de filtre.</block>
   <block id="6b979ebd5780c7df2c462682bbe1749e" category="section-title">Associer une ressource à des dossiers et des projets</block>
-  <block id="6f4141394827d668d7827055e97c0bb9" category="paragraph">Si vous souhaitez rendre une ressource disponible à un autre dossier ou projet de votre organisation, vous devez créer une association entre le dossier ou le projet et la ressource.</block>
   <block id="123b63ad16a2eb2123e4d954ed9b410d" category="inline-link-macro">Découvrez les ressources, notamment quand associer une ressource à un dossier</block>
   <block id="aa17a9cf1b2a8bd01a901a0eb2e99eee" category="paragraph">Vous devez comprendre le fonctionnement de l'association de ressources. <block ref="a1afb03a32649c13d619ffef925eefd6" category="inline-link-macro-rx"></block>.</block>
   <block id="0ba76e0dec90ea0767d0bea623254565" category="list-text">Dans la page *Ressources*, naviguez jusqu'à une ressource dans la table, sélectionnez<block ref="c9c50c6d591d91ccce1ee232fa490fb4" category="inline-image-macro-rx" type="image"></block>, puis sélectionnez *associer aux dossiers ou projets*.</block>
   <block id="40604a706a532d51e9c0e2942f20bbbd" category="list-text">Pour associer un dossier ou un projet supplémentaire, sélectionnez *Ajouter un dossier ou un projet*, puis sélectionnez le dossier ou le projet.</block>
   <block id="227d0042933a910c506c0345c27ef64f" category="paragraph">Notez que vous ne pouvez sélectionner que les dossiers et les projets pour lesquels vous disposez des autorisations d'administration.</block>
   <block id="5c4e241b983cce10c131e9a51dc2f2e5" category="list-text">Sélectionnez *associer des ressources*.</block>
-  <block id="71e4a1d057d7694dd5ea8710ca5d07a9" category="paragraph">BlueXP  associe la ressource aux dossiers et projets sélectionnés.</block>
   <block id="f487d6f4a22314a7fc4b480b252f4981" category="list-text">Si vous avez associé la ressource à des projets, les membres qui ont des autorisations pour ces projets ont désormais la possibilité d'accéder à la ressource dans BlueXP .</block>
   <block id="6330741dc930a8e0cff70d2bbd0c2a2d" category="inline-link-macro">En savoir plus sur l'association d'une ressource à un dossier</block>
   <block id="0764009847ea7e98389494f95f4d739e" category="list-text">Si vous avez associé la ressource à un dossier, un _dossier ou un administrateur de projet_ peut maintenant accéder à la ressource depuis BlueXP  IAM. <block ref="a53b921d2a913725c8b4e28a24824743" category="inline-link-macro-rx"></block>.</block>
@@ -4586,7 +4552,6 @@ Cette partie du tableau répertorie la prise en charge de la gestion de l'enviro
   <block id="3a04b19767b9262d748f5bc93b4d433d" category="section-title">Afficher les dossiers et les projets associés à une ressource</block>
   <block id="012ed1b51c49e99d9e7c8472bbf96c42" category="paragraph">Pour identifier où une ressource est disponible dans la hiérarchie de votre organisation, vous pouvez afficher les dossiers et les projets associés à cette ressource.</block>
   <block id="ae35c12a9d0798db618751302c4603bd" category="list-text">Dans la page *Ressources*, naviguez jusqu'à une ressource dans la table, sélectionnez<block ref="c9c50c6d591d91ccce1ee232fa490fb4" category="inline-image-macro-rx" type="image"></block>, puis cliquez sur *Afficher les détails*.</block>
-  <block id="147b2b655dda25ecac27a2d7381599e4" category="paragraph">BlueXP  affiche les dossiers et les projets associés à la ressource.</block>
   <block id="0d8f80667cd7bc86a6f6ea26c12d18b9" category="paragraph">L'exemple suivant montre une ressource associée à un projet.</block>
   <block id="a46cbe82e9adff7ecc82d6eadb58aa97" category="inline-image-macro">Capture d'écran de la page de détails de la ressource qui montre une ressource associée à un projet qui se trouve directement sous l'organisation.</block>
   <block id="7cadbb5f400f149f938a910df5c5cb0d" category="paragraph"><block ref="7cadbb5f400f149f938a910df5c5cb0d" category="inline-image-macro-rx" type="image"></block></block>
@@ -4601,7 +4566,6 @@ Cette partie du tableau répertorie la prise en charge de la gestion de l'enviro
   <block id="7f6be6d71b75090da3f7888443a6d4f8" category="paragraph">Si vous souhaitez supprimer une ressource découverte de toute l'organisation, vous devez supprimer l'environnement de travail du canevas BlueXP .</block>
   <block id="4fc3c6ef596dbec8a3af38f79c84cf02" category="list-text">Pour le dossier ou le projet pour lequel vous souhaitez supprimer la ressource, sélectionnez <block ref="5aa3fbfa4a030d3d0fb7677a91fd2eba" category="inline-image-macro-rx" type="image"></block></block>
   <block id="ece216a1c354b015ef19084b08f5e92f" category="list-text">Confirmez que vous souhaitez supprimer l'association en sélectionnant *Supprimer*.</block>
-  <block id="4cc93df03851cba78d596a3fa944ce1a" category="paragraph">BlueXP  supprime l'association. Les membres ne peuvent plus accéder à la ressource à partir de ce dossier ou de ce projet.</block>
   <block id="08599f4c51d7b3ffe063f2612e7c4f5e" category="summary">Si nécessaire, vous pouvez modifier le nom de votre organisation BlueXP .</block>
   <block id="3b2af1e86badf70e10ee3dd7bd601881" category="paragraph">Si nécessaire, vous pouvez remplacer le nom de votre organisation BlueXP  par BlueXP  Identity and Access Management (IAM). Le nom de l'organisation apparaît en haut de la console Web BlueXP  et dans les pages IAM.</block>
   <block id="8bf336ab115156eac88db2970ab0e70d" category="list-text">Dans la page *Organisation*, naviguez jusqu'à la première ligne du tableau, sélectionnez<block ref="c9c50c6d591d91ccce1ee232fa490fb4" category="inline-image-macro-rx" type="image"></block>, puis *Modifier l'organisation*.</block>
@@ -4965,4 +4929,27 @@ Cette partie du tableau répertorie la prise en charge de la gestion de l'enviro
   <block id="815ee4222e11b0d1d149ad24cabecc80" category="paragraph">Si le connecteur se trouve dans une région commerciale ou souveraine, vous pouvez choisir entre deux ensembles de points d'extrémité :</block>
   <block id="ad262fe50d2ecf5a3aae7409b3eda8e2" category="paragraph">Pour obtenir des images pour les mises à niveau de connecteur lorsque le connecteur est installé dans une région commerciale ou une région souveraine.</block>
   <block id="c33f35ab44944cc0d09e5bb702125592" category="section-title">16 décembre 2024</block>
+  <block id="67f44df0b66677509cb8a85769f34ee3" category="paragraph">La vidéo suivante décrit comment vous abonner à BlueXP  depuis AWS Marketplace :</block>
+  <block id="96be219c15e8fd2a25d382cfbe8aba22" category="list-text">Sélectionnez le menu d'action correspondant à un ensemble d'informations d'identification, puis sélectionnez *configurer l'abonnement*.</block>
+  <block id="f9ffa76e11dc9be1f06d413d4c1da4ed" category="list-text">Pour associer les informations d'identification à un abonnement existant, sélectionnez l'abonnement dans la liste déroulante et sélectionnez *configurer*.</block>
+  <block id="e7225dcfe470884c10cd0ab60d4ad033" category="section-title">Informations connexes</block>
+  <block id="ff462988ef2bf728297fe5ed85ddc08d" category="section-title">Configurez un abonnement AWS</block>
+  <block id="b8da1935866ccfc3044b85a99232dc4f" category="paragraph">Après avoir ajouté vos identifiants AWS à BlueXP , vous pouvez configurer un abonnement AWS Marketplace avec ces identifiants. L'abonnement vous permet de payer Cloud Volumes ONTAP à un taux horaire (PAYGO) ou à l'aide d'un contrat annuel, et d'utiliser d'autres services BlueXP.</block>
+  <block id="98ab56b1913a765c1df746951483fcf9" category="paragraph">Dans deux cas, vous pouvez configurer un abonnement AWS Marketplace après avoir déjà ajouté les informations d'identification à BlueXP  :</block>
+  <block id="5ae59f56e745767e7fb2cc05712fc6a6" category="list-text">Vous n'avez pas configuré d'abonnement lorsque vous avez ajouté les informations d'identification à BlueXP .</block>
+  <block id="1fa2cd673301895c14fbffad8568f063" category="list-text">Vous souhaitez modifier l'abonnement AWS Marketplace configuré sur les identifiants AWS.</block>
+  <block id="992e95d72701e4be3c32c42f86ff8eb2" category="paragraph">La profondeur de la hiérarchie des ressources de votre organisation peut descendre à 7 niveaux. Par conséquent, vous pouvez créer des dossiers imbriqués jusqu'à 6 niveaux. Le dernier dossier imbriqué peut alors inclure des projets au septième niveau de la hiérarchie.</block>
+  <block id="602717d0c1fbb3310698d48708d917bc" category="paragraph">L'image suivante illustre la profondeur maximale de la hiérarchie des ressources de votre organisation :</block>
+  <block id="7ef08e2a2795e0ebd33ca241791da34d" category="section-title">Afficher les ressources associées à un dossier ou à un projet</block>
+  <block id="b9cbaac63edb6628a694750d4f1ba083" category="list-text">Sur la page *Modifier*, vous pouvez afficher des détails sur le dossier ou le projet sélectionné en développant les sections *Ressources* ou *accès*.</block>
+  <block id="c89793030e51a304fd86f478545c616e" category="paragraph">Vous pouvez modifier les ressources associées à un dossier ou à un projet en associant ou en dissociant une ressource. Par exemple, vous pouvez associer une ressource à un autre projet car cette ressource a la capacité qu'une autre équipe peut utiliser. Une fois que vous avez associé une ressource à un dossier ou à un projet, les membres de l'organisation qui ont des autorisations pour ce dossier ou ce projet peuvent accéder à la ressource associée.</block>
+  <block id="e3621d23b92254c73b3a713d227a66f5" category="section-title">Afficher les membres associés à un dossier ou à un projet</block>
+  <block id="5ca796b399d85f3455d2d1844012b11a" category="paragraph">Si l'accès des membres a été fourni à un niveau supérieur de la hiérarchie (au niveau du dossier ou de l'organisation), vous ne pouvez pas supprimer ou modifier l'accès des membres lors de l'affichage du dossier ou du projet de niveau inférieur. Vous devez passer à cette partie de la hiérarchie et y mettre à jour les autorisations du membre. Vous pouvez également <block ref="101f940efcb2d2a02ec2f0fe1cb20220" category="inline-link-macro-rx"></block>.</block>
+  <block id="2bd6967deb6b9eb3d79e794bad318fb4" category="list-text">Sur la page *Modifier*, sélectionnez *accès* pour afficher la liste des membres ayant accès au dossier ou au projet sélectionné.</block>
+  <block id="d94261042140ed4ba051dbe4ecd2eeb1" category="paragraph">Lorsque vous utilisez la gestion des identités et des accès BlueXP  pour associer un membre à votre entreprise, vous fournissez des autorisations au niveau de l'organisation, du dossier ou du projet. Pour vous assurer que ces membres disposent des autorisations nécessaires pour accéder aux ressources appropriées, vous devez gérer la hiérarchie des ressources de votre organisation en associant des ressources à des projets et dossiers spécifiques. Une _ressource_ est une ressource de stockage que BlueXP  gère déjà ou connaît déjà.</block>
+  <block id="e9c971c6d3dcc12c14f3f119d1d8f701" category="paragraph">Vous pouvez afficher à la fois les ressources découvertes et les ressources non découvertes associées à votre organisation. Les ressources non découvertes sont généralement des ressources de stockage connues par le biais de Digital Advisor pour lesquelles vous n'avez pas ajouté d'environnements de travail.</block>
+  <block id="7e797bc936bc19649c91fa90509a82a9" category="admonition">Les ressources Amazon FSX pour NetApp ONTAP ne s'affichent pas sur la page des ressources IAM car vous ne pouvez pas les associer à un rôle IAM. Vous pouvez afficher ces ressources sur leur canevas respectif ou à partir de workloads.</block>
+  <block id="3135ebe2cc4398e8de27fc39c6eb605e" category="list-text">Sélectionnez *Ressources* pour afficher la page Ressources.</block>
+  <block id="a5d2efab4d8509840f3f76fe8f0a57c1" category="list-text">Sélectionnez *recherche avancée et filtrage*.</block>
+  <block id="f7e276f42cb40dbaba008d93e6aff422" category="paragraph">Si vous souhaitez rendre une ressource disponible au dossier ou au projet dans votre organisation, vous devez créer une association entre le dossier ou le projet et la ressource.</block>
 </blocks>

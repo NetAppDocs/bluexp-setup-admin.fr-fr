@@ -136,7 +136,7 @@ Si vous disposez d'un connecteur existant fonctionnant sur RHEL 7 ou CentOS 7, n
 
 
 
-== Liens connexes
+== Informations connexes
 
 
 

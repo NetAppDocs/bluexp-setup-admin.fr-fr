@@ -71,5 +71,5 @@ Si vous utilisez BlueXP  en mode standard, vous n'aurez pas de compte BlueXP .
 
 | Afficher et gérer le tableau de bord du support | Oui. | Oui. | Non | Non 
 |===
-.Lien associé
+.Informations associées
 link:task-managing-netapp-accounts.html["Gestion de votre compte BlueXP"]

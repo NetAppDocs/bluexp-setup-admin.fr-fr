@@ -21,5 +21,5 @@ TIP: Si vous avez installé un connecteur dans AWS, Microsoft Azure ou Google Cl
 
 Pour obtenir de l'aide, consultez le https://docs.netapp.com/us-en/bluexp-family/["Page d'accueil de la documentation BlueXP"^] Pour afficher les documents relatifs à tous les services BlueXP.
 
-.Lien associé
+.Informations associées
 link:concept-modes.html["Modes de déploiement BlueXP"]

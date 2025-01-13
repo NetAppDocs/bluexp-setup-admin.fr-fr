@@ -2,16 +2,20 @@
 :allow-uri-read: 
 
 
+La vidéo suivante décrit comment vous abonner à BlueXP  depuis AWS Marketplace :
+
+.Abonnez-vous à BlueXP sur AWS Marketplace
+video::096e1740-d115-44cf-8c27-b051011611eb[panopto]
 .Étapes
 . Dans le coin supérieur droit de la console BlueXP, sélectionnez l'icône Paramètres, puis sélectionnez *informations d'identification*.
-. Sélectionnez le menu d'action correspondant à un ensemble d'informations d'identification, puis sélectionnez *abonnement associé*.
+. Sélectionnez le menu d'action correspondant à un ensemble d'informations d'identification, puis sélectionnez *configurer l'abonnement*.
 +
 Vous devez sélectionner les informations d'identification associées à un connecteur. Vous ne pouvez pas associer un abonnement Marketplace aux informations d'identification associées à BlueXP.
 
 +
 image:screenshot_associate_subscription.png["Capture d'écran du menu d'action pour un ensemble d'informations d'identification existantes."]
 
-. Pour associer les informations d'identification à un abonnement existant, sélectionnez l'abonnement dans la liste déroulante et sélectionnez *associer*.
+. Pour associer les informations d'identification à un abonnement existant, sélectionnez l'abonnement dans la liste déroulante et sélectionnez *configurer*.
 . Pour associer les informations d'identification à un nouvel abonnement, sélectionnez *Ajouter un abonnement > Continuer* et suivez les étapes indiquées dans AWS Marketplace :
 +
 .. Sélectionnez *Afficher les options d'achat*.
@@ -31,12 +35,6 @@ BlueXP  remplace l'abonnement existant pour tous les identifiants de l'entrepri
 Pour tous les autres comptes ou organisations, vous devez associer manuellement l'abonnement en répétant ces étapes.
 
 *** Sélectionnez *Enregistrer*.
-+
-La vidéo suivante décrit la procédure de souscription à partir d'AWS Marketplace :
-
-+
-.Abonnez-vous à BlueXP sur AWS Marketplace
-video::096e1740-d115-44cf-8c27-b051011611eb[panopto]
 
 
 

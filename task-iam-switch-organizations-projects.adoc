@@ -73,7 +73,7 @@ Si vous avez plusieurs connecteurs, vous pouvez passer de l'un à l'autre pour v
 .Résultat
 BlueXP  actualise et affiche les environnements de travail associés au connecteur sélectionné.
 
-.Lien associé
+.Informations associées
 link:task-iam-associate-connectors.html["Associer des connecteurs à des dossiers et des projets"].
 
 

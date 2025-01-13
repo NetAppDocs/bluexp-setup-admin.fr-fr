@@ -16,7 +16,7 @@ summary: Pour résoudre les problèmes liés au connecteur, vous pouvez contacte
 [role="lead"]
 Pour résoudre les problèmes liés au connecteur, vous pouvez faire appel au support NetApp qui peut vous demander l'ID système, la version du connecteur ou les derniers messages AutoSupport. Vous pouvez également consulter la base de connaissances NetApp pour résoudre vous-même les problèmes.
 
-.Lien associé
+.Informations associées
 link:task-get-help.html["Obtenez de l'aide auprès du support NetApp"].
 
 

@@ -23,9 +23,9 @@ La gestion des identités et des accès BlueXP  vous permet d'organiser vos res
 Lorsque vous créez votre organisation BlueXP , elle inclut un seul projet. Vous pouvez créer des projets supplémentaires pour gérer les ressources de votre organisation. Vous pouvez éventuellement créer des dossiers pour regrouper les projets associés.
 
 .Description de la tâche
-La profondeur de la hiérarchie de votre organisation peut descendre à 7 niveaux. Par conséquent, vous pouvez créer des dossiers imbriqués jusqu'à 6 niveaux. Le dernier dossier imbriqué peut alors inclure des projets au septième niveau de la hiérarchie.
+La profondeur de la hiérarchie des ressources de votre organisation peut descendre à 7 niveaux. Par conséquent, vous pouvez créer des dossiers imbriqués jusqu'à 6 niveaux. Le dernier dossier imbriqué peut alors inclure des projets au septième niveau de la hiérarchie.
 
-L'image suivante illustre la profondeur maximale de la hiérarchie de votre organisation :
+L'image suivante illustre la profondeur maximale de la hiérarchie des ressources de votre organisation :
 
 image:screenshot-iam-max-depth.png["Capture d'écran montrant une organisation, six dossiers imbriqués et un projet dans le dernier dossier imbriqué."]
 
@@ -55,97 +55,6 @@ link:reference-iam-predefined-roles.html["En savoir plus sur les rôles IAM pré
 . Sélectionnez *Ajouter*.
 
 
-.Résultat
-BlueXP  crée le dossier ou le projet et associe les ressources et les membres spécifiés.
-
-
-
-== Afficher les ressources et les membres associés à un dossier ou à un projet
-
-Pour vérifier que vos ressources sont organisées de manière appropriée et accessibles aux membres appropriés de votre organisation, vous pouvez afficher les ressources et les membres associés à un dossier ou à un projet.
-
-.Étapes
-. Dans la page *Organisation*, naviguez jusqu'à un projet ou dossier de la table, sélectionnezimage:icon-action.png["Icône représentant trois points côte à côte"], puis *Modifier le dossier* ou *Modifier le projet*.
-+
-image:screenshot-iam-edit-project.png["Capture d'écran de la page Organisation qui affiche l'option Modifier le projet lors de la sélection du menu d'action d'un projet dans la table."]
-
-. Sur la page *Modifier*, afficher les détails sur les ressources associées et l'accès aux membres :
-+
-** Sélectionnez *Ressources* pour afficher les ressources associées. Dans le tableau, la colonne *Status* identifie les ressources associées au dossier ou au projet.
-+
-image:screenshot-iam-allocated-resources.png["Capture d'écran de la page Modifier le projet qui montre les ressources disponibles que vous pouvez associer ou dissocier avec le projet."]
-
-** Sélectionnez *accès* pour afficher les membres ayant accès au dossier ou au projet.
-+
-image:screenshot-iam-member-access.png["Capture d'écran de la page Modifier le projet qui montre les membres ayant accès au projet."]
-
-
-
-
-
-.Et la suite ?
-Si nécessaire, vous pouvez <<modify-resources,modifier les ressources associées>> ou <<modify-members,modifier l'accès des membres>>.
-
-
-
-== Modifiez les ressources associées à un dossier ou à un projet
-
-Vous pouvez modifier les ressources associées à un dossier ou à un projet en associant ou en dissociant une ressource. Par exemple, vous pouvez associer une ressource à un autre projet car cette ressource a la capacité qu'une autre équipe peut utiliser.
-
-.Avant de commencer
-link:concept-identity-and-access-management.html#associate-resource-folder["Découvrez quand vous pouvez associer une ressource à un dossier"].
-
-.Étapes
-. Dans la page *Organisation*, naviguez jusqu'à un projet ou dossier de la table, sélectionnezimage:icon-action.png["Icône représentant trois points côte à côte"], puis *Modifier le dossier* ou *Modifier le projet*.
-. Sur la page *Modifier*, sélectionnez *Ressources*.
-+
-Dans le tableau, la colonne *Status* identifie les ressources associées au dossier ou au projet.
-
-. Sélectionnez les ressources que vous souhaitez associer ou dissocier.
-. En fonction des ressources que vous avez sélectionnées, sélectionnez *associer au projet* ou *dissocier du projet*.
-+
-image:screenshot-iam-associate-resources.png["Capture d'écran de la page Modifier le projet qui affiche l'option associer les ressources disponible après la sélection des ressources qui ne sont pas associées actuellement."]
-
-. Sélectionnez *appliquer*
-
-
-.Résultat
-BlueXP  associe les ressources au dossier ou au projet. Les membres de l'organisation qui ont des autorisations pour ce dossier ou ce projet peuvent désormais accéder aux ressources associées.
-
-
-
-== Modifier l'accès des membres à un dossier ou à un projet
-
-Modifiez l'accès des membres à un dossier ou à un projet pour vous assurer que les membres autorisés ont accès aux ressources associées au dossier ou au projet.
-
-.Étapes
-. Dans la page *Organisation*, naviguez jusqu'à un projet ou dossier de la table, sélectionnezimage:icon-action.png["Icône représentant trois points côte à côte"], puis *Modifier le dossier* ou *Modifier le projet*.
-. Sur la page *Modifier*, sélectionnez *accès*.
-+
-BlueXP  affiche la liste des membres ayant accès au dossier ou au projet.
-
-. Modifier l'accès des membres :
-+
-** *Ajouter un membre* : sélectionnez le membre que vous souhaitez ajouter au dossier ou au projet et attribuez-lui un rôle.
-** *Modifier le rôle d'un membre* : pour tous les membres ayant un rôle autre que l'administrateur d'organisation, sélectionnez leur rôle existant, puis choisissez un nouveau rôle.
-+
-Si un rôle a été fourni à un niveau supérieur de la hiérarchie (au niveau du dossier ou de l'organisation), vous devez déterminer si vous souhaitez modifier le rôle au niveau inférieur ou supérieur. Par exemple, si vous avez attribué le rôle _Folder ou Project admin_ au niveau du dossier, le fait de modifier le rôle au niveau du projet en autorisations de niveau inférieur ne modifiera pas les autorisations du membre. Comme les rôles sont hérités dans la hiérarchie de l'organisation, le membre possède toujours des autorisations d'administration au niveau du projet.
-
-+
-link:concept-identity-and-access-management.html#role-inheritance["En savoir plus sur l'héritage des rôles"].
-
-** *Supprimer l'accès des membres* : pour les membres qui ont un rôle défini dans le dossier ou le projet pour lequel vous consultez, vous pouvez supprimer leur accès.
-+
-Si l'accès des membres a été fourni à un niveau supérieur de la hiérarchie (au niveau du dossier ou de l'organisation), vous ne pouvez pas supprimer l'accès des membres lors de l'affichage de ce dossier ou de ce projet. Vous devez passer à cette partie de la hiérarchie. Vous pouvez également link:task-iam-manage-members-permissions.html#manage-permissions["Gérez les autorisations à partir de la page membres"].
-
-
-
-. Sélectionnez *appliquer*.
-
-
-.Résultat
-BlueXP  met à jour les membres qui ont accès au dossier ou au projet.
-
 
 
 == Obtenir l'ID d'un projet
@@ -174,9 +83,6 @@ Si nécessaire, vous pouvez modifier le nom de vos dossiers et projets.
 . Sur la page *Modifier*, entrez un nouveau nom et sélectionnez *appliquer*.
 
 
-.Résultat
-BlueXP  met à jour le nom du dossier ou du projet.
-
 
 
 == Supprimer un dossier ou un projet
@@ -193,8 +99,82 @@ Vous pouvez supprimer les dossiers et les projets dont vous n'avez plus besoin.
 . Confirmez que vous souhaitez supprimer le dossier ou le projet.
 
 
-.Résultat
-BlueXP  supprime le dossier ou le projet. Ce dossier ou ce projet n'est plus disponible pour les membres de l'organisation.
+
+
+== Afficher les ressources associées à un dossier ou à un projet
+
+Pour vérifier que vos ressources sont organisées de manière appropriée et accessibles aux membres appropriés de votre organisation, vous pouvez afficher les ressources et les membres associés à un dossier ou à un projet.
+
+.Étapes
+. Dans la page *Organisation*, naviguez jusqu'à un projet ou dossier de la table, sélectionnezimage:icon-action.png["Icône représentant trois points côte à côte"], puis *Modifier le dossier* ou *Modifier le projet*.
++
+image:screenshot-iam-edit-project.png["Capture d'écran de la page Organisation qui affiche l'option Modifier le projet lors de la sélection du menu d'action d'un projet dans la table."]
+
+. Sur la page *Modifier*, vous pouvez afficher des détails sur le dossier ou le projet sélectionné en développant les sections *Ressources* ou *accès*.
++
+** Sélectionnez *Ressources* pour afficher les ressources associées. Dans le tableau, la colonne *Status* identifie les ressources associées au dossier ou au projet.
++
+image:screenshot-iam-allocated-resources.png["Capture d'écran de la page Modifier le projet qui montre les ressources disponibles que vous pouvez associer ou dissocier avec le projet."]
+
+
+
+
+
+
+
+== Modifiez les ressources associées à un dossier ou à un projet
+
+Vous pouvez modifier les ressources associées à un dossier ou à un projet en associant ou en dissociant une ressource. Par exemple, vous pouvez associer une ressource à un autre projet car cette ressource a la capacité qu'une autre équipe peut utiliser. Une fois que vous avez associé une ressource à un dossier ou à un projet, les membres de l'organisation qui ont des autorisations pour ce dossier ou ce projet peuvent accéder à la ressource associée.
+
+.Avant de commencer
+link:concept-identity-and-access-management.html#associate-resource-folder["Découvrez quand vous pouvez associer une ressource à un dossier"].
+
+.Étapes
+. Dans la page *Organisation*, naviguez jusqu'à un projet ou dossier de la table, sélectionnezimage:icon-action.png["Icône représentant trois points côte à côte"], puis *Modifier le dossier* ou *Modifier le projet*.
+. Sur la page *Modifier*, sélectionnez *Ressources*.
++
+Dans le tableau, la colonne *Status* identifie les ressources associées au dossier ou au projet.
+
+. Sélectionnez les ressources que vous souhaitez associer ou dissocier.
+. En fonction des ressources que vous avez sélectionnées, sélectionnez *associer au projet* ou *dissocier du projet*.
++
+image:screenshot-iam-associate-resources.png["Capture d'écran de la page Modifier le projet qui affiche l'option associer les ressources disponible après la sélection des ressources qui ne sont pas associées actuellement."]
+
+. Sélectionnez *appliquer*
+
+
+
+
+== Afficher les membres associés à un dossier ou à un projet
+
+* Sélectionnez *accès* pour afficher les membres ayant accès au dossier ou au projet.
++
+image:screenshot-iam-member-access.png["Capture d'écran de la page Modifier le projet qui montre les membres ayant accès au projet."]
+
+
+
+
+
+== Modifier l'accès des membres à un dossier ou à un projet
+
+Modifiez l'accès des membres à un dossier ou à un projet pour vous assurer que les membres autorisés ont accès aux ressources associées au dossier ou au projet.
+
+Si l'accès des membres a été fourni à un niveau supérieur de la hiérarchie (au niveau du dossier ou de l'organisation), vous ne pouvez pas supprimer ou modifier l'accès des membres lors de l'affichage du dossier ou du projet de niveau inférieur. Vous devez passer à cette partie de la hiérarchie et y mettre à jour les autorisations du membre. Vous pouvez également link:task-iam-manage-members-permissions.html#manage-permissions["Gérez les autorisations à partir de la page membres"].
+
+link:concept-identity-and-access-management.html#role-inheritance["En savoir plus sur l'héritage des rôles"].
+
+.Étapes
+. Dans la page *Organisation*, naviguez jusqu'à un projet ou dossier de la table, sélectionnezimage:icon-action.png["Icône représentant trois points côte à côte"], puis *Modifier le dossier* ou *Modifier le projet*.
+. Sur la page *Modifier*, sélectionnez *accès* pour afficher la liste des membres ayant accès au dossier ou au projet sélectionné.
+. Modifier l'accès des membres :
++
+** *Ajouter un membre* : sélectionnez le membre que vous souhaitez ajouter au dossier ou au projet et attribuez-lui un rôle.
+** *Modifier le rôle d'un membre* : pour tous les membres ayant un rôle autre que l'administrateur d'organisation, sélectionnez leur rôle existant, puis choisissez un nouveau rôle.
+** *Supprimer l'accès des membres* : pour les membres qui ont un rôle défini dans le dossier ou le projet pour lequel vous consultez, vous pouvez supprimer leur accès.
+
+
+. Sélectionnez *appliquer*.
+
 
 
 
