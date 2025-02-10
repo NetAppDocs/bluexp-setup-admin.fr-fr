@@ -13,7 +13,7 @@ video::096e1740-d115-44cf-8c27-b051011611eb[panopto]
 Vous devez sélectionner les informations d'identification associées à un connecteur. Vous ne pouvez pas associer un abonnement Marketplace aux informations d'identification associées à BlueXP.
 
 +
-image:screenshot_associate_subscription.png["Capture d'écran du menu d'action pour un ensemble d'informations d'identification existantes."]
+image:screenshot_aws_configure_subscription.png["Capture d'écran du menu d'action pour un ensemble d'informations d'identification existantes."]
 
 . Pour associer les informations d'identification à un abonnement existant, sélectionnez l'abonnement dans la liste déroulante et sélectionnez *configurer*.
 . Pour associer les informations d'identification à un nouvel abonnement, sélectionnez *Ajouter un abonnement > Continuer* et suivez les étapes indiquées dans AWS Marketplace :

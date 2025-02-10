@@ -14,9 +14,9 @@ summary: 'Les rôles Administrateur de compte, Administrateur d"espace de travai
 
 
 [role="lead"]
-Lorsque vous utilisez BlueXP  en mode restreint ou privé, vous utiliserez un _compte BlueXP _ pour gérer les utilisateurs. Vous pouvez fournir des autorisations spécifiques aux utilisateurs de votre compte en sélectionnant l'un des rôles suivants : Administrateur de compte, Administrateur d'espace de travail, afficheur de conformité et Admin SnapCenter
+Lorsque vous utilisez BlueXP  en mode privé, vous utiliserez un _compte BlueXP _ pour gérer les utilisateurs. Vous pouvez fournir des autorisations spécifiques aux utilisateurs de votre compte en sélectionnant l'un des rôles suivants : Administrateur de compte, Administrateur d'espace de travail, afficheur de conformité et Admin SnapCenter
 
-Si vous utilisez BlueXP  en mode standard, vous n'aurez pas de compte BlueXP . Au lieu de cela, vous aurez une organisation _BlueXP _ que vous gérez à l'aide de la gestion des identités et des accès (IAM) BlueXP .
+Si vous utilisez BlueXP  en mode standard ou en mode restreint, vous ne disposez pas d'un compte BlueXP . Au lieu de cela, vous aurez une organisation _BlueXP _ que vous gérez à l'aide de la gestion des identités et des accès (IAM) BlueXP .
 
 * link:concept-identity-and-access-management.html["En savoir plus sur BlueXP  IAM"]
 * link:concept-modes.html["Découvrez les modes de déploiement BlueXP"]

@@ -14,11 +14,11 @@ summary: 'La gestion des identités et des accès (IAM) BlueXP  vous permet de 
 
 
 [role="lead"]
-La gestion des identités et des accès BlueXP  vous permet d'organiser et de contrôler l'accès à vos ressources NetApp. Vous pouvez organiser vos ressources en fonction de la hiérarchie de votre organisation. Par exemple, vous pouvez organiser les ressources par emplacement géographique, site ou unité commerciale. Vous pouvez ensuite attribuer des autorisations aux membres dans des parties spécifiques de la hiérarchie, ce qui empêche l'accès aux ressources dans d'autres parties de la hiérarchie.
+La gestion des identités et des accès BlueXP  vous permet d'organiser et de contrôler l'accès à vos ressources NetApp. Vous pouvez organiser vos ressources en fonction de la hiérarchie de votre organisation. Par exemple, vous pouvez organiser les ressources par emplacement géographique, site ou unité commerciale. Vous pouvez ensuite attribuer des rôles PIAM à des membres dans des parties spécifiques de la hiérarchie, ce qui empêche l'accès aux ressources dans d'autres parties de la hiérarchie.
 
 BlueXP  IAM remplace et améliore les fonctionnalités précédentes proposées par les comptes BlueXP . link:whats-new.html#iam["En savoir plus sur l'introduction de BlueXP  IAM"].
 
-BlueXP  IAM est pris en charge lorsque BlueXP  est utilisé en mode standard. Si vous utilisez BlueXP  en mode restreint ou privé, utilisez un _compte_ BlueXP  pour gérer les utilisateurs et les ressources.
+BlueXP  IAM est pris en charge lorsque BlueXP  est utilisé en mode standard et en mode restreint. Si vous utilisez BlueXP  en mode privé, vous utilisez un _compte_ BlueXP  pour gérer les utilisateurs et les ressources.
 
 * link:concept-netapp-accounts.html["Découvrez les comptes BlueXP"]
 * link:concept-modes.html["Découvrez les modes de déploiement BlueXP"]

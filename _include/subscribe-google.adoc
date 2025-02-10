@@ -4,11 +4,8 @@
 
 .Étapes
 . Dans le coin supérieur droit de la console BlueXP, sélectionnez l'icône Paramètres, puis sélectionnez *informations d'identification*.
-. Sélectionnez le menu d'action correspondant à un ensemble d'informations d'identification, puis sélectionnez *abonnement associé*.
-+
-image:screenshot_gcp_add_subscription.png["Capture d'écran du menu d'action pour un ensemble d'informations d'identification existantes."]
-
-. Pour associer les informations d'identification à un abonnement existant, sélectionnez un projet Google Cloud et un abonnement dans la liste déroulante, puis sélectionnez *associer*.
+. Sélectionnez le menu d'action correspondant à un ensemble d'informations d'identification, puis sélectionnez *configurer l'abonnement*. +nouvelle capture d'écran nécessaire (TS) image:screenshot_gcp_add_subscription.png["Capture d'écran du menu d'action pour un ensemble d'informations d'identification existantes."]
+. Pour configurer un abonnement existant avec les informations d'identification sélectionnées, sélectionnez un projet Google Cloud et un abonnement dans la liste déroulante, puis sélectionnez *configurer*.
 +
 image:screenshot_gcp_associate.gif["Copie d'écran d'un projet Google Cloud et de l'abonnement sélectionnés pour les identifiants Google Cloud."]
 

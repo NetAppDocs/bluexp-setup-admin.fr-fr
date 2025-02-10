@@ -3,6 +3,15 @@
 
 
 Hôte dédié:: Le connecteur n'est pas pris en charge sur un hôte partagé avec d'autres applications. L'hôte doit être un hôte dédié.
++
+--
+L'hôte peut être de n'importe quelle architecture répondant aux exigences de taille suivantes.
+
+* *CPU :* 8 cœurs ou 8 vCPU
+* *RAM:* 32 GO
+
+
+--
 
 
 Hyperviseur:: Un hyperviseur bare Metal ou hébergé certifié pour exécuter un système d'exploitation pris en charge est requis.
@@ -117,8 +126,10 @@ Remarques :
 --
 
 
-CPU:: 8 cœurs ou 8 CPU virtuels
-RAM:: 32 GO
+L'hôte peut provenir de n'importe quelle architecture répondant à ces exigences de taille.
+
+* *CPU :* 8 cœurs ou 8 vCPU
+* *RAM:* 32 GO
 
 
 Type d'instance AWS EC2:: Type d'instance qui répond aux exigences relatives au CPU et à la RAM indiquées ci-dessus. Nous recommandons t3.2xlarge.

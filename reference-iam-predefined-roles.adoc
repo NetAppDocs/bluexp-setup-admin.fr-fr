@@ -14,18 +14,31 @@ summary: La gestion des identités et des accès BlueXP  inclut plusieurs rôle
 
 
 [role="lead"]
-La gestion des identités et des accès BlueXP  inclut plusieurs rôles prédéfinis que vous pouvez attribuer aux membres de votre entreprise à différents niveaux de votre hiérarchie de ressources. Avant d'attribuer ces rôles, vous devez comprendre les autorisations incluses par chaque rôle.
+La gestion des identités et des accès BlueXP  inclut plusieurs rôles prédéfinis que vous pouvez attribuer aux membres de votre entreprise à différents niveaux de votre hiérarchie de ressources. Avant d'attribuer ces rôles, vous devez comprendre les autorisations incluses par chaque rôle. Les rôles se divisent en trois catégories : plateforme, application et service de données.
 
 
 
 == Rôles de plateforme
 
-L'IAM BlueXP  comprend deux rôles de plateforme : administrateur d'organisation et administrateur de dossiers ou de projets. La principale différence entre les deux rôles de plateforme BlueXP  IAM est le périmètre. Le rôle d'administrateur d'organisation a des autorisations dans tous les dossiers et projets, tandis que l'administrateur de dossier ou de projet n'a que des autorisations dans le dossier ou le projet auquel ils ont été affectés.
+Les rôles de plate-forme sont les rôles les plus larges que vous pouvez attribuer aux utilisateurs et autoriser des autorisations étendues pour l'administration BlueXP , y compris l'attribution de rôles et l'ajout d'utilisateurs, ainsi que la possibilité d'exécuter toutes les fonctions BlueXP . L'IAM BlueXP  comprend deux rôles de plateforme : administrateur d'organisation et administrateur de dossiers ou de projets. La principale différence entre les deux rôles de plateforme BlueXP  IAM est le périmètre.
+
+
+
+=== Administrateur d'entreprise
+
+Permet à un utilisateur d'accéder sans restriction à tous les projets et dossiers d'une organisation, d'ajouter des membres à n'importe quel projet ou dossier, d'effectuer n'importe quelle tâche BlueXP  et d'utiliser n'importe quel service de données.
+
+
+
+=== Administrateur de dossiers ou de projets
+
+Permet à un utilisateur d'accéder sans restriction à des projets et dossiers spécifiques auxquels il est affecté. Vous pouvez ajouter des membres à des projets ou dossiers qu'ils gèrent, ainsi que réaliser n'importe quelle tâche BlueXP  et utiliser n'importe quel service de données dans le dossier ou le projet auquel ils sont affectés.
 
 Le rôle d'administrateur dossier ou projet ne peut pas créer de connecteurs.
 
-Autorisations::
 
+
+=== Tableau comparatif des rôles de plate-forme
 
 [cols="24,19,19"]
 |===
@@ -38,13 +51,25 @@ Autorisations::
 | Créer, modifier ou supprimer des environnements de travail (ajouter ou découvrir de nouvelles ressources à l'aide du canevas BlueXP ) | Oui. | Oui. 
 
 
-| Créer des projets/dossiers, notamment renommer, supprimer et modifier | Oui. | Oui. 
+| Créer des projets/dossiers, y compris la suppression | Oui. | Non 
+
+
+| Renommer des projets/dossiers existants | Oui. | Oui. 
 
 
 | Attribuez des rôles et ajoutez des utilisateurs | Oui. | Oui. 
 
 
-| Associer des ressources et des connecteurs aux dossiers et projets | Oui. | Oui. 
+| Associer des ressources à des dossiers et des projets | Oui. | Oui. 
+
+
+| Associer des connecteurs à des dossiers et des projets | Oui. | Non 
+
+
+| Supprimer des connecteurs d'un dossier et d'un projet | Oui. | Non 
+
+
+| Gérer les connecteurs (modifier les certificats, les paramètres, etc.) | Oui. | Non 
 
 
 | Gérez les informations d'identification dans Paramètres > informations d'identification | Oui. | Oui. 
@@ -70,15 +95,64 @@ Une fois la configuration initiale terminée, les administrateurs régionaux dot
 
 
 
+== Rôles d'application
+
+Les rôles applicatifs permettent d'accéder aux applications BlueXP  telles que le conseiller digital Active IQ (également appelé conseiller digital).
+
+
+
+=== Administrateur du stockage
+
+Permet à l'utilisateur d'effectuer des fonctions d'administration du stockage dans BlueXP  telles que les mises à jour logicielles et la création et la suppression d'environnements de travail BlueXP .
+
+Autorisations:: Peut afficher le canevas BlueXP . Peut créer et gérer des connecteurs BlueXP . Dispose d'un accès en lecture/écriture aux fonctions d'intégrité et de gouvernance du stockage de BlueXP , notamment :
++
+--
+* Conseiller digital
+* Résilience opérationnelle
+* Mises à jour logicielles (peuvent effectuer des mises à jour logicielles)
+* Portefeuille digital
+* Efficacité économique
+* Tableau de bord durabilité
+* Alertes
+
+
+--
+
+
+
+
+=== Outil de visualisation du stockage
+
+Accès en lecture seule aux fonctions d'intégrité et de gouvernance de BlueXP . Ce rôle est généralement attribué aux utilisateurs chargés de surveiller l'intégrité des ressources de stockage de l'entreprise. Les utilisateurs disposant de ce rôle peuvent afficher plusieurs applications au sein de BlueXP  afin de créer des plans de mise à jour logicielle, des plans d'efficacité et de consulter l'état global du stockage.
+
+Autorisations:: Dispose d'un accès en lecture seule aux fonctions d'intégrité et de gouvernance du stockage de BlueXP , notamment :
++
+--
+* Conseiller digital
+* Résilience opérationnelle
+* Mises à jour logicielles (peuvent télécharger des plans de mise à niveau)
+* Portefeuille digital
+* Efficacité économique
+* Tableau de bord durabilité
+* Alertes
+
+
+--
+
+
+
+
 == Rôles liés aux services de données
 
-Les rôles de services de données peuvent effectuer leurs tâches dans n'importe quel projet ou dossier.
+Les rôles de services de données permettent aux utilisateurs d'accéder aux services de données au sein de l'organisation, du projet ou du dossier auquel ils ont accès.
 
 
 
 === Administrateur SnapCenter
 
-Description:: Permet de sauvegarder des copies Snapshot à partir de clusters ONTAP sur site à l'aide de la sauvegarde et de la restauration BlueXP  pour les applications.
+Permet de sauvegarder des copies Snapshot à partir de clusters ONTAP sur site à l'aide de la sauvegarde et de la restauration BlueXP  pour les applications.
+
 Autorisations:: Un membre qui a ce rôle peut effectuer les actions suivantes dans BlueXP  :
 +
 --
@@ -94,7 +168,8 @@ Autorisations:: Un membre qui a ce rôle peut effectuer les actions suivantes da
 
 === Visualiseur de classification
 
-Description:: Fournit la possibilité d'afficher les résultats de l'acquisition de classification BlueXP .
+Fournit la possibilité d'afficher les résultats de l'acquisition de classification BlueXP .
+
 Autorisations:: Affichez les informations de conformité et générez des rapports pour les ressources auxquelles ils ont accès. Ces utilisateurs ne peuvent ni activer ni désactiver l'analyse de volumes, de compartiments ou de schémas de base de données.
 +
 --

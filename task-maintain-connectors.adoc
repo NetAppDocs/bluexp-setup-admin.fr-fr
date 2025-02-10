@@ -33,8 +33,10 @@ Si vous avez créé un connecteur directement à partir de BlueXP, BlueXP a dép
 
 Les exigences relatives au CPU et à la RAM sont les suivantes :
 
-CPU:: 8 cœurs ou 8 CPU virtuels
-RAM:: 32 GO
+L'hôte peut provenir de n'importe quelle architecture répondant à ces exigences de taille.
+
+* *CPU :* 8 cœurs ou 8 vCPU
+* *RAM:* 32 GO
 
 
 link:reference-connector-default-config.html["En savoir plus sur la configuration par défaut du connecteur"].

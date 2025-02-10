@@ -40,14 +40,6 @@ NOTE: Les ressources Amazon FSX pour NetApp ONTAP ne s'affichent pas sur la page
 . Sélectionnez *Rechercher*.
 
 
-.Et la suite ?
-Une fois que vous avez trouvé la ressource que vous recherchez, vous pouvez effectuer l'une des actions suivantes :
-
-* <<associate-resource,Associer la ressource à des dossiers et projets supplémentaires>>
-* <<view-folders-and-projects,Affichez les dossiers et les projets associés à la ressource>>
-* <<remove-resource,Supprimez la ressource d'un dossier ou d'un projet>>
-
-
 
 
 == Associer une ressource à des dossiers et des projets
@@ -83,6 +75,9 @@ link:task-iam-associate-connectors.html["Découvrez comment associer un connecte
 
 Pour identifier où une ressource est disponible dans la hiérarchie de votre organisation, vous pouvez afficher les dossiers et les projets associés à cette ressource.
 
+
+NOTE: Si vous devez déterminer quels membres de l'organisation ont accès à la ressource, vous pouvez link:task-iam-manage-folders-projects.html#view-associated-resources-members["affichez les membres qui ont accès aux dossiers et projets associés à la ressource"].
+
 .Étapes
 . Dans la page *Ressources*, naviguez jusqu'à une ressource dans la table, sélectionnezimage:icon-action.png["Icône représentant trois points côte à côte"], puis cliquez sur *Afficher les détails*.
 
@@ -91,11 +86,8 @@ L'exemple suivant montre une ressource associée à un projet.
 
 image:screenshot-iam-resource-details.png["Capture d'écran de la page de détails de la ressource qui montre une ressource associée à un projet qui se trouve directement sous l'organisation."]
 
-.Et la suite ?
-* Vous pouvez <<associate-resource,associer la ressource à un projet ou dossier supplémentaire>>.
-* Vous pouvez <<remove-resource,supprimez la ressource d'un dossier ou d'un projet spécifique>>.
-* Si vous devez déterminer quels membres de l'organisation ont accès à la ressource, vous pouvez link:task-iam-manage-folders-projects.html#view-associated-resources-members["affichez les membres qui ont accès aux dossiers et projets associés à la ressource"].
 
+NOTE: Si vous devez déterminer quels membres de l'organisation ont accès à la ressource, vous pouvez link:task-iam-manage-folders-projects.html#view-associated-resources-members["affichez les membres qui ont accès aux dossiers et projets associés à la ressource"].
 
 
 
@@ -103,8 +95,8 @@ image:screenshot-iam-resource-details.png["Capture d'écran de la page de détai
 
 Pour supprimer une ressource d'un dossier ou d'un projet, vous devez supprimer l'association entre le dossier ou le projet et la ressource. Une fois l'association supprimée, les membres de l'organisation ne peuvent plus gérer la ressource à partir du dossier ou du projet.
 
-.Description de la tâche
-Si vous souhaitez supprimer une ressource découverte de toute l'organisation, vous devez supprimer l'environnement de travail du canevas BlueXP .
+
+NOTE: Si vous souhaitez supprimer une ressource découverte de toute l'organisation, vous devez supprimer l'environnement de travail du canevas BlueXP .
 
 .Étapes
 . Dans la page *Ressources*, naviguez jusqu'à une ressource dans la table, sélectionnezimage:icon-action.png["Icône représentant trois points côte à côte"], puis cliquez sur *Afficher les détails*.

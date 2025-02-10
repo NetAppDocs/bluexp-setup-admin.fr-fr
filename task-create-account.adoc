@@ -14,9 +14,9 @@ summary: 'Lorsque vous configurez BlueXP  en mode restreint ou privé, vous êt
 
 
 [role="lead"]
-Lorsque vous configurez BlueXP  en mode restreint ou privé, vous êtes invité à créer un _compte BlueXP _, qui vous permet de gérer les utilisateurs et d'organiser les ressources. Ce compte peut être tout ce dont vous avez besoin, mais si votre entreprise a besoin de plusieurs comptes, vous devrez créer des comptes supplémentaires à l'aide de l'API de location.
+Lorsque vous configurez BlueXP  en mode privé, vous êtes invité à créer un _compte BlueXP _, qui vous permet de gérer les utilisateurs et d'organiser les ressources. Ce compte peut être tout ce dont vous avez besoin, mais si votre entreprise a besoin de plusieurs comptes, vous devrez créer des comptes supplémentaires à l'aide de l'API de location.
 
-Si vous utilisez BlueXP  en mode standard, vous n'aurez pas de compte BlueXP . Vous allez gérer une entreprise à l'aide de la gestion des identités et des accès BlueXP . link:concept-identity-and-access-management.html["En savoir plus sur BlueXP  IAM"].
+Si vous utilisez BlueXP  en mode standard ou restreint, vous n'aurez pas de compte BlueXP . Vous allez gérer une entreprise à l'aide de la gestion des identités et des accès BlueXP . link:concept-identity-and-access-management.html["En savoir plus sur BlueXP  IAM"].
 
 .Étapes
 . Utilisez l'appel d'API suivant pour créer un compte BlueXP supplémentaire :

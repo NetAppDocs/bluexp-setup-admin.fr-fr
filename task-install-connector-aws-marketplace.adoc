@@ -174,9 +174,14 @@ Vous pouvez désormais associer un rôle IAM à l'instance EC2 lors du déploiem
 
 Lorsque vous créez le connecteur, vous devez choisir un type d'instance EC2 qui répond aux exigences suivantes.
 
-CPU:: 8 cœurs ou 8 CPU virtuels
-RAM:: 32 GO
+L'hôte peut provenir de n'importe quelle architecture répondant à ces exigences de taille.
+
+* *CPU :* 8 cœurs ou 8 vCPU
+* *RAM:* 32 GO
++
 Type d'instance AWS EC2:: Type d'instance qui répond aux exigences relatives au CPU et à la RAM indiquées ci-dessus. Nous recommandons t3.2xlarge.
+
+
 
 
 
