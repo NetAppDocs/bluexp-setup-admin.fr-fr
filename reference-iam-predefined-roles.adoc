@@ -14,7 +14,7 @@ summary: La gestion des identités et des accès BlueXP  inclut plusieurs rôle
 
 
 [role="lead"]
-La gestion des identités et des accès BlueXP  inclut plusieurs rôles prédéfinis que vous pouvez attribuer aux membres de votre entreprise à différents niveaux de votre hiérarchie de ressources. Avant d'attribuer ces rôles, vous devez comprendre les autorisations incluses par chaque rôle. Les rôles se divisent en trois catégories : plateforme, application et service de données.
+La gestion des identités et des accès BlueXP  inclut plusieurs rôles prédéfinis que vous pouvez attribuer aux membres de votre entreprise à différents niveaux de votre hiérarchie de ressources. Avant d'attribuer ces rôles, vous devez comprendre les autorisations incluses par chaque rôle. Les rôles se divisent en deux catégories : la plateforme et le service de données.
 
 
 
@@ -89,54 +89,6 @@ Exemple de rôles d'organisation au BlueXP  pour une grande organisation multin
 Pour ce faire, une personne affectée au rôle d'administrateur d'organisation dans BlueXP  de la société XYZ crée un environnement de travail initial, puis crée des dossiers distincts dans BlueXP  pour chaque région. Le dossier de chaque région contient des projets (avec des ressources associées) liés à cette région. L'administrateur de l'organisation attribue à un utilisateur BlueXP  dans chaque région respective le rôle d'administrateur dossier/projet.
 
 Une fois la configuration initiale terminée, les administrateurs régionaux dotés du rôle d'administrateur de dossier ou de projet peuvent créer de nouveaux environnements de travail et ajouter des utilisateurs au sein de leur région. Ces administrateurs régionaux peuvent également ajouter/supprimer/renommer des dossiers et des projets auxquels ils sont affectés. L'administrateur de l'entreprise hérite des autorisations de tous les nouveaux environnements de travail ou ressources, ce qui permet de maintenir une visibilité sur l'utilisation du stockage dans toute l'entreprise.
-
---
-
-
-
-
-== Rôles d'application
-
-Les rôles applicatifs permettent d'accéder aux applications BlueXP  telles que le conseiller digital Active IQ (également appelé conseiller digital).
-
-
-
-=== Administrateur du stockage
-
-Permet à l'utilisateur d'effectuer des fonctions d'administration du stockage dans BlueXP  telles que les mises à jour logicielles et la création et la suppression d'environnements de travail BlueXP .
-
-Autorisations:: Peut afficher le canevas BlueXP . Peut créer et gérer des connecteurs BlueXP . Dispose d'un accès en lecture/écriture aux fonctions d'intégrité et de gouvernance du stockage de BlueXP , notamment :
-+
---
-* Conseiller digital
-* Résilience opérationnelle
-* Mises à jour logicielles (peuvent effectuer des mises à jour logicielles)
-* Portefeuille digital
-* Efficacité économique
-* Tableau de bord durabilité
-* Alertes
-
-
---
-
-
-
-
-=== Outil de visualisation du stockage
-
-Accès en lecture seule aux fonctions d'intégrité et de gouvernance de BlueXP . Ce rôle est généralement attribué aux utilisateurs chargés de surveiller l'intégrité des ressources de stockage de l'entreprise. Les utilisateurs disposant de ce rôle peuvent afficher plusieurs applications au sein de BlueXP  afin de créer des plans de mise à jour logicielle, des plans d'efficacité et de consulter l'état global du stockage.
-
-Autorisations:: Dispose d'un accès en lecture seule aux fonctions d'intégrité et de gouvernance du stockage de BlueXP , notamment :
-+
---
-* Conseiller digital
-* Résilience opérationnelle
-* Mises à jour logicielles (peuvent télécharger des plans de mise à niveau)
-* Portefeuille digital
-* Efficacité économique
-* Tableau de bord durabilité
-* Alertes
-
 
 --
 

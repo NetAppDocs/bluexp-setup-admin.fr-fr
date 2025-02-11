@@ -194,7 +194,7 @@ link:task-iam-manage-folders-projects.html#view-associated-resources-members["Af
 
 == Gérer les rôles des membres
 
-Des rôles peuvent être attribués aux membres de l'organisation à chaque niveau et à plus d'un niveau de votre hiérarchie de ressources.vous pouvez attribuer des rôles de membres correspondant à leurs responsabilités dans votre organisation BlueXP . Par exemple, si votre hiérarchie de ressources comprend sept projets (environnements de travail), vous pouvez attribuer le rôle d'administrateur de stockage à une personne pour trois des projets, puis attribuer un autre membre à l'administrateur de stockage pour les projets restants. Une autre possibilité consiste à attribuer à un utilisateur le rôle Storage admin pour l'ensemble de l'organisation. Vous pouvez gérer les rôles des membres en fonction des besoins de votre organisation.
+Des rôles peuvent être attribués aux membres de l'organisation à chaque niveau et à plus d'un niveau de votre hiérarchie de ressources.vous pouvez attribuer des rôles de membres correspondant à leurs responsabilités dans votre organisation BlueXP .
 
 Vous pouvez annuler l'attribution d'un rôle à un membre, ajouter un nouveau rôle ou les deux. Un rôle définit les autorisations attribuées à un membre au niveau de l'organisation, du dossier ou du projet. Vous pouvez attribuer des rôles de membres correspondant à leurs responsabilités dans votre organisation BlueXP .
 
@@ -227,7 +227,7 @@ Fournissez à un membre des autorisations supplémentaires dans votre organisati
 +
 Si vous sélectionnez l'organisation ou un dossier, le membre aura des autorisations sur tout ce qui réside dans l'organisation ou le dossier.
 
-** *Sélectionnez une catégorie* : BlueXP  sépare les rôles en trois catégories : plate-forme, application et services de données. link:reference-iam-predefined-roles.html["En savoir plus sur les rôles IAM"^].
+** *Sélectionnez une catégorie* : BlueXP  sépare les rôles en deux catégories : plate-forme et service de données. link:reference-iam-predefined-roles.html["En savoir plus sur les rôles IAM"^].
 ** Sélectionnez un *rôle* : choisissez un rôle qui fournit au membre des autorisations pour les ressources associées à l'organisation, au dossier ou au projet que vous avez sélectionné.
 +
 *** Si vous avez sélectionné l'organisation, vous pouvez choisir un rôle autre que *Folder ou Project admin*.
@@ -252,7 +252,7 @@ Vous pouvez modifier le rôle attribué à un au niveau de l'organisation, du do
 .Étapes
 . Sur la page *membres*, naviguez jusqu'à un membre dans la table, sélectionnezimage:icon-action.png["Icône représentant trois points côte à côte"], puis cliquez sur *Afficher les détails*.
 . Dans le tableau, développez la ligne correspondant à l'organisation, au dossier ou au projet dans lequel vous souhaitez modifier le rôle attribué au membre et sélectionnez *Afficher* dans la colonne *rôle* pour afficher les rôles attribués à ce membre.
-. Pour modifier le rôle d'un membre, sélectionnez *Modifier* en regard du rôle que vous souhaitez modifier. Vous ne pouvez modifier ce rôle qu'en un rôle dans la même catégorie de rôle. Par exemple, vous pouvez passer d'un rôle d'application à un autre. Vous serez invité à confirmer la modification.
+. Pour modifier le rôle d'un membre, sélectionnez *Modifier* en regard du rôle que vous souhaitez modifier. Vous ne pouvez modifier ce rôle qu'en un rôle dans la même catégorie de rôle. Par exemple, vous pouvez passer d'un rôle de service de données à un autre. Vous serez invité à confirmer la modification.
 +
 .. Pour annuler l'attribution d'un rôle à un membre, sélectionnez image:icon-delete.png["Icône qui ressemble à une corbeille"] en regard du rôle pour annuler l'attribution du rôle correspondant au membre. On vous demandera de confirmer la suppression.
 

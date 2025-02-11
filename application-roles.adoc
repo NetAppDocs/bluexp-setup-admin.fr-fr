@@ -1,0 +1,53 @@
+= Rôles d'application
+:allow-uri-read: 
+
+
+
+
+== Rôles d'application
+
+Les rôles applicatifs permettent d'accéder aux applications BlueXP  telles que le conseiller digital Active IQ (également appelé conseiller digital).
+
+
+
+=== Administrateur du stockage
+
+Permet à l'utilisateur d'effectuer des fonctions d'administration du stockage dans BlueXP  telles que les mises à jour logicielles et la création et la suppression d'environnements de travail BlueXP .
+
+Autorisations:: Peut afficher le canevas BlueXP . Peut créer et gérer des connecteurs BlueXP . Dispose d'un accès en lecture/écriture aux fonctions d'intégrité et de gouvernance du stockage de BlueXP , notamment :
++
+--
+* Conseiller digital
+* Résilience opérationnelle
+* Mises à jour logicielles (peuvent effectuer des mises à jour logicielles)
+* Portefeuille digital
+* Efficacité économique
+* Tableau de bord durabilité
+* Alertes
+
+
+--
+
+
+
+
+=== Outil de visualisation du stockage
+
+Accès en lecture seule aux fonctions d'intégrité et de gouvernance de BlueXP . Ce rôle est généralement attribué aux utilisateurs chargés de surveiller l'intégrité des ressources de stockage de l'entreprise. Les utilisateurs disposant de ce rôle peuvent afficher plusieurs applications au sein de BlueXP  afin de créer des plans de mise à jour logicielle, des plans d'efficacité et de consulter l'état global du stockage.
+
+Autorisations:: Dispose d'un accès en lecture seule aux fonctions d'intégrité et de gouvernance du stockage de BlueXP , notamment :
++
+--
+* Conseiller digital
+* Résilience opérationnelle
+* Mises à jour logicielles (peuvent télécharger des plans de mise à niveau)
+* Portefeuille digital
+* Efficacité économique
+* Tableau de bord durabilité
+* Alertes
+
+
+--
+
+
+Exemple de tâche : par exemple, si vous disposez de sept projets (environnements de travail) dans votre hiérarchie de ressources, vous pouvez attribuer à quelqu'un le rôle d'administrateur de stockage pour trois des projets, puis attribuer un autre membre à l'administrateur de stockage pour les projets restants. Une autre possibilité consiste à attribuer à un utilisateur le rôle Storage admin pour l'ensemble de l'organisation. Vous pouvez gérer les rôles des membres en fonction des besoins de votre organisation.
