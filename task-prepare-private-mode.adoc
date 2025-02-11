@@ -46,15 +46,6 @@ L'emplacement d'installation du connecteur détermine les services et fonctionna
 Le logiciel du connecteur doit être exécuté sur un hôte qui répond à des exigences spécifiques du système d'exploitation, de la RAM, des ports, etc.
 
 Hôte dédié:: Le connecteur n'est pas pris en charge sur un hôte partagé avec d'autres applications. L'hôte doit être un hôte dédié.
-+
---
-L'hôte peut être de n'importe quelle architecture répondant aux exigences de taille suivantes.
-
-* *CPU :* 8 cœurs ou 8 vCPU
-* *RAM:* 32 GO
-
-
---
 [[podman-versions]]exigences relatives au système d'exploitation et aux conteneurs:: BlueXP  prend en charge le connecteur avec les systèmes d'exploitation suivants lors de l'utilisation de BlueXP  en mode privé. Un outil d'orchestration de conteneurs est nécessaire avant d'installer le connecteur.
 +
 --
@@ -103,13 +94,8 @@ Remarques :
 
 --
 Hyperviseur:: Un hyperviseur bare Metal ou hébergé certifié pour exécuter un système d'exploitation pris en charge est requis.
-
-
-L'hôte peut provenir de n'importe quelle architecture répondant à ces exigences de taille.
-
-* *CPU :* 8 cœurs ou 8 vCPU
-* *RAM:* 32 GO
-+
+CPU:: 8 cœurs ou 8 CPU virtuels
+RAM:: 32 GO
 Type d'instance AWS EC2:: Type d'instance qui répond aux exigences relatives au CPU et à la RAM indiquées ci-dessus. Nous recommandons t3.2xlarge.
 Taille des machines virtuelles Azure:: Type d'instance qui répond aux exigences relatives au CPU et à la RAM indiquées ci-dessus. Nous recommandons Standard_D8s_v3.
 Type de machine Google Cloud:: Type d'instance qui répond aux exigences relatives au CPU et à la RAM indiquées ci-dessus. Nous recommandons n2-standard-8.
@@ -130,8 +116,6 @@ Espace disque dans /var:: 20 Gio d'espace doit être disponible
 BlueXP requiert cet espace dans `/var` Car l'architecture de Docker ou Podman est conçue pour créer les conteneurs dans ce répertoire. Plus précisément, ils créeront des conteneurs dans le `/var/lib/containers/storage` répertoire. Les montages externes ou les liens symboliques ne fonctionnent pas pour cet espace.
 
 --
-
-
 
 
 

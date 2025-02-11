@@ -156,14 +156,9 @@ Vous devrez implémenter cette exigence de mise en réseau après avoir créé l
 
 Lorsque vous créez le connecteur, vous devez choisir un type de machine virtuelle répondant aux exigences suivantes.
 
-L'hôte peut provenir de n'importe quelle architecture répondant à ces exigences de taille.
-
-* *CPU :* 8 cœurs ou 8 vCPU
-* *RAM:* 32 GO
-+
+CPU:: 8 cœurs ou 8 CPU virtuels
+RAM:: 32 GO
 Taille des machines virtuelles Azure:: Type d'instance qui répond aux exigences relatives au CPU et à la RAM indiquées ci-dessus. Nous recommandons Standard_D8s_v3.
-
-
 
 
 

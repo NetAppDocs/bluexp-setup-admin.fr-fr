@@ -34,9 +34,6 @@ Cette version de BlueXP Connector inclut des améliorations mineures de la sécu
 
 * Prise en charge de l'attribution de plusieurs rôles à un utilisateur.
 * Les rôles sont désormais associés à l'une des deux catégories suivantes : plate-forme et service de données.
-* Les rôles sont désormais associés à l'une des trois catégories suivantes : plate-forme, application et services de données.
-* Deux nouveaux rôles sont associés à la catégorie d'application : Storage Viewer et Storage admin. https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["En savoir plus sur les rôles IAM"]
-* L'IAM est maintenant utilisé en mode restreint BlueXP 
 
 
 
@@ -95,6 +92,15 @@ Cette modification introduit une nouvelle API pour BlueXP  IAM, mais elle est r
 
 .Modes de déploiement pris en charge
 BlueXP  IAM est pris en charge lorsque BlueXP  est utilisé en mode standard et restreint. Si vous utilisez BlueXP  en mode privé, vous continuerez à utiliser un _compte_ BlueXP  pour gérer les espaces de travail, les utilisateurs et les ressources.
+
+.Autres améliorations de l'IAM
+* Prise en charge de l'attribution de plusieurs rôles à un utilisateur.
+* Les rôles sont désormais associés à l'une des trois catégories suivantes : plate-forme, application et services de données.
+* Deux nouveaux rôles sont associés à la catégorie d'application : Storage Viewer et Storage admin.
++
+https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["En savoir plus sur les rôles IAM"]
+
+
 
 
 
