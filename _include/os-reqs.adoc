@@ -3,6 +3,15 @@
 
 
 Hôte dédié:: Le connecteur n'est pas pris en charge sur un hôte partagé avec d'autres applications. L'hôte doit être un hôte dédié.
++
+--
+L'hôte peut être de n'importe quelle architecture répondant aux exigences de taille suivantes :
+
+* CPU : 8 cœurs ou 8 vCPU
+* RAM : 32 GO
+
+
+--
 
 
 Hyperviseur:: Un hyperviseur bare Metal ou hébergé certifié pour exécuter un système d'exploitation pris en charge est requis.

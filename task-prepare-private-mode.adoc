@@ -46,6 +46,15 @@ L'emplacement d'installation du connecteur détermine les services et fonctionna
 Le logiciel du connecteur doit être exécuté sur un hôte qui répond à des exigences spécifiques du système d'exploitation, de la RAM, des ports, etc.
 
 Hôte dédié:: Le connecteur n'est pas pris en charge sur un hôte partagé avec d'autres applications. L'hôte doit être un hôte dédié.
++
+--
+L'hôte peut être de n'importe quelle architecture répondant aux exigences de taille suivantes :
+
+* CPU : 8 cœurs ou 8 vCPU
+* RAM : 32 GO
+
+
+--
 [[podman-versions]]exigences relatives au système d'exploitation et aux conteneurs:: BlueXP  prend en charge le connecteur avec les systèmes d'exploitation suivants lors de l'utilisation de BlueXP  en mode privé. Un outil d'orchestration de conteneurs est nécessaire avant d'installer le connecteur.
 +
 --
