@@ -1405,8 +1405,6 @@
   <block id="0a6b76c04095167ad3b2e08901195ca3" category="list-text">Le connecteur est désormais pris en charge dans les régions Google Cloud suivantes :</block>
   <block id="db760e7471192daa123eed31bfba312d" category="list-text">Columbus (US-east5)</block>
   <block id="ad6033c8e4eda00017eca167a149ced4" category="list-text">Dallas (US-south1)</block>
-  <block id="3b61cbbfa7452cc07df9dbea0756d650" category="inline-link">Afficher la liste complète des régions prises en charge</block>
-  <block id="0ec2b2e4840acfd3f21b50b176ec45f1" category="paragraph"><block ref="0ec2b2e4840acfd3f21b50b176ec45f1" category="inline-link-rx"></block></block>
   <block id="05263fcc56b50972b2dfe4be20698328" category="list-text">Ubuntu 22.04 est le nouveau système d'exploitation du connecteur lorsque vous déployez un connecteur à partir de BlueXP ou du marché de votre fournisseur de cloud.</block>
   <block id="9ab8f4fa1e0839b1101d04c9cd4e1bae" category="paragraph">Vous avez également la possibilité d'installer manuellement le connecteur sur votre propre hôte Linux exécutant Ubuntu 22.04.</block>
   <block id="dfcaca26de191f6219819bb7091c9ebe" category="list-text">Red Hat Enterprise Linux 8.6 et 8.7 ne sont plus pris en charge avec les nouveaux déploiements de connecteurs.</block>
@@ -1524,7 +1522,6 @@
   <block id="1a1145c860165dcd96b82eb7d32cd59f" category="list-text">Paris (europe-Ouest 9)</block>
   <block id="eb4cae07e62b958e999eaa4c0d9b254b" category="list-text">Varsovie (europe centrale 2)</block>
   <block id="05f08f9410eed79855c8ade92149a276" category="list-text">Le connecteur est désormais pris en charge dans la région Azure West US 3.</block>
-  <block id="075b5f25465b6b108fb916bce6a2219f" category="paragraph"><block ref="075b5f25465b6b108fb916bce6a2219f" category="inline-link-rx"></block></block>
   <block id="d9815601b56ec3084872748d000734dd" category="paragraph"><block ref="d9815601b56ec3084872748d000734dd" category="inline-link-rx"></block></block>
   <block id="f646305c890b8deec88379aeecbe56a5" category="paragraph">Lorsque les nouveaux utilisateurs s'ouvrent sur Cloud Central, ils peuvent sélectionner l'option *se connecter avec NetApp* pour se connecter avec leurs identifiants du site de support NetApp. Il s'agit d'une alternative à la saisie d'une adresse e-mail et d'un mot de passe.</block>
   <block id="f27b2370dfece83354cbb560bf251abc" category="admonition">Les identifiants de connexion existants qui utilisent une adresse e-mail et un mot de passe doivent continuer à utiliser cette méthode de connexion. L'option connexion avec NetApp est disponible pour les nouveaux utilisateurs qui s'abonnent.</block>
@@ -4982,4 +4979,5 @@ Cette partie du tableau répertorie la prise en charge de la gestion de l'enviro
   <block id="69ac82a1779b2cc7d528017241f5324f" category="paragraph">L'hôte peut être de n'importe quelle architecture répondant aux exigences de taille suivantes :</block>
   <block id="df4af5ebfed55f726690fe09695fb1fa" category="list-text">CPU : 8 cœurs ou 8 vCPU</block>
   <block id="357a496c919d7b340d6f4582397b89b5" category="list-text">RAM : 32 GO</block>
+  <block id="0c257ecd276502d9a2d45fc70759eec6" category="admonition">Depuis février 2025, ces rôles d'utilisateur sont obsolètes pour les modes de déploiement standard et restreint. Le mode privé BlueXP  fournit un seul rôle à associer aux utilisateurs, c'est-à-dire le rôle d'administrateur Cloud Manager qui accorde toutes les autorisations BlueXP .</block>
 </blocks>
