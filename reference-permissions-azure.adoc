@@ -16,17 +16,16 @@ summary: Lorsque BlueXP lance la machine virtuelle Connector dans Azure, il atta
 [role="lead"]
 Lorsque BlueXP lance la machine virtuelle Connector dans Azure, il attache un rôle personnalisé à la machine virtuelle qui fournit au connecteur les autorisations nécessaires pour gérer les ressources et les processus au sein de cet abonnement Azure. Le connecteur utilise les autorisations pour effectuer des appels API vers plusieurs services Azure.
 
+La création ou non de ce rôle personnalisé pour le connecteur dépend de la manière dont vous l'avez déployé.
 
+.Déploiement depuis BlueXP 
+Lorsque vous utilisez BlueXP  pour déployer la machine virtuelle du connecteur dans Azure, il active un sur la machine virtuelle, crée un https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/overview["identité gérée attribuée par le système"^] rôle personnalisé et l'affecte à la machine virtuelle. Le rôle fournit à BlueXP les autorisations requises pour gérer les ressources et les processus au sein de cet abonnement Azure. Les autorisations du rôle sont maintenues à jour lorsque le connecteur est mis à niveau. Il n'est pas nécessaire de créer ce rôle pour le connecteur ou de gérer les mises à jour.
 
-== Autorisations de rôles personnalisées
+.Déploiement manuel ou à partir d'Azure Marketplace
+Lorsque vous déployez le connecteur à partir d'Azure Marketplace ou si vous installez manuellement le connecteur sur un hôte Linux, vous devez configurer vous-même le rôle personnalisé et conserver ses autorisations en cas de modification.
 
-Le rôle personnalisé illustré ci-dessous fournit les autorisations dont un connecteur a besoin pour gérer les ressources et les processus de votre réseau Azure.
+Vous devez vous assurer que le rôle est à jour lorsque de nouvelles autorisations sont ajoutées dans les versions ultérieures. Si de nouvelles autorisations sont requises, elles seront répertoriées dans les notes de version.
 
-Notez ce qui suit :
-
-* Lorsque vous créez un connecteur directement à partir de BlueXP, BlueXP applique automatiquement ce rôle personnalisé au connecteur.
-* Si vous déployez le connecteur à partir d'Azure Marketplace ou si vous installez manuellement le connecteur sur un hôte Linux, vous devrez définir vous-même le rôle personnalisé.
-* Dans les deux cas, vous devez vous assurer que le rôle est à jour lorsque de nouvelles autorisations sont ajoutées dans les versions ultérieures. Si de nouvelles autorisations sont requises, elles seront répertoriées dans les notes de version.
 * Pour afficher des instructions détaillées sur l'utilisation de ces stratégies, reportez-vous aux pages suivantes :
 +
 ** link:task-install-connector-azure-marketplace.html#step-3-set-up-permissions["Configurez les autorisations d'un déploiement Azure Marketplace"]

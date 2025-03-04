@@ -20,7 +20,7 @@ Découvrez comment BlueXP utilise les identifiants Azure pour effectuer des acti
 
 == Les identifiants initiaux d'Azure
 
-Lorsque vous déployez un connecteur depuis BlueXP, vous devez utiliser un compte ou un service principal Azure disposant des autorisations pour déployer la machine virtuelle Connector. Les autorisations requises sont répertoriées dans le link:task-install-connector-azure-bluexp.html#step-2-create-a-custom-role["Stratégie de déploiement de Connector pour Azure"].
+Lorsque vous déployez un connecteur depuis BlueXP, vous devez utiliser un compte ou un service principal Azure disposant des autorisations pour déployer la machine virtuelle Connector. Les autorisations requises sont répertoriées dans le link:task-install-connector-azure-bluexp.html#connector-custom-role["Stratégie de déploiement de Connector pour Azure"].
 
 Lorsque BlueXP  déploie la machine virtuelle Connector dans Azure, il active une sur la machine virtuelle, crée un https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/overview["identité gérée attribuée par le système"^] rôle personnalisé et l'affecte à la machine virtuelle. Le rôle fournit à BlueXP les autorisations requises pour gérer les ressources et les processus au sein de cet abonnement Azure. link:reference-permissions-azure.html["Consultez la manière dont BlueXP utilise les autorisations"].
 

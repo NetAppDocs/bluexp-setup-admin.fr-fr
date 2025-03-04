@@ -409,7 +409,7 @@ Activez le protocole NTP:: Si vous prévoyez d'utiliser la classification BlueXP
 
 
 
-== Étape 4 : configurer les autorisations
+== Étape 4 : configurer les autorisations de déploiement de connecteur
 
 Vous devez fournir des autorisations Azure à BlueXP via l'une des options suivantes :
 
@@ -421,7 +421,7 @@ Suivez les étapes pour préparer les autorisations pour BlueXP.
 
 [role="tabbed-block"]
 ====
-.Rôle personnalisé
+.Créez un rôle personnalisé pour le déploiement de connecteurs
 --
 Notez que vous pouvez créer un rôle personnalisé Azure à l'aide du portail Azure, d'Azure PowerShell, de l'interface de ligne de commandes Azure ou de l'API REST. La procédure suivante explique comment créer le rôle à l'aide de l'interface de ligne de commandes Azure. Si vous préférez utiliser une autre méthode, reportez-vous à la section https://learn.microsoft.com/en-us/azure/role-based-access-control/custom-roles#steps-to-create-a-custom-role["Documentation Azure"^]
 

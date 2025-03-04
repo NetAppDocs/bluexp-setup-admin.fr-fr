@@ -116,7 +116,7 @@ BlueXP nécessite des autorisations Azure pour le connecteur et pour les service
 | Objectif | Description | Lien 
 
 
-| Déployez le connecteur de BlueXP | Lorsque vous déployez un connecteur depuis BlueXP, vous devez utiliser un compte ou un service principal Azure disposant des autorisations pour déployer la machine virtuelle Connector dans Azure. | link:task-install-connector-azure-bluexp.html#step-2-create-a-custom-role["Configurez les autorisations Azure"] 
+| Déployez le connecteur de BlueXP | Lorsque vous déployez un connecteur depuis BlueXP, vous devez utiliser un compte ou un service principal Azure disposant des autorisations pour déployer la machine virtuelle Connector dans Azure. | link:task-install-connector-azure-bluexp.html#connector-custom-role["Configurez les autorisations Azure"] 
 
 
 | Fournir les autorisations pour le connecteur  a| 
