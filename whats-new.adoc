@@ -18,6 +18,22 @@ Découvrez les nouveautés des fonctionnalités d'administration BlueXP  : gest
 
 
 
+== 15 février 2025
+
+
+
+=== Connecteur
+
+Vous pouvez maintenant désactiver les mises à niveau automatiques pour le connecteur. Ceci est utile si vous devez gérer manuellement les mises à niveau logicielles pour des raisons commerciales.
+
+Les clients pourront désactiver les mises à niveau automatiques en utilisant la version 3.9.48 ou supérieure du connecteur.
+
+.Informations associées
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-upgrade-connector.html["Gérer les mises à niveau des connecteurs"]
+
+
+
+
 == 10 février 2025
 
 

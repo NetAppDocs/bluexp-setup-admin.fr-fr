@@ -1,0 +1,9 @@
+= Forcer les utilisateurs à entrer des informations d'identification ONTAP pour accéder à la vue avancée (ONTAP System Manager)
+:allow-uri-read: 
+
+
+
+
+=== Forcer les utilisateurs à entrer des informations d'identification ONTAP pour accéder à la vue avancée (ONTAP System Manager)
+
+Vous pouvez désormais forcer les utilisateurs à entrer leurs informations d'identification ONTAP pour accéder à ONTAP System Manager. Ce paramètre s'applique à la fois à Cloud Volumes ONTAP et à ONTAP sur site. Les utilisateurs disposant du rôle d'administrateur d'organisation peuvent configurer ce paramètre.

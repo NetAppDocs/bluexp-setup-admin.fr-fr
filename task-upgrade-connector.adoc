@@ -4,7 +4,7 @@ permalink: task-upgrade-connector.html
 keywords: upgrade, manual upgrade, connector upgrade, manual connector upgrade, upgrade connector manually, private mode upgrade, offline upgrade, upgrade private mode 
 summary: 'BlueXP met automatiquement à niveau un connecteur vers la dernière version lorsque vous utilisez BlueXP en mode standard ou restreint. De nouvelles versions sont généralement publiées chaque mois pour introduire de nouvelles fonctionnalités et améliorer la stabilité. Si vous préférez, vous pouvez configurer le connecteur pour extraire les mises à jour d"images à partir d"un référentiel local. Pour les déploiements en mode privé, vous devez toujours mettre à niveau manuellement le connecteur vous-même.' 
 ---
-= Mettre à niveau un connecteur en mode privé
+= Gérer les mises à niveau des connecteurs
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,12 +14,99 @@ summary: 'BlueXP met automatiquement à niveau un connecteur vers la dernière v
 
 
 [role="lead"]
-Si vous utilisez BlueXP en mode privé, vous pouvez mettre à niveau le connecteur dès qu'une version plus récente est disponible sur le site du support NetApp.
+Lorsque vous utilisez BlueXP  en mode standard ou restreint, BlueXP  met automatiquement à niveau votre connecteur vers la dernière version, tant que le connecteur dispose d'un accès Internet sortant pour obtenir la mise à jour logicielle. Si vous devez gérer manuellement lorsque le connecteur est mis à niveau, vous pouvez désactiver les mises à niveau automatiques pour le mode standard ou le mode restreint.
 
 
-TIP: Lorsque vous utilisez BlueXP en mode standard ou restreint, vous n'avez pas besoin de mettre à niveau manuellement le connecteur. BlueXP met automatiquement à niveau un connecteur vers la dernière version, tant que le connecteur dispose d'un accès Internet sortant pour obtenir la mise à jour logicielle.
+NOTE: Lorsque vous exécutez BlueXP  en mode privé, vous devez toujours mettre à niveau le connecteur vous-même.
 
-.Description de la tâche
+
+
+== Désactivez les mises à niveau automatiques
+
+La désactivation de la mise à niveau automatique de votre connecteur se compose de deux étapes. Tout d'abord, vous devez vous assurer que votre connecteur actuel est en bon état et à jour. Vous pouvez ensuite modifier un fichier de configuration pour désactiver la fonction de mise à niveau automatique.
+
+
+NOTE: Vous ne pouvez désactiver les mises à niveau automatiques que si vous disposez de la version 3.9.48 ou supérieure du connecteur.
+
+
+
+=== Vérifiez l'état de santé de votre connecteur
+
+Vous devez vérifier que votre connecteur est stable et que tous les conteneurs s'exécutant sur votre VM Connector sont en bon état et fonctionnent correctement. Après avoir désactivé les mises à niveau automatiques, votre machine virtuelle Connector cesse de vérifier la présence de nouveaux services ou packages de mise à niveau.
+
+Utilisez l'une des commandes suivantes pour vérifier votre connecteur. Tous les services doivent avoir le statut _running_. Si ce n'est pas le cas, contactez le support NetApp avant de désactiver la mise à niveau automatique.
+
+Docker::
++
+--
+[source, cli]
+----
+docker ps -a
+----
+--
+Podman::
++
+--
+[source, cli]
+----
+podman ps -a
+----
+--
+
+
+
+
+=== Désactivez la mise à niveau automatique pour le connecteur
+
+Vous désactivez les mises à niveau automatiques en définissant l'indicateur _isUpgradeDisabled_ dans le fichier _com/opt/application/NetApp/service-Manager-2/config.json_. Par défaut, cet indicateur est défini sur FALSE et votre connecteur est automatiquement mis à niveau. Vous pouvez définir cet indicateur sur vrai pour désactiver les mises à niveau automatiques.
+
+Pour réactiver la mise à niveau automatique, procédez comme suit et définissez l'indicateur _isUpgradeDisabled_ sur FALSE.
+
+.Étapes
+. Vérifiez que votre connecteur est à jour et en bon état.
+. Modifiez le fichier _/opt/application/NetApp/service-Manager-2/config.json_ et définissez la valeur de l'indicateur _isUpgradeDisable_ sur TRUE, comme indiqué en bas de cet exemple.
++
+[source]
+----
+{
+  "environment": "production",
+  "proxySetting": "notConfigured",
+  "accountId": "account-NVKiCdw2",
+  "clientId": "EalzoDIDFyovsQarrXiBYa15dZZvZxD6",
+  "enc_clientSecret": "f151lvsq3NRQDGSAGV8T3YHdSch21na6MWBtTkAXHWSGpsW5UWkRhvXpTTf6lBpocXUUr4YETIZuEHz5aWDFdB0JIz65YVJX/vTKWTN2iIpH7DUTRGISKp2UCIVixtGi",
+  "version": "3.0.76",
+  "site": "stdonpremv49",
+  "company": "NetApp",
+  "systemId": "4a4c4d97-80c2-4989-8c9f-75a92925eabb",
+  "encryptedMysqlPassword": "f151lvsq3NRQDGSAGV8T3RQN7wsmegYWXg5KXWvxyMksdg51qhTSg00SvvrhXFq0",
+  "mysqlWasConfigured": true,
+  "encryptionKey": "g4/6CAp2Aclqkrl4gb1C4A==",
+  "keyStorePassword": "Netapp234",
+  "trustStorePassword": "ugauga",
+  "dockerRepoConfig": {
+    "username": "client-infra-prod-read",
+    "encryptedPassword": "f151lvsq3NRQDGSAGV8T3W7IxfTUVELHcXa44msIIsQrtrobO32gIqG9mjpz8rbVmOryIIHcZt03UBbjdwJ5/Q==",
+    "registry": "cloudmanagerinfraprod.azurecr.io",
+    "imageNamespace": "",
+    "repoType": "DEFAULT_DOCKER_REPO"
+  },
+  "isUpgradeDisabled": true,
+  "serviceAPIServerBaseUrl": "http://10.250.250.1:8890"
+}
+----
+. Enregistrez votre fichier.
+. Redémarrez le service Service Manager 2 en exécutant la commande suivante :
++
+[source, cli]
+----
+systemctl restart netapp-service-manager.service
+----
+
+
+
+
+== Mettez à niveau le connecteur
+
 Le connecteur doit redémarrer pendant le processus de mise à niveau afin que la console Web ne soit pas disponible pendant la mise à niveau.
 
 .Étapes

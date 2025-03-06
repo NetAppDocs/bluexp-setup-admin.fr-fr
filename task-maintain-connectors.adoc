@@ -41,7 +41,7 @@ link:reference-connector-default-config.html["En savoir plus sur la configuratio
 
 
 
-== Arrêt du démarrage de la VM connecteur
+== Arrêt et démarrage de la VM connecteur
 
 Si vous devez arrêter puis démarrer le connecteur VM, vous devez le faire depuis la console de votre fournisseur cloud ou en utilisant les procédures standard de gestion sur site.
 
@@ -119,6 +119,6 @@ Ajoutez et supprimez l'URI (Uniform Resource identifier) d'un connecteur.
 . Sélectionnez la liste déroulante *Connector* dans l'en-tête BlueXP.
 . Sélectionnez *gérer les connecteurs*.
 . Sélectionnez le menu d'action d'un connecteur et sélectionnez *Modifier le connecteur*.
-. Sélectionnez *URI de connecteur*.
+. Développez la barre *Connector URI* pour afficher les URI d'un connecteur.
 . Ajoutez et supprimez des URI, puis sélectionnez *appliquer*.
 
