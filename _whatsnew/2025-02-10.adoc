@@ -14,7 +14,8 @@ Cette version de BlueXP Connector inclut des améliorations mineures de la sécu
 
 === Gestion des identités et des accès BlueXP 
 
-* Prise en charge de l'attribution de plusieurs rôles à un utilisateur.
+* Prise en charge de l'attribution de plusieurs rôles à un utilisateur BlueXP .
+* Prise en charge de l'attribution d'un rôle sur plusieurs ressources de l'organisation BlueXP  (Org/dossier/projet)
 * Les rôles sont désormais associés à l'une des deux catégories suivantes : plate-forme et service de données.
 
 

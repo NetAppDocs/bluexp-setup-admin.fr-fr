@@ -1,9 +1,42 @@
-= Forcer les utilisateurs à entrer des informations d'identification ONTAP pour accéder à la vue avancée (ONTAP System Manager)
+= Connecteur 3.9.50
 :allow-uri-read: 
 
 
 
 
-=== Forcer les utilisateurs à entrer des informations d'identification ONTAP pour accéder à la vue avancée (ONTAP System Manager)
+=== Connecteur 3.9.50
 
-Vous pouvez désormais forcer les utilisateurs à entrer leurs informations d'identification ONTAP pour accéder à ONTAP System Manager. Ce paramètre s'applique à la fois à Cloud Volumes ONTAP et à ONTAP sur site. Les utilisateurs disposant du rôle d'administrateur d'organisation peuvent configurer ce paramètre.
+Cette version de BlueXP  Connector inclut des améliorations mineures de la sécurité et des correctifs de bogues, ainsi que les fonctionnalités suivantes.
+
+À ce stade, la version 3.9.50 est disponible pour le mode standard et le mode restreint.
+
+
+
+=== Mise à jour du connecteur 3.9.49
+
+
+
+==== Accès au gestionnaire système ONTAP lorsque BlueXP  utilise un connecteur
+
+Un administrateur BlueXP  (utilisateurs disposant du rôle d'administrateur d'organisation) peut configurer BlueXP  pour inviter les utilisateurs à saisir leurs informations d'identification ONTAP afin d'accéder au gestionnaire système ONTAP. Lorsque ce paramètre est activé, les utilisateurs doivent entrer leurs informations d'identification ONTAP chaque fois qu'elles ne sont pas stockées dans BlueXP .
+
+Cette fonction est disponible dans la version de connecteur 3.9.49 et supérieure. link:task-ontap-access-connector.html["Découvrez comment configurer les paramètres d'identification."^].
+
+
+
+=== Mise à jour du connecteur 3.9.48
+
+
+
+==== Possibilité de désactiver le paramètre de mise à niveau automatique pour le connecteur
+
+Vous pouvez désactiver la fonction de mise à niveau automatique du connecteur.
+
+Lorsque vous utilisez BlueXP  en mode standard ou restreint, BlueXP  met automatiquement à niveau votre connecteur vers la dernière version, tant que le connecteur dispose d'un accès Internet sortant pour obtenir la mise à jour logicielle. Si vous devez gérer manuellement lorsque le connecteur est mis à niveau, vous pouvez maintenant désactiver les mises à niveau automatiques pour le mode standard ou le mode restreint.
+
+
+NOTE: Ce changement n'a pas d'impact sur le mode privé BlueXP  où vous devez toujours mettre à niveau le connecteur vous-même.
+
+Cette fonction est disponible dans la version de connecteur 3.9.48 et supérieure.
+
+link:task-upgrade-connector.html["Découvrez comment désactiver la mise à niveau automatique pour le connecteur."^]

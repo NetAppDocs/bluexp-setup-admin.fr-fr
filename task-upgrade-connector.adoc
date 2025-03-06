@@ -23,7 +23,7 @@ NOTE: Lorsque vous exécutez BlueXP  en mode privé, vous devez toujours mettre
 
 == Désactivez les mises à niveau automatiques
 
-La désactivation de la mise à niveau automatique de votre connecteur se compose de deux étapes. Tout d'abord, vous devez vous assurer que votre connecteur actuel est en bon état et à jour. Vous pouvez ensuite modifier un fichier de configuration pour désactiver la fonction de mise à niveau automatique.
+La désactivation de la mise à niveau automatique de votre connecteur se compose de deux étapes. Vous devez d'abord vous assurer que votre connecteur actuel est en bon état et à jour. Vous allez ensuite modifier un fichier de configuration pour désactiver la fonction de mise à niveau automatique.
 
 
 NOTE: Vous ne pouvez désactiver les mises à niveau automatiques que si vous disposez de la version 3.9.48 ou supérieure du connecteur.
@@ -92,7 +92,6 @@ Pour réactiver la mise à niveau automatique, procédez comme suit et définiss
   },
   "isUpgradeDisabled": true,
   "serviceAPIServerBaseUrl": "http://10.250.250.1:8890"
-}
 ----
 . Enregistrez votre fichier.
 . Redémarrez le service Service Manager 2 en exécutant la commande suivante :
