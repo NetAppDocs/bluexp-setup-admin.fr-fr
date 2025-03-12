@@ -22,7 +22,7 @@ Découvrez les nouveautés des fonctionnalités d'administration BlueXP  : gest
 
 
 
-=== Mise à jour du connecteur 3.9.50
+=== Connecteur 3.9.50
 
 Cette version de BlueXP Connector inclut des améliorations mineures de la sécurité et des correctifs.
 
