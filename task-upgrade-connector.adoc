@@ -23,7 +23,7 @@ NOTE: Lorsque vous exécutez BlueXP  en mode privé, vous devez toujours mettre
 
 == Désactivez les mises à niveau automatiques
 
-La désactivation de la mise à niveau automatique de votre connecteur se compose de deux étapes. Vous devez d'abord vous assurer que votre connecteur actuel est en bon état et à jour. Vous allez ensuite modifier un fichier de configuration pour désactiver la fonction de mise à niveau automatique.
+La désactivation de la mise à niveau automatique de votre connecteur se compose de deux étapes. Tout d'abord, vous devez vous assurer que votre connecteur est en bon état et à jour. Vous allez ensuite modifier un fichier de configuration pour désactiver la fonction de mise à niveau automatique.
 
 
 NOTE: Vous ne pouvez désactiver les mises à niveau automatiques que si vous disposez de la version 3.9.48 ou supérieure du connecteur.
@@ -58,13 +58,14 @@ podman ps -a
 
 === Désactivez la mise à niveau automatique pour le connecteur
 
-Vous désactivez les mises à niveau automatiques en définissant l'indicateur _isUpgradeDisabled_ dans le fichier _com/opt/application/NetApp/service-Manager-2/config.json_. Par défaut, cet indicateur est défini sur FALSE et votre connecteur est automatiquement mis à niveau. Vous pouvez définir cet indicateur sur vrai pour désactiver les mises à niveau automatiques.
+Vous désactivez les mises à niveau automatiques en définissant l'indicateur _isUpgradeDisabled_ dans le fichier _com/opt/application/NetApp/service-Manager-2/config.json_. Par défaut, cet indicateur est défini sur FALSE et votre connecteur est automatiquement mis à niveau. Vous pouvez définir cet indicateur sur vrai pour désactiver les mises à niveau automatiques. Vous devez vous familiariser avec la syntaxe JSON avant d'effectuer cette étape.
 
 Pour réactiver la mise à niveau automatique, procédez comme suit et définissez l'indicateur _isUpgradeDisabled_ sur FALSE.
 
 .Étapes
 . Vérifiez que votre connecteur est à jour et en bon état.
-. Modifiez le fichier _/opt/application/NetApp/service-Manager-2/config.json_ et définissez la valeur de l'indicateur _isUpgradeDisable_ sur TRUE, comme indiqué en bas de cet exemple.
+. Créez une copie de sauvegarde du fichier _/opt/application/NetApp/service-Manager-2/config.json_ pour vous assurer que vous pouvez annuler vos modifications.
+. Modifiez le fichier _/opt/application/NetApp/service-Manager-2/config.json_ et définissez la valeur de l'indicateur _isUpgradeDisable_ sur true.
 +
 [source]
 ----
@@ -76,6 +77,12 @@ Pour réactiver la mise à niveau automatique, procédez comme suit et définiss
 [source, cli]
 ----
 systemctl restart netapp-service-manager.service
+----
+. Exécutez la commande suivante et vérifiez que l'état du connecteur indique _active(running)_: _
++
+[source, cli]
+----
+systemctl status netapp-service-manager.service
 ----
 
 
