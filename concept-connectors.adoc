@@ -36,7 +36,7 @@ Aucun connecteur n'est nécessaire pour configurer et gérer Azure NetApp Files,
 * Cloud Volumes Service pour Google Cloud
 * Copie et synchronisation
 * Conseiller digital
-* Portefeuille digital
+* Portefeuille numérique (licences uniquement, la surveillance des abonnements nécessite un connecteur)
 +
 Dans presque tous les cas, vous pouvez ajouter une licence au portefeuille numérique sans connecteur.
 
