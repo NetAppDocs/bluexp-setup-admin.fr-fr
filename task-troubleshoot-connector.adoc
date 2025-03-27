@@ -72,6 +72,10 @@ image:screenshot-help-support.png["Capture d'écran du menu aide où support est
 +
 .. Sélectionnez l'option pour télécharger le message AutoSupport sur votre ordinateur local. Vous pouvez ensuite l'envoyer au support NetApp selon la méthode qui vous convient.
 .. Sélectionnez *Envoyer AutoSupport* pour envoyer directement le message au support NetApp.
++
+
+NOTE: Lorsque vous choisissez d'envoyer le message AutoSupport par BlueXP , il peut prendre jusqu'à cinq heures car le chargement de BlueXP  s'équilibre automatiquement lorsque les messages AutoSupport sont envoyés. Si votre communication avec le support NetApp est rapide, téléchargez le fichier et envoyez-le vous-même au support NetApp.
+
 
 
 +

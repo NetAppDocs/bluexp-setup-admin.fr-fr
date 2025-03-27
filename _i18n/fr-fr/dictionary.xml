@@ -5035,4 +5035,5 @@ Cette partie du tableau répertorie la prise en charge de la gestion de l'enviro
   <block id="b8000759daeb255b90b1845748aeb18e" category="list-text">Modifiez le fichier _/opt/application/NetApp/service-Manager-2/config.json_ et définissez la valeur de l'indicateur _isUpgradeDisable_ sur true.</block>
   <block id="bfd2bb89d8e4699a2a0ac8d2e111e1bb" category="list-text">Exécutez la commande suivante et vérifiez que l'état du connecteur indique _active(running)_: _</block>
   <block id="973c3bcf96d6257755a3e8ee090eb5f1" category="list-text">Portefeuille numérique (licences uniquement, la surveillance des abonnements nécessite un connecteur)</block>
+  <block id="01dc19e1f1ebe0b9a261b5e0d555ea43" category="admonition">Lorsque vous choisissez d'envoyer le message AutoSupport par BlueXP , il peut prendre jusqu'à cinq heures car le chargement de BlueXP  s'équilibre automatiquement lorsque les messages AutoSupport sont envoyés. Si votre communication avec le support NetApp est rapide, téléchargez le fichier et envoyez-le vous-même au support NetApp.</block>
 </blocks>
