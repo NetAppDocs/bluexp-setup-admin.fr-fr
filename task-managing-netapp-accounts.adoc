@@ -14,7 +14,7 @@ summary: 'Gérez votre compte BlueXP  en ajoutant des utilisateurs, en créant 
 
 
 [role="lead"]
-Lorsque vous utilisez BlueXP  en mode privé, vous utiliserez un _compte BlueXP _ pour gérer les utilisateurs et organiser les ressources. Lorsque vous créez votre compte, il ne comprend qu'un seul utilisateur administrateur et un espace de travail. Vous pouvez gérer le compte en fonction de vos besoins en ajoutant des utilisateurs, en créant des comptes de service à des fins d'automatisation, en ajoutant des espaces de travail, etc.
+Lorsque vous utilisez BlueXP  en mode privé, vous utiliserez un _compte BlueXP _ pour gérer les utilisateurs et organiser les ressources. Lorsque vous créez votre compte, il ne comprend qu'un seul utilisateur et un espace de travail. Vous pouvez gérer le compte en fonction de vos besoins en ajoutant des utilisateurs et en créant des comptes de service à des fins d'automatisation.
 
 Si vous utilisez BlueXP  en mode standard ou en mode restreint, vous ne disposez pas d'un compte BlueXP . Au lieu de cela, vous aurez une organisation _BlueXP _ que vous gérez à l'aide de la gestion des identités et des accès (IAM) BlueXP .
 
@@ -26,15 +26,39 @@ Si vous utilisez BlueXP  en mode standard ou en mode restreint, vous ne dispose
 
 == Gérez votre compte avec l'API de location
 
-Si vous souhaitez gérer les paramètres de votre compte en envoyant des demandes API, vous devez utiliser l'API _Tenancy_. Cette API est différente de l'API BlueXP, que vous utilisez pour créer et gérer des environnements de travail Cloud Volumes ONTAP.
+Si vous souhaitez gérer les paramètres de votre compte en envoyant des demandes API, vous devez utiliser l'API _Tenancy_. Cette API est différente de l'API BlueXP . N'oubliez pas que vous ne pouvez pas créer de nouveaux comptes ou espaces de travail en mode privé, même avec l'API.
 
 https://docs.netapp.com/us-en/bluexp-automation/tenancy/overview.html["Affichez les terminaux de l'API de colocation"^]
 
 
 
+== Renommez votre espace de travail
+
+Gérez vos espaces de travail en les créant, en les renommant et en les supprimant. Notez que vous ne pouvez pas supprimer un espace de travail s'il contient des ressources. Elle doit être vide.
+
+.Étapes
+. En haut de BlueXP, sélectionnez la liste déroulante *compte* et sélectionnez *gérer le compte*.
+. Sélectionnez *espaces de travail*.
+. Sélectionnez *Renommer* pour renommer l'espace de travail.
+
+
+
+
+== Modifiez le nom de votre compte
+
+Changez le nom de votre compte à tout moment pour le changer en quelque chose de significatif pour vous.
+
+.Étapes
+. En haut de BlueXP, sélectionnez la liste déroulante *compte* et sélectionnez *gérer le compte*.
+. Dans l'onglet *vue d'ensemble*, sélectionnez l'icône de modification située en regard du nom du compte.
+. Saisissez un nouveau nom de compte et sélectionnez *Enregistrer*.
+
+
+
+
 == Créer et gérer des utilisateurs
 
-Les utilisateurs de votre compte peuvent accéder aux ressources et les gérer dans des espaces de travail spécifiques.
+Les utilisateurs de votre compte peuvent accéder aux ressources de votre espace de travail et les gérer.
 
 
 
@@ -43,7 +67,6 @@ Les utilisateurs de votre compte peuvent accéder aux ressources et les gérer d
 Associez les utilisateurs à votre compte BlueXP pour créer et gérer des environnements de travail dans BlueXP.
 
 .Étapes
-. Si l'utilisateur ne l'a pas déjà fait, demandez-lui d'aller à https://bluexp.netapp.com/["Site Web NetApp BlueXP"^] et s'inscrire.
 . Dans le haut de BlueXP, sélectionnez la liste déroulante *compte*.
 +
 image:screenshot-account-settings-menu.png["Capture d'écran qui montre l'option Paramètres du compte dans la bannière supérieure de BlueXP."]
@@ -53,26 +76,13 @@ image:screenshot-account-settings-menu.png["Capture d'écran qui montre l'option
 image:screenshot-manage-account-settings.png["Capture d'écran affichant l'option gérer les paramètres du compte disponible dans la liste déroulante compte."]
 
 . Dans l'onglet membres, sélectionnez *associer un utilisateur*.
-. Entrez l'adresse e-mail de l'utilisateur et sélectionnez un rôle pour l'utilisateur :
-+
-** *Administrateur de compte*: Peut effectuer n'importe quelle action dans BlueXP.
-** *Workspace Admin* : permet de créer et de gérer des ressources dans des espaces de travail attribués.
-** *Compliance Viewer* : peut uniquement afficher les informations de conformité pour la classification BlueXP et générer des rapports pour les espaces de travail auxquels ils ont accès.
-
-
-. Si vous avez sélectionné Workspace Admin ou Compliance Viewer, sélectionnez un ou plusieurs espaces de travail à associer à cet utilisateur.
-+
-image:screenshot_associate_user.gif["Capture d'écran qui montre comment associer un utilisateur en sélectionnant un rôle et les espaces de travail associés."]
-
-. Sélectionnez *associer*.
-
-
-.Résultat
-L'utilisateur doit recevoir un e-mail de NetApp BlueXP intitulé « Account Association ». L'e-mail inclut les informations nécessaires pour accéder à BlueXP.
+. Saisissez l'adresse e-mail de l'utilisateur.
+. Sélectionnez *associer*. L'utilisateur doit recevoir un e-mail de NetApp BlueXP  intitulé « Association de compte ». Cet e-mail contient les informations nécessaires pour accéder à BlueXP .
 
 
 
-=== Supprimer des utilisateurs
+
+=== Supprimer des utilisateurs de votre compte
 
 La dissociation d'un utilisateur permet de ne plus accéder aux ressources d'un compte BlueXP.
 
@@ -82,47 +92,14 @@ La dissociation d'un utilisateur permet de ne plus accéder aux ressources d'un 
 image:screenshot-manage-account-settings.png["Capture d'écran affichant l'option gérer les paramètres du compte disponible dans la liste déroulante compte."]
 
 . Dans l'onglet membres, sélectionnez le menu d'action dans la ligne correspondant à l'utilisateur.
-+
-image:screenshot_associate_user_workspace.png["Capture d'écran qui montre le menu d'action disponible lorsque vous passez la souris sur le nom d'un utilisateur dans la table utilisateurs."]
-
 . Sélectionnez *dissocier utilisateur* et sélectionnez *dissocier* pour confirmer.
 
-
-.Résultat
-L'utilisateur ne peut plus accéder aux ressources de ce compte BlueXP.
-
-
-
-=== Gérer les espaces de travail d'un administrateur d'espace de travail
-
-Vous pouvez associer et dissocier les administrateurs d'espace de travail avec des espaces de travail à tout moment. L'association de l'utilisateur lui permet de créer et d'afficher les environnements de travail dans cet espace de travail.
-
-
-NOTE: Vous devez également associer le connecteur à des espaces de travail pour que les administrateurs d'espace de travail puissent accéder à ces espaces de travail à partir de BlueXP. link:task-managing-netapp-accounts.html#manage-a-connectors-workspaces["Apprenez à gérer les espaces de travail d'un connecteur"].
-
-.Étapes
-. En haut de BlueXP, sélectionnez la liste déroulante *compte* et sélectionnez *gérer le compte*.
-+
-image:screenshot-manage-account-settings.png["Capture d'écran affichant l'option gérer les paramètres du compte disponible dans la liste déroulante compte."]
-
-. Dans l'onglet membres, sélectionnez le menu d'action dans la ligne correspondant à l'utilisateur.
-+
-image:screenshot_associate_user_workspace.png["Capture d'écran qui montre le menu d'action disponible lorsque vous passez la souris sur le nom d'un utilisateur dans la table utilisateurs."]
-
-. Sélectionnez *gérer les espaces de travail*.
-. Sélectionnez les espaces de travail à associer à l'utilisateur et sélectionnez *appliquer*.
-
-
-.Résultat
-L'utilisateur peut désormais accéder à ces espaces de travail depuis BlueXP, tant que le connecteur était également associé aux espaces de travail.
 
 
 
 == Création et gestion de comptes de service
 
 Un compte de service agit comme un « utilisateur » qui peut effectuer des appels API autorisés vers BlueXP à des fins d'automatisation. Il est ainsi plus facile de gérer l'automatisation, car il n'est pas nécessaire de créer des scripts d'automatisation basés sur le compte d'utilisateur réel d'une personne qui quitte l'entreprise à tout moment.
-
-Vous donnez des autorisations à un compte de service en lui attribuant un rôle, tout comme n'importe quel autre utilisateur BlueXP. Vous pouvez également associer le compte de service à des espaces de travail spécifiques afin de contrôler les environnements de travail (ressources) auxquels le service peut accéder.
 
 Lorsque vous créez le compte de service, BlueXP vous permet de copier ou de télécharger un ID client et un secret client pour le compte de service. Cette paire de clés est utilisée pour l'authentification avec BlueXP.
 
@@ -144,7 +121,7 @@ image:screenshot-account-settings-menu.png["Capture d'écran qui montre l'option
 image:screenshot-manage-account-settings.png["Capture d'écran affichant l'option gérer les paramètres du compte disponible dans la liste déroulante compte."]
 
 . Dans l'onglet membres, sélectionnez *Créer un compte de service*.
-. Entrez un nom et sélectionnez un rôle. Si vous avez choisi un rôle autre que Administrateur de compte, choisissez l'espace de travail à associer à ce compte de service.
+. Entrez un nom.
 . Sélectionnez *Créer*.
 . Copiez ou téléchargez l'ID client et le secret client.
 +
@@ -209,78 +186,4 @@ image:screenshot_service_account_actions.gif["Capture d'écran qui montre le men
 
 . Sélectionnez *Supprimer*.
 . Sélectionnez de nouveau *Supprimer* pour confirmer.
-
-
-
-
-== Gestion des espaces de travail
-
-Gérez vos espaces de travail en les créant, en les renommant et en les supprimant. Notez que vous ne pouvez pas supprimer un espace de travail s'il contient des ressources. Elle doit être vide.
-
-.Étapes
-. En haut de BlueXP, sélectionnez la liste déroulante *compte* et sélectionnez *gérer le compte*.
-. Sélectionnez *espaces de travail*.
-. Choisissez l'une des options suivantes :
-+
-** Sélectionnez *Ajouter un nouvel espace de travail* pour créer un nouvel espace de travail.
-** Sélectionnez *Renommer* pour renommer l'espace de travail.
-** Sélectionnez *Supprimer* pour supprimer l'espace de travail.
-
-
-+
-Si vous avez créé un nouvel espace de travail, vous devez également ajouter le connecteur à cet espace de travail. Si vous n'ajoutez pas le connecteur, les administrateurs de l'espace de travail ne peuvent pas accéder aux ressources de l'espace de travail. Reportez-vous à la section suivante pour plus de détails.
-
-
-
-
-
-== Gérer les espaces de travail d'un connecteur
-
-Vous devez associer le connecteur aux espaces de travail pour que les administrateurs d'espace de travail puissent accéder à ces espaces de travail depuis BlueXP.
-
-Si vous ne disposez que d'administrateurs de compte, il n'est pas nécessaire d'associer le connecteur aux espaces de travail. Les administrateurs de comptes peuvent accéder à tous les espaces de travail dans BlueXP par défaut.
-
-link:concept-netapp-accounts.html["En savoir plus sur les utilisateurs, les espaces de travail et les connecteurs"].
-
-.Étapes
-. En haut de BlueXP, sélectionnez la liste déroulante *compte* et sélectionnez *gérer le compte*.
-. Sélectionnez *connecteur*.
-. Sélectionnez *gérer les espaces de travail* pour le connecteur que vous souhaitez associer.
-. Sélectionnez les espaces de travail à associer au connecteur et sélectionnez *appliquer*.
-
-
-
-
-== Modifiez le nom de votre compte
-
-Changez le nom de votre compte à tout moment pour le changer en quelque chose de significatif pour vous.
-
-.Étapes
-. En haut de BlueXP, sélectionnez la liste déroulante *compte* et sélectionnez *gérer le compte*.
-. Dans l'onglet *vue d'ensemble*, sélectionnez l'icône de modification située en regard du nom du compte.
-. Saisissez un nouveau nom de compte et sélectionnez *Enregistrer*.
-
-
-
-
-== Autoriser les aperçus privés
-
-Autoriser les préversions privées dans votre compte pour accéder aux nouveaux services disponibles en aperçu dans BlueXP.
-
-Les services d'aperçu privé ne sont pas garantis de se comporter comme prévu et peuvent supporter des interruptions et être des fonctionnalités manquantes.
-
-.Étapes
-. En haut de BlueXP, sélectionnez la liste déroulante *compte* et sélectionnez *gérer le compte*.
-. Dans l'onglet *Présentation*, activez le paramètre *Autoriser aperçu privé*.
-
-
-
-
-== Autoriser les services tiers
-
-Autoriser les services tiers de votre compte à accéder à des services tiers disponibles dans BlueXP. Les services clouds tiers sont similaires aux services proposés par NetApp, mais ils sont gérés et pris en charge par des sociétés tierces.
-
-.Étapes
-. En haut de BlueXP, sélectionnez la liste déroulante *compte* et sélectionnez *gérer le compte*.
-. Dans l'onglet *Présentation*, activez le paramètre *Autoriser les services tiers*.
 

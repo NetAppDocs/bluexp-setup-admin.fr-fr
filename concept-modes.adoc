@@ -196,14 +196,11 @@ Pour Cloud Volumes ONTAP, les licences basées sur la capacité et les licences 
 Comment démarrer avec le mode restreint:: Vous devez activer le mode restreint lorsque vous créez votre compte BlueXP.
 +
 --
-Si vous n'avez pas encore de compte, vous serez invité à créer votre compte et à activer le mode restreint lorsque vous vous connecterez à BlueXP pour la première fois à partir d'un connecteur que vous avez installé manuellement ou que vous avez créé à partir du Marketplace de votre fournisseur cloud.
+Si vous n'avez pas encore d'entreprise, vous serez invité à créer votre organisation et à activer le mode restreint lorsque vous vous connecterez à BlueXP  pour la première fois à partir d'un connecteur que vous avez installé manuellement ou que vous avez créé à partir du Marketplace de votre fournisseur cloud.
 
-Si vous avez déjà un compte et que vous souhaitez en créer un autre, vous devez utiliser l'API de location.
-
-Notez que vous ne pouvez pas modifier le paramètre du mode restreint après la création du compte par BlueXP. Vous ne pouvez pas activer le mode restreint ultérieurement et vous ne pouvez pas le désactiver ultérieurement. Elle doit être définie au moment de la création du compte.
+Notez que vous ne pouvez pas modifier le paramètre de mode restreint après la création de l'organisation par BlueXP . Vous ne pouvez pas activer le mode restreint ultérieurement et vous ne pouvez pas le désactiver ultérieurement.
 
 * link:task-quick-start-restricted-mode.html["Découvrez comment vous lancer avec le mode restreint"].
-* link:task-create-account.html["Découvrez comment créer un compte BlueXP supplémentaire"].
 
 
 --
