@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: concept-accounts-gcp.html 
-keywords: cloud provider accounts, gcp, gcp accounts, google cloud platform, google accounts, google cloud platform accounts, permissions, project, google cloud project 
+keywords: cloud provider accounts, gcp, gcp accounts, google cloud platform, google accounts, google cloud platform accounts, permissions, project, google cloud project, credential 
 summary: 'Découvrez comment BlueXP utilise les identifiants Google Cloud pour effectuer des actions en votre nom et comment ces identifiants sont associés aux abonnements Marketplace. Ces informations peuvent vous être utiles lorsque vous gérez les identifiants d"un ou plusieurs projets Google Cloud. Par exemple, vous pourriez vouloir en savoir plus sur le compte de service associé à la VM Connector.' 
 ---
 = Découvrez les projets et les autorisations Google Cloud
