@@ -22,7 +22,7 @@ Si vous exécutez BlueXP  en mode standard, vous n'aurez pas besoin d'installer
 
 == Ce que vous pouvez faire sans connecteur en mode standard
 
-Certains des services les plus importants de BlueXP  sont disponibles sans installer de connecteur si vous utilisez le mode standard.
+Si vous utilisez le mode standard, vous pouvez commencer à utiliser BlueXP  pour gérer de manière centralisée vos ressources de stockage sans installer de connecteur.
 
 Vous pouvez utiliser les fonctionnalités et services BlueXP suivants sans connecteur :
 
