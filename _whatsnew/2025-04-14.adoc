@@ -19,4 +19,4 @@ Cette version de BlueXP Connector inclut des améliorations mineures de la sécu
 * Si vous disposez du rôle d'administrateur Org, dossier ou projet, vous pouvez désormais associer un abonnement Keystone à un projet IAM. L'association d'un abonnement Keystone à un projet IAM vous permet de contrôler l'accès à Keystone dans BlueXP .
 
 
-link:reference-iam-predefined-roles.html["Découvrez les nouveaux rôles."^].
+link:reference-iam-predefined-roles.html["Découvrez les nouveaux rôles."^]

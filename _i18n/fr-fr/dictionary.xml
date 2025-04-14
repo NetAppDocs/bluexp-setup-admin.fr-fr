@@ -4923,7 +4923,6 @@ Cette partie du tableau répertorie la prise en charge de la gestion de l'enviro
   <block id="44cd288eedf76c78c5b3b26935538537" category="paragraph">À ce stade, la version 3.9.51 est disponible pour le mode standard et le mode restreint.</block>
   <block id="5c4a2c71456e5295a9492bb06d95be3d" category="section-title">Gestion des identités et des accès BlueXP </block>
   <block id="89e154403778feb30a369a4b9959d2e2" category="inline-link-macro">Découvrez les nouveaux rôles.</block>
-  <block id="32943cfa903d06d5071cedc0af461130" category="paragraph"><block ref="7b86bd575ced3444e23389ac71f98a8f" category="inline-link-macro-rx"></block>.</block>
   <block id="4409983c60e456858bb3e9ef5737f98a" category="section-title">14 avril 2025</block>
   <block id="38469cab8f7065ff2b3a663e28381c62" category="list-text">Pour accéder à la protection contre les ransomware, les utilisateurs ne disposant pas d'un rôle d'administrateur d'organisation ou de dossier ou de projet doivent se voir attribuer un rôle de protection contre les ransomwares. Vous pouvez attribuer un utilisateur à l'un des deux rôles suivants : administrateur de la protection contre les ransomware ou visualiseur de la protection contre les ransomware.</block>
   <block id="a9632ee5411be0309684063f13ba77a8" category="list-text">Les utilisateurs ne disposant pas d'un administrateur Org, d'un dossier ou d'un administrateur de projet doivent se voir attribuer un rôle Keystone pour avoir accès à Keystone. Vous pouvez attribuer un utilisateur à l'un des deux rôles suivants : admin Keystone ou visionneur Keystone.</block>
@@ -5025,4 +5024,5 @@ Cette partie du tableau répertorie la prise en charge de la gestion de l'enviro
   <block id="d5979f6638739f52389534c5a5861979" category="sidebar">Configuration et administration de BlueXP </block>
   <block id="9a95138b9cb83f59109eb15c038b1073" category="sidebar">Ajouter des membres et des comptes de service</block>
   <block id="7211199f77a8a73dc960b8a15a019199" category="sidebar">Utilisez les rôles pour contrôler l'accès des membres aux ressources</block>
+  <block id="7b86bd575ced3444e23389ac71f98a8f" category="paragraph"><block ref="7b86bd575ced3444e23389ac71f98a8f" category="inline-link-macro-rx"></block></block>
 </blocks>
