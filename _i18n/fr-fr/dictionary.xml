@@ -4944,7 +4944,6 @@ Cette partie du tableau répertorie la prise en charge de la gestion de l'enviro
   <block id="0e231d3391a335865e696150143618bc" category="cell">Accédez au et consultez les modifications incluses dans la<block ref="d08346bd70ea49c38d1ac500c69dd11c" category="inline-link-rx"></block> version de mars 2024.</block>
   <block id="10c518409c3dfbdd5e9839d2076ed5da" category="cell">10 mars 2025 (version 1.41)</block>
   <block id="49e0c1b5be27dbeb84e3a7ca1d634276" category="cell">Accédez au et consultez les changements inclus dans les<block ref="bb3538c6013ff73961739d7c28fee95d" category="inline-link-rx"></block> versions 1.38 à 1.371.41.</block>
-  <block id="5f2734b84896bdabcf7fd3574325d116" category="section-title">28 mars 2025</block>
   <block id="cb3410a9bf17cf666d6a34ac1b7c6d6c" category="paragraph"><block ref="2416ec7d97fab7b3c3e0f434ea922dd9" category="inline-link-rx"></block>.</block>
   <block id="1920da3586c2e2872f88b02997c971c3" category="doc">ID d'organisation et de projet</block>
   <block id="106aaea1e5532e2978889c60809a6ba7" category="paragraph">Votre organisation BlueXP  possède un nom et un ID. Vous pouvez choisir un nom qui vous aidera à l'identifier dans votre déploiement BlueXP . Vous devrez peut-être également récupérer l'ID d'organisation pour certaines intégrations.</block>
@@ -4979,4 +4978,13 @@ Cette partie du tableau répertorie la prise en charge de la gestion de l'enviro
   <block id="e666f475ae71221ef0568980f94a0316" category="paragraph"><block ref="a51247ccde87e175c686e81825c9f657" category="inline-link-macro-rx"></block>. * *Ajouter un rôle* : si vous souhaitez donner accès à des dossiers ou projets supplémentaires au sein de votre organisation, sélectionnez *Ajouter un rôle*, spécifiez un autre dossier, un autre projet ou une autre catégorie de rôle, puis sélectionnez une catégorie de rôle et un rôle correspondant.</block>
   <block id="88ccee89efe2b556b8fcc7b01ae63c9f" category="paragraph">Vous pouvez modifier les rôles attribués à un membre si vous devez ajuster l'accès d'un utilisateur.</block>
   <block id="bd572303cf9daecbf8e01f72f337d250" category="list-text">Vous pouvez modifier un rôle existant pour un membre ou supprimer un rôle.</block>
+  <block id="1fa6d342759ba5c5a8f23c210cac048c" category="doc">Connecteur 3.9.51</block>
+  <block id="44cd288eedf76c78c5b3b26935538537" category="paragraph">À ce stade, la version 3.9.51 est disponible pour le mode standard et le mode restreint.</block>
+  <block id="5c4a2c71456e5295a9492bb06d95be3d" category="section-title">Gestion des identités et des accès BlueXP </block>
+  <block id="280cb81762489dce44889f9130b6e870" category="list-text">Vous devez maintenant attribuer des rôles à des utilisateurs pour qu'ils puissent accéder à la protection contre les ransomwares. Vous pouvez attribuer un utilisateur à l'un des deux rôles suivants : administrateur de la protection contre les ransomware ou visualiseur de la protection contre les ransomware.</block>
+  <block id="0fc0d7857aba2fcd01e923d9a32e9297" category="list-text">Vous devez maintenant attribuer des rôles aux utilisateurs pour qu'ils puissent avoir accès à NetApp Keystone. Vous pouvez attribuer un utilisateur à l'un des deux rôles suivants : admin Keystone ou visionneur Keystone.</block>
+  <block id="7fc94980a9075f2005ba4d674e6766ee" category="list-text">Vous pouvez désormais associer un abonnement Keystone à un projet IAM. L'association d'un abonnement Keystone à un projet IAM vous permet de contrôler l'accès à Keystone dans BlueXP .</block>
+  <block id="89e154403778feb30a369a4b9959d2e2" category="inline-link-macro">Découvrez les nouveaux rôles.</block>
+  <block id="32943cfa903d06d5071cedc0af461130" category="paragraph"><block ref="7b86bd575ced3444e23389ac71f98a8f" category="inline-link-macro-rx"></block>.</block>
+  <block id="4409983c60e456858bb3e9ef5737f98a" category="section-title">14 avril 2025</block>
 </blocks>

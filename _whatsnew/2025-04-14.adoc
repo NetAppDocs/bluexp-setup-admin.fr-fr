@@ -1,0 +1,22 @@
+= Connecteur 3.9.51
+:allow-uri-read: 
+
+
+
+
+=== Connecteur 3.9.51
+
+Cette version de BlueXP Connector inclut des améliorations mineures de la sécurité et des correctifs.
+
+À ce stade, la version 3.9.51 est disponible pour le mode standard et le mode restreint.
+
+
+
+=== Gestion des identités et des accès BlueXP 
+
+* Vous devez maintenant attribuer des rôles à des utilisateurs pour qu'ils puissent accéder à la protection contre les ransomwares. Vous pouvez attribuer un utilisateur à l'un des deux rôles suivants : administrateur de la protection contre les ransomware ou visualiseur de la protection contre les ransomware.
+* Vous devez maintenant attribuer des rôles aux utilisateurs pour qu'ils puissent avoir accès à NetApp Keystone. Vous pouvez attribuer un utilisateur à l'un des deux rôles suivants : admin Keystone ou visionneur Keystone.
+* Vous pouvez désormais associer un abonnement Keystone à un projet IAM. L'association d'un abonnement Keystone à un projet IAM vous permet de contrôler l'accès à Keystone dans BlueXP .
+
+
+link:reference-iam-predefined-roles.html["Découvrez les nouveaux rôles."^].
