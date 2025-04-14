@@ -45,10 +45,10 @@ link:concept-identity-and-access-management.html#associate-resource-folder["Déc
 
 ** *Accès* : affichez les membres qui auront accès au dossier ou au projet en fonction des autorisations existantes déjà définies dans votre hiérarchie de ressources.
 +
-Si nécessaire, sélectionnez *Ajouter un membre* pour spécifier d'autres membres de l'organisation qui doivent avoir accès au dossier ou au projet, puis sélectionnez un rôle. Un rôle définit les autorisations dont disposent les membres pour le dossier ou le projet.
+Si nécessaire, sélectionnez *Ajouter un membre* pour spécifier d'autres membres de l'organisation qui doivent avoir accès au dossier ou au projet, puis sélectionnez un rôle. Un rôle d'accès définit les autorisations dont disposent les membres pour le dossier ou le projet.
 
 +
-link:reference-iam-predefined-roles.html["En savoir plus sur les rôles IAM prédéfinis"].
+link:reference-iam-predefined-roles.html["En savoir plus sur les rôles d'accès"].
 
 
 
@@ -159,7 +159,7 @@ image:screenshot-iam-member-access.png["Capture d'écran de la page Modifier le 
 
 Modifiez l'accès des membres à un dossier ou à un projet pour vous assurer que les membres autorisés ont accès aux ressources associées au dossier ou au projet.
 
-Si l'accès des membres a été fourni à un niveau supérieur de la hiérarchie (au niveau du dossier ou de l'organisation), vous ne pouvez pas supprimer ou modifier l'accès des membres lors de l'affichage du dossier ou du projet de niveau inférieur. Vous devez passer à cette partie de la hiérarchie et y mettre à jour les autorisations du membre. Vous pouvez également link:task-iam-manage-members-permissions.html#manage-permissions["Gérez les autorisations à partir de la page membres"].
+Si l'accès des membres a été fourni à un niveau supérieur de la hiérarchie (au niveau du dossier ou de l'organisation), vous ne pouvez pas supprimer ou modifier leur rôle lors de l'affichage du dossier ou du projet de niveau inférieur. Vous devez passer à cette partie de la hiérarchie et y mettre à jour le rôle du membre. Vous pouvez également link:task-iam-manage-roles.html#manage-permissions["Gérer les rôles à partir de la page membres"].
 
 link:concept-identity-and-access-management.html#role-inheritance["En savoir plus sur l'héritage des rôles"].
 
