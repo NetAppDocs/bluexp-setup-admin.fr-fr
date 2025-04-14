@@ -14,13 +14,15 @@ summary: 'Un connecteur est un logiciel NetApp exécuté sur votre réseau cloud
 
 
 [role="lead"]
-Un _connecteur_ est un logiciel NetApp s'exécutant dans votre réseau cloud ou sur site. Il exécute les actions que BlueXP doit exécuter pour gérer votre infrastructure de données. Le connecteur interroge en permanence la couche BlueXP  en tant que service (SaaS) afin de détecter les actions à entreprendre. Vous n'avez pas besoin d'un connecteur pour démarrer avec BlueXP, mais vous devez créer un connecteur pour déverrouiller toutes les fonctionnalités et tous les services BlueXP.
+Un connecteur est un logiciel NetApp que vous installez qui exécute les actions que BlueXP  doit effectuer pour gérer votre infrastructure de stockage. Vous n'avez pas besoin d'un connecteur pour la plupart des fonctions de BlueXP , mais certaines fonctionnalités ne sont pas disponibles si vous ne le faites pas.
+
+Si vous exécutez BlueXP  en mode standard, vous n'aurez pas besoin d'installer un connecteur pour exécuter certains services de BlueXP , tels que les mises à jour logicielles et le portefeuille numérique. Cependant, certains services premium de BlueXP , tels que la protection contre les ransomware ou la reprise d'activité, nécessitent l'installation d'un connecteur. Si vous utilisez BlueXP  en mode restreint ou privé, vous devez installer un connecteur.
 
 
 
-== Ce que vous pouvez faire sans connecteur
+== Ce que vous pouvez faire sans connecteur en mode standard
 
-Il n'est pas nécessaire de disposer d'un connecteur pour démarrer avec BlueXP. Vous pouvez utiliser plusieurs fonctionnalités et services au sein de BlueXP sans créer de connecteur.
+Certains des services les plus importants de BlueXP  sont disponibles sans installer de connecteur si vous utilisez le mode standard.
 
 Vous pouvez utiliser les fonctionnalités et services BlueXP suivants sans connecteur :
 
@@ -41,7 +43,7 @@ Aucun connecteur n'est nécessaire pour configurer et gérer Azure NetApp Files,
 Dans presque tous les cas, vous pouvez ajouter une licence au portefeuille numérique sans connecteur.
 
 +
-La seule fois qu'un connecteur est nécessaire pour ajouter une licence au portefeuille numérique est pour les licences Cloud Volumes ONTAP _basées sur le nœud_. Dans ce cas, un connecteur est requis car les données sont extraites des licences installées sur les systèmes Cloud Volumes ONTAP.
+La seule fois qu'un connecteur est nécessaire pour ajouter une licence au portefeuille numérique est pour les licences Cloud Volumes ONTAP _basées sur le nœud_. Un connecteur est nécessaire car BlueXP  doit atteindre les données de licence installées sur vos systèmes Cloud Volumes ONTAP.
 
 * Découverte directe des clusters ONTAP sur site
 +
@@ -59,7 +61,7 @@ https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html["E
 
 == Lorsqu'un connecteur est nécessaire
 
-Lorsque vous utilisez BlueXP en mode standard, un connecteur est requis pour les fonctionnalités et les services suivants dans BlueXP :
+Lorsque vous utilisez BlueXP  en mode standard, vous devez installer un ou plusieurs connecteurs pour activer les fonctions et services suivants dans BlueXP  :
 
 * Alertes
 * Fonctions de gestion d'Amazon FSX pour ONTAP
@@ -70,25 +72,21 @@ Lorsque vous utilisez BlueXP en mode standard, un connecteur est requis pour les
 * Cloud Volumes ONTAP
 * Reprise après incident
 * Systèmes E-Series
-* Efficacité économique ^1^
+* Efficacité économique (affichage uniquement)
 * Compartiments de stockage Google Cloud
 * Intégration de clusters ONTAP sur site avec les services de données BlueXP
-* Résilience opérationnelle ^1^
+* Résilience opérationnelle (lecture seule)
 * Protection par ransomware
 * Systèmes StorageGRID
 * Tiering
 * Mise en cache du volume
 
 
-^1^ bien que vous puissiez accéder à ces services sans connecteur, un connecteur est nécessaire pour lancer des actions à partir des services.
-
-Un connecteur est nécessaire pour utiliser BlueXP en mode restreint ou privé.
-
 
 
 == Les connecteurs doivent toujours être opérationnels
 
-Les connecteurs sont un élément fondamental de l'architecture de service BlueXP. Il est de votre responsabilité de vous assurer que les connecteurs appropriés sont en place, opérationnels et accessibles à tout moment. Bien que le service soit conçu pour surmonter les courtes pannes de la disponibilité des connecteurs, vous devez prendre des mesures immédiates pour remédier aux défaillances de l'infrastructure.
+Les connecteurs étant un élément fondamental de l'architecture de services BlueXP , vous devez vous assurer que vos connecteurs appropriés sont opérationnels et accessibles en permanence. Bien que le service soit conçu pour surmonter les courtes pannes de la disponibilité des connecteurs, vous devez prendre des mesures immédiates pour remédier aux défaillances de l'infrastructure.
 
 Cette documentation est régie par le CLUF. Si le produit n'est pas utilisé conformément à la documentation, la fonctionnalité et le fonctionnement du produit, ainsi que vos droits en vertu du CLUF, peuvent être affectés.
 
@@ -104,12 +102,12 @@ Si votre système Cloud Volumes ONTAP dispose d'une licence BYOL basée sur des 
 
 == Emplacements pris en charge
 
-Un connecteur est pris en charge aux emplacements suivants :
+Vous pouvez installer des connecteurs dans un environnement d'hyperscaler pris en charge ou sur site, selon vos besoins.
 
 * Amazon Web Services
 * Microsoft Azure
 +
-Un connecteur dans Azure doit être déployé dans la même région Azure que les systèmes Cloud Volumes ONTAP qu'il gère, ou dans le https://docs.microsoft.com/en-us/azure/availability-zones/cross-region-replication-azure#azure-cross-region-replication-pairings-for-all-geographies["Paire de régions Azure"^] Pour les systèmes Cloud Volumes ONTAP. Cette exigence garantit qu'une connexion Azure Private Link est utilisée entre Cloud Volumes ONTAP et les comptes de stockage associés. https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-enabling-private-link.html["Découvrez comment Cloud Volumes ONTAP utilise une liaison privée Azure"^]
+Déployez votre connecteur dans la même région Azure que les systèmes Cloud Volumes ONTAP qu'il gère, ou dans le https://docs.microsoft.com/en-us/azure/availability-zones/cross-region-replication-azure#azure-cross-region-replication-pairings-for-all-geographies["Paire de régions Azure"^] pour les systèmes Cloud Volumes ONTAP. Ainsi, une connexion Azure Private Link est utilisée entre Cloud Volumes ONTAP et les comptes de stockage associés. https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-enabling-private-link.html["Découvrez comment Cloud Volumes ONTAP utilise une liaison privée Azure"^]
 
 * Google Cloud
 +
@@ -179,7 +177,7 @@ Il est de votre responsabilité de mettre à jour les stratégies de connecteur 
 
 == Mises à niveau des connecteurs
 
-Nous mettons généralement à jour le logiciel de connecteur chaque mois pour introduire de nouvelles fonctions et améliorer la stabilité. Bien que la plupart des services et fonctionnalités de la plateforme BlueXP  soient proposés via un logiciel SaaS, quelques fonctionnalités dépendent de la version du connecteur. Qui inclut la gestion Cloud Volumes ONTAP, la gestion de clusters ONTAP sur site, la configuration et l'aide.
+NetApp met généralement à jour le logiciel du connecteur chaque mois pour introduire de nouvelles fonctionnalités et améliorer la stabilité. Bien que la plupart des services et fonctionnalités de la plateforme BlueXP  soient proposés via un logiciel SaaS, quelques fonctionnalités dépendent de la version du connecteur. Qui inclut la gestion Cloud Volumes ONTAP, la gestion de clusters ONTAP sur site, la configuration et l'aide.
 
 Lorsque vous utilisez BlueXP en mode standard ou restreint, le connecteur met automatiquement à jour ses logiciels vers la dernière version, tant qu'il dispose d'un accès Internet sortant pour obtenir la mise à jour logicielle. Si vous utilisez BlueXP en mode privé, vous devez mettre à niveau manuellement le connecteur.
 
@@ -201,13 +199,13 @@ Si vous devez arrêter puis démarrer le connecteur VM, vous devez le faire depu
 
 == Plusieurs environnements de travail et connecteurs
 
-Un connecteur peut gérer plusieurs environnements de travail dans BlueXP. Le nombre maximum d'environnements de travail qu'un seul connecteur doit gérer varie. Cela dépend du type d'environnements de travail, du nombre de volumes, de la capacité gérée et du nombre d'utilisateurs.
+Vous pouvez utiliser le même connecteur pour gérer plusieurs environnements de travail dans BlueXP . Le nombre maximum d'environnements de travail qu'un seul connecteur doit gérer varie. Cela dépend du type d'environnements de travail, du nombre de volumes, de la capacité gérée et du nombre d'utilisateurs.
 
-Si vous disposez d'un déploiement à grande échelle, contactez votre représentant NetApp pour dimensionner votre environnement. Si vous rencontrez des problèmes pendant le trajet, contactez-nous en utilisant le chat produit.
+Si vous disposez d'un déploiement à grande échelle, contactez votre représentant NetApp pour dimensionner votre environnement.
 
-Dans certains cas, vous n'avez peut-être besoin que d'un seul connecteur, mais vous pourriez avoir besoin de deux connecteurs ou plus.
+L'emplacement de stockage est un autre facteur à prendre en compte pour déterminer le nombre de connecteurs dont vous avez besoin. Par exemple, si Cloud Volumes ONTAP se trouve dans Google Cloud et Azure, vous aurez besoin d'un connecteur pour chaque environnement. Lorsque votre stockage se trouve entièrement sur site, vous pouvez exécuter votre connecteur dans un hyperscaler ou sur site.
 
-Voici quelques exemples :
+Voici d'autres exemples :
 
 * Vous avez un environnement multicloud (AWS et Azure, par exemple) et vous préférez avoir un connecteur dans AWS et un autre dans Azure. Chacun gère les systèmes Cloud Volumes ONTAP exécutés dans ces environnements.
 * Un fournisseur de services peut faire appel à une organisation BlueXP  pour fournir des services à ses clients, tandis qu'une autre entreprise fournit une reprise sur incident à l'une de ses unités commerciales. Chaque organisation aurait des connecteurs distincts.
