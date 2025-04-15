@@ -4,7 +4,7 @@ permalink: reference-iam-predefined-roles.html
 keywords: predefined roles, iam roles, organization admin, folder or project admin, classification viewer, snapcenter admin, role, iam role, admin, iam, identity and access management 
 summary: La gestion des identités et des accès BlueXP  inclut plusieurs rôles prédéfinis que vous pouvez attribuer aux membres de votre organisation. 
 ---
-= Rôles et autorisations BlueXP  IAM prédéfinis
+= Rôles d'accès BlueXP
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -95,15 +95,349 @@ Une fois la configuration initiale terminée, les administrateurs régionaux dot
 
 
 
+== Rôles d'application
+
+Vous trouverez ci-dessous la liste des rôles dans la catégorie application.
+
+
+
+=== Rôles Keystone
+
+Vous pouvez affecter l'accès des utilisateurs à Keystone à l'aide des rôles suivants.
+
+
+NOTE: L'accès à Keystone via BlueXP  est actuellement en version bêta. Si vous souhaitez participer à la version bêta de Keystone, contactez votre conseiller NetApp.
+
+* *Keystone admin* : gérez l'abonnement Keystone et prenez des mesures concernant les alertes, les rapports et les abonnements.
+* *Afficheur Keystone* : affichez l'abonnement Keystone ainsi que les rapports, alertes et ressources.
+
+
+Le tableau suivant indique les actions que chaque rôle Keystone peut effectuer.
+
+[cols="40,20a,20a"]
+|===
+| Fonction et action | Administrateur Keystone | Visualiseur Keystone 
+
+
+| Affichez les onglets suivants : abonnement, actifs, moniteur et Administration  a| 
+Oui.
+ a| 
+Oui.
+
+
+
+3+| *Page d'abonnement Keystone* : 
+
+
+| Permet d'afficher les abonnements  a| 
+Oui.
+ a| 
+Oui.
+
+
+
+| Peut modifier ou renouveler des abonnements  a| 
+Oui.
+ a| 
+Non
+
+
+
+3+| *Page des ressources Keystone* : 
+
+
+| Afficher les ressources  a| 
+Oui.
+ a| 
+Oui.
+
+
+
+| Gérer les actifs  a| 
+Oui.
+ a| 
+Non
+
+
+
+3+| *Page d'alertes Keystone* : 
+
+
+| Afficher les alertes  a| 
+Oui.
+ a| 
+Non
+
+
+
+| Gérer les alertes  a| 
+Oui.
+ a| 
+Non
+
+
+
+| Créez des alertes pour vous-même  a| 
+Oui.
+ a| 
+Oui.
+
+
+
+3+| *Porte-monnaie numérique* : 
+
+
+| Peut afficher le portefeuille digital  a| 
+Oui.
+ a| 
+Oui.
+
+
+
+3+| *Page des rapports Keystone* : 
+
+
+| Télécharger des rapports  a| 
+Oui.
+ a| 
+Oui.
+
+
+
+| Gérer les rapports  a| 
+Oui.
+ a| 
+Oui.
+
+
+
+| Créez des rapports pour vous-même  a| 
+Oui.
+ a| 
+Oui.
+
+
+
+3+| *Demandes de service* : 
+
+
+| Créer des demandes de service  a| 
+Oui.
+ a| 
+Non
+
+
+
+| Peut voir la demande de service créée par n'importe quel utilisateur au sein de l'organisation  a| 
+Oui.
+ a| 
+Oui.
+
+|===
+
+
 == Rôles liés aux services de données
 
-Les rôles de services de données permettent aux utilisateurs d'accéder aux services de données au sein de l'organisation, du projet ou du dossier auquel ils ont accès.
+Vous trouverez ci-dessous la liste des rôles dans la catégorie Services de données.
 
+
+
+=== Visualiseur de classification
+
+Fournit la possibilité d'afficher les résultats de l'acquisition de classification BlueXP .
+
+La classification n'a pas de rôle d'administrateur.
+
+Autorisations:: Affichez les informations de conformité et générez des rapports pour les ressources auxquelles ils ont accès. Ces utilisateurs ne peuvent ni activer ni désactiver l'analyse de volumes, de compartiments ou de schémas de base de données.
+
+
+Aucune autre action n'est disponible pour un membre qui a ce rôle.
+
+
+
+=== Protection par ransomware
+
+Vous pouvez utiliser les rôles suivants pour attribuer aux utilisateurs l'accès à la protection contre les ransomwares.
+
+* *Protection anti-ransomware admin* : gestion des actions dans les onglets protéger, alertes, récupérer, Paramètres et Rapports.
+* *Visualiseur de protection contre les ransomware* : afficher les données de charge de travail, afficher les données d'alerte, télécharger les données de récupération et télécharger les rapports.
+
+
+Le tableau suivant indique les actions que chaque rôle de protection contre les ransomwares BlueXP  peut effectuer.
+
+[cols="40,20a,20a"]
+|===
+| Fonction et action | Administrateur de la protection contre les ransomwares | Visualiseur de protection contre les ransomware 
+
+
+| Afficher le tableau de bord et tous les onglets  a| 
+Oui.
+ a| 
+Oui.
+
+
+
+| Essayer gratuitement  a| 
+Oui.
+ a| 
+Non
+
+
+
+| Lancez la découverte des charges de travail  a| 
+Oui.
+ a| 
+Non
+
+
+
+3+| *Sur l'onglet protéger* : 
+
+
+| Ajoutez, modifiez ou supprimez des règles  a| 
+Oui.
+ a| 
+Non
+
+
+
+| Protégez les workloads  a| 
+Oui.
+ a| 
+Non
+
+
+
+| Identifiez les données sensibles  a| 
+Oui.
+ a| 
+Non
+
+
+
+| Modifier la protection des charges de travail  a| 
+Oui.
+ a| 
+Non
+
+
+
+| Afficher les détails de la charge de travail  a| 
+Oui.
+ a| 
+Oui.
+
+
+
+| Téléchargez les données  a| 
+Oui.
+ a| 
+Oui.
+
+
+
+3+| *Sur l'onglet alertes* : 
+
+
+| Afficher les détails des alertes  a| 
+Oui.
+ a| 
+Oui.
+
+
+
+| Modifier l'état de l'incident  a| 
+Oui.
+ a| 
+Non
+
+
+
+| Afficher les détails de l'incident  a| 
+Oui.
+ a| 
+Oui.
+
+
+
+| Obtenir la liste complète des fichiers affectés  a| 
+Oui.
+ a| 
+Non
+
+
+
+| Télécharger les données d'alertes  a| 
+Oui.
+ a| 
+Oui.
+
+
+
+3+| *Sur l'onglet récupérer* : 
+
+
+| Télécharger les fichiers impactés  a| 
+Oui.
+ a| 
+Non
+
+
+
+| Restaurer la charge de travail  a| 
+Oui.
+ a| 
+Non
+
+
+
+| Télécharger les données de récupération  a| 
+Oui.
+ a| 
+Oui.
+
+
+
+| Télécharger des rapports  a| 
+Oui.
+ a| 
+Oui.
+
+
+
+3+| *Sur l'onglet Paramètres* : 
+
+
+| Ajouter ou modifier des cibles de sauvegarde  a| 
+Oui.
+ a| 
+Non
+
+
+
+| Ajouter ou modifier des cibles SIEM  a| 
+Oui.
+ a| 
+Non
+
+
+
+3+| *Sur l'onglet Rapports* : 
+
+
+| Télécharger des rapports  a| 
+Oui.
+ a| 
+Oui.
+
+|===
 
 
 === Administrateur SnapCenter
 
 Permet de sauvegarder des copies Snapshot à partir de clusters ONTAP sur site à l'aide de la sauvegarde et de la restauration BlueXP  pour les applications.
+
+SnapCenter n'a pas de rôle de visualiseur.
 
 Autorisations:: Un membre qui a ce rôle peut effectuer les actions suivantes dans BlueXP  :
 +
@@ -112,20 +446,6 @@ Autorisations:: Un membre qui a ce rôle peut effectuer les actions suivantes da
 * Gérez tous les environnements de travail dans les projets et dossiers pour lesquels ils ont des autorisations
 * Utilisation de tous les services BlueXP 
 
-
---
-
-
-
-
-=== Visualiseur de classification
-
-Fournit la possibilité d'afficher les résultats de l'acquisition de classification BlueXP .
-
-Autorisations:: Affichez les informations de conformité et générez des rapports pour les ressources auxquelles ils ont accès. Ces utilisateurs ne peuvent ni activer ni désactiver l'analyse de volumes, de compartiments ou de schémas de base de données.
-+
---
-Aucune autre action n'est disponible pour un membre qui a ce rôle.
 
 --
 

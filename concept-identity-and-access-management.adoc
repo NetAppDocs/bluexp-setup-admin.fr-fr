@@ -247,6 +247,6 @@ Les exemples suivants décrivent comment vous pouvez utiliser IAM pour gérer vo
 * link:task-iam-switch-organizations-projects.html["Basculer entre les projets BlueXP  et les organisations"]
 * link:task-iam-rename-organization.html["Renommez votre organisation BlueXP "]
 * link:task-iam-audit-actions-timeline.html["Surveiller ou auditer l'activité IAM"]
-* link:reference-iam-predefined-roles.html["Rôles IAM BlueXP  prédéfinis"]
+* link:reference-iam-predefined-roles.html["Rôles d'accès BlueXP"]
 * https://docs.netapp.com/us-en/bluexp-automation/tenancyv4/overview.html["En savoir plus sur l'API pour BlueXP  IAM"^]
 
