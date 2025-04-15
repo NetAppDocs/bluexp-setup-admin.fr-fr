@@ -14,9 +14,7 @@ summary: 'La gestion des identités et des accès (IAM) BlueXP  vous permet de 
 
 
 [role="lead"]
-La gestion des identités et des accès BlueXP  est un mécanisme de contrôle d'accès fondamental et évolutif qui gère l'accès des utilisateurs aux ressources BlueXP  en accordant les niveaux d'autorisation appropriés grâce aux rôles de privilège minimum.
-
-Avec IAM, vous pouvez organiser et contrôler l'accès à vos ressources NetApp. Vous pouvez organiser vos ressources en fonction de la hiérarchie de votre organisation. Par exemple, vous pouvez organiser les ressources par emplacement géographique, site ou unité commerciale. Vous pouvez ensuite attribuer des rôles IAM à des membres dans des parties spécifiques de la hiérarchie, ce qui empêche l'accès aux ressources dans d'autres parties de la hiérarchie.
+La gestion des identités et des accès BlueXP  vous permet d'organiser et de contrôler l'accès à vos ressources NetApp. Vous pouvez organiser vos ressources en fonction de la hiérarchie de votre organisation. Par exemple, vous pouvez organiser les ressources par emplacement géographique, site ou unité commerciale. Vous pouvez ensuite attribuer des rôles IAM à des membres dans des parties spécifiques de la hiérarchie, ce qui empêche l'accès aux ressources dans d'autres parties de la hiérarchie.
 
 BlueXP  IAM remplace et améliore les fonctionnalités précédentes proposées par les comptes BlueXP . link:whats-new.html#iam["En savoir plus sur l'introduction de BlueXP  IAM"].
 
@@ -32,18 +30,14 @@ BlueXP  IAM est pris en charge lorsque BlueXP  est utilisé en mode standard e
 
 BlueXP  IAM vous permet d'accorder l'accès aux ressources de votre organisation en définissant les membres qui ont des autorisations sur des parties spécifiques de la hiérarchie de l'organisation. Par exemple, un membre peut avoir des autorisations d'administrateur de projet pour un projet qui a cinq ressources associées.
 
-Pour gérer les dossiers, les utilisateurs doivent disposer du rôle d'administrateur Organisation ou dossier ou projet. Les utilisateurs avec le rôle d'administrateur d'entreprise peuvent créer et gérer des ressources partout dans votre organisation BlueXP . Les utilisateurs ayant un rôle d'administrateur de dossier et de projet ne peuvent le faire que pour les dossiers ou projets auxquels ils ont été affectés.
-
-Lien ::Reference-iam-predefined-roles.html[en savoir plus sur les rôles BlueXP .]
-
-Lors de l'utilisation de BlueXP  IAM, les utilisateurs ayant ces rôles géreront les composants suivants :
+Lorsque vous utilisez BlueXP  IAM, vous gérez les composants suivants :
 
 * L'organisation
 * Dossiers
 * Projets
 * Ressources
 * Membres
-* Rôles
+* Rôles et autorisations
 * Connecteurs
 
 
@@ -63,7 +57,9 @@ image:diagram-iam-resource-hierarchy.png["Diagramme conceptuel qui montre la hi�
 
 === Entreprise
 
-Une _organisation_ est le premier niveau du système IAM de BlueXP  et représente généralement votre entreprise. Votre organisation est constituée de ressources telles que les connecteurs, le stockage et les abonnements que vous pouvez organiser en dossiers et projets. Vous pouvez ensuite attribuer aux membres de l'organisation (utilisateurs) un accès aux dossiers ou aux projets en fonction de leurs responsabilités dans la gestion de vos environnements de stockage.
+Une _organisation_ est le premier niveau du système IAM de BlueXP  et représente généralement votre entreprise. Votre organisation se compose de dossiers, de projets, de membres, de rôles et de ressources. Les connecteurs sont associés à des projets spécifiques dans l'organisation.
+
+Lorsque vous vous inscrivez à BlueXP , vous êtes invité à créer une nouvelle organisation.
 
 
 
@@ -73,9 +69,7 @@ Un _dossier_ vous permet de regrouper les projets associés et de les séparer d
 
 Les dossiers peuvent contenir des projets, d'autres dossiers ou une combinaison des deux.
 
-Selon la taille de votre organisation et le nombre de ressources de stockage dont vous disposez, les dossiers sont un outil utile pour maintenir l'organisation de vos ressources NetApp. Ils vous permettent également de mieux gérer l'accès si vous souhaitez partager l'administration de différents dossiers avec différents utilisateurs. Vous pouvez attribuer à un utilisateur le rôle d'administrateur de dossier ou de projet pour un dossier particulier et ils peuvent ensuite gérer l'accès au dossier et à ses projets, ainsi que créer de nouveaux projets dans le dossier.
-
-Lorsque vous créez un dossier, vous pouvez lui attribuer l'accès des utilisateurs. Lorsque vous attribuez un rôle d'accès à un dossier à un utilisateur, celui-ci peut effectuer les tâches associées à ce rôle pour tous les projets du dossier correspondant. Inversement, vous pouvez choisir d'accorder à l'utilisateur l'accès à un projet par projet.
+Vous n'avez pas besoin de créer de dossiers. Ils sont facultatifs.
 
 
 
@@ -83,11 +77,7 @@ Lorsque vous créez un dossier, vous pouvez lui attribuer l'accès des utilisate
 
 Un _projet_ représente un espace de travail dans BlueXP  auquel les membres de l'organisation accèdent à partir du canevas BlueXP  afin de gérer les ressources. Par exemple, un projet peut inclure un système Cloud Volumes ONTAP, un cluster ONTAP sur site ou un système de fichiers FSX pour ONTAP.
 
-Vous créez plusieurs projets pour fournir un accès plus granulaire à vos ressources NetApp. Par exemple, les petites organisations peuvent avoir un projet pour chaque unité commerciale ou emplacement géographique. Les grandes entreprises peuvent souhaiter organiser leurs ressources de stockage en plusieurs projets par unité commerciale afin de mieux contrôler l'accès. Vous pouvez attribuer aux utilisateurs l'accès aux ressources par projet ou dossier.
-
 Une organisation peut avoir un ou plusieurs projets. Un projet peut résider directement sous l'organisation ou dans un dossier.
-
-Lorsque vos projets résident dans un dossier, vous pouvez le faire
 
 
 
@@ -172,11 +162,11 @@ Vous pouvez attribuer un rôle à chaque membre de l'organisation à différents
 
 
 
-==== Rôles d'accès
+==== Rôles prédéfinis
 
-BlueXP  prend en charge plusieurs rôles d'accès que vous pouvez attribuer aux membres de votre organisation.
+BlueXP  prend en charge plusieurs rôles prédéfinis que vous pouvez attribuer aux membres de votre organisation.
 
-link:reference-iam-predefined-roles.html["En savoir plus sur les rôles d'accès"].
+link:reference-iam-predefined-roles.html["En savoir plus sur les rôles prédéfinis IAM"].
 
 
 

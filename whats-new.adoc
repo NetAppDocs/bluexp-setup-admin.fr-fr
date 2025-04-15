@@ -34,10 +34,6 @@ Cette version de BlueXP Connector inclut des améliorations mineures de la sécu
 
 * Pour accéder à la protection contre les ransomware, les utilisateurs ne disposant pas d'un rôle d'administrateur d'organisation ou de dossier ou de projet doivent se voir attribuer un rôle de protection contre les ransomwares. Vous pouvez attribuer un utilisateur à l'un des deux rôles suivants : administrateur de la protection contre les ransomware ou visualiseur de la protection contre les ransomware.
 * Les utilisateurs ne disposant pas d'un administrateur Org, d'un dossier ou d'un administrateur de projet doivent se voir attribuer un rôle Keystone pour avoir accès à Keystone. Vous pouvez attribuer un utilisateur à l'un des deux rôles suivants : admin Keystone ou visionneur Keystone.
-
-
-link:https://docs.netapp.com/reference-iam-predefined-roles.html["Découvrez les nouveaux rôles."^]
-
 * Si vous disposez du rôle d'administrateur Org, dossier ou projet, vous pouvez désormais associer un abonnement Keystone à un projet IAM. L'association d'un abonnement Keystone à un projet IAM vous permet de contrôler l'accès à Keystone dans BlueXP .
 
 
@@ -105,7 +101,7 @@ NetApp Keystone sera bientôt disponible sur BlueXP  et est maintenant en versi
 
 Un administrateur BlueXP  (utilisateurs disposant du rôle d'administrateur d'organisation) peut configurer BlueXP  pour inviter les utilisateurs à saisir leurs informations d'identification ONTAP afin d'accéder au gestionnaire système ONTAP. Lorsque ce paramètre est activé, les utilisateurs doivent entrer leurs informations d'identification ONTAP chaque fois qu'elles ne sont pas stockées dans BlueXP .
 
-Cette fonction est disponible dans la version de connecteur 3.9.49 et supérieure. link:task-ontap-access-connector.html["Découvrez comment configurer les paramètres d'identification."^].
+Cette fonction est disponible dans la version de connecteur 3.9.49 et supérieure. link:https://docs.netapp.com/us-en/bluexp-setup-admin//task-ontap-access-connector.html["Découvrez comment configurer les paramètres d'identification."^].
 
 
 
@@ -124,7 +120,7 @@ NOTE: Ce changement n'a pas d'impact sur le mode privé BlueXP  où vous devez 
 
 Cette fonction est disponible dans la version de connecteur 3.9.48 et supérieure.
 
-link:task-upgrade-connector.html["Découvrez comment désactiver la mise à niveau automatique pour le connecteur."^]
+link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-upgrade-connector.html["Découvrez comment désactiver la mise à niveau automatique pour le connecteur."^]
 
 
 

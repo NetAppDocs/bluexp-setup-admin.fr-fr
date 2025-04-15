@@ -12,7 +12,7 @@
 
 Un administrateur BlueXP  (utilisateurs disposant du rôle d'administrateur d'organisation) peut configurer BlueXP  pour inviter les utilisateurs à saisir leurs informations d'identification ONTAP afin d'accéder au gestionnaire système ONTAP. Lorsque ce paramètre est activé, les utilisateurs doivent entrer leurs informations d'identification ONTAP chaque fois qu'elles ne sont pas stockées dans BlueXP .
 
-Cette fonction est disponible dans la version de connecteur 3.9.49 et supérieure. link:task-ontap-access-connector.html["Découvrez comment configurer les paramètres d'identification."^].
+Cette fonction est disponible dans la version de connecteur 3.9.49 et supérieure. link:https://docs.netapp.com/us-en/bluexp-setup-admin//task-ontap-access-connector.html["Découvrez comment configurer les paramètres d'identification."^].
 
 
 
@@ -31,4 +31,4 @@ NOTE: Ce changement n'a pas d'impact sur le mode privé BlueXP  où vous devez 
 
 Cette fonction est disponible dans la version de connecteur 3.9.48 et supérieure.
 
-link:task-upgrade-connector.html["Découvrez comment désactiver la mise à niveau automatique pour le connecteur."^]
+link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-upgrade-connector.html["Découvrez comment désactiver la mise à niveau automatique pour le connecteur."^]

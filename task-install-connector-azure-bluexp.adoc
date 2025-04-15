@@ -14,7 +14,7 @@ summary: Pour créer un connecteur dans Azure à partir de BlueXP, vous devez co
 
 
 [role="lead"]
-Vous pouvez créer un connecteur dans Azure directement à partir de BlueXP . Pour créer un connecteur dans Azure à partir de BlueXP , vous devez configurer votre réseau, préparer un rôle Azure à utiliser pour déployer le connecteur, puis déployer le connecteur.
+Vous pouvez installer un connecteur dans Azure directement à partir de BlueXP . Pour créer un connecteur dans Azure à partir de BlueXP , vous devez configurer votre réseau, préparer un rôle Azure à utiliser pour déployer le connecteur, puis déployer le connecteur.
 
 .Avant de commencer
 * Vous devriez avoir un link:concept-connectors.html["Compréhension des connecteurs"].

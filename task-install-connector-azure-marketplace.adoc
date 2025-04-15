@@ -14,7 +14,7 @@ summary: 'Pour créer un connecteur à partir d"Azure Marketplace, vous devez co
 
 
 [role="lead"]
-Un connecteur est un logiciel NetApp exécuté sur votre réseau cloud ou sur site, qui vous permet d'utiliser toutes les fonctionnalités et services BlueXP . L'une des options d'installation disponibles consiste à créer un connecteur dans Azure directement à partir d'Azure Marketplace. Pour créer un connecteur à partir d'Azure Marketplace, vous devez configurer votre réseau, préparer les autorisations Azure, examiner les exigences d'instance, puis créer le connecteur.
+Vous pouvez créer un connecteur dans Azure directement à partir d'Azure Marketplace. Pour créer un connecteur à partir d'Azure Marketplace, vous devez configurer votre réseau, préparer les autorisations Azure, examiner les exigences d'instance, puis créer le connecteur.
 
 .Avant de commencer
 * Vous devriez avoir un link:concept-connectors.html["Compréhension des connecteurs"].

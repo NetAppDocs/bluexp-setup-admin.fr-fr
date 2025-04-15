@@ -4,7 +4,7 @@ permalink: task-iam-manage-members-permissions.html
 keywords: user, service account, member, role, permissions, organization, project, folder, iam, identity and access management 
 summary: Gérez les membres de votre organisation pour fournir des autorisations à différents niveaux de la hiérarchie des ressources de votre organisation. 
 ---
-= Ajoutez des membres BlueXP  et gérez leurs autorisations
+= Ajouter des membres BlueXP  IAM et gérer leurs autorisations
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -75,7 +75,7 @@ Notez ce qui suit :
 +
 *** Si vous avez sélectionné un dossier ou un projet, vous pouvez choisir un rôle autre que *Organization admin*.
 +
-link:reference-iam-predefined-roles.html["En savoir plus sur les rôles d'accès"].
+link:reference-iam-predefined-roles.html["En savoir plus sur les rôles IAM prédéfinis"].
 
 
 
@@ -132,9 +132,18 @@ Le secret client n'est visible qu'une seule fois et n'est pas stocké n'importe 
 
 === Afficher les membres de l'organisation
 
-Vous pouvez afficher la liste de tous les membres de votre organisation BlueXP . Pour comprendre quelles ressources et autorisations sont disponibles pour un membre, vous pouvez afficher les rôles attribués au membre à différents niveaux de la hiérarchie des ressources de votre organisation. link:task-iam-manage-roles.html["Découvrez comment utiliser des rôles pour contrôler l'accès aux ressources BlueXP ."^]
+Vous pouvez afficher la liste de tous les membres de votre organisation BlueXP . Pour comprendre quelles ressources et autorisations sont disponibles pour un membre, vous pouvez afficher les rôles attribués au membre à différents niveaux de la hiérarchie des ressources de votre organisation.
 
-Vous pouvez afficher à la fois les comptes d'utilisateur et les comptes de service à partir de la page *membres*.
+Voici un exemple d'un membre qui a le rôle _dossier ou projet admin_ pour un dossier, qui fournit des autorisations pour les trois projets du dossier.
+
+image:screenshot-iam-member-details.png["Capture d'écran de la page de détails d'un membre qui a des autorisations sur un projet et un dossier."]
+
+Voici un autre exemple qui montre un membre qui a le rôle d'administrateur d'organisation, qui donne à l'utilisateur l'accès à toutes les ressources de l'organisation.
+
+image:screenshot-iam-member-details-org-admin.png["Capture d'écran de la page de détails d'un membre disposant des autorisations d'administration Organisation."]
+
+.Description de la tâche
+La page *membres* affiche des détails sur deux types de membres : les comptes d'utilisateur et les comptes de service.
 
 .Étapes
 . Dans le coin supérieur droit de la console BlueXP , sélectionnez image:icon-settings-option.png["L'icône des paramètres qui s'affiche en haut à droite de la console Web BlueXP ."] > *gestion des identités et des accès*.
@@ -180,6 +189,75 @@ Le secret client n'est visible qu'une seule fois et n'est pas stocké n'importe 
 
 .Informations associées
 link:task-iam-manage-folders-projects.html#view-associated-resources-members["Afficher tous les membres associés à un dossier ou à un projet spécifique"].
+
+
+
+== Gérer les rôles des membres
+
+Des rôles peuvent être attribués aux membres de l'organisation à chaque niveau et à plus d'un niveau de votre hiérarchie de ressources.vous pouvez attribuer des rôles de membres correspondant à leurs responsabilités dans votre organisation BlueXP .
+
+Vous pouvez annuler l'attribution d'un rôle à un membre, ajouter un nouveau rôle ou les deux. Un rôle définit les autorisations attribuées à un membre au niveau de l'organisation, du dossier ou du projet. Vous pouvez attribuer des rôles de membres correspondant à leurs responsabilités dans votre organisation BlueXP .
+
+Chaque membre de l'organisation peut avoir un rôle attribué à différents niveaux de la hiérarchie de l'organisation. Il peut s'agir du même rôle ou d'un rôle différent. Par exemple, vous pouvez affecter un rôle de membre A pour le projet 1 et le rôle B pour le projet 2.
+
+
+TIP: Aucun rôle supplémentaire ne peut être attribué à un membre affecté au rôle d'administrateur de l'organisation. Ils ont déjà des autorisations dans toute l'entreprise.
+
+
+
+=== Afficher les rôles attribués à un membre
+
+Vous pouvez afficher un membre pour vérifier les rôles auxquels il est actuellement affecté.
+
+. Sur la page *membres*, naviguez jusqu'à un membre dans la table, sélectionnezimage:icon-action.png["Icône représentant trois points côte à côte"], puis cliquez sur *Afficher les détails*.
+. Dans le tableau, développez la ligne correspondant à l'organisation, au dossier ou au projet dans lequel vous souhaitez afficher le rôle attribué au membre et sélectionnez *Afficher* dans la colonne *rôle*.
+
+
+
+
+=== Attribuer un rôle
+
+Fournissez à un membre des autorisations supplémentaires dans votre organisation en ajoutant des rôles qui s'appliquent au niveau de l'organisation, du dossier ou du projet.
+
+.Étapes
+. Sur la page *membres*, naviguez jusqu'à un membre dans la table, sélectionnezimage:icon-action.png["Icône représentant trois points côte à côte"], puis sélectionnez *Ajouter un rôle*.
+. Pour ajouter un rôle, procédez comme suit dans la boîte de dialogue :
++
+** *Sélectionnez une organisation, un dossier ou un projet* : choisissez le niveau de votre hiérarchie de ressources pour lequel le membre doit disposer des autorisations.
++
+Si vous sélectionnez l'organisation ou un dossier, le membre aura des autorisations sur tout ce qui réside dans l'organisation ou le dossier.
+
+** *Sélectionnez une catégorie* : BlueXP  sépare les rôles en deux catégories : plate-forme et service de données. link:reference-iam-predefined-roles.html["En savoir plus sur les rôles IAM"^].
+** Sélectionnez un *rôle* : choisissez un rôle qui fournit au membre des autorisations pour les ressources associées à l'organisation, au dossier ou au projet que vous avez sélectionné.
++
+*** Si vous avez sélectionné l'organisation, vous pouvez choisir un rôle autre que *Folder ou Project admin*.
+*** Si vous avez sélectionné un dossier ou un projet, vous pouvez choisir un rôle autre que *Organization admin*.
++
+link:reference-iam-predefined-roles.html["En savoir plus sur les rôles IAM prédéfinis"].
+
+
+
+** *Ajouter un rôle* : si vous souhaitez donner accès à des dossiers ou projets supplémentaires au sein de votre organisation, sélectionnez *Ajouter un rôle*, spécifiez un autre dossier ou projet ou une catégorie de rôle, puis sélectionnez une catégorie de rôle et un rôle correspondant.
+
+
+. Sélectionnez *Ajouter de nouveaux rôles*.
+
+
+
+
+=== Modifier le rôle attribué à un membre
+
+Vous pouvez modifier le rôle attribué à un au niveau de l'organisation, du dossier ou du projet. Les membres peuvent avoir différents rôles à différents niveaux de votre organisation.
+
+.Étapes
+. Sur la page *membres*, naviguez jusqu'à un membre dans la table, sélectionnezimage:icon-action.png["Icône représentant trois points côte à côte"], puis cliquez sur *Afficher les détails*.
+. Dans le tableau, développez la ligne correspondant à l'organisation, au dossier ou au projet dans lequel vous souhaitez modifier le rôle attribué au membre et sélectionnez *Afficher* dans la colonne *rôle* pour afficher les rôles attribués à ce membre.
+. Pour modifier le rôle d'un membre, sélectionnez *Modifier* en regard du rôle que vous souhaitez modifier. Vous ne pouvez modifier ce rôle qu'en un rôle dans la même catégorie de rôle. Par exemple, vous pouvez passer d'un rôle de service de données à un autre. Vous serez invité à confirmer la modification.
++
+.. Pour annuler l'attribution d'un rôle à un membre, sélectionnez image:icon-delete.png["Icône qui ressemble à une corbeille"] en regard du rôle pour annuler l'attribution du rôle correspondant au membre. On vous demandera de confirmer la suppression.
+
+
+
 
 
 

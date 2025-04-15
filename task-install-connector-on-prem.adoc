@@ -14,7 +14,7 @@ summary: 'Installez un connecteur sur site, puis connectez-vous et configurez-le
 
 
 [role="lead"]
-Un connecteur est un logiciel NetApp exécuté sur votre réseau cloud ou sur site, qui vous permet d'utiliser toutes les fonctionnalités et services BlueXP . Pour exécuter le connecteur sur site, vous devez vérifier les exigences des hôtes, configurer votre réseau, préparer les autorisations cloud, installer le connecteur, configurer le connecteur, puis fournir les autorisations que vous avez préparées.
+Vous pouvez installer un connecteur sur l'une de vos machines sur site. Pour exécuter le connecteur sur site, vous devez vérifier les exigences des hôtes, configurer votre réseau, préparer les autorisations cloud, installer le connecteur, configurer le connecteur, puis fournir les autorisations que vous avez préparées.
 
 .Avant de commencer
 * Vous devriez avoir un link:concept-connectors.html["Compréhension des connecteurs"].

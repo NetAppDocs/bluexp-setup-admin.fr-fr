@@ -13,9 +13,7 @@ summary: 'Si les membres de votre organisation doivent utiliser un connecteur da
 :imagesdir: ./media/
 
 
-[role="lead"]
-Un connecteur est nécessaire pour gérer plusieurs types d'environnements de travail à partir de BlueXP . Lorsqu'un _administrateur d'organisation_ crée un connecteur, BlueXP  associe automatiquement ce connecteur à l'organisation et au projet actuellement sélectionné. L'administrateur _Organisation_ a automatiquement accès à ce connecteur depuis n'importe quel endroit de l'organisation. Les autres membres de votre organisation peuvent uniquement accéder à ce connecteur à partir du projet dans lequel il a été créé, sauf si vous associez ce connecteur à d'autres projets de la gestion des identités et des accès BlueXP .
-
+ \When an _Organization admin_ creates a Connector, BlueXP automatically associates that Connector with the organization and the currently selected project. The _Organization admin_ automatically has access to that Connector from anywhere in the organization. Other members in your organization can only access that Connector from the project in which it was created, unless you associate that Connector with other projects from BlueXP identity and access management (IAM).
 .Avant de commencer
 Vous devez comprendre le fonctionnement de l'association de connecteurs. link:concept-identity-and-access-management.html#associate-connectors["En savoir plus sur l'utilisation des connecteurs avec BlueXP  IAM"].
 
