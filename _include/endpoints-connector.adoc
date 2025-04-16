@@ -71,8 +71,6 @@ Notez que les points finaux répertoriés ci-dessous sont tous des entrées CNAM
 
 | fournir des fonctionnalités et des services SaaS dans BlueXP.
 
-Notez que le connecteur est actuellement en contact avec « cloudmanager.cloud.netapp.com", mais il commencera à contacter « api.bluexp.netapp.com" dans une prochaine version.
-
 A| vous avez le choix entre deux ensembles de points d'extrémité :
 
 * Option 1 (recommandée) ^1^

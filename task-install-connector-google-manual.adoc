@@ -341,8 +341,6 @@ Pour obtenir des informations sur les licences et envoyer des messages AutoSuppo
  a| 
 Pour fournir des fonctions et des services SaaS dans BlueXP.
 
-Notez que le connecteur est actuellement en contact avec « cloudmanager.cloud.netapp.com", mais il commencera à contacter « api.bluexp.netapp.com" dans une prochaine version.
-
 
 
  a| 
