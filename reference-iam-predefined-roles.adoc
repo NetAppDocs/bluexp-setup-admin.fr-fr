@@ -14,13 +14,13 @@ summary: La gestion des identités et des accès BlueXP  inclut plusieurs rôle
 
 
 [role="lead"]
-La gestion des identités et des accès BlueXP  inclut plusieurs rôles prédéfinis que vous pouvez attribuer aux membres de votre entreprise à différents niveaux de votre hiérarchie de ressources. Avant d'attribuer ces rôles, vous devez comprendre les autorisations incluses par chaque rôle. Les rôles se divisent en deux catégories : la plateforme et le service de données.
+La gestion des identités et des accès BlueXP  inclut plusieurs rôles prédéfinis que vous pouvez attribuer aux membres de votre entreprise à différents niveaux de votre hiérarchie de ressources. Avant d'attribuer ces rôles, vous devez comprendre les autorisations incluses par chaque rôle. Les rôles se divisent en plusieurs catégories : plateforme, application et service de données.
 
 
 
 == Rôles de plateforme
 
-Les rôles de plate-forme sont les rôles les plus larges que vous pouvez attribuer aux utilisateurs et autoriser des autorisations étendues pour l'administration BlueXP , y compris l'attribution de rôles et l'ajout d'utilisateurs, ainsi que la possibilité d'exécuter toutes les fonctions BlueXP . L'IAM BlueXP  comprend deux rôles de plateforme : administrateur d'organisation et administrateur de dossiers ou de projets. La principale différence entre les deux rôles de plateforme BlueXP  IAM est le périmètre.
+Les rôles de plateforme sont les rôles les plus vastes que vous pouvez attribuer aux utilisateurs et autoriser toutes les autorisations pour l'administration BlueXP, y compris l'attribution de rôles et l'ajout d'utilisateurs. Les utilisateurs ayant un rôle de plateforme ont accès à tous les services de données et applications dans BlueXP . L'IAM BlueXP  comprend deux rôles de plateforme : administrateur d'organisation et administrateur de dossiers ou de projets. La principale différence entre les deux rôles de plateforme BlueXP  IAM est le périmètre.
 
 
 
@@ -32,9 +32,9 @@ Permet à un utilisateur d'accéder sans restriction à tous les projets et doss
 
 === Administrateur de dossiers ou de projets
 
-Permet à un utilisateur d'accéder sans restriction à des projets et dossiers spécifiques auxquels il est affecté. Vous pouvez ajouter des membres à des projets ou dossiers qu'ils gèrent, ainsi que réaliser n'importe quelle tâche BlueXP  et utiliser n'importe quel service de données dans le dossier ou le projet auquel ils sont affectés.
+Permet à un utilisateur d'accéder sans restriction à des projets et dossiers spécifiques auxquels il est affecté. Vous pouvez ajouter des membres à des dossiers ou projets qu'ils gèrent, ainsi que réaliser n'importe quelle tâche BlueXP  et utiliser n'importe quel service de données ou application sur les ressources du dossier ou du projet qui leur sont affectés.
 
-Le rôle d'administrateur dossier ou projet ne peut pas créer de connecteurs.
+Le rôle d'administrateur de dossier ou de projet ne peut pas créer de connecteurs.
 
 
 
@@ -42,7 +42,7 @@ Le rôle d'administrateur dossier ou projet ne peut pas créer de connecteurs.
 
 [cols="24,19,19"]
 |===
-| Tâche | Administrateur d'entreprise | Administrateur de dossier ou de projet 
+| Tâche | Administrateur d'entreprise | Administrateur de dossiers ou de projets 
 
 
 | Créer des connecteurs | Oui. | Non 
@@ -51,10 +51,10 @@ Le rôle d'administrateur dossier ou projet ne peut pas créer de connecteurs.
 | Créer, modifier ou supprimer des environnements de travail (ajouter ou découvrir de nouvelles ressources à l'aide du canevas BlueXP ) | Oui. | Oui. 
 
 
-| Créer des projets/dossiers, y compris la suppression | Oui. | Non 
+| Créer des dossiers et des projets, y compris la suppression | Oui. | Non 
 
 
-| Renommer des projets/dossiers existants | Oui. | Oui. 
+| Renommer les dossiers et projets existants | Oui. | Oui. 
 
 
 | Attribuez des rôles et ajoutez des utilisateurs | Oui. | Oui. 
@@ -97,7 +97,7 @@ Une fois la configuration initiale terminée, les administrateurs régionaux dot
 
 == Rôles d'application
 
-Vous trouverez ci-dessous la liste des rôles dans la catégorie application.
+La liste suivante répertorie les rôles dans la catégorie d'application. Chaque rôle accorde des autorisations spécifiques dans le cadre de son périmètre désigné. Les utilisateurs ne disposant pas du rôle d'application ou de plate-forme requis ne pourront pas accéder à l'application.
 
 
 
@@ -129,14 +129,14 @@ Oui.
 3+| *Page d'abonnement Keystone* : 
 
 
-| Permet d'afficher les abonnements  a| 
+| Afficher les abonnements  a| 
 Oui.
  a| 
 Oui.
 
 
 
-| Peut modifier ou renouveler des abonnements  a| 
+| Modifier ou renouveler des abonnements  a| 
 Oui.
  a| 
 Non
@@ -228,7 +228,7 @@ Non
 
 
 
-| Peut voir la demande de service créée par n'importe quel utilisateur au sein de l'organisation  a| 
+| Demandes de service CView créées par n'importe quel utilisateur au sein de l'organisation  a| 
 Oui.
  a| 
 Oui.
@@ -236,9 +236,9 @@ Oui.
 |===
 
 
-== Rôles liés aux services de données
+== Rôles des services de données
 
-Vous trouverez ci-dessous la liste des rôles dans la catégorie Services de données.
+Voici la liste des rôles dans la catégorie de service de données. Chaque rôle accorde des autorisations spécifiques dans le cadre de son périmètre désigné. Les utilisateurs ne disposant pas du rôle de service de données ou de plate-forme requis ne pourront pas accéder au service de données.
 
 
 
