@@ -1840,15 +1840,11 @@ link:task-managing-netapp-accounts.html#create-and-manage-service-accounts["En s
 
 Vous pouvez désormais autoriser des aperçus privés de votre compte à accéder aux nouveaux services clouds NetApp lorsqu'ils sont disponibles dans Cloud Manager.
 
-link:task-managing-netapp-accounts.html#allow-private-previews["En savoir plus sur cette option"].
-
 
 
 === Services tiers
 
 Vous pouvez également autoriser les services tiers de votre compte à accéder à des services tiers disponibles dans Cloud Manager.
-
-link:task-managing-netapp-accounts.html#allow-third-party-services["En savoir plus sur cette option"].
 
 
 
