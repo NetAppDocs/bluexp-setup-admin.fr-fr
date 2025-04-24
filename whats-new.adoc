@@ -82,6 +82,12 @@ Pour plus d'informations sur le mode privé, notamment sur la mise à niveau, re
 
 Cette version de BlueXP Connector inclut des améliorations mineures de la sécurité et des correctifs.
 
+* La gestion des systèmes Cloud Volumes ONTAP est désormais prise en charge par les connecteurs sur lesquels SELinux est activé sur le système d'exploitation.
++
+https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/8/html/using_selinux/getting-started-with-selinux_using-selinux["En savoir plus sur SELinux"^]
+
+
+
 À ce stade, la version 3.9.50 est disponible pour le mode standard et le mode restreint.
 
 
@@ -125,6 +131,31 @@ Cette fonction est disponible dans la version de connecteur 3.9.48 et supérieur
 
 link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-upgrade-connector.html["Découvrez comment désactiver la mise à niveau automatique pour le connecteur."^]
 
+
+
+== 18 février 2025
+
+
+
+=== Version en mode privé (3.9.48)
+
+Une nouvelle version en mode privé est désormais disponible au téléchargement sur le https://mysupport.netapp.com/site/downloads["Site de support NetApp"^]
+
+La version 3.9.48 comprend des mises à jour des composants et services BlueXP  suivants.
+
+[cols="3*"]
+|===
+| Composant ou service | Version incluse dans cette version | Modifications depuis la version précédente du mode privé 
+
+
+| Connecteur | 3.9.48 | Accédez au https://docs.netapp.com/us-en/bluexp-setup-admin/whats-new.html#connector-3-9-48["Nouveautés de la page BlueXP  Connector"] et reportez-vous aux modifications incluses pour les versions 3.9.48. 
+
+
+| Sauvegarde et restauration | 21 février 2025 | Accédez au et consultez les modifications incluses dans la https://docs.netapp.com/us-en/bluexp-backup-recovery/whats-new.html["Nouveautés de la page sauvegarde et restauration BlueXP"^] version de février 2025. 
+
+
+| Classement | 22 janvier 2025 (version 1.39) | Accédez au et consultez les modifications incluses dans la https://docs.netapp.com/us-en/bluexp-classification/whats-new.html["Nouveautés de la page de classification BlueXP"^] version 1.39. 
+|===
 
 
 == 10 février 2025
