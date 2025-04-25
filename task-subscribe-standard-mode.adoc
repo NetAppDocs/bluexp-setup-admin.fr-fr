@@ -80,9 +80,6 @@ Pour tous les autres comptes ou organisations, vous devez associer manuellement 
 +
 Vous devez sélectionner les informations d'identification associées à un connecteur. Vous ne pouvez pas associer un abonnement Marketplace aux informations d'identification associées à BlueXP.
 
-+
-image:screenshot_azure_add_subscription.png["Capture d'écran du menu d'action pour un ensemble d'informations d'identification existantes."]
-
 . Pour associer les informations d'identification à un abonnement existant, sélectionnez l'abonnement dans la liste déroulante et sélectionnez *configurer*.
 . Pour associer les informations d'identification à un nouvel abonnement, sélectionnez *Ajouter un abonnement > Continuer* et suivez les étapes dans Azure Marketplace :
 +
