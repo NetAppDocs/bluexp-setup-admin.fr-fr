@@ -35,9 +35,6 @@ _silent_ exécute le script sans vous demander de confirmer.
 
 
 
-.Résultat
-Le logiciel Connector est maintenant désinstallé de l'hôte Linux.
-
 
 
 == Désinstallez le connecteur lorsque vous utilisez le mode privé
@@ -48,13 +45,31 @@ Si vous utilisez BlueXP en mode privé (en d'autres termes, l'hôte du connecteu
 . Connectez-vous à la VM Linux pour le connecteur.
 . Depuis l'hôte Linux, exécutez les commandes suivantes :
 +
-`/opt/application/netapp/ds/cleanup.sh`
-`rm -rf /opt/application/netapp/ds`
+[source, cli]
+----
+/opt/application/netapp/ds/cleanup.sh
+rm -rf /opt/application/netapp/
+----
+. Sur l'hôte Linux, supprimez les anciens fichiers d'image de conteneur maintenant inutilisés. Cela permet de s'assurer qu'il y a suffisamment d'espace dans le répertoire /var pour la réinstallation.
++
+[role="tabbed-block"]
+====
+.Podman
+--
+[source, cli]
+----
+podman system prune --all
+----
+--
+.Docker
+--
+[source, cli]
+----
+docker system prune -a
+----
+--
+====
 
-
-
-.Résultat
-Le logiciel Connector est maintenant désinstallé de l'hôte Linux.
 
 
 
@@ -77,6 +92,3 @@ image:screenshot_connector_remove.gif["Capture d'écran du widget connecteur dan
 
 . Entrez le nom du connecteur à confirmer, puis sélectionnez *Supprimer*.
 
-
-.Résultat
-BlueXP supprime le connecteur de ses enregistrements.

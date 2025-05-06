@@ -2,7 +2,7 @@
 :allow-uri-read: 
 
 
-La maintenance du système d'exploitation sur l'hôte du connecteur relève de votre responsabilité. Par exemple, vous devez appliquer des mises à jour de sécurité au système d'exploitation sur l'hôte du connecteur en suivant les procédures standard de votre entreprise pour la distribution du système d'exploitation.
+La maintenance du système d'exploitation sur l'hôte du connecteur est votre (le client) responsabilité. Par exemple, vous (le client) devez appliquer des mises à jour de sécurité au système d'exploitation sur l'hôte du connecteur en suivant les procédures standard de votre entreprise pour la distribution du système d'exploitation.
 
 Notez que vous n'avez pas besoin d'arrêter les services sur l'hôte du connecteur lors de l'application de mises à jour de sécurité mineures.
 

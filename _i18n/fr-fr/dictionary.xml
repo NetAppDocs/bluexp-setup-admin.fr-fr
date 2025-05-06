@@ -1714,7 +1714,6 @@ ou</block>
   <block id="e8e3de05575910fc8863b3e5715b75a4" category="inline-image-macro">Capture d'écran du widget connecteur dans lequel vous pouvez supprimer un connecteur inactif.</block>
   <block id="2edb4e92b7a9da8aeba40d13e6c35982" category="paragraph"><block ref="2edb4e92b7a9da8aeba40d13e6c35982" category="inline-image-macro-rx" type="image"></block></block>
   <block id="ec2047192779921dd8c042d6555c8cd8" category="list-text">Entrez le nom du connecteur à confirmer, puis sélectionnez *Supprimer*.</block>
-  <block id="7c42efcb94d7f8204bfb69f49301938f" category="paragraph">BlueXP supprime le connecteur de ses enregistrements.</block>
   <block id="6a5be3e06b444aea04beccda3bc9e1d6" category="list-text">À partir de l'hôte Linux, exécutez le script de désinstallation :</block>
   <block id="0bb43692ecd0352eecc69c235e34d6f0" category="paragraph">_silent_ exécute le script sans vous demander de confirmer.</block>
   <block id="c89064bda3f1ae133a231f5b1f44c3b0" category="list-text">Depuis l'hôte Linux, exécutez les commandes suivantes :</block>
@@ -3529,7 +3528,6 @@ Cette partie du tableau répertorie la prise en charge de la gestion de l'enviro
   <block id="716e455593e3f61d09e3bf6cbb30d375" category="doc">Désinstallez et retirez le connecteur</block>
   <block id="0ca48b615c940d64cdde98b76cdee8b3" category="section-title">Désinstallez le connecteur lorsque vous utilisez le mode standard ou restreint</block>
   <block id="da529abe542a53761e1008dc23815cf7" category="paragraph">Si vous utilisez BlueXP en mode standard ou restreint (en d'autres termes, l'hôte du connecteur dispose d'une connectivité sortante), vous devez suivre les étapes ci-dessous pour désinstaller le logiciel Connector.</block>
-  <block id="0f915c6b577573f25e2e8bfac8c2aacb" category="paragraph">Le logiciel Connector est maintenant désinstallé de l'hôte Linux.</block>
   <block id="32b4ba2ff55d15357ed5b70aeb566059" category="section-title">Désinstallez le connecteur lorsque vous utilisez le mode privé</block>
   <block id="34a2bd34ae23cc65060f62957132c0eb" category="paragraph">Si vous utilisez BlueXP en mode privé (en d'autres termes, l'hôte du connecteur a une connectivité _no_ sortante), vous devez suivre les étapes ci-dessous pour désinstaller le logiciel du connecteur.</block>
   <block id="a1fd436d8cb76b77def4aeb2d8bba352" category="doc">Maintenance de la VM connecteur et du système d'exploitation</block>
@@ -3674,7 +3672,6 @@ Cette partie du tableau répertorie la prise en charge de la gestion de l'enviro
   <block id="dee6ffcadeee95a4920b20e3dff92f16" category="paragraph">Notez que le mot de passe par défaut est un mot de passe à usage unique associé à l'adresse e-mail enregistrée. Un nouvel OTP est généré à chaque tentative de connexion.</block>
   <block id="3216eccdc5ba0609640cf6e084e8b99b" category="list-text">Depuis l'interface de ligne de commandes de Cloud Volumes ONTAP, définir le niveau de privilège sur Advanced :</block>
   <block id="12cf6b8337c04d4e7e622d1c39b40efe" category="list-text">Lancer la commande suivante pour afficher la cible de sauvegarde actuelle :</block>
-  <block id="eb34b10d2fd231974ff6010bc6aa4d4b" category="paragraph"><block ref="5b014535a251b1d5d0c9044a548a8e20" prefix="" category="inline-code"></block><block ref="3be06caa62382aade39cdb5bcb105da0" prefix=" " category="inline-code"></block></block>
   <block id="d44b908365d28414a72f5b042c756f89" category="cell">Utilisez les ensembles d'échelles des machines virtuelles en mode d'orchestration flexible pour spécifier des zones spécifiques pour Cloud Volumes ONTAP</block>
   <block id="e32bb1c8b64cbfd8bf1712551cd39a15" category="cell">Microsoft Calcul/virtualMachineScaleSets/écriture</block>
   <block id="da4802bef00f05ba8274ecb054d0388f" category="cell">Microsoft Calcul/virtualMachineScaleSets/lecture</block>
@@ -5032,4 +5029,6 @@ Cette partie du tableau répertorie la prise en charge de la gestion de l'enviro
   <block id="df3f743aae5476a7b16bbbc329251f85" category="section-title">18 février 2025</block>
   <block id="186343db38833a48df757e694e69337d" category="doc">Gérer les informations d'identification NSS associées à BlueXP </block>
   <block id="b0a6f78c81db9101142cfbb4b289b156" category="list-text">Mises à jour de licences dans le portefeuille digital, ce qui signifie que vous ne pourrez pas tirer parti de la capacité nouvellement achetée.</block>
+  <block id="0e9f50ce17eb61023683d8254bc6a553" category="paragraph">La maintenance du système d'exploitation sur l'hôte du connecteur est votre (le client) responsabilité. Par exemple, vous (le client) devez appliquer des mises à jour de sécurité au système d'exploitation sur l'hôte du connecteur en suivant les procédures standard de votre entreprise pour la distribution du système d'exploitation.</block>
+  <block id="ec3b20ec97830a6ca400807ee52fba22" category="list-text">Sur l'hôte Linux, supprimez les anciens fichiers d'image de conteneur maintenant inutilisés. Cela permet de s'assurer qu'il y a suffisamment d'espace dans le répertoire /var pour la réinstallation.</block>
 </blocks>
