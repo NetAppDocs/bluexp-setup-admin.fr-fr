@@ -1,0 +1,186 @@
+---
+sidebar: sidebar 
+permalink: reference-iam-ransomware-roles.html 
+keywords: predefined roles, iam roles, organization admin, folder or project admin, identity and access management, access roles, admin 
+summary: La gestion des identités et des accès BlueXP  fournit deux rôles administratifs que vous pouvez attribuer aux membres de votre organisation. 
+---
+= Rôles d'accès à la protection contre les ransomwares pour BlueXP 
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Les rôles ransomware sont conçus pour fournir un accès au service de protection contre les ransomwares. Les utilisateurs peuvent se voir attribuer un rôle administratif qui leur permet de prendre des mesures de protection contre les ransomwares ou un rôle de spectateur s'ils ont simplement des responsabilités de surveillance. Les deux rôles sont administrateur de la protection contre les ransomware et visualiseur de protection contre les ransomware. La principale différence entre les deux rôles est les mesures qu'ils peuvent prendre en matière de protection contre les ransomwares.
+
+Le tableau suivant indique les actions que chaque rôle de protection contre les ransomwares BlueXP  peut effectuer.
+
+[cols="40,20a,20a"]
+|===
+| Fonction et action | Administrateur de la protection contre les ransomwares | Visualiseur de protection contre les ransomware 
+
+
+| Afficher le tableau de bord et tous les onglets  a| 
+Oui.
+ a| 
+Oui.
+
+
+
+| Essayer gratuitement  a| 
+Oui.
+ a| 
+Non
+
+
+
+| Lancez la découverte des charges de travail  a| 
+Oui.
+ a| 
+Non
+
+
+
+3+| *Sur l'onglet protéger* : 
+
+
+| Ajoutez, modifiez ou supprimez des règles  a| 
+Oui.
+ a| 
+Non
+
+
+
+| Protégez les workloads  a| 
+Oui.
+ a| 
+Non
+
+
+
+| Identifiez les données sensibles  a| 
+Oui.
+ a| 
+Non
+
+
+
+| Modifier la protection des charges de travail  a| 
+Oui.
+ a| 
+Non
+
+
+
+| Afficher les détails de la charge de travail  a| 
+Oui.
+ a| 
+Oui.
+
+
+
+| Téléchargez les données  a| 
+Oui.
+ a| 
+Oui.
+
+
+
+3+| *Sur l'onglet alertes* : 
+
+
+| Afficher les détails des alertes  a| 
+Oui.
+ a| 
+Oui.
+
+
+
+| Modifier l'état de l'incident  a| 
+Oui.
+ a| 
+Non
+
+
+
+| Afficher les détails de l'incident  a| 
+Oui.
+ a| 
+Oui.
+
+
+
+| Obtenir la liste complète des fichiers affectés  a| 
+Oui.
+ a| 
+Non
+
+
+
+| Télécharger les données d'alertes  a| 
+Oui.
+ a| 
+Oui.
+
+
+
+3+| *Sur l'onglet récupérer* : 
+
+
+| Télécharger les fichiers impactés  a| 
+Oui.
+ a| 
+Non
+
+
+
+| Restaurer la charge de travail  a| 
+Oui.
+ a| 
+Non
+
+
+
+| Télécharger les données de récupération  a| 
+Oui.
+ a| 
+Oui.
+
+
+
+| Télécharger des rapports  a| 
+Oui.
+ a| 
+Oui.
+
+
+
+3+| *Sur l'onglet Paramètres* : 
+
+
+| Ajouter ou modifier des cibles de sauvegarde  a| 
+Oui.
+ a| 
+Non
+
+
+
+| Ajouter ou modifier des cibles SIEM  a| 
+Oui.
+ a| 
+Non
+
+
+
+3+| *Sur l'onglet Rapports* : 
+
+
+| Télécharger des rapports  a| 
+Oui.
+ a| 
+Oui.
+
+|===

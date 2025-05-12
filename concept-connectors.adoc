@@ -191,9 +191,9 @@ link:task-upgrade-connector.html["Apprenez à mettre à niveau manuellement le l
 
 La maintenance du système d'exploitation sur l'hôte du connecteur est votre (le client) responsabilité. Par exemple, vous (le client) devez appliquer des mises à jour de sécurité au système d'exploitation sur l'hôte du connecteur en suivant les procédures standard de votre entreprise pour la distribution du système d'exploitation.
 
-Notez que vous n'avez pas besoin d'arrêter les services sur l'hôte du connecteur lors de l'application de mises à jour de sécurité mineures.
+Notez que vous (le client) n'avez pas besoin d'arrêter les services sur l'hôte du connecteur lors de l'application de mises à jour de sécurité mineures.
 
-Si vous devez arrêter puis démarrer le connecteur VM, vous devez le faire depuis la console de votre fournisseur cloud ou en utilisant les procédures standard de gestion sur site.
+Si vous (le client) devez arrêter puis démarrer la VM Connector, vous devez le faire depuis la console de votre fournisseur cloud ou en suivant les procédures standard de gestion sur site.
 
 <<Les connecteurs doivent toujours être opérationnels,Notez que le connecteur doit être opérationnel en permanence>>.
 

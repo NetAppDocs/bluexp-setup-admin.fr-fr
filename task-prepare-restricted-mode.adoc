@@ -104,6 +104,8 @@ Non pris en charge
 Docker Engine 23.0.6 à 26.0.0
 
 26.0.0 est pris en charge avec les installations _New_ Connector 3.9.44 ou ultérieures
+
+Les versions 27.0.0 et 28.0.0 sont prises en charge avec les installations _New_ Connector 3.9.52 ou ultérieures
  a| 
 Non pris en charge
 

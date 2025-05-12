@@ -18,6 +18,30 @@ Découvrez les nouveautés des fonctionnalités d'administration BlueXP  : gest
 
 
 
+== 12 mai 2025
+
+
+
+=== Connecteur 3.9.52
+
+Cette version de BlueXP  Connector inclut des améliorations mineures de la sécurité et des correctifs de bogues, ainsi que quelques mises à jour supplémentaires.
+
+À ce stade, la version 3.9.52 est disponible pour le mode standard et le mode restreint.
+
+
+
+==== Prise en charge de Docker 27 et Docker 28
+
+Docker 27 et Docker 28 sont désormais pris en charge avec le connecteur.
+
+
+
+=== Administration Keystone disponible dans BlueXP 
+
+La version bêta de NetApp Keystone dans BlueXP  a permis d'accéder à l'administration Keystone. Vous pouvez accéder à la page d'inscription de la version bêta de NetApp Keystone à partir de la barre de navigation de gauche de BlueXP .
+
+
+
 == 14 avril 2025
 
 

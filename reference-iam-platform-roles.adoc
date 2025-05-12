@@ -1,0 +1,70 @@
+---
+sidebar: sidebar 
+permalink: reference-iam-platform-roles.html 
+keywords: predefined roles, iam roles, organization admin, folder or project admin, classification viewer, snapcenter admin, role, iam role, admin, iam, identity and access management 
+summary: La gestion des identités et des accès BlueXP  inclut plusieurs rôles prédéfinis que vous pouvez attribuer aux membres de votre organisation. 
+---
+= Rôles d'accès à la plateforme BlueXP 
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Les rôles de plateforme sont les rôles les plus vastes que vous pouvez attribuer aux utilisateurs et autoriser toutes les autorisations pour l'administration BlueXP, y compris l'attribution de rôles et l'ajout d'utilisateurs. Les utilisateurs ayant un rôle de plateforme ont accès à tous les services de données et applications dans BlueXP . BlueXP  comprend deux rôles de plate-forme : *Organization admin* et *Folder ou Project admin*. La principale différence entre les deux rôles de plateforme BlueXP  est le périmètre dans lequel le rôle s'applique.
+
+.Exemple de rôles d'organisation au BlueXP  pour une grande organisation multinationale
+XYZ Corporation, une multinationale, a pour objectif de séparer l'accès aux ressources de stockage des données en fonction de régions géographiques : Amérique du Nord, Europe et Asie-Pacifique. Ils veulent que chaque région dispose d'un contrôle exclusif sur leurs ressources tout en maintenant une surveillance centralisée.
+
+Pour ce faire, une personne affectée au rôle *Administrateur de l'organisation* dans BlueXP  de la société XYZ crée un environnement de travail initial et crée ensuite des dossiers distincts dans BlueXP  pour chaque région. Le dossier de chaque région contient des projets (avec des ressources associées) liés à cette région. Le *administrateur de l'organisation* attribue à un utilisateur BlueXP  dans chaque région respective le rôle *administrateur du dossier ou du projet*.
+
+Une fois la configuration initiale terminée, les administrateurs régionaux dotés du rôle *Folder ou Project admin* peuvent créer de nouveaux environnements de travail et ajouter des utilisateurs dans leurs régions. Ces administrateurs régionaux peuvent également ajouter/supprimer/renommer des dossiers et des projets auxquels ils sont affectés. *L'administrateur de l'organisation* hérite des autorisations pour tous les nouveaux environnements de travail ou ressources, ce qui maintient la visibilité de l'utilisation du stockage dans toute l'entreprise.
+
+Le tableau suivant indique les actions que chaque rôle de plateforme BlueXP  peut effectuer.
+
+[cols="2,1,1"]
+|===
+| Tâche | Administrateur d'entreprise | Administrateur de dossiers ou de projets 
+
+
+| Créer des connecteurs | Oui. | Non 
+
+
+| Créer, modifier ou supprimer des environnements de travail (ajouter ou découvrir de nouvelles ressources à l'aide du canevas BlueXP ) | Oui. | Oui. 
+
+
+| Créer des dossiers et des projets, y compris la suppression | Oui. | Non 
+
+
+| Renommer les dossiers et projets existants | Oui. | Oui. 
+
+
+| Attribuez des rôles et ajoutez des utilisateurs | Oui. | Oui. 
+
+
+| Associer des ressources à des dossiers et des projets | Oui. | Oui. 
+
+
+| Associer des connecteurs à des dossiers et des projets | Oui. | Non 
+
+
+| Supprimer des connecteurs d'un dossier et d'un projet | Oui. | Non 
+
+
+| Gérer les connecteurs (modifier les certificats, les paramètres, etc.) | Oui. | Non 
+
+
+| Gérez les informations d'identification dans Paramètres > informations d'identification | Oui. | Oui. 
+
+
+| Afficher la chronologie BlueXP  | Oui. | Oui. 
+
+
+| Utilisez les services BlueXP  | Oui. | Oui. 
+
+
+| Enregistrez BlueXP  pour obtenir de l'aide et envoyez vos dossiers de demande de support | Oui. | Oui. 
+|===
