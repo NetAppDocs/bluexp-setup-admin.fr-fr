@@ -5039,19 +5039,10 @@ Cette partie du tableau répertorie la prise en charge de la gestion de l'enviro
   <block id="7f2befb18aac1f714ed732d436d27957" category="cell"><block ref="7f2befb18aac1f714ed732d436d27957" category="inline-link-macro-rx"></block></block>
   <block id="62263858ac3fcc39efab4f2c55c4b609" category="cell">Permet à un utilisateur d'accéder sans restriction à des projets et dossiers spécifiques auxquels il est affecté. Vous pouvez ajouter des membres à des dossiers ou projets qu'ils gèrent, ainsi que réaliser n'importe quelle tâche BlueXP  et utiliser n'importe quel service de données ou application sur les ressources du dossier ou du projet qui leur sont affectés. Le rôle d'administrateur de dossier ou de projet NE PEUT PAS créer de connecteurs.</block>
   <block id="ee1afb77ea65d6282a6b2db5ef1c9599" category="cell">Rôle d'application</block>
-  <block id="cfc1bf581403883b7597ea57212f92d0" category="cell"><block ref="cfc1bf581403883b7597ea57212f92d0" category="inline-link-macro-rx"></block></block>
   <block id="ff7835459affd6ea09ace7258f1ea831" category="cell">Les utilisateurs avec le rôle d'administrateur Keystone peuvent créer des demandes de service. Permet aux utilisateurs de contrôler et d'afficher les informations sur la consommation, les ressources et l'administration dans le locataire Keystone auquel ils accèdent.</block>
-  <block id="eee920c46940781b9236f383eb481644" category="cell"><block ref="eee920c46940781b9236f383eb481644" category="inline-link-macro-rx"></block></block>
-  <block id="1457cd573aaf85c5528a52382534d843" category="cell">Les utilisateurs avec le rôle de visualiseur Keystone NE PEUVENT PAS faire de demandes de service. Permet aux utilisateurs de contrôler et d'afficher les informations sur la consommation, les ressources et l'administration dans le locataire Keystone auquel ils accèdent. ////</block>
   <block id="316bb1d5ed8c0cbdba665a6326ba1bde" category="inline-link-macro">Administrateur du stockage</block>
-  <block id="1a137246f35bc1bb21510edbe9caad21" category="cell"><block ref="1a137246f35bc1bb21510edbe9caad21" category="inline-link-macro-rx"></block></block>
-  <block id="2c0951a9d6b056c060a4c61f7f245bf2" category="cell">Gérez les fonctions de gouvernance et d'intégrité du stockage, découvrez les ressources de stockage, ainsi que modifiez et supprimez les environnements de travail existants.</block>
   <block id="1d63b1d397254c4d509474883c1cb2b9" category="inline-link-macro">Outil de visualisation du stockage</block>
-  <block id="59f722e254214ae7991868e178f8311d" category="cell"><block ref="59f722e254214ae7991868e178f8311d" category="inline-link-macro-rx"></block></block>
-  <block id="7276a8e39254ac9c35a2e44a3d09f7ef" category="cell">Affichez les fonctions d'intégrité et de gouvernance du stockage, ainsi que les ressources de stockage précédemment découvertes. Impossible de découvrir, de modifier ou de supprimer des environnements de travail de stockage existants.</block>
   <block id="172d68d57647cf0cb58a3cbcac52a80d" category="inline-link-macro">Spécialiste de l'état du système</block>
-  <block id="92c9978d93758d2c0ddea09cb5842e0f" category="cell"><block ref="92c9978d93758d2c0ddea09cb5842e0f" category="inline-link-macro-rx"></block></block>
-  <block id="d5ce9b158c00a4469a72ebb1ff919ca7" category="cell">Administration des fonctions de stockage, d'intégrité et de gouvernance, toutes les autorisations de l'administrateur du stockage sauf ne peuvent pas modifier ou supprimer des environnements de travail existants. ////</block>
   <block id="f9e4f3681d11897d8d94c7430ef166b2" category="cell">Rôle du service de données</block>
   <block id="64ed34c845e9e3ebe96d95642bd80c2c" category="cell">Administration de la classification</block>
   <block id="951e833c91b111e3d8854609f6e22cd0" category="cell">Fournit la possibilité d'afficher les résultats de l'acquisition de classification BlueXP . La classification n'a pas de rôle de visualiseur. Les utilisateurs disposant de ce rôle peuvent afficher des informations de conformité et générer des rapports pour les ressources auxquelles ils ont accès. Ces utilisateurs ne peuvent ni activer ni désactiver l'analyse de volumes, de compartiments ou de schémas de base de données.</block>
@@ -5111,4 +5102,7 @@ Cette partie du tableau répertorie la prise en charge de la gestion de l'enviro
   <block id="5f04b1505df8c3795b59e8cd4a8e01e3" category="sidebar">En savoir plus sur les rôles d'accès BlueXP </block>
   <block id="35cbd88f43ce85ef7ed6866daa2c6066" category="sidebar">Rôles liés aux services de données</block>
   <block id="0310ff69ee2ad8b9fa1fbf2f23946a8e" category="sidebar">Rôles liés à la protection contre les ransomware</block>
+  <block id="fae8f53075db25f03200e0538d6a6e22" category="cell"><block ref="fae8f53075db25f03200e0538d6a6e22" category="inline-link-macro-rx"></block></block>
+  <block id="46956ceeec4262cb23c44eb7922de7ec" category="cell"><block ref="46956ceeec4262cb23c44eb7922de7ec" category="inline-link-macro-rx"></block></block>
+  <block id="fa5213b8e2ea77f3b22ea8b2e36d85b8" category="cell">Les utilisateurs avec le rôle de visualiseur Keystone NE PEUVENT PAS créer de demandes de service. Permet aux utilisateurs de contrôler et d'afficher les informations sur la consommation, les ressources et l'administration dans le locataire Keystone auquel ils accèdent.</block>
 </blocks>
