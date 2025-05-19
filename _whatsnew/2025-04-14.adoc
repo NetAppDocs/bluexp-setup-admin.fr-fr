@@ -12,6 +12,12 @@ Cette version de BlueXP Connector inclut des améliorations mineures de la sécu
 
 
 
+==== Des terminaux sécurisés pour les téléchargements de connecteurs sont désormais pris en charge pour la sauvegarde et la restauration, ainsi que pour la protection contre les ransomware
+
+Si vous utilisez la sauvegarde et la restauration ou la protection contre les ransomware, vous pouvez désormais utiliser des terminaux sécurisés pour télécharger des connecteurs. link:https://docs.netapp.com/us-en/bluexp-setup-admin/whats-new.html#new-secure-endpoints-to-obtain-connector-images["Découvrez les terminaux sécurisés pour le téléchargement de connecteurs."^]
+
+
+
 === Gestion des identités et des accès BlueXP 
 
 * Pour accéder à la protection contre les ransomware, les utilisateurs ne disposant pas d'un rôle d'administrateur d'organisation ou de dossier ou de projet doivent se voir attribuer un rôle de protection contre les ransomwares. Vous pouvez attribuer un utilisateur à l'un des deux rôles suivants : administrateur de la protection contre les ransomware ou visualiseur de la protection contre les ransomware.
