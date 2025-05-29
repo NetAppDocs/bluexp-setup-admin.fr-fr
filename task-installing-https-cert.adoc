@@ -20,7 +20,7 @@ Lorsque vous utilisez BlueXP  en mode restreint ou privé, l'interface utilisat
 
 == Avant de commencer
 
-Vous devez créer un connecteur avant de pouvoir modifier les paramètres BlueXP. link:concept-connectors.html#how-to-create-a-connector["Apprenez à créer un connecteur"].
+Vous devez créer un connecteur avant de pouvoir modifier les paramètres BlueXP. link:concept-connectors.html#connector-installation["Apprenez à créer un connecteur"].
 
 
 

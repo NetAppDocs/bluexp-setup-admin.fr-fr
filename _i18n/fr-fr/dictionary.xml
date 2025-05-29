@@ -178,8 +178,6 @@
   <block id="b68600c18c6dd9598d4518bc4a3f2c90" category="list-text">HTTP (80) et HTTPS (443) permettent d'accéder à l'interface utilisateur locale que vous utiliserez dans de rares circonstances.</block>
   <block id="a72a43431413f493c5087ab72327a680" category="list-text">SSH (22) n'est nécessaire que si vous devez vous connecter à l'hôte pour le dépannage.</block>
   <block id="8fece025a1a8fef7018449bf104a2527" category="section-title">Avant de commencer</block>
-  <block id="3348dcc393bde37af6464ca44f92a231" category="inline-link-macro">Découvrez comment</block>
-  <block id="4a126f1568270f6124f9c053bf5a5b02" category="paragraph">Vous devez créer un connecteur avant de pouvoir modifier les paramètres BlueXP. <block ref="9cb3f4e3b2f30b874e967976f1105dcc" category="inline-link-macro-rx"></block>.</block>
   <block id="c49ff7d7009f9d4727b2b25afa496418" category="section-title">Installez un certificat HTTPS</block>
   <block id="bfad05e4d9a8b5fbc930a21d6b53cd7a" category="list-text">Dans le coin supérieur droit de la console BlueXP, sélectionnez l'icône Paramètres, puis sélectionnez *HTTPS Setup*.</block>
   <block id="4d646a6e32f8084a095a674812f1fb31" category="list-text">Dans la page Configuration HTTPS, installez un certificat en générant une requête de signature de certificat (CSR) ou en installant votre propre certificat signé par l'autorité de certification :</block>
@@ -2328,7 +2326,6 @@ Notez que la page s'actualise entre le test de la connexion et l'activation de l
   <block id="0919fa8ef252f518174a76feefbed72b" category="inline-link">Documentation BlueXP pour Amazon FSX pour ONTAP</block>
   <block id="4f75e9590de3cece316768ef4b82f1ed" category="paragraph">Pour plus de détails, reportez-vous à la<block ref="c186ea5d7dffe196818c2e5a7f99ad62" category="inline-link-rx"></block></block>
   <block id="7061e8aac5780f13c42d7f3d3010b5c2" category="inline-link-macro">Apprenez à créer un connecteur</block>
-  <block id="4affaad75ff37743ed549d6641de07e8" category="paragraph">Vous devez créer un connecteur avant de pouvoir modifier les paramètres BlueXP. <block ref="ffb61fe647da5972e7e78ecadafdfb45" category="inline-link-macro-rx"></block>.</block>
   <block id="eceb74088d706d5484df6b70296f87ad" category="paragraph">Modifiez vos informations d'identification AWS dans BlueXP en modifiant le type de compte (clés AWS ou rôle supposons), en modifiant le nom ou en mettant à jour les informations d'identification elles-mêmes (clés ou rôle ARN).</block>
   <block id="608e5d2c6ae29eafd4acefb54d76730a" category="admonition">Vous ne pouvez pas modifier les informations d'identification d'un profil d'instance associé à une instance de connecteur.</block>
   <block id="a53da898c0e5410eb934bcf693e8290e" category="admonition">Vous ne pouvez pas supprimer les informations d'identification d'un profil d'instance associé à une instance de connecteur.</block>
@@ -3948,8 +3945,6 @@ Cette partie du tableau répertorie la prise en charge de la gestion de l'enviro
   <block id="cd42e1c1af0a908f68d68ae6103b5c30" category="list-text">Dans le coin supérieur droit de la console BlueXP , sélectionnez <block ref="32173ab85f1c68a28384d1a40cf387db" category="inline-image-macro-rx" type="image"></block> &gt; *gestion des identités et des accès*.</block>
   <block id="898a5f7650c6f7bf6a01efe09c881973" category="list-text">Sélectionnez *connecteurs*.</block>
   <block id="efd7c600c956f9a4ecd581c9e8a5de04" category="list-text">Dans le tableau, recherchez le connecteur que vous souhaitez associer.</block>
-  <block id="0e081d7aa898f932c4f244f1d41dd4df" category="paragraph">Pour trouver un connecteur spécifique, vous pouvez utiliser la recherche située au-dessus du tableau et filtrer le contenu du tableau en sélectionnant une partie spécifique de la hiérarchie de ressources.</block>
-  <block id="16b0f0c24bd4a14288344d064f0b09c2" category="list-text">Pour afficher d'abord les dossiers et les projets auxquels le connecteur est associé, sélectionnez, <block ref="c9c50c6d591d91ccce1ee232fa490fb4" category="inline-image-macro-rx" type="image"></block>puis *Afficher les détails*.</block>
   <block id="a2884a208c64d00906f60b988f29dfd3" category="paragraph">BlueXP  affiche des détails sur les dossiers et les projets auxquels le connecteur est associé.</block>
   <block id="7b0e84897f645e2241868699f64b6699" category="list-text">Sélectionnez *associer au dossier ou au projet*.</block>
   <block id="3ecb65defa4c1a5901512a34a0590820" category="list-text">Sélectionnez un dossier ou un projet, puis sélectionnez *accepter*.</block>
@@ -4009,7 +4004,6 @@ Cette partie du tableau répertorie la prise en charge de la gestion de l'enviro
   <block id="5506a3204ff4171234856af0ca0d34fd" category="list-text">Fournir des détails sur le dossier ou le projet :</block>
   <block id="0ab63481584814b59197d796cfc5dc97" category="list-text">*Nom et emplacement* : saisissez un nom et choisissez un emplacement dans la hiérarchie pour le dossier ou le projet. Un dossier ou un projet peut se trouver directement sous l'organisation ou dans un dossier.</block>
   <block id="f46059ba82cb53e4af025ce918760999" category="list-text">*Ressources* : sélectionnez les ressources que vous souhaitez associer à ce dossier ou à ce projet.</block>
-  <block id="217f7358d2ee319a9c814b539574d78d" category="paragraph">Vous ne pouvez sélectionner que les ressources associées au parent du dossier ou du projet. Si le parent est l'organisation, vous pouvez choisir une ressource dans l'organisation. Si le parent est un dossier, vous ne pouvez sélectionner que les ressources associées au dossier.</block>
   <block id="dc401be3adab60c813414832f0b97d88" category="inline-link-macro">Découvrez quand vous pouvez associer une ressource à un dossier</block>
   <block id="d706c5ded100123a86d8602a03703158" category="paragraph"><block ref="114ceb4aae340f51ba021c40f504c25f" category="inline-link-macro-rx"></block>.</block>
   <block id="8bb3c5dc86a399d0babf2eb49831e5ec" category="list-text">*Accès* : affichez les membres qui auront accès au dossier ou au projet en fonction des autorisations existantes déjà définies dans votre hiérarchie de ressources.</block>
@@ -4034,7 +4028,6 @@ Cette partie du tableau répertorie la prise en charge de la gestion de l'enviro
   <block id="883f9a97670aa2ea1a29d0163ef97be1" category="paragraph"><block ref="883f9a97670aa2ea1a29d0163ef97be1" category="inline-image-macro-rx" type="image"></block></block>
   <block id="c16f1c2a54634bdad6dee177f8131ef5" category="list-text">Sélectionnez *appliquer*</block>
   <block id="19df46354fac1ffd06065f8388377f84" category="section-title">Modifier l'accès des membres à un dossier ou à un projet</block>
-  <block id="710dfcb474fc8ee49343c58686c8aded" category="paragraph">Modifiez l'accès des membres à un dossier ou à un projet pour vous assurer que les membres autorisés ont accès aux ressources associées au dossier ou au projet.</block>
   <block id="904a2691210bbfe6dfc1b17db516d71c" category="list-text">Modifier l'accès des membres :</block>
   <block id="b49630790a232696bd0f62fa51014e55" category="list-text">*Ajouter un membre* : sélectionnez le membre que vous souhaitez ajouter au dossier ou au projet et attribuez-lui un rôle.</block>
   <block id="a4f439c667db8a94e9e3159df300905d" category="list-text">*Modifier le rôle d'un membre* : pour tous les membres ayant un rôle autre que l'administrateur d'organisation, sélectionnez leur rôle existant, puis choisissez un nouveau rôle.</block>
@@ -4316,8 +4309,6 @@ Cette partie du tableau répertorie la prise en charge de la gestion de l'enviro
   <block id="798eb88714cdc2034c3335c3a6c21193" category="list-text">Dans la page *Organisation*, naviguez jusqu'à un projet dans le tableau et sélectionnez <block ref="c9c50c6d591d91ccce1ee232fa490fb4" category="inline-image-macro-rx" type="image"></block></block>
   <block id="efb318f1d905ec45c96414554f0f7c18" category="paragraph">L'ID de projet s'affiche.</block>
   <block id="811c7706be3ba95d1d407ea18e420365" category="list-text">Pour copier l'ID, sélectionnez le bouton Copier.</block>
-  <block id="c5f7a94f7e361ce9dc993775dd14b3c1" category="inline-image-macro">Capture d'écran de la table dossiers et projets qui montre l'ID du projet en sélectionnant le menu d'action d'un projet.</block>
-  <block id="c4c78a982626adb55fd316627b7b9909" category="paragraph"><block ref="c4c78a982626adb55fd316627b7b9909" category="inline-image-macro-rx" type="image"></block></block>
   <block id="ecbeaffbfe15c72e3bf702b0d0bf9694" category="section-title">11 novembre 2024</block>
   <block id="64a7a8a4f820d38dc5cedd70930717c0" category="doc">Version en mode privé (3.9.46)</block>
   <block id="d9d2db6c6792de5c6f6f1c11280bd993" category="paragraph">Une nouvelle version en mode privé est désormais disponible au téléchargement sur le<block ref="d2aa03057485a1ee4125d2121e05288d" category="inline-link-rx"></block></block>
@@ -4466,11 +4457,9 @@ Cette partie du tableau répertorie la prise en charge de la gestion de l'enviro
   <block id="98ab56b1913a765c1df746951483fcf9" category="paragraph">Dans deux cas, vous pouvez configurer un abonnement AWS Marketplace après avoir déjà ajouté les informations d'identification à BlueXP  :</block>
   <block id="5ae59f56e745767e7fb2cc05712fc6a6" category="list-text">Vous n'avez pas configuré d'abonnement lorsque vous avez ajouté les informations d'identification à BlueXP .</block>
   <block id="1fa2cd673301895c14fbffad8568f063" category="list-text">Vous souhaitez modifier l'abonnement AWS Marketplace configuré sur les identifiants AWS.</block>
-  <block id="992e95d72701e4be3c32c42f86ff8eb2" category="paragraph">La profondeur de la hiérarchie des ressources de votre organisation peut descendre à 7 niveaux. Par conséquent, vous pouvez créer des dossiers imbriqués jusqu'à 6 niveaux. Le dernier dossier imbriqué peut alors inclure des projets au septième niveau de la hiérarchie.</block>
   <block id="602717d0c1fbb3310698d48708d917bc" category="paragraph">L'image suivante illustre la profondeur maximale de la hiérarchie des ressources de votre organisation :</block>
   <block id="7ef08e2a2795e0ebd33ca241791da34d" category="section-title">Afficher les ressources associées à un dossier ou à un projet</block>
   <block id="b9cbaac63edb6628a694750d4f1ba083" category="list-text">Sur la page *Modifier*, vous pouvez afficher des détails sur le dossier ou le projet sélectionné en développant les sections *Ressources* ou *accès*.</block>
-  <block id="c89793030e51a304fd86f478545c616e" category="paragraph">Vous pouvez modifier les ressources associées à un dossier ou à un projet en associant ou en dissociant une ressource. Par exemple, vous pouvez associer une ressource à un autre projet car cette ressource a la capacité qu'une autre équipe peut utiliser. Une fois que vous avez associé une ressource à un dossier ou à un projet, les membres de l'organisation qui ont des autorisations pour ce dossier ou ce projet peuvent accéder à la ressource associée.</block>
   <block id="e3621d23b92254c73b3a713d227a66f5" category="section-title">Afficher les membres associés à un dossier ou à un projet</block>
   <block id="2bd6967deb6b9eb3d79e794bad318fb4" category="list-text">Sur la page *Modifier*, sélectionnez *accès* pour afficher la liste des membres ayant accès au dossier ou au projet sélectionné.</block>
   <block id="d94261042140ed4ba051dbe4ecd2eeb1" category="paragraph">Lorsque vous utilisez la gestion des identités et des accès BlueXP  pour associer un membre à votre entreprise, vous fournissez des autorisations au niveau de l'organisation, du dossier ou du projet. Pour vous assurer que ces membres disposent des autorisations nécessaires pour accéder aux ressources appropriées, vous devez gérer la hiérarchie des ressources de votre organisation en associant des ressources à des projets et dossiers spécifiques. Une _ressource_ est une ressource de stockage que BlueXP  gère déjà ou connaît déjà.</block>
@@ -4900,7 +4889,6 @@ Cette partie du tableau répertorie la prise en charge de la gestion de l'enviro
   <block id="84d4352e42fd4f7ef347eca44f4f0a88" category="cell">22 janvier 2025 (version 1.39)</block>
   <block id="b865a42d40947323c5392132a0cf5ae7" category="cell">Accédez au et consultez les modifications incluses dans la<block ref="bb3538c6013ff73961739d7c28fee95d" category="inline-link-rx"></block> version 1.39.</block>
   <block id="09d7c2dac047caa965175fead07159aa" category="cell">21 février 2025</block>
-  <block id="c77472b3cb88175d9f673b4976ce643a" category="paragraph">Si l'accès des membres a été fourni à un niveau supérieur de la hiérarchie (au niveau du dossier ou de l'organisation), vous ne pouvez pas supprimer ou modifier l'accès des membres lors de l'affichage du dossier ou du projet de niveau inférieur. Vous devez passer à cette partie de la hiérarchie et y mettre à jour les autorisations du membre. Vous pouvez également <block ref="2e250d63a19626cb0aeed14260bd2f59" category="inline-link-macro-rx"></block>.</block>
   <block id="e07d586e54fb2ecc1791d2d434436330" category="doc">Ajoutez des membres BlueXP  et gérez leurs autorisations</block>
   <block id="f0b3d6677a212276d758f01224d831be" category="paragraph"><block ref="358dd7829c43f386bdd1bc16bf83b432" category="inline-link-macro-rx"></block>.</block>
   <block id="45fa36bab7b7452cfb911598ccd2d223" category="inline-link-macro">Découvrez comment utiliser des rôles pour contrôler l'accès aux ressources BlueXP .</block>
@@ -5133,4 +5121,24 @@ Cette partie du tableau répertorie la prise en charge de la gestion de l'enviro
   <block id="ab244aa8ea93b8114e0cc9009af3f81b" category="list-text">Vous pouvez désormais gérer davantage de systèmes de stockage sur site, tels que E-Series et StorageGRID.</block>
   <block id="036d3952a98988224205b6f039be487f" category="list-text"><block ref="036d3952a98988224205b6f039be487f" category="inline-link-rx"></block></block>
   <block id="6a3405f47013290acf99c18684c84269" category="list-text">Cloud Tiering s'affiche désormais si vous disposez de clusters ONTAP sur site non découverts afin que vous puissiez les ajouter à Cloud Manager pour activer la hiérarchisation ou d'autres services sur ces clusters.</block>
+  <block id="5aac456da49390227897f1fa93e12f80" category="doc">Version du mode privé (3.9.52)</block>
+  <block id="3ad3533e2236195b0d2ff39cc302bac1" category="paragraph">La version 3.9.52 inclut des mises à jour des composants et services BlueXP suivants.</block>
+  <block id="918d08b069e4e8b9bd825945d099eff0" category="cell">3.9.52, 3.9.51</block>
+  <block id="d29240cb60727e796e55d4bf8ac33966" category="cell">Aller à la <block ref="291fbb881b3918f162f476bad9d0c478" category="inline-link-rx"></block> et reportez-vous aux modifications incluses pour les versions 3.9.52 et 3.9.50.</block>
+  <block id="fb6bee0c273267d6fdde07008552b62f" category="cell">Aller à la <block ref="d08346bd70ea49c38d1ac500c69dd11c" category="inline-link-rx"></block> et se référer aux modifications incluses dans la version de mai 2025.</block>
+  <block id="3e18ba454ff1bfb5aee5e5d425b20ea3" category="cell">12 mai 2025 (version 1.43)</block>
+  <block id="e604d3f0ea5a3e895506b1c61f048b4d" category="paragraph">Vous devez créer un connecteur avant de pouvoir modifier les paramètres BlueXP. <block ref="d6da137eb117a8b1a6fe744483bdf83d" category="inline-link-macro-rx"></block>.</block>
+  <block id="5b5ddc8c08b78e13543c02ee18a88455" category="paragraph">Vous devez créer un connecteur avant de pouvoir modifier les paramètres BlueXP. l <block ref="d6da137eb117a8b1a6fe744483bdf83d" category="inline-link-macro-rx"></block> .</block>
+  <block id="e049b2d97a8ed0a8d2e842c6e0c625b3" category="inline-image-macro">Icône Paramètres</block>
+  <block id="1ffc44d5620a15f62b04c6a8580e783a" category="list-text">Dans le coin supérieur droit de la console BlueXP , sélectionnez <block ref="c0116accfefd0197a42c99a28533a02c" category="inline-image-macro-rx" type="image"></block> &gt; *gestion des identités et des accès*.</block>
+  <block id="aa16286c48b235d2df04d578aeed8edb" category="paragraph">Utilisez la recherche au-dessus du tableau pour trouver un connecteur spécifique ou filtrez le tableau par hiérarchie de ressources.</block>
+  <block id="f53392d049b9dddff4ba55ad74c96588" category="inline-image-macro">Une icône avec trois points</block>
+  <block id="c16d0f9fc94c90341b26a5a3efda881c" category="list-text">Pour afficher les dossiers et les projets liés au connecteur, sélectionnez <block ref="e85cc783c74f9ef35cfeeca99fcaf6f6" category="inline-image-macro-rx" type="image"></block> puis sélectionnez *Afficher les détails*.</block>
+  <block id="e91f37331347d046e8f84d619f57d7c8" category="paragraph">La hiérarchie des ressources de votre organisation peut comporter jusqu'à 7 niveaux, avec des dossiers imbriqués jusqu'à 6 niveaux et des projets au septième niveau.</block>
+  <block id="8d7e1bfd65485e98b0f12b20edd6d4b2" category="paragraph">Vous pouvez sélectionner des ressources associées au dossier ou au projet parent : toutes les ressources d'une organisation parent ou des ressources spécifiques à un dossier pour un dossier parent.</block>
+  <block id="e6e4545a44f4062ee0d1ed5ca569ddc1" category="paragraph">Le système affiche l'ID du projet.</block>
+  <block id="189b8907a7ab6c4c7b1ea92510e40d70" category="paragraph">Les membres disposant d’autorisations pour un dossier ou un projet peuvent accéder à ses ressources associées.</block>
+  <block id="838d404665efe77bad8374ea27c3b7ca" category="paragraph">Modifiez l’accès des membres pour garantir que les bons membres peuvent accéder aux ressources associées.</block>
+  <block id="a5adc30e4e36f3ae2a8e99ff0f19a490" category="paragraph">L'accès des membres fourni à un niveau hiérarchique supérieur ne peut pas être modifié à des niveaux inférieurs. Vous devez passer à cette partie de la hiérarchie et y mettre à jour les autorisations du membre. Vous pouvez également <block ref="2e250d63a19626cb0aeed14260bd2f59" category="inline-link-macro-rx"></block>.</block>
+  <block id="1971cba9fca6bc598cf10a08dfb20cb6" category="section-title">29 mai 2025</block>
 </blocks>

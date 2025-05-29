@@ -22,13 +22,13 @@ Vous devez comprendre le fonctionnement de l'association de connecteurs. link:co
 
 
 .Étapes
-. Dans le coin supérieur droit de la console BlueXP , sélectionnez image:icon-settings-option.png["L'icône des paramètres qui s'affiche en haut à droite de la console Web BlueXP ."] > *gestion des identités et des accès*.
+. Dans le coin supérieur droit de la console BlueXP , sélectionnez image:icon-settings-option.png["Icône Paramètres"] > *gestion des identités et des accès*.
 . Sélectionnez *connecteurs*.
 . Dans le tableau, recherchez le connecteur que vous souhaitez associer.
 +
-Pour trouver un connecteur spécifique, vous pouvez utiliser la recherche située au-dessus du tableau et filtrer le contenu du tableau en sélectionnant une partie spécifique de la hiérarchie de ressources.
+Utilisez la recherche au-dessus du tableau pour trouver un connecteur spécifique ou filtrez le tableau par hiérarchie de ressources.
 
-. Pour afficher d'abord les dossiers et les projets auxquels le connecteur est associé, sélectionnez, image:icon-action.png["Icône représentant trois points côte à côte"]puis *Afficher les détails*.
+. Pour afficher les dossiers et les projets liés au connecteur, sélectionnez image:icon-action.png["Une icône avec trois points"] puis sélectionnez *Afficher les détails*.
 +
 BlueXP  affiche des détails sur les dossiers et les projets auxquels le connecteur est associé.
 

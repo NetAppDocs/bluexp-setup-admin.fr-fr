@@ -23,7 +23,7 @@ La gestion des identités et des accès BlueXP  vous permet d'organiser vos res
 Lorsque vous créez votre organisation BlueXP , elle inclut un seul projet. Vous pouvez créer des projets supplémentaires pour gérer les ressources de votre organisation. Vous pouvez éventuellement créer des dossiers pour regrouper les projets associés.
 
 .Description de la tâche
-La profondeur de la hiérarchie des ressources de votre organisation peut descendre à 7 niveaux. Par conséquent, vous pouvez créer des dossiers imbriqués jusqu'à 6 niveaux. Le dernier dossier imbriqué peut alors inclure des projets au septième niveau de la hiérarchie.
+La hiérarchie des ressources de votre organisation peut comporter jusqu'à 7 niveaux, avec des dossiers imbriqués jusqu'à 6 niveaux et des projets au septième niveau.
 
 L'image suivante illustre la profondeur maximale de la hiérarchie des ressources de votre organisation :
 
@@ -38,7 +38,7 @@ image:screenshot-iam-max-depth.png["Capture d'écran montrant une organisation, 
 ** *Nom et emplacement* : saisissez un nom et choisissez un emplacement dans la hiérarchie pour le dossier ou le projet. Un dossier ou un projet peut se trouver directement sous l'organisation ou dans un dossier.
 ** *Ressources* : sélectionnez les ressources que vous souhaitez associer à ce dossier ou à ce projet.
 +
-Vous ne pouvez sélectionner que les ressources associées au parent du dossier ou du projet. Si le parent est l'organisation, vous pouvez choisir une ressource dans l'organisation. Si le parent est un dossier, vous ne pouvez sélectionner que les ressources associées au dossier.
+Vous pouvez sélectionner des ressources associées au dossier ou au projet parent : toutes les ressources d'une organisation parent ou des ressources spécifiques à un dossier pour un dossier parent.
 
 +
 link:concept-identity-and-access-management.html#associate-resource-folder["Découvrez quand vous pouvez associer une ressource à un dossier"].
@@ -64,11 +64,11 @@ Si vous utilisez l'API BlueXP , vous devrez peut-être obtenir l'ID d'un projet
 .Étapes
 . Dans la page *Organisation*, naviguez jusqu'à un projet dans le tableau et sélectionnez image:icon-action.png["Icône représentant trois points côte à côte"]
 +
-L'ID de projet s'affiche.
+Le système affiche l'ID du projet.
 
 . Pour copier l'ID, sélectionnez le bouton Copier.
 +
-image:screenshot-iam-project-id.png["Capture d'écran de la table dossiers et projets qui montre l'ID du projet en sélectionnant le menu d'action d'un projet."]
+image:screenshot-iam-project-id.png["Capture d'écran de la table dossiers et projets qui montre l'ID du projet après avoir sélectionné le menu d'action d'un projet."]
 
 
 
@@ -124,7 +124,7 @@ image:screenshot-iam-allocated-resources.png["Capture d'écran de la page Modifi
 
 == Modifiez les ressources associées à un dossier ou à un projet
 
-Vous pouvez modifier les ressources associées à un dossier ou à un projet en associant ou en dissociant une ressource. Par exemple, vous pouvez associer une ressource à un autre projet car cette ressource a la capacité qu'une autre équipe peut utiliser. Une fois que vous avez associé une ressource à un dossier ou à un projet, les membres de l'organisation qui ont des autorisations pour ce dossier ou ce projet peuvent accéder à la ressource associée.
+Les membres disposant d’autorisations pour un dossier ou un projet peuvent accéder à ses ressources associées.
 
 .Avant de commencer
 link:concept-identity-and-access-management.html#associate-resource-folder["Découvrez quand vous pouvez associer une ressource à un dossier"].
@@ -157,9 +157,9 @@ image:screenshot-iam-member-access.png["Capture d'écran de la page Modifier le 
 
 == Modifier l'accès des membres à un dossier ou à un projet
 
-Modifiez l'accès des membres à un dossier ou à un projet pour vous assurer que les membres autorisés ont accès aux ressources associées au dossier ou au projet.
+Modifiez l’accès des membres pour garantir que les bons membres peuvent accéder aux ressources associées.
 
-Si l'accès des membres a été fourni à un niveau supérieur de la hiérarchie (au niveau du dossier ou de l'organisation), vous ne pouvez pas supprimer ou modifier l'accès des membres lors de l'affichage du dossier ou du projet de niveau inférieur. Vous devez passer à cette partie de la hiérarchie et y mettre à jour les autorisations du membre. Vous pouvez également link:task-iam-manage-roles.html#manage-permissions["Gérez les autorisations à partir de la page membres"].
+L'accès des membres fourni à un niveau hiérarchique supérieur ne peut pas être modifié à des niveaux inférieurs. Vous devez passer à cette partie de la hiérarchie et y mettre à jour les autorisations du membre. Vous pouvez également link:task-iam-manage-roles.html#manage-permissions["Gérez les autorisations à partir de la page membres"].
 
 link:concept-identity-and-access-management.html#role-inheritance["En savoir plus sur l'héritage des rôles"].
 

@@ -284,7 +284,7 @@ Une fois que vous avez mis à disposition un compte Azure avec les autorisations
 Si vous venez de créer ces identifiants dans votre fournisseur cloud, il vous faudra quelques minutes pour les utiliser. Attendez quelques minutes avant d'ajouter les informations d'identification à BlueXP.
 
 .Avant de commencer
-Vous devez créer un connecteur avant de pouvoir modifier les paramètres BlueXP. link:concept-connectors.html#how-to-create-a-connector["Apprenez à créer un connecteur"].
+Vous devez créer un connecteur avant de pouvoir modifier les paramètres BlueXP. link:concept-connectors.html#connector-installation["Apprenez à créer un connecteur"].
 
 .Étapes
 . Dans le coin supérieur droit de la console BlueXP, sélectionnez l'icône Paramètres, puis sélectionnez *informations d'identification*.
@@ -334,7 +334,7 @@ Le remplacement de l'abonnement Marketplace actuel par un nouvel abonnement modi
 
 
 .Avant de commencer
-Vous devez créer un connecteur avant de pouvoir modifier les paramètres BlueXP. link:concept-connectors.html#how-to-create-a-connector["Découvrez comment"].
+Vous devez créer un connecteur avant de pouvoir modifier les paramètres BlueXP. l link:concept-connectors.html#connector-installation["Apprenez à créer un connecteur"] .
 
 .Étapes
 . Dans le coin supérieur droit de la console BlueXP, sélectionnez l'icône Paramètres, puis sélectionnez *informations d'identification*.
