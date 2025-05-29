@@ -4,7 +4,7 @@ permalink: concept-connectors.html
 keywords: 'concept, connectors, learn about connectors, what are connectors, what is a connector, what"s a connector, days, 14 days, when is a connector required, connector supported locations, restricted mode, private mode, dark site, permissions, multiple connectors, disaster recovery' 
 summary: 'Un connecteur est un logiciel NetApp exécuté sur votre réseau cloud ou sur site. Il exécute les actions que BlueXP doit exécuter pour gérer votre infrastructure de données. Le connecteur interroge constamment la couche SaaS BlueXP afin de détecter les actions à entreprendre. Vous n"avez pas besoin d"un connecteur pour démarrer avec BlueXP, mais vous devez créer un connecteur pour déverrouiller toutes les fonctionnalités et tous les services BlueXP.' 
 ---
-= En savoir plus sur les connecteurs
+= En savoir plus sur les connecteurs BlueXP 
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -90,7 +90,7 @@ Un connecteur est nécessaire pour utiliser BlueXP en mode restreint ou privé.
 
 Les connecteurs sont un élément fondamental de l'architecture de service BlueXP. Il est de votre responsabilité de vous assurer que les connecteurs appropriés sont en place, opérationnels et accessibles à tout moment. Bien que le service soit conçu pour surmonter les courtes pannes de la disponibilité des connecteurs, vous devez prendre des mesures immédiates pour remédier aux défaillances de l'infrastructure.
 
-Cette documentation est régie par le CLUF. Si le produit n'est pas utilisé conformément à la documentation, la fonctionnalité et le fonctionnement du produit, ainsi que vos droits en vertu du CLUF, peuvent être affectés.
+Cette documentation est régie par le CLUF. Si le produit n'est pas utilisé conformément à la documentation, la fonctionnalité et le fonctionnement du produit, ainsi que vos droits en vertu du CLUF, pourraient être affectés.
 
 
 
@@ -114,7 +114,7 @@ Si vous souhaitez utiliser les services BlueXP avec Google Cloud, vous devez uti
 
 == Communication avec les fournisseurs cloud
 
-Le connecteur utilise TLS 1.2 pour toutes les communications vers AWS, Azure et Google Cloud.
+Le connecteur utilise TLS 1.3 pour toutes les communications vers AWS, Azure et Google Cloud.
 
 
 
@@ -126,9 +126,9 @@ link:concept-modes.html["Découvrez les modes de déploiement BlueXP"].
 
 
 
-== Comment créer un connecteur
+== Comment installer un connecteur
 
-Vous pouvez créer un connecteur directement à partir de BlueXP , du Marketplace de votre fournisseur de cloud ou en installant manuellement le logiciel sur votre propre hôte Linux. La manière de commencer dépend si vous utilisez BlueXP en mode standard, en mode restreint ou en mode privé.
+Vous pouvez installer un connecteur directement depuis BlueXP, depuis la place de marché de votre fournisseur de cloud ou en installant manuellement le logiciel sur votre propre hôte Linux. La manière de commencer dépend si vous utilisez BlueXP en mode standard, en mode restreint ou en mode privé.
 
 * link:concept-modes.html["Découvrez les modes de déploiement BlueXP"]
 * link:task-quick-start-standard-mode.html["Commencez à utiliser BlueXP en mode standard"]
@@ -151,7 +151,7 @@ Pour savoir comment configurer des autorisations, consultez les sections suivant
 ** link:concept-install-options-aws.html["Options d'installation des connecteurs dans AWS"]
 ** link:concept-install-options-azure.html["Options d'installation des connecteurs dans Azure"]
 ** link:concept-install-options-google.html["Options d'installation de Connector dans Google Cloud"]
-** link:task-install-connector-on-prem.html#step-4-set-up-cloud-permissions["Configurez les autorisations cloud pour les déploiements sur site"]
+** link:task-install-connector-on-prem.html#step-4-set-up-cloud-permissions["Configurer les autorisations cloud pour les déploiements sur site"]
 
 
 * link:task-prepare-restricted-mode.html#step-6-prepare-cloud-permissions["Définissez les autorisations pour le mode restreint"]
@@ -171,7 +171,7 @@ Il est de votre responsabilité de mettre à jour les stratégies de connecteur 
 
 == Mises à niveau des connecteurs
 
-Nous mettons généralement à jour le logiciel de connecteur chaque mois pour introduire de nouvelles fonctions et améliorer la stabilité. Bien que la plupart des services et fonctionnalités de la plateforme BlueXP  soient proposés via un logiciel SaaS, quelques fonctionnalités dépendent de la version du connecteur. Qui inclut la gestion Cloud Volumes ONTAP, la gestion de clusters ONTAP sur site, la configuration et l'aide.
+Nous mettons généralement à jour le logiciel de connecteur chaque mois pour introduire de nouvelles fonctions et améliorer la stabilité. Bien que la plupart des services et fonctionnalités de la plateforme BlueXP  soient proposés via un logiciel SaaS, quelques fonctionnalités dépendent de la version du connecteur. Cela inclut la gestion Cloud Volumes ONTAP, la gestion du cluster ONTAP sur site, les paramètres et l'aide.
 
 Lorsque vous utilisez BlueXP en mode standard ou restreint, le connecteur met automatiquement à jour ses logiciels vers la dernière version, tant qu'il dispose d'un accès Internet sortant pour obtenir la mise à jour logicielle. Si vous utilisez BlueXP en mode privé, vous devez mettre à niveau manuellement le connecteur.
 
@@ -201,6 +201,6 @@ Dans certains cas, vous n'avez peut-être besoin que d'un seul connecteur, mais 
 
 Voici quelques exemples :
 
-* Vous avez un environnement multicloud (AWS et Azure, par exemple) et vous préférez avoir un connecteur dans AWS et un autre dans Azure. Chacun gère les systèmes Cloud Volumes ONTAP exécutés dans ces environnements.
+* Vous disposez d'un environnement multicloud (par exemple, AWS et Azure) et vous préférez avoir un connecteur dans AWS et un autre dans Azure. Chacun gère les systèmes Cloud Volumes ONTAP exécutés dans ces environnements.
 * Un fournisseur de services peut faire appel à une organisation BlueXP  pour fournir des services à ses clients, tandis qu'une autre entreprise fournit une reprise sur incident à l'une de ses unités commerciales. Chaque organisation aurait des connecteurs distincts.
 

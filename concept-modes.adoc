@@ -166,9 +166,7 @@ Pris en charge dans les régions gouvernementales avec mode restreint. Non pris 
 | Portefeuille digital | Vous pouvez utiliser le portefeuille numérique avec les options de licence prises en charge répertoriées ci-dessous pour le mode restreint. 
 
 
-| Clusters ONTAP sur site | La découverte avec un connecteur et la découverte sans connecteur (découverte directe) sont toutes deux prises en charge.
-
-La vue avancée (System Manager) n'est pas prise en charge lorsque vous découvrez un cluster sur site avec un connecteur. 
+| Clusters ONTAP sur site | La découverte avec un connecteur et la découverte sans connecteur (découverte directe) sont toutes deux prises en charge. Lorsque vous découvrez un cluster sur site avec un connecteur, la vue avancée (Gestionnaire système) n'est pas prise en charge. 
 
 
 | La réplication | Pris en charge dans les régions gouvernementales avec mode restreint. Non pris en charge dans les régions commerciales ou les régions souveraines en mode restreint. 
@@ -251,7 +249,7 @@ Services BlueXP pris en charge dans les déploiements cloud:: BlueXP prend en ch
 La découverte sans connecteur (découverte directe) n'est pas prise en charge. 
 |===
 --
-Prise en charge des services BlueXP dans les déploiements sur site:: BlueXP prend en charge les services de stockage et de données suivants avec le mode privé lorsque le connecteur est installé sur votre site :
+Services BlueXP pris en charge dans les déploiements sur site:: BlueXP prend en charge les services de stockage et de données suivants avec le mode privé lorsque le connecteur est installé sur votre site :
 +
 --
 [cols="2*"]

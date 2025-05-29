@@ -131,7 +131,7 @@ Non, il n'est pas possible de déplacer les ressources AWS associées à votre e
 
 
 
-=== Comment fonctionnent les identifiants pour les déploiements sur site et sur le marché ?
+=== Comment fonctionnent les informations d’identification pour les déploiements sur le marché et les déploiements sur site ?
 
 Les sections ci-dessus décrivent la méthode de déploiement recommandée pour le connecteur, qui provient de BlueXP. Vous pouvez également déployer un connecteur dans AWS à partir d'AWS Marketplace et installer manuellement le logiciel Connector sur votre propre hôte Linux.
 
@@ -144,7 +144,7 @@ Pour savoir comment configurer les autorisations, reportez-vous aux pages suivan
 * Mode standard
 +
 ** link:task-install-connector-aws-marketplace.html#step-2-set-up-aws-permissions["Configurez les autorisations d'un déploiement AWS Marketplace"]
-** link:task-install-connector-on-prem.html#step-4-set-up-cloud-permissions["Configurez des autorisations pour les déploiements sur site"]
+** link:task-install-connector-on-prem.html#step-4-set-up-cloud-permissions["Configurer les autorisations pour les déploiements sur site"]
 
 
 * link:task-prepare-restricted-mode.html#step-6-prepare-cloud-permissions["Définissez les autorisations pour le mode restreint"]

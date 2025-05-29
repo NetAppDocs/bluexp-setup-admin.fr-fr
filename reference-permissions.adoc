@@ -184,7 +184,7 @@ Lorsque vous utilisez la sauvegarde et la restauration BlueXP pour sauvegarder C
 
 
 
-| Sauvegardez les clusters ONTAP sur site dans Google Cloud | Lorsque vous utilisez la sauvegarde et la restauration BlueXP pour sauvegarder des clusters ONTAP sur site, vous devez ajouter des autorisations au connecteur pour utiliser la fonctionnalité de recherche et de restauration. | https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-onprem-to-gcp.html#verify-or-add-permissions-to-the-connector["Autorisations pour la recherche et l'amplificateur ; fonctionnalité de restauration"^] 
+| Sauvegardez les clusters ONTAP sur site dans Google Cloud | Lorsque vous utilisez la sauvegarde et la récupération BlueXP pour sauvegarder des clusters ONTAP sur site, vous devez ajouter des autorisations au connecteur afin d'utiliser la fonctionnalité « Rechercher et restaurer ». | https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-onprem-to-gcp.html#verify-or-add-permissions-to-the-connector["Autorisations pour la recherche et l'amplificateur ; fonctionnalité de restauration"^] 
 |===
 
 

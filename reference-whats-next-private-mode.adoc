@@ -20,7 +20,7 @@ Pour obtenir de l'aide, reportez-vous à la documentation suivante :
 
 * https://docs.netapp.com/us-en/bluexp-ontap-onprem/index.html["Découvrez les clusters ONTAP sur site"^]
 * https://docs.netapp.com/us-en/bluexp-software-updates/index.html["Gérer les mises à jour logicielles"^]
-* https://docs.netapp.com/us-en/bluexp-classification/task-deploy-compliance-dark-site.html["Analysez les données de volumes ONTAP sur site à l'aide de la classification BlueXP"^]
+* https://docs.netapp.com/us-en/bluexp-classification/task-deploy-compliance-dark-site.html["Analyser les données de volume ONTAP sur site à l'aide de la classification BlueXP"^]
 * https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-on-prem-clusters.html["Surveillez l'utilisation des licences avec le portefeuille digital"^]
 * https://docs.netapp.com/us-en/active-iq/index.html["Consultez les informations sur l'état du stockage avec Digital Advisor"^]
 

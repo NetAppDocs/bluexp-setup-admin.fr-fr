@@ -859,7 +859,6 @@
   <block id="a5cd95b551d8bf545c63c76c6fb91786" category="paragraph">Pour les déploiements sur site, vous ne pouvez pas configurer d'identité gérée pour le connecteur, mais vous pouvez fournir des autorisations en utilisant une entité de service.</block>
   <block id="53c512e9599c71e1a585d636a5229820" category="list-text">Mode standard</block>
   <block id="4275ae61422c34253a59329bd20a0449" category="inline-link-macro">Configurez les autorisations Azure</block>
-  <block id="12f7970cff397ea2f0846f3904f8e00f" category="inline-link-macro">Configurez les autorisations cloud pour les déploiements sur site</block>
   <block id="07999df8a3fec91dcf6daa7e52777cc7" category="list-text"><block ref="07999df8a3fec91dcf6daa7e52777cc7" category="inline-link-macro-rx"></block></block>
   <block id="62bd7572081df25dd3f1f52151883c4a" category="inline-link-macro">Découvrez les modes de déploiement BlueXP</block>
   <block id="d8c1ee023ea7a4705048e3464cfcb854" category="list-text"><block ref="d8c1ee023ea7a4705048e3464cfcb854" category="inline-link-macro-rx"></block></block>
@@ -1243,7 +1242,6 @@
   <block id="025a22cb479bbf0e83048a4ae6ffaaa0" category="paragraph">Avec les deux premières options, BlueXP utilise AWS Security Token Service pour obtenir des informations d'identification temporaires qui tournent en permanence. Ce processus est la meilleure pratique--il automatique et sécurisé.</block>
   <block id="f265ab1711375ae7a7a4e8594c5e1395" category="paragraph">Si vous fournissez des clés d'accès AWS BlueXP, vous devez les mettre à jour régulièrement dans BlueXP. Il s'agit d'un processus entièrement manuel.</block>
   <block id="ccd2fd61b259ee660f0c8a22d4d70882" category="summary">Le connecteur utilise des ports entrants lorsqu'il est installé manuellement sur un hôte Linux sur site. Vous devrez peut-être vous référer à ces ports à des fins de planification.</block>
-  <block id="e3d41d6e94475edc27ad068b42448e0e" category="doc">Ports pour le connecteur sur site</block>
   <block id="5f8de67c0199ff42bf6b781ec98f1ce8" category="paragraph">Le connecteur utilise des ports _inbound_ lorsqu'il est installé manuellement sur un hôte Linux sur site. Vous devrez peut-être vous référer à ces ports à des fins de planification.</block>
   <block id="12d823193ac650eb174ac6e076ca93b8" category="paragraph">Ces règles entrantes s'appliquent à tous les modèles de déploiement BlueXP.</block>
   <block id="888a77f5ac0748b6c8001822417df8b6" category="cell">Protocole</block>
@@ -1295,7 +1293,6 @@
   <block id="83e566847d42782b3343e108150d7f57" category="section-title">Limitations du connecteur</block>
   <block id="911d15b7ac55478d2b567e8488658687" category="section-title">Conflit possible avec les adresses IP dans la plage 172</block>
   <block id="efdb2123102821583a0af000d2fa9040" category="paragraph">BlueXP déploie le connecteur avec deux interfaces qui ont des adresses IP dans les plages 172.17.0.0/16 et 172.18.0.0/16.</block>
-  <block id="5646658d58bb92ba775a6c2cd024ef17" category="paragraph">Si votre réseau dispose d'un sous-réseau configuré avec l'une ou l'autre de ces plages, il se peut que vous ayez des défaillances de connectivité de BlueXP. Par exemple, la découverte de clusters ONTAP sur site dans BlueXP peut échouer.</block>
   <block id="4195cd5f5be4f9f1f03edcb9e48c9b07" category="inline-link-macro">Conflit IP connecteur BlueXP avec le réseau existant</block>
   <block id="290b978e42f71f7d091ff656795a223e" category="paragraph">Consultez l'article de la base de connaissances <block ref="ec3dc3610ab92c8939c1af12267841a7" category="inline-link-macro-rx"></block> Pour obtenir des instructions sur la modification de l’adresse IP des interfaces du connecteur.</block>
   <block id="1bc21092e961975ea4123f4414693f69" category="section-title">Le décryptage SSL n'est pas pris en charge</block>
@@ -1366,10 +1363,7 @@
   <block id="4e46804b204e02c9bd12cc6d7232cca6" category="list-text">Vous pouvez maintenant télécharger des pièces jointes lorsque vous créez un dossier de support ou lorsque vous mettez à jour les notes de dossier pour un dossier de support existant.</block>
   <block id="72c3a2be47cc6617cea246e89af67993" category="inline-link">Découvrez comment créer et gérer des dossiers de demande de support</block>
   <block id="e076d1de7062df2857bf544f4a4aa82d" category="paragraph"><block ref="c7a2ab7c05c0b984c7e95e609cb46e34" category="inline-link-rx"></block>.</block>
-  <block id="1765dff10197df4bf080f41e5537f2a5" category="list-text">Cette version de Connector inclut également des améliorations apportées à Cloud Volumes ONTAP et des clusters ONTAP sur site.</block>
   <block id="55a6750574b4447541f67bb4e01cab9a" category="list-text"><block ref="55a6750574b4447541f67bb4e01cab9a" category="inline-link-rx"></block></block>
-  <block id="6ff2a7981cc8a7efd758e8ffec4cc69e" category="inline-link">Découvrez les améliorations apportées aux clusters sur site de ONTAP</block>
-  <block id="6ee17626d7e1b5c782c10c267de6f85c" category="list-text"><block ref="6ee17626d7e1b5c782c10c267de6f85c" category="inline-link-rx"></block></block>
   <block id="ce47c670900f3fe8347a2fc95ff710d8" category="list-text">La recherche est désormais disponible dans la console BlueXP. Vous pouvez utiliser la fonction de recherche pour trouver les services et fonctionnalités BlueXP.</block>
   <block id="da1115c120e230094c1f271ddc8b2faa" category="paragraph"><block ref="da1115c120e230094c1f271ddc8b2faa" category="inline-image-macro-rx" type="image"></block></block>
   <block id="a48a6aaa99b4cf4a4e641c293de897fa" category="inline-link">Découvrez comment gérer vos dossiers de demande de support</block>
@@ -1415,7 +1409,6 @@
   <block id="609db1dbd04bb2ee742cb4078546018c" category="list-text">Nous avons mis à jour l'URL de la console BlueXP vers<block ref="d4d03fd3c2a1ab003ebd5cf52ee8df58" category="inline-link-rx"></block></block>
   <block id="4a11791a9bd4070a9cb5e2e709d06351" category="list-text">Le connecteur est désormais pris en charge dans la région de Google Cloud Israël.</block>
   <block id="b48a790ba42e24d7c2c6394ead9c61e4" category="list-text"><block ref="b48a790ba42e24d7c2c6394ead9c61e4" category="inline-link-rx"></block></block>
-  <block id="e88218c7954191edd5ee25a2260fe7c2" category="list-text"><block ref="e88218c7954191edd5ee25a2260fe7c2" category="inline-link-rx"></block></block>
   <block id="c35e844c4a277ceb06b238910d3b86e7" category="list-text">Vos abonnements PAYGO et vos contrats annuels pour BlueXP sont désormais disponibles. Vous pouvez les consulter et les gérer depuis le portefeuille digital.</block>
   <block id="949b19dd7e9f6496c1125f7166270450" category="inline-link">Découvrez comment gérer vos abonnements</block>
   <block id="a36a7ffe5c1160531a9a2bc1012be15f" category="paragraph"><block ref="a36a7ffe5c1160531a9a2bc1012be15f" category="inline-link-rx"></block></block>
@@ -1461,7 +1454,6 @@
   <block id="fb9fefdc512037af8c4c1f84c436bd8e" category="list-text">Le connecteur est maintenant pris en charge dans la région AWS Jakarta (ap-sud-est-3).</block>
   <block id="49ed7ab586a5135eae3ee7b3aea2ae20" category="list-text">Le connecteur est maintenant pris en charge dans la région du Sud-est d'Azure Brésil.</block>
   <block id="046fc05000d85b784cc7466da1c65e32" category="list-text"><block ref="046fc05000d85b784cc7466da1c65e32" category="inline-link-rx"></block></block>
-  <block id="e9917715e557501b320f321479432f1b" category="list-text"><block ref="e9917715e557501b320f321479432f1b" category="inline-link-rx"></block></block>
   <block id="8156333613ef46e2aeaf70650af07b00" category="paragraph">Nous avons mis à jour le connecteur pour introduire des correctifs. La correction la plus notable est l'un des problèmes qui affecte le déploiement Cloud Volumes ONTAP dans Google Cloud lorsque le connecteur se trouve dans un VPC partagé.</block>
   <block id="b11df59ba05c25c3a8734d54b7501ae7" category="list-text">Delhi (asie-Sud 2)</block>
   <block id="68fb6cfeb81e52feef062b88d7037b7e" category="list-text">Melbourne (australie-southeast2)</block>
@@ -1605,8 +1597,6 @@
   <block id="fced466a309d5f02b614e19af9c50a3a" category="paragraph">Pour obtenir de l'aide, reportez-vous à la documentation suivante :</block>
   <block id="c5fbee6586294d81141f8dd158707985" category="inline-link">Découvrez les clusters ONTAP sur site</block>
   <block id="f19b6baefd30f42b716828a3ce67d843" category="list-text"><block ref="f19b6baefd30f42b716828a3ce67d843" category="inline-link-rx"></block></block>
-  <block id="36eb10a8720e9fc3cc595882ff021ccf" category="inline-link">Analysez les données de volumes ONTAP sur site à l'aide de la classification BlueXP</block>
-  <block id="eb14ba8446024f1dd902949682a561b2" category="list-text"><block ref="eb14ba8446024f1dd902949682a561b2" category="inline-link-rx"></block></block>
   <block id="2fc22405cb36e8596d9bdb7b52cbf10c" category="summary">Vous voudrez peut-être en savoir plus sur le connecteur avant de le déployer ou pour résoudre d'autres problèmes.</block>
   <block id="6e8114a6676a5923599d8d78479d23d8" category="doc">Configuration par défaut du connecteur</block>
   <block id="ebed13b527202f35f3ec91ab58b5a4c2" category="paragraph">Vous pouvez en savoir plus sur la configuration du connecteur avant de le déployer ou si vous devez résoudre des problèmes.</block>
@@ -1716,7 +1706,6 @@ ou</block>
   <block id="6a5be3e06b444aea04beccda3bc9e1d6" category="list-text">À partir de l'hôte Linux, exécutez le script de désinstallation :</block>
   <block id="0bb43692ecd0352eecc69c235e34d6f0" category="paragraph">_silent_ exécute le script sans vous demander de confirmer.</block>
   <block id="c89064bda3f1ae133a231f5b1f44c3b0" category="list-text">Depuis l'hôte Linux, exécutez les commandes suivantes :</block>
-  <block id="111374538bcb0d5c90baaab097278e39" category="doc">Configuration du réseau sur site</block>
   <block id="8efafb8ae5af62e571308cca0bdcb4f0" category="paragraph">Lorsque vous installez manuellement le connecteur sur votre propre hôte Linux, le programme d'installation du connecteur nécessite l'accès aux URL suivantes pendant le processus d'installation :</block>
   <block id="068395f3cd26ca40ad905de3790c9435" category="cell">Afin de gérer les ressources dans les régions publiques d'Azure.</block>
   <block id="232055d452a21264f8d549e50d695b18" category="cell">De gérer les ressources dans les régions Azure China.</block>
@@ -2237,8 +2226,6 @@ Notez que la page s'actualise entre le test de la connexion et l'activation de l
   <block id="dd37176246e6abf3e559086afcadce82" category="paragraph">Dans presque tous les cas, vous pouvez ajouter une licence au portefeuille numérique sans connecteur.</block>
   <block id="184e70c253a2ad370c338775e7482497" category="list-text">Découverte directe des clusters ONTAP sur site</block>
   <block id="ef67c5eab6f3bfee1596c3f8734a88c7" category="paragraph">Même si aucun connecteur n'est nécessaire pour la découverte directe d'un cluster ONTAP sur site, un connecteur est nécessaire pour tirer parti des fonctionnalités BlueXP supplémentaires.</block>
-  <block id="eec3baeb5aa60415324495790bc2f136" category="inline-link">En savoir plus sur les options de découverte et de gestion des clusters ONTAP sur site</block>
-  <block id="dc4523bb6eb17a07ae9db37489829969" category="paragraph"><block ref="dc4523bb6eb17a07ae9db37489829969" category="inline-link-rx"></block></block>
   <block id="098ba24e143dd197f509e41083f0103e" category="section-title">Lorsqu'un connecteur est nécessaire</block>
   <block id="234eb6bb27d592cbf06aa6537a33a380" category="list-text">Fonctions de gestion d'Amazon FSX pour ONTAP</block>
   <block id="d79294e72dc3584cc12c98a7a931315d" category="list-text">Le stockage Amazon S3</block>
@@ -2247,7 +2234,6 @@ Notez que la page s'actualise entre le test de la connexion et l'activation de l
   <block id="9fc1f8c97e791c3c5fa11f21f2c02740" category="list-text">Intégration de clusters ONTAP sur site avec les services de données BlueXP</block>
   <block id="ff45d71e69fb5930de79de7c94326d7b" category="list-text">Mise en cache du volume</block>
   <block id="5bf7ac4937c946ab4eedfb091ffa67ab" category="section-title">Les connecteurs doivent toujours être opérationnels</block>
-  <block id="5e546ca24430fc2b79e0e409176438c9" category="paragraph">Cette documentation est régie par le CLUF. Si le produit n'est pas utilisé conformément à la documentation, la fonctionnalité et le fonctionnement du produit, ainsi que vos droits en vertu du CLUF, peuvent être affectés.</block>
   <block id="ff0e00d64f60db5d99e55c6d706306cc" category="section-title">Emplacements pris en charge</block>
   <block id="6beccc67ff905f7da0b29dece26b0485" category="list-text">Amazon Web Services</block>
   <block id="1668ca1bd914c1d847f23b491319ac91" category="list-text">Microsoft Azure</block>
@@ -2255,7 +2241,6 @@ Notez que la page s'actualise entre le test de la connexion et l'activation de l
   <block id="695e0a47c56539eb9bcf6290d1c797d8" category="list-text">Sur site</block>
   <block id="11cac4cf4114aafe53015559291d52ce" category="paragraph">Pour utiliser BlueXP en mode restreint ou privé, vous commencez à utiliser BlueXP en installant le connecteur, puis en accédant à l'interface utilisateur qui s'exécute localement sur le connecteur.</block>
   <block id="31f2b2cbba0d986ad6ce5bec030a9de1" category="paragraph"><block ref="d8c1ee023ea7a4705048e3464cfcb854" category="inline-link-macro-rx"></block>.</block>
-  <block id="fa1f9e92f4f0aa51cba859b2dbc37a02" category="section-title">Comment créer un connecteur</block>
   <block id="d08ccf52b4cdd08e41cfb99ec42e0b29" category="section-title">Autorisations</block>
   <block id="11fde693c59aa81cdd27bb562b84f44b" category="paragraph">Des autorisations spécifiques sont nécessaires pour créer le connecteur directement à partir de BlueXP et un autre ensemble d'autorisations est nécessaire pour l'instance de connecteur elle-même. Si vous créez le connecteur dans AWS ou Azure directement à partir de BlueXP, BlueXP crée le connecteur avec les autorisations dont il a besoin.</block>
   <block id="338a6f193e9988b8f40b3128d5e4ffb7" category="inline-link-macro">Découvrez comment Connector utilise les autorisations AWS</block>
@@ -2266,7 +2251,6 @@ Notez que la page s'actualise entre le test de la connexion et l'activation de l
   <block id="e3ab4c013397e346e8f211ff03ac44b2" category="list-text"><block ref="e3ab4c013397e346e8f211ff03ac44b2" category="inline-link-macro-rx"></block></block>
   <block id="538fc0c04ce8a0ef5cf78a12dbe8f68a" category="section-title">Mises à niveau des connecteurs</block>
   <block id="2162bc1fbb13d2539c146b3472921eb5" category="paragraph"><block ref="7270aabdb0c26b6b937d76a49fcda623" category="inline-xref-macro-rx"></block>.</block>
-  <block id="aa043b4c9a6fa32b0f3811520156579a" category="list-text">Vous avez un environnement multicloud (AWS et Azure, par exemple) et vous préférez avoir un connecteur dans AWS et un autre dans Azure. Chacun gère les systèmes Cloud Volumes ONTAP exécutés dans ces environnements.</block>
   <block id="645a84975202e30700b572b49a5ee29d" category="section-title">Reprise après incident</block>
   <block id="9702ba80b5da1f1cf46d6eb4c043a20a" category="paragraph">Vous pouvez gérer un environnement de travail à l'aide de plusieurs connecteurs en même temps pour la reprise après sinistre. Si un connecteur tombe en panne, vous pouvez passer à l'autre connecteur pour gérer immédiatement l'environnement de travail.</block>
   <block id="fc08f20f6fe5ef74616fbc4c310758ef" category="list-text">Découvrir l'environnement de travail existant</block>
@@ -2442,9 +2426,6 @@ Notez que la page s'actualise entre le test de la connexion et l'activation de l
   <block id="0a44fe605745a017fde35750e5fae36a" category="paragraph">Pris en charge dans les régions gouvernementales avec mode restreint. Non pris en charge dans les régions commerciales ou les régions souveraines en mode restreint.</block>
   <block id="8adfa152daa2970174717fd5e24151b2" category="cell">Vous pouvez utiliser le portefeuille numérique avec les options de licence prises en charge répertoriées ci-dessous pour le mode restreint.</block>
   <block id="6c253a8aff5dfa835a77545b3006abc8" category="cell">Clusters ONTAP sur site</block>
-  <block id="2bd6e3220a2a60e7217c63bc76d9f73c" category="cell">La découverte avec un connecteur et la découverte sans connecteur (découverte directe) sont toutes deux prises en charge.
-
-La vue avancée (System Manager) n'est pas prise en charge lorsque vous découvrez un cluster sur site avec un connecteur.</block>
   <block id="c26e19b0ab82c81e1df83e4f6d44e6af" category="list-text">Les options de licence suivantes sont prises en charge avec le mode restreint :</block>
   <block id="b012b5d8eb383d0a82055699469c06d6" category="list-text">Abonnements aux marchés (contrats à l'heure et à l'année)</block>
   <block id="7fe4c05710aa3ce341a005ab26b2dfdf" category="list-text">Pour Cloud Volumes ONTAP, seules les licences basées sur la capacité sont prises en charge.</block>
@@ -2469,7 +2450,6 @@ La vue avancée (System Manager) n'est pas prise en charge lorsque vous découvr
   <block id="71fa0def55e8ba28f8cea8204dcaaf4f" category="cell">Requiert une connectivité du cloud (où le connecteur est installé) à l'environnement sur site.
 
 La découverte sans connecteur (découverte directe) n'est pas prise en charge.</block>
-  <block id="99f9fe7adce4b6282eee924da977b6d4" category="list-text">Prise en charge des services BlueXP dans les déploiements sur site</block>
   <block id="614a24e7adcef9d83ca4454cd4443cbd" category="list-text">BlueXP prend en charge les services de stockage et de données suivants avec le mode privé lorsque le connecteur est installé sur votre site :</block>
   <block id="53a7caecec393fdcc143318b6a21f701" category="list-text">Les seules sources de données prises en charge sont celles que vous pouvez découvrir localement.</block>
   <block id="ad85db404f0dfc2267b348299aa513b9" category="inline-link">Affichez les sources que vous pouvez découvrir localement</block>
@@ -2494,7 +2474,6 @@ La découverte sans connecteur (découverte directe) n'est pas prise en charge.<
   <block id="270fcb785810d0206945029bb05f4e97" category="cell">Amazon S3</block>
   <block id="52745271323ee9ea30e3a37d0338d118" category="cell">Blob d'Azure</block>
   <block id="833c2c211a541e50ad94433664e4b5c1" category="cell">Google Cloud Storage</block>
-  <block id="d0f1687c68ee0f0d9bac765716d18923" category="cell">Clusters ONTAP sur site</block>
   <block id="4a17f9505c41e2b9d2fdf8e21809e428" category="cell">E-Series</block>
   <block id="392d70ca39f31f10bd637936769788df" category="cell">StorageGRID</block>
   <block id="1376d64de9953f470f0708fc6e330334" category="cell">*Services*</block>
@@ -2655,7 +2634,6 @@ La découverte sans connecteur (découverte directe) n'est pas prise en charge.<
   <block id="dc5b71cece1f13a67fc01472a59d8781" category="inline-link">Autorisations pour les CMEKs</block>
   <block id="73206ed184feb2313c9f626b7f266208" category="list-text"><block ref="73206ed184feb2313c9f626b7f266208" category="inline-link-rx"></block></block>
   <block id="6e9436752850e460930666efdaf1e025" category="cell">Sauvegardez les clusters ONTAP sur site dans Google Cloud</block>
-  <block id="c37ee52df9a55f654f757f6a622c2ab8" category="cell">Lorsque vous utilisez la sauvegarde et la restauration BlueXP pour sauvegarder des clusters ONTAP sur site, vous devez ajouter des autorisations au connecteur pour utiliser la fonctionnalité de recherche et de restauration.</block>
   <block id="072b4c796b4a06820f943c41d4da3162" category="cell"><block ref="6a045f48523c0716d40c678a68c87636" category="inline-link-rx"></block></block>
   <block id="045416b62d2dbcb0a3156290bfb14bc5" category="paragraph">Au-delà de ces terminaux, vous devez également vous assurer que le connecteur dispose d'un accès Internet sortant pour contacter des terminaux spécifiques pour les opérations quotidiennes. Vous trouverez la liste de ces points d'extrémité en suivant les liens de la section suivante ci-dessous.</block>
   <block id="33afe8d49ba0b54b76d44e7f5b190b53" category="section-title">Préparez la mise en réseau pour les services BlueXP</block>
@@ -2700,7 +2678,6 @@ La découverte sans connecteur (découverte directe) n'est pas prise en charge.<
   <block id="23822bdcf5039c31a637229d8ca51ffa" category="paragraph"><block ref="23822bdcf5039c31a637229d8ca51ffa" category="inline-link-rx"></block></block>
   <block id="d00604985bd7a191952bde8a0cec39fd" category="paragraph">Notez que ce lien est également accessible depuis l'interface utilisateur BlueXP sur la page Chronologie.</block>
   <block id="23c565330e0f5d82619b18108f5a32ca" category="list-text"><block ref="23c565330e0f5d82619b18108f5a32ca" category="inline-link-rx"></block></block>
-  <block id="405527e38d3c42926031f86b50d381d4" category="list-text"><block ref="405527e38d3c42926031f86b50d381d4" category="inline-link-rx"></block></block>
   <block id="b5163cd43881e34d9478fc7e00e66e62" category="list-text">Sur la page *connexion*, vous êtes invité à saisir l'adresse e-mail associée à votre connexion. Après avoir sélectionné *Next*, BlueXP vous invite à vous authentifier à l'aide de la méthode d'authentification associée à votre connexion :</block>
   <block id="3de985fb980dfcce5f5196709e3e62ce" category="list-text">Sélectionnez *stratégies &gt; Créer une stratégie*.</block>
   <block id="d36ec2dc8acd5ade1fda1b4397ccc99a" category="list-text">Sélectionnez *JSON*.</block>
@@ -2886,7 +2863,6 @@ Vous devez également vous assurer que la stratégie est à jour lorsque de nouv
   <block id="99b431ba0bae952794b186c1e8ca969f" category="list-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block> <block ref="f4c0bdac7b3aa5cf7bf7f433238f96a2" category="inline-link-macro-rx"></block></block>
   <block id="f4426e4062930abb33465fb5b79b35dc" category="inline-link-macro">Configurez les autorisations d'un déploiement Azure Marketplace</block>
   <block id="d16dc391acdc52d611958fdd5ca48d52" category="list-text"><block ref="d16dc391acdc52d611958fdd5ca48d52" category="inline-link-macro-rx"></block></block>
-  <block id="8790c01539f52b3b7d7f0f32b6631813" category="inline-link-macro">Configurez des autorisations pour les déploiements sur site</block>
   <block id="643063b79f29bba54b69c5a3d47a8da5" category="summary">Pour créer un connecteur dans AWS à partir de BlueXP, vous devez configurer votre réseau, préparer les autorisations AWS, puis créer le connecteur.</block>
   <block id="a9b34414733cf4871ed4d1f23b7438dd" category="doc">Créez un connecteur dans AWS à partir de BlueXP</block>
   <block id="70d8bd725ea77c6a4b800edb3d5b9f5f" category="section-title">Étape 1 : configuration du réseau</block>
@@ -3086,7 +3062,6 @@ Membre: Compte de service BlueXP à partir de serviceAccount.user</block>
   <block id="0fa4c0b97cc5b7972696a2ba8c38b9c8" category="paragraph">Si plusieurs identifiants Azure appartiennent à différents abonnements Azure, ces identifiants peuvent être associés au même abonnement Azure Marketplace ou à d'autres abonnements Marketplace.</block>
   <block id="4666e56ab2715e92af8b4dbb7fc97357" category="section-title">Est-il possible de déplacer des environnements de travail Cloud Volumes ONTAP existants vers un autre abonnement Azure ?</block>
   <block id="cd0af57faab800d64dbc9b6686539495" category="paragraph">Non, il n'est pas possible de déplacer les ressources Azure associées à votre environnement de travail Cloud Volumes ONTAP vers un autre abonnement Azure.</block>
-  <block id="94db8f0d9e472465df4f4a2373f34e15" category="section-title">Comment fonctionnent les identifiants pour les déploiements sur site et sur le marché ?</block>
   <block id="459f61ebe7bde01cca8ed21d42e836ca" category="paragraph">Lorsque vous déployez un connecteur dans Google Cloud, BlueXP crée un ensemble d'informations d'identification par défaut qui sont associées à l'instance de VM Connector. Vous pouvez à tout moment modifier l'abonnement Google Cloud Marketplace associé à ces informations d'identification. L'abonnement vous permet de créer un système Cloud Volumes ONTAP avec paiement à l'utilisation et d'utiliser d'autres services BlueXP.</block>
   <block id="9e2bbef36ac6bd075f201eb1ac82fddb" category="paragraph">Le remplacement de l'abonnement Marketplace actuel par un nouvel abonnement modifie l'abonnement Marketplace pour tous les environnements de travail Cloud Volumes ONTAP existants et tous les nouveaux environnements de travail.</block>
   <block id="6f3c919771c405c0014ee0f6d72d3149" category="summary">Découvrez comment BlueXP utilise les identifiants Google Cloud pour effectuer des actions en votre nom et comment ces identifiants sont associés aux abonnements Marketplace. Ces informations peuvent vous être utiles lorsque vous gérez les identifiants d'un ou plusieurs projets Google Cloud. Par exemple, vous pourriez vouloir en savoir plus sur le compte de service associé à la VM Connector.</block>
@@ -3204,7 +3179,6 @@ Cette partie du tableau répertorie la prise en charge de la gestion de l'enviro
   <block id="6cc6d549680ee5bae0375022aa7c117c" category="paragraph">NetApp BlueXP étend et améliore les fonctionnalités fournies via Cloud Manager. BlueXP est un plan de contrôle unifié qui offre une expérience multicloud hybride pour le stockage et les services de données dans les environnements sur site et cloud.</block>
   <block id="4860911c5c67c5e04987564884e8b85e" category="list-text">D'une expérience de gestion unifiée</block>
   <block id="c3eb39b445a75ad05505fe32c6f061df" category="list-text">BlueXP vous permet de gérer l'ensemble de vos ressources de stockage et de données à partir d'une interface unique.</block>
-  <block id="a28e6578744ceeb545878235d414e497" category="paragraph">Vous pouvez utiliser BlueXP pour créer et gérer du stockage cloud (par exemple, Cloud Volumes ONTAP et Azure NetApp Files), déplacer, protéger et analyser les données, et contrôler de nombreux systèmes de stockage sur site et en périphérie.</block>
   <block id="fc8ff23d0bf81d0f8427b5c75023f80e" category="inline-link">Pour en savoir plus, consultez le site Web BlueXP</block>
   <block id="6680bbdbd7bdd3c542020121df4cb264" category="paragraph"><block ref="6680bbdbd7bdd3c542020121df4cb264" category="inline-link-rx"></block></block>
   <block id="31f0834695d820dc381e57397e466d12" category="list-text">Nouveau menu de navigation</block>
@@ -3212,7 +3186,6 @@ Cette partie du tableau répertorie la prise en charge de la gestion de l'enviro
   <block id="7cb04a79785e33be744a126127319a35" category="inline-image-macro">Capture d'écran du menu de navigation de BlueXP qui affiche des catégories telles que le stockage et l'intégrité.</block>
   <block id="68d4f3d7366b4ea59a65f0c44540e368" category="list-text">Intégrations de nouveaux produits</block>
   <block id="cf6a3994dac804af910024cf740e14ac" category="list-text">Vous pouvez désormais gérer les compartiments Amazon S3 dans les comptes AWS où le connecteur est installé.</block>
-  <block id="054332983ba253fe4573945dcdbc8109" category="list-text">Vous pouvez désormais gérer davantage de systèmes de stockage sur site, comme les baies E-Series et StorageGRID.</block>
   <block id="bcaa38b35b3f595027217ec10755368a" category="list-text">Vous pouvez désormais utiliser les services de données auparavant uniquement disponibles en tant que service autonome avec une interface utilisateur séparée, telle que BlueXP Digital Advisor (Active IQ).</block>
   <block id="d59048f21fd887ad520398ce677be586" category="list-text">En savoir plus &gt;&gt;</block>
   <block id="72098f7f145b12a125b92539edd37f4a" category="inline-link">Gestion des compartiments Amazon S3</block>
@@ -3333,7 +3306,6 @@ Cette partie du tableau répertorie la prise en charge de la gestion de l'enviro
   <block id="a51f8f17029baacb9ec578d529b96fc1" category="inline-link">En savoir plus sur la définition d'une configuration unifiée</block>
   <block id="ba6ad1a8a7ff7fed9858ae1a6056a044" category="paragraph"><block ref="ba6ad1a8a7ff7fed9858ae1a6056a044" category="inline-link-rx"></block></block>
   <block id="b4baef0a3a494382cb3865753733f031" category="list-text">Lors du Tiering vers Google Cloud Storage, vous pouvez appliquer une règle de cycle de vie afin que les données hiérarchisées puissent passer de la classe de stockage Standard au stockage Nearline, Coldline ou Archive à moindre coût après 30 jours.</block>
-  <block id="d85e79234e503ba2929218e38d0c7268" category="list-text">NetApp Cloud Tiering s'affiche désormais si vous avez des clusters ONTAP sur site non découverts et que vous pouvez les ajouter à Cloud Manager pour activer le Tiering ou d'autres services sur ces clusters.</block>
   <block id="da79c9a9c81722678ed4139ebb8929d9" category="inline-link">Découvrez ces clusters supplémentaires</block>
   <block id="b29f8ca8f9e48d5b3100564f6829e5f6" category="paragraph"><block ref="b29f8ca8f9e48d5b3100564f6829e5f6" category="inline-link-rx"></block></block>
   <block id="d63816bce1f68b3d99c6b101eb23f900" category="paragraph">Vous pouvez désormais modifier le niveau de services d'un volume de manière dynamique afin de répondre aux besoins des charges de travail et d'optimiser les coûts. Le volume est déplacé vers l'autre pool de capacité sans aucun impact sur le volume.<block ref="1c1fc3f10579c2dcdaafa6f121b73c03" category="inline-link-rx"></block></block>
@@ -3382,7 +3354,6 @@ Cette partie du tableau répertorie la prise en charge de la gestion de l'enviro
   <block id="437c802c34c0b8670d61901c4e05641e" category="inline-link-macro">En savoir plus sur le mode privé</block>
   <block id="d05ac7ff6398ff4f2b0bd26105dd1697" category="paragraph">L'emplacement d'installation du connecteur détermine les services et fonctionnalités BlueXP disponibles lorsque vous utilisez le mode privé. Par exemple, le connecteur doit être installé dans le cloud si vous souhaitez déployer et gérer Cloud Volumes ONTAP. <block ref="11a7253f43076934a5664eb6b2874efc" category="inline-link-macro-rx"></block>.</block>
   <block id="60a1a3ba0b214492b5ab5c5bd4a52eb0" category="paragraph">Si le connecteur est installé dans le cloud et que vous prévoyez de créer des systèmes Cloud Volumes ONTAP, BlueXP requiert les autorisations de votre fournisseur cloud. Vous devez définir des autorisations dans votre fournisseur de cloud, puis les associer à l'instance Connector après l'avoir installée.</block>
-  <block id="939d44d1e911e1f0f7039e74b3562137" category="list-text"><block ref="939d44d1e911e1f0f7039e74b3562137" category="inline-link-macro-rx"></block></block>
   <block id="9bf0216383a3ff083b86cdd433d2e65e" category="list-text"><block ref="9bf0216383a3ff083b86cdd433d2e65e" category="inline-link-macro-rx"></block></block>
   <block id="26553f927e14d69ad84c658048155fb4" category="summary">Si vous utilisez plusieurs connecteurs, BlueXP vous permet de basculer entre ces connecteurs directement depuis la console. Vous pouvez également gérer un seul environnement de travail avec plusieurs connecteurs.</block>
   <block id="7473cbb9b768b471bd45e7579b544a3a" category="doc">Utilisation de plusieurs connecteurs</block>
@@ -3484,9 +3455,7 @@ Cette partie du tableau répertorie la prise en charge de la gestion de l'enviro
   <block id="ae205f602e7bb700e8f3f1c9a194a3e4" category="section-title">Étape 4 : configurez les autorisations cloud</block>
   <block id="b94d9194c0f0e59de690d8a088d1601b" category="section-title">Étape 5 : installez le connecteur</block>
   <block id="d918fe97b966ce7fb324a30c883b1d7f" category="section-title">Étape 6 : configurer le connecteur</block>
-  <block id="76eda41f130889296c61f521e20a1006" category="list-text"><block ref="76eda41f130889296c61f521e20a1006" category="inline-link-macro-rx"></block></block>
   <block id="166140f584d4544702260c25a6b8eab6" category="section-title">Plusieurs environnements de travail et connecteurs</block>
-  <block id="7a5c1d5a09d9f5a762327becef29fd1a" category="list-text"><block ref="7a5c1d5a09d9f5a762327becef29fd1a" category="inline-link-macro-rx"></block></block>
   <block id="188fd7f75e50a8a882a75c15dcb630a1" category="section-title">17 mai 2024</block>
   <block id="32d1e3d3ebe78d37dbdfcf9933b0cf90" category="paragraph">Cette version de BlueXP Connector inclut la prise en charge de systèmes d'exploitation supplémentaires, des améliorations de sécurité mineures et des correctifs.</block>
   <block id="94f95548313e6f5528b5011a7d10e19f" category="paragraph">À ce stade, la version 3.9.40 est disponible pour le mode standard et le mode restreint.</block>
@@ -3808,8 +3777,6 @@ Cette partie du tableau répertorie la prise en charge de la gestion de l'enviro
   <block id="c64577fbea6506f38ae9b43ab46da844" category="paragraph">Pour tous les autres comptes ou organisations, vous devez associer manuellement l'abonnement en répétant ces étapes.</block>
   <block id="aed7c8a25120d41eacc3c97ed0b851e5" category="paragraph">Cette étape doit être effectuée pour lier l'abonnement Google Cloud à votre entreprise ou compte BlueXP . Le processus de liaison d'un abonnement n'est pas terminé tant que vous n'êtes pas redirigé à partir de cette page, puis vous connecter à BlueXP.</block>
   <block id="6c42d9d3f2de2ec585181e975309fcf0" category="section-title">Communication avec les fournisseurs cloud</block>
-  <block id="f9a30311177259db80d6ef6b5bc77f80" category="paragraph">Le connecteur utilise TLS 1.2 pour toutes les communications vers AWS, Azure et Google Cloud.</block>
-  <block id="62e253e417ca4e6f13ae9fae3d41704e" category="paragraph">Vous pouvez créer un connecteur directement à partir de BlueXP , du Marketplace de votre fournisseur de cloud ou en installant manuellement le logiciel sur votre propre hôte Linux. La manière de commencer dépend si vous utilisez BlueXP en mode standard, en mode restreint ou en mode privé.</block>
   <block id="429ef702d7e67a893ea297da8613a472" category="inline-link-macro">Apprenez à mettre à niveau manuellement le logiciel Connector lorsque vous utilisez le mode privé</block>
   <block id="1178d8df6f45ec63d153216266770ffa" category="paragraph"><block ref="8ab15d11feb9213cf5a6950e71fe0578" category="inline-link-macro-rx"></block>.</block>
   <block id="8f65178ee55c2c64ee3bef58afe9c682" category="list-text">Un fournisseur de services peut faire appel à une organisation BlueXP  pour fournir des services à ses clients, tandis qu'une autre entreprise fournit une reprise sur incident à l'une de ses unités commerciales. Chaque organisation aurait des connecteurs distincts.</block>
@@ -4087,13 +4054,10 @@ Cette partie du tableau répertorie la prise en charge de la gestion de l'enviro
   <block id="48a726f3d57687547ef8fb70fab0c713" category="list-text">Confirmez que vous souhaitez supprimer le dossier ou le projet.</block>
   <block id="0574e6792e501b2d7f486dd56c08812e" category="summary">Gérez les membres de votre organisation pour fournir des autorisations à différents niveaux de la hiérarchie des ressources de votre organisation.</block>
   <block id="4e1b8aff40899e4c95a3c48a1d8be909" category="paragraph">La gestion des identités et des accès (IAM) BlueXP  vous permet d'ajouter des membres à votre organisation et de leur attribuer un ou plusieurs rôles dans votre hiérarchie de ressources. Un _rôle_ contient un ensemble d'autorisations qui permet à un membre d'effectuer des actions spécifiques à un niveau spécifique de la hiérarchie des ressources. Vous pouvez associer de nouveaux comptes utilisateur et comptes de service, gérer les rôles des membres, etc.</block>
-  <block id="5ab22546ed60fe10595d23125ed0b721" category="admonition">Pour ne pas perdre l'accès à votre organisation BlueXP , il est recommandé d'avoir deux membres avec le rôle d'administrateur d'organisation.</block>
-  <block id="0c33a84e89f04d016e75e654ef3ce490" category="paragraph">Lorsqu'un _dossier ou un administrateur de projet affiche la page *membres*, la page affiche tous les membres de l'organisation. Cependant, un membre doté de ce rôle ne peut afficher et gérer que les autorisations des membres pour les dossiers et les projets pour lesquels ils ont des autorisations. <block ref="c691e2b9b4224ed90bb4f1f11059b372" category="inline-link-macro-rx"></block>.</block>
   <block id="e3a1bd8f43fc761424ef512d07c27a8b" category="section-title">Ajoutez des membres à votre organisation</block>
   <block id="488cf26f47d26088a59a4ac2eaef1a3e" category="paragraph">Vous pouvez ajouter deux types de membres à votre organisation : un compte d'utilisateur et un compte de service. Un compte de service est généralement utilisé par une application pour effectuer des tâches spécifiques sans intervention humaine.</block>
   <block id="2fa104cdb397e386efece8c040a2e601" category="open-title">Compte utilisateur</block>
   <block id="55116207f6aac3a1c7009f777207f1eb" category="list-text">Si l'utilisateur ne l'a pas déjà fait, demandez-lui d'aller à<block ref="2fbfa33fd647f6f78a572269d50d0708" category="inline-link-rx"></block> et de s'inscrire.</block>
-  <block id="f535d18baa302d9949025f9cdeb6dae8" category="paragraph">Lorsque l'utilisateur s'inscrit, il doit remplir la page *s'inscrire*, vérifier son adresse e-mail, puis se connecter. Lorsque l'utilisateur est invité à créer une organisation, il doit fermer BlueXP  et vous informer qu'il a créé son compte utilisateur. Vous pouvez ensuite ajouter l'utilisateur à votre organisation BlueXP  existante.</block>
   <block id="a03a7a8bd694ce33c9c0c2cfdb88ceeb" category="inline-link-macro">Découvrez comment vous inscrire à BlueXP </block>
   <block id="cf2da96b6ab9e2a236b955bf0f10d6cf" category="paragraph"><block ref="0ad6f11c6cde9791902ac82d37c3487c" category="inline-link-macro-rx"></block>.</block>
   <block id="ea06d0aa9a6946f5aa264a3c85890998" category="list-text">Sélectionnez *membres*.</block>
@@ -4105,14 +4069,11 @@ Cette partie du tableau répertorie la prise en charge de la gestion de l'enviro
   <block id="6a4cc2830754c534e4d4ede0d53dd765" category="list-text">Vous ne pouvez sélectionner que les dossiers et les projets pour lesquels vous disposez des autorisations d'administration.</block>
   <block id="78693d86cfd1ee5b776ba655fad718c2" category="list-text">Si vous sélectionnez l'organisation ou un dossier, le membre aura des autorisations sur tout ce qui réside dans l'organisation ou le dossier.</block>
   <block id="4361a448252604e85e36e94b87d2292d" category="list-text">Si vous avez sélectionné un dossier ou un projet, vous pouvez choisir un rôle autre que *Organization admin*.</block>
-  <block id="2c83e58d75bb3a8e196e882a13fad2b6" category="paragraph">L'utilisateur doit recevoir un e-mail de NetApp BlueXP . L'e-mail contient des informations que le membre peut utiliser pour accéder à BlueXP .</block>
   <block id="18ceb42f6a360de22895a255078e9829" category="open-title">Compte de service</block>
   <block id="3cf18c3e40a1206110812c369cc39dee" category="list-text">*Type d'entité* : sélectionnez *compte de service*.</block>
   <block id="79cb42be7b748ee1bfa8b8bda6dcca1e" category="list-text">*Nom du compte de service* : saisissez un nom pour le compte de service.</block>
   <block id="f67f980ba471dba7c5f95c824dd43bf6" category="list-text">Téléchargez ou copiez l'ID client et le secret client.</block>
-  <block id="8294c35652607973fb1c045f68ed7198" category="paragraph">Le secret client n'est visible qu'une seule fois et n'est pas stocké n'importe où par BlueXP. Copiez ou téléchargez le secret et rangez-le en toute sécurité. Notez que vous pouvez recréer l'ID client et le secret client ultérieurement, si nécessaire.</block>
   <block id="043819e1bae944c0c66cfa39d92d377a" category="section-title">Afficher les membres de l'organisation</block>
-  <block id="ac926c3351f3a5bf1296ce5e7341b403" category="paragraph">Les membres de votre organisation apparaissent dans le tableau *membres*.</block>
   <block id="9c537de44875b062f96c3c19b5d405f8" category="list-text">Sur la page *membres*, naviguez jusqu'à un membre dans la table, sélectionnez<block ref="c9c50c6d591d91ccce1ee232fa490fb4" category="inline-image-macro-rx" type="image"></block>, puis cliquez sur *Afficher les détails*.</block>
   <block id="c2a2a4211749f24853726e3f3a3f7a50" category="inline-link-macro">Afficher tous les membres associés à un dossier ou à un projet spécifique</block>
   <block id="1b6d4c30361c139d898bdf90eabbe5db" category="paragraph"><block ref="f0a4010d1241fe1a26982be23d0ea714" category="inline-link-macro-rx"></block>.</block>
@@ -4124,12 +4085,9 @@ Cette partie du tableau répertorie la prise en charge de la gestion de l'enviro
   <block id="46008f3c0187ee8bc97921f4799f037a" category="list-text">Si vous souhaitez que le membre ait des autorisations sur une autre partie de la hiérarchie de ressources, vous devez d'abord ajouter ce rôle, puis supprimer le rôle existant.</block>
   <block id="a55ecc4bf928da93f86f41bb1fa482cc" category="inline-image-macro">Icône d'une poubelle</block>
   <block id="a657b530c9804722859fcb4792bf4466" category="section-title">Recréez les informations d'identification d'un compte de service</block>
-  <block id="4e62056c599bc8dfbb5e6f1f5a707256" category="paragraph">Vous pouvez recréer à tout moment les informations d'identification (ID client et secret client) d'un compte de service. Vous pouvez recréer les informations d'identification si vous les avez perdues ou si votre entreprise exige que vous permutiez les informations d'identification de sécurité après un certain temps.</block>
-  <block id="0bf91f2741972566e7b71facbe211ab9" category="paragraph">La recréation des informations d'identification supprime les informations d'identification existantes pour le compte de service, puis crée de nouvelles informations d'identification. Vous ne pourrez pas utiliser les informations d'identification précédentes.</block>
   <block id="bb0f4333667b84217bd737a0e3fc6024" category="list-text">Dans le tableau *Members*, naviguez jusqu'à un compte de service, sélectionnez<block ref="c9c50c6d591d91ccce1ee232fa490fb4" category="inline-image-macro-rx" type="image"></block>, puis cliquez sur *recréer les secrets*.</block>
   <block id="8de213850e1e3dc79a14014382d25163" category="list-text">Sélectionnez *recréer*.</block>
   <block id="4137654b2b560bb6af478553cbc120b2" category="section-title">Supprimer un membre de votre organisation</block>
-  <block id="05dc5a4527f82cde43f14fa38fb2640e" category="paragraph">Vous devrez peut-être supprimer un membre de votre organisation, par exemple s'il a quitté votre entreprise.</block>
   <block id="0479745abf593369ddbda5e8df849e57" category="list-text">Sur la page *membres*, naviguez jusqu'à un membre de la table, sélectionnez<block ref="c9c50c6d591d91ccce1ee232fa490fb4" category="inline-image-macro-rx" type="image"></block>, puis sélectionnez *Supprimer utilisateur*.</block>
   <block id="6e49938f1c5b86ad879eeaf086442b08" category="list-text">Confirmez que vous souhaitez supprimer le membre de votre organisation.</block>
   <block id="2fe6c9d572351b2d4e0b387a62bdf1e2" category="summary">Gérez la hiérarchie des ressources de votre organisation en associant des ressources à des projets et dossiers spécifiques.</block>
@@ -4416,12 +4374,10 @@ Cette partie du tableau répertorie la prise en charge de la gestion de l'enviro
   <block id="2b86317cf346d1bf47abc8c04df6f353" category="list-text">Catalogue d'automatisation BlueXP</block>
   <block id="5d880ed9e8bc81eec72f5edb5332637d" category="list-text">Utilisez des solutions basées sur des scripts pour automatiser le déploiement et l'intégration des produits et services NetApp.</block>
   <block id="ede1cce9f240fed5ecc4264bd699cee1" category="list-text">Sauvegarde et restauration BlueXP</block>
-  <block id="a3460dd01b0f0c32632246bf209e730f" category="list-text">Sauvegardez et restaurez des données dans le cloud et sur site.</block>
   <block id="2090f2d846793f153b9266c648b079ef" category="list-text">Gérez la confidentialité de vos données applicatives et de vos environnements cloud.</block>
   <block id="7c3a23f387fffbae2b30f2fdcf4eb3e3" category="list-text">OPS cloud BlueXP</block>
   <block id="a17d9dd4943af64ba04db4529621baf0" category="list-text">Gagnez en visibilité sur vos dépenses de cloud computing et identifiez les économies potentielles.</block>
   <block id="9b4b22e819a51a3523fc811f5d93370a" category="list-text">Copie et synchronisation BlueXP</block>
-  <block id="9f47c7f98e6626074067a711fc1863ea" category="list-text">Synchronisez les données entre des datastores sur site et dans le cloud.</block>
   <block id="046d76eda0c1ca3ef0dc85e15394ce90" category="list-text">Conseiller digital BlueXP</block>
   <block id="6f46f51af0fa796b3853885705907e6f" category="list-text">Optimisez votre infrastructure de données grâce aux analyses prédictives et au support proactif.</block>
   <block id="7b432de78427e2c7ffdddf3f0a09ce52" category="list-text">Portefeuille digital BlueXP</block>
@@ -4441,7 +4397,6 @@ Cette partie du tableau répertorie la prise en charge de la gestion de l'enviro
   <block id="0519e7e082ac907bdeb4ef1c92c001ad" category="list-text">Tableau de bord BlueXP Sustainability</block>
   <block id="b6ec628f73e9b33a6ae94b2c3ef2879b" category="list-text">Analysez la durabilité de vos systèmes de stockage.</block>
   <block id="078be6a9f1dfaaea5e7153ff9ec78760" category="list-text">Tiering BlueXP</block>
-  <block id="c6844dc3fe4e51f03d9c9209b1f58fc4" category="list-text">Étendez votre stockage ONTAP sur site au cloud.</block>
   <block id="5f63db6bf0512dc0612ee852c1faf373" category="list-text">Mise en cache du volume BlueXP</block>
   <block id="d0e71bba7a9d538f008b05b19274bfe1" category="list-text">Créez un volume de cache inscriptible pour accélérer l'accès aux données ou décharger le trafic des volumes fortement sollicités.</block>
   <block id="428b0b39be2352757edeb5f9f12a7bdd" category="list-text">Usine de workloads BlueXP</block>
@@ -4547,12 +4502,9 @@ Cette partie du tableau répertorie la prise en charge de la gestion de l'enviro
   <block id="f713962a8902c207873eb4046423a1bd" category="cell">Associer des ressources à des dossiers et des projets</block>
   <block id="9c671793f6e87d755268257623fd8ca3" category="paragraph">Pour gérer les utilisateurs et leurs autorisations, vous devez avoir l'un des rôles suivants :</block>
   <block id="e315fd1b95b71681931eeb8955a37b50" category="paragraph">Les utilisateurs disposant de ce rôle peuvent gérer tous les membres</block>
-  <block id="c51c480c437b7c47a9f2adb67928e089" category="paragraph">Les utilisateurs disposant de ce rôle peuvent gérer uniquement les membres d'un dossier ou d'un projet désigné</block>
-  <block id="a5aee08a089c901f8eb42f2d09ad05cd" category="paragraph">Vous pouvez ajouter un compte de service directement depuis BlueXP . Toutefois, les utilisateurs doivent d'abord s'inscrire au compte BlueXP  avant de pouvoir l'ajouter à une organisation ou d'attribuer un rôle.</block>
   <block id="e882dcb285b727741daef45bc38e2d7b" category="paragraph">Pour gérer les utilisateurs et leurs autorisations, vous devez avoir le rôle *Organization admin* ou le rôle *Folder ou Project admin*. N'oubliez pas que les utilisateurs dotés du rôle *Folder ou Project admin* ne peuvent gérer que les membres du dossier ou des projets dont ils disposent d'autorisations d'administration.</block>
   <block id="516abd045e4dfab41688be05ed0e24b2" category="list-text">*Sélectionnez une catégorie*, puis sélectionnez un *rôle* qui fournit au membre les autorisations pour les ressources associées à l'organisation, au dossier ou au projet que vous avez sélectionné.</block>
   <block id="5fe83be1c3cd8b5af9b7f3c7fae6d1ad" category="list-text">*Ajouter un rôle* : si vous souhaitez donner accès à des dossiers ou projets supplémentaires au sein de votre organisation ou accorder à l'utilisateur d'autres autorisations dans la zone sélectionnée, sélectionnez *Ajouter un rôle*, spécifiez un autre dossier ou projet ou une autre catégorie de rôle, puis choisissez un rôle.</block>
-  <block id="58f4b315c1bb5704a3e82ffd26d7c1a8" category="paragraph">La suppression d'un membre de votre entreprise ne supprime pas le compte BlueXP  ou le compte sur le site de support NetApp du membre. Il supprime simplement le membre et les autorisations qui lui sont associées de votre organisation.</block>
   <block id="34025ad60edecbf8612a359edaca8684" category="section-title">Afficher les rôles attribués à un membre</block>
   <block id="c46547e3019dfd55748629f99ac2f49c" category="list-text">Sélectionnez un *rôle* : choisissez un rôle qui fournit au membre des autorisations pour les ressources associées à l'organisation, au dossier ou au projet que vous avez sélectionné.</block>
   <block id="068135177d9d1843118236d5f10dc5b7" category="section-title">Modifier le rôle attribué à un membre</block>
@@ -4861,7 +4813,6 @@ Cette partie du tableau répertorie la prise en charge de la gestion de l'enviro
   <block id="dd42f0ca79b192af5e1f5734b490f194" category="paragraph">Les connecteurs sont un élément fondamental de l'architecture de service BlueXP. Il est de votre responsabilité de vous assurer que les connecteurs appropriés sont en place, opérationnels et accessibles à tout moment. Bien que le service soit conçu pour surmonter les courtes pannes de la disponibilité des connecteurs, vous devez prendre des mesures immédiates pour remédier aux défaillances de l'infrastructure.</block>
   <block id="a92005953b68970af3654f93b3a572c1" category="paragraph">Un connecteur est pris en charge aux emplacements suivants :</block>
   <block id="c6c3b56410517700ef27e6cfa0cae38d" category="paragraph">Un connecteur dans Azure doit être déployé dans la même région Azure que les systèmes Cloud Volumes ONTAP qu'il gère, ou dans le<block ref="71e0e9a7366955554f0600c5ea8cfc7f" category="inline-link-rx"></block> pour les systèmes Cloud Volumes ONTAP. Cette exigence garantit qu'une connexion Azure Private Link est utilisée entre Cloud Volumes ONTAP et les comptes de stockage associés.<block ref="ebdf8919a4d90c512f0e43f5b0739281" category="inline-link-rx"></block></block>
-  <block id="be6236f35c24aae3ee086b3f6ec01213" category="paragraph">Nous mettons généralement à jour le logiciel de connecteur chaque mois pour introduire de nouvelles fonctions et améliorer la stabilité. Bien que la plupart des services et fonctionnalités de la plateforme BlueXP  soient proposés via un logiciel SaaS, quelques fonctionnalités dépendent de la version du connecteur. Qui inclut la gestion Cloud Volumes ONTAP, la gestion de clusters ONTAP sur site, la configuration et l'aide.</block>
   <block id="4102d173f8e2253a011fe9286a6db2a3" category="paragraph">Un connecteur peut gérer plusieurs environnements de travail dans BlueXP. Le nombre maximum d'environnements de travail qu'un seul connecteur doit gérer varie. Cela dépend du type d'environnements de travail, du nombre de volumes, de la capacité gérée et du nombre d'utilisateurs.</block>
   <block id="63e8317d7c5806dc1cb56752525c4d52" category="paragraph">Si vous disposez d'un déploiement à grande échelle, contactez votre représentant NetApp pour dimensionner votre environnement. Si vous rencontrez des problèmes pendant le trajet, contactez-nous en utilisant le chat produit.</block>
   <block id="18d5aadda239c924412f84368e73290b" category="paragraph">Dans certains cas, vous n'avez peut-être besoin que d'un seul connecteur, mais vous pourriez avoir besoin de deux connecteurs ou plus.</block>
@@ -5135,4 +5086,51 @@ Cette partie du tableau répertorie la prise en charge de la gestion de l'enviro
   <block id="12815307393fa19648b391d49b4282e4" category="section-title">Ajouter un rôle d'accès à un membre</block>
   <block id="e1c2f7c4dfacd1ec651c2d8a7b88a182" category="paragraph">En général, vous attribuez un rôle au membre lorsque vous l'ajoutez à votre organisation. Cependant, vous pouvez mettre à jour le rôle d'un membre à tout moment, soit en supprimant un rôle, soit en ajoutant un rôle différent. Vous pouvez supprimer l'accès d'un utilisateur à un projet en supprimant son rôle.</block>
   <block id="7654fe6ca44295ba5f844fc9798f0103" category="sidebar">Rôles de stockage</block>
+  <block id="b317bc8015ab38ad52bce34c9ef3ed4f" category="section-title">Comment fonctionnent les informations d’identification pour les déploiements sur le marché et les déploiements sur site ?</block>
+  <block id="56e4e843754027d4bb0539f8e0c4faea" category="inline-link-macro">Configurer les autorisations pour les déploiements sur site</block>
+  <block id="3d0af4236ade79fa9ba92e57deb0baaa" category="list-text"><block ref="3d0af4236ade79fa9ba92e57deb0baaa" category="inline-link-macro-rx"></block></block>
+  <block id="9b049adb8a41cc7a0f049e9ffbda62b5" category="inline-link">En savoir plus sur les options de découverte et de gestion des clusters ONTAP sur site</block>
+  <block id="6a9bba218e71d2777929e42afb6991ea" category="paragraph"><block ref="6a9bba218e71d2777929e42afb6991ea" category="inline-link-rx"></block></block>
+  <block id="f8a0b666073e2361543027ae29d21758" category="paragraph">Cette documentation est régie par le CLUF. Si le produit n'est pas utilisé conformément à la documentation, la fonctionnalité et le fonctionnement du produit, ainsi que vos droits en vertu du CLUF, pourraient être affectés.</block>
+  <block id="df3adb56314efbe583d898e1faf75d5b" category="paragraph">Le connecteur utilise TLS 1.3 pour toutes les communications vers AWS, Azure et Google Cloud.</block>
+  <block id="ebe9346393421eaeddb4b80d87a1e3e3" category="section-title">Comment installer un connecteur</block>
+  <block id="06f256a533d5a20ddffc37beb9565bc4" category="paragraph">Vous pouvez installer un connecteur directement depuis BlueXP, depuis la place de marché de votre fournisseur de cloud ou en installant manuellement le logiciel sur votre propre hôte Linux. La manière de commencer dépend si vous utilisez BlueXP en mode standard, en mode restreint ou en mode privé.</block>
+  <block id="57d93d5e81bafd40970707a32bf098e7" category="inline-link-macro">Configurer les autorisations cloud pour les déploiements sur site</block>
+  <block id="12368f54b2e6a4e2dd993defc6b725e9" category="list-text"><block ref="12368f54b2e6a4e2dd993defc6b725e9" category="inline-link-macro-rx"></block></block>
+  <block id="cccc2b687799dea05d000964281fe94d" category="paragraph">Nous mettons généralement à jour le logiciel de connecteur chaque mois pour introduire de nouvelles fonctions et améliorer la stabilité. Bien que la plupart des services et fonctionnalités de la plateforme BlueXP  soient proposés via un logiciel SaaS, quelques fonctionnalités dépendent de la version du connecteur. Cela inclut la gestion Cloud Volumes ONTAP, la gestion du cluster ONTAP sur site, les paramètres et l'aide.</block>
+  <block id="df2b2e3ed2e29dcb18914cf19445462e" category="list-text">Vous disposez d'un environnement multicloud (par exemple, AWS et Azure) et vous préférez avoir un connecteur dans AWS et un autre dans Azure. Chacun gère les systèmes Cloud Volumes ONTAP exécutés dans ces environnements.</block>
+  <block id="303dd9be0eeb1860776aa43ceeb3e470" category="cell">La découverte avec un connecteur et la découverte sans connecteur (découverte directe) sont toutes deux prises en charge. Lorsque vous découvrez un cluster sur site avec un connecteur, la vue avancée (Gestionnaire système) n'est pas prise en charge.</block>
+  <block id="4487b7b02fe57e6e8bdfe54c2ad74d34" category="list-text">Services BlueXP pris en charge dans les déploiements sur site</block>
+  <block id="caf4a30b20a11e01cd72ece077ed9e50" category="cell">Clusters ONTAP sur site</block>
+  <block id="0912b43cc7311cb2cc7bce5ac8b068fe" category="list-text">Sauvegardez et restaurez les données dans le cloud et sur site.</block>
+  <block id="ce77730dd6dbc743a3b153b41918d0fc" category="list-text">Synchronisez les données entre les magasins de données sur site et dans le cloud.</block>
+  <block id="0bc1c35cddc206d6a1870748d6b782d8" category="list-text">Étendez votre stockage ONTAP sur site au cloud.</block>
+  <block id="a849a8a45d50681fc0b30ac28b4d11e1" category="paragraph">Si votre réseau dispose d'un sous-réseau configuré avec l'une ou l'autre de ces plages, il se peut que vous ayez des défaillances de connectivité de BlueXP. Par exemple, la découverte de clusters ONTAP sur site dans BlueXP peut échouer.</block>
+  <block id="f35e114f48c5f22c2fe8ecda03690d52" category="inline-link-macro">Configurer un réseau sur site</block>
+  <block id="0de6919a4162aaaea1163fcece2a0a16" category="list-text"><block ref="0de6919a4162aaaea1163fcece2a0a16" category="inline-link-macro-rx"></block></block>
+  <block id="508ef8cc04a12b92629c3959ece8d473" category="cell">Lorsque vous utilisez la sauvegarde et la récupération BlueXP pour sauvegarder des clusters ONTAP sur site, vous devez ajouter des autorisations au connecteur afin d'utiliser la fonctionnalité « Rechercher et restaurer ».</block>
+  <block id="0b7a047195bdd655b80be504a06e7bbe" category="doc">Ports pour le connecteur sur site</block>
+  <block id="e6929928a5493903d213002ab8ecbfe4" category="inline-link">Analyser les données de volume ONTAP sur site à l'aide de la classification BlueXP</block>
+  <block id="4599c08645d7102b295f6f73ef9fe891" category="list-text"><block ref="4599c08645d7102b295f6f73ef9fe891" category="inline-link-rx"></block></block>
+  <block id="7a38f6c0fc484a193bd9b10fd9107151" category="paragraph">Suggestion : CONSEIL : assurez-vous que deux membres disposent du rôle d’administrateur de l’organisation pour éviter de perdre l’accès à votre organisation BlueXP.</block>
+  <block id="f2822d5dedda5be93d6f6e298458878b" category="paragraph">Les utilisateurs dotés de ce rôle peuvent gérer uniquement les membres d'un dossier ou d'un projet désigné</block>
+  <block id="822c446995ebe71a6c753c700e7dd2b0" category="paragraph">Vous pouvez ajouter un compte de service directement depuis BlueXP . Les utilisateurs doivent créer un compte BlueXP avant d’être ajoutés à une organisation ou de se voir attribuer un rôle.</block>
+  <block id="d0dc99396b7d861a7866a8e109f9b1c6" category="paragraph">Après l'inscription, les utilisateurs remplissent la page *Inscription*, vérifient leur courrier électronique et se connectent. S'ils sont invités à créer une organisation, ils doivent fermer BlueXP et vous informer de la création de leur compte. Vous pouvez ensuite ajouter l'utilisateur à votre organisation BlueXP  existante.</block>
+  <block id="08a2395e6fbea42394d928f53df9f3e7" category="paragraph">L'utilisateur reçoit un e-mail de NetApp BlueXP contenant les informations que les membres utilisent pour accéder à BlueXP.</block>
+  <block id="00407d7a171d24d8741b64c4670528bc" category="paragraph">lueXP affiche le secret du client une seule fois et ne le stocke pas. Copiez ou téléchargez le secret et rangez-le en toute sécurité. Notez que vous pouvez recréer l'ID client et le secret client ultérieurement, si nécessaire.</block>
+  <block id="981e68aebbf5499db66d9a2b0c273b16" category="paragraph">Le tableau *Membres* affiche les membres de votre organisation.</block>
+  <block id="e4cb5729a397d486706aec2c33ce4ea6" category="paragraph">Vous devrez peut-être supprimer un membre de votre organisation, par exemple s'il quitte votre entreprise.</block>
+  <block id="a8b5ca2eacd6c76f00fb50a8de358707" category="paragraph">La suppression d'un membre révoque ses autorisations mais conserve ses comptes BlueXP et NetApp Support Site.</block>
+  <block id="9db713593f37da13d4833a36d120ccfd" category="paragraph">Créez de nouvelles informations d'identification en cas de perte ou lorsque la mise à jour des informations d'identification de sécurité est nécessaire.</block>
+  <block id="52f5be4f784cf685f0ad8a80aedf6b64" category="paragraph">La recréation des informations d'identification supprime les informations d'identification existantes pour le compte de service, puis crée de nouvelles informations d'identification. Vous ne pouvez pas utiliser les informations d'identification précédentes.</block>
+  <block id="81bce7de713bcaf7549f55a3a0969660" category="paragraph">BlueXP affiche le secret du client une seule fois et ne le stocke nulle part. Copiez ou téléchargez le secret et rangez-le en toute sécurité.</block>
+  <block id="78ce04965d900b7ef35dfc2218778225" category="list-text">Cette version du connecteur inclut également des améliorations de Cloud Volumes ONTAP et des améliorations du cluster ONTAP sur site.</block>
+  <block id="797ea56826da2367a2d9d995e3baa7ce" category="inline-link">En savoir plus sur les améliorations apportées au cluster sur site ONTAP</block>
+  <block id="6b5f698f33fda7e21ffb6353943e1348" category="list-text"><block ref="6b5f698f33fda7e21ffb6353943e1348" category="inline-link-rx"></block></block>
+  <block id="ffdf38e49e65f18329f7f8e5beb3abaf" category="list-text"><block ref="ffdf38e49e65f18329f7f8e5beb3abaf" category="inline-link-rx"></block></block>
+  <block id="09798dd0fb4ac612714839b6f2723d58" category="list-text"><block ref="09798dd0fb4ac612714839b6f2723d58" category="inline-link-rx"></block></block>
+  <block id="2b514d363c7b672f94e04264ce6b6266" category="paragraph">Vous pouvez utiliser BlueXP pour créer et administrer le stockage cloud (par exemple, Cloud Volumes ONTAP et Azure NetApp Files), pour déplacer, protéger et analyser des données, et pour contrôler de nombreux périphériques de stockage sur site et en périphérie.</block>
+  <block id="ab244aa8ea93b8114e0cc9009af3f81b" category="list-text">Vous pouvez désormais gérer davantage de systèmes de stockage sur site, tels que E-Series et StorageGRID.</block>
+  <block id="036d3952a98988224205b6f039be487f" category="list-text"><block ref="036d3952a98988224205b6f039be487f" category="inline-link-rx"></block></block>
+  <block id="6a3405f47013290acf99c18684c84269" category="list-text">Cloud Tiering s'affiche désormais si vous disposez de clusters ONTAP sur site non découverts afin que vous puissiez les ajouter à Cloud Manager pour activer la hiérarchisation ou d'autres services sur ces clusters.</block>
 </blocks>

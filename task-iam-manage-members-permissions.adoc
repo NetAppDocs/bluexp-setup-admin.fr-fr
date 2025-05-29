@@ -16,8 +16,7 @@ summary: Gérez les membres de votre organisation pour fournir des autorisations
 [role="lead"]
 La gestion des identités et des accès (IAM) BlueXP  vous permet d'ajouter des membres à votre organisation et de leur attribuer un ou plusieurs rôles dans votre hiérarchie de ressources. Un _rôle_ contient un ensemble d'autorisations qui permet à un membre d'effectuer des actions spécifiques à un niveau spécifique de la hiérarchie des ressources. Vous pouvez associer de nouveaux comptes utilisateur et comptes de service, gérer les rôles des membres, etc.
 
-
-TIP: Pour ne pas perdre l'accès à votre organisation BlueXP , il est recommandé d'avoir deux membres avec le rôle d'administrateur d'organisation.
+Suggestion : CONSEIL : assurez-vous que deux membres disposent du rôle d’administrateur de l’organisation pour éviter de perdre l’accès à votre organisation BlueXP.
 
 Pour gérer les utilisateurs et leurs autorisations, vous devez avoir l'un des rôles suivants :
 
@@ -27,11 +26,11 @@ Les utilisateurs disposant de ce rôle peuvent gérer tous les membres
 
 * Administrateur de dossiers ou de projets
 +
-Les utilisateurs disposant de ce rôle peuvent gérer uniquement les membres d'un dossier ou d'un projet désigné
+Les utilisateurs dotés de ce rôle peuvent gérer uniquement les membres d'un dossier ou d'un projet désigné
 
++
+ _Folder or project admin_ can view all members on the *Members* page but manage permissions only for folders and projects they have access to. link:reference-iam-predefined-roles.html[Learn more about the actions that a _Folder or project admin_ can complete].
 
-
-Lorsqu'un _dossier ou un administrateur de projet affiche la page *membres*, la page affiche tous les membres de l'organisation. Cependant, un membre doté de ce rôle ne peut afficher et gérer que les autorisations des membres pour les dossiers et les projets pour lesquels ils ont des autorisations. link:reference-iam-predefined-roles.html["En savoir plus sur les actions qu'un _dossier ou un administrateur de projet_ peut effectuer"].
 
 
 
@@ -39,7 +38,7 @@ Lorsqu'un _dossier ou un administrateur de projet affiche la page *membres*, la 
 
 Vous pouvez ajouter deux types de membres à votre organisation : un compte d'utilisateur et un compte de service. Un compte de service est généralement utilisé par une application pour effectuer des tâches spécifiques sans intervention humaine.
 
-Vous pouvez ajouter un compte de service directement depuis BlueXP . Toutefois, les utilisateurs doivent d'abord s'inscrire au compte BlueXP  avant de pouvoir l'ajouter à une organisation ou d'attribuer un rôle.
+Vous pouvez ajouter un compte de service directement depuis BlueXP . Les utilisateurs doivent créer un compte BlueXP avant d’être ajoutés à une organisation ou de se voir attribuer un rôle.
 
 Pour gérer les utilisateurs et leurs autorisations, vous devez avoir le rôle *Organization admin* ou le rôle *Folder ou Project admin*. N'oubliez pas que les utilisateurs dotés du rôle *Folder ou Project admin* ne peuvent gérer que les membres du dossier ou des projets dont ils disposent d'autorisations d'administration.
 
@@ -50,7 +49,7 @@ Pour gérer les utilisateurs et leurs autorisations, vous devez avoir le rôle *
 .Étapes
 . Si l'utilisateur ne l'a pas déjà fait, demandez-lui d'aller à https://bluexp.netapp.com/["Site Web NetApp BlueXP"^] et de s'inscrire.
 +
-Lorsque l'utilisateur s'inscrit, il doit remplir la page *s'inscrire*, vérifier son adresse e-mail, puis se connecter. Lorsque l'utilisateur est invité à créer une organisation, il doit fermer BlueXP  et vous informer qu'il a créé son compte utilisateur. Vous pouvez ensuite ajouter l'utilisateur à votre organisation BlueXP  existante.
+Après l'inscription, les utilisateurs remplissent la page *Inscription*, vérifient leur courrier électronique et se connectent. S'ils sont invités à créer une organisation, ils doivent fermer BlueXP et vous informer de la création de leur compte. Vous pouvez ensuite ajouter l'utilisateur à votre organisation BlueXP  existante.
 
 +
 link:task-sign-up-saas.html["Découvrez comment vous inscrire à BlueXP "].
@@ -84,7 +83,7 @@ link:reference-iam-predefined-roles.html["En savoir plus sur les rôles d'accès
 
 . Sélectionnez *Ajouter*.
 +
-L'utilisateur doit recevoir un e-mail de NetApp BlueXP . L'e-mail contient des informations que le membre peut utiliser pour accéder à BlueXP .
+L'utilisateur reçoit un e-mail de NetApp BlueXP contenant les informations que les membres utilisent pour accéder à BlueXP.
 
 
 
@@ -121,7 +120,7 @@ link:reference-iam-predefined-roles.html["En savoir plus sur les rôles IAM pré
 
 . Téléchargez ou copiez l'ID client et le secret client.
 +
-Le secret client n'est visible qu'une seule fois et n'est pas stocké n'importe où par BlueXP. Copiez ou téléchargez le secret et rangez-le en toute sécurité. Notez que vous pouvez recréer l'ID client et le secret client ultérieurement, si nécessaire.
+lueXP affiche le secret du client une seule fois et ne le stocke pas. Copiez ou téléchargez le secret et rangez-le en toute sécurité. Notez que vous pouvez recréer l'ID client et le secret client ultérieurement, si nécessaire.
 
 . Sélectionnez *Fermer*.
 
@@ -140,7 +139,7 @@ Vous pouvez afficher à la fois les comptes d'utilisateur et les comptes de serv
 . Dans le coin supérieur droit de la console BlueXP , sélectionnez image:icon-settings-option.png["L'icône des paramètres qui s'affiche en haut à droite de la console Web BlueXP ."] > *gestion des identités et des accès*.
 . Sélectionnez *membres*.
 +
-Les membres de votre organisation apparaissent dans le tableau *membres*.
+Le tableau *Membres* affiche les membres de votre organisation.
 
 . Sur la page *membres*, naviguez jusqu'à un membre dans la table, sélectionnezimage:icon-action.png["Icône représentant trois points côte à côte"], puis cliquez sur *Afficher les détails*.
 
@@ -149,9 +148,9 @@ Les membres de votre organisation apparaissent dans le tableau *membres*.
 
 === Supprimer un membre de votre organisation
 
-Vous devrez peut-être supprimer un membre de votre organisation, par exemple s'il a quitté votre entreprise.
+Vous devrez peut-être supprimer un membre de votre organisation, par exemple s'il quitte votre entreprise.
 
-La suppression d'un membre de votre entreprise ne supprime pas le compte BlueXP  ou le compte sur le site de support NetApp du membre. Il supprime simplement le membre et les autorisations qui lui sont associées de votre organisation.
+La suppression d'un membre révoque ses autorisations mais conserve ses comptes BlueXP et NetApp Support Site.
 
 .Étapes
 . Sur la page *membres*, naviguez jusqu'à un membre de la table, sélectionnezimage:icon-action.png["Icône représentant trois points côte à côte"], puis sélectionnez *Supprimer utilisateur*.
@@ -162,10 +161,10 @@ La suppression d'un membre de votre entreprise ne supprime pas le compte BlueXP�
 
 === Recréez les informations d'identification d'un compte de service
 
-Vous pouvez recréer à tout moment les informations d'identification (ID client et secret client) d'un compte de service. Vous pouvez recréer les informations d'identification si vous les avez perdues ou si votre entreprise exige que vous permutiez les informations d'identification de sécurité après un certain temps.
+Créez de nouvelles informations d'identification en cas de perte ou lorsque la mise à jour des informations d'identification de sécurité est nécessaire.
 
 .Description de la tâche
-La recréation des informations d'identification supprime les informations d'identification existantes pour le compte de service, puis crée de nouvelles informations d'identification. Vous ne pourrez pas utiliser les informations d'identification précédentes.
+La recréation des informations d'identification supprime les informations d'identification existantes pour le compte de service, puis crée de nouvelles informations d'identification. Vous ne pouvez pas utiliser les informations d'identification précédentes.
 
 .Étapes
 . Dans le coin supérieur droit de la console BlueXP , sélectionnez image:icon-settings-option.png["L'icône des paramètres qui s'affiche en haut à droite de la console Web BlueXP ."] > *gestion des identités et des accès*.
@@ -174,7 +173,7 @@ La recréation des informations d'identification supprime les informations d'ide
 . Sélectionnez *recréer*.
 . Téléchargez ou copiez l'ID client et le secret client.
 +
-Le secret client n'est visible qu'une seule fois et n'est pas stocké n'importe où par BlueXP. Copiez ou téléchargez le secret et rangez-le en toute sécurité.
+BlueXP affiche le secret du client une seule fois et ne le stocke nulle part. Copiez ou téléchargez le secret et rangez-le en toute sécurité.
 
 
 

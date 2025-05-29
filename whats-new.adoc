@@ -1216,10 +1216,10 @@ https://docs.netapp.com/us-en/bluexp-automation/audit/overview.html["En savoir p
 +
 Notez que ce lien est également accessible depuis l'interface utilisateur BlueXP sur la page Chronologie.
 
-* Cette version de Connector inclut également des améliorations apportées à Cloud Volumes ONTAP et des clusters ONTAP sur site.
+* Cette version du connecteur inclut également des améliorations de Cloud Volumes ONTAP et des améliorations du cluster ONTAP sur site.
 +
 ** https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html#30-july-2023["Découvrez les améliorations apportées à Cloud Volumes ONTAP"^]
-** https://docs.netapp.com/us-en/bluexp-ontap-onprem/whats-new.html#30-july-2023["Découvrez les améliorations apportées aux clusters sur site de ONTAP"^]
+** https://docs.netapp.com/us-en/bluexp-ontap-onprem/whats-new.html#30-july-2023["En savoir plus sur les améliorations apportées au cluster sur site ONTAP"^]
 
 
 
@@ -1381,10 +1381,10 @@ https://docs.netapp.com/us-en/bluexp-setup-admin/task-manage-user-credentials.ht
 +
 https://docs.netapp.com/us-en/bluexp-setup-admin/task-get-help.html#manage-your-support-cases["Découvrez comment créer et gérer des dossiers de demande de support"].
 
-* Cette version de Connector inclut également des améliorations apportées à Cloud Volumes ONTAP et des clusters ONTAP sur site.
+* Cette version du connecteur inclut également des améliorations de Cloud Volumes ONTAP et des améliorations du cluster ONTAP sur site.
 +
 ** https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html#3-april-2023["Découvrez les améliorations apportées à Cloud Volumes ONTAP"^]
-** https://docs.netapp.com/us-en/bluexp-ontap-onprem/whats-new.html#3-april-2023["Découvrez les améliorations apportées aux clusters sur site de ONTAP"^]
+** https://docs.netapp.com/us-en/bluexp-ontap-onprem/whats-new.html#3-april-2023["En savoir plus sur les améliorations apportées au cluster sur site ONTAP"^]
 
 
 
@@ -1498,10 +1498,10 @@ https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html#1-januar
 
 * Nous avons mis à jour l'URL de la console BlueXP vers https://console.bluexp.netapp.com[]
 * Le connecteur est désormais pris en charge dans la région de Google Cloud Israël.
-* Cette version de Connector inclut également des améliorations apportées à Cloud Volumes ONTAP et des clusters ONTAP sur site.
+* Cette version du connecteur inclut également des améliorations de Cloud Volumes ONTAP et des améliorations du cluster ONTAP sur site.
 +
 ** https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html#4-december-2022["Découvrez les améliorations apportées à Cloud Volumes ONTAP"^]
-** https://docs.netapp.com/us-en/bluexp-ontap-onprem/whats-new.html#4-december-2022["Découvrez les améliorations apportées aux clusters sur site de ONTAP"^]
+** https://docs.netapp.com/us-en/bluexp-ontap-onprem/whats-new.html#4-december-2022["En savoir plus sur les améliorations apportées au cluster sur site ONTAP"^]
 
 
 
@@ -1537,7 +1537,7 @@ NetApp BlueXP étend et améliore les fonctionnalités fournies via Cloud Manage
 D'une expérience de gestion unifiée:: BlueXP vous permet de gérer l'ensemble de vos ressources de stockage et de données à partir d'une interface unique.
 +
 --
-Vous pouvez utiliser BlueXP pour créer et gérer du stockage cloud (par exemple, Cloud Volumes ONTAP et Azure NetApp Files), déplacer, protéger et analyser les données, et contrôler de nombreux systèmes de stockage sur site et en périphérie.
+Vous pouvez utiliser BlueXP pour créer et administrer le stockage cloud (par exemple, Cloud Volumes ONTAP et Azure NetApp Files), pour déplacer, protéger et analyser des données, et pour contrôler de nombreux périphériques de stockage sur site et en périphérie.
 
 https://bluexp.netapp.com["Pour en savoir plus, consultez le site Web BlueXP"^]
 
@@ -1552,7 +1552,7 @@ Intégrations de nouveaux produits::
 +
 --
 * Vous pouvez désormais gérer les compartiments Amazon S3 dans les comptes AWS où le connecteur est installé.
-* Vous pouvez désormais gérer davantage de systèmes de stockage sur site, comme les baies E-Series et StorageGRID.
+* Vous pouvez désormais gérer davantage de systèmes de stockage sur site, tels que E-Series et StorageGRID.
 * Vous pouvez désormais utiliser les services de données auparavant uniquement disponibles en tant que service autonome avec une interface utilisateur séparée, telle que BlueXP Digital Advisor (Active IQ).
 
 
@@ -1696,10 +1696,10 @@ NOTE: Les identifiants de connexion existants qui utilisent une adresse e-mail e
 
 * Le connecteur est maintenant pris en charge dans la région AWS Jakarta (ap-sud-est-3).
 * Le connecteur est maintenant pris en charge dans la région du Sud-est d'Azure Brésil.
-* Cette version de Connector inclut également des améliorations apportées à Cloud Volumes ONTAP et des clusters ONTAP sur site.
+* Cette version du connecteur inclut également des améliorations de Cloud Volumes ONTAP et des améliorations du cluster ONTAP sur site.
 +
 ** https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html#7-june-2022["Découvrez les améliorations apportées à Cloud Volumes ONTAP"^]
-** https://docs.netapp.com/us-en/bluexp-ontap-onprem/whats-new.html#7-june-2022["Découvrez les améliorations apportées aux clusters sur site de ONTAP"^]
+** https://docs.netapp.com/us-en/bluexp-ontap-onprem/whats-new.html#7-june-2022["En savoir plus sur les améliorations apportées au cluster sur site ONTAP"^]
 
 
 
@@ -2046,7 +2046,7 @@ https://docs.netapp.com/us-en/bluexp-copy-sync/task-managing-data-brokers.html#s
 === Améliorations de NetApp Cloud Tiering
 
 * Lors du Tiering vers Google Cloud Storage, vous pouvez appliquer une règle de cycle de vie afin que les données hiérarchisées puissent passer de la classe de stockage Standard au stockage Nearline, Coldline ou Archive à moindre coût après 30 jours.
-* NetApp Cloud Tiering s'affiche désormais si vous avez des clusters ONTAP sur site non découverts et que vous pouvez les ajouter à Cloud Manager pour activer le Tiering ou d'autres services sur ces clusters.
+* Cloud Tiering s'affiche désormais si vous disposez de clusters ONTAP sur site non découverts afin que vous puissiez les ajouter à Cloud Manager pour activer la hiérarchisation ou d'autres services sur ces clusters.
 +
 https://docs.netapp.com/us-en/bluexp-tiering/task-managing-tiering.html#discovering-additional-clusters-from-bluexp-tiering["Découvrez ces clusters supplémentaires"^]
 
