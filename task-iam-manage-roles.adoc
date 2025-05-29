@@ -14,16 +14,16 @@ summary: 'La gestion des identités et des accès de BlueXP  vous permet de rep
 
 
 [role="lead"]
-BlueXP  vous permet d'attribuer des rôles aux utilisateurs en fonction de ce qu'ils doivent faire et de l'emplacement.
+Dans BlueXP, vous pouvez attribuer des rôles aux utilisateurs en fonction de ce qu'ils doivent faire et où.
 
-Les utilisateurs ayant les rôles d'administrateur d'organisation ou d'administrateur de dossier ou de projet ont la responsabilité d'attribuer des rôles à d'autres utilisateurs. Vous pouvez attribuer des rôles d'accès sur la base d'un projet ou d'un dossier. Par exemple, vous pouvez attribuer à un utilisateur le rôle d'administrateur de protection contre les ransomwares pour un projet et le rôle d'administrateur SnapCenter pour un autre projet. Sinon, si un utilisateur a besoin du rôle d'administrateur Classification pour tous les projets d'un dossier spécifique, vous pouvez lui accorder ce rôle d'accès au niveau du dossier.
+Les utilisateurs disposant du rôle *Administrateur d'organisation* ou *Administrateur de dossier ou de projet* ont la responsabilité d'attribuer des rôles à d'autres utilisateurs. Vous pouvez attribuer des rôles d'accès sur la base d'un projet ou d'un dossier. Par exemple, vous pouvez attribuer à un utilisateur le rôle d'administrateur de protection contre les ransomwares pour un projet et le rôle d'administrateur SnapCenter pour un autre projet. Sinon, si un utilisateur a besoin du rôle d'administrateur Classification pour tous les projets d'un dossier spécifique, vous pouvez lui accorder ce rôle d'accès au niveau du dossier.
 
 Utilisez les rôles d'accès pour attribuer un accès aux ressources de stockage en fonction des tâches BlueXP  spécifiques que les utilisateurs doivent effectuer. Par exemple, si un utilisateur BlueXP  doit interagir avec des services de protection contre les ransomwares, il doit lui attribuer un rôle d'accès qui inclut des autorisations de visualisation ou d'administration pour le service de protection contre les ransomwares du projet pour lequel le rôle d'accès est attribué.
 
 Attribuez des rôles aux utilisateurs en fonction de votre stratégie IAM pour plus de sécurité. Les rôles IAM de BlueXP  permettent de s'assurer que les utilisateurs n'ont accès qu'à ce dont ils ont besoin.
 
 
-NOTE: N'oubliez pas que vous ne pouvez pas accorder directement des ressources. Les ressources doivent d'abord être affectées aux projets. Pensez à configurer votre hiérarchie de ressources avant d'affecter l'accès des utilisateurs. link:task-iam-manage-folders-projects.html["Découvrez comment organiser vos ressources dans BlueXP  IAM avec dossiers et projets."]
+NOTE: N'oubliez pas que vous ne pouvez pas accorder directement l'accès aux ressources. Les ressources doivent d'abord être affectées aux projets. Pensez à configurer votre hiérarchie de ressources avant d'affecter l'accès des utilisateurs. link:task-iam-manage-folders-projects.html["Découvrez comment organiser vos ressources dans BlueXP  IAM avec dossiers et projets."]
 
 
 
@@ -41,7 +41,7 @@ Si vous avez le rôle _dossier ou admin_projet, la page affiche tous les membres
 
 == Ajouter un rôle d'accès à un membre
 
-En général, vous attribuez un rôle au membre lorsque vous l'ajoutez à votre organisation. Cependant, vous pouvez mettre à jour le rôle d'un membre à tout moment en supprimant un rôle ou en ajoutant un rôle différent. Vous pouvez supprimer l'accès d'un utilisateur à un projet en supprimant son rôle.
+En général, vous attribuez un rôle au membre lorsque vous l'ajoutez à votre organisation. Cependant, vous pouvez mettre à jour le rôle d'un membre à tout moment, soit en supprimant un rôle, soit en ajoutant un rôle différent. Vous pouvez supprimer l'accès d'un utilisateur à un projet en supprimant son rôle.
 
 Vous pouvez attribuer à un utilisateur un rôle d'accès à votre organisation, dossier ou projet.
 

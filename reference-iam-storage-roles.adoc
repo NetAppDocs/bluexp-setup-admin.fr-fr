@@ -16,6 +16,9 @@ summary: La gestion des identités et des accès BlueXP  fournit deux rôles ad
 [role="lead"]
 Vous pouvez attribuer les rôles suivants aux utilisateurs pour leur permettre d'accéder aux fonctionnalités de gestion du stockage dans BlueXP  associées aux ressources de stockage prises en charge. Les utilisateurs peuvent se voir attribuer un rôle administratif qui leur permet de prendre des mesures en matière de gestion du stockage ou un rôle de visualiseur s'ils ont simplement des responsabilités de surveillance.
 
+
+NOTE: Ces rôles ne sont pas disponibles à partir de l’API de partenariat BlueXP.
+
 Des rôles de stockage peuvent être attribués aux utilisateurs pour les ressources et fonctionnalités de stockage suivantes :
 
 Ressources de stockage :

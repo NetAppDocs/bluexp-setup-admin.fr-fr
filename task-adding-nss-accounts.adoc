@@ -4,7 +4,7 @@ permalink: task-adding-nss-accounts.html
 keywords: adding, creating, netapp support site account, nss, update account, update nss account, update nss credentials, delete nss account, remove nss account, change working environment, working environment nss, digital wallet, license 
 summary: 'Associez un compte du site de support NetApp à votre organisation ou à votre compte BlueXP  pour activer les workflows clés pour Cloud Volumes ONTAP. Ces informations d"identification NSS sont associées à l"ensemble de l"organisation ou du compte BlueXP .' 
 ---
-= Gérer les informations d'identification NSS associées à witgit BlueXP 
+= Gérer les informations d'identification NSS associées à BlueXP
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

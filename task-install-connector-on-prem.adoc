@@ -137,11 +137,14 @@ Selon votre système d'exploitation, Podman ou Docker Engine est requis avant d'
 --
 Procédez comme suit pour installer Podman et le configurer pour répondre aux exigences suivantes :
 
-* Le service podman.socket doit être activé et démarré
-* python3 doit être installé
-* Le package podman-compose version 1.0.6 doit être installé
-* Podman-compose doit être ajouté à la variable d'environnement PATH
+* Activer et démarrer le service podman.socket
+* Installez le python3
+* Installer le package podman-compose version 1.0.6
+* Ajoutez podman-compose à la variable d'environnement PATH
 
+
+
+NOTE: Lors de l'utilisation de Podman, ajustez le port du service aardvark-dns (par défaut : 53) après l'installation du connecteur afin d'éviter tout conflit avec le port DNS de l'hôte. Suivez les instructions pour configurer le port.
 
 .Étapes
 . Retirez le package podman-docker s'il est installé sur l'hôte.
@@ -721,6 +724,27 @@ Par exemple :
 
 +
 --cacert spécifie un certificat signé par une autorité de certification à utiliser pour l'accès HTTPS entre le connecteur et le serveur proxy. Ce paramètre est requis uniquement si vous spécifiez un serveur proxy HTTPS ou si le proxy est un proxy interceptant.
+
+. Si vous avez utilisé Podman, vous devrez ajuster le port aardvark-dns.
++
+.. Connectez-vous en SSH à la machine virtuelle BlueXP Connector.
+.. Ouvrez le fichier podman _/usr/share/containers/containers.conf_ et modifiez le port choisi pour le service DNS Aardvark. Par exemple, définissez-le sur 54.
++
+[source, cli]
+----
+vi /usr/share/containers/containers.conf
+...
+# Port to use for dns forwarding daemon with netavark in rootful bridge
+# mode and dns enabled.
+# Using an alternate port might be useful if other DNS services should
+# run on the machine.
+#
+dns_bind_port = 54
+...
+Esc:wq
+----
+.. Redémarrez la machine virtuelle Connector.
+
 
 
 
