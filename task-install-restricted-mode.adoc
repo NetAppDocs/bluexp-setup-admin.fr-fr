@@ -14,7 +14,7 @@ summary: 'Déployez le connecteur en mode restreint pour utiliser BlueXP avec un
 
 
 [role="lead"]
-Déployez le connecteur en mode restreint de sorte à utiliser BlueXP  avec une connectivité sortante limitée vers la couche SaaS (logiciel en tant que service) BlueXP . Pour commencer, installez le connecteur, configurez BlueXP en accédant à l'interface utilisateur exécutée sur le connecteur, puis fournissez les autorisations cloud que vous avez précédemment configurées.
+Déployez le connecteur en mode restreint afin de pouvoir utiliser BlueXP avec une connectivité sortante limitée. Pour commencer, installez le connecteur, configurez BlueXP en accédant à l'interface utilisateur exécutée sur le connecteur, puis fournissez les autorisations cloud que vous avez précédemment configurées.
 
 
 

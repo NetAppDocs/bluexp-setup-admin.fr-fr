@@ -59,7 +59,7 @@ image:diagram-iam-resource-hierarchy.png["Diagramme conceptuel qui montre la hi�
 
 Une _organisation_ est le premier niveau du système IAM de BlueXP  et représente généralement votre entreprise. Votre organisation se compose de dossiers, de projets, de membres, de rôles et de ressources. Les connecteurs sont associés à des projets spécifiques dans l'organisation.
 
-Lorsque vous vous inscrivez à BlueXP , vous êtes invité à créer une nouvelle organisation.
+BlueXP vous invite à créer une nouvelle organisation lorsque vous vous inscrivez.
 
 
 
@@ -108,7 +108,7 @@ L'administrateur _Organisation_ peut associer une ressource au dossier :
 
 image:diagram-iam-resource-association-folder-2.png["Diagramme qui montre un dossier, une ressource associée au dossier et deux projets qui résident dans le dossier : projet A et projet B."]
 
-L'association de la ressource au dossier ne rend pas automatiquement cette ressource accessible à partir de tous les projets du dossier. Mais le _dossier ou l'administrateur de projet_ peut alors décider des projets pour lesquels cette ressource doit être mise à disposition. Après avoir pris cette décision, l'administrateur peut ensuite associer la ressource aux projets appropriés.
+Associer une ressource à un dossier ne la rend pas automatiquement accessible à tous les projets du dossier. L'administrateur du dossier ou du projet décide quels projets peuvent accéder à la ressource. Après avoir pris cette décision, l'administrateur peut ensuite associer la ressource aux projets appropriés.
 
 Dans cet exemple, l'administrateur associe la ressource au projet A :
 
@@ -144,14 +144,14 @@ Lorsque vous associez un membre à un rôle, vous devez sélectionner l'ensemble
 
 Lorsque vous attribuez un rôle, celui-ci est hérité dans la hiérarchie de l'organisation :
 
-Entreprise:: Les rôles que vous accordez au niveau de l'organisation sont hérités par tous les dossiers, projets et ressources de l'organisation. Cela signifie que le membre a des autorisations sur tout dans l'organisation.
-Dossiers:: Les rôles que vous accordez au niveau du dossier sont hérités par tous les dossiers, projets et ressources du dossier.
+Entreprise:: Lorsque vous accordez à un membre des rôles d’accès au niveau de l’organisation, tous les dossiers, projets et ressources de l’organisation héritent de ces rôles. Cela signifie que le membre a des autorisations sur tout dans l'organisation.
+Dossiers:: Lorsque vous accordez un rôle d’accès au niveau du dossier, tous les dossiers, projets et ressources du dossier héritent de ce rôle.
 +
 --
 Par exemple, si vous attribuez un rôle au niveau du dossier et que ce dossier a trois projets, le membre aura des autorisations sur ces trois projets et toutes les ressources associées.
 
 --
-Projets:: Les rôles que vous accordez au niveau du projet sont hérités par toutes les ressources associées à ce projet.
+Projets:: Lorsque vous accordez un rôle d’accès au niveau du projet, toutes les ressources associées à ce projet héritent de ce rôle.
 
 
 
@@ -174,12 +174,12 @@ link:reference-iam-predefined-roles.html["En savoir plus sur les rôles d'accès
 
 Lorsqu'un _administrateur d'organisation_ crée un connecteur, BlueXP  associe automatiquement ce connecteur à l'organisation et au projet actuellement sélectionné. L'administrateur _Organisation_ a automatiquement accès à ce connecteur depuis n'importe quel endroit de l'organisation. Mais si d'autres membres de votre organisation ont des rôles différents, ces membres peuvent uniquement accéder à ce connecteur à partir du projet dans lequel il a été créé, sauf si vous associez ce connecteur à d'autres projets.
 
-Vous pouvez rendre un connecteur disponible pour une utilisation avec un autre projet dans les cas suivants :
+Vous pouvez rendre un connecteur disponible pour un autre projet dans ces cas :
 
 * Vous souhaitez autoriser les membres de votre organisation à utiliser un connecteur existant pour créer ou découvrir des environnements de travail supplémentaires dans un autre projet
 * Vous avez associé une ressource existante à un autre projet et cette ressource est gérée par un connecteur
 +
-Si une ressource que vous avez associée à un projet supplémentaire est découverte à l'aide d'un connecteur BlueXP , vous devez également associer le connecteur au projet auquel la ressource est maintenant associée. Sinon, le connecteur et sa ressource associée ne sont pas accessibles à partir du canevas BlueXP  par les membres qui n'ont pas le rôle _Admin_Organisation.
+Si une ressource que vous associez à un projet supplémentaire est découverte à l'aide d'un connecteur BlueXP, vous devez également associer le connecteur au projet auquel la ressource est désormais associée. Sinon, le connecteur et sa ressource associée ne sont pas accessibles depuis le canevas BlueXP par les membres qui n'ont pas le rôle _Administrateur d'organisation_.
 
 
 

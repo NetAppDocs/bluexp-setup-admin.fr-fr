@@ -337,7 +337,7 @@ Le remplacement de l'abonnement Marketplace actuel par un nouvel abonnement modi
 Vous devez créer un connecteur avant de pouvoir modifier les paramètres BlueXP. l link:concept-connectors.html#connector-installation["Apprenez à créer un connecteur"] .
 
 .Étapes
-. Dans le coin supérieur droit de la console BlueXP, sélectionnez l'icône Paramètres, puis sélectionnez *informations d'identification*.
+. Dans le coin supérieur droit de la console, sélectionnez l’icône Paramètres, puis sélectionnez *Informations d’identification*.
 . Sélectionnez le menu d'action correspondant à un ensemble d'informations d'identification, puis sélectionnez *configurer l'abonnement*.
 +
 Vous devez sélectionner les informations d'identification associées à un connecteur. Vous ne pouvez pas associer un abonnement Marketplace aux informations d'identification associées à BlueXP.
@@ -350,7 +350,7 @@ Vous devez sélectionner les informations d'identification associées à un conn
 .. Remplissez le formulaire et sélectionnez *s'abonner*.
 .. Une fois le processus d'abonnement terminé, sélectionnez *configurer le compte maintenant*.
 +
-Vous serez redirigé vers le site Web BlueXP.
+Vous serez redirigé vers BlueXP.
 
 .. À partir de la page *attribution d'abonnement* :
 +
@@ -367,7 +367,7 @@ Pour tous les autres comptes ou organisations, vous devez associer manuellement 
 La vidéo suivante explique comment vous abonner à Azure Marketplace :
 
 +
-.Abonnez-vous à BlueXP depuis Azure Marketplace
+.Abonnez-vous aux services intelligents NetApp depuis la place de marché Azure
 video::b7e97509-2ecf-4fa0-b39b-b0510109a318[panopto]
 
 

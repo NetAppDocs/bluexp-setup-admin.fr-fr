@@ -44,7 +44,7 @@ Le tableau suivant présente une comparaison entre le calendrier et le Centre de
 
 == Vérifiez l'activité des utilisateurs à partir du calendrier BlueXP 
 
-La chronologie dans BlueXP  affiche les actions que les utilisateurs ont effectuées pour gérer votre organisation ou votre compte. Cela inclut des actions de gestion telles que l'association d'utilisateurs, la création d'environnements de travail, la création de connecteurs, etc.
+La chronologie montre les actions que les utilisateurs ont effectuées pour gérer votre organisation ou votre compte. Cela inclut des actions de gestion telles que l'association d'utilisateurs, la création d'environnements de travail, la création de connecteurs, etc.
 
 La vérification de la chronologie peut être utile si vous devez identifier qui a effectué une action spécifique ou si vous devez identifier le statut d'une action.
 
@@ -137,7 +137,7 @@ Vous pouvez envoyer par e-mail des types de notifications spécifiques afin de v
 
 [NOTE]
 ====
-* Les notifications sont envoyées par e-mail pour les fonctionnalités et services BlueXP  suivants : le connecteur, le portefeuille digital BlueXP , la copie et la synchronisation BlueXP , ainsi que la sauvegarde et la restauration BlueXP .
+* Les notifications sont envoyées par e-mail pour les fonctionnalités et services suivants : le connecteur, le portefeuille numérique, la copie et la synchronisation, ainsi que la sauvegarde et la récupération.
 * L'envoi de notifications par e-mail n'est pas pris en charge lorsque le connecteur est installé sur un site sans accès à Internet.
 
 
@@ -146,7 +146,7 @@ Les filtres définis dans le Centre de notification ne déterminent pas les type
 
 Tous les autres utilisateurs et destinataires sont configurés pour ne pas recevoir d'e-mails de notification. Vous devez donc configurer les paramètres de notification pour les utilisateurs supplémentaires.
 
-Vous devez être administrateur BlueXP  pour personnaliser les paramètres de notification.
+Vous devez avoir le rôle d’administrateur d’organisation pour personnaliser les paramètres de notifications.
 
 .Étapes
 . Dans la barre de menus BlueXP, sélectionnez *Paramètres > Paramètres des alertes et des notifications*.
@@ -168,7 +168,7 @@ image:screenshot-change-notifications.png["Capture d'écran montrant comment mod
 
 === Ajoutez des destinataires supplémentaires
 
-Les utilisateurs qui apparaissent dans l'onglet _Users_ sont automatiquement renseignés à partir des utilisateurs de votre organisation ou de votre compte BlueXP . Vous pouvez ajouter des adresses e-mail dans l'onglet _destinataires supplémentaires_ pour d'autres personnes ou groupes qui n'ont pas accès à BlueXP, mais qui doivent être informés de certains types d'alertes et de notifications.
+Les utilisateurs qui apparaissent dans l'onglet _Utilisateurs_ sont renseignés automatiquement à partir des utilisateurs de votre organisation ou de votre compte. Vous pouvez ajouter des adresses e-mail dans l'onglet _destinataires supplémentaires_ pour d'autres personnes ou groupes qui n'ont pas accès à BlueXP, mais qui doivent être informés de certains types d'alertes et de notifications.
 
 .Étapes
 . Dans la page Paramètres des alertes et notifications, sélectionnez *Ajouter de nouveaux destinataires*.

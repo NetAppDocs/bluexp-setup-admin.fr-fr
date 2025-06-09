@@ -2,9 +2,9 @@
 :allow-uri-read: 
 
 
-La vidéo suivante décrit comment vous abonner à BlueXP  depuis AWS Marketplace :
+La vidéo suivante montre les étapes à suivre pour s'abonner à NetApp Intelligent Services depuis AWS Marketplace :
 
-.Abonnez-vous à BlueXP sur AWS Marketplace
+.Abonnez-vous aux services intelligents NetApp depuis la place de marché AWS
 video::096e1740-d115-44cf-8c27-b051011611eb[panopto]
 .Étapes
 . Dans le coin supérieur droit de la console BlueXP, sélectionnez l'icône Paramètres, puis sélectionnez *informations d'identification*.

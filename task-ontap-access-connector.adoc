@@ -14,10 +14,10 @@ summary: 'Les administrateurs peuvent configurer un connecteur BlueXP  pour inv
 
 
 [role="lead"]
-Par défaut, les informations d'identification du connecteur permettent aux utilisateurs BlueXP  d'accéder à la vue avancée (ONTAP System Manager). Vous pouvez configurer BlueXP  pour inviter les utilisateurs à saisir leurs informations d'identification ONTAP à la place. Les autorisations ONTAP sont ainsi appliquées lorsqu'ils travaillent avec des clusters ONTAP dans des clusters Cloud Volumes ONTAP et ONTAP sur site.
+Par défaut, les identifiants du connecteur permettent aux utilisateurs d'accéder à la vue avancée (Gestionnaire système ONTAP). Vous pouvez également demander aux utilisateurs leurs identifiants ONTAP. Les autorisations ONTAP sont ainsi appliquées lorsqu'ils travaillent avec des clusters ONTAP dans des clusters Cloud Volumes ONTAP et ONTAP sur site.
 
 
-NOTE: Pour modifier les paramètres du connecteur, vous devez disposer du rôle d'administrateur de l'organisation.
+NOTE: Vous devez disposer du rôle d’administrateur d’organisation pour modifier les paramètres du connecteur.
 
 .Étapes
 . Sélectionnez la liste déroulante *Connector* dans l'en-tête BlueXP.
@@ -25,7 +25,7 @@ NOTE: Pour modifier les paramètres du connecteur, vous devez disposer du rôle 
 . Sélectionnez le menu d'action dans la ligne correspondant au connecteur que vous souhaitez modifier.
 . Développez l'option *forcer les informations d'identification*.
 . Cochez la case pour activer l'option *forcer les informations d'identification*, puis sélectionnez *Enregistrer*.
-. Vérifiez que l'option est activée en affichant l'option *forcer les informations d'identification*.
+. Vérifiez si l'option *Forcer les informations d'identification* est activée.
 +
 image:screenshot-force-credentials-on.png["Capture d'écran montrant que les informations d'identification de force sont activées"]
 

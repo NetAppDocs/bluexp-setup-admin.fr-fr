@@ -14,7 +14,7 @@ summary: 'Ajoutez et gérez des identifiants AWS de sorte que BlueXP dispose des
 
 
 [role="lead"]
-Ajoutez et gérez des identifiants AWS de sorte que BlueXP dispose des autorisations nécessaires pour déployer et gérer des ressources cloud dans vos comptes AWS. Si vous gérez plusieurs abonnements AWS Marketplace, vous pouvez attribuer chacun d'eux à des informations d'identification AWS différentes à partir de la page d'identification.
+Ajoutez et gérez les informations d’identification AWS afin de déployer et de gérer les ressources cloud dans vos comptes AWS à partir de BlueXP. Si vous gérez plusieurs abonnements AWS Marketplace, vous pouvez attribuer chacun d'eux à des informations d'identification AWS différentes à partir de la page d'identification.
 
 
 
@@ -24,7 +24,7 @@ Vous pouvez ajouter des informations d'identification AWS à un connecteur exist
 
 * Ajoutez des identifiants AWS supplémentaires à un connecteur existant
 +
-L'ajout d'identifiants AWS à un connecteur existant offre les autorisations nécessaires pour gérer les ressources et les processus au sein de votre environnement de cloud public. <<Ajoutez des informations d'identification supplémentaires à un connecteur,Découvrez comment ajouter des identifiants AWS à un connecteur>>.
+Ajoutez les informations d’identification AWS à un connecteur pour gérer les ressources dans votre environnement cloud. <<Ajoutez des informations d'identification supplémentaires à un connecteur,Découvrez comment ajouter des identifiants AWS à un connecteur>>.
 
 * Ajoutez des informations d'identification AWS à BlueXP pour créer un connecteur
 +
@@ -32,7 +32,7 @@ L'ajout de nouvelles informations d'identification AWS à BlueXP offre à BlueXP
 
 * Ajoutez des informations d'identification AWS à BlueXP pour FSX pour ONTAP
 +
-L'ajout de nouvelles informations d'identification AWS à BlueXP offre à BlueXP les autorisations nécessaires pour créer et gérer FSX pour ONTAP. https://docs.netapp.com/us-en/bluexp-fsx-ontap/requirements/task-setting-up-permissions-fsx.html["Découvrez comment configurer des autorisations pour FSX pour ONTAP"^]
+Ajoutez de nouvelles informations d’identification AWS à BlueXP pour créer et gérer FSx pour ONTAP.  https://docs.netapp.com/us-en/bluexp-fsx-ontap/requirements/task-setting-up-permissions-fsx.html["Découvrez comment configurer des autorisations pour FSX pour ONTAP"^]
 
 
 
@@ -44,7 +44,7 @@ BlueXP vous permet de fournir des identifiants AWS de diverses manières : un r�
 
 Avec les deux premières options, BlueXP utilise AWS Security Token Service pour obtenir des informations d'identification temporaires qui tournent en permanence. Ce processus est la meilleure pratique car il est automatique et sécurisé.
 
-Si vous fournissez des clés d'accès AWS BlueXP, vous devez les mettre à jour régulièrement dans BlueXP. Il s'agit d'un processus entièrement manuel.
+Effectuez régulièrement la rotation des clés d'accès AWS en les mettant à jour dans BlueXP. Ce processus est manuel.
 
 
 
@@ -58,10 +58,10 @@ Si vous venez de commencer à utiliser BlueXP, link:concept-accounts-aws.html["D
 
 === Accorder des autorisations
 
-Avant d'ajouter des identifiants AWS à un connecteur, vous devez fournir les autorisations requises. Les autorisations permettent à BlueXP de gérer les ressources et les processus au sein de ce compte AWS. La manière dont vous fournissez les autorisations dépend du fait que vous souhaitez fournir à BlueXP l'ARN d'un rôle dans un compte de confiance ou des clés AWS.
+Fournissez les autorisations requises avant d'ajouter des informations d'identification AWS à un connecteur. Ces autorisations permettent au connecteur de gérer les ressources et les processus de ce compte AWS. Vous pouvez attribuer ces autorisations avec l'ARN d'un rôle dans un compte approuvé ou des clés AWS.
 
 
-NOTE: Si vous avez déployé un connecteur depuis BlueXP, BlueXP a automatiquement ajouté des informations d'identification AWS pour le compte dans lequel vous avez déployé le connecteur. Ce compte initial n'est pas ajouté si vous avez déployé le connecteur depuis AWS Marketplace ou si vous avez installé manuellement le logiciel Connector sur un système existant. link:concept-accounts-aws.html["En savoir plus sur les identifiants et les autorisations AWS"].
+NOTE: Si vous avez déployé un connecteur depuis BlueXP, BlueXP a automatiquement ajouté des informations d'identification AWS pour le compte dans lequel vous avez déployé le connecteur. Cela garantit que les autorisations nécessaires sont en place pour la gestion des ressources. link:concept-accounts-aws.html["En savoir plus sur les identifiants et les autorisations AWS"].
 
 *Choix*
 
@@ -126,11 +126,11 @@ Le compte dispose désormais des autorisations requises. <<add-the-credentials,V
 Une fois que vous avez passé un compte AWS avec les autorisations requises, vous pouvez ajouter les identifiants de ce compte à un connecteur existant. Cela vous permet de lancer des systèmes Cloud Volumes ONTAP dans ce compte à l'aide du même connecteur.
 
 .Avant de commencer
-Si vous venez de créer ces identifiants dans votre fournisseur cloud, il vous faudra quelques minutes pour les utiliser. Attendez quelques minutes avant d'ajouter les informations d'identification à BlueXP.
+Si vous venez de créer ces identifiants dans votre fournisseur cloud, il vous faudra quelques minutes pour les utiliser. Attendez quelques minutes, puis ajoutez les informations d'identification.
 
 .Étapes
-. Assurez-vous que le bon connecteur est actuellement sélectionné dans BlueXP.
-. Dans le coin supérieur droit de la console BlueXP, sélectionnez l'icône Paramètres, puis sélectionnez *informations d'identification*.
+. Utilisez la barre de navigation supérieure pour sélectionner le connecteur auquel vous souhaitez ajouter des informations d’identification.
+. Dans le coin supérieur droit de la console, sélectionnez l’icône Paramètres, puis sélectionnez *Informations d’identification*.
 +
 image:screenshot-settings-icon-organization.png["Capture d'écran affichant l'icône Paramètres dans le coin supérieur droit de la console BlueXP."]
 
@@ -140,7 +140,7 @@ image:screenshot-settings-icon-organization.png["Capture d'écran affichant l'ic
 .. *Définir les informations d'identification* : fournir l'ARN (Amazon Resource Name) d'un rôle IAM approuvé, ou entrer une clé d'accès AWS et une clé secrète.
 .. *Abonnement Marketplace* : associez un abonnement Marketplace à ces identifiants en vous abonnant maintenant ou en sélectionnant un abonnement existant.
 +
-Pour payer les services BlueXP à un taux horaire (PAYGO) ou dans le cadre d'un contrat annuel, les identifiants AWS doivent être associés à un abonnement AWS Marketplace.
+Pour payer les services à un tarif horaire (PAYGO) ou avec un contrat annuel, vous devez associer les informations d'identification AWS à votre abonnement AWS Marketplace.
 
 .. *Révision* : confirmez les détails des nouvelles informations d'identification et sélectionnez *Ajouter*.
 
@@ -156,7 +156,7 @@ image:screenshot_accounts_switch_aws.png["Capture d'écran affichant la sélecti
 
 == Ajoutez des informations d'identification à BlueXP pour créer un connecteur
 
-Ajoutez des informations d'identification AWS à BlueXP en fournissant l'ARN d'un rôle IAM qui donne à BlueXP les autorisations nécessaires pour créer un connecteur. Vous pouvez choisir ces informations d'identification lors de la création d'un nouveau connecteur.
+Ajoutez les informations d’identification AWS en fournissant l’ARN d’un rôle IAM qui donne les autorisations nécessaires pour créer un connecteur. Vous pouvez choisir ces informations d'identification lors de la création d'un nouveau connecteur.
 
 
 
@@ -210,9 +210,6 @@ image:screenshot-settings-icon-organization.png["Capture d'écran affichant l'ic
 
 
 
-.Résultat
-Vous pouvez maintenant utiliser les informations d'identification lors de la création d'un nouveau connecteur.
-
 
 
 == Ajoutez des identifiants à BlueXP pour Amazon FSX pour ONTAP
@@ -223,11 +220,11 @@ Pour plus de détails, reportez-vous à la https://docs.netapp.com/us-en/bluexp-
 
 == Configurez un abonnement AWS
 
-Après avoir ajouté vos identifiants AWS à BlueXP , vous pouvez configurer un abonnement AWS Marketplace avec ces identifiants. L'abonnement vous permet de payer Cloud Volumes ONTAP à un taux horaire (PAYGO) ou à l'aide d'un contrat annuel, et d'utiliser d'autres services BlueXP.
+Après avoir ajouté vos identifiants AWS, vous pouvez configurer un abonnement AWS Marketplace avec ces identifiants. Cet abonnement vous permet de payer Cloud Volumes ONTAP à l'heure (PAYGO) ou par contrat annuel, ainsi que d'autres services de données.
 
-Dans deux cas, vous pouvez configurer un abonnement AWS Marketplace après avoir déjà ajouté les informations d'identification à BlueXP  :
+Il existe deux scénarios dans lesquels vous pouvez configurer un abonnement AWS Marketplace après avoir déjà ajouté les informations d'identification :
 
-* Vous n'avez pas configuré d'abonnement lorsque vous avez ajouté les informations d'identification à BlueXP .
+* Vous n'avez pas configuré d'abonnement lorsque vous avez initialement ajouté les informations d'identification.
 * Vous souhaitez modifier l'abonnement AWS Marketplace configuré sur les identifiants AWS.
 +
 Le remplacement de l'abonnement Marketplace actuel par un nouvel abonnement modifie l'abonnement Marketplace pour tous les environnements de travail Cloud Volumes ONTAP existants et tous les nouveaux environnements de travail.
@@ -235,11 +232,11 @@ Le remplacement de l'abonnement Marketplace actuel par un nouvel abonnement modi
 
 
 .Avant de commencer
-Vous devez créer un connecteur avant de pouvoir modifier les paramètres BlueXP. link:concept-connectors.html#connector-installation["Apprenez à créer un connecteur"].
+Vous devez créer un connecteur avant de pouvoir configurer un abonnement. link:concept-connectors.html#connector-installation["Apprenez à créer un connecteur"].
 
-La vidéo suivante décrit comment vous abonner à BlueXP  depuis AWS Marketplace :
+La vidéo suivante montre les étapes à suivre pour s'abonner à NetApp Intelligent Services depuis AWS Marketplace :
 
-.Abonnez-vous à BlueXP sur AWS Marketplace
+.Abonnez-vous aux services intelligents NetApp depuis la place de marché AWS
 video::096e1740-d115-44cf-8c27-b051011611eb[panopto]
 .Étapes
 . Dans le coin supérieur droit de la console BlueXP, sélectionnez l'icône Paramètres, puis sélectionnez *informations d'identification*.
@@ -280,33 +277,33 @@ Pour tous les autres comptes ou organisations, vous devez associer manuellement 
 
 == Associer un abonnement existant à votre entreprise ou à votre compte
 
-Lorsque vous vous abonnez à BlueXP  depuis AWS Marketplace, la dernière étape du processus consiste à associer l'abonnement à vos organisations BlueXP  ou à vos comptes BlueXP  depuis le site Web BlueXP . Si vous n'avez pas terminé cette étape, vous ne pouvez pas utiliser l'abonnement avec votre organisation ou votre compte BlueXP .
+Lorsque vous vous abonnez depuis AWS Marketplace, la dernière étape du processus consiste à associer l'abonnement à votre organisation. Si vous n'avez pas effectué cette étape, vous ne pourrez pas utiliser l'abonnement avec votre organisation ou votre compte.
 
 
-TIP: Si vous utilisez BlueXP  en mode standard, vous disposez d'une organisation _BlueXP _ que vous gérez à l'aide de la gestion des identités et des accès BlueXP  (IAM). Mais si vous utilisez BlueXP  en mode restreint ou privé, vous aurez un compte _BlueXP _.
+TIP: Si vous utilisez le mode standard ou restreint, vous disposerez d'une _organisation BlueXP_, que vous gérerez à l'aide de la gestion des identités et des accès BlueXP (IAM). Mais si vous utilisez BlueXP  en mode privé, vous aurez un _compte BlueXP _.
 
 * link:concept-modes.html["Découvrez les modes de déploiement BlueXP"]
 * link:concept-identity-and-access-management.html["En savoir plus sur la gestion des identités et des accès BlueXP "]
 * link:concept-netapp-accounts.html["Découvrez les comptes BlueXP"]
 
 
-Suivez les étapes ci-dessous si vous avez souscrit à BlueXP depuis AWS Marketplace, mais que vous n'avez pas vu l'étape d'association de l'abonnement à votre compte.
+Suivez les étapes ci-dessous si vous vous êtes abonné aux services de données intelligents NetApp depuis AWS Marketplace, mais que vous avez manqué l’étape permettant d’associer l’abonnement à votre compte.
 
 .Étapes
-. Accédez au portefeuille digital BlueXP  pour confirmer que vous n'avez pas associé votre abonnement à votre organisation ou compte BlueXP .
+. Accédez au portefeuille numérique pour confirmer que vous n'avez pas associé votre abonnement à votre organisation ou compte BlueXP.
 +
-.. Dans le menu de navigation BlueXP, sélectionnez *gouvernance > porte-monnaie numérique*.
+.. Dans le menu de navigation, sélectionnez *Gouvernance > Portefeuille numérique*.
 .. Sélectionnez *abonnements*.
-.. Vérifiez que votre abonnement BlueXP n'apparaît pas.
+.. Vérifiez que votre abonnement n'apparaît pas.
 +
 Vous ne verrez que les abonnements associés à l'organisation ou au compte que vous consultez actuellement. Si vous ne voyez pas votre abonnement, procédez comme suit.
 
 
 
 . Connectez-vous à la console AWS et accédez à *abonnements AWS Marketplace*.
-. Découvrez l'abonnement NetApp BlueXP.
+. Recherchez l’abonnement NetApp Intelligent Data Services.
 +
-image:screenshot-aws-marketplace-bluexp-subscription.png["Copie d'écran d'AWS Marketplace montrant un abonnement NetApp BlueXP."]
+image:screenshot-aws-marketplace-bluexp-subscription.png["Une capture d'écran de la place de marché AWS montrant un abonnement NetApp."]
 
 . Sélectionnez *configurer le produit*.
 +
@@ -314,7 +311,7 @@ La page d'offre d'abonnement doit se charger dans un nouvel onglet ou une nouvel
 
 . Sélectionnez *configurer votre compte*.
 +
-image:screenshot-aws-marketplace-set-up-account.png["Copie d'écran d'AWS Marketplace montrant un abonnement NetApp BlueXP et l'option de configuration de votre compte qui s'affiche en haut à droite de la page."]
+image:screenshot-aws-marketplace-set-up-account.png["Une capture d'écran de la place de marché AWS montrant un abonnement NetApp et l'option Configurer votre compte qui apparaît en haut à droite de la page."]
 
 +
 La page *affectation d'abonnement* sur netapp.com doit se charger dans un nouvel onglet ou une nouvelle fenêtre du navigateur.
@@ -337,16 +334,16 @@ image:screenshot-subscription-assignment.png["Capture d'écran de la page Subscr
 
 
 
-. Accédez au portefeuille digital BlueXP  pour vérifier que l'abonnement est associé à votre entreprise ou compte BlueXP .
+. Accédez au portefeuille numérique pour confirmer que l’abonnement est associé à votre organisation ou à votre compte.
 +
-.. Dans le menu de navigation BlueXP, sélectionnez *gouvernance > porte-monnaie numérique*.
+.. Dans le menu de navigation, sélectionnez *Gouvernance > Portefeuille numérique*.
 .. Sélectionnez *abonnements*.
-.. Vérifiez que votre abonnement BlueXP s'affiche.
+.. Vérifiez que votre abonnement apparaît.
 
 
 . Vérifiez que l'abonnement est associé à vos identifiants AWS.
 +
-.. Dans le coin supérieur droit de la console BlueXP, sélectionnez l'icône Paramètres, puis sélectionnez *informations d'identification*.
+.. Dans le coin supérieur droit de la console, sélectionnez l’icône Paramètres, puis sélectionnez *Informations d’identification*.
 .. Sur la page *informations d'identification de l'organisation* ou *informations d'identification du compte*, vérifiez que l'abonnement est associé à vos informations d'identification AWS.
 +
 Voici un exemple.
@@ -362,13 +359,13 @@ image:screenshot-credentials-with-subscription.png["Capture d'écran de la page 
 
 == Modifier les informations d'identification
 
-Modifiez vos informations d'identification AWS dans BlueXP en modifiant le type de compte (clés AWS ou rôle supposons), en modifiant le nom ou en mettant à jour les informations d'identification elles-mêmes (clés ou rôle ARN).
+Modifiez vos informations d'identification AWS en modifiant le type de compte (clés AWS ou rôle d'assumé), en modifiant le nom ou en mettant à jour les informations d'identification elles-mêmes (les clés ou l'ARN du rôle).
 
 
-TIP: Vous ne pouvez pas modifier les informations d'identification d'un profil d'instance associé à une instance de connecteur.
+NOTE: Vous ne pouvez pas modifier les informations d'identification d'un profil d'instance associé à une instance de connecteur ou à une instance Amazon FSx for ONTAP.
 
 .Étapes
-. Dans le coin supérieur droit de la console BlueXP, sélectionnez l'icône Paramètres, puis sélectionnez *informations d'identification*.
+. Dans le coin supérieur droit de la console, sélectionnez l’icône Paramètres, puis sélectionnez *Informations d’identification*.
 . Sur la page *informations d'identification de l'organisation* ou *informations d'identification du compte*, sélectionnez le menu d'action correspondant à un ensemble d'informations d'identification, puis sélectionnez *Modifier les informations d'identification*.
 . Effectuez les modifications requises, puis sélectionnez *appliquer*.
 
@@ -377,13 +374,13 @@ TIP: Vous ne pouvez pas modifier les informations d'identification d'un profil d
 
 == Supprimer les informations d'identification
 
-Si vous n'avez plus besoin d'un ensemble d'informations d'identification, vous pouvez les supprimer de BlueXP. Vous ne pouvez supprimer que les informations d'identification qui ne sont pas associées à un environnement de travail.
+Si vous n’avez plus besoin d’un ensemble d’informations d’identification, vous pouvez les supprimer. Vous ne pouvez supprimer que les informations d'identification qui ne sont pas associées à un environnement de travail.
 
 
 TIP: Vous ne pouvez pas supprimer les informations d'identification d'un profil d'instance associé à une instance de connecteur.
 
 .Étapes
-. Dans le coin supérieur droit de la console BlueXP, sélectionnez l'icône Paramètres, puis sélectionnez *informations d'identification*.
+. Dans le coin supérieur droit de la console, sélectionnez l’icône Paramètres, puis sélectionnez *Informations d’identification*.
 . Sur la page *informations d'identification de l'organisation* ou *informations d'identification du compte*, sélectionnez le menu d'action correspondant à un ensemble d'informations d'identification, puis sélectionnez *Supprimer les informations d'identification*.
 . Sélectionnez *Supprimer* pour confirmer.
 

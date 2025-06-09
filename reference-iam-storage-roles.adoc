@@ -14,12 +14,12 @@ summary: La gestion des identités et des accès BlueXP  fournit deux rôles ad
 
 
 [role="lead"]
-Vous pouvez attribuer les rôles suivants aux utilisateurs pour leur permettre d'accéder aux fonctionnalités de gestion du stockage dans BlueXP  associées aux ressources de stockage prises en charge. Les utilisateurs peuvent se voir attribuer un rôle administratif qui leur permet de prendre des mesures en matière de gestion du stockage ou un rôle de visualiseur s'ils ont simplement des responsabilités de surveillance.
+Vous pouvez attribuer les rôles suivants aux utilisateurs pour leur permettre d'accéder aux fonctionnalités de gestion du stockage dans BlueXP  associées aux ressources de stockage prises en charge. Vous pouvez attribuer aux utilisateurs un rôle administratif pour gérer le stockage ou un rôle de spectateur pour la surveillance.
 
 
 NOTE: Ces rôles ne sont pas disponibles à partir de l’API de partenariat BlueXP.
 
-Des rôles de stockage peuvent être attribués aux utilisateurs pour les ressources et fonctionnalités de stockage suivantes :
+Les administrateurs peuvent attribuer des rôles de stockage aux utilisateurs pour les ressources et fonctionnalités de stockage suivantes :
 
 Ressources de stockage :
 
@@ -38,13 +38,13 @@ Services et fonctionnalités BlueXP  :
 
 
 .Exemple pour les rôles de stockage dans BlueXP 
-XYZ Corporation, une multinationale, dispose d'une grande équipe d'ingénieurs du stockage et d'administrateurs de stockage. Elles souhaitent donner à cette équipe les moyens de gérer les ressources de stockage pour leurs régions respectives, tout en limitant leur accès aux principales tâches d'administration BlueXP  telles que la gestion des utilisateurs, la création de connecteurs et les outils de gestion des coûts tels que le portefeuille digital.
+XYZ Corporation, une multinationale, dispose d'une grande équipe d'ingénieurs du stockage et d'administrateurs de stockage. Ils permettent à cette équipe de gérer les actifs de stockage pour leurs régions tout en limitant l'accès aux tâches principales de BlueXP telles que la gestion des utilisateurs, la création de connecteurs et les outils de coûts tels que le portefeuille numérique.
 
 Au sein d'une équipe de 12, deux utilisateurs reçoivent le rôle *Storage Viewer* qui leur permet de surveiller les ressources de stockage associées aux projets BlueXP  auxquels ils sont affectés. Les neuf autres rôles sont attribués à l'administrateur du stockage*, qui comprend la possibilité de gérer les mises à jour logicielles, d'accéder au Gestionnaire système ONTAP via BlueXP  et de découvrir les ressources de stockage (ajout d'environnements de travail). Une personne de l'équipe reçoit le rôle *System Health Specialist* pour gérer l'état des ressources de stockage dans sa région, mais sans modifier ni supprimer d'environnement de travail. Cette personne peut également effectuer des mises à jour logicielles sur les ressources de stockage pour les projets qui lui sont attribués.
 
 L'organisation dispose de deux utilisateurs supplémentaires avec le rôle *Organization admin* qui peuvent gérer tous les aspects de BlueXP , y compris la gestion des utilisateurs, la création de connecteurs et les outils de gestion des coûts tels que le portefeuille numérique, ainsi que plusieurs utilisateurs avec le rôle *Folder ou Project admin* qui peuvent effectuer des tâches d'administration BlueXP  pour les dossiers et les projets auxquels ils sont affectés.
 
-Le tableau suivant indique les actions que chaque rôle de stockage BlueXP  peut effectuer.
+Le tableau suivant présente les actions effectuées par chaque rôle de stockage BlueXP.
 
 [cols="40,20a,20a,20a"]
 |===

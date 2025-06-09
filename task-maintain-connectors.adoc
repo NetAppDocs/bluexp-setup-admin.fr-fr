@@ -14,7 +14,7 @@ summary: 'La maintenance du système d"exploitation sur l"hôte du connecteur re
 
 
 [role="lead"]
-La maintenance du système d'exploitation sur l'hôte du connecteur relève de votre responsabilité. Par exemple, vous devez appliquer des mises à jour de sécurité au système d'exploitation sur l'hôte du connecteur en suivant les procédures standard de votre entreprise pour la distribution du système d'exploitation.
+La maintenance du système d'exploitation sur l'hôte Connector est de votre responsabilité (en tant que client). Par exemple, vous devez appliquer les mises à jour de sécurité du système d'exploitation sur l'hôte Connector en suivant les procédures standard de votre entreprise pour la distribution des systèmes d'exploitation.
 
 
 TIP: Si vous disposez d'un connecteur existant, vous devez en être conscient link:reference-connector-operating-system-changes.html["Modifications apportées aux systèmes d'exploitation Linux pris en charge"].

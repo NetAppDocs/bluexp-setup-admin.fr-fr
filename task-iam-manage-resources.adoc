@@ -14,16 +14,16 @@ summary: Gérez la hiérarchie des ressources de votre organisation en associant
 
 
 [role="lead"]
-Lorsque vous utilisez la gestion des identités et des accès BlueXP  pour associer un membre à votre entreprise, vous fournissez des autorisations au niveau de l'organisation, du dossier ou du projet. Pour vous assurer que ces membres disposent des autorisations nécessaires pour accéder aux ressources appropriées, vous devez gérer la hiérarchie des ressources de votre organisation en associant des ressources à des projets et dossiers spécifiques. Une _ressource_ est une ressource de stockage que BlueXP  gère déjà ou connaît déjà.
+Lorsque vous associez un membre à votre organisation, vous fournissez des autorisations au niveau de l'organisation, du dossier ou du projet. Pour vous assurer que ces membres disposent des autorisations nécessaires pour accéder aux ressources appropriées, vous devez gérer la hiérarchie des ressources de votre organisation en associant des ressources à des projets et dossiers spécifiques. Une _ressource_ est une ressource de stockage que BlueXP  gère déjà ou connaît déjà.
 
 
 
 == Afficher les ressources de votre organisation
 
-Vous pouvez afficher à la fois les ressources découvertes et les ressources non découvertes associées à votre organisation. Les ressources non découvertes sont généralement des ressources de stockage connues par le biais de Digital Advisor pour lesquelles vous n'avez pas ajouté d'environnements de travail.
+Vous pouvez afficher à la fois les ressources découvertes et les ressources non découvertes associées à votre organisation. Les ressources non découvertes sont des ressources de stockage identifiées par le conseiller numérique mais non ajoutées en tant qu'environnements de travail.
 
 
-NOTE: Les ressources Amazon FSX pour NetApp ONTAP ne s'affichent pas sur la page des ressources IAM car vous ne pouvez pas les associer à un rôle IAM. Vous pouvez afficher ces ressources sur leur canevas respectif ou à partir de workloads.
+NOTE: La page des ressources IAM n'affiche pas les ressources Amazon FSx for NetApp ONTAP, car vous ne pouvez pas les associer à un rôle IAM. Vous pouvez afficher ces ressources sur leur canevas respectif ou à partir de workloads.
 
 .Étapes
 . Dans le coin supérieur droit de la console BlueXP , sélectionnez image:icon-settings-option.png["L'icône des paramètres qui s'affiche en haut à droite de la console Web BlueXP ."] > *gestion des identités et des accès*.
@@ -44,7 +44,7 @@ NOTE: Les ressources Amazon FSX pour NetApp ONTAP ne s'affichent pas sur la page
 
 == Associer une ressource à des dossiers et des projets
 
-Si vous souhaitez rendre une ressource disponible au dossier ou au projet dans votre organisation, vous devez créer une association entre le dossier ou le projet et la ressource.
+Pour rendre une ressource disponible pour un dossier ou un projet, associez la ressource au dossier ou au projet.
 
 .Avant de commencer
 Vous devez comprendre le fonctionnement de l'association de ressources. link:concept-identity-and-access-management.html#resources["Découvrez les ressources, notamment quand associer une ressource à un dossier"].
@@ -93,7 +93,7 @@ NOTE: Si vous devez déterminer quels membres de l'organisation ont accès à la
 
 == Supprimer une ressource d'un dossier ou d'un projet
 
-Pour supprimer une ressource d'un dossier ou d'un projet, vous devez supprimer l'association entre le dossier ou le projet et la ressource. Une fois l'association supprimée, les membres de l'organisation ne peuvent plus gérer la ressource à partir du dossier ou du projet.
+Pour supprimer une ressource d'un dossier ou d'un projet, vous devez supprimer l'association entre le dossier ou le projet et la ressource. La suppression de l’association empêche les membres de l’organisation de gérer la ressource dans le dossier ou le projet.
 
 
 NOTE: Si vous souhaitez supprimer une ressource découverte de toute l'organisation, vous devez supprimer l'environnement de travail du canevas BlueXP .

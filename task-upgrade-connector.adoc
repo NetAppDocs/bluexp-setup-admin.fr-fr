@@ -14,7 +14,7 @@ summary: 'BlueXP met automatiquement à niveau un connecteur vers la dernière v
 
 
 [role="lead"]
-Lorsque vous utilisez BlueXP  en mode standard ou restreint, BlueXP  met automatiquement à niveau votre connecteur vers la dernière version, tant que le connecteur dispose d'un accès Internet sortant pour obtenir la mise à jour logicielle. Si vous devez gérer manuellement lorsque le connecteur est mis à niveau, vous pouvez désactiver les mises à niveau automatiques pour le mode standard ou le mode restreint.
+Lorsque vous utilisez le mode standard ou le mode restreint, BlueXP met automatiquement à niveau votre connecteur vers la dernière version, à condition que le connecteur dispose d'un accès Internet sortant pour obtenir la mise à jour du logiciel. Si vous devez gérer manuellement lorsque le connecteur est mis à niveau, vous pouvez désactiver les mises à niveau automatiques pour le mode standard ou le mode restreint.
 
 
 NOTE: Lorsque vous exécutez BlueXP  en mode privé, vous devez toujours mettre à niveau le connecteur vous-même.

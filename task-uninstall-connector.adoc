@@ -22,7 +22,7 @@ link:concept-modes.html["Découvrez les modes de déploiement BlueXP"].
 
 == Désinstallez le connecteur lorsque vous utilisez le mode standard ou restreint
 
-Si vous utilisez BlueXP en mode standard ou restreint (en d'autres termes, l'hôte du connecteur dispose d'une connectivité sortante), vous devez suivre les étapes ci-dessous pour désinstaller le logiciel Connector.
+Si vous utilisez le mode standard ou le mode restreint (en d'autres termes, l'hôte Connector dispose d'une connectivité sortante), vous devez suivre les étapes ci-dessous pour désinstaller le logiciel Connector.
 
 .Étapes
 . Connectez-vous à la VM Linux pour le connecteur.
@@ -39,7 +39,7 @@ _silent_ exécute le script sans vous demander de confirmer.
 
 == Désinstallez le connecteur lorsque vous utilisez le mode privé
 
-Si vous utilisez BlueXP en mode privé (en d'autres termes, l'hôte du connecteur a une connectivité _no_ sortante), vous devez suivre les étapes ci-dessous pour désinstaller le logiciel du connecteur.
+Si vous utilisez le mode privé (en d'autres termes, l'hôte Connector n'a _aucune_ connectivité sortante), vous devez suivre les étapes ci-dessous pour désinstaller le logiciel Connector.
 
 .Étape
 . Connectez-vous à la VM Linux pour le connecteur.
@@ -50,7 +50,7 @@ Si vous utilisez BlueXP en mode privé (en d'autres termes, l'hôte du connecteu
 /opt/application/netapp/ds/cleanup.sh
 rm -rf /opt/application/netapp/
 ----
-. Sur l'hôte Linux, supprimez les anciens fichiers d'image de conteneur maintenant inutilisés. Cela permet de s'assurer qu'il y a suffisamment d'espace dans le répertoire /var pour la réinstallation.
+. À partir de l'hôte Linux, supprimez les anciens fichiers d'image de conteneur inutilisés pour libérer de l'espace dans le répertoire /var pour la réinstallation.
 +
 [role="tabbed-block"]
 ====
@@ -80,7 +80,7 @@ Si un connecteur est inactif, vous pouvez le retirer de la liste des connecteurs
 Notez ce qui suit sur le retrait d'un connecteur :
 
 * Cette action ne supprime pas la machine virtuelle.
-* Cette action ne peut pas être rétablie, une fois que vous avez supprimé un connecteur de BlueXP, vous ne pouvez pas le réintégrer.
+* Cette action ne peut pas être annulée : une fois que vous avez supprimé un connecteur, vous ne pouvez pas le rajouter.
 
 
 .Étapes

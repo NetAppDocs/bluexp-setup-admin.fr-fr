@@ -14,7 +14,7 @@ summary: 'la fédération des identités permet l"authentification unique avec B
 
 
 [role="lead"]
-_fédération des identités_ active l'authentification unique avec BlueXP pour que les utilisateurs puissent se connecter à l'aide d'identifiants à partir de votre identité d'entreprise. Pour commencer, découvrez le fonctionnement de la fédération des identités avec BlueXP, puis passez en revue un aperçu du processus de configuration.
+_fédération des identités_ active l'authentification unique avec BlueXP pour que les utilisateurs puissent se connecter à l'aide d'identifiants à partir de votre identité d'entreprise. Pour commencer, découvrez comment fonctionne la fédération d’identité, puis consultez un aperçu du processus de configuration.
 
 
 
@@ -26,7 +26,7 @@ Si vous utilisez vos identifiants du site du support NetApp (NSS) pour vous conn
 * Envoyez le formulaire à l'adresse électronique indiquée dans le formulaire
 
 
-L'équipe de gestion des identités et des accès de NetApp examine votre demande.
+L’équipe NetApp Identity and Access Management examine votre demande.
 
 
 
@@ -38,7 +38,7 @@ L'image suivante décrit le fonctionnement de la fédération des identités ave
 
 image:diagram-identity-federation.png["Diagramme illustrant un utilisateur qui s'authentifie avec BlueXP et une connexion entre BlueXP et un fournisseur d'identités qui authentifie l'utilisateur."]
 
-. Un utilisateur saisit son adresse e-mail sur la page de connexion BlueXP.
+. L'utilisateur saisit son adresse e-mail sur la page de connexion BlueXP.
 . BlueXP identifie que le domaine de messagerie fait partie d'une connexion fédérée et envoie la demande d'authentification au fournisseur d'identités via la connexion approuvée.
 +
 Lorsque vous configurez une connexion fédérée, BlueXP utilise toujours cette connexion fédérée pour l'authentification.
@@ -67,7 +67,7 @@ BlueXP prend uniquement en charge les SSO initiées par le fournisseur de servic
 
 == Présentation du processus de configuration
 
-Avant de configurer une connexion entre BlueXP et votre fournisseur de gestion des identités, vous devez connaître les étapes à suivre pour vous préparer en conséquence.
+Avant d’établir une connexion entre BlueXP et votre fournisseur de gestion des identités, comprenez les étapes requises pour vous préparer.
 
 Ces étapes sont spécifiques aux utilisateurs qui se connectent à BlueXP via un identifiant cloud NetApp. Si vous utilisez vos identifiants NSS pour vous connecter à BlueXP, <<fédération des identités avec informations d'identification NSS,Découvrez comment configurer la fédération des identités avec les informations d'identification NSS>>.
 
@@ -116,7 +116,7 @@ Pour effectuer cette étape, vous devez obtenir les informations suivantes aupr�
 Après avoir créé la connexion à l'aide de ces informations, la page Configuration de la fédération répertorie les paramètres que vous pouvez envoyer à votre administrateur AD pour terminer la configuration à l'étape suivante.
 
 
-NOTE: Notez la date d'expiration du certificat. Vous devez revenir à la page de configuration de la fédération et mettre à jour le certificat _avant_ qu'il n'expire. C'est votre responsabilité. BlueXP ne suit pas la date d'expiration. Il est préférable de travailler avec votre équipe AD pour être alerté à temps.
+NOTE: Notez la date d'expiration du certificat. Vous devez revenir à la page de configuration de la fédération et mettre à jour le certificat _avant_ qu'il n'expire. C'est votre responsabilité. BlueXP ne suit pas la date d'expiration, vous devez donc surveiller et mettre à jour le certificat avant son expiration. Il est préférable de travailler avec votre équipe IT pour être alerté à temps.
 
 
 

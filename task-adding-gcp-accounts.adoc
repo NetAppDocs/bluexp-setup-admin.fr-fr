@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-adding-gcp-accounts.html 
 keywords: permissions, gcp, marketplace, gcp subscription, subscription, gcp marketplace, subscribe, data tiering, tiering, setup, requirements, account for data tiering, account for tiering, interoperable, interoperability, interoperable storage access keys, access keys 
-summary: 'Vous pouvez gérer les informations d"identification Google Cloud associées à l"instance de VM Connector en associant un abonnement Marketplace et en dépannant le processus d"abonnement. Ces deux tâches vous permettent d"utiliser votre abonnement Marketplace pour payer les services BlueXP.' 
+summary: 'Vous pouvez gérer les informations d"identification Google Cloud associées à l"instance de VM Connector en associant un abonnement Marketplace et en dépannant le processus d"abonnement. Ces deux tâches garantissent que vous pouvez utiliser votre abonnement au marché pour payer les services de données.' 
 ---
 = Gérez les identifiants Google Cloud et les abonnements pour BlueXP
 :hardbreaks:
@@ -14,18 +14,18 @@ summary: 'Vous pouvez gérer les informations d"identification Google Cloud asso
 
 
 [role="lead"]
-Vous pouvez gérer les informations d'identification Google Cloud associées à l'instance de VM Connector en associant un abonnement Marketplace et en dépannant le processus d'abonnement. Ces deux tâches vous permettent d'utiliser votre abonnement Marketplace pour payer les services BlueXP.
+Vous pouvez gérer les informations d'identification Google Cloud associées à l'instance de VM Connector en associant un abonnement Marketplace et en dépannant le processus d'abonnement. Ces deux tâches garantissent que vous pouvez utiliser votre abonnement au marché pour payer les services de données.
 
 
 
 == Associez un abonnement Marketplace avec des identifiants Google Cloud
 
-Lorsque vous déployez un connecteur dans Google Cloud, BlueXP crée un ensemble d'informations d'identification par défaut qui sont associées à l'instance de VM Connector. Vous pouvez à tout moment modifier l'abonnement Google Cloud Marketplace associé à ces informations d'identification. L'abonnement vous permet de créer un système Cloud Volumes ONTAP avec paiement à l'utilisation et d'utiliser d'autres services BlueXP.
+Lorsque vous déployez un connecteur dans Google Cloud, BlueXP crée un ensemble d'informations d'identification par défaut qui sont associées à l'instance de VM Connector. Vous pouvez à tout moment modifier l'abonnement Google Cloud Marketplace associé à ces informations d'identification. L'abonnement vous permet de créer un système Cloud Volumes ONTAP à la carte et d'utiliser d'autres services de données.
 
 Le remplacement de l'abonnement Marketplace actuel par un nouvel abonnement modifie l'abonnement Marketplace pour tous les environnements de travail Cloud Volumes ONTAP existants et tous les nouveaux environnements de travail.
 
 .Étapes
-. Dans le coin supérieur droit de la console BlueXP, sélectionnez l'icône Paramètres, puis sélectionnez *informations d'identification*.
+. Dans le coin supérieur droit de la console, sélectionnez l’icône Paramètres, puis sélectionnez *Informations d’identification*.
 . Sélectionnez le menu d'action correspondant à un ensemble d'informations d'identification, puis sélectionnez *configurer l'abonnement*. +nouvelle capture d'écran nécessaire (TS) image:screenshot_gcp_add_subscription.png["Capture d'écran du menu d'action pour un ensemble d'informations d'identification existantes."]
 . Pour configurer un abonnement existant avec les informations d'identification sélectionnées, sélectionnez un projet Google Cloud et un abonnement dans la liste déroulante, puis sélectionnez *configurer*.
 +
@@ -37,7 +37,7 @@ image:screenshot_gcp_associate.gif["Copie d'écran d'un projet Google Cloud et d
 NOTE: Avant de terminer les étapes suivantes, assurez-vous que vous disposez des deux privilèges d'administrateur de facturation dans votre compte Google Cloud ainsi que d'une connexion BlueXP.
 
 +
-.. Après avoir été redirigé vers le https://console.cloud.google.com/marketplace/product/netapp-cloudmanager/cloud-manager["Page NetApp BlueXP sur Google Cloud Marketplace"^], assurez-vous que le projet correct est sélectionné dans le menu de navigation supérieur.
+.. Après avoir été redirigé vers le  https://console.cloud.google.com/marketplace/product/netapp-cloudmanager/cloud-manager["Page des services intelligents NetApp sur Google Cloud Marketplace"^] , assurez-vous que le bon projet est sélectionné dans le menu de navigation supérieur.
 +
 image:screenshot_gcp_cvo_marketplace.png["Copie d'écran de la page Cloud Volumes ONTAP Marketplace dans Google Cloud."]
 
@@ -89,7 +89,7 @@ image:screenshot_gcp_associate.gif["Capture d'écran de la page d'affectation d'
 
 == Dépanner le processus d'abonnement Marketplace
 
-L'abonnement à BlueXP via Google Cloud Marketplace peut parfois être fragmenté à cause d'autorisations incorrectes ou accidentellement non après la redirection vers le site web de BlueXP. Dans ce cas, procédez comme suit pour terminer le processus d'abonnement.
+Parfois, l'abonnement aux services intelligents NetApp via Google Cloud Marketplace peut devenir fragmenté en raison d'autorisations incorrectes ou du non-respect accidentel de la redirection vers le site Web BlueXP. Dans ce cas, procédez comme suit pour terminer le processus d'abonnement.
 
 .Étapes
 . Accédez au https://console.cloud.google.com/marketplace/product/netapp-cloudmanager/cloud-manager["Page NetApp BlueXP sur Google Cloud Marketplace"^] pour vérifier l'état de la commande. Si la page indique *gérer sur le fournisseur*, faites défiler la page vers le bas et sélectionnez *gérer les commandes*.

@@ -14,7 +14,7 @@ summary: 'BlueXP propose plusieurs modes de déploiement qui vous permettent d"u
 
 
 [role="lead"]
-BlueXP propose plusieurs _modes de déploiement_ qui vous permettent d'utiliser BlueXP en fonction de vos exigences métier et de sécurité. _Standard mode_ exploite le logiciel BlueXP  en tant que couche de service (SaaS) pour fournir des fonctionnalités complètes, tandis que _mode restreint_ et _mode privé_ sont disponibles pour les organisations qui ont des restrictions de connectivité.
+BlueXP propose plusieurs modes de déploiement pour répondre à vos besoins métier et de sécurité. Le mode standard s'appuie sur une couche SaaS (Software as a Service) pour offrir toutes les fonctionnalités, tandis que les modes restreint et privé sont disponibles pour les organisations soumises à des restrictions de connectivité.
 
 Si BlueXP  inhibe le flux du trafic, de la communication et des données lorsqu'il est en mode restreint ou en mode privé, il est de votre responsabilité de veiller au respect des réglementations applicables à votre environnement (sur site et dans le cloud).
 
@@ -22,15 +22,15 @@ Si BlueXP  inhibe le flux du trafic, de la communication et des données lorsqu
 
 == Présentation
 
-BlueXP  propose trois modes de déploiement. Chaque mode varie en fonction des exigences de connectivité sortante, de l'emplacement de déploiement, du processus d'installation, de la méthode d'authentification, des services de données et de stockage disponibles et des méthodes de facturation.
+Chaque mode de déploiement diffère en termes d'exigences de connectivité sortante, d'emplacement de déploiement, de processus d'installation, de méthode d'authentification, de services de données et de stockage disponibles et de méthodes de facturation.
 
-Mode standard:: BlueXP est accessible en tant que service cloud à partir de la console web. Selon les services BlueXP que vous prévoyez d'utiliser, un administrateur BlueXP crée un ou plusieurs connecteurs pour gérer les données au sein de votre environnement de cloud hybride.
+Mode standard:: Vous utilisez un service SaaS depuis la console web. Selon les services de données et les fonctionnalités que vous prévoyez d'utiliser, un administrateur BlueXP crée un ou plusieurs connecteurs pour gérer les données dans votre environnement cloud hybride.
 +
 --
 Ce mode utilise la transmission de données chiffrées sur Internet public.
 
 --
-Mode restreint:: Un connecteur BlueXP est installé dans le cloud (dans une région gouvernementale, une région cloud souveraine ou une région commerciale) et sa connectivité sortante est limitée vers la couche SaaS de BlueXP. Les utilisateurs accèdent à BlueXP en local à partir de la console web disponible depuis le connecteur, et non depuis la couche SaaS.
+Mode restreint:: Vous installez un connecteur BlueXP dans le cloud (dans une région gouvernementale, une région cloud souveraine ou une région commerciale) et disposez d'une connectivité sortante limitée vers la couche SaaS BlueXP. Les utilisateurs accèdent à BlueXP en local à partir de la console web disponible depuis le connecteur, et non depuis la couche SaaS.
 +
 --
 Ce mode est généralement utilisé par les gouvernements d'état et locaux et les entreprises réglementées.
@@ -38,7 +38,7 @@ Ce mode est généralement utilisé par les gouvernements d'état et locaux et l
 <<Mode restreint,En savoir plus sur la connectivité sortante à la couche SaaS>>.
 
 --
-Mode privé:: Un connecteur BlueXP  est installé sur site ou dans le cloud (dans une région sécurisée, une région cloud souveraine ou une région commerciale) et ne dispose d'aucune connectivité à la couche SaaS BlueXP . Les utilisateurs accèdent à BlueXP en local à partir de la console web disponible depuis le connecteur, et non depuis la couche SaaS.
+Mode privé:: Vous installez un connecteur BlueXP sur site ou dans le cloud (dans une région sécurisée, une région cloud souveraine ou une région commerciale) et vous n'avez _aucune_ connectivité à la couche SaaS BlueXP. Les utilisateurs accèdent à BlueXP en local à partir de la console web disponible depuis le connecteur, et non depuis la couche SaaS.
 +
 --
 Une région sécurisée inclut https://aws.amazon.com/federal/secret-cloud/["Cloud secret AWS"^], https://aws.amazon.com/federal/top-secret-cloud/["Le cloud le plus secret d'AWS"^], et https://learn.microsoft.com/en-us/azure/compliance/offerings/offering-dod-il6["Azure IL6"^]
@@ -77,7 +77,7 @@ Le tableau suivant fournit une comparaison de ces modes.
 | Et les services de données | Tous sont pris en charge | Nombre d'entre elles sont prises en charge | Plusieurs sont pris en charge 
 
 
-| Options de licence | Abonnements Marketplace et BYOL | Abonnements Marketplace et BYOL | BYOL 
+| Options de licence de service de données | Abonnements Marketplace et BYOL | Abonnements Marketplace et BYOL | BYOL 
 |===
 Consultez les sections suivantes pour en savoir plus sur ces modes, notamment les fonctionnalités et les services BlueXP pris en charge.
 

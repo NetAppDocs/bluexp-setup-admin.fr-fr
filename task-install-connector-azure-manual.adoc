@@ -27,6 +27,9 @@ Un connecteur est un logiciel NetApp exécuté sur votre réseau cloud ou sur si
 
 Le logiciel du connecteur doit être exécuté sur un hôte qui répond à des exigences spécifiques du système d'exploitation, de la RAM, des ports, etc.
 
+
+NOTE: Le connecteur réserve la plage d'UID et de GID comprise entre 19 000 et 19 200. Cette plage est fixe et non modifiable. Si un logiciel tiers sur votre hôte utilise des UID ou des GID compris dans cette plage, l'installation du connecteur échouera. NetApp recommande d'utiliser un hôte exempt de logiciels tiers pour éviter les conflits.
+
 Hôte dédié:: Le connecteur n'est pas pris en charge sur un hôte partagé avec d'autres applications. L'hôte doit être un hôte dédié.
 +
 --

@@ -14,6 +14,9 @@ L'hôte peut être de n'importe quelle architecture répondant aux exigences de 
 --
 
 
+
+NOTE: Le connecteur réserve la plage d'UID et de GID comprise entre 19 000 et 19 200. Cette plage est fixe et non modifiable. Si un logiciel tiers sur votre hôte utilise des UID ou des GID compris dans cette plage, l'installation du connecteur échouera. NetApp recommande d'utiliser un hôte exempt de logiciels tiers pour éviter les conflits.
+
 Hyperviseur:: Un hyperviseur bare Metal ou hébergé certifié pour exécuter un système d'exploitation pris en charge est requis.
 
 

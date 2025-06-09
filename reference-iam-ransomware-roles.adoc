@@ -16,7 +16,7 @@ summary: La gestion des identités et des accès BlueXP  fournit deux rôles ad
 [role="lead"]
 Les rôles anti-ransomware permettent aux utilisateurs d'accéder au service de protection anti-ransomware. Les utilisateurs peuvent se voir attribuer un rôle d'administrateur, leur permettant d'intervenir dans la protection anti-ransomware, ou un rôle d'observateur s'ils ont uniquement des responsabilités de surveillance. Les deux rôles sont administrateur de la protection contre les ransomware et visualiseur de protection contre les ransomware. La principale différence entre les deux rôles est les mesures qu'ils peuvent prendre en matière de protection contre les ransomwares.
 
-Le tableau suivant indique les actions que chaque rôle de protection contre les ransomwares BlueXP  peut effectuer.
+Le tableau suivant présente les actions que chaque rôle de protection contre les ransomwares BlueXP peut effectuer.
 
 [cols="40,20a,20a"]
 |===
@@ -37,7 +37,7 @@ Non
 
 
 
-| Lancez la découverte des charges de travail  a| 
+| Découvrir les workloads  a| 
 Oui.
  a| 
 Non
