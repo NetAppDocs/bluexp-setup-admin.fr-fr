@@ -18,14 +18,14 @@ Vous pouvez créer un connecteur dans Azure directement à partir d'Azure Market
 
 .Avant de commencer
 * Vous devriez avoir un link:concept-connectors.html["Compréhension des connecteurs"].
-* Vous devriez passer en revue link:reference-limitations.html["Limitations du connecteur"].
+* Revoir link:reference-limitations.html["Limitations du connecteur"] .
 
 
 
 
 == Étape 1 : configuration du réseau
 
-Assurez-vous que l'emplacement réseau où vous prévoyez d'installer le connecteur prend en charge les exigences suivantes. En répondant à ces exigences, il peut gérer les ressources et les processus dans votre environnement de cloud hybride.
+Assurez-vous que l’emplacement réseau où vous prévoyez d’installer le connecteur prend en charge les exigences suivantes. Ces exigences permettent au connecteur de gérer les ressources dans votre cloud hybride.
 
 Région Azure:: Si vous utilisez Cloud Volumes ONTAP, le connecteur doit être déployé dans la même région Azure que les systèmes Cloud Volumes ONTAP qu'il gère, ou dans le https://docs.microsoft.com/en-us/azure/availability-zones/cross-region-replication-azure#azure-cross-region-replication-pairings-for-all-geographies["Paire de régions Azure"^] Pour les systèmes Cloud Volumes ONTAP. Cette exigence garantit qu'une connexion Azure Private Link est utilisée entre Cloud Volumes ONTAP et les comptes de stockage associés.
 +
@@ -143,7 +143,7 @@ Si les systèmes Cloud Volumes ONTAP ne disposent pas d'une connexion Internet s
 Activez le protocole NTP:: Si vous prévoyez d'utiliser la classification BlueXP pour analyser vos sources de données d'entreprise, vous devez activer un service NTP (Network Time Protocol) sur le système de connecteur BlueXP et le système de classification BlueXP afin que l'heure soit synchronisée entre les systèmes. https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html["En savoir plus sur la classification BlueXP"^]
 +
 --
-Vous devrez implémenter cette exigence de mise en réseau après avoir créé le connecteur.
+Implémentez les exigences de mise en réseau après avoir créé le connecteur.
 
 --
 
@@ -152,7 +152,7 @@ Vous devrez implémenter cette exigence de mise en réseau après avoir créé l
 
 == Étape 2 : passez en revue les exigences relatives aux ordinateurs virtuels
 
-Lorsque vous créez le connecteur, vous devez choisir un type de machine virtuelle répondant aux exigences suivantes.
+Lorsque vous créez le connecteur, choisissez un type de machine virtuelle qui répond aux exigences suivantes.
 
 CPU:: 8 cœurs ou 8 CPU virtuels
 RAM:: 32 GO
@@ -369,9 +369,6 @@ BlueXP peut maintenant utiliser un code client pour s'authentifier auprès de Mi
 
 
 
-.Résultat
-Votre principal de service est maintenant configuré et vous devez avoir copié l'ID de l'application (client), l'ID du répertoire (tenant) et la valeur du secret client. Vous devez saisir ces informations dans BlueXP lorsque vous ajoutez un compte Azure.
-
 --
 ====
 
@@ -381,7 +378,7 @@ Votre principal de service est maintenant configuré et vous devez avoir copié 
 Lancez Connector directement à partir d'Azure Marketplace.
 
 .Description de la tâche
-La création du connecteur à partir d'Azure Marketplace déploie une machine virtuelle dans Azure à l'aide d'une configuration par défaut. link:reference-connector-default-config.html["En savoir plus sur la configuration par défaut du connecteur"].
+La création du connecteur à partir de la Place de marché Azure configure une machine virtuelle avec une configuration par défaut. link:reference-connector-default-config.html["En savoir plus sur la configuration par défaut du connecteur"].
 
 .Avant de commencer
 Vous devez disposer des éléments suivants :
@@ -430,7 +427,7 @@ Ce paramètre est important car une identité gérée permet à la machine virtu
 
 . Sur la page *consulter + créer*, vérifiez vos sélections et sélectionnez *Créer* pour démarrer le déploiement.
 +
-Azure déploie la machine virtuelle avec les paramètres spécifiés. Le logiciel de la machine virtuelle et du connecteur doit s'exécuter en cinq minutes environ.
+Azure déploie la machine virtuelle avec les paramètres spécifiés. Vous devriez voir la machine virtuelle et le logiciel Connector s’exécuter dans environ cinq minutes.
 
 . Ouvrez un navigateur Web à partir d'un hôte connecté à la machine virtuelle Connector et entrez l'URL suivante :
 +
@@ -442,7 +439,7 @@ https://_ipaddress_[]
 .. Entrez un nom pour le système.
 .. Sous *exécutez-vous dans un environnement sécurisé ?* maintenez le mode restreint désactivé.
 +
-Vous devez désactiver le mode restreint, car ces étapes décrivent l'utilisation de BlueXP en mode standard. Vous devez activer le mode restreint uniquement si vous disposez d'un environnement sécurisé et souhaitez déconnecter ce compte des services back-end BlueXP. Si c'est le cas, link:task-quick-start-restricted-mode.html["Suivez les étapes pour démarrer avec BlueXP en mode restreint"].
+Désactivez le mode restreint pour utiliser BlueXP en mode standard. Vous devez activer le mode restreint uniquement si vous disposez d'un environnement sécurisé et souhaitez déconnecter ce compte des services back-end BlueXP. Si c'est le cas, link:task-quick-start-restricted-mode.html["Suivez les étapes pour démarrer avec BlueXP en mode restreint"] .
 
 .. Sélectionnez *commençons*.
 
@@ -450,7 +447,7 @@ Vous devez désactiver le mode restreint, car ces étapes décrivent l'utilisati
 
 
 .Résultat
-Le connecteur est maintenant installé et configuré avec votre organisation BlueXP .
+Vous avez maintenant installé le connecteur et l'avez configuré avec votre organisation BlueXP.
 
 Si vous disposez d'un stockage Azure Blob dans le même abonnement Azure que celui sur lequel vous avez créé le connecteur, un environnement de travail du stockage Azure Blob apparaît automatiquement sur le canevas BlueXP. https://docs.netapp.com/us-en/bluexp-blob-storage/index.html["Découvrez comment gérer le stockage Azure Blob à partir de BlueXP"^]
 

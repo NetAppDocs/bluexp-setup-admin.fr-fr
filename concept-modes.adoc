@@ -16,21 +16,21 @@ summary: 'BlueXP propose plusieurs modes de déploiement qui vous permettent d"u
 [role="lead"]
 BlueXP propose plusieurs modes de déploiement pour répondre à vos besoins métier et de sécurité. Le mode standard s'appuie sur une couche SaaS (Software as a Service) pour offrir toutes les fonctionnalités, tandis que les modes restreint et privé sont disponibles pour les organisations soumises à des restrictions de connectivité.
 
-Si BlueXP  inhibe le flux du trafic, de la communication et des données lorsqu'il est en mode restreint ou en mode privé, il est de votre responsabilité de veiller au respect des réglementations applicables à votre environnement (sur site et dans le cloud).
+Bien que BlueXP inhibe le flux de trafic, de communication et de données lors de l'utilisation du mode restreint ou du mode privé, il est de votre responsabilité de vous assurer que votre environnement (sur site et dans le cloud) est conforme aux réglementations requises pour votre entreprise.
 
 
 
 == Présentation
 
-Chaque mode de déploiement diffère en termes d'exigences de connectivité sortante, d'emplacement de déploiement, de processus d'installation, de méthode d'authentification, de services de données et de stockage disponibles et de méthodes de facturation.
+Chaque mode de déploiement diffère en termes de connectivité sortante, d’emplacement, d’installation, d’authentification, de services de données et de méthodes de facturation.
 
-Mode standard:: Vous utilisez un service SaaS depuis la console web. Selon les services de données et les fonctionnalités que vous prévoyez d'utiliser, un administrateur BlueXP crée un ou plusieurs connecteurs pour gérer les données dans votre environnement cloud hybride.
+Mode standard:: Vous utilisez un service SaaS depuis la console web. En fonction des services de données et des fonctionnalités que vous prévoyez d’utiliser, un administrateur BlueXP crée un ou plusieurs connecteurs pour gérer les données au sein de votre environnement cloud hybride.
 +
 --
 Ce mode utilise la transmission de données chiffrées sur Internet public.
 
 --
-Mode restreint:: Vous installez un connecteur BlueXP dans le cloud (dans une région gouvernementale, une région cloud souveraine ou une région commerciale) et disposez d'une connectivité sortante limitée vers la couche SaaS BlueXP. Les utilisateurs accèdent à BlueXP en local à partir de la console web disponible depuis le connecteur, et non depuis la couche SaaS.
+Mode restreint:: Vous installez un connecteur BlueXP dans le cloud (dans une région gouvernementale, souveraine ou commerciale) et sa connectivité sortante vers la couche SaaS BlueXP est limitée.
 +
 --
 Ce mode est généralement utilisé par les gouvernements d'état et locaux et les entreprises réglementées.
@@ -38,7 +38,7 @@ Ce mode est généralement utilisé par les gouvernements d'état et locaux et l
 <<Mode restreint,En savoir plus sur la connectivité sortante à la couche SaaS>>.
 
 --
-Mode privé:: Vous installez un connecteur BlueXP sur site ou dans le cloud (dans une région sécurisée, une région cloud souveraine ou une région commerciale) et vous n'avez _aucune_ connectivité à la couche SaaS BlueXP. Les utilisateurs accèdent à BlueXP en local à partir de la console web disponible depuis le connecteur, et non depuis la couche SaaS.
+Mode privé:: Vous installez un connecteur BlueXP sur site ou dans le cloud (dans une région sécurisée, une région cloud souveraine ou une région commerciale) et vous n'avez _aucune_ connectivité à la couche SaaS BlueXP. Les utilisateurs accèdent à la console BlueXP fournie par le connecteur localement, et non à la couche SaaS.
 +
 --
 Une région sécurisée inclut https://aws.amazon.com/federal/secret-cloud/["Cloud secret AWS"^], https://aws.amazon.com/federal/top-secret-cloud/["Le cloud le plus secret d'AWS"^], et https://learn.microsoft.com/en-us/azure/compliance/offerings/offering-dod-il6["Azure IL6"^]
@@ -101,8 +101,8 @@ Communication sortante:: La connectivité est requise du connecteur à la couche
 
 --
 Emplacement pris en charge pour le connecteur:: En mode standard, le connecteur est pris en charge dans le cloud ou sur site.
-Installation du connecteur:: L'installation du connecteur est possible à partir d'un assistant d'installation de BlueXP, d'AWS ou d'Azure Marketplace, ou à l'aide d'un programme d'installation pour installer manuellement le connecteur sur votre propre hôte Linux dans votre data Center ou dans le cloud.
-Mises à niveau des connecteurs:: Les mises à niveau automatisées du logiciel du connecteur sont disponibles depuis BlueXP avec des mises à jour mensuelles.
+Installation du connecteur:: Vous pouvez installer le connecteur à l’aide de l’assistant de configuration BlueXP, d’AWS ou d’Azure Marketplace, du SDK Google Cloud ou d’un programme d’installation manuel sur un hôte Linux dans votre centre de données ou votre cloud.
+Mises à niveau des connecteurs:: BlueXP fournit des mises à niveau automatisées du logiciel Connector avec des mises à jour mensuelles.
 Accès à l'interface utilisateur:: L'interface utilisateur est accessible depuis la console Web fournie via la couche SaaS.
 Terminal API:: Les appels d'API sont effectués vers le terminal suivant :
 \https://cloudmanager.cloud.netapp.com
@@ -127,7 +127,7 @@ image:diagram-restricted-mode.png["Image conceptuelle montrant l'Internet public
 
 BlueXP fonctionne comme suit en mode restreint :
 
-Communication sortante:: Une connectivité sortante est requise du connecteur vers la couche SaaS BlueXP pour utiliser les services de données BlueXP, pour permettre les mises à niveau logicielles automatiques du connecteur, pour utiliser l'authentification basée sur auth0 et pour envoyer des métadonnées à des fins de facturation (nom de la VM de stockage, capacité allouée, UUID, type et IOPS de volume).
+Communication sortante:: Le connecteur nécessite une connectivité sortante vers la couche SaaS BlueXP pour les services de données, les mises à niveau logicielles, l'authentification et la transmission de métadonnées.
 +
 --
 La couche SaaS de BlueXP n'initie pas la communication avec le connecteur. Toutes les communications sont initiées par le connecteur, qui peut extraire ou envoyer des données de ou vers la couche SaaS, selon les besoins.
@@ -137,7 +137,7 @@ Une connexion est également requise pour les ressources du fournisseur cloud pr
 --
 Emplacement pris en charge pour le connecteur:: En mode restreint, le connecteur est pris en charge dans le cloud : dans une région gouvernementale, une région souveraine ou une région commerciale.
 Installation du connecteur:: L'installation du connecteur est possible depuis AWS Marketplace ou Azure Marketplace, ou une installation manuelle sur votre propre hôte Linux.
-Mises à niveau des connecteurs:: Les mises à niveau automatisées du logiciel du connecteur sont disponibles depuis BlueXP avec des mises à jour mensuelles.
+Mises à niveau des connecteurs:: BlueXP fournit des mises à niveau automatisées du logiciel Connector avec des mises à jour mensuelles.
 Accès à l'interface utilisateur:: L'interface utilisateur est accessible à partir de la machine virtuelle Connector déployée dans votre région cloud.
 Terminal API:: Les appels API sont effectués vers la machine virtuelle du connecteur.
 Authentification:: L'authentification est fournie via le service cloud de BlueXP via auth0. la fédération des identités est également disponible.

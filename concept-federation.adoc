@@ -26,13 +26,13 @@ Si vous utilisez vos identifiants du site du support NetApp (NSS) pour vous conn
 * Envoyez le formulaire à l'adresse électronique indiquée dans le formulaire
 
 
-L’équipe NetApp Identity and Access Management examine votre demande.
+L'équipe d'assistance NetApp examinera et traitera votre demande.
 
 
 
 == Fonctionnement de la fédération des identités
 
-La configuration de la fédération des identités crée une connexion de confiance entre le fournisseur de services d'authentification (auth0) de BlueXP et votre propre fournisseur de gestion des identités.
+La configuration de la fédération des identités crée une connexion de confiance entre le fournisseur de services d'authentification (Auth0) de BlueXP et votre propre fournisseur de gestion des identités.
 
 L'image suivante décrit le fonctionnement de la fédération des identités avec BlueXP :
 
@@ -57,11 +57,11 @@ BlueXP prend en charge les fournisseurs d'identités suivants :
 
 * Fournisseurs d'identité SAML (Security assertion Markup Language)
 * ID Microsoft Entra
-* ADFS (Active Directory Federation Services)
+* Services de fédération Active Directory (AD FS)
 * PingFederate
 
 
-BlueXP prend uniquement en charge les SSO initiées par le fournisseur de services (initiées par le processeur de service). L'authentification unique initiée par le fournisseur d'identité (IDP) n'est pas prise en charge.
+BlueXP prend uniquement en charge l'authentification unique initiée par le fournisseur de services (SP).
 
 
 
@@ -75,97 +75,56 @@ Ces étapes sont spécifiques aux utilisateurs qui se connectent à BlueXP via u
 
 === Fournisseur d'identité SAML
 
-Sur un plan général, la configuration d'une connexion fédérée entre BlueXP et un fournisseur d'identité SAML comprend les étapes suivantes :
+La configuration d’une connexion fédérée avec un fournisseur d’identité SAML implique les étapes suivantes :
 
 [cols="10,15,75"]
 |===
 | Étape | Terminé par | Description 
 
 
-| 1 | Administrateur Active Directory (AD)  a| 
-Configurez votre fournisseur d'identités SAML pour activer la fédération des identités avec BlueXP.
-
-Afficher les instructions pour votre fournisseur d'identité SAML :
-
-* https://auth0.com/docs/authenticate/protocols/saml/saml-sso-integrations/configure-auth0-saml-service-provider/configure-adfs-saml-connections["ADFS"^]
-* https://auth0.com/docs/authenticate/protocols/saml/saml-sso-integrations/configure-auth0-saml-service-provider/configure-okta-as-saml-identity-provider["Okta"^]
-* https://auth0.com/docs/authenticate/protocols/saml/saml-sso-integrations/configure-auth0-saml-service-provider/configure-onelogin-as-saml-identity-provider["OneLogin"^]
-* https://auth0.com/docs/authenticate/protocols/saml/saml-sso-integrations/configure-auth0-saml-service-provider/configure-pingfederate-as-saml-identity-provider["PingFederate"^]
-* https://auth0.com/docs/authenticate/protocols/saml/saml-sso-integrations/configure-auth0-saml-service-provider/configure-salesforce-as-saml-identity-provider["Une plateforme Salesforce"^]
-* https://auth0.com/docs/authenticate/protocols/saml/saml-sso-integrations/configure-auth0-saml-service-provider/configure-siteminder-as-saml-identity-provider["SiteMinder"^]
-* https://auth0.com/docs/authenticate/protocols/saml/saml-sso-integrations/configure-auth0-saml-service-provider/configure-ssocircle-as-saml-identity-provider["SSOCircle"^]
-
-
-Si votre fournisseur d'identité n'apparaît pas dans la liste ci-dessus, https://auth0.com/docs/authenticate/protocols/saml/saml-sso-integrations/configure-auth0-saml-service-provider["suivez ces instructions génériques"^]
-
-
-TIP: Faites _not_ terminez les étapes qui décrivent comment créer une connexion dans auth0. Vous allez créer cette connexion à l'étape suivante.
-
+| 1 | Administrateur IdP | Configurez votre fournisseur d'identités SAML pour activer la fédération des identités avec BlueXP. Afficher les instructions pour votre fournisseur d'identité SAML : *  https://auth0.com/docs/authenticate/protocols/saml/saml-sso-integrations/configure-auth0-saml-service-provider/configure-adfs-saml-connections["ADFS"^] *  https://auth0.com/docs/authenticate/protocols/saml/saml-sso-integrations/configure-auth0-saml-service-provider/configure-okta-as-saml-identity-provider["Okta"^] *  https://auth0.com/docs/authenticate/protocols/saml/saml-sso-integrations/configure-auth0-saml-service-provider/configure-onelogin-as-saml-identity-provider["OneLogin"^] *  https://auth0.com/docs/authenticate/protocols/saml/saml-sso-integrations/configure-auth0-saml-service-provider/configure-pingfederate-as-saml-identity-provider["PingFederate"^] *  https://auth0.com/docs/authenticate/protocols/saml/saml-sso-integrations/configure-auth0-saml-service-provider/configure-salesforce-as-saml-identity-provider["Une plateforme Salesforce"^] *  https://auth0.com/docs/authenticate/protocols/saml/saml-sso-integrations/configure-auth0-saml-service-provider/configure-siteminder-as-saml-identity-provider["SiteMinder"^] *  https://auth0.com/docs/authenticate/protocols/saml/saml-sso-integrations/configure-auth0-saml-service-provider/configure-ssocircle-as-saml-identity-provider["SSOCircle"^] Si votre fournisseur d’identité n’apparaît pas dans la liste ci-dessus,  https://auth0.com/docs/authenticate/protocols/saml/saml-sso-integrations/configure-auth0-saml-service-provider["suivez ces instructions génériques"^] CONSEIL : ne suivez pas les étapes qui décrivent comment créer une connexion dans auth0. Vous allez créer cette connexion à l'étape suivante. 
 
 
 | 2 | Administrateur BlueXP  a| 
 Accédez au https://services.cloud.netapp.com/federation-setup["Page d'installation de la fédération NetApp"^] Et créez la connexion avec BlueXP.
 
-Pour effectuer cette étape, vous devez obtenir les informations suivantes auprès de votre administrateur AD concernant le fournisseur d'identité :
+Pour terminer cette étape, vous devez obtenir les informations suivantes auprès de votre administrateur IdP concernant le fournisseur d'identité :
 
 * URL de connexion
 * Un certificat de signature X509 (format PEM ou CER)
 * URL de déconnexion (facultatif)
 
 
-Après avoir créé la connexion à l'aide de ces informations, la page Configuration de la fédération répertorie les paramètres que vous pouvez envoyer à votre administrateur AD pour terminer la configuration à l'étape suivante.
+Après avoir créé la connexion à l’aide de ces informations, la page Configuration de la fédération répertorie les paramètres que vous pouvez envoyer à votre administrateur IdP pour terminer la configuration à l’étape suivante.
 
 
 NOTE: Notez la date d'expiration du certificat. Vous devez revenir à la page de configuration de la fédération et mettre à jour le certificat _avant_ qu'il n'expire. C'est votre responsabilité. BlueXP ne suit pas la date d'expiration, vous devez donc surveiller et mettre à jour le certificat avant son expiration. Il est préférable de travailler avec votre équipe IT pour être alerté à temps.
 
 
 
-| 3 | AD admin | Terminez la configuration sur le fournisseur d'identité en utilisant les paramètres indiqués sur la page Configuration de la fédération après avoir terminé l'étape 2. 
+| 3 | Administrateur IdP | Terminez la configuration sur le fournisseur d'identité en utilisant les paramètres indiqués sur la page Configuration de la fédération après avoir terminé l'étape 2. 
 
 
-| 4 | Administrateur BlueXP | Tester et activer la connexion à partir du https://services.cloud.netapp.com/federation-setup["Page d'installation de la fédération NetApp"^]
-
-Notez que la page s'actualise entre le test de la connexion et l'activation de la connexion. 
+| 4 | Administrateur BlueXP | Tester et activer la connexion depuis le  https://services.cloud.netapp.com/federation-setup["Page d'installation de la fédération NetApp"^] La page s'actualise entre le test de la connexion et l'activation de la connexion. 
 |===
 
 
 === ID Microsoft Entra
 
-Sur un plan général, la configuration d'une connexion fédérée entre BlueXP et Microsoft Entra ID comprend les étapes suivantes :
+La configuration d'une connexion fédérée entre BlueXP et Microsoft Entra ID comprend les étapes suivantes :
 
 [cols="10,15,75"]
 |===
 | Étape | Terminé par | Description 
 
 
-| 1 | AD admin  a| 
-Configurez Microsoft Entra ID pour activer la fédération des identités avec BlueXP.
-
-https://auth0.com/docs/authenticate/identity-providers/enterprise-identity-providers/azure-active-directory/v2["Afficher les instructions d'enregistrement de l'application avec Microsoft Entra ID"^]
+| 1 | Administrateur IdP | Configurez Microsoft Entra ID pour activer la fédération des identités avec BlueXP. https://auth0.com/docs/authenticate/identity-providers/enterprise-identity-providers/azure-active-directory/v2["Afficher les instructions d'enregistrement de l'application avec Microsoft Entra ID"^] CONSEIL : ne suivez pas les étapes qui décrivent comment créer une connexion dans auth0. Vous allez créer cette connexion à l'étape suivante. 
 
 
-TIP: Faites _not_ terminez les étapes qui décrivent comment créer une connexion dans auth0. Vous allez créer cette connexion à l'étape suivante.
+| 2 | Administrateur BlueXP | Aller à la  https://services.cloud.netapp.com/federation-setup["Page d'installation de la fédération NetApp"^] et créez la connexion avec BlueXP. Pour terminer cette étape, vous devez obtenir les éléments suivants auprès de votre administrateur IdP : * ID client * Valeur du secret client * Domaine Microsoft Entra ID Après avoir créé la connexion à l'aide de ces informations, la page Configuration de la fédération répertorie les paramètres que vous pouvez envoyer à votre administrateur AD pour terminer la configuration à l'étape suivante. REMARQUE : notez la date d'expiration de la clé secrète. Vous devez revenir à la page de configuration de la fédération et mettre à jour le certificat _avant_ qu'il n'expire. C'est votre responsabilité. BlueXP ne suit pas la date d'expiration. Il est préférable de travailler avec votre équipe AD pour être alerté à temps. 
 
 
-
-| 2 | Administrateur BlueXP  a| 
-Accédez au https://services.cloud.netapp.com/federation-setup["Page d'installation de la fédération NetApp"^] Et créez la connexion avec BlueXP.
-
-Pour effectuer cette étape, vous devez obtenir les informations suivantes auprès de votre administrateur AD :
-
-* ID client
-* Valeur secrète du client
-* Domaine d'ID Microsoft Entra
-
-
-Après avoir créé la connexion à l'aide de ces informations, la page Configuration de la fédération répertorie les paramètres que vous pouvez envoyer à votre administrateur AD pour terminer la configuration à l'étape suivante.
-
-
-NOTE: Notez la date d'expiration de la clé secrète. Vous devez revenir à la page de configuration de la fédération et mettre à jour le certificat _avant_ qu'il n'expire. C'est votre responsabilité. BlueXP ne suit pas la date d'expiration. Il est préférable de travailler avec votre équipe AD pour être alerté à temps.
-
-
-
-| 3 | AD admin | Terminez la configuration dans Microsoft Entra ID à l'aide des paramètres affichés sur la page Configuration de la fédération après avoir terminé l'étape 2. 
+| 3 | Administrateur IdP | Terminez la configuration dans Microsoft Entra ID à l'aide des paramètres affichés sur la page Configuration de la fédération après avoir terminé l'étape 2. 
 
 
 | 4 | Administrateur BlueXP | Tester et activer la connexion à partir du https://services.cloud.netapp.com/federation-setup["Page d'installation de la fédération NetApp"^]
@@ -174,84 +133,56 @@ Notez que la page s'actualise entre le test de la connexion et l'activation de l
 |===
 
 
-=== ADFS
+=== AD FS
 
-Sur un plan général, la configuration d'une connexion fédérée entre BlueXP et ADFS comprend les étapes suivantes :
+La configuration d'une connexion fédérée entre BlueXP et AD FS comprend les étapes suivantes :
 
 [cols="10,15,75"]
 |===
 | Étape | Terminé par | Description 
 
 
-| 1 | AD admin  a| 
-Configurez le serveur ADFS pour activer la fédération des identités avec BlueXP.
-
-https://auth0.com/docs/authenticate/identity-providers/enterprise-identity-providers/adfs["Afficher les instructions de configuration du serveur ADFS avec auth0"^]
-
+| 1 | Administrateur IdP | Configurez le serveur AD FS pour activer la fédération d’identité avec BlueXP. https://auth0.com/docs/authenticate/identity-providers/enterprise-identity-providers/adfs["Afficher les instructions de configuration du serveur ADFS avec auth0"^] 
 
 
 | 2 | Administrateur BlueXP  a| 
 Accédez au https://services.cloud.netapp.com/federation-setup["Page d'installation de la fédération NetApp"^] Et créez la connexion avec BlueXP.
 
-Pour effectuer cette étape, vous devez obtenir les informations suivantes auprès de votre administrateur AD : l'URL du serveur ADFS ou du fichier de métadonnées de fédération.
+Pour terminer cette étape, vous devez obtenir les éléments suivants auprès de votre administrateur IdP : l’URL du serveur AD FS ou le fichier de métadonnées de fédération.
 
-Après avoir créé la connexion à l'aide de ces informations, la page Configuration de la fédération répertorie les paramètres que vous pouvez envoyer à votre administrateur AD pour terminer la configuration à l'étape suivante.
-
-
-NOTE: Notez la date d'expiration du certificat. Vous devez revenir à la page de configuration de la fédération et mettre à jour le certificat _avant_ qu'il n'expire. C'est votre responsabilité. BlueXP ne suit pas la date d'expiration. Il est préférable de travailler avec votre équipe AD pour être alerté à temps.
+Après avoir créé la connexion à l’aide de ces informations, la page Configuration de la fédération répertorie les paramètres que vous pouvez envoyer à votre administrateur IdP pour terminer la configuration à l’étape suivante.
 
 
+NOTE: Suivez la date d'expiration du certificat. Mettez à jour le certificat sur la page de configuration de la fédération avant son expiration. C'est votre responsabilité. BlueXP ne suit pas la date d'expiration. Il est préférable de travailler avec votre équipe AD pour être alerté à temps.
 
-| 3 | AD admin | Terminez la configuration sur le serveur ADFS en utilisant les paramètres indiqués sur la page Configuration de la fédération après avoir terminé l'étape 2. 
 
 
-| 4 | Administrateur BlueXP | Tester et activer la connexion à partir du https://services.cloud.netapp.com/federation-setup["Page d'installation de la fédération NetApp"^]
+| 3 | Administrateur IdP | Terminez la configuration sur le serveur ADFS en utilisant les paramètres indiqués sur la page Configuration de la fédération après avoir terminé l'étape 2. 
 
-Notez que la page s'actualise entre le test de la connexion et l'activation de la connexion. 
+
+| 4 | Administrateur BlueXP | Tester et activer la connexion depuis le  https://services.cloud.netapp.com/federation-setup["Page d'installation de la fédération NetApp"^] La page s'actualise entre le test et l'activation de la connexion. 
 |===
 
 
 === PingFederate
 
-Sur un niveau général, la configuration d'une connexion fédérée entre BlueXP et un serveur PingFederate comprend les étapes suivantes :
+La configuration d'une connexion fédérée entre BlueXP et un serveur PingFederate comprend les étapes suivantes :
 
 [cols="10,15,75"]
 |===
 | Étape | Terminé par | Description 
 
 
-| 1 | AD admin  a| 
-Configurez votre serveur PingFederate pour activer la fédération des identités avec BlueXP.
-
-https://auth0.com/docs/authenticate/identity-providers/enterprise-identity-providers/ping-federate["Afficher les instructions de création d'une connexion"^]
+| 1 | Administrateur IdP | Configurez votre serveur PingFederate pour activer la fédération des identités avec BlueXP. https://auth0.com/docs/authenticate/identity-providers/enterprise-identity-providers/ping-federate["Afficher les instructions de création d'une connexion"^] CONSEIL : ne suivez pas les étapes qui décrivent comment créer une connexion dans auth0. Vous allez créer cette connexion à l'étape suivante. 
 
 
-TIP: Faites _not_ terminez les étapes qui décrivent comment créer une connexion dans auth0. Vous allez créer cette connexion à l'étape suivante.
+| 2 | Administrateur BlueXP | Aller à la  https://services.cloud.netapp.com/federation-setup["Page d'installation de la fédération NetApp"^] et créez la connexion avec BlueXP. Pour terminer cette étape, vous devez obtenir les éléments suivants auprès de votre administrateur AD : * L'URL du serveur PingFederate * Un certificat de signature X509 (format PEM ou CER) Après avoir créé la connexion à l'aide de ces informations, la page Configuration de la fédération répertorie les paramètres que vous pouvez envoyer à votre administrateur AD pour terminer la configuration à l'étape suivante. REMARQUE : Gardez une trace de la date d'expiration du certificat. Mettez à jour le certificat sur la page Configuration de la fédération _avant_ son expiration. C'est votre responsabilité. BlueXP ne suit pas la date d'expiration. Il est préférable de travailler avec votre équipe IdP pour être alerté à temps. 
 
 
-
-| 2 | Administrateur BlueXP  a| 
-Accédez au https://services.cloud.netapp.com/federation-setup["Page d'installation de la fédération NetApp"^] Et créez la connexion avec BlueXP.
-
-Pour effectuer cette étape, vous devez obtenir les informations suivantes auprès de votre administrateur AD :
-
-* URL du serveur PingFederate
-* Un certificat de signature X509 (format PEM ou CER)
+| 3 | Administrateur IdP | Terminez la configuration sur le serveur PingFederate en utilisant les paramètres indiqués sur la page Configuration de la fédération après avoir terminé l'étape 2. 
 
 
-Après avoir créé la connexion à l'aide de ces informations, la page Configuration de la fédération répertorie les paramètres que vous pouvez envoyer à votre administrateur AD pour terminer la configuration à l'étape suivante.
-
-
-NOTE: Notez la date d'expiration du certificat. Vous devez revenir à la page de configuration de la fédération et mettre à jour le certificat _avant_ qu'il n'expire. C'est votre responsabilité. BlueXP ne suit pas la date d'expiration. Il est préférable de travailler avec votre équipe AD pour être alerté à temps.
-
-
-
-| 3 | AD admin | Terminez la configuration sur le serveur PingFederate en utilisant les paramètres indiqués sur la page Configuration de la fédération après avoir terminé l'étape 2. 
-
-
-| 4 | Administrateur BlueXP | Tester et activer la connexion à partir du https://services.cloud.netapp.com/federation-setup["Page d'installation de la fédération NetApp"^]
-
-Notez que la page s'actualise entre le test de la connexion et l'activation de la connexion. 
+| 4 | Administrateur BlueXP | Tester et activer la connexion depuis le  https://services.cloud.netapp.com/federation-setup["Page d'installation de la fédération NetApp"^] La page s'actualise entre le test de la connexion et l'activation de la connexion. 
 |===
 
 
@@ -261,4 +192,4 @@ Une fois que l'administrateur BlueXP a active une connexion, il peut mettre à j
 
 Par exemple, vous devrez peut-être mettre à jour la connexion en téléchargeant un nouveau certificat.
 
-L'administrateur BlueXP qui a créé la connexion est le seul utilisateur autorisé à mettre à jour la connexion. Si vous souhaitez ajouter d'autres administrateurs, contactez le support NetApp.
+Seul l'administrateur BlueXP qui a créé la connexion peut la mettre à jour. Si vous souhaitez ajouter des administrateurs supplémentaires, contactez le support NetApp.

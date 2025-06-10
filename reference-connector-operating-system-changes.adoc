@@ -20,7 +20,7 @@ Au fur et à mesure que nous ajoutons et supprimons la prise en charge du connec
 
 == Systèmes d'exploitation pris en charge
 
-Le connecteur BlueXP est pris en charge par les systèmes d'exploitation Linux suivants.
+NetApp prend en charge le connecteur BlueXP avec les systèmes d’exploitation Linux suivants.
 
 [role="tabbed-block"]
 ====
@@ -93,9 +93,9 @@ Installation manuelle::
 Notez les points suivants concernant la prise en charge de RHEL 8 et 9 :
 
 Limites:: La classification BlueXP est prise en charge si vous installez le connecteur sur un hôte RHEL 8 ou 9 résidant sur site. Elle n'est pas prise en charge si l'hôte RHEL 8 ou 9 réside dans AWS, Azure ou Google Cloud.
-Outil d'orchestration de conteneurs:: Podman est requis en tant qu'outil d'orchestration de conteneurs lorsque vous installez le connecteur sur un hôte RHEL 8 ou 9. Docker Engine n'est pas pris en charge par RHEL 8 et 9.
+Outil d'orchestration de conteneurs:: Vous devez utiliser l’outil Podman comme outil d’orchestration de conteneur lors de l’installation du connecteur sur un hôte RHEL 8 ou 9. Docker Engine n'est pas pris en charge par RHEL 8 et 9.
 Mode de déploiement:: RHEL 8 et 9 sont pris en charge lorsque BlueXP est utilisé en mode standard, en mode restreint et en mode privé.
-Versions de connecteur prises en charge:: RHEL 8 et 9 sont pris en charge à partir des versions suivantes du connecteur :
+Versions de connecteur prises en charge:: NetApp prend en charge RHEL 8 et 9 à partir des versions suivantes du connecteur :
 +
 --
 * 3.9.40 lors de l'utilisation de BlueXP  en mode standard ou en mode restreint
@@ -119,7 +119,7 @@ https://www.redhat.com/en/technologies/linux-platforms/enterprise-linux/rhel-7-e
 
 === Connecteurs existants sur RHEL 7 ou CentOS 7
 
-Si vous disposez d'un connecteur existant fonctionnant sur RHEL 7 ou CentOS 7, nous ne prenons pas en charge la mise à niveau ou la conversion du système d'exploitation vers RHEL 8 ou 9. Pour commencer à exécuter un connecteur sur un hôte RHEL 8 ou 9, procédez comme suit :
+Si vous disposez d'un connecteur existant fonctionnant sur RHEL 7 ou CentOS 7, nous ne prenons pas en charge la mise à niveau ou la conversion du système d'exploitation vers RHEL 8 ou 9. Vous devez créer un nouveau connecteur sur un système d’exploitation pris en charge.
 
 . Configurez un hôte RHEL 8 ou 9.
 . Installez Podman.
@@ -129,7 +129,7 @@ Si vous disposez d'un connecteur existant fonctionnant sur RHEL 7 ou CentOS 7, n
 
 
 
-== Informations connexes
+== Informations associées
 
 
 

@@ -26,7 +26,7 @@ BlueXP  assure un contrôle unifié du stockage dans votre multicloud hybride e
 
 === Contrôle unifié du stockage à partir du canevas BlueXP 
 
-Le _canevas BlueXP _ vous permet de découvrir, de déployer, d'optimiser et de gérer le stockage dans le cloud et sur site. Le canevas fournit un emplacement unique pour toute la gestion du stockage.
+Le _canevas BlueXP_ vous permet de découvrir, déployer et gérer le stockage cloud et sur site. Le canevas fournit un emplacement unique pour toute la gestion du stockage.
 
 
 
@@ -67,7 +67,7 @@ Stockage objet cloud::
 
 ==== La gestion du stockage dans les environnements de travail
 
-Sur l'environnement BlueXP , les _environnements de travail_ représentent le stockage cloud et sur site que vous avez découvert ou déployé. Vous pouvez sélectionner un environnement de travail et l'intégrer aux services de données BlueXP  ou entrer dans l'environnement de travail pour effectuer des actions de gestion du stockage telles que l'ajout de volumes.
+Sur le canevas BlueXP, les environnements de travail représentent le stockage découvert ou déployé. Vous pouvez sélectionner un environnement de travail pour l'intégrer aux services de données BlueXP ou gérer le stockage, par exemple en ajoutant des volumes.
 
 image:screenshot-canvas.png["Capture d'écran du canevas BlueXP  qui présente plusieurs environnements de travail, dont l'un est sélectionné et montre la possibilité d'activer les services de données BlueXP  ou de sélectionner entrer dans l'environnement de travail pour gérer le stockage."]
 
@@ -75,7 +75,7 @@ image:screenshot-canvas.png["Capture d'écran du canevas BlueXP  qui présente 
 
 === Des services intégrés pour protéger, sécuriser et optimiser les données
 
-BlueXP  comprend une suite complète de services de données intégrés qui vous aident à préserver la sécurité, l'intégrité et la disponibilité de vos données dans l'ensemble de vos environnements de stockage sur site et dans le cloud.
+BlueXP inclut des services de données intégrés pour maintenir la sécurité et la disponibilité de vos données sur le stockage local et cloud.
 
 Alertes BlueXP:: Consultez les problèmes liés à la capacité, à la disponibilité, aux performances, à la protection et à la sécurité dans votre environnement ONTAP.
 Catalogue d'automatisation BlueXP:: Utilisez des solutions basées sur des scripts pour automatiser le déploiement et l'intégration des produits et services NetApp.
@@ -109,7 +109,7 @@ BlueXP vous permet de gérer le stockage cloud et d'utiliser les services cloud 
 
 == Le coût
 
-Le prix de BlueXP dépend des services que vous prévoyez d'utiliser. https://bluexp.netapp.com/pricing["En savoir plus sur les tarifs BlueXP"^]
+Le prix de BlueXP dépend des services que vous utilisez. https://bluexp.netapp.com/pricing["En savoir plus sur les tarifs BlueXP"^]
 
 
 
@@ -135,7 +135,7 @@ Le modèle de gestion des accès et des identités BlueXP  offre une gestion gr
 * La gestion des accès vous permet d'attribuer un rôle aux membres à différents niveaux de la hiérarchie de l'organisation
 
 
-BlueXP  IAM est pris en charge lorsque BlueXP  est utilisé en mode standard. Si vous utilisez BlueXP  en mode restreint ou privé, vous utiliserez un _compte_ BlueXP  pour gérer les espaces de travail, les utilisateurs et les ressources.
+BlueXP IAM est pris en charge en mode standard ou restreint. Si vous utilisez BlueXP en mode privé, vous utilisez un compte BlueXP pour gérer les espaces de travail, les utilisateurs et les ressources.
 
 * link:concept-identity-and-access-management.html["En savoir plus sur BlueXP  IAM"]
 * link:concept-netapp-accounts.html["Découvrez les comptes BlueXP"]
