@@ -74,6 +74,9 @@ Le tableau suivant fournit une comparaison de ces modes.
 | Authentification | Via SaaS en utilisant auth0, la connexion NSS ou la fédération des identités | Via SaaS en utilisant auth0 ou la fédération d'identité | Authentification utilisateur locale 
 
 
+| Authentification multifacteur | Disponible pour les utilisateurs locaux | Non disponible | Non disponible 
+
+
 | Et les services de données | Tous sont pris en charge | Nombre d'entre elles sont prises en charge | Plusieurs sont pris en charge 
 
 

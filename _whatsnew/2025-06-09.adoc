@@ -18,9 +18,9 @@ Cette version du connecteur BlueXP inclut des améliorations de sécurité et de
 
 ==== Authentification multifacteur (MFA)
 
-Les utilisateurs non fédérés peuvent désormais activer l'authentification multifacteur (MFA) pour leurs comptes BlueXP, renforçant ainsi leur sécurité. Les administrateurs BlueXP peuvent gérer les paramètres MFA de leurs utilisateurs et réinitialiser ou désactiver la MFA pour chaque utilisateur, selon les besoins.
+Les utilisateurs non fédérés peuvent désormais activer l'authentification multifacteur (MFA) pour leurs comptes BlueXP, renforçant ainsi leur sécurité. Les administrateurs BlueXP peuvent gérer les paramètres MFA de leurs utilisateurs et réinitialiser ou désactiver la MFA pour chaque utilisateur, selon les besoins. Ceci est pris en charge uniquement en mode standard.
 
-link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-user-settings.html#task-user-mfa["Découvrez comment configurer l’authentification multifacteur pour vous-même."^] link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-iam-manage-members-permissions.html#manage-mfa["Découvrez comment gérer l’authentification multifacteur pour les utilisateurs."^]
+link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-user-settings.html#task-user-mfa["Découvrez comment configurer l’authentification multifacteur pour vous-même."^] link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-iam-manage-members-permissions.html#manage-mfa["Découvrez comment administrer l’authentification multifacteur pour les utilisateurs."^]
 
 
 

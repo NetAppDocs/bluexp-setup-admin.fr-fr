@@ -4939,15 +4939,10 @@ Cette partie du tableau répertorie la prise en charge de la gestion de l'enviro
   <block id="12cae065030aa4e0842692035a8202bd" category="inline-link">Page des services intelligents NetApp sur Google Cloud Marketplace</block>
   <block id="6e7edd679a9a95191eb6b90ce6943fe5" category="list-text">Après avoir été redirigé vers le <block ref="e3f48af04aeab9b1f546df3c8b75ea2a" category="inline-link-rx"></block> , assurez-vous que le bon projet est sélectionné dans le menu de navigation supérieur.</block>
   <block id="d46543c7114457c380d6e75a76c470af" category="paragraph">Abonnez-vous à NetApp Intelligent Services depuis la place de marché de votre fournisseur de cloud pour payer les services de données à un tarif horaire (PAYGO) ou via un contrat annuel. Si vous avez acheté une licence NetApp (BYOL), vous devez également souscrire à l'offre Marketplace. Votre licence est toujours facturée en premier, mais vous serez facturé au taux horaire si vous dépassez votre capacité sous licence ou si la période de validité de la licence expire.</block>
-  <block id="4f8b575844fe92cc4a57a5823b2c4c6f" category="paragraph">Les nœuds basés sur la capacité de Cloud Volumes ONTAP ne s'arrêtent plus lorsque le connecteur n'est pas conforme ou est en panne pendant plus de 14 jours. Cloud Volumes ONTAP continue d'envoyer des messages de gestion des événements en cas de perte d'accès au connecteur. Cette modification vise à garantir que Cloud Volumes ONTAP puisse continuer à fonctionner même en cas d'interruption prolongée du connecteur. Elle ne modifie pas les exigences de conformité du connecteur.</block>
-  <block id="078afc7a02a9e486708bde9dd30391e7" category="paragraph">Les nouvelles fonctionnalités suivantes sont disponibles dans BlueXP IAM.</block>
-  <block id="6b83d0ae16acd42e6178ac5dde77e977" category="section-title">Authentification multifacteur (MFA) pour les utilisateurs locaux</block>
-  <block id="e79a1a29d1adbbfc3e2d52a916a22b07" category="paragraph">Les utilisateurs locaux (non fédérés et non associés à un compte de site de support NetApp) peuvent activer l'authentification multifacteur. Les administrateurs peuvent gérer les paramètres d'authentification multifacteur des utilisateurs, notamment les désactiver temporairement ou les supprimer si nécessaire.</block>
   <block id="e9bf07011be1831466ac0bf1bbfe1140" category="doc">Connecteur 3.9.53</block>
   <block id="734a861d3d201b7a4e47067ddb5a7339" category="paragraph">Cette version du connecteur BlueXP inclut des améliorations de sécurité et des corrections de bogues.</block>
   <block id="216b28cad63bed5c978cb116067bfc38" category="paragraph">À l'heure actuelle, la version 3.9.53 est disponible pour le mode standard et le mode restreint.</block>
   <block id="2519e52723b63d73b91fe9567002e2ad" category="section-title">Authentification multifacteur (MFA)</block>
-  <block id="35234ac77de9ce6dd39c6d724c620019" category="paragraph">Les utilisateurs non fédérés peuvent désormais activer l'authentification multifacteur (MFA) pour leurs comptes BlueXP, renforçant ainsi leur sécurité. Les administrateurs BlueXP peuvent gérer les paramètres MFA de leurs utilisateurs et réinitialiser ou désactiver la MFA pour chaque utilisateur, selon les besoins.</block>
   <block id="9950fd493db1cd52e6769f96bf27cc78" category="inline-link-macro">Découvrez comment configurer l’authentification multifacteur pour vous-même.</block>
   <block id="35084d885dea7b061e6894c1cf3036d9" category="section-title">Charges de travail</block>
   <block id="01537291f07f4eb50dc075e6b0282ce8" category="paragraph">Vous pouvez désormais afficher et supprimer les informations d’identification Amazon FSx for NetApp ONTAP à partir de la page Informations d’identification dans BlueXP.</block>
@@ -5144,8 +5139,6 @@ Cette partie du tableau répertorie la prise en charge de la gestion de l'enviro
   <block id="102e22f275df79c5a1dde1e8293216b7" category="sidebar">Abonnez-vous aux services intelligents NetApp</block>
   <block id="60a6933aebf1c90a063b74167b72b65a" category="sidebar">Utiliser BlueXP</block>
   <block id="6055633e93e75f195e1ce7a98f705965" category="sidebar">Gérer les membres et les comptes de service</block>
-  <block id="09788a09cd40182e19bc9a2e7bfaa2ac" category="inline-link-macro">Découvrez comment gérer l’authentification multifacteur pour les utilisateurs.</block>
-  <block id="b06421b9a95d9ca2cc843abf3c5edbe4" category="paragraph"><block ref="b5f93708cb2e7c8499feb8c2a3a457d0" category="inline-link-macro-rx"></block> <block ref="6e0396b4058b8ab3f91c2a62781d9fbc" category="inline-link-macro-rx"></block></block>
   <block id="b41bf2522840309de504df12a13b70d2" category="paragraph">L'équipe d'assistance NetApp examinera et traitera votre demande.</block>
   <block id="fcad29f3a62024a218de540d2a955cdf" category="paragraph">La configuration de la fédération des identités crée une connexion de confiance entre le fournisseur de services d'authentification (Auth0) de BlueXP et votre propre fournisseur de gestion des identités.</block>
   <block id="d1d43f38caca7dedb941839c492f984b" category="list-text">Services de fédération Active Directory (AD FS)</block>
@@ -5214,4 +5207,10 @@ Cette partie du tableau répertorie la prise en charge de la gestion de l'enviro
   <block id="62fb2f4eacb3d56ea8cb96e9b068426c" category="admonition">Si vous ne parvenez pas à accéder à votre application d’authentification ou à votre code de récupération, vous devrez contacter votre administrateur BlueXP pour réinitialiser votre configuration MFA.</block>
   <block id="42f007f9f4877a6aa4543c5ae82e6e41" category="paragraph">Si vous souhaitez contacter l'administrateur de votre organisation, vous pouvez lui envoyer un e-mail directement depuis BlueXP. L'administrateur gère les comptes utilisateurs et les autorisations au sein de votre organisation.</block>
   <block id="f27f1ce6df3e2ec2518f77e8e1a4a531" category="section-title">9 juin 2025</block>
+  <block id="079da054a19d880b356cedc5deeaf9e3" category="paragraph">Les utilisateurs non fédérés peuvent désormais activer l'authentification multifacteur (MFA) pour leurs comptes BlueXP, renforçant ainsi leur sécurité. Les administrateurs BlueXP peuvent gérer les paramètres MFA de leurs utilisateurs et réinitialiser ou désactiver la MFA pour chaque utilisateur, selon les besoins. Ceci est pris en charge uniquement en mode standard.</block>
+  <block id="8b6178443fc25355a974613e3d6951b4" category="inline-link-macro">Découvrez comment administrer l’authentification multifacteur pour les utilisateurs.</block>
+  <block id="432ca61a502f036a7c9fe7850d55f376" category="paragraph"><block ref="b5f93708cb2e7c8499feb8c2a3a457d0" category="inline-link-macro-rx"></block> <block ref="1104a8a08c217b6a8c157f716ea4a98c" category="inline-link-macro-rx"></block></block>
+  <block id="1a504cebc3822fd967eb6426a7ff0a31" category="cell">Authentification multifacteur</block>
+  <block id="812dbc1b1f1c0d72bc2c50e8ea107ab8" category="cell">Disponible pour les utilisateurs locaux</block>
+  <block id="2d25c72c1b18e562f6654fff8e11711e" category="cell">Non disponible</block>
 </blocks>
