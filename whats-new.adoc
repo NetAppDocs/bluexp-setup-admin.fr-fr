@@ -26,7 +26,13 @@ Découvrez les nouveautés des fonctionnalités d'administration BlueXP  : gest
 
 Cette version du connecteur BlueXP inclut des améliorations de sécurité et des corrections de bogues.
 
-À l'heure actuelle, la version 3.9.53 est disponible pour le mode standard et le mode restreint.
+La version 3.9.53 est disponible pour le mode standard et le mode restreint.
+
+
+
+=== Alertes d'utilisation de l'espace disque
+
+Le centre de notifications inclut désormais des alertes sur l’utilisation de l’espace disque sur le connecteur. link:task-maintain-connectors.html#monitor-disk-space["En savoir plus ."^]
 
 
 
