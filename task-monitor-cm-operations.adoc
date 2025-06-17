@@ -16,7 +16,7 @@ summary: 'Vous pouvez surveiller l"état des opérations que BlueXP effectue pou
 [role="lead"]
 Vous pouvez surveiller l'état des opérations que BlueXP effectue pour voir si des problèmes doivent être résolus. Vous pouvez afficher l'état dans le calendrier, le Centre de notification ou recevoir des notifications par e-mail.
 
-Le tableau suivant présente une comparaison entre le calendrier et le Centre de notification pour vous permettre de comprendre ce que chacun a à offrir.
+Le tableau compare la chronologie et le centre de notifications pour mettre en évidence leurs fonctionnalités.
 
 [cols="47,47"]
 |===
@@ -26,7 +26,7 @@ Le tableau suivant présente une comparaison entre le calendrier et le Centre de
 | Affiche l'état général des événements et des actions | Fournit des détails sur chaque événement ou action pour une enquête plus approfondie 
 
 
-| Affiche l'état de la session de connexion en cours (les informations n'apparaîtront pas dans le Centre de notification après la déconnexion) | Conserve le statut pour le dernier mois 
+| Affiche l'état de la session de connexion en cours (les informations n'apparaissent pas dans le centre de notifications après la déconnexion) | Conserve le statut pour le dernier mois 
 
 
 | Affiche uniquement les actions initiées dans l'interface utilisateur | Affiche toutes les actions à partir de l'interface utilisateur ou des API 
@@ -46,7 +46,7 @@ Le tableau suivant présente une comparaison entre le calendrier et le Centre de
 
 La chronologie montre les actions que les utilisateurs ont effectuées pour gérer votre organisation ou votre compte. Cela inclut des actions de gestion telles que l'association d'utilisateurs, la création d'environnements de travail, la création de connecteurs, etc.
 
-La vérification de la chronologie peut être utile si vous devez identifier qui a effectué une action spécifique ou si vous devez identifier le statut d'une action.
+La chronologie permet d’identifier qui a effectué une action ou son statut.
 
 .Étapes
 . Dans le coin supérieur droit de la console BlueXP , sélectionnez image:icon-settings-option.png["L'icône des paramètres qui s'affiche en haut à droite de la console Web BlueXP ."] > *Chronologie*.
@@ -56,14 +56,21 @@ Par exemple, vous pouvez utiliser le filtre *Service* pour afficher les actions 
 
 
 
-.Résultat
-La chronologie est mise à jour pour vous montrer les actions de gestion terminées.
+
+
+=== Télécharger les journaux d'audit à partir de la chronologie
+
+Vous pouvez télécharger les journaux d'audit de la chronologie vers un fichier CSV. Cela vous permet de conserver une trace des actions effectuées par les utilisateurs dans votre organisation. Le fichier CSV téléchargé contient toutes les colonnes disponibles de la chronologie, quelles que soient celles que vous filtrez ou affichez.
+
+.Étapes
+. Dans la chronologie, sélectionnez l’icône de téléchargement dans le coin supérieur droit du tableau.
+
 
 
 
 == Surveiller les activités à l'aide du Centre de notification
 
-Les notifications suivent la progression des opérations que vous avez lancées dans BlueXP pour vous permettre de vérifier si l'opération a réussi ou non. Elles vous permettent d'afficher l'état de nombreuses actions BlueXP que vous avez lancées pendant votre session de connexion actuelle. Tous les services BlueXP ne rapportent pas d'informations dans le Centre de notification pour le moment.
+Les notifications suivent la progression de vos opérations BlueXP pour vérifier le succès. Elles vous permettent d'afficher l'état de nombreuses actions BlueXP que vous avez lancées pendant votre session de connexion actuelle. Tous les services BlueXP ne rapportent pas d'informations dans le Centre de notification pour le moment.
 
 Vous pouvez afficher les notifications en sélectionnant la sonnerie de notification (image:icon_bell.png["signal sonore de notification"]) dans la barre de menus. La couleur de la petite bulle dans la cloche indique la notification de gravité de niveau le plus élevé qui est active. Si vous voyez une bulle rouge, cela signifie qu'il y a une notification importante que vous devriez regarder.
 
@@ -83,7 +90,7 @@ https://docs.netapp.com/us-en/bluexp-alerts/index.html["En savoir plus sur les a
 
 === Types de notification
 
-Les notifications sont classées dans les catégories suivantes :
+BlueXP classe les notifications dans les catégories suivantes :
 
 [cols="20,60"]
 |===
@@ -121,7 +128,7 @@ Par exemple, si vous souhaitez afficher uniquement les notifications "erreur" et
 
 === Rejeter les notifications
 
-Vous pouvez supprimer des notifications de la page si vous n'avez plus besoin de les voir. Vous pouvez rejeter toutes les notifications en une seule fois ou rejeter les notifications individuelles.
+Vous pouvez supprimer des notifications de la page si vous n'avez plus besoin de les voir. Vous pouvez ignorer les notifications individuellement ou toutes à la fois.
 
 Pour ignorer toutes les notifications, dans le Centre de notification, sélectionnez image:button_3_vert_dots.png["une icône avec trois points verticaux"] Et sélectionnez *rejeter tout*.
 image:screenshot_notification_menu.png["Capture d'écran affichant le menu Notifications pour sélectionner les paramètres et ignorer toutes les options."]
@@ -137,7 +144,7 @@ Vous pouvez envoyer par e-mail des types de notifications spécifiques afin de v
 
 [NOTE]
 ====
-* Les notifications sont envoyées par e-mail pour les fonctionnalités et services suivants : le connecteur, le portefeuille numérique, la copie et la synchronisation, ainsi que la sauvegarde et la récupération.
+* BlueXP envoie des notifications par e-mail pour le connecteur, le portefeuille numérique, la copie et la synchronisation, ainsi que la sauvegarde et la récupération.
 * L'envoi de notifications par e-mail n'est pas pris en charge lorsque le connecteur est installé sur un site sans accès à Internet.
 
 
@@ -146,7 +153,7 @@ Les filtres définis dans le Centre de notification ne déterminent pas les type
 
 Tous les autres utilisateurs et destinataires sont configurés pour ne pas recevoir d'e-mails de notification. Vous devez donc configurer les paramètres de notification pour les utilisateurs supplémentaires.
 
-Vous devez avoir le rôle d’administrateur d’organisation pour personnaliser les paramètres de notifications.
+Vous devez disposer du rôle d’administrateur de l’organisation pour personnaliser les paramètres de notifications.
 
 .Étapes
 . Dans la barre de menus BlueXP, sélectionnez *Paramètres > Paramètres des alertes et des notifications*.
