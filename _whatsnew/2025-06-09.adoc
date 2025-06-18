@@ -20,7 +20,7 @@ Le centre de notifications inclut désormais des alertes sur l’utilisation de 
 
 === Améliorations de l'audit
 
-La chronologie inclut désormais les événements de connexion des utilisateurs. Cela vous permet de voir quand les utilisateurs se sont connectés à BlueXP, ce qui facilite l'audit et la surveillance de la sécurité. Les utilisateurs de l'API disposant du rôle d'administrateur d'organisation peuvent consulter l'adresse e-mail de l'utilisateur connecté en incluant l'adresse e-mail.  `includeUserData=true`` paramètre comme dans ce qui suit :  `/audit/<account_id>?includeUserData=true` .
+La chronologie inclut désormais les événements de connexion et de déconnexion des utilisateurs. Vous pouvez consulter les activités de connexion, ce qui facilite l'audit et la surveillance de la sécurité. Les utilisateurs de l'API disposant du rôle d'administrateur d'organisation peuvent consulter l'adresse e-mail de l'utilisateur connecté en incluant l'adresse e-mail.  `includeUserData=true`` paramètre comme dans ce qui suit :  `/audit/<account_id>?includeUserData=true` .
 
 
 
