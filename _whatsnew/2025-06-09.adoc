@@ -14,7 +14,7 @@ La version 3.9.53 est disponible pour le mode standard et le mode restreint.
 
 === Alertes d'utilisation de l'espace disque
 
-Le centre de notifications inclut désormais des alertes sur l’utilisation de l’espace disque sur le connecteur. link:task-maintain-connectors.html#monitor-disk-space["En savoir plus ."^]
+Le centre de notifications inclut désormais des alertes sur l’utilisation de l’espace disque sur le connecteur. link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-maintain-connectors.html#monitor-disk-space["En savoir plus ."^]
 
 
 
