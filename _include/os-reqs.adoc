@@ -54,7 +54,7 @@ Ubuntu
  a| 
 3.9.45 ou ultérieure avec BlueXP  en mode standard ou restreint
  a| 
-Moteur Docker 26.0.0
+Docker Engine 23.06 à 28.0.0.
  a| 
 Non pris en charge
 
@@ -65,11 +65,7 @@ Non pris en charge
  a| 
 3.9.29 ou ultérieure
  a| 
-Docker Engine 23.0.6 à 26.0.0
-
-26.0.0 est pris en charge avec les installations _New_ Connector 3.9.44 ou ultérieures
-
-Les versions 27.0.0 et 28.0.0 sont prises en charge avec les installations _New_ Connector 3.9.52 ou ultérieures
+Docker Engine 23.0.6 à 28.0.0.
  a| 
 Non pris en charge
 
