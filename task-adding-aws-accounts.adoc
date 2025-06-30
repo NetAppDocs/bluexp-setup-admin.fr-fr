@@ -362,7 +362,7 @@ image:screenshot-credentials-with-subscription.png["Capture d'écran de la page 
 Modifiez vos informations d'identification AWS en modifiant le type de compte (clés AWS ou rôle d'assumé), en modifiant le nom ou en mettant à jour les informations d'identification elles-mêmes (les clés ou l'ARN du rôle).
 
 
-NOTE: Vous ne pouvez pas modifier les informations d'identification d'un profil d'instance associé à une instance de connecteur ou à une instance Amazon FSx for ONTAP.
+NOTE: Vous ne pouvez pas modifier les informations d'identification d'un profil d'instance associé à une instance de connecteur ou à une instance Amazon FSx for ONTAP. Vous ne pouvez renommer les informations d'identification que pour une instance FSx for ONTAP.
 
 .Étapes
 . Dans le coin supérieur droit de la console, sélectionnez l’icône Paramètres, puis sélectionnez *Informations d’identification*.
