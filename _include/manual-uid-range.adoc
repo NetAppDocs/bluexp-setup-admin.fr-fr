@@ -10,9 +10,6 @@ Vous devez disposer des éléments suivants :
 +
 Vous avez la possibilité de configurer un serveur proxy après l'installation, mais cela nécessite de redémarrer le connecteur.
 
-+
-Notez que BlueXP ne prend pas en charge les serveurs proxy transparents.
-
 * Un certificat signé par une autorité de certification, si le serveur proxy utilise HTTPS ou si le proxy est un proxy interceptant.
 
 

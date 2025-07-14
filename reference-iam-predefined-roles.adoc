@@ -14,7 +14,7 @@ summary: La gestion des identités et des accès BlueXP  inclut plusieurs rôle
 
 
 [role="lead"]
-La gestion des identités et des accès BlueXP  inclut plusieurs rôles prédéfinis que vous pouvez attribuer aux membres de votre entreprise à différents niveaux de votre hiérarchie de ressources. Avant d'attribuer ces rôles, vous devez comprendre les autorisations incluses par chaque rôle. Les rôles se divisent en plusieurs catégories : plateforme, application et service de données.
+La gestion des identités et des accès (IAM) BlueXP inclut des rôles prédéfinis que vous pouvez attribuer aux membres de votre organisation à différents niveaux de votre hiérarchie de ressources. Avant d'attribuer ces rôles, vous devez comprendre les autorisations incluses par chaque rôle. Les rôles se divisent en plusieurs catégories : plateforme, application et service de données.
 
 
 
@@ -31,6 +31,12 @@ Les rôles de plate-forme accordent toutes les autorisations pour l’administra
 
 
 | link:reference-iam-platform-roles.html["Administrateur de dossiers ou de projets"] | Permet à un utilisateur d'accéder sans restriction à des projets et dossiers spécifiques auxquels il est affecté. Vous pouvez ajouter des membres à des dossiers ou projets qu'ils gèrent, ainsi que réaliser n'importe quelle tâche BlueXP  et utiliser n'importe quel service de données ou application sur les ressources du dossier ou du projet qui leur sont affectés. Le rôle d'administrateur de dossier ou de projet NE PEUT PAS créer de connecteurs. 
+
+
+| link:reference-iam-platform-roles.html["Administrateur de la fédération"] | Permet à un utilisateur de créer et de gérer des fédérations avec BlueXP, qui permettent l'authentification unique (SSO). 
+
+
+| link:reference-iam-platform-roles.html["Téléspectateur de la Fédération"] | Permet à un utilisateur de visualiser les fédérations existantes avec BlueXP. Impossible de créer ou de gérer des fédérations. 
 |===
 
 
@@ -66,6 +72,33 @@ Voici la liste des rôles dans la catégorie de service de données. Chaque rôl
 [cols="10,24"]
 |===
 | Rôle du service de données | Responsabilités 
+
+
+| link:reference-iam-backup-rec-roles.html["Super administrateur de sauvegarde et de récupération"] | Effectuez toutes les actions dans le service de sauvegarde et de récupération. 
+
+
+| link:reference-iam-backup-rec-roles.html["Administrateur de sauvegarde et de récupération"] | Effectuez des sauvegardes sur des instantanés locaux, répliquez-les sur un stockage secondaire et sauvegardez-les sur un stockage d'objets. 
+
+
+| link:reference-iam-backup-rec-roles.html["Administrateur de restauration de sauvegarde et de récupération"] | Restaurer les charges de travail dans le service de sauvegarde et de récupération. 
+
+
+| link:reference-iam-backup-rec-roles.html["Administrateur de clone de sauvegarde et de récupération"] | Clonez des applications et des données dans le service de sauvegarde et de récupération. 
+
+
+| link:reference-iam-backup-rec-roles.html["Visionneuse de sauvegarde et de récupération"] | Afficher les informations de sauvegarde et de récupération. 
+
+
+| link:reference-iam-disaster-rec-roles.html["Administrateur de reprise après sinistre"] | Effectuez toutes les actions dans le service de récupération après sinistre. 
+
+
+| link:reference-iam-disaster-rec-roles.html["Administrateur de basculement de reprise après sinistre"] | Effectuer des basculements et des migrations. 
+
+
+| link:reference-iam-disaster-rec-roles.html["Administrateur d'application de reprise après sinistre"] | Créez des plans de réplication, modifiez des plans de réplication et démarrez des basculements de test. 
+
+
+| link:reference-iam-disaster-rec-roles.html["Visionneuse de reprise après sinistre"] | Afficher les informations uniquement. 
 
 
 | Administration de la classification | Fournit la possibilité d'afficher les résultats de l'acquisition de classification BlueXP . La classification n'a pas de rôle de visualiseur. Les utilisateurs disposant de ce rôle peuvent afficher des informations de conformité et générer des rapports pour les ressources auxquelles ils ont accès. Ces utilisateurs ne peuvent ni activer ni désactiver l'analyse de volumes, de compartiments ou de schémas de base de données. 

@@ -17,7 +17,7 @@ summary: 'Installez un connecteur sur site, puis connectez-vous et configurez-le
 Vous pouvez installer un connecteur sur l'une de vos machines sur site. Pour exécuter le connecteur sur site, vous devez vérifier les exigences des hôtes, configurer votre réseau, préparer les autorisations cloud, installer le connecteur, configurer le connecteur, puis fournir les autorisations que vous avez préparées.
 
 .Avant de commencer
-* Vous devriez avoir un link:concept-connectors.html["Compréhension des connecteurs"].
+* Consultez les informations sur link:concept-connectors.html["Connecteurs"] .
 * Vous devriez passer en revue link:reference-limitations.html["Limitations du connecteur"].
 
 
@@ -25,7 +25,7 @@ Vous pouvez installer un connecteur sur l'une de vos machines sur site. Pour ex�
 
 == Étape 1 : vérifiez la configuration requise pour l'hôte
 
-Le logiciel du connecteur doit être exécuté sur un hôte qui répond à des exigences spécifiques du système d'exploitation, de la RAM, des ports, etc. Assurez-vous que votre hôte répond à ces exigences avant d'installer le connecteur.
+Exécutez le logiciel Connector sur un hôte qui répond aux exigences du système d’exploitation, de la RAM et du port. Assurez-vous que votre hôte répond à ces exigences avant d'installer le connecteur.
 
 
 NOTE: Le connecteur réserve la plage d'UID et de GID comprise entre 19 000 et 19 200. Cette plage est fixe et non modifiable. Si un logiciel tiers sur votre hôte utilise des UID ou des GID compris dans cette plage, l'installation du connecteur échouera. NetApp recommande d'utiliser un hôte exempt de logiciels tiers pour éviter les conflits.
@@ -247,7 +247,7 @@ sudo systemctl enable docker && sudo systemctl start docker
 
 == Étape 3 : configuration du réseau
 
-Configurez votre réseau de manière à ce que Connector puisse gérer les ressources et les processus dans votre environnement de cloud hybride. Par exemple, vous devez vous assurer que les connexions sont disponibles pour les réseaux cibles et que l'accès Internet sortant est disponible.
+Configurez la mise en réseau pour garantir que le connecteur peut gérer les ressources, avec des connexions aux réseaux cibles et un accès Internet sortant.
 
 Connexions aux réseaux cibles:: Un connecteur nécessite une connexion réseau à l'emplacement où vous prévoyez de créer et de gérer des environnements de travail. Par exemple, le réseau sur lequel vous prévoyez de créer des systèmes Cloud Volumes ONTAP ou un système de stockage dans votre environnement sur site.
 
@@ -404,7 +404,7 @@ Pour obtenir des images pour les mises à niveau des connecteurs.
 --
 
 
-Serveur proxy:: Si votre entreprise nécessite le déploiement d'un serveur proxy pour tout le trafic Internet sortant, procurez-vous les informations suivantes sur votre proxy HTTP ou HTTPS. Vous devrez fournir ces informations pendant l'installation. Notez que BlueXP ne prend pas en charge les serveurs proxy transparents.
+Serveur proxy:: NetApp prend en charge les configurations de proxy explicites et transparentes. Si vous utilisez un proxy transparent, vous devez uniquement fournir le certificat du serveur proxy. Si vous utilisez un proxy explicite, vous aurez également besoin de l'adresse IP et des informations d'identification.
 +
 --
 * Adresse IP
@@ -439,7 +439,7 @@ Activez le protocole NTP:: Si vous prévoyez d'utiliser la classification BlueXP
 Si vous souhaitez utiliser les services BlueXP dans AWS ou Azure avec un connecteur sur site, vous devez configurer des autorisations dans votre fournisseur cloud afin de pouvoir ajouter les informations d'identification au connecteur une fois que vous l'avez installé.
 
 
-TIP: Pourquoi ne pas Google Cloud ? Une fois le connecteur installé sur votre site, il ne peut pas gérer vos ressources dans Google Cloud. Le connecteur doit être installé dans Google Cloud pour gérer toutes les ressources qui y résident.
+TIP: Pourquoi ne pas Google Cloud ? Une fois le connecteur installé sur votre site, il ne peut pas gérer vos ressources dans Google Cloud. Vous devez installer le connecteur dans Google Cloud pour gérer toutes les ressources qui y résident.
 
 [role="tabbed-block"]
 ====
@@ -474,7 +474,7 @@ Pour les régions standard, les autorisations sont réparties entre deux règles
 
 
 .Résultat
-Vous devez maintenant disposer des clés d'accès pour un utilisateur IAM qui dispose des autorisations requises. Après avoir installé le connecteur, vous devez associer ces informations d'identification au connecteur de BlueXP.
+Vous devez maintenant disposer des clés d'accès pour un utilisateur IAM qui dispose des autorisations requises. Après avoir installé le connecteur, associez ces informations d’identification au connecteur de BlueXP.
 
 --
 .Azure
@@ -624,9 +624,6 @@ BlueXP peut maintenant utiliser un code client pour s'authentifier auprès de Mi
 
 
 
-.Résultat
-Votre principal de service est maintenant configuré et vous devez avoir copié l'ID de l'application (client), l'ID du répertoire (tenant) et la valeur du secret client. Après avoir installé le connecteur, vous devez associer ces informations d'identification au connecteur de BlueXP.
-
 --
 ====
 
@@ -643,11 +640,11 @@ Vous devez disposer des éléments suivants :
 +
 Vous avez la possibilité de configurer un serveur proxy après l'installation, mais cela nécessite de redémarrer le connecteur.
 
-+
-Notez que BlueXP ne prend pas en charge les serveurs proxy transparents.
-
 * Un certificat signé par une autorité de certification, si le serveur proxy utilise HTTPS ou si le proxy est un proxy interceptant.
 
+
+
+NOTE: Vous ne pouvez pas définir de certificat pour un serveur proxy transparent lors de l'installation manuelle du connecteur. Si vous devez définir un certificat pour un serveur proxy transparent, vous devez utiliser la console de maintenance après l'installation. En savoir plus sur link:reference-connector-maint-console.html["Console de maintenance des connecteurs"]le .
 
 .Description de la tâche
 Le programme d'installation disponible sur le site du support NetApp peut être une version antérieure. Après l'installation, le connecteur se met automatiquement à jour si une nouvelle version est disponible.
@@ -683,10 +680,10 @@ Où <version> est la version du connecteur que vous avez téléchargé.
  ./BlueXP-Connector-Cloud-<version> --proxy <HTTP or HTTPS proxy server> --cacert <path and file name of a CA-signed certificate>
 ----
 +
-Les paramètres --proxy et --cacert sont facultatifs. Si vous disposez d'un serveur proxy, vous devez entrer les paramètres comme indiqué. Le programme d'installation ne vous invite pas à fournir des informations sur un proxy.
+Vous devrez ajouter des informations de proxy si votre réseau en nécessite un pour l'accès à Internet. Vous pouvez ajouter un proxy transparent ou explicite. Les paramètres --proxy et --cacert sont facultatifs et ne vous seront pas demandés. Si vous disposez d'un serveur proxy, vous devez entrer les paramètres comme indiqué.
 
 +
-Voici un exemple de commande utilisant les deux paramètres facultatifs :
+Voici un exemple de configuration d’un serveur proxy explicite avec un certificat signé par une autorité de certification :
 
 +
 [source, cli]
@@ -717,13 +714,21 @@ Par exemple :
 +
 \http://bxpproxyuser:netapp1\!@address:3128
 
-
++
+--cacert spécifie un certificat signé par une autorité de certification à utiliser pour l'accès HTTPS entre le connecteur et le serveur proxy. Ce paramètre est requis pour les serveurs proxy HTTPS, les serveurs proxy d'interception et les serveurs proxy transparents.
 
 
 
 +
---cacert spécifie un certificat signé par une autorité de certification à utiliser pour l'accès HTTPS entre le connecteur et le serveur proxy. Ce paramètre est requis uniquement si vous spécifiez un serveur proxy HTTPS ou si le proxy est un proxy interceptant.
+Voici un exemple de configuration d'un serveur proxy transparent. Lors de la configuration d'un proxy transparent, il n'est pas nécessaire de définir le serveur proxy. Il suffit d'ajouter un certificat signé par une autorité de certification à l'hôte de votre connecteur :
 
+
+
++
+[source, cli]
+----
+ ./BlueXP-Connector-Cloud-v3.9.40 --cacert /tmp/cacert/certificate.cer
+----
 . Si vous avez utilisé Podman, vous devrez ajuster le port aardvark-dns.
 +
 .. Connectez-vous en SSH à la machine virtuelle BlueXP Connector.
@@ -748,13 +753,13 @@ Esc:wq
 
 
 .Résultat
-Le connecteur est maintenant installé. À la fin de l'installation, le service connecteur (ocm) redémarre deux fois si vous avez spécifié un serveur proxy.
+À la fin de l'installation, le service connecteur (ocm) redémarre deux fois si vous avez spécifié un serveur proxy.
 
 
 
-== Étape 6 : configurer le connecteur
+== Étape 6 : Enregistrer le connecteur avec BlueXP
 
-Inscrivez-vous ou connectez-vous, puis configurez le connecteur pour qu'il fonctionne avec votre organisation BlueXP .
+Connectez-vous à BlueXP et associez le connecteur à votre organisation. Votre mode de connexion dépend du mode d'utilisation de BlueXP. Si vous utilisez BlueXP en mode standard, vous vous connectez via le site web SaaS. Si vous utilisez BlueXP en mode restreint ou privé, vous vous connectez localement depuis l'hôte du connecteur.
 
 .Étapes
 . Ouvrez un navigateur Web et entrez l'URL suivante :
@@ -771,15 +776,12 @@ _Ipaddress_ peut être localhost, une adresse IP privée ou une adresse IP publi
 .. Entrez un nom pour le système.
 .. Sous *exécutez-vous dans un environnement sécurisé ?* maintenez le mode restreint désactivé.
 +
-Vous devez désactiver le mode restreint, car ces étapes décrivent l'utilisation de BlueXP en mode standard. (En outre, le mode restreint n'est pas pris en charge lorsque le connecteur est installé sur site.)
+Gardez le mode restreint désactivé car ces étapes utilisent BlueXP en mode standard. (En outre, le mode restreint n'est pas pris en charge lorsque le connecteur est installé sur site.)
 
 .. Sélectionnez *commençons*.
 
 
 
-
-.Résultat
-BlueXP est maintenant configuré avec le connecteur que vous venez d'installer.
 
 
 
@@ -792,7 +794,7 @@ Une fois que vous avez installé et configuré le connecteur, ajoutez vos identi
 .AWS
 --
 .Avant de commencer
-Si vous venez de créer ces identifiants dans AWS, leur utilisation peut prendre quelques minutes. Attendez quelques minutes avant d'ajouter les informations d'identification à BlueXP.
+Si vous venez de créer ces informations d’identification AWS, leur disponibilité peut prendre quelques minutes. Attendez quelques minutes avant d'ajouter les informations d'identification à BlueXP.
 
 .Étapes
 . Dans le coin supérieur droit de la console BlueXP, sélectionnez l'icône Paramètres, puis sélectionnez *informations d'identification*.
@@ -818,7 +820,7 @@ Vous pouvez maintenant accéder au https://console.bluexp.netapp.com["Console Bl
 .Azure
 --
 .Avant de commencer
-Si vous venez de créer ces identifiants dans Azure, leur mise à disposition peut prendre quelques minutes. Attendez quelques minutes avant d'ajouter les informations d'identification à BlueXP.
+Si vous venez de créer ces informations d’identification Azure, leur disponibilité peut prendre quelques minutes. Attendez quelques minutes avant d'ajouter les informations d'identification à BlueXP.
 
 .Étapes
 . Dans le coin supérieur droit de la console BlueXP, sélectionnez l'icône Paramètres, puis sélectionnez *informations d'identification*.

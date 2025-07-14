@@ -1,0 +1,33 @@
+---
+sidebar: sidebar 
+permalink: task-federation-verify-domain.html 
+keywords: federation, active directory federation services, adfs, ad fs, single sign-on, microsoft, federate, federated connection, SSO, identity federation, identity management, corporate identity 
+summary: 'Fédérez-vous avec vos services de fédération Active Directory (AD FS) pour activer l"authentification unique (SSO) pour BlueXP. Cela permet aux utilisateurs de se connecter avec leurs identifiants d"entreprise.' 
+---
+= Vérifiez le domaine de messagerie de votre connexion fédérée
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Si vous souhaitez fédérer vos comptes avec un domaine différent de votre domaine de messagerie, vous devez d'abord vérifier que vous en êtes le propriétaire. Seuls les domaines vérifiés peuvent être utilisés pour la fédération.
+
+.Rôles requis
+Administrateur d'organisation ou administrateur de fédération. link:reference-iam-predefined-roles.html["En savoir plus sur les rôles d’accès."]
+
+La vérification de votre domaine implique l'ajout d'un enregistrement TXT à ses paramètres DNS. Cet enregistrement prouve que vous êtes le propriétaire du domaine et permet à BlueXP de l'approuver pour la fédération. Vous devrez peut-être vous concerter avec votre administrateur informatique ou réseau pour réaliser cette étape.
+
+.Étapes
+. Dans le coin supérieur droit de la console BlueXP , sélectionnez image:icon-settings-option.png["L'icône des paramètres qui s'affiche en haut à droite de la console Web BlueXP ."] > *gestion des identités et des accès*.
+. Sélectionnez l'onglet *Fédération*.
+. Sélectionnez *Configurer une nouvelle fédération*.
+. Sélectionnez *Vérifier la propriété du domaine*.
+. Saisissez le domaine que vous souhaitez vérifier et sélectionnez *Continuer*.
+. Copiez l’enregistrement TXT fourni.
+. Accédez aux paramètres DNS de votre domaine et configurez la valeur TXT fournie comme enregistrement TXT pour votre domaine. Contactez votre administrateur informatique ou réseau si nécessaire.
+. Une fois l'enregistrement TXT ajouté, revenez à BlueXP et sélectionnez *Vérifier*.
+

@@ -1,0 +1,103 @@
+---
+sidebar: sidebar 
+permalink: task-federation-import.html 
+keywords: federation, BlueXP, identity provider, IdP, single sign-on, SSO, verified domain, credentials, certificate, client secret, update, manage federations, security, compliance, user access, productivity, account management, authentication, access control, business continuity 
+summary: Importez votre connexion fédérée existante dans BlueXP pour la gérer dans la nouvelle interface. Vous pourrez ainsi profiter des dernières améliorations sans avoir à recréer vos connexions fédérées. 
+---
+= Importez votre fédération dans BlueXP
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Importez votre connexion fédérée existante dans BlueXP pour la gérer dans la nouvelle interface. Vous pourrez ainsi profiter des dernières améliorations sans avoir à recréer vos connexions fédérées.
+
+Les clients existants ayant déjà configuré des connexions fédérées sur BlueXP peuvent importer leurs fédérations existantes dans la nouvelle interface. Cela vous permet de gérer vos connexions fédérées dans la nouvelle page « Fédérations » sans avoir à les recréer.
+
+
+NOTE: Après avoir importé votre fédération existante, vous pouvez gérer la fédération à partir de la page Fédérations. link:task-federation-manage.html["En savoir plus sur la gestion des fédérations."]
+
+.Rôle requis
+Administrateur d'organisation ou administrateur de fédération. link:reference-iam-predefined-roles.html["En savoir plus sur les rôles d’accès."]
+
+
+
+== Importer une fédération
+
+.Étapes
+. Dans le coin supérieur droit de la console BlueXP , sélectionnez image:icon-settings-option.png["L'icône des paramètres qui s'affiche en haut à droite de la console Web BlueXP ."] > *gestion des identités et des accès*.
+. Sélectionnez l'onglet *Fédération*.
+. Sélectionnez *Importer la Fédération*.
+
+
+
+
+== Ajouter un domaine vérifié à une fédération existante
+
+Vous pouvez ajouter un domaine vérifié à une fédération existante dans BlueXP. Vous pouvez ajouter un domaine vérifié à une fédération existante dans BlueXP pour utiliser plusieurs domaines avec le même fournisseur d'identité (IdP).
+
+Vous devez avoir vérifié le domaine dans BlueXP avant de pouvoir l'ajouter à une fédération. Si ce n'est pas encore le cas, vous pouvez le faire en suivant les étapes décrites dans la section link:task-federation-verify-domain.html["Vérifiez votre domaine dans BlueXP"] .
+
+<j'ai besoin d'un cas d'utilisation ici pour savoir quand vous voudriez faire cela>--Tonia <combien de temps faut-il aux utilisateurs de ce nouveau domaine pour pouvoir se connecter ?--Tonia> .Étapes
+
+. Dans le coin supérieur droit de la console BlueXP , sélectionnez image:icon-settings-option.png["L'icône des paramètres qui s'affiche en haut à droite de la console Web BlueXP ."] > *gestion des identités et des accès*.
+. Sélectionnez l'onglet *Fédération*.
+. Sélectionnez le menu actions image:button_3_vert_dots.png["une icône avec trois points verticaux"] à côté de la fédération à laquelle vous souhaitez ajouter un domaine vérifié, puis sélectionnez « Mettre à jour les domaines ». La boîte de dialogue « Mettre à jour les domaines » répertorie les domaines déjà associés à cette fédération.
+. Sélectionnez un domaine vérifié dans la liste des domaines disponibles.
+. Sélectionnez *mettre à jour*.
+
+
+
+
+== Mise à jour d'une connexion fédérée expirant
+
+Vous pouvez mettre à jour les détails d'une connexion fédérée dans BlueXP. Par exemple, vous devrez mettre à jour la fédération si les informations d'identification, comme un certificat ou un secret client, expirent. Si nécessaire, modifiez la date de notification pour vous rappeler de mettre à jour la connexion avant son expiration.
+
+
+IMPORTANT: Mettez à jour l'IdP avant de mettre à jour la connexion dans BlueXP pour éviter les problèmes de connexion. Restez connecté à BlueXP pendant le processus. --Quel est l'ordre ?--Tonia
+
+.Étapes
+. Dans le coin supérieur droit de la console BlueXP , sélectionnez image:icon-settings-option.png["L'icône des paramètres qui s'affiche en haut à droite de la console Web BlueXP ."] > *gestion des identités et des accès*.
+. Sélectionnez l'onglet *Fédération*.
+. Sélectionnez le menu Actions (trois points verticaux) à côté de la fédération à laquelle vous souhaitez ajouter un domaine vérifié, puis sélectionnez « Mettre à jour la fédération ». La boîte de dialogue « Mettre à jour les domaines » répertorie le domaine déjà associé à cette fédération.
+. Mettez à jour les détails de la fédération si nécessaire.
+. Sélectionnez *mettre à jour*.
+
+
+
+
+== Tester une fédération existante
+
+Si vous rencontrez des problèmes avec une fédération existante, vous pouvez tester la connexion pour vérifier son bon fonctionnement. Cela vous aidera à identifier et à résoudre les problèmes éventuels.
+
+.Étapes
+. Dans le coin supérieur droit de la console BlueXP , sélectionnez image:icon-settings-option.png["L'icône des paramètres qui s'affiche en haut à droite de la console Web BlueXP ."] > *gestion des identités et des accès*.
+. Sélectionnez l'onglet *Fédération*.
+. Sélectionnez le menu actions image:button_3_vert_dots.png["une icône avec trois points verticaux"] à côté de la fédération à laquelle vous souhaitez ajouter un domaine vérifié et sélectionnez *Tester la connexion*.
+. Sélectionnez *Tester*. Vous serez invité à vous connecter avec vos identifiants d'entreprise. Si la connexion réussit, vous serez redirigé vers la console BlueXP . En cas d'échec, un message d'erreur indiquant le problème de fédération s'affichera.
+. Sélectionnez *Terminé* pour revenir à l’onglet *Fédération*.
+
+
+
+
+== Désactiver une fédération
+
+Si vous n'avez plus besoin d'une fédération, vous pouvez la désactiver. Cela empêchera les utilisateurs associés à la fédération de se connecter à BlueXP avec leurs identifiants d'entreprise. Vous pourrez réactiver la fédération ultérieurement si nécessaire.
+
+Quand un utilisateur doit-il désactiver une fédération ? Par exemple, si le fournisseur d'identité est en cours de mise à jour ou si la fédération n'est plus nécessaire. --Tonia ?
+
+.Étapes
+. Dans le coin supérieur droit de la console BlueXP , sélectionnez image:icon-settings-option.png["L'icône des paramètres qui s'affiche en haut à droite de la console Web BlueXP ."] > *gestion des identités et des accès*.
+. Sélectionnez l'onglet *Fédération*.
+. Sélectionnez le menu actions image:button_3_vert_dots.png["une icône avec trois points verticaux"] à côté de la fédération à laquelle vous souhaitez ajouter un domaine vérifié et sélectionnez *Désactiver*.
+
+
+
+
+== Supprimer une fédération
+
+Si vous n'avez plus besoin d'une fédération, vous pouvez la supprimer. Cela supprime la fédération de BlueXP et empêche les utilisateurs qui lui sont associés de se connecter à BlueXP avec leurs identifiants d'entreprise. Par exemple, si le fournisseur d'identité est mis hors service ou si la fédération n'est plus nécessaire, une fois supprimée, vous ne pouvez plus la récupérer. Vous devez en créer une nouvelle.

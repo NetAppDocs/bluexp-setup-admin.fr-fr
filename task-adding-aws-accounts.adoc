@@ -279,12 +279,8 @@ Pour tous les autres comptes ou organisations, vous devez associer manuellement 
 
 Lorsque vous vous abonnez depuis AWS Marketplace, la dernière étape du processus consiste à associer l'abonnement à votre organisation. Si vous n'avez pas effectué cette étape, vous ne pourrez pas utiliser l'abonnement avec votre organisation ou votre compte.
 
-
-TIP: Si vous utilisez le mode standard ou restreint, vous disposerez d'une _organisation BlueXP_, que vous gérerez à l'aide de la gestion des identités et des accès BlueXP (IAM). Mais si vous utilisez BlueXP  en mode privé, vous aurez un _compte BlueXP _.
-
 * link:concept-modes.html["Découvrez les modes de déploiement BlueXP"]
 * link:concept-identity-and-access-management.html["En savoir plus sur la gestion des identités et des accès BlueXP "]
-* link:concept-netapp-accounts.html["Découvrez les comptes BlueXP"]
 
 
 Suivez les étapes ci-dessous si vous vous êtes abonné aux services de données intelligents NetApp depuis AWS Marketplace, mais que vous avez manqué l’étape permettant d’associer l’abonnement à votre compte.

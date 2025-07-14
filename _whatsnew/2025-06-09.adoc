@@ -38,7 +38,7 @@ link:https://docs.netapp.com/us-en/keystone-staas/index.html["Découvrez la gest
 
 ==== Authentification multifacteur (MFA)
 
-Les utilisateurs non fédérés peuvent désormais activer l'authentification multifacteur (MFA) pour leurs comptes BlueXP, renforçant ainsi leur sécurité. Les administrateurs BlueXP peuvent gérer les paramètres MFA de leurs utilisateurs et réinitialiser ou désactiver la MFA pour chaque utilisateur, selon les besoins. Ceci est pris en charge uniquement en mode standard.
+Les utilisateurs non fédérés peuvent activer l'authentification multifacteur (MFA) pour leurs comptes BlueXP afin d'améliorer la sécurité. Les administrateurs peuvent gérer les paramètres de l'authentification multifacteur, notamment la réinitialisation ou la désactivation de l'authentification multifacteur pour les utilisateurs, selon les besoins. Ceci est pris en charge uniquement en mode standard.
 
 link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-user-settings.html#task-user-mfa["Découvrez comment configurer l’authentification multifacteur pour vous-même."^] link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-iam-manage-members-permissions.html#manage-mfa["Découvrez comment administrer l’authentification multifacteur pour les utilisateurs."^]
 

@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task-maintain-connectors.html 
-keywords: connector operating system, connector maintenance, vm maintenance, os updates, operating system updates, stop connector, restart connector 
+keywords: connector operating system, connector maintenance, vm maintenance, os updates, operating system updates, stop connector, restart connector, notifications, connector health, connector disk space, connector cpu usage, connector ram usage, connector vm, connector ip address, connector uri 
 summary: 'La maintenance du système d"exploitation sur l"hôte du connecteur relève de votre responsabilité. Par exemple, vous devez appliquer des mises à jour de sécurité au système d"exploitation sur l"hôte du connecteur en suivant les procédures standard de votre entreprise pour la distribution du système d"exploitation.' 
 ---
 = Maintenance de la VM connecteur et du système d'exploitation
@@ -23,15 +23,15 @@ TIP: Si vous disposez d'un connecteur existant, vous devez en être conscient li
 
 == Correctifs du système d'exploitation et le connecteur
 
-Vous n'avez pas besoin d'arrêter les services sur l'hôte du connecteur lors de l'application des correctifs de sécurité du système d'exploitation.
+Appliquez les correctifs de sécurité du système d’exploitation sans arrêter les services hôtes du connecteur.
 
 
 
 == Type de machine virtuelle ou d'instance
 
-Si vous avez créé un connecteur directement à partir de BlueXP, BlueXP a déployé une instance de machine virtuelle dans votre fournisseur cloud à l'aide d'une configuration par défaut. Après avoir créé le connecteur, vous ne devez pas passer à une instance de machine virtuelle plus petite qui a moins de CPU ou de RAM.
+Si vous créez un connecteur depuis BlueXP, une instance de VM est déployée chez votre fournisseur cloud avec une configuration par défaut. Après avoir créé le connecteur, ne passez pas à une instance de VM plus petite, avec moins de CPU ou de RAM.
 
-Les exigences relatives au CPU et à la RAM sont les suivantes :
+Le tableau suivant répertorie les exigences en matière de CPU et de RAM :
 
 CPU:: 8 cœurs ou 8 CPU virtuels
 RAM:: 32 GO
@@ -41,17 +41,35 @@ link:reference-connector-default-config.html["En savoir plus sur la configuratio
 
 
 
-== Surveiller l'espace disque
+== Surveiller le connecteur
 
-BlueXP vous avertit lorsque l'espace disque de la VM Connector est faible. Surveillez ces notifications dans le Centre de notifications ou configurez-le pour qu'il envoie des alertes par e-mail. La résolution des problèmes d'espace disque est de votre responsabilité. link:ttps://kb.netapp.com/Cloud/BlueXP/Cloud_Manager/How_to_resolve_disk_space_issues_on_BlueXP_connector_VM["Consultez l'article de la base de connaissances NetApp"^].
+BlueXP vous avertit lorsque la VM du connecteur présente des problèmes d'espace disque, de RAM et de processeur. Surveillez ces notifications dans le Centre de notifications de BlueXP ou configurez des notifications par e-mail. Des augmentations occasionnelles de l'espace disque, de la mémoire ou de l'utilisation du processeur sont normales, mais si elles se produisent fréquemment, vous devez prendre des mesures pour y remédier.
+
+BlueXP vous avertit lorsqu'une ressource du connecteur (processeur, RAM ou espace disque) dépasse 90 % de sa capacité totale pendant 30 minutes consécutives. Par la suite, si l'utilisation de la ressource redescend sous ce seuil, la notification s'affiche comme résolue (en vert) dans le Centre de notifications.
+
+
+NOTE: Travaillez avec le support NetApp si vous avez des questions sur la modification de votre VM Connector.
 
 link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-monitor-cm-operations.html#notification-center["En savoir plus ."^]
 
+[cols="47,47"]
+|===
+| Notification | Action nécessaire 
+
+
+| L'espace disque est trop élevé | link:https://kb.netapp.com/Cloud/BlueXP/Cloud_Manager/How_to_resolve_disk_space_issues_on_BlueXP_connector_VM["Consultez l'article de la base de connaissances NetApp"^]. 
+
+
+| L'utilisation du processeur est trop élevée | Augmentez la taille du processeur de la VM Connector dans votre hyperscaler ou sur site, selon l'emplacement d'installation. Vous pouvez également créer des connecteurs supplémentaires et répartir la charge de travail sur plusieurs connecteurs. L'utilisation de la RAM peut varier en fonction de votre environnement, des charges de travail ONTAP , du nombre de systèmes Cloud Volumes ONTAP et des services de données utilisés. 
+
+
+| L'utilisation de la RAM est trop élevée | Augmentez la RAM de la VM Connector dans votre hyperscaler ou sur site, selon l'emplacement d'installation. Vous pouvez également créer des connecteurs supplémentaires et répartir la charge de travail sur plusieurs connecteurs. L'utilisation de la RAM peut varier en fonction de votre environnement, des charges de travail ONTAP , du nombre de systèmes Cloud Volumes ONTAP et des services de données utilisés. 
+|===
 
 
 == Arrêt et démarrage de la VM connecteur
 
-Si vous devez arrêter puis démarrer le connecteur VM, vous devez le faire depuis la console de votre fournisseur cloud ou en utilisant les procédures standard de gestion sur site.
+Si nécessaire, arrêtez et démarrez la machine virtuelle Connector à l'aide de la console de votre fournisseur de cloud ou des procédures standard sur site.
 
 link:concept-connectors.html#connectors-must-be-operational-at-all-times["Notez que le connecteur doit être opérationnel en permanence"].
 
@@ -59,15 +77,15 @@ link:concept-connectors.html#connectors-must-be-operational-at-all-times["Notez 
 
 == Connectez-vous à la machine virtuelle Linux
 
-Si vous devez vous connecter à la machine virtuelle Linux sur laquelle s'exécute le connecteur, vous pouvez utiliser les options de connectivité disponibles auprès de votre fournisseur de cloud.
+Si vous devez vous connecter à la machine virtuelle Linux sur laquelle le connecteur s’exécute, utilisez les options de connectivité de votre fournisseur de cloud.
 
-AWS:: Lorsque vous avez créé l'instance Connector dans AWS, vous avez fourni une clé d'accès AWS et une clé secrète. Vous pouvez utiliser cette paire de clés vers SSH à l'instance. Le nom d'utilisateur de l'instance EC2 Linux est ubuntu (pour les connecteurs créés avant mai 2023, le nom d'utilisateur était ec2-user).
+AWS:: Lors de la création de l'instance Connector dans AWS, fournissez une clé d'accès AWS et une clé secrète. Vous pouvez utiliser cette paire de clés vers SSH à l'instance. Utilisez le nom d'utilisateur « ubuntu » pour l'instance EC2 Linux. Pour les connecteurs créés avant mai 2023, utilisez le nom d'utilisateur « ec2-user ».
 +
 --
 https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AccessingInstances.html["AWS Docs : connectez-vous à votre instance Linux"^]
 
 --
-Azure:: Lorsque vous avez créé la machine virtuelle du connecteur dans Azure, vous avez spécifié un nom d'utilisateur et choisi de vous authentifier à l'aide d'un mot de passe ou d'une clé publique SSH. Utiliser la méthode d'authentification que vous avez choisie pour vous connecter à la machine virtuelle.
+Azure:: Lorsque vous créez la machine virtuelle Connector dans Azure, vous spécifiez un nom d’utilisateur et choisissez de vous authentifier avec un mot de passe ou une clé publique SSH. Utiliser la méthode d'authentification que vous avez choisie pour vous connecter à la machine virtuelle.
 +
 --
 https://docs.microsoft.com/en-us/azure/virtual-machines/linux/mac-create-ssh-keys#ssh-into-your-vm["Azure Docs : connexion SSH à votre machine virtuelle"^]
@@ -85,14 +103,14 @@ https://cloud.google.com/compute/docs/instances/connecting-to-instance["Google C
 
 == Modifiez l'adresse IP d'un connecteur
 
-Si votre entreprise l'exige, vous pouvez modifier l'adresse IP interne et l'adresse IP publique de l'instance de connecteur qui est automatiquement attribuée par votre fournisseur de cloud.
+Vous pouvez modifier les adresses IP internes et publiques de l'instance Connector attribuées par votre fournisseur de cloud si nécessaire.
 
 .Étapes
 . Suivez les instructions de votre fournisseur de cloud pour modifier l'adresse IP locale ou l'adresse IP publique (ou les deux) de l'instance de connecteur.
-. Si vous avez modifié l'adresse IP publique et que vous devez vous connecter à l'interface utilisateur locale s'exécutant sur le connecteur, redémarrez l'instance de connecteur pour enregistrer la nouvelle adresse IP avec BlueXP.
+. Redémarrez l'instance du connecteur pour enregistrer une nouvelle adresse IP publique avec BlueXP.
 . Si vous avez modifié l'adresse IP privée, mettez à jour l'emplacement de sauvegarde des fichiers de configuration Cloud Volumes ONTAP de manière à ce que les sauvegardes soient envoyées à la nouvelle adresse IP privée sur le connecteur.
 +
-Vous devez mettre à jour l'emplacement de sauvegarde de chaque système Cloud Volumes ONTAP.
+Mettez à jour l’emplacement de sauvegarde pour chaque système Cloud Volumes ONTAP .
 
 +
 .. Depuis l'interface de ligne de commandes de Cloud Volumes ONTAP, définir le niveau de privilège sur Advanced :
@@ -121,12 +139,11 @@ system configuration backup settings modify -destination <target-location>
 
 == Modifier les URI d'un connecteur
 
-Ajoutez et supprimez l'URI (Uniform Resource identifier) d'un connecteur.
+Vous pouvez ajouter et supprimer l’identifiant de ressource uniforme (URI) pour un connecteur.
 
 .Étapes
 . Sélectionnez la liste déroulante *Connector* dans l'en-tête BlueXP.
 . Sélectionnez *gérer les connecteurs*.
-. Développez la barre *Connector URI* pour afficher les URI d'un connecteur.
-. Développez la barre *Connector URI* pour afficher les URI d'un connecteur.
+. Développez la barre *URI du connecteur* pour afficher les URI du connecteur.
 . Ajoutez et supprimez des URI, puis sélectionnez *appliquer*.
 

@@ -1,0 +1,9 @@
+= 
+:allow-uri-read: 
+
+
+.Étapes
+. Dans le coin supérieur droit de la console BlueXP , sélectionnez image:icon-settings-option.png["L'icône des paramètres qui s'affiche en haut à droite de la console Web BlueXP ."] > *gestion des identités et des accès*.
+. Sélectionnez l'onglet *Fédération*.
+. Sélectionnez *Configurer une nouvelle fédération*.
+

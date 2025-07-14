@@ -383,7 +383,7 @@ Pour obtenir des images pour les mises à niveau des connecteurs.
 --
 
 
-Serveur proxy:: Si votre entreprise nécessite le déploiement d'un serveur proxy pour tout le trafic Internet sortant, procurez-vous les informations suivantes sur votre proxy HTTP ou HTTPS. Vous devrez fournir ces informations pendant l'installation. Notez que BlueXP ne prend pas en charge les serveurs proxy transparents.
+Serveur proxy:: NetApp prend en charge les configurations de proxy explicites et transparentes. Si vous utilisez un proxy transparent, vous devez uniquement fournir le certificat du serveur proxy. Si vous utilisez un proxy explicite, vous aurez également besoin de l'adresse IP et des informations d'identification.
 +
 --
 * Adresse IP
@@ -640,10 +640,12 @@ Vous devez disposer des éléments suivants :
 +
 Vous avez la possibilité de configurer un serveur proxy après l'installation, mais cela nécessite de redémarrer le connecteur.
 
-+
-Notez que BlueXP ne prend pas en charge les serveurs proxy transparents.
-
 * Un certificat signé par une autorité de certification, si le serveur proxy utilise HTTPS ou si le proxy est un proxy interceptant.
+
+
+
+NOTE: Vous ne pouvez pas définir de certificat pour un serveur proxy transparent lors de l'installation manuelle du connecteur. Si vous devez définir un certificat pour un serveur proxy transparent, vous devez utiliser la console de maintenance après l'installation. En savoir plus sur link:reference-connector-maint-console.html["Console de maintenance des connecteurs"]le .
+
 * Identité gérée activée sur la machine virtuelle dans Azure, qui permet de fournir les autorisations Azure requises via un rôle personnalisé.
 +
 https://learn.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/qs-configure-portal-windows-vm["Documentation Microsoft Azure : configurez les identités gérées des ressources Azure sur une machine virtuelle à l'aide du portail Azure"^]
@@ -684,10 +686,10 @@ Où <version> est la version du connecteur que vous avez téléchargé.
  ./BlueXP-Connector-Cloud-<version> --proxy <HTTP or HTTPS proxy server> --cacert <path and file name of a CA-signed certificate>
 ----
 +
-Les paramètres --proxy et --cacert sont facultatifs. Si vous disposez d'un serveur proxy, vous devez entrer les paramètres comme indiqué. Le programme d'installation ne vous invite pas à fournir des informations sur un proxy.
+Vous devrez ajouter des informations de proxy si votre réseau en nécessite un pour l'accès à Internet. Vous pouvez ajouter un proxy transparent ou explicite. Les paramètres --proxy et --cacert sont facultatifs et ne vous seront pas demandés. Si vous disposez d'un serveur proxy, vous devez entrer les paramètres comme indiqué.
 
 +
-Voici un exemple de commande utilisant les deux paramètres facultatifs :
+Voici un exemple de configuration d’un serveur proxy explicite avec un certificat signé par une autorité de certification :
 
 +
 [source, cli]
@@ -718,13 +720,21 @@ Par exemple :
 +
 \http://bxpproxyuser:netapp1\!@address:3128
 
-
++
+--cacert spécifie un certificat signé par une autorité de certification à utiliser pour l'accès HTTPS entre le connecteur et le serveur proxy. Ce paramètre est requis pour les serveurs proxy HTTPS, les serveurs proxy d'interception et les serveurs proxy transparents.
 
 
 
 +
---cacert spécifie un certificat signé par une autorité de certification à utiliser pour l'accès HTTPS entre le connecteur et le serveur proxy. Ce paramètre est requis uniquement si vous spécifiez un serveur proxy HTTPS ou si le proxy est un proxy interceptant.
+Voici un exemple de configuration d'un serveur proxy transparent. Lors de la configuration d'un proxy transparent, il n'est pas nécessaire de définir le serveur proxy. Il suffit d'ajouter un certificat signé par une autorité de certification à l'hôte de votre connecteur :
 
+
+
++
+[source, cli]
+----
+ ./BlueXP-Connector-Cloud-v3.9.40 --cacert /tmp/cacert/certificate.cer
+----
 . Si vous avez utilisé Podman, vous devrez ajuster le port aardvark-dns.
 +
 .. Connectez-vous en SSH à la machine virtuelle BlueXP Connector.

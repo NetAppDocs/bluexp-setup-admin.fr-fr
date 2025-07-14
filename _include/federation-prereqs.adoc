@@ -1,0 +1,8 @@
+= 
+:allow-uri-read: 
+
+
+.Avant de commencer
+* Un compte IdP avec privilèges administratifs est requis. Contactez votre administrateur IdP pour effectuer la procédure.
+* Identifiez le domaine que vous souhaitez utiliser pour la fédération. Vous pouvez utiliser votre domaine de messagerie ou un autre domaine dont vous êtes propriétaire. Si vous souhaitez utiliser un domaine différent, vous devez d'abord le vérifier dans BlueXP. Pour ce faire, suivez les étapes décrites dans la section link:task-federation-verify-domain.html["Vérifiez votre domaine dans BlueXP"] sujet.
+

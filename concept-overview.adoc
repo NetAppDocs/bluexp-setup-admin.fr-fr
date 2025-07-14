@@ -26,7 +26,7 @@ BlueXP  assure un contrôle unifié du stockage dans votre multicloud hybride e
 
 === Contrôle unifié du stockage à partir du canevas BlueXP 
 
-Le _canevas BlueXP_ vous permet de découvrir, déployer et gérer le stockage cloud et sur site. Le canevas fournit un emplacement unique pour toute la gestion du stockage.
+Le _canevas BlueXP_ vous permet de découvrir, déployer et gérer le stockage cloud et sur site. Le canevas centralise la gestion du stockage.
 
 
 
@@ -75,13 +75,12 @@ image:screenshot-canvas.png["Capture d'écran du canevas BlueXP  qui présente 
 
 === Des services intégrés pour protéger, sécuriser et optimiser les données
 
-BlueXP inclut des services de données intégrés pour maintenir la sécurité et la disponibilité de vos données sur le stockage local et cloud.
+BlueXP inclut des services de données pour sécuriser et maintenir la disponibilité des données sur l'ensemble du stockage.
 
 Alertes BlueXP:: Consultez les problèmes liés à la capacité, à la disponibilité, aux performances, à la protection et à la sécurité dans votre environnement ONTAP.
 Catalogue d'automatisation BlueXP:: Utilisez des solutions basées sur des scripts pour automatiser le déploiement et l'intégration des produits et services NetApp.
 Sauvegarde et restauration BlueXP:: Sauvegardez et restaurez les données dans le cloud et sur site.
 Classification BlueXP:: Gérez la confidentialité de vos données applicatives et de vos environnements cloud.
-OPS cloud BlueXP:: Gagnez en visibilité sur vos dépenses de cloud computing et identifiez les économies potentielles.
 Copie et synchronisation BlueXP:: Synchronisez les données entre les magasins de données sur site et dans le cloud.
 Conseiller digital BlueXP:: Optimisez votre infrastructure de données grâce aux analyses prédictives et au support proactif.
 Portefeuille digital BlueXP:: Gérez et surveillez vos licences et vos abonnements.
@@ -138,14 +137,13 @@ Le modèle de gestion des accès et des identités BlueXP  offre une gestion gr
 BlueXP IAM est pris en charge en mode standard ou restreint. Si vous utilisez BlueXP en mode privé, vous utilisez un compte BlueXP pour gérer les espaces de travail, les utilisateurs et les ressources.
 
 * link:concept-identity-and-access-management.html["En savoir plus sur BlueXP  IAM"]
-* link:concept-netapp-accounts.html["Découvrez les comptes BlueXP"]
 
 
 
 
 === Connecteurs
 
-Vous n'avez pas besoin d'un connecteur pour démarrer avec BlueXP, mais vous devez créer un connecteur pour déverrouiller toutes les fonctionnalités et tous les services BlueXP. Un connecteur vous permet de gérer les ressources et les processus dans vos environnements sur site et cloud. Il est nécessaire de gérer les environnements de travail (par exemple, Cloud Volumes ONTAP) et d'utiliser de nombreux services BlueXP .
+Vous n'avez pas besoin d'un connecteur pour démarrer avec BlueXP, mais vous devez créer un connecteur pour déverrouiller toutes les fonctionnalités et tous les services BlueXP. Un connecteur vous permet de gérer les ressources et les processus dans vos environnements sur site et cloud. Il est nécessaire pour gérer les environnements de travail (par exemple, Cloud Volumes ONTAP) et utiliser de nombreux services BlueXP .
 
 link:concept-connectors.html["En savoir plus sur les connecteurs"].
 
@@ -161,6 +159,6 @@ link:concept-modes.html["En savoir plus sur les modes de déploiement BlueXP"].
 
 == Certification SOC 2 Type 2
 
-Un comptable public indépendant et un vérificateur des services ont examiné BlueXP et confirmé qu'il a obtenu des rapports SOC 2 de type 2 en fonction des critères des services de fiducie applicables.
+Un cabinet d'expertise comptable et d'auditeur de services indépendant a examiné BlueXP et a affirmé que BlueXP avait obtenu les rapports SOC 2 Type 2 sur la base des critères applicables des services de confiance.
 
 https://www.netapp.com/company/trust-center/compliance/soc-2/["Consultez les rapports SOC 2 de NetApp"^]

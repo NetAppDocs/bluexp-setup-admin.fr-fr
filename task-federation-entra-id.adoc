@@ -1,0 +1,99 @@
+---
+sidebar: sidebar 
+permalink: task-federation-entra-id.html 
+keywords: Microsoft Entra ID, BlueXP, federation, single sign-on, SSO, identity provider, IdP, service provider-initiated SSO, domain verification, client secret, redirect URL, organization admin 
+summary: 'Associez un compte du site de support NetApp à votre organisation ou à votre compte BlueXP  pour activer les workflows clés pour Cloud Volumes ONTAP. Ces informations d"identification NSS sont associées à l"ensemble de l"organisation ou du compte BlueXP .' 
+---
+= Fédérer BlueXP avec Microsoft Entra ID
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Fédérez-vous avec votre fournisseur d'identité Microsoft Entra ID pour activer l'authentification unique (SSO) pour BlueXP. Cela permet aux utilisateurs de se connecter avec leurs identifiants d'entreprise.
+
+.Rôles requis
+Un administrateur d'organisation ou de fédération est requis pour créer et gérer des fédérations. Le lecteur de fédération peut consulter la page Fédération. link:reference-iam-predefined-roles.html["En savoir plus sur les rôles d’accès."]
+
+
+NOTE: Vous pouvez fédérer votre réseau avec votre fournisseur d'identité d'entreprise ou avec le site de support NetApp . NetApp recommande de choisir l'une ou l'autre option, mais pas les deux.
+
+NetApp prend uniquement en charge l'authentification unique initiée par le fournisseur de services (SP). Vous devez d'abord configurer le fournisseur d'identité pour qu'il approuve NetApp en tant que fournisseur de services. Vous pouvez ensuite créer une connexion dans BlueXP utilisant la configuration du fournisseur d'identité.
+
+Vous pouvez configurer une connexion fédérée avec votre identifiant Microsoft Entra pour activer l'authentification unique (SSO) pour BlueXP. Cette procédure consiste à configurer votre identifiant Microsoft Entra pour qu'il approuve BlueXP en tant que fournisseur de services, puis à créer la connexion dans BlueXP.
+
+.Avant de commencer
+* Un compte IdP avec privilèges administratifs est requis. Contactez votre administrateur IdP pour effectuer la procédure.
+* Identifiez le domaine que vous souhaitez utiliser pour la fédération. Vous pouvez utiliser votre domaine de messagerie ou un autre domaine dont vous êtes propriétaire. Si vous souhaitez utiliser un domaine différent, vous devez d'abord le vérifier dans BlueXP. Pour ce faire, suivez les étapes décrites dans la section link:task-federation-verify-domain.html["Vérifiez votre domaine dans BlueXP"] sujet.
+
+
+.Étapes
+. Dans le coin supérieur droit de la console BlueXP , sélectionnez image:icon-settings-option.png["L'icône des paramètres qui s'affiche en haut à droite de la console Web BlueXP ."] > *gestion des identités et des accès*.
+. Sélectionnez l'onglet *Fédération*.
+. Sélectionnez *Configurer une nouvelle fédération*.
+
+
+[discrete]
+====== Détails du domaine
+
+. Entrez les détails de votre domaine :
++
+.. Choisissez si vous souhaitez utiliser un domaine vérifié ou votre domaine de messagerie. Le domaine de messagerie est celui associé au compte avec lequel vous êtes connecté.
+.. Entrez le nom de la fédération que vous configurez.
+.. Si vous choisissez un domaine vérifié, sélectionnez le domaine dans la liste.
+
+
+. Sélectionnez *Suivant*.
+
+
+[discrete]
+====== Méthode de connexion
+
+. Pour votre méthode de connexion, choisissez *Fournisseur* puis sélectionnez *ID Microsoft Entra*.
+. Sélectionnez *Suivant*.
+
+
+[discrete]
+====== Instructions de configuration
+
+. Configurez votre identifiant Microsoft Entra pour qu'il approuve NetApp en tant que fournisseur de services. Cette étape doit être effectuée sur votre serveur d'identifiants Microsoft Entra.
++
+.. Utilisez les valeurs suivantes lors de l'enregistrement de votre application Microsoft Entra ID pour faire confiance à BlueXP:
++
+*** Pour l'*URL de redirection*, utilisez  `https://services.cloud.netapp.com`
+*** Pour l'*URL de réponse*, utilisez  `https://netapp-cloud-account.auth0.com/login/callback`
+
+
+.. Créez un secret client pour votre application Microsoft Entra ID. Vous devrez fournir l'ID client, le secret client et le nom de domaine Entra ID pour finaliser la fédération.
+
+
+. Revenez à BlueXP et sélectionnez *Suivant* pour créer la connexion.
+
+
+[discrete]
+====== Créer une connexion
+
+. Créer la connexion avec Microsoft Entra ID
++
+.. Saisissez l’ID client et le secret client que vous avez créés à l’étape précédente.
+.. Saisissez le nom de domaine Microsoft Entra ID.
+
+
+. Sélectionnez « Créer une connexion ». Le système crée la connexion en quelques secondes.
+
+
+[discrete]
+====== tester et activer la connexion
+
+. Sélectionnez *Suivant*.
+. Sélectionnez « Tester la connexion » pour tester votre connexion. Vous serez redirigé vers la page de connexion de votre serveur IdP. Connectez-vous avec vos identifiants IdP pour terminer le test, puis revenez à BlueXP pour activer la connexion.
+. Sélectionnez *Suivant*.
+. Sur la page *Activer la fédération*, vérifiez les détails de la fédération, puis sélectionnez *Activer la fédération*.
+. Sélectionnez *Terminer* pour terminer le processus.
+
+
+Une fois la fédération activée, les utilisateurs peuvent se connecter à BlueXP à l’aide de leurs informations d’identification d’entreprise.
