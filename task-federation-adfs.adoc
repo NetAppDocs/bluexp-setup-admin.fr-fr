@@ -63,9 +63,8 @@ AddRelyingParty "urn:auth0:netapp-cloud-account" "https://netapp-cloud-account.a
 .. Après avoir créé l'approbation, copiez l'URL des métadonnées depuis votre serveur AD FS ou téléchargez le fichier de métadonnées de fédération. Vous aurez besoin de cette URL ou de ce fichier pour établir la connexion dans BlueXP.
 
 
-
-
-+ NetApp recommande d'utiliser l'URL des métadonnées pour permettre à BlueXP de récupérer automatiquement la dernière configuration AD FS. Si vous téléchargez le fichier de métadonnées de fédération, vous devrez le mettre à jour manuellement dans BlueXP dès que des modifications seront apportées à votre configuration AD FS.
++
+NetApp recommande d’utiliser l’URL des métadonnées pour permettre à BlueXP de récupérer automatiquement la dernière configuration AD FS. Si vous téléchargez le fichier de métadonnées de fédération, vous devrez le mettre à jour manuellement dans BlueXP dès que des modifications seront apportées à votre configuration AD FS.
 
 . Revenez à BlueXP et sélectionnez *Suivant* pour créer la connexion.
 . Créez la connexion avec AD FS.

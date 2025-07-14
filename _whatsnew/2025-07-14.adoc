@@ -8,7 +8,7 @@
 
 Cette version du connecteur BlueXP inclut des améliorations de sécurité, des corrections de bogues et les nouvelles fonctionnalités suivantes :
 
-* Prise en charge des proxys transparents pour les connecteurs dédiés à la prise en charge des services Cloud Volumes ONTAP . link:https://docs.netapp.com/us-en/bluexp/task-configuring-proxy.html["En savoir plus sur la configuration d’un proxy transparent."]
+* Prise en charge des proxys transparents pour les connecteurs dédiés à la prise en charge des services Cloud Volumes ONTAP . link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-configuring-proxy.html["En savoir plus sur la configuration d’un proxy transparent."]
 * Possibilité d'utiliser des balises réseau pour aider à acheminer le trafic du connecteur lorsque le connecteur est déployé dans un environnement Google Cloud.
 * Notifications supplémentaires intégrées au produit pour la surveillance de l'état du connecteur, y compris l'utilisation du processeur et de la RAM.
 
@@ -42,7 +42,7 @@ BlueXP propose désormais une interface plus intuitive pour la gestion de la fé
 
 L'activation de l'authentification unique (SSO) via la fédération d'identités permet aux utilisateurs de se connecter à BlueXP avec leurs identifiants d'entreprise. Cela améliore la sécurité, réduit l'utilisation des mots de passe et simplifie l'intégration.
 
-Vous serez invité à importer vos connexions fédérées existantes dans la nouvelle interface pour accéder aux nouvelles fonctionnalités de gestion. Vous pourrez ainsi profiter des dernières améliorations sans avoir à recréer vos connexions fédérées. link:https://docs.netapp.com/us-en/bluexp/task-federation-import.html["En savoir plus sur l’importation de votre connexion fédérée existante vers BlueXP."]
+Vous serez invité à importer vos connexions fédérées existantes dans la nouvelle interface pour accéder aux nouvelles fonctionnalités de gestion. Vous pourrez ainsi profiter des dernières améliorations sans avoir à recréer vos connexions fédérées. link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-federation-import.html["En savoir plus sur l’importation de votre connexion fédérée existante vers BlueXP."]
 
 Une gestion améliorée de la fédération vous permet de :
 
@@ -51,7 +51,7 @@ Une gestion améliorée de la fédération vous permet de :
 * Contrôlez l’accès à la gestion de la fédération avec les rôles IAM.
 
 
-link:https://docs.netap.com/us-en/bluexp-setup-admin/concept-federation.html["En savoir plus sur la fédération d’identité dans BlueXP."]
+link:https://docs.netapp.com/us-en/bluexp-setup-admin/concept-federation.html["En savoir plus sur la fédération d’identité dans BlueXP."]
 
 
 
@@ -64,4 +64,4 @@ BlueXP prend désormais en charge l'utilisation des rôles IAM pour les fonction
 * Fédération
 
 
-link:https://docs.netapp.com/us-en/bluexp/reference-iam-predefined-roles.html["En savoir plus sur l’utilisation des rôles d’accès."]
+link:https://docs.netapp.com/us-en/bluexp-admin/reference-iam-predefined-roles.html["En savoir plus sur l’utilisation des rôles d’accès."]
