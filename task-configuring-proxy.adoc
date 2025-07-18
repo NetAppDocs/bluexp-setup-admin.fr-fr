@@ -112,7 +112,7 @@ Pour configurer un connecteur existant afin d’utiliser un serveur proxy transp
 Lorsque vous configurez un serveur proxy, le connecteur redémarre. Vérifiez que le connecteur est inactif avant de continuer.
 
 .Étapes
-+ Assurez-vous de disposer d'un fichier de certificat au format PEM pour le serveur proxy. Si vous n'en possédez pas, contactez votre administrateur réseau pour en obtenir un.
+Assurez-vous que vous disposez d’un fichier de certificat au format PEM pour le serveur proxy. Si vous n'en possédez pas, contactez votre administrateur réseau pour en obtenir un.
 
 . Ouvrez une interface de ligne de commande sur l’hôte du connecteur.
 . Accédez au répertoire de l’outil de maintenance du connecteur :  `/opt/application/netapp/service-manager-2/connector-maint-console`

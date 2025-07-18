@@ -5255,7 +5255,6 @@ Cette partie du tableau répertorie la prise en charge de la gestion de l'enviro
   <block id="0de6f673e972fb67cc36c32ad5fcb898" category="list-text">Vous n'utilisez pas le connecteur pour d'autres services de données NetApp que Cloud Volumes ONTAP.</block>
   <block id="ee8603a5f78124f751bd9a36bb2f1053" category="paragraph">Pour configurer un connecteur existant afin d’utiliser un serveur proxy transparent, utilisez l’outil de maintenance du connecteur disponible via la ligne de commande sur l’hôte du connecteur.</block>
   <block id="66f1817e95be4137166f119a89852722" category="paragraph">Lorsque vous configurez un serveur proxy, le connecteur redémarre. Vérifiez que le connecteur est inactif avant de continuer.</block>
-  <block id="e1a3bbb95e9e5f5476f81f3831fe98de" category="paragraph">+ Assurez-vous de disposer d'un fichier de certificat au format PEM pour le serveur proxy. Si vous n'en possédez pas, contactez votre administrateur réseau pour en obtenir un.</block>
   <block id="040c90d5413009e841ba3cc3b521d699" category="list-text">Ouvrez une interface de ligne de commande sur l’hôte du connecteur.</block>
   <block id="2bc1351fc63f28a1cf5ed4c899d4fc35" category="list-text">Accédez au répertoire de l’outil de maintenance du connecteur : <block ref="ea59a49bc639b17bbbe69f3540f9f07c" prefix=" " category="inline-code"></block></block>
   <block id="05c44d09b879c8fb4432a79dc845c0f5" category="list-text">Exécutez la commande suivante pour activer le proxy transparent, où <block ref="d2d60207eee35ee99f434fbad44a604c" prefix=" " category="inline-code"></block> est le répertoire et le fichier de certificat de nom que vous avez pour le serveur proxy :</block>
@@ -5453,4 +5452,5 @@ Cette partie du tableau répertorie la prise en charge de la gestion de l'enviro
   <block id="12abdfb9ba5fcfe154c4363eb977b22b" category="paragraph"><block ref="12abdfb9ba5fcfe154c4363eb977b22b" category="inline-link-macro-rx"></block></block>
   <block id="119ba48130d6c62c98b23ef445867ae0" category="paragraph">NetApp recommande d’utiliser l’URL des métadonnées pour permettre à BlueXP de récupérer automatiquement la dernière configuration AD FS. Si vous téléchargez le fichier de métadonnées de fédération, vous devrez le mettre à jour manuellement dans BlueXP dès que des modifications seront apportées à votre configuration AD FS.</block>
   <block id="f7ad98daa7023cc12c8a8312a6fb794e" category="floating-title">Tester et activer la connexion</block>
+  <block id="540c166e455adde220d6a9dbeddca7d0" category="paragraph">Assurez-vous que vous disposez d’un fichier de certificat au format PEM pour le serveur proxy. Si vous n'en possédez pas, contactez votre administrateur réseau pour en obtenir un.</block>
 </blocks>
