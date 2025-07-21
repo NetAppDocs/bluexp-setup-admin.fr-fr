@@ -1,0 +1,24 @@
+= Prise en charge des Google Cloud NetApp Volumes
+:allow-uri-read: 
+
+
+
+
+=== Prise en charge des Google Cloud NetApp Volumes
+
+Vous pouvez désormais afficher les Google Cloud NetApp Volumes dans BlueXP. link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-service-gcp/index.html["En savoir plus sur Google Cloud NetApp Volumes."]
+
+
+
+=== Gestion des identités et des accès BlueXP 
+
+
+
+==== Nouveau rôle d'accès pour Google Cloud NetApp Volumes
+
+BlueXP prend désormais en charge l'utilisation d'un rôle d'accès pour le système de stockage suivant :
+
+* Google Cloud NetApp volumes
+
+
+link:https://docs.netapp.com/us-en/bluexp-admin/reference-iam-predefined-roles.html["En savoir plus sur l’utilisation des rôles d’accès."]
