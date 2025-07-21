@@ -6,7 +6,7 @@
 
 === Prise en charge des Google Cloud NetApp Volumes
 
-Vous pouvez désormais afficher les Google Cloud NetApp Volumes dans BlueXP. link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-service-gcp/index.html["En savoir plus sur Google Cloud NetApp Volumes."]
+Vous pouvez désormais afficher les Google Cloud NetApp Volumes dans BlueXP. link:https://docs.netapp.com/us-en//bluexp-google-cloud-netapp-volumes/index.html/index.html["En savoir plus sur Google Cloud NetApp Volumes."]
 
 
 

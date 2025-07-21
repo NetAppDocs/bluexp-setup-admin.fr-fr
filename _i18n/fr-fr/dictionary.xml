@@ -5449,7 +5449,6 @@ Cette partie du tableau répertorie la prise en charge de la gestion de l'enviro
   <block id="540c166e455adde220d6a9dbeddca7d0" category="paragraph">Assurez-vous que vous disposez d’un fichier de certificat au format PEM pour le serveur proxy. Si vous n'en possédez pas, contactez votre administrateur réseau pour en obtenir un.</block>
   <block id="89d69ff3dca93dc4c1c160728186e722" category="doc">Prise en charge des Google Cloud NetApp Volumes</block>
   <block id="c0f8420dd2331e8c703faf905ce556ba" category="inline-link-macro">En savoir plus sur Google Cloud NetApp Volumes.</block>
-  <block id="e1541d92f45c55d1c796b46df595a40b" category="paragraph">Vous pouvez désormais afficher les Google Cloud NetApp Volumes dans BlueXP. <block ref="2d9a0dbc9abdf3f5520c900e61ce6c78" category="inline-link-macro-rx"></block></block>
   <block id="7ef119d24b993215797de865841c626e" category="section-title">Nouveau rôle d'accès pour Google Cloud NetApp Volumes</block>
   <block id="558052264db83696c2bf10ecfe0eaedd" category="paragraph">BlueXP prend désormais en charge l'utilisation d'un rôle d'accès pour le système de stockage suivant :</block>
   <block id="1215f8190533dfdf63d2224a6d88266f" category="list-text">Google Cloud NetApp volumes</block>
@@ -5468,4 +5467,5 @@ Cette partie du tableau répertorie la prise en charge de la gestion de l'enviro
   <block id="afa251e583f752e51e3383587060e30b" category="cell">Administrez les fonctions de santé et de gouvernance du stockage, découvrez les ressources de stockage, ainsi que modifiez et supprimez les environnements de travail existants.</block>
   <block id="95b4eb24270de6ac5f87fadb096e4edf" category="cell">Offre la possibilité de visualiser les résultats de l'analyse de BlueXP classification . Les utilisateurs disposant de ce rôle peuvent afficher des informations de conformité et générer des rapports pour les ressources auxquelles ils ont accès. Ces utilisateurs ne peuvent ni activer ni désactiver l'analyse de volumes, de compartiments ou de schémas de base de données. La classification n'a pas de rôle de visualiseur.</block>
   <block id="6bf86021a24fd009a31d432250a9ad20" category="section-title">21 juillet 2025</block>
+  <block id="21af40e527b4a74ba2f5692e884472ba" category="paragraph">Vous pouvez désormais afficher les Google Cloud NetApp Volumes dans BlueXP. <block ref="8ecfd1740a85ce17a70e2419c5980488" category="inline-link-macro-rx"></block></block>
 </blocks>
