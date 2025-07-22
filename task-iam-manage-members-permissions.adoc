@@ -108,7 +108,7 @@ Notez ce qui suit :
 *** Si vous sélectionnez l'organisation ou un dossier, le membre aura des autorisations sur tout ce qui réside dans l'organisation ou le dossier.
 
 
-** *Sélectionnez une catégorie*, puis sélectionnez un *rôle* qui fournit au membre les autorisations pour les ressources associées à l'organisation, au dossier ou au projet que vous avez sélectionné.
+** *Sélectionnez une catégorie* puis sélectionnez un *Rôle* qui fournit au membre des autorisations pour les ressources associées à l'organisation, au dossier ou au projet que vous avez sélectionné.
 +
 *** Si vous avez sélectionné un dossier ou un projet, vous pouvez choisir un rôle autre que *Organization admin*.
 +
@@ -121,7 +121,7 @@ link:reference-iam-predefined-roles.html["En savoir plus sur les rôles IAM pré
 
 . Téléchargez ou copiez l'ID client et le secret client.
 +
-lueXP affiche le secret du client une seule fois et ne le stocke pas. Copiez ou téléchargez le secret et rangez-le en toute sécurité. Notez que vous pouvez recréer l'ID client et le secret client ultérieurement, si nécessaire.
+BlueXP affiche le secret du client une seule fois et ne le stocke pas. Copiez ou téléchargez le secret et rangez-le en toute sécurité. Notez que vous pouvez recréer l'ID client et le secret client ultérieurement, si nécessaire.
 
 . Sélectionnez *Fermer*.
 
@@ -157,7 +157,7 @@ Vous devrez peut-être supprimer un membre de votre organisation, par exemple s'
 La suppression d'un membre révoque ses autorisations mais conserve ses comptes BlueXP et NetApp Support Site.
 
 .Étapes
-. Sur la page *membres*, naviguez jusqu'à un membre de la table, sélectionnezimage:icon-action.png["Icône représentant trois points côte à côte"], puis sélectionnez *Supprimer utilisateur*.
+. Depuis la page *Membres*, accédez à un membre dans le tableau, sélectionnez image:icon-action.png["Icône représentant trois points côte à côte"] puis sélectionnez *Supprimer l'utilisateur*.
 . Confirmez que vous souhaitez supprimer le membre de votre organisation.
 
 

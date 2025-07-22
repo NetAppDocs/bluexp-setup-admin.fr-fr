@@ -55,7 +55,13 @@ La liste suivante répertorie les rôles dans la catégorie d'application. Chaqu
 | link:reference-iam-keystone-roles.html["Administrateur Keystone"] | Les utilisateurs avec le rôle d'administrateur Keystone peuvent créer des demandes de service. Permet aux utilisateurs de contrôler et d'afficher les informations sur la consommation, les ressources et l'administration dans le locataire Keystone auquel ils accèdent. 
 
 
-| link:reference-iam-keystone-roles.html["Visualiseur Keystone"] | Les utilisateurs avec le rôle de visualiseur Keystone NE PEUVENT PAS créer de demandes de service. Permet aux utilisateurs de contrôler et d'afficher les informations sur la consommation, les ressources et l'administration dans le locataire Keystone auquel ils accèdent. 
+| link:reference-iam-keystone-roles.html["Visualiseur Keystone"] | Les utilisateurs avec le rôle de visualiseur Keystone NE PEUVENT PAS créer de demandes de service. Permet aux utilisateurs de surveiller et d'afficher la consommation, les actifs et les informations administratives au sein du locataire Keystone auquel ils ont accès. 
+
+
+| Rôle de configuration du médiateur ONTAP | Les comptes de service dotés du rôle de configuration Médiateur ONTAP peuvent créer des demandes de service. Ce rôle est requis dans un compte de service pour configurer une instance. link:https://docs.netapp.com/us-en/ontap/mediator/mediator-overview-concept.html["Médiateur cloud ONTAP"^] . 
+
+
+| link:reference-iam-storage-roles.html["Administrateur du stockage"] | Gérez les fonctions de gouvernance et d'intégrité du stockage, découvrez les ressources de stockage, ainsi que modifiez et supprimez les environnements de travail existants. 
 
 
 | link:reference-iam-storage-roles.html["Administrateur du stockage"] | Administrez les fonctions de santé et de gouvernance du stockage, découvrez les ressources de stockage, ainsi que modifiez et supprimez les environnements de travail existants. 
