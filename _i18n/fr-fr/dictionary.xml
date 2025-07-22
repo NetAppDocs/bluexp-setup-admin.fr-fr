@@ -5473,4 +5473,5 @@ Cette partie du tableau répertorie la prise en charge de la gestion de l'enviro
   <block id="864ccda1428bb8cb646ce133e0de4547" category="list-text">*Sélectionnez une catégorie* puis sélectionnez un *Rôle* qui fournit au membre des autorisations pour les ressources associées à l'organisation, au dossier ou au projet que vous avez sélectionné.</block>
   <block id="65c825984634823998b7cac205641007" category="paragraph">BlueXP affiche le secret du client une seule fois et ne le stocke pas. Copiez ou téléchargez le secret et rangez-le en toute sécurité. Notez que vous pouvez recréer l'ID client et le secret client ultérieurement, si nécessaire.</block>
   <block id="17968a6208774a9e7e1a042da70ec52f" category="list-text">Depuis la page *Membres*, accédez à un membre dans le tableau, sélectionnez <block ref="c9c50c6d591d91ccce1ee232fa490fb4" category="inline-image-macro-rx" type="image"></block> puis sélectionnez *Supprimer l'utilisateur*.</block>
+  <block id="fa37736e47ccc44e2228f573f9d2a303" category="paragraph"><block ref="fa37736e47ccc44e2228f573f9d2a303" category="inline-link-macro-rx"></block></block>
 </blocks>

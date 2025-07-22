@@ -39,7 +39,7 @@ BlueXP prend désormais en charge l'utilisation d'un rôle d'accès pour le syst
 * Google Cloud NetApp volumes
 
 
-link:https://docs.netapp.com/us-en/bluexp-admin/reference-iam-predefined-roles.html["En savoir plus sur l’utilisation des rôles d’accès."]
+link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["En savoir plus sur l’utilisation des rôles d’accès."]
 
 
 
