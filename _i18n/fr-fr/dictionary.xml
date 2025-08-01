@@ -4561,7 +4561,6 @@ Cette partie du tableau répertorie la prise en charge de la gestion de l'enviro
   <block id="f14b021b1ac020c4bd6150459ddd2d19" category="doc">Rôles d'accès à la plateforme BlueXP </block>
   <block id="3aba2887bff41f744b43940b1b82080a" category="cell">Rôle de la plateforme</block>
   <block id="460874c7c996eb6762b8a5b10ff2d76f" category="cell">Responsabilités</block>
-  <block id="692fafcb7a4c1881280af40a80baa20d" category="inline-link-macro">Administrateur de l'entreprise</block>
   <block id="ee1afb77ea65d6282a6b2db5ef1c9599" category="cell">Rôle d'application</block>
   <block id="ff7835459affd6ea09ace7258f1ea831" category="cell">Les utilisateurs avec le rôle d'administrateur Keystone peuvent créer des demandes de service. Permet aux utilisateurs de contrôler et d'afficher les informations sur la consommation, les ressources et l'administration dans le locataire Keystone auquel ils accèdent.</block>
   <block id="316bb1d5ed8c0cbdba665a6326ba1bde" category="inline-link-macro">Administrateur du stockage</block>
@@ -4645,7 +4644,6 @@ Cette partie du tableau répertorie la prise en charge de la gestion de l'enviro
   <block id="c4bd9bd2263d800e3d498cc0849de57f" category="paragraph">Afficher les informations sur l’état du stockage et les données de gouvernance.</block>
   <block id="91fc3f2bc4cd3f1898449b6955a5b0dc" category="doc">En savoir plus sur les informations d'identification et les autorisations AWS dans BlueXP</block>
   <block id="7de6afef390d0c27101fd5599a80c841" category="doc">En savoir plus sur les informations d'identification et les autorisations Azure dans BlueXP</block>
-  <block id="3ef1691185c3215cee725eacc5ae60e1" category="cell"><block ref="3ef1691185c3215cee725eacc5ae60e1" category="inline-link-macro-rx"></block></block>
   <block id="92d4c119f475b9887b30ea36f68501b4" category="cell"><block ref="92d4c119f475b9887b30ea36f68501b4" category="inline-link-macro-rx"></block></block>
   <block id="cfc1bf581403883b7597ea57212f92d0" category="cell"><block ref="cfc1bf581403883b7597ea57212f92d0" category="inline-link-macro-rx"></block></block>
   <block id="eee920c46940781b9236f383eb481644" category="cell"><block ref="eee920c46940781b9236f383eb481644" category="inline-link-macro-rx"></block></block>
@@ -5480,4 +5478,5 @@ Cette partie du tableau répertorie la prise en charge de la gestion de l'enviro
   <block id="67c66b3b8df7b2dee0354dd9f9fcec17" category="cell">28 juillet 2025</block>
   <block id="985faaef42ae98b8d59df17cd449681e" category="paragraph">Lorsque vous vous fédérez avec le site de support NetApp , les utilisateurs peuvent se connecter avec les mêmes informations d'identification pour accéder à BlueXP que celles que vous utilisez pour le site de support NetApp , Active IQ Digital Advisor et d'autres applications associées à votre compte de site de support NetApp .  Une fois la fédération configurée, tous les nouveaux utilisateurs qui créent un compte de site de support NetApp pourront également accéder à BlueXP.</block>
   <block id="fb18d9c76416da6ad7e8f165ea36f1d5" category="paragraph">NetApp prend en charge les protocoles et fournisseurs d’identité suivants pour la fédération :</block>
+  <block id="f207a0643b8dada892565ed2318b05cd" category="cell"><block ref="f207a0643b8dada892565ed2318b05cd" category="inline-link-macro-rx"></block></block>
 </blocks>
