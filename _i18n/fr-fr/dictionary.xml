@@ -2394,14 +2394,11 @@ La découverte sans connecteur (découverte directe) n'est pas prise en charge.<
   <block id="9a29204f81d065ca790be5e05be49951" category="paragraph">Vous pouvez maintenant accéder au<block ref="a47e12f4350b725a128875f50f785a3b" category="inline-link-rx"></block> Pour commencer à utiliser le connecteur avec BlueXP.</block>
   <block id="3cedfb797d3e1bc073ba2b0b4d2502cf" category="inline-link">Documentation Azure</block>
   <block id="5c5eae78661bfbe6d566f6e00a0b5a67" category="paragraph">Notez que vous pouvez créer un rôle personnalisé Azure à l'aide du portail Azure, d'Azure PowerShell, de l'interface de ligne de commandes Azure ou de l'API REST. La procédure suivante explique comment créer le rôle à l'aide de l'interface de ligne de commandes Azure. Si vous préférez utiliser une autre méthode, reportez-vous à la section<block ref="9dee1d16cb9c40964c81f1bda0fd9839" category="inline-link-rx"></block></block>
-  <block id="5377c5407df56ba84e782b4e83f6c6ba" category="cell">Sauvegardez vos clusters ONTAP sur site dans Amazon S3</block>
   <block id="adfa465566f5539105be4291db1cc510" category="cell">Lors de l'activation des sauvegardes sur vos volumes ONTAP, la sauvegarde et la restauration BlueXP vous invite à saisir une clé d'accès et un secret pour un utilisateur IAM qui dispose d'autorisations spécifiques.</block>
   <block id="ba37f89d4d4c6ea1b335169793666fbe" category="inline-link">Configurez les autorisations S3 pour les sauvegardes</block>
-  <block id="3a723efda81312f328c7de4a7741cb2c" category="cell"><block ref="3a723efda81312f328c7de4a7741cb2c" category="inline-link-rx"></block></block>
   <block id="9f60318dba873b8aa280da655451eafb" category="cell">Sauvegardez vos clusters ONTAP sur site dans StorageGRID</block>
   <block id="649c5239d0163afb3411e36c5e857809" category="cell">Lorsque vous préparez StorageGRID en tant que cible de sauvegarde pour les clusters ONTAP, BlueXP Backup and Recovery vous invite à entrer une clé d'accès et un secret pour un utilisateur IAM qui possède des autorisations spécifiques.</block>
   <block id="08cdeb7ce64fda06111111c8fea66510" category="inline-link">Préparez StorageGRID en tant que cible de sauvegarde</block>
-  <block id="62d09ae20af8b1a53c08a95792d3bdb1" category="cell"><block ref="62d09ae20af8b1a53c08a95792d3bdb1" category="inline-link-rx"></block></block>
   <block id="e6b202bba8f7c7c067b2137e58a41397" category="cell">Lorsque vous activez le Tiering BlueXP vers AWS, l'assistant vous invite à saisir une clé d'accès et une clé secrète. Ces identifiants sont transmis au cluster ONTAP afin que ONTAP puisse hiérarchiser les données dans le compartiment S3.</block>
   <block id="827bb82562627531a1105788bd9826e6" category="inline-link">Configurez les autorisations S3 pour le Tiering</block>
   <block id="5f2c172dbfc6022aa5027029dc114852" category="cell"><block ref="5f2c172dbfc6022aa5027029dc114852" category="inline-link-rx"></block></block>
@@ -2413,12 +2410,7 @@ La découverte sans connecteur (découverte directe) n'est pas prise en charge.<
   <block id="498541290e9165e5844d20ce7c56fdce" category="paragraph">Lorsque vous utilisez la sauvegarde et la restauration BlueXP pour sauvegarder Cloud Volumes ONTAP, vous devez ajouter des autorisations au connecteur dans les scénarios suivants :</block>
   <block id="963c1d6b60ef9ab217e4a2f0f2f4a47f" category="list-text">Vous souhaitez utiliser la fonctionnalité « Rechercher et restaurer »</block>
   <block id="0ce14c433ae57608c1aced4d631bc039" category="list-text">Vous souhaitez utiliser des clés de chiffrement gérées par le client (CMEK)</block>
-  <block id="3f4149dc5a7846817dd458a59e650f5f" category="inline-link">Autorisations pour la recherche et l'amplificateur ; fonctionnalité de restauration</block>
-  <block id="aae920cbe0beab1a7b76937b223c2d92" category="list-text"><block ref="4b3b7e478cad27964ed24a4ab3fe4c45" category="inline-link-rx"></block></block>
-  <block id="dc5b71cece1f13a67fc01472a59d8781" category="inline-link">Autorisations pour les CMEKs</block>
-  <block id="73206ed184feb2313c9f626b7f266208" category="list-text"><block ref="73206ed184feb2313c9f626b7f266208" category="inline-link-rx"></block></block>
   <block id="6e9436752850e460930666efdaf1e025" category="cell">Sauvegardez les clusters ONTAP sur site dans Google Cloud</block>
-  <block id="072b4c796b4a06820f943c41d4da3162" category="cell"><block ref="6a045f48523c0716d40c678a68c87636" category="inline-link-rx"></block></block>
   <block id="33afe8d49ba0b54b76d44e7f5b190b53" category="section-title">Préparez la mise en réseau pour les services BlueXP</block>
   <block id="eeb8e055593f1709925a03e2ebb13265" category="inline-link">Documentation BlueXP</block>
   <block id="1c74bcfdef9917ce07420aafab8bce83" category="paragraph"><block ref="1c74bcfdef9917ce07420aafab8bce83" category="inline-link-rx"></block></block>
@@ -2880,12 +2872,6 @@ Membre: Compte de service BlueXP à partir de serviceAccount.user</block>
   <block id="d0622c7af7b2cc2435986b2d005d8fc3" category="cell">*Environnements de travail*
 
 Cette partie du tableau répertorie la prise en charge de la gestion de l'environnement de travail depuis le canevas BlueXP. Il n'indique pas les destinations de sauvegarde prises en charge pour la sauvegarde et la restauration BlueXP.</block>
-  <block id="156b68e03278a01a3d2781f8c900caac" category="cell">Oui.
-
-<block ref="14c876cb6a245f558ae78bae571d2b6e" category="inline-link-rx"></block></block>
-  <block id="fa0738e12b2324073fa9b5f91af71e48" category="cell">Oui.
-
-<block ref="42dbd2df9d57eeeb664cce05b5a35bf1" category="inline-link-rx"></block></block>
   <block id="ceff1e7e9afd603be2687369aac73bb6" category="paragraph">Ce paramètre est important car une identité gérée permet à la machine virtuelle Connector de s'identifier à Microsoft Entra ID sans fournir d'informations d'identification.<block ref="f91ce7faef49711445322691b4d6ac64" category="inline-link-rx"></block>.</block>
   <block id="10d9864d222fd249479246f9c50df58c" category="list-text">*Définir les informations d'identification* : saisissez les informations relatives à l'entité de service Microsoft Entra qui accorde les autorisations requises :</block>
   <block id="9c0e62a86b9fe558cad9c4d280ea439d" category="list-text">Activez le protocole NTP</block>
@@ -4567,7 +4553,6 @@ Cette partie du tableau répertorie la prise en charge de la gestion de l'enviro
   <block id="1d63b1d397254c4d509474883c1cb2b9" category="inline-link-macro">Outil de visualisation du stockage</block>
   <block id="172d68d57647cf0cb58a3cbcac52a80d" category="inline-link-macro">Spécialiste de l'état du système</block>
   <block id="f9e4f3681d11897d8d94c7430ef166b2" category="cell">Rôle du service de données</block>
-  <block id="64ed34c845e9e3ebe96d95642bd80c2c" category="cell">Administration de la classification</block>
   <block id="83dcec25bcd459aaca6d3bde03c5731a" category="cell">Gérez les actions des onglets protéger, alertes, Restaurer, Paramètres et Rapports du service de protection contre les ransomwares.</block>
   <block id="c449660979799948a46372470a0eddb9" category="cell">Affichez les données des workloads, consultez les données d'alerte, téléchargez les données de restauration et téléchargez des rapports dans le service de protection contre les ransomwares.</block>
   <block id="720f5754e0beaeec96d607861fcee6d3" category="doc">Rôles d'accès à la protection contre les ransomwares pour BlueXP </block>
@@ -5192,7 +5177,6 @@ Cette partie du tableau répertorie la prise en charge de la gestion de l'enviro
   <block id="d1030414e0b81438e7c1e475b3ff1c37" category="paragraph">La gestion des identités et des accès (IAM) BlueXP inclut des rôles prédéfinis que vous pouvez attribuer aux membres de votre organisation à différents niveaux de votre hiérarchie de ressources. Avant d'attribuer ces rôles, vous devez comprendre les autorisations incluses par chaque rôle. Les rôles se divisent en plusieurs catégories : plateforme, application et service de données.</block>
   <block id="10140df1e1454ada0fe484df8f86e609" category="cell"><block ref="10140df1e1454ada0fe484df8f86e609" category="inline-link-macro-rx"></block></block>
   <block id="94dc84e1e8721887c7b647f1cdb802f2" category="cell"><block ref="94dc84e1e8721887c7b647f1cdb802f2" category="inline-link-macro-rx"></block></block>
-  <block id="178e676d4dcf16fc5b1d8f7c9431f792" category="cell">Permet à un utilisateur de visualiser les fédérations existantes avec BlueXP. Impossible de créer ou de gérer des fédérations.</block>
   <block id="da46150dd1fb0497beb9ff6a9328d80c" category="cell"><block ref="da46150dd1fb0497beb9ff6a9328d80c" category="inline-link-macro-rx"></block></block>
   <block id="589491adabb65d62d42f2088d68fdee0" category="cell">Effectuez toutes les actions dans le service de sauvegarde et de récupération.</block>
   <block id="eaec472b7a23d9c311a78adfd10b1032" category="inline-link-macro">Administrateur de sauvegarde et de récupération</block>
@@ -5445,7 +5429,6 @@ Cette partie du tableau répertorie la prise en charge de la gestion de l'enviro
   <block id="077ceb8a17d475a37128a6986bf1819f" category="inline-link-macro">Administrateur Google Cloud NetApp Volumes</block>
   <block id="42e05b82ea98ae962f4c09a6330b152a" category="cell"><block ref="42e05b82ea98ae962f4c09a6330b152a" category="inline-link-macro-rx"></block></block>
   <block id="ee848730515e9ec34272f93a110738f2" category="cell">Les utilisateurs disposant du rôle Google Cloud NetApp Volumes peuvent découvrir et gérer Google Cloud NetApp Volumes.</block>
-  <block id="afa251e583f752e51e3383587060e30b" category="cell">Administrez les fonctions de santé et de gouvernance du stockage, découvrez les ressources de stockage, ainsi que modifiez et supprimez les environnements de travail existants.</block>
   <block id="95b4eb24270de6ac5f87fadb096e4edf" category="cell">Offre la possibilité de visualiser les résultats de l'analyse de BlueXP classification . Les utilisateurs disposant de ce rôle peuvent afficher des informations de conformité et générer des rapports pour les ressources auxquelles ils ont accès. Ces utilisateurs ne peuvent ni activer ni désactiver l'analyse de volumes, de compartiments ou de schémas de base de données. La classification n'a pas de rôle de visualiseur.</block>
   <block id="6bf86021a24fd009a31d432250a9ad20" category="section-title">21 juillet 2025</block>
   <block id="5cc5248d8f5f2a5831a23c2c1c7ba338" category="cell">Rôle de configuration du médiateur ONTAP</block>
@@ -5479,4 +5462,21 @@ Cette partie du tableau répertorie la prise en charge de la gestion de l'enviro
   <block id="985faaef42ae98b8d59df17cd449681e" category="paragraph">Lorsque vous vous fédérez avec le site de support NetApp , les utilisateurs peuvent se connecter avec les mêmes informations d'identification pour accéder à BlueXP que celles que vous utilisez pour le site de support NetApp , Active IQ Digital Advisor et d'autres applications associées à votre compte de site de support NetApp .  Une fois la fédération configurée, tous les nouveaux utilisateurs qui créent un compte de site de support NetApp pourront également accéder à BlueXP.</block>
   <block id="fb18d9c76416da6ad7e8f165ea36f1d5" category="paragraph">NetApp prend en charge les protocoles et fournisseurs d’identité suivants pour la fédération :</block>
   <block id="f207a0643b8dada892565ed2318b05cd" category="cell"><block ref="f207a0643b8dada892565ed2318b05cd" category="inline-link-macro-rx"></block></block>
+  <block id="c1c35b571a8270f43bf6faa6757452f6" category="cell">Oui<block ref="7017fcd1de8071674201a0278a852eae" category="inline-link-rx"></block></block>
+  <block id="a6c599d9b9bbe744be463c056f9e194a" category="cell">Oui<block ref="8cbf8dca81955ce6c3d97cec5394e7fd" category="inline-link-rx"></block></block>
+  <block id="e3e606b368c3f3a65f5cb75fbe9c3115" category="cell">Permet à un utilisateur de visualiser les fédérations existantes avec BlueXP.  Impossible de créer ou de gérer des fédérations</block>
+  <block id="1393a4279651a3334e20f39925a139f5" category="cell">Visionneuse de classification</block>
+  <block id="725b2ecc37229f77405f9188278a6a1f" category="cell">Sauvegardez les clusters ONTAP sur site sur Amazon S3 avec la BlueXP backup and recovery</block>
+  <block id="12e11cedace336bc23a4b1c9ab448974" category="cell"><block ref="12e11cedace336bc23a4b1c9ab448974" category="inline-link-rx"></block></block>
+  <block id="51fa9005485af9016610af9875c0e913" category="cell">Sauvegarder Cloud Volumes ONTAP sur le stockage blob Azure</block>
+  <block id="8625ed737cea7841c422023f4e27bc1d" category="inline-link">Sauvegardez les données Cloud Volumes ONTAP sur le stockage Azure Blob avec Backup and Recovery</block>
+  <block id="518ffd78f998d0a25c5446da8989b6a6" category="list-text"><block ref="518ffd78f998d0a25c5446da8989b6a6" category="inline-link-rx"></block></block>
+  <block id="f66493a5c1b72a6a6a675e1d79371789" category="cell">Sauvegarder les clusters ONTAP locaux sur le stockage blob Azure</block>
+  <block id="957901780fae6c72beed34248e8e252d" category="inline-link">Sauvegardez les données ONTAP locales sur le stockage Azure Blob avec Backup and Recovery</block>
+  <block id="6d94d8c7b4ec021fb7a5a5704629681e" category="cell"><block ref="6d94d8c7b4ec021fb7a5a5704629681e" category="inline-link-rx"></block></block>
+  <block id="cd84e76d2557bd459057089ba5e1385c" category="inline-link">Sauvegardez les données Cloud Volumes ONTAP sur Google Cloud Storage avec Backup and Recovery</block>
+  <block id="3b5162ff96cd00bbd1b1ad424d59bd8f" category="list-text"><block ref="3b5162ff96cd00bbd1b1ad424d59bd8f" category="inline-link-rx"></block></block>
+  <block id="6d4f1161a06d11fa7424e224b2a86d25" category="inline-link">Sauvegardez les données ONTAP sur site sur Google Cloud Storage avec Backup and Recovery</block>
+  <block id="b9142ed8495860430205961c82c827a0" category="cell"><block ref="b9142ed8495860430205961c82c827a0" category="inline-link-rx"></block></block>
+  <block id="86b4fb0c56ea4924e5069e8f25d3a778" category="cell"><block ref="86b4fb0c56ea4924e5069e8f25d3a778" category="inline-link-rx"></block></block>
 </blocks>

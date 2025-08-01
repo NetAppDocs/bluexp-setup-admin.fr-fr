@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: reference-iam-predefined-roles.html 
-keywords: predefined roles, iam roles, organization admin, folder or project admin, classification viewer, snapcenter admin, role, iam role, admin, iam, identity and access management 
+keywords: predefined roles, iam roles, organization admin, folder or project admin, classification viewer, snapcenter admin, role, iam role, admin, iam, identity and access management, access roles, rbac 
 summary: La gestion des identités et des accès BlueXP  inclut plusieurs rôles prédéfinis que vous pouvez attribuer aux membres de votre organisation. 
 ---
 = En savoir plus sur les rôles d'accès BlueXP 
@@ -36,7 +36,7 @@ Les rôles de plateforme accordent toutes les autorisations d'administration Blu
 | link:reference-iam-platform-roles.html["Administrateur de la fédération"] | Permet à un utilisateur de créer et de gérer des fédérations avec BlueXP, ce qui permet l'authentification unique (SSO). 
 
 
-| link:reference-iam-platform-roles.html["Téléspectateur de la Fédération"] | Permet à un utilisateur de visualiser les fédérations existantes avec BlueXP. Impossible de créer ou de gérer des fédérations. 
+| link:reference-iam-platform-roles.html["Téléspectateur de la Fédération"] | Permet à un utilisateur de visualiser les fédérations existantes avec BlueXP.  Impossible de créer ou de gérer des fédérations 
 |===
 
 
@@ -62,9 +62,6 @@ La liste suivante répertorie les rôles dans la catégorie d'application. Chaqu
 
 
 | link:reference-iam-storage-roles.html["Administrateur du stockage"] | Gérez les fonctions de gouvernance et d'intégrité du stockage, découvrez les ressources de stockage, ainsi que modifiez et supprimez les environnements de travail existants. 
-
-
-| link:reference-iam-storage-roles.html["Administrateur du stockage"] | Administrez les fonctions de santé et de gouvernance du stockage, découvrez les ressources de stockage, ainsi que modifiez et supprimez les environnements de travail existants. 
 
 
 | link:reference-iam-storage-roles.html["Outil de visualisation du stockage"] | Affichez les fonctions d'intégrité et de gouvernance du stockage, ainsi que les ressources de stockage précédemment découvertes. Impossible de découvrir, de modifier ou de supprimer des environnements de travail de stockage existants. 
@@ -110,7 +107,7 @@ Voici la liste des rôles dans la catégorie de service de données. Chaque rôl
 | link:reference-iam-disaster-rec-roles.html["Visionneuse de reprise après sinistre"] | Afficher les informations uniquement. 
 
 
-| Administration de la classification | Offre la possibilité de visualiser les résultats de l'analyse de BlueXP classification . Les utilisateurs disposant de ce rôle peuvent afficher des informations de conformité et générer des rapports pour les ressources auxquelles ils ont accès. Ces utilisateurs ne peuvent ni activer ni désactiver l'analyse de volumes, de compartiments ou de schémas de base de données. La classification n'a pas de rôle de visualiseur. 
+| Visionneuse de classification | Offre la possibilité de visualiser les résultats de l'analyse de BlueXP classification . Les utilisateurs disposant de ce rôle peuvent afficher des informations de conformité et générer des rapports pour les ressources auxquelles ils ont accès. Ces utilisateurs ne peuvent ni activer ni désactiver l'analyse de volumes, de compartiments ou de schémas de base de données. La classification n'a pas de rôle de visualiseur. 
 
 
 | link:reference-iam-ransomware-roles.html["Administrateur de la protection contre les ransomwares"] | Gérez les actions des onglets protéger, alertes, Restaurer, Paramètres et Rapports du service de protection contre les ransomwares. 

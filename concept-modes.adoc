@@ -356,11 +356,7 @@ Cette partie du tableau répertorie la prise en charge de la gestion de l'enviro
 .17+| *Services* | Alertes | Non | Non 
 
 
-| Sauvegarde et restauration | Oui.
-
-https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-protection-journey.html#support-when-using-restricted-mode["Affichez la liste des destinations de sauvegarde prises en charge pour les données de volume ONTAP"^] | Oui.
-
-https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-protection-journey.html#support-when-using-private-mode["Affichez la liste des destinations de sauvegarde prises en charge pour les données de volume ONTAP"^] 
+| Sauvegarde et restauration | Ouihttps://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-protect-journey.html#support-for-sites-with-limited-internet-connectivity["Affichez la liste des destinations de sauvegarde prises en charge pour les données de volume ONTAP"^] | Ouihttps://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-protect-journey.html#support-for-sites-with-no-internet-connectivity["Affichez la liste des destinations de sauvegarde prises en charge pour les données de volume ONTAP"^] 
 
 
 | Classement | Oui. | Oui. 
