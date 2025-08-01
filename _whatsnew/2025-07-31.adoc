@@ -1,10 +1,10 @@
-= Version du mode privé (3.9.52)
+= Version du mode privé (3.9.54)
 :allow-uri-read: 
 
 
 
 
-=== Version du mode privé (3.9.52)
+=== Version du mode privé (3.9.54)
 
 Une nouvelle version en mode privé est désormais disponible au téléchargement sur le https://mysupport.netapp.com/site/downloads["Site de support NetApp"^]
 
@@ -18,7 +18,7 @@ La version 3.9.54 inclut des mises à jour des composants et services BlueXP sui
 | Connecteur | 3.9.54, 3.9.53 | Aller à la https://docs.netapp.com/us-en/bluexp-setup-admin/whats-new.html#connector-3-9-50["Quoi de neuf dans la page BlueXP"^] et reportez-vous aux modifications incluses pour les versions 3.9.54 et 3.9.53. 
 
 
-| Sauvegarde et restauration | 22 juillet 2025 | Aller à la https://docs.netapp.com/us-en/bluexp-backup-recovery/whats-new.html["Nouveautés de la page sauvegarde et restauration BlueXP"^] et se référer aux modifications incluses dans la version de juillet 2025. 
+| Sauvegarde et restauration | 28 juillet 2025 | Aller à la https://docs.netapp.com/us-en/bluexp-backup-recovery/whats-new.html["Nouveautés de la page sauvegarde et restauration BlueXP"^] et se référer aux modifications incluses dans la version de juillet 2025. 
 
 
 | Classement | 14 juillet 2025 (version 1.45) | Aller à la https://docs.netapp.com/us-en/bluexp-classification/whats-new.html["Nouveautés de la page de classification BlueXP"^] . 

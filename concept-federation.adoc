@@ -23,7 +23,7 @@ Administrateur d'organisation, administrateur de fédération, visualiseur de f�
 
 == Fédération d'identité avec le site de support NetApp
 
-Lorsque vous fédérez votre site avec le support NetApp , les utilisateurs peuvent se connecter à BlueXP avec les mêmes identifiants que ceux utilisés pour le NetApp , Active IQ et les autres applications associées à votre compte . Une fois la fédération configurée, tous les nouveaux utilisateurs créant un compte sur le site de support NetApp pourront également accéder à BlueXP.
+Lorsque vous vous fédérez avec le site de support NetApp , les utilisateurs peuvent se connecter avec les mêmes informations d'identification pour accéder à BlueXP que celles que vous utilisez pour le site de support NetApp , Active IQ Digital Advisor et d'autres applications associées à votre compte de site de support NetApp .  Une fois la fédération configurée, tous les nouveaux utilisateurs qui créent un compte de site de support NetApp pourront également accéder à BlueXP.
 
 
 NOTE: Si vous fédérez avec le site de support NetApp , vous ne pouvez pas également fédérer avec votre fournisseur de gestion des identités d'entreprise. Choisissez celui qui convient le mieux à votre organisation.
@@ -46,7 +46,7 @@ Vous pouvez configurer une connexion fédérée avec votre fournisseur d'identit
 
 === Fournisseurs d'identité pris en charge
 
-NetApp prend en charge les fournisseurs d’identité et les protocoles suivants pour la fédération :
+NetApp prend en charge les protocoles et fournisseurs d’identité suivants pour la fédération :
 
 .Protocoles
 * Fournisseurs d'identité SAML (Security assertion Markup Language)

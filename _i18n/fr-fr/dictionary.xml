@@ -5034,14 +5034,12 @@ Cette partie du tableau répertorie la prise en charge de la gestion de l'enviro
   <block id="78dc241469129405c4f4b99066b0c5c3" category="inline-link-macro">En savoir plus sur les rôles d’accès.</block>
   <block id="4610064cac3ad84114cc400649031071" category="paragraph">Administrateur d'organisation, administrateur de fédération, visualiseur de fédération. <block ref="8f129ac67aaaf533c741c49d131f7a5d" category="inline-link-macro-rx"></block></block>
   <block id="517210395e603e1c3d5f72b67c9d0d8b" category="section-title">Fédération d'identité avec le site de support NetApp</block>
-  <block id="7f75689f905a0cb4e29c4a2843031d94" category="paragraph">Lorsque vous fédérez votre site avec le support NetApp , les utilisateurs peuvent se connecter à BlueXP avec les mêmes identifiants que ceux utilisés pour le NetApp , Active IQ et les autres applications associées à votre compte . Une fois la fédération configurée, tous les nouveaux utilisateurs créant un compte sur le site de support NetApp pourront également accéder à BlueXP.</block>
   <block id="465e770e13636214d49910bb014b1053" category="admonition">Si vous fédérez avec le site de support NetApp , vous ne pouvez pas également fédérer avec votre fournisseur de gestion des identités d'entreprise. Choisissez celui qui convient le mieux à votre organisation.</block>
   <block id="2364b4b1093b706141a365b97b678a4d" category="list-text">Téléchargez et complétez le <block ref="82f36446881e14fa28b945cd41d2b383" category="inline-link-rx"></block> .</block>
   <block id="28ff396d9aacc41256de2a2d064386fd" category="list-text">Soumettez le formulaire à l'adresse e-mail indiquée dans le formulaire.</block>
   <block id="d712dedaa07f66d96d580961a7fed8f3" category="paragraph">L'équipe de support NetApp examine et traite votre demande.</block>
   <block id="d6a05f20cad23a452bca7452f796d46c" category="section-title">Configurer une connexion fédérée avec votre fournisseur d'identité</block>
   <block id="0909b89c9a263634fe87c7ab9bbebb6a" category="paragraph">Vous pouvez configurer une connexion fédérée avec votre fournisseur d'identité pour activer l'authentification unique (SSO) pour BlueXP. Cette procédure consiste à configurer votre fournisseur d'identité pour qu'il approuve NetApp en tant que fournisseur de services, puis à créer la connexion dans BlueXP.</block>
-  <block id="0c3f7255651040017d5aff94372442bb" category="paragraph">NetApp prend en charge les fournisseurs d’identité et les protocoles suivants pour la fédération :</block>
   <block id="9985b4390c40137573e6da05caf85874" category="list-title">Protocoles</block>
   <block id="e0485ece44807b13d7328ec34970e8d7" category="list-title">Fournisseurs d'identité</block>
   <block id="fe24ffaf16a8b56ee36712a6283173a6" category="section-title">Fédération avec le workflow BlueXP</block>
@@ -5474,9 +5472,12 @@ Cette partie du tableau répertorie la prise en charge de la gestion de l'enviro
   <block id="9cc4b579fbb9d233102b44ff5119e060" category="cell">3.9.54, 3.9.53</block>
   <block id="4e7c2b7c3f7b00a4db742817336d985b" category="inline-link">Quoi de neuf dans la page BlueXP</block>
   <block id="fb973b0a3719c8d26b960aed72e4fe3f" category="cell">Aller à la<block ref="f2bb5a2291ad18ff55b18a4b4553234a" category="inline-link-rx"></block> et reportez-vous aux modifications incluses pour les versions 3.9.54 et 3.9.53.</block>
-  <block id="1caea5bc420fef9b14013d5029b5ada8" category="cell">22 juillet 2025</block>
   <block id="72d49cd6d8e65ef0285be68616ea0f51" category="cell">Aller à la<block ref="d08346bd70ea49c38d1ac500c69dd11c" category="inline-link-rx"></block> et se référer aux modifications incluses dans la version de juillet 2025.</block>
   <block id="9285fd96738351d44da30f801dea109b" category="cell">14 juillet 2025 (version 1.45)</block>
   <block id="b3b08e322117d7e66cdd302866bc6d85" category="cell">Aller à la<block ref="bb3538c6013ff73961739d7c28fee95d" category="inline-link-rx"></block> .</block>
   <block id="328e39c031d3f6a77403904d6dda2377" category="section-title">31 juillet 2025</block>
+  <block id="8ec07d17b9626eed73b7d8c3ecb0e32f" category="doc">Version du mode privé (3.9.54)</block>
+  <block id="67c66b3b8df7b2dee0354dd9f9fcec17" category="cell">28 juillet 2025</block>
+  <block id="985faaef42ae98b8d59df17cd449681e" category="paragraph">Lorsque vous vous fédérez avec le site de support NetApp , les utilisateurs peuvent se connecter avec les mêmes informations d'identification pour accéder à BlueXP que celles que vous utilisez pour le site de support NetApp , Active IQ Digital Advisor et d'autres applications associées à votre compte de site de support NetApp .  Une fois la fédération configurée, tous les nouveaux utilisateurs qui créent un compte de site de support NetApp pourront également accéder à BlueXP.</block>
+  <block id="fb18d9c76416da6ad7e8f165ea36f1d5" category="paragraph">NetApp prend en charge les protocoles et fournisseurs d’identité suivants pour la fédération :</block>
 </blocks>
