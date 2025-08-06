@@ -14,7 +14,7 @@ summary: Importez votre connexion fédérée existante dans BlueXP pour la gére
 
 
 [role="lead"]
-Importez votre connexion fédérée existante dans BlueXP pour la gérer dans la nouvelle interface. Vous pourrez ainsi profiter des dernières améliorations sans avoir à recréer vos connexions fédérées.
+Si vous avez déjà configuré la fédération via NetApp Cloud Central (une application externe à BlueXP), la page Fédération vous invite à importer votre connexion fédérée existante vers BlueXP pour la gérer dans la nouvelle interface.  Cela vous permet de profiter des dernières améliorations sans avoir à recréer vos connexions fédérées.
 
 Les clients existants ayant déjà configuré des connexions fédérées sur BlueXP peuvent importer leurs fédérations existantes dans la nouvelle interface. Cela vous permet de gérer vos connexions fédérées dans la nouvelle page « Fédérations » sans avoir à les recréer.
 

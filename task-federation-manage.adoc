@@ -16,6 +16,9 @@ summary: 'Après avoir ajouté une connexion fédérée, vous pouvez la gérer d
 [role="lead"]
 Vous pouvez gérer votre fédération dans BlueXP. Vous pouvez la désactiver, mettre à jour les identifiants expirés et la désactiver si vous n'en avez plus besoin.
 
+
+NOTE: Si vous avez précédemment configuré la fédération à l'aide de NetApp Cloud Central (une application externe à BlueXP), vous devrez importer votre fédération à l'aide de la page Fédération BlueXP pour pouvoir la gérer dans BlueXP.link:task-federation-import.html["Apprenez à importer votre fédération"]
+
 Vous pouvez également ajouter un domaine vérifié à une fédération existante, ce qui vous permet d'utiliser plusieurs domaines pour votre connexion fédérée.
 
 

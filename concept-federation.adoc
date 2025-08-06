@@ -23,7 +23,7 @@ Administrateur d'organisation, administrateur de fédération, visualiseur de f�
 
 == Fédération d'identité avec le site de support NetApp
 
-Lorsque vous vous fédérez avec le site de support NetApp , les utilisateurs peuvent se connecter avec les mêmes informations d'identification pour accéder à BlueXP que celles que vous utilisez pour le site de support NetApp , Active IQ Digital Advisor et d'autres applications associées à votre compte de site de support NetApp .  Une fois la fédération configurée, tous les nouveaux utilisateurs qui créent un compte de site de support NetApp pourront également accéder à BlueXP.
+Lorsque vous vous fédérez avec le site de support NetApp , les utilisateurs peuvent se connecter avec les mêmes informations d'identification pour accéder à BlueXP que celles que vous utilisez pour le site de support NetApp , Active IQ Digital Advisor et d'autres applications associées à votre compte de site de support NetApp . Une fois la fédération configurée, tous les nouveaux utilisateurs qui créent un compte de site de support NetApp peuvent également accéder à BlueXP.
 
 
 NOTE: Si vous fédérez avec le site de support NetApp , vous ne pouvez pas également fédérer avec votre fournisseur de gestion des identités d'entreprise. Choisissez celui qui convient le mieux à votre organisation.
@@ -41,6 +41,9 @@ L'équipe de support NetApp examine et traite votre demande.
 == Configurer une connexion fédérée avec votre fournisseur d'identité
 
 Vous pouvez configurer une connexion fédérée avec votre fournisseur d'identité pour activer l'authentification unique (SSO) pour BlueXP. Cette procédure consiste à configurer votre fournisseur d'identité pour qu'il approuve NetApp en tant que fournisseur de services, puis à créer la connexion dans BlueXP.
+
+
+NOTE: Si vous avez précédemment configuré la fédération à l'aide de NetApp Cloud Central (une application externe à BlueXP), vous devrez importer votre fédération à l'aide de la page Fédération BlueXP pour pouvoir la gérer dans BlueXP.link:task-federation-import.html["Apprenez à importer votre fédération"]
 
 
 
@@ -68,19 +71,19 @@ Vous pouvez fédérer avec votre domaine de messagerie ou avec un autre domaine 
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["Une seule"] Vérifiez votre domaine (si vous n'utilisez pas votre domaine de messagerie)
 [role="quick-margin-para"]
-Si vous souhaitez fédérer avec un domaine différent de votre domaine de messagerie, vous devez d'abord vérifier que vous en êtes le propriétaire. Vous pouvez fédérer votre domaine de messagerie sans aucune étape supplémentaire.
+Pour fédérer avec un domaine différent de votre domaine de messagerie, vérifiez que vous en êtes propriétaire.  Vous pouvez fédérer votre domaine de messagerie sans aucune étape supplémentaire.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["Deux"] Configurez votre IdP pour faire confiance à NetApp en tant que fournisseur de services
 [role="quick-margin-para"]
-Pour configurer votre fournisseur d'identité afin qu'il approuve NetApp en tant que fournisseur de services, créez une nouvelle application et fournissez les informations nécessaires, telles que l'URL ACS, l'ID d'entité ou d'autres informations d'identification. Les informations relatives au fournisseur de services varient selon le fournisseur d'identité ; consultez donc la documentation de votre fournisseur pour plus de détails. Vous devrez collaborer avec l'administrateur de votre fournisseur d'identité pour effectuer cette étape.
+Configurez votre fournisseur d’identité pour qu’il fasse confiance à NetApp en créant une nouvelle application et en fournissant les informations nécessaires, telles que l’URL ACS, l’ID d’entité ou d’autres informations d’identification.  Les informations sur le fournisseur de services varient selon le fournisseur d'identité. Reportez-vous donc à la documentation de votre fournisseur d'identité spécifique pour plus de détails.  Vous devrez travailler avec votre administrateur IdP pour terminer cette étape.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["Trois"] Créer la connexion fédérée dans BlueXP
 [role="quick-margin-para"]
-Pour créer la connexion, vous devrez fournir les informations nécessaires de votre fournisseur d'identité, telles que l'URL ou le fichier de métadonnées SAML. Ces informations servent à établir la relation de confiance entre BlueXP et votre fournisseur d'identité. Les informations que vous fournissez dépendent du fournisseur d'identité que vous utilisez. Par exemple, si vous utilisez Microsoft Entra ID, vous devrez fournir l'ID client, le secret et le domaine.
+Pour créer la connexion, vous devez fournir les informations nécessaires de votre fournisseur d’identité, telles que l’URL ou le fichier de métadonnées SAML.  Ces informations sont utilisées pour établir la relation de confiance entre BlueXP et votre fournisseur d’identité.  Les informations que vous fournissez dépendent de l'IdP que vous utilisez.  Par exemple, si vous utilisez Microsoft Entra ID, vous devez fournir l’ID client, le secret et le domaine.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["Trois"] Testez votre fédération dans BlueXP
 [role="quick-margin-para"]
-Testez votre connexion fédérée pour vous assurer qu'elle fonctionne avant de l'activer. La page Fédération de BlueXP propose une option de test vous permettant de vérifier que votre utilisateur test est en mesure de s'authentifier. Si le test réussit, vous pouvez activer la connexion.
+Testez votre connexion fédérée avant de l'activer.  La page Fédération de BlueXP fournit une option de test qui vous permet de vérifier que votre utilisateur de test est capable de s'authentifier avec succès.  Si le test réussit, vous pouvez activer la connexion.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png["Trois"] Activez votre connexion dans BlueXP
 [role="quick-margin-para"]
