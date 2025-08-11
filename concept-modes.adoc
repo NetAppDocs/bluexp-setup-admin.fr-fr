@@ -380,9 +380,6 @@ Cette partie du tableau répertorie la prise en charge de la gestion de l'enviro
 | Efficacité économique | Non | Non 
 
 
-| Résilience opérationnelle | Non | Non 
-
-
 | Protection par ransomware | Non | Non 
 
 
@@ -404,20 +401,20 @@ Cette partie du tableau répertorie la prise en charge de la gestion de l'enviro
 | Usine de charge de travail | Non | Non 
 
 
-.7+| *Caractéristiques* | Gestion des identités et des accès BlueXP  | Oui. | Oui. 
+.7+| *Caractéristiques* | Gestion des identités et des accès BlueXP  | Oui. 
 
 
-| Informations d'identification | Oui. | Oui. 
+| Oui. | Informations d'identification | Oui. 
 
 
-| Comptes NSS | Oui. | Non 
+| Oui. | Comptes NSS | Oui. 
 
 
-| Notifications | Oui. | Non 
+| Non | Notifications | Oui. 
 
 
-| Recherche | Oui. | Non 
+| Non | Recherche | Oui. 
 
 
-| De la chronologie | Oui. | Oui. 
+| Non | De la chronologie | Oui. 
 |===

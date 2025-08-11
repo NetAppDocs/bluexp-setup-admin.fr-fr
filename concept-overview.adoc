@@ -87,7 +87,6 @@ Conseiller digital BlueXP:: Optimisez votre infrastructure de données grâce au
 Portefeuille digital BlueXP:: Gérez et surveillez vos licences et vos abonnements.
 Reprise d'activité BlueXP:: Protégez les workloads VMware sur site avec VMware Cloud sur Amazon FSX pour ONTAP en tant que site de reprise d'activité.
 L'efficacité économique de BlueXP:: Identifiez les clusters dont la capacité est faible, actuelle ou prévue, et implémentez le Tiering des données ou des recommandations en matière de capacité supplémentaire.
-Résilience opérationnelle de BlueXP:: Implémentez des mesures correctives dans la configuration automatisée des firmwares et logiciels pour préserver l'état des clusters ONTAP.
 Protection BlueXP contre les ransomware:: Détectez les anomalies susceptibles d'entraîner des attaques par ransomware. Protégez et restaurez les workloads.
 La réplication BlueXP:: Répliquer les données entre les systèmes de stockage pour prendre en charge la sauvegarde et la reprise après incident.
 Mises à jour du logiciel BlueXP:: Automatisez l'évaluation, la planification et l'exécution des mises à niveau ONTAP.

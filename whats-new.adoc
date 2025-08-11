@@ -36,6 +36,12 @@ L'interface utilisateur BlueXP est désormais disponible en japonais.  Si la lan
 
 
 
+=== Fonctionnalité de résilience opérationnelle
+
+La fonctionnalité de résilience opérationnelle a été supprimée de BlueXP.  Contactez le support NetApp si vous rencontrez des problèmes.
+
+
+
 === Gestion des identités et des accès BlueXP 
 
 La gestion des identités et des accès dans BlueXP fournit désormais la fonctionnalité suivante.
