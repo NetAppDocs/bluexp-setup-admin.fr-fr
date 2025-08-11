@@ -12,7 +12,7 @@ summary: La gestion des identités et des accès BlueXP fournit plusieurs rôles
 
 
 [role="lead"]
-Vous pouvez attribuer les rôles suivants aux utilisateurs pour leur donner accès au service de sauvegarde et de restauration dans BlueXP. Ces rôles vous offrent la flexibilité d'attribuer aux utilisateurs un rôle spécifique aux tâches qu'ils doivent accomplir au sein de votre organisation. L'attribution des rôles dépend de votre activité et de vos pratiques de gestion du stockage.
+Vous pouvez attribuer les rôles suivants aux utilisateurs pour leur donner accès à la récupération Diaster dans BlueXP.  Les rôles de reprise après sinistre vous offrent la flexibilité d’attribuer aux utilisateurs un rôle spécifique aux tâches qu’ils doivent accomplir au sein de votre organisation.  La manière dont vous attribuez les rôles dépend de votre propre entreprise et de vos pratiques de gestion du stockage.
 
 La reprise après sinistre utilise les rôles suivants :
 

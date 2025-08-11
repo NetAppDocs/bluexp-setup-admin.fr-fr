@@ -39,7 +39,7 @@ _silent_ exécute le script sans vous demander de confirmer.
 
 == Désinstallez le connecteur lorsque vous utilisez le mode privé
 
-Si vous utilisez le mode privé (en d'autres termes, l'hôte Connector n'a _aucune_ connectivité sortante), vous devez suivre les étapes ci-dessous pour désinstaller le logiciel Connector.
+Si vous utilisez le mode privé (où l'hôte du connecteur n'a _aucune_ connectivité sortante), suivez les étapes ci-dessous pour désinstaller le logiciel du connecteur.
 
 .Étape
 . Connectez-vous à la VM Linux pour le connecteur.
@@ -75,7 +75,7 @@ docker system prune -a
 
 == Retirer les connecteurs de BlueXP
 
-Si un connecteur est inactif, vous pouvez le retirer de la liste des connecteurs dans BlueXP. Vous pouvez le faire si vous avez supprimé la machine virtuelle Connector ou si vous avez désinstallé le logiciel Connector.
+Si un connecteur est inactif, vous pouvez le supprimer de la liste des connecteurs dans BlueXP.  Vous pouvez le faire si vous supprimez la machine virtuelle Connector ou si vous désinstallez le logiciel Connector.
 
 Notez ce qui suit sur le retrait d'un connecteur :
 

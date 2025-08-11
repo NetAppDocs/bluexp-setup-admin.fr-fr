@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-user-settings.html 
 keywords: user profile, mfa, change password, role, login, mulit-factor, authentication 
-summary: 'Vous pouvez modifier votre profil BlueXP, notamment changer votre mot de passe, activer l"authentification multifacteur (MFA) et voir qui est votre administrateur BlueXP.' 
+summary:  
 ---
 = Gérez vos paramètres utilisateur BlueXP
 :hardbreaks:
@@ -14,15 +14,15 @@ summary: 'Vous pouvez modifier votre profil BlueXP, notamment changer votre mot 
 
 
 [role="lead"]
-Vous pouvez accéder à votre profil BlueXP qui vous permet d'activer l'authentification multifacteur (MFA) et contacter votre administrateur BlueXP.
+Vous pouvez modifier votre profil BlueXP, notamment changer votre mot de passe, activer l'authentification multifacteur (MFA) et voir qui est votre administrateur BlueXP.
 
-Dans BlueXP, chaque utilisateur possède un profil contenant des informations le concernant et ses paramètres. Vous pouvez consulter et modifier les paramètres de votre profil depuis la console BlueXP.
+Dans BlueXP, chaque utilisateur dispose d'un profil qui contient des informations sur l'utilisateur et ses paramètres.  Vous pouvez afficher et modifier les paramètres de votre profil.
 
 
 
 == Changez votre nom d'affichage
 
-Vous pouvez modifier votre nom d'affichage dans la console BlueXP. Ce nom d'affichage permet de vous identifier dans la console BlueXP et est visible par les autres utilisateurs. Il est différent de votre nom d'utilisateur ou de votre adresse e-mail, qui ne peuvent pas être modifiés.
+Vous pouvez modifier votre nom d’affichage.  Le nom d'affichage est utilisé pour vous identifier dans la console BlueXP et est visible par les autres utilisateurs.  Votre nom d'affichage n'est pas le même que votre nom d'utilisateur ou votre adresse e-mail, qui ne peuvent pas être modifiés.
 
 .Étapes
 . Sélectionnez l’icône de profil dans le coin supérieur droit de la console BlueXP pour afficher le panneau des paramètres utilisateur.
@@ -100,4 +100,15 @@ NOTE: Vous devez avoir une application de messagerie par défaut configurée pou
 . Sélectionnez *Contacter les administrateurs* pour envoyer un e-mail à l'administrateur de votre organisation.
 . Sélectionnez l’application de messagerie à utiliser.
 . Terminez l'e-mail et sélectionnez *Envoyer*.
+
+
+
+
+== Configurer le mode sombre (thème sombre)
+
+Vous pouvez configurer BlueXP pour qu'il s'affiche en mode sombre.
+
+.Étapes
+. Sélectionnez l’icône de profil dans le coin supérieur droit de la console BlueXP pour afficher le panneau des paramètres utilisateur.
+. Déplacez le curseur *Thème sombre* pour l'activer.
 

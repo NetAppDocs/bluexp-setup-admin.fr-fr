@@ -61,6 +61,9 @@ La liste suivante répertorie les rôles dans la catégorie d'application. Chaqu
 | Rôle de configuration du médiateur ONTAP | Les comptes de service dotés du rôle de configuration Médiateur ONTAP peuvent créer des demandes de service. Ce rôle est requis dans un compte de service pour configurer une instance. link:https://docs.netapp.com/us-en/ontap/mediator/mediator-overview-concept.html["Médiateur cloud ONTAP"^] . 
 
 
+| link:reference-iam-analyst-roles.html["Analyste de soutien aux opérations"] | Fournit un accès aux alertes et aux outils de surveillance et la possibilité de saisir et de gérer les cas d'assistance. 
+
+
 | link:reference-iam-storage-roles.html["Administrateur du stockage"] | Gérez les fonctions de gouvernance et d'intégrité du stockage, découvrez les ressources de stockage, ainsi que modifiez et supprimez les environnements de travail existants. 
 
 

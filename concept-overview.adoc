@@ -40,6 +40,7 @@ Solutions de stockage cloud::
 * Amazon FSX pour NetApp ONTAP
 * Azure NetApp Files
 * Cloud Volumes ONTAP
+* Google Cloud NetApp volumes
 
 
 --

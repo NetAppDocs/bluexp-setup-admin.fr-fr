@@ -24,19 +24,11 @@ Ces limitations sont spécifiques à la configuration et à l'administration de 
 
 
 
-=== Les serveurs proxy transparents ne sont pas pris en charge
-
-BlueXP ne prend pas en charge les serveurs proxy transparents avec le connecteur.
-
-link:task-configuring-proxy.html["En savoir plus sur l'utilisation d'un serveur proxy avec le connecteur"].
-
-
-
 === Conflit possible avec les adresses IP dans la plage 172
 
 BlueXP déploie le connecteur avec deux interfaces qui ont des adresses IP dans les plages 172.17.0.0/16 et 172.18.0.0/16.
 
-Si votre réseau dispose d'un sous-réseau configuré avec l'une ou l'autre de ces plages, il se peut que vous ayez des défaillances de connectivité de BlueXP. Par exemple, la découverte de clusters ONTAP sur site dans BlueXP peut échouer.
+Si votre réseau dispose d'un sous-réseau configuré avec l'une de ces plages, vous risquez de rencontrer des échecs de connectivité de BlueXP.  Par exemple, la découverte de clusters ONTAP sur site dans BlueXP peut échouer.
 
 Consultez l'article de la base de connaissances link:https://kb.netapp.com/Advice_and_Troubleshooting/Cloud_Services/Cloud_Manager/Cloud_Manager_shows_inactive_as_Connector_IP_range_in_172.x.x.x_conflict_with_docker_network["Conflit IP connecteur BlueXP avec le réseau existant"] Pour obtenir des instructions sur la modification de l’adresse IP des interfaces du connecteur.
 

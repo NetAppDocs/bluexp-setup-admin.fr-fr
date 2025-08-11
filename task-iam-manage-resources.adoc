@@ -20,10 +20,10 @@ Lorsque vous associez un membre à votre organisation, vous fournissez des autor
 
 == Afficher les ressources de votre organisation
 
-Vous pouvez afficher à la fois les ressources découvertes et les ressources non découvertes associées à votre organisation. Les ressources non découvertes sont des ressources de stockage identifiées par le conseiller numérique mais non ajoutées en tant qu'environnements de travail.
+Vous pouvez afficher les ressources découvertes et non découvertes associées à votre organisation.  Les ressources non découvertes sont des ressources de stockage identifiées par le conseiller numérique mais non ajoutées en tant qu'environnements de travail.
 
 
-NOTE: La page des ressources IAM n'affiche pas les ressources Amazon FSx for NetApp ONTAP, car vous ne pouvez pas les associer à un rôle IAM. Vous pouvez afficher ces ressources sur leur canevas respectif ou à partir de workloads.
+NOTE: La page des ressources IAM exclut les ressources Amazon FSx for NetApp ONTAP, car vous ne pouvez pas les associer à un rôle IAM.  Consultez ces ressources sur leur toile respective ou à partir des charges de travail.
 
 .Étapes
 . Dans le coin supérieur droit de la console BlueXP , sélectionnez image:icon-settings-option.png["L'icône des paramètres qui s'affiche en haut à droite de la console Web BlueXP ."] > *gestion des identités et des accès*.
@@ -44,7 +44,7 @@ NOTE: La page des ressources IAM n'affiche pas les ressources Amazon FSx for Net
 
 == Associer une ressource à des dossiers et des projets
 
-Pour rendre une ressource disponible pour un dossier ou un projet, associez la ressource au dossier ou au projet.
+Associez une ressource à un dossier ou à un projet pour la rendre disponible.
 
 .Avant de commencer
 Vous devez comprendre le fonctionnement de l'association de ressources. link:concept-identity-and-access-management.html#resources["Découvrez les ressources, notamment quand associer une ressource à un dossier"].
@@ -65,7 +65,7 @@ Notez que vous ne pouvez sélectionner que les dossiers et les projets pour lesq
 
 
 .Une fois que vous avez terminé
-Si la ressource que vous avez associée est découverte à l'aide d'un connecteur BlueXP  et que vous avez d'autres membres dans votre organisation, vous devez également associer le connecteur au projet auquel la ressource est maintenant associée. Sinon, le connecteur et sa ressource associée ne sont pas accessibles à partir du canevas BlueXP  par les membres qui n'ont pas le rôle _Admin_Organisation.
+Si vous découvrez une ressource à l’aide d’un connecteur BlueXP, associez le connecteur au projet pour lui accorder l’accès.  Dans le cas contraire, le connecteur et sa ressource associée ne sont pas accessibles depuis le canevas BlueXP par les membres sans le rôle _Organization admin_.
 
 link:task-iam-associate-connectors.html["Découvrez comment associer un connecteur à un dossier ou à un projet"].
 
@@ -93,7 +93,7 @@ NOTE: Si vous devez déterminer quels membres de l'organisation ont accès à la
 
 == Supprimer une ressource d'un dossier ou d'un projet
 
-Pour supprimer une ressource d'un dossier ou d'un projet, vous devez supprimer l'association entre le dossier ou le projet et la ressource. La suppression de l’association empêche les membres de l’organisation de gérer la ressource dans le dossier ou le projet.
+Pour supprimer une ressource d’un dossier ou d’un projet, vous devez supprimer l’association entre le dossier ou le projet et la ressource.  La suppression de l’association empêche les membres de gérer la ressource dans le dossier ou le projet.
 
 
 NOTE: Si vous souhaitez supprimer une ressource découverte de toute l'organisation, vous devez supprimer l'environnement de travail du canevas BlueXP .

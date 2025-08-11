@@ -17,13 +17,13 @@ summary: Attribuez des rôles de plateforme aux utilisateurs pour accorder des a
 Attribuez des rôles de plateforme aux utilisateurs pour accorder des autorisations pour gérer BlueXP, attribuer des rôles, ajouter des utilisateurs, créer des connecteurs et gérer les fédérations.
 
 .Exemple de rôles d'organisation au BlueXP  pour une grande organisation multinationale
-XYZ Corporation organise l'accès au stockage des données par région (Amérique du Nord, Europe et Asie-Pacifique), donnant à chaque région le contrôle tout en garantissant une surveillance centralisée.
+XYZ Corporation organise l'accès au stockage des données par région (Amérique du Nord, Europe et Asie-Pacifique), offrant un contrôle régional avec une surveillance centralisée.
 
-L'*administrateur de l'organisation* dans BlueXP de la société XYZ crée une organisation initiale et des dossiers distincts pour chaque région. Le dossier de chaque région contient des projets (avec des ressources associées) liés à cette région. Le *administrateur de l'organisation* attribue à un utilisateur BlueXP  dans chaque région respective le rôle *administrateur du dossier ou du projet*.
+L'*administrateur de l'organisation* dans BlueXP de la société XYZ crée une organisation initiale et des dossiers distincts pour chaque région.  L'*administrateur de dossier ou de projet* de chaque région organise les projets (avec les ressources associées) dans le dossier de la région.
 
-Les administrateurs régionaux dotés du rôle *Administrateur de dossier ou de projet* gèrent leurs régions (dossiers) en ajoutant de nouvelles ressources et de nouveaux utilisateurs. Ils peuvent également ajouter, supprimer ou renommer les dossiers et les projets qu'ils gèrent. L'*Administrateur d'organisation* hérite des autorisations pour toute nouvelle ressource, garantissant ainsi une visibilité sur l'utilisation du stockage dans toute l'organisation.
+Les administrateurs régionaux dotés du rôle *Administrateur de dossier ou de projet* gèrent activement leurs dossiers en ajoutant des ressources et des utilisateurs.  Ces administrateurs régionaux peuvent également ajouter, supprimer ou renommer les dossiers et les projets qu’ils gèrent.  L'*administrateur de l'organisation* hérite des autorisations pour toutes les nouvelles ressources, maintenant ainsi la visibilité de l'utilisation du stockage dans l'ensemble de l'organisation.
 
-Au sein d'une même organisation, un utilisateur se voit attribuer le rôle d'administrateur de la fédération pour gérer la fédération avec son fournisseur d'identité d'entreprise. Cet utilisateur peut ajouter ou supprimer des organisations fédérées, mais ne peut pas gérer les utilisateurs ni les ressources de l'organisation. L'organisation attribue à un utilisateur le rôle de visualiseur de la fédération pour vérifier l'état de la fédération et visualiser les organisations fédérées sans effectuer de modifications.
+Au sein de la même organisation, un utilisateur se voit attribuer le rôle *Administrateur de la fédération* pour gérer la fédération de l'organisation avec son IdP d'entreprise.  Cet utilisateur peut ajouter ou supprimer des organisations fédérées, mais ne peut pas gérer les utilisateurs ou les ressources au sein de l'organisation.  L'*administrateur de l'organisation* attribue à un utilisateur le rôle de *spectateur de fédération* pour vérifier l'état de la fédération et afficher les organisations fédérées.
 
 Les tableaux suivants indiquent les actions que chaque rôle de la plateforme BlueXP peut effectuer.
 
@@ -69,7 +69,7 @@ Les tableaux suivants indiquent les actions que chaque rôle de la plateforme Bl
 | Créer, gérer et visualiser les fédérations | Oui. | Non 
 
 
-| Inscrivez-vous pour obtenir de l'aide et soumettre des cas | Oui. | Oui. 
+| Inscrivez-vous pour obtenir de l'aide et soumettre des cas via BlueXP | Oui. | Oui. 
 
 
 | Utiliser les services de données | Oui. | Oui. 
