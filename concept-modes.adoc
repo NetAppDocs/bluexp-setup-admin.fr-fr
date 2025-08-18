@@ -14,7 +14,7 @@ summary: 'BlueXP propose plusieurs modes de déploiement qui vous permettent d"u
 
 
 [role="lead"]
-BlueXP propose plusieurs modes de déploiement pour répondre à vos besoins métier et de sécurité. Le mode standard s'appuie sur une couche SaaS (Software as a Service) pour offrir toutes les fonctionnalités, tandis que les modes restreint et privé sont disponibles pour les organisations soumises à des restrictions de connectivité.
+BlueXP propose des _modes de déploiement_ qui vous permettent de répondre à vos exigences commerciales et de sécurité.  Le _mode standard_ exploite une couche de logiciel en tant que service (SaaS) pour fournir des fonctionnalités complètes, tandis que le _mode restreint_ et le _mode privé_ sont disponibles pour les organisations qui ont des restrictions de connectivité.
 
 Bien que BlueXP inhibe le flux de trafic, de communication et de données lors de l'utilisation du mode restreint ou du mode privé, il est de votre responsabilité de vous assurer que votre environnement (sur site et dans le cloud) est conforme aux réglementations requises pour votre entreprise.
 
