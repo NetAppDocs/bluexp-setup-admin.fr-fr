@@ -18,7 +18,7 @@ Lorsque vous vous connectez et utilisez la console Web, BlueXP contacte plusieur
 
 Ces terminaux sont contactés dans deux scénarios :
 
-* Depuis l'ordinateur d'un utilisateur lors de l'exécution des actions du  https://console.bluexp.netapp.com["Console web BlueXP"^] qui est disponible sous forme de logiciel en tant que service (SaaS).
+* Depuis l'ordinateur d'un utilisateur lors de la complétion de sections du https://console.bluexp.netapp.com["Console web BlueXP"^] qui est disponible sous forme de logiciel en tant que service (SaaS).
 * À partir de l'ordinateur d'un utilisateur lors de l'ouverture d'un navigateur Web, en entrant l'adresse IP de l'hôte du connecteur, puis en se connectant et en configurant le connecteur. Ces étapes sont nécessaires si vous installez manuellement le connecteur.
 
 

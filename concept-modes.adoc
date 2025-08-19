@@ -401,7 +401,7 @@ Cette partie du tableau répertorie la prise en charge de la gestion de l'enviro
 | Usine de charge de travail | Non | Non 
 
 
-.7+| *Caractéristiques* | Gestion des identités et des accès BlueXP  | Oui. 
+.6+| *Caractéristiques* | Gestion des identités et des accès BlueXP  | Oui. 
 
 
 | Oui. | Informations d'identification | Oui. 
