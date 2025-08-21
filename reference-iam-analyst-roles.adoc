@@ -20,7 +20,7 @@ Vous pouvez attribuer le rôle suivant aux utilisateurs pour leur donner accès 
 
 == Analyste de soutien opérationnel
 
-[cols="1,1"]
+[cols="1,2"]
 |===
 | Tâche | Peut effectuer 
 
@@ -34,8 +34,8 @@ Vous pouvez attribuer le rôle suivant aux utilisateurs pour leur donner accès 
 | Inscrivez-vous pour obtenir de l'aide et soumettre des cas via BlueXP | Oui. 
 
 
-| Oui. | Afficher la chronologie et les notifications BlueXP 
+| Afficher la chronologie et les notifications BlueXP | Oui. 
 
 
-| Oui. | Afficher, télécharger et configurer les alertes 
+| Afficher, télécharger et configurer les alertes | Oui. 
 |===

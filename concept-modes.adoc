@@ -155,7 +155,7 @@ Services BlueXP pris en charge:: BlueXP prend en charge les services de données
 | Azure NetApp Files | Support complet 
 
 
-| Sauvegarde et restauration | Pris en charge dans les régions gouvernementales et les régions commerciales avec mode restreint.  Non pris en charge dans les régions souveraines avec mode restreint.  En mode restreint, la BlueXP backup and recovery prennent en charge la sauvegarde et la restauration des données de volume ONTAP uniquement. https://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-protect-journey.html#support-for-sites-with-limited-internet-connectivity["Affichez la liste des destinations de sauvegarde prises en charge pour les données ONTAP"^]  La sauvegarde et la restauration des données d'application et des données de machine virtuelle ne sont pas prises en charge. 
+| Sauvegarde et restauration | Pris en charge dans les régions gouvernementales et les régions commerciales avec mode restreint. Non pris en charge dans les régions souveraines avec mode restreint. En mode restreint, la BlueXP backup and recovery prennent en charge la sauvegarde et la restauration des données de volume ONTAP uniquement. https://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-protect-journey.html#support-for-sites-with-limited-internet-connectivity["Affichez la liste des destinations de sauvegarde prises en charge pour les données ONTAP"^] En mode restreint, la BlueXP backup and recovery prennent en charge la sauvegarde et la restauration des données de volume ONTAP uniquement. https://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-protect-journey.html#support-for-sites-with-limited-internet-connectivity["Affichez la liste des destinations de sauvegarde prises en charge pour les données ONTAP"^] La sauvegarde et la restauration des données d'application et des données de machine virtuelle ne sont pas prises en charge. 
 
 
 | Classement  a| 
@@ -238,7 +238,7 @@ Services BlueXP pris en charge dans les déploiements cloud:: BlueXP prend en ch
 | Services pris en charge | Remarques 
 
 
-| Sauvegarde et restauration | Pris en charge dans les régions commerciales AWS et Azure.  Non pris en charge dans Google Cloud ou dans https://aws.amazon.com/federal/secret-cloud/["Cloud secret AWS"^] , https://aws.amazon.com/federal/top-secret-cloud/["Le cloud le plus secret d'AWS"^] , ou https://learn.microsoft.com/en-us/azure/compliance/offerings/offering-dod-il6["Azure IL6"^] En mode privé, la BlueXP backup and recovery prennent en charge la sauvegarde et la restauration des données de volume ONTAP uniquement. https://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-protect-journey.html#support-for-sites-with-limited-internet-connectivity["Affichez la liste des destinations de sauvegarde prises en charge pour les données ONTAP"^]  La sauvegarde et la restauration des données d'application et des données de machine virtuelle ne sont pas prises en charge. 
+| Sauvegarde et restauration | Pris en charge dans les régions commerciales AWS et Azure. Non pris en charge dans Google Cloud ou dans https://aws.amazon.com/federal/secret-cloud/["Cloud secret AWS"^] , https://aws.amazon.com/federal/top-secret-cloud/["Le cloud le plus secret d'AWS"^] , ou https://learn.microsoft.com/en-us/azure/compliance/offerings/offering-dod-il6["Azure IL6"^] En mode privé, la BlueXP backup and recovery prennent en charge la sauvegarde et la restauration des données de volume ONTAP uniquement. https://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-protect-journey.html#support-for-sites-with-no-internet-connectivity["Affichez la liste des destinations de sauvegarde prises en charge pour les données ONTAP"^] La sauvegarde et la restauration des données d'application et des données de machine virtuelle ne sont pas prises en charge. 
 
 
 | Cloud Volumes ONTAP | Comme il n'y a pas d'accès à Internet, les fonctionnalités suivantes ne sont pas disponibles : mises à niveau logicielles automatisées et AutoSupport. 
@@ -261,7 +261,7 @@ Services BlueXP pris en charge dans les déploiements sur site:: BlueXP prend en
 
 
 | Sauvegarde et restauration  a| 
-En mode privé, la BlueXP backup and recovery prennent en charge la sauvegarde et la restauration des données de volume ONTAP uniquement. https://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-protect-journey.html#support-for-sites-with-limited-internet-connectivity["Affichez la liste des destinations de sauvegarde prises en charge pour les données de volume ONTAP"^]
+En mode privé, la BlueXP backup and recovery prennent en charge la sauvegarde et la restauration des données de volume ONTAP uniquement. https://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-protect-journey.html#support-for-sites-with-no-internet-connectivity["Affichez la liste des destinations de sauvegarde prises en charge pour les données de volume ONTAP"^]
 
 La sauvegarde et la restauration des données des applications et des machines virtuelles ne sont pas prises en charge.
 
@@ -353,16 +353,13 @@ Cette partie du tableau répertorie la prise en charge de la gestion de l'enviro
 | StorageGRID | Non | Non 
 
 
-.17+| *Services* | Alertes | Non | Non 
+.16+| *Services* | Alertes | Non | Non 
 
 
-| Sauvegarde et restauration | Ouihttps://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-protect-journey.html#support-for-sites-with-limited-internet-connectivity["Affichez la liste des destinations de sauvegarde prises en charge pour les données de volume ONTAP"^] https://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-protect-journey.html#support-for-sites-with-limited-internet-connectivity["Affichez la liste des destinations de sauvegarde prises en charge pour les données de volume ONTAP"^] | Ouihttps://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-protect-journey.html#support-for-sites-with-limited-internet-connectivity["Affichez la liste des destinations de sauvegarde prises en charge pour les données de volume ONTAP"^] 
+| Sauvegarde et restauration | Ouihttps://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-protect-journey.html#support-for-sites-with-limited-internet-connectivityView[] la liste des destinations de sauvegarde prises en charge pour les données de volume ONTAP ^] | Ouihttps://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-protect-journey.html#support-for-sites-with-no-internet-connectivity["Affichez la liste des destinations de sauvegarde prises en charge pour les données de volume ONTAP"^] 
 
 
 | Classement | Oui. | Oui. 
-
-
-| OPS cloud | Non | Non 
 
 
 | Copie et synchronisation | Non | Non 

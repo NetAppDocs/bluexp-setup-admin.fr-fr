@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: reference-iam-platform-roles.html 
 keywords: predefined roles, iam roles, organization admin, folder or project admin, classification viewer, snapcenter admin, role, iam role, admin, iam, identity and access management 
-summary: Attribuez des rôles de plateforme aux utilisateurs pour accorder des autorisations pour gérer BlueXP, attribuer des rôles, ajouter des utilisateurs, créer des connecteurs et gérer les fédérations. 
+summary: 'Attribuez des rôles de plateforme aux utilisateurs pour accorder des autorisations pour effectuer des tâches d"administration dans BlueXP, attribuez des rôles, ajoutez des utilisateurs, créez des connecteurs et gérez les fédérations.' 
 ---
 = Rôles d'accès à la plateforme BlueXP 
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: Attribuez des rôles de plateforme aux utilisateurs pour accorder des a
 
 
 [role="lead"]
-Attribuez des rôles de plateforme aux utilisateurs pour accorder des autorisations pour gérer BlueXP, attribuer des rôles, ajouter des utilisateurs, créer des connecteurs et gérer les fédérations.
+Attribuez des rôles de plateforme aux utilisateurs pour accorder des autorisations pour effectuer des tâches d'administration dans BlueXP, attribuez des rôles, ajoutez des utilisateurs, créez des connecteurs et gérez les fédérations.
 
 .Exemple de rôles d'organisation au BlueXP  pour une grande organisation multinationale
 XYZ Corporation organise l'accès au stockage des données par région (Amérique du Nord, Europe et Asie-Pacifique), offrant un contrôle régional avec une surveillance centralisée.
