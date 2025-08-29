@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: concept-modes.html 
-keywords: dark site, internet, on prem, no internet, supported deployments, govcloud, government access, environments, supported environments, deployment modes, modes, private mode, restricted mode, il6, sc2s, c2s, dark site, sovereign region, saas, government region, secret region, top secret, aws secret, aws top secret, private 
+keywords: dark site, internet, on prem, no internet, supported deployments, govcloud, government access, environments, supported environments, deployment modes, modes, private mode, restricted mode, il6, sc2s, c2s, sovereign region, saas, government region, secret region, top secret, aws secret, aws top secret, private 
 summary: 'BlueXP propose plusieurs modes de déploiement qui vous permettent d"utiliser BlueXP en fonction de vos exigences métier et de sécurité. Le mode standard exploite la couche SaaS BlueXP pour offrir des fonctionnalités complètes, tandis que le mode restreint et le mode privé sont disponibles pour les entreprises ayant des restrictions de connectivité.' 
 ---
 = Découvrez les modes de déploiement BlueXP
@@ -353,10 +353,10 @@ Cette partie du tableau répertorie la prise en charge de la gestion de l'enviro
 | StorageGRID | Non | Non 
 
 
-.16+| *Services* | Alertes | Non | Non 
+.15+| *Services* | Alertes | Non | Non 
 
 
-| Sauvegarde et restauration | Ouihttps://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-protect-journey.html#support-for-sites-with-limited-internet-connectivityView[] la liste des destinations de sauvegarde prises en charge pour les données de volume ONTAP ^] | Ouihttps://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-protect-journey.html#support-for-sites-with-no-internet-connectivity["Affichez la liste des destinations de sauvegarde prises en charge pour les données de volume ONTAP"^] 
+| Sauvegarde et restauration | Ouihttps://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-protect-journey.html#support-for-sites-with-limited-internet-connectivity["Affichez la liste des destinations de sauvegarde prises en charge pour les données de volume ONTAP"^] | Ouihttps://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-protect-journey.html#support-for-sites-with-no-internet-connectivity["Affichez la liste des destinations de sauvegarde prises en charge pour les données de volume ONTAP"^] 
 
 
 | Classement | Oui. | Oui. 
@@ -398,20 +398,26 @@ Cette partie du tableau répertorie la prise en charge de la gestion de l'enviro
 | Usine de charge de travail | Non | Non 
 
 
-.6+| *Caractéristiques* | Gestion des identités et des accès | Oui. 
+.8+| *Caractéristiques* | Gestion des identités et des accès | Oui. | Oui. 
 
 
-| Oui. | Informations d'identification | Oui. 
+| Informations d'identification | Oui. | Oui. 
 
 
-| Oui. | Comptes NSS | Oui. 
+| Fédération | Oui. | Non 
 
 
-| Non | Notifications | Oui. 
+| Authentification multifacteur | Oui. | Non 
 
 
-| Non | Recherche | Oui. 
+| Comptes NSS | Oui. | Non 
 
 
-| Non | De la chronologie | Oui. 
+| Notifications | Oui. | Non 
+
+
+| Recherche | Oui. | Non 
+
+
+| De la chronologie | Oui. | Oui. 
 |===
