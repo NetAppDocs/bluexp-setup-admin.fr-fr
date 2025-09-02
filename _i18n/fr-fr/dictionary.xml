@@ -4094,7 +4094,6 @@ Cette partie du tableau répertorie la prise en charge de la gestion de l'enviro
   <block id="7dd4f26252edc5554ac1671370b55f2e" category="section-title">Des terminaux sécurisés pour les téléchargements de connecteurs sont désormais pris en charge pour la sauvegarde et la restauration, ainsi que pour la protection contre les ransomware</block>
   <block id="fa3ad4e82d26203dad8cb93a91e5c448" category="inline-link-macro">Découvrez les terminaux sécurisés pour le téléchargement de connecteurs.</block>
   <block id="65a207edfe2ea4576ceb53eb1d7a6caa" category="paragraph">Si vous utilisez la sauvegarde et la restauration ou la protection contre les ransomware, vous pouvez désormais utiliser des terminaux sécurisés pour télécharger des connecteurs. <block ref="037b27fad48ee4136808e628650ebfff" category="inline-link-macro-rx"></block></block>
-  <block id="299e5505ce975112afaefec130cc83e0" category="paragraph">7,9</block>
   <block id="4d286ab7c41699ac1c0222a6a25c8ee6" category="list-text">Si vous avez utilisé Podman, vous devrez ajuster le port aardvark-dns.</block>
   <block id="6d6b1f0f1080ec2381bb912afda46e99" category="list-text">Connectez-vous en SSH à la machine virtuelle BlueXP Connector.</block>
   <block id="dbd4c3db8125866be9bb5a796f445d43" category="list-text">Ouvrez le fichier podman _/usr/share/containers/containers.conf_ et modifiez le port choisi pour le service DNS Aardvark. Par exemple, définissez-le sur 54.</block>
@@ -4503,7 +4502,6 @@ Cette partie du tableau répertorie la prise en charge de la gestion de l'enviro
   <block id="3f2aa4bd073d2458603c46bc293f8ade" category="inline-link-macro">Configurer une connexion fédérée avec un fournisseur d'identité SAML</block>
   <block id="00aef0f14c29d451cdbf8446ce6b0b8e" category="list-text"><block ref="00aef0f14c29d451cdbf8446ce6b0b8e" category="inline-link-macro-rx"></block></block>
   <block id="89d483b606a77baabe08bc060a494729" category="paragraph">BlueXP IAM vous permet d'accorder l'accès aux ressources en attribuant des rôles d'accès aux utilisateurs à des parties spécifiques de la hiérarchie. Par exemple, un membre peut se voir attribuer le rôle d'administrateur de dossier ou de projet pour un projet comportant cinq ressources.</block>
-  <block id="2c6203bceaf797d85b477f5b84315d7e" category="paragraph">Les dossiers peuvent contenir des projets, d'autres dossiers, ou les deux. La création de dossiers est facultative.</block>
   <block id="fe82a8e97a8582336b585b91be018051" category="paragraph">Un _administrateur d'organisation_ peut associer une ressource à un dossier pour permettre à un _administrateur de dossier ou de projet_ de lier cette ressource aux projets appropriés dans le dossier.</block>
   <block id="0e60822112467cb5794c648314aae8c1" category="paragraph">Associer une ressource à un dossier ne la rend pas accessible à tous les projets ; seul l'administrateur du dossier ou du projet peut la voir. L'administrateur du dossier ou du projet décide quels projets peuvent y accéder et associe la ressource aux projets concernés.</block>
   <block id="7b83c7b722f59c1d116d59def3df05be" category="paragraph">L'octroi d'autorisations à un niveau de hiérarchie spécifique restreint l'accès aux ressources dont un membre a besoin et aux services qu'il peut utiliser avec ces ressources.</block>
@@ -4739,7 +4737,6 @@ Cette partie du tableau répertorie la prise en charge de la gestion de l'enviro
   <block id="a679ca81df887999afdb29cc812dba1a" category="section-title">Supprimer une fédération</block>
   <block id="2e39c9a75c534c723834aef16604225c" category="paragraph">Si vous n'avez plus besoin d'une fédération, vous pouvez la supprimer. Cela supprime la fédération de BlueXP et empêche les utilisateurs qui lui sont associés de se connecter à BlueXP avec leurs identifiants d'entreprise. Par exemple, si le fournisseur d'identité est mis hors service ou si la fédération n'est plus nécessaire, une fois supprimée, vous ne pouvez plus la récupérer. Vous devez en créer une nouvelle.</block>
   <block id="46e00d5f60a3c01d902dd137d055d6cb" category="summary">Après avoir ajouté une connexion fédérée, vous pouvez la gérer dans BlueXP. Vous pouvez consulter son état et l'activer ou la désactiver selon vos besoins.</block>
-  <block id="1b5bf5b8576a36a3f5b9e0e44e117c81" category="doc">Gérer les fédérations dans BlueXP</block>
   <block id="da8dd0a914b02a392c9eda56004447a3" category="paragraph">Vous pouvez gérer votre fédération dans BlueXP. Vous pouvez la désactiver, mettre à jour les identifiants expirés et la désactiver si vous n'en avez plus besoin.</block>
   <block id="22ae8cdedea46c7c71a0f34e66a726f1" category="paragraph">Vous pouvez également ajouter un domaine vérifié à une fédération existante, ce qui vous permet d'utiliser plusieurs domaines pour votre connexion fédérée.</block>
   <block id="92627f50638acf35c284d9f2b5e45cb5" category="inline-link-macro">En savoir plus sur les opérations de surveillance dans BlueXP.</block>
@@ -5059,4 +5056,6 @@ Cette partie du tableau répertorie la prise en charge de la gestion de l'enviro
   <block id="364a4ff52cd92f16374019cdedf6b91c" category="inline-link">En savoir plus sur la prise en charge des zones locales AWS</block>
   <block id="3b1699510f585646e0c8a73fa1b820ae" category="list-text"><block ref="3b1699510f585646e0c8a73fa1b820ae" category="inline-link-rx"></block></block>
   <block id="c1c35b571a8270f43bf6faa6757452f6" category="cell">Oui<block ref="7017fcd1de8071674201a0278a852eae" category="inline-link-rx"></block></block>
+  <block id="4ebca8d078924ec17de1cf258147df0c" category="paragraph">Les dossiers peuvent contenir des projets, d’autres dossiers ou les deux.  La création de dossiers est facultative.</block>
+  <block id="5c2b3c6d1859da2427f6c94e995cf39c" category="doc">Gérer les fédérations dans BlueXP</block>
 </blocks>

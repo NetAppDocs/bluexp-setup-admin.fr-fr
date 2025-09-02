@@ -60,7 +60,7 @@ Une _organisation_ est le premier niveau du système IAM de BlueXP  et représe
 
 Un _dossier_ vous permet de regrouper les projets associés et de les séparer des autres projets de votre organisation. Par exemple, un dossier peut représenter un emplacement géographique (UE ou États-Unis est), un site (Londres ou Toronto) ou une unité commerciale (ingénierie ou marketing).
 
-Les dossiers peuvent contenir des projets, d'autres dossiers, ou les deux. La création de dossiers est facultative.
+Les dossiers peuvent contenir des projets, d’autres dossiers ou les deux.  La création de dossiers est facultative.
 
 
 
