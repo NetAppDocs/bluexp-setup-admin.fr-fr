@@ -2335,10 +2335,6 @@ Vous devez également vous assurer que la stratégie est à jour lorsque de nouv
   <block id="ccdd7e208a0a423c2c21b0cf2b9c9cf9" category="cell">Le compte de service de l'instance de VM Connector doit disposer d'autorisations spécifiques pour les opérations quotidiennes. Vous devez associer le compte de service au connecteur pendant le déploiement.
 
 Vous devez également vous assurer que la stratégie est à jour lorsque de nouvelles autorisations sont ajoutées dans les versions suivantes.</block>
-  <block id="2ffc85864a3bde535e5f41ca5ceb963e" category="cell">Découvrez Cloud Volumes Service pour Google Cloud</block>
-  <block id="fb40390dc5f9af56c8a05dba3f355101" category="cell">BlueXP a besoin d'un accès à l'API Cloud Volumes Service et de droits d'accès via un compte de service Google Cloud.</block>
-  <block id="ec8725380aa2f688c9b9d45557c44600" category="inline-link">Configurez un compte de service</block>
-  <block id="71ff910f19cd22c3817e69aefe990dc8" category="cell"><block ref="71ff910f19cd22c3817e69aefe990dc8" category="inline-link-rx"></block></block>
   <block id="326383c715f7d58418eab62449d7e6b5" category="cell">Déployez le courtier en données dans Google Cloud</block>
   <block id="6f0cd56d775c80607dc578326e3840bd" category="cell">Assurez-vous que l'utilisateur Google Cloud qui déploie le courtier en données dispose des autorisations requises.</block>
   <block id="23c5a36a4e18015e399e97b3a48f2255" category="inline-link">Autorisations requises pour déployer le courtier en données dans Google Cloud</block>
@@ -4996,7 +4992,6 @@ Cette partie du tableau répertorie la prise en charge de la gestion de l'enviro
   <block id="794b3a495ea7fc3d5dfc4a04fca36174" category="summary">Attribuez des rôles de plateforme aux utilisateurs pour accorder des autorisations pour effectuer des tâches d'administration dans BlueXP, attribuez des rôles, ajoutez des utilisateurs, créez des connecteurs et gérez les fédérations.</block>
   <block id="c6583b97e14f16bc392f485bc9330714" category="cell">Permet à un utilisateur d'accéder sans restriction à tous les projets et dossiers d'une organisation, d'ajouter des membres à n'importe quel projet ou dossier, ainsi que d'effectuer n'importe quelle tâche BlueXP et d'utiliser n'importe quel service de données qui n'a pas de rôle explicite associé.  Les utilisateurs dotés de ce rôle organisent et gèrent votre organisation BlueXP .  Ils créent des dossiers et des projets, attribuent des rôles, ajoutent des utilisateurs et peuvent gérer tous les environnements de travail, s'ils disposent des informations d'identification pour le faire.  Il s’agit du seul rôle d’accès qui peut créer des connecteurs.</block>
   <block id="3adefaf0742bb05998d95535c058e1ff" category="cell"><block ref="3adefaf0742bb05998d95535c058e1ff" category="inline-link-rx"></block></block>
-  <block id="f440bceeae5f537573e3d8bf616b2de6" category="list-text">hhttps://docs.netapp.com/us-en/bluexp-backup-recovery/prev-ontap-backup-cvo-gcp.html[Autorisations pour les CMEK^]</block>
   <block id="3f4149dc5a7846817dd458a59e650f5f" category="inline-link">Autorisations pour la fonctionnalité de recherche et de restauration</block>
   <block id="a420dd2924b01530fcf3ece61c9728df" category="cell"><block ref="81705cdd494c9139b5b5def25d4145b1" category="inline-link-rx"></block></block>
   <block id="4f11400d5bfc49418f8fe9e78ffbc58c" category="section-title">31 juillet 2024</block>
@@ -5058,5 +5053,7 @@ Cette partie du tableau répertorie la prise en charge de la gestion de l'enviro
   <block id="4ebca8d078924ec17de1cf258147df0c" category="paragraph">Les dossiers peuvent contenir des projets, d’autres dossiers ou les deux.  La création de dossiers est facultative.</block>
   <block id="5c2b3c6d1859da2427f6c94e995cf39c" category="doc">Gérer les fédérations dans BlueXP</block>
   <block id="12315f52b33926030701f1c76338e060" category="cell">\ https://netapp-cloud-account.auth0.com \ https://netapp-cloud-account.us.auth0.com \ https://cdn.auth0.com \ https://services.cloud.netapp.com</block>
-  <block id="a8884d9d4002eaccf5088086ae062b9e" category="cell"><block ref="a8884d9d4002eaccf5088086ae062b9e" category="inline-link-macro-rx"></block></block>
+  <block id="7e4f2643de3611653e3c76b199ce2ca9" category="cell"><block ref="7e4f2643de3611653e3c76b199ce2ca9" category="inline-link-macro-rx"></block></block>
+  <block id="dc5b71cece1f13a67fc01472a59d8781" category="inline-link">Autorisations pour les CMEK</block>
+  <block id="564104d82a92323d6161aa7da0e8071a" category="list-text"><block ref="564104d82a92323d6161aa7da0e8071a" category="inline-link-rx"></block></block>
 </blocks>
