@@ -4871,7 +4871,6 @@ Cette partie du tableau répertorie la prise en charge de la gestion de l'enviro
   <block id="332cf7fa33c69ec5f4db12e0c5d4c230" category="cell">Permet à un utilisateur d'accéder sans restriction à des projets et dossiers spécifiques auxquels il est affecté. Vous pouvez ajouter des membres à des dossiers ou projets qu'ils gèrent, ainsi que réaliser n'importe quelle tâche BlueXP  et utiliser n'importe quel service de données ou application sur les ressources du dossier ou du projet qui leur sont affectés. Les administrateurs de dossiers ou de projets ne peuvent pas créer de connecteurs.</block>
   <block id="1e92f5c7fccb14971fe2537bec747773" category="cell">Permet à un utilisateur de créer et de gérer des fédérations avec BlueXP, ce qui permet l'authentification unique (SSO).</block>
   <block id="077ceb8a17d475a37128a6986bf1819f" category="inline-link-macro">Administrateur Google Cloud NetApp Volumes</block>
-  <block id="42e05b82ea98ae962f4c09a6330b152a" category="cell"><block ref="42e05b82ea98ae962f4c09a6330b152a" category="inline-link-macro-rx"></block></block>
   <block id="ee848730515e9ec34272f93a110738f2" category="cell">Les utilisateurs disposant du rôle Google Cloud NetApp Volumes peuvent découvrir et gérer Google Cloud NetApp Volumes.</block>
   <block id="95b4eb24270de6ac5f87fadb096e4edf" category="cell">Offre la possibilité de visualiser les résultats de l'analyse de BlueXP classification . Les utilisateurs disposant de ce rôle peuvent afficher des informations de conformité et générer des rapports pour les ressources auxquelles ils ont accès. Ces utilisateurs ne peuvent ni activer ni désactiver l'analyse de volumes, de compartiments ou de schémas de base de données. La classification n'a pas de rôle de visualiseur.</block>
   <block id="6bf86021a24fd009a31d432250a9ad20" category="section-title">21 juillet 2025</block>
@@ -5059,4 +5058,5 @@ Cette partie du tableau répertorie la prise en charge de la gestion de l'enviro
   <block id="4ebca8d078924ec17de1cf258147df0c" category="paragraph">Les dossiers peuvent contenir des projets, d’autres dossiers ou les deux.  La création de dossiers est facultative.</block>
   <block id="5c2b3c6d1859da2427f6c94e995cf39c" category="doc">Gérer les fédérations dans BlueXP</block>
   <block id="12315f52b33926030701f1c76338e060" category="cell">\ https://netapp-cloud-account.auth0.com \ https://netapp-cloud-account.us.auth0.com \ https://cdn.auth0.com \ https://services.cloud.netapp.com</block>
+  <block id="a8884d9d4002eaccf5088086ae062b9e" category="cell"><block ref="a8884d9d4002eaccf5088086ae062b9e" category="inline-link-macro-rx"></block></block>
 </blocks>
